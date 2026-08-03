@@ -152,10 +152,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const SUPABASE_KEY = 'sb_publishable_CRo3O4Gjbk2vPIC3ZFOIOA_C3-RBONh';
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-  async function saveScoreToSupabase(playerName, finalScore) {
+  async function saveScoreToSupabase(playerName, finalScore, avatarDataUrl) {
     const { data, error } = await supabase
       .from('leaderboard')
-      .insert([{ name: playerName, score: finalScore }]);
+      .insert([{ name: playerName, score: finalScore, avatarDataUrl }]);
     if (error) {
       console.error('Fehler beim Speichern des Scores:', error);
     }
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadLeaderboardFromSupabase() {
     const { data, error } = await supabase
       .from('leaderboard')
-      .select('name, score')
+      .select('name, score, avatarDataUrl')
       .order('score', { ascending: true })
       .limit(10);
     if (error) {
@@ -366,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
     state.hits = 0; state.arrows = [];
     state.arrowsLeft = state.level >= 5 ? 10 : -1;
     state.windLevel = Math.floor(Math.random() * 21) - 10;
-    state.wind = state.windLevel * 35;
+    state.wind = state.windLevel * 100;
     state.windSeed = Math.random() * Math.PI * 2;
     state.targetDir = Math.random() < 0.5 ? -1 : 1;
     
@@ -405,7 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (state.staticMode) {
       state.windLevel = Math.floor(Math.random() * 21) - 10;
-      state.wind = state.windLevel * 35;
+      state.wind = state.windLevel * 100;
       state.windSeed = Math.random() * Math.PI * 2;
     }
   }
@@ -539,30 +539,36 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lvl < 2) return;
 
     ctx.save();
-    ctx.globalAlpha = 0.03 + lvl * 0.004;
+    ctx.globalAlpha = 0.04 + lvl * 0.005;
     ctx.lineCap = 'round';
 
-    const count = 8 + lvl * 2;
+    const count = 10 + lvl * 3;
     const baseTime = state.simulationTime;
-    const baseY = 180;
-    const topY = 40;
+    const baseY = 260;
+    const topY = 60;
 
     for (let i = 0; i < count; i++) {
       const seed = i * 137.3 + lvl * 19.7;
-      const x0 = (seed * 97.7) % VIRTUAL_W;
+      const x0 = (seed * 97.7 + baseTime * 18 * (i % 2 ? 1 : -1)) % VIRTUAL_W;
       const y0 = topY + ((seed * 31.1) % (baseY - topY));
       const wind = getWindAt(x0, y0, baseTime);
+      const len = 22 + lvl * 5;
+      const x1 = x0 + wind.x * 0.035 * len;
+      const y1 = y0 + wind.y * 0.035 * len;
 
-      const len = 18 + lvl * 4;
-      const x1 = x0 + wind.x * 0.03 * len;
-      const y1 = y0 + wind.y * 0.03 * len;
-
-      ctx.strokeStyle = wind.x >= 0 ? 'rgba(246,255,103,0.20)' : 'rgba(255,220,170,0.16)';
-      ctx.lineWidth = 1 + lvl * 0.03;
+      ctx.strokeStyle = wind.x >= 0 ? 'rgba(246,255,103,0.24)' : 'rgba(255,220,170,0.18)';
+      ctx.lineWidth = 1 + lvl * 0.04;
       ctx.beginPath();
       ctx.moveTo(x0, y0);
       ctx.lineTo(x1, y1);
       ctx.stroke();
+
+      if (i % 4 === 0) {
+        ctx.fillStyle = wind.x >= 0 ? 'rgba(246,255,103,0.20)' : 'rgba(255,220,170,0.16)';
+        ctx.beginPath();
+        ctx.arc(x1, y1, 1.2 + lvl * 0.08, 0, Math.PI * 2);
+        ctx.fill();
+      }
     }
 
     ctx.restore();
@@ -777,13 +783,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const onlineData = await loadLeaderboardFromSupabase();
     if (onlineData && onlineData.length > 0) {
       leaderboardEl.innerHTML = '<div class="meta" style="color:#f6ff67;font-weight:bold;margin-bottom:4px;">Weltweite Bestenliste:</div>' + 
-        onlineData.map((s, i) => 
-          '<div class="entry" style="grid-template-columns:26px 1fr auto;">' +
-            '<div class="rank">#' + (i + 1) + '</div>' +
-            '<div style="font-weight:bold;overflow:hidden;text-overflow:ellipsis;">' + escapeHtml(s.name) + '</div>' +
-            '<div style="font-weight:900">' + formatTime(s.score) + '</div>' +
-          '</div>'
-        ).join('');
+        onlineData.map((s, i) => {
+          const avatar = s.avatarDataUrl
+            ? `<img src="${s.avatarDataUrl}" alt="" style="width:24px;height:24px;border-radius:4px;border:1px solid rgba(255,255,255,.2);margin-right:6px;background:#fff;">`
+            : '<div style="width:24px;height:24px;border-radius:4px;border:1px solid rgba(255,255,255,.08);margin-right:6px;background:rgba(0,0,0,.15);"></div>';
+
+          return (
+            '<div class="entry" style="grid-template-columns:26px auto auto;">' +
+              '<div class="rank">#' + (i + 1) + '</div>' +
+              '<div style="display:flex;align-items:center;overflow:hidden;text-overflow:ellipsis;">' +
+                avatar +
+                '<span style="font-weight:bold;">' + escapeHtml(s.name) + '</span>' +
+              '</div>' +
+              '<div style="font-weight:900">' + formatTime(s.score) + '</div>' +
+            '</div>'
+          );
+        }).join('');
     } else {
       leaderboardEl.innerHTML = '<div class="meta">Noch keine Online-Einträge vorhanden.</div>';
     }
@@ -804,8 +819,10 @@ document.addEventListener('DOMContentLoaded', () => {
   saveScoreBtn.addEventListener('click', async () => {
     if (state.scoreSaved) return;
     const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
+
+    const avatarDataUrl = drawCanvas.toDataURL('image/png');
     
-    await saveScoreToSupabase(playerName, state.finalMs);
+    await saveScoreToSupabase(playerName, state.finalMs, avatarDataUrl);
 
     state.scoreSaved = true;
     finalTimeLabel.textContent = 'Gespeichert: ' + formatTime(state.finalMs);
