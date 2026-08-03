@@ -362,6 +362,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   // 5. GAME-FLOW & EVENT-HANDLING
   // ==========================================
+  function rollStaticWind() {
+    state.windLevel = Math.floor(Math.random() * 21) - 10;
+    state.wind = state.windLevel * 100;
+    state.windSeed = Math.random() * Math.PI * 2;
+    updateHud();
+  }
+
   function startLevel() {
     state.hits = 0; state.arrows = [];
     state.arrowsLeft = state.level >= 5 ? 10 : -1;
@@ -403,11 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
       active: true, stuck: false, dead: false, stuckAngle: a, offsetX: 0, offsetY: 0
     });
 
-    if (state.staticMode) {
-      state.windLevel = Math.floor(Math.random() * 21) - 10;
-      state.wind = state.windLevel * 100;
-      state.windSeed = Math.random() * Math.PI * 2;
-    }
   }
 
   function addFirework(x, y) {
@@ -492,6 +494,7 @@ document.addEventListener('DOMContentLoaded', () => {
           complete = true;
         } else if (state.staticMode) {
           world.targetY = 145 + Math.random() * (605 - 145);
+          rollStaticWind();
         }
         return;
       }
@@ -501,6 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
         state.penaltyMs += MISS_PENALTY;
         state.flashText = '+3s STRAFE!';
         state.flashTimer = 0.8;
+        if (state.staticMode) rollStaticWind();
       }
     });
     
