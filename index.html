@@ -459,8 +459,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     state.tumbleweeds.forEach(w => {
       const wind = getWindAt(w.x, w.y, state.simulationTime);
-      w.x += (wind.x * 0.32 + w.speed) * dt;
-      w.rot += 2 * dt;
+      const boost = 1 + Math.abs(state.windLevel) * 0.06;
+      w.x += (wind.x * 0.32 * boost + w.speed * boost) * dt;
+      w.rot += 2.5 * boost * dt;
       if (w.x > VIRTUAL_W + 25) w.x = -25;
       if (w.x < -25) w.x = VIRTUAL_W + 25;
     });
@@ -538,35 +539,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const lvl = Math.abs(state.windLevel);
     if (lvl < 2) return;
 
+    const t = state.simulationTime;
+
     ctx.save();
-    ctx.globalAlpha = 0.04 + lvl * 0.005;
+    ctx.globalAlpha = 0.06 + lvl * 0.01;
     ctx.lineCap = 'round';
 
-    const count = 10 + lvl * 3;
-    const baseTime = state.simulationTime;
+    const count = (lvl >= 7) ? 18 + lvl * 5 : 10 + lvl * 3;
     const baseY = 260;
     const topY = 60;
 
+    if (lvl >= 7) {
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = state.windLevel >= 0
+        ? 'rgba(246,255,103,0.45)'
+        : 'rgba(116,185,255,0.45)';
+    }
+
     for (let i = 0; i < count; i++) {
       const seed = i * 137.3 + lvl * 19.7;
-      const x0 = (seed * 97.7 + baseTime * 18 * (i % 2 ? 1 : -1)) % VIRTUAL_W;
+      const x0 = (seed * 97.7 + t * 40 * (i % 2 ? 1 : -1)) % VIRTUAL_W;
       const y0 = topY + ((seed * 31.1) % (baseY - topY));
-      const wind = getWindAt(x0, y0, baseTime);
-      const len = 22 + lvl * 5;
-      const x1 = x0 + wind.x * 0.035 * len;
-      const y1 = y0 + wind.y * 0.035 * len;
+      const wind = getWindAt(x0, y0, t);
+      const len = 24 + lvl * 6;
+      const x1 = x0 + wind.x * 0.04 * len;
+      const y1 = y0 + wind.y * 0.04 * len;
 
-      ctx.strokeStyle = wind.x >= 0 ? 'rgba(246,255,103,0.24)' : 'rgba(255,220,170,0.18)';
-      ctx.lineWidth = 1 + lvl * 0.04;
+      const isTail = state.windLevel >= 0;
+      ctx.strokeStyle = isTail
+        ? 'rgba(246,255,103,0.35)'
+        : 'rgba(116,185,255,0.30)';
+
+      ctx.lineWidth = 1.5 + lvl * 0.08;
       ctx.beginPath();
       ctx.moveTo(x0, y0);
       ctx.lineTo(x1, y1);
       ctx.stroke();
 
-      if (i % 4 === 0) {
-        ctx.fillStyle = wind.x >= 0 ? 'rgba(246,255,103,0.20)' : 'rgba(255,220,170,0.16)';
+      if (lvl >= 7 && i % 3 === 0) {
+        ctx.fillStyle = isTail
+          ? 'rgba(246,255,103,0.35)'
+          : 'rgba(116,185,255,0.30)';
         ctx.beginPath();
-        ctx.arc(x1, y1, 1.2 + lvl * 0.08, 0, Math.PI * 2);
+        ctx.arc(x1, y1, 1.5 + lvl * 0.12, 0, Math.PI * 2);
         ctx.fill();
       }
     }
@@ -574,15 +589,53 @@ document.addEventListener('DOMContentLoaded', () => {
     ctx.restore();
   }
 
-  function drawBackground() {
+  
+  function drawGroundDust() {
+    const lvl = Math.abs(state.windLevel);
+    if (lvl < 4) return;
+
+    const t = state.simulationTime;
+    ctx.save();
+    ctx.globalAlpha = 0.03 + lvl * 0.01;
+    ctx.lineCap = 'round';
+
+    const count = 4 + lvl * 2;
+    const baseY = world.groundY - 40;
+
+    for (let i = 0; i < count; i++) {
+      const seed = i * 73.1 + lvl * 11.3;
+      const x0 = (seed * 91.7 + t * 80 * (state.windLevel >= 0 ? 1 : -1)) % VIRTUAL_W;
+      const y0 = baseY + Math.sin(seed + t * 1.2) * 10;
+
+      const wind = getWindAt(x0, y0, t);
+      const len = 30 + lvl * 8;
+      const x1 = x0 + wind.x * 0.05 * len;
+      const y1 = y0 + wind.y * 0.02 * len;
+
+      const isTail = state.windLevel >= 0;
+      ctx.strokeStyle = isTail
+        ? 'rgba(246,255,103,0.40)'
+        : 'rgba(216,220,255,0.32)';
+
+      ctx.lineWidth = 2 + lvl * 0.08;
+      ctx.beginPath();
+      ctx.moveTo(x0, y0);
+      ctx.lineTo(x1, y1);
+      ctx.stroke();
+    }
+
+    ctx.restore();
+  }
+function drawBackground() {
     const sky = ctx.createLinearGradient(0, 0, 0, world.groundY);
     sky.addColorStop(0, gameState === 'CELEBRATE' ? '#0b0614' : '#2c160b');
     sky.addColorStop(0.5, gameState === 'CELEBRATE' ? '#1f0d2e' : '#bd5322');
     sky.addColorStop(1, '#f3b177');
     ctx.fillStyle = sky; ctx.fillRect(0, 0, VIRTUAL_W, world.groundY);
     
-    // Windfeld direkt nach dem Himmel und vor den Hügeln zeichnen
+    // Windfeld + Bodensand direkt nach dem Himmel und vor den Hügeln zeichnen
     drawWindField();
+    drawGroundDust();
 
     ctx.fillStyle = '#a65428';
     ctx.beginPath(); ctx.moveTo(0, world.groundY);
