@@ -17,7 +17,7 @@
   <div id="windBox" class="panel"><div id="windText">Wind: still</div><div id="windBar"><div id="windFill"></div></div></div>
   <div id="powerWrap" class="panel"><div id="powerBar"></div></div><div id="hintBox" class="panel">Linke Hälfte ziehen und loslassen. Wind kann Flugweite und Kurve verändern.</div>
   <div id="startOverlay"><div class="card"><h1>Wüsten-Bogen</h1><p>Worms-inspirierter Wind mit echter Luftströmung, Böen und Flugbahn-Vorschau.</p><ul><li>10 Level mit jeweils 3 Treffern</li><li>Windstufen von 0 bis 10, nach jeder Runde neu</li><li>Ab Level 5: 10 Pfeile pro Runde</li></ul><div class="row"><button id="startBtn">Spiel starten</button></div></div></div>
-  <div id="avatarModal"><div class="card"><h2>Kampagne geschafft!</h2><p>Zeichne deinen Avatar und speichere deinen Lauf.</p><canvas id="drawCanvas" width="256" height="256"></canvas><div class="row"><button id="clearDraw" class="secondary">Leeren</button><button id="saveScore">Score speichern</button><button id="restartBtn" style="display:none">Neuer Lauf</button></div><p id="finalTimeLabel" class="meta"></p><p id="savedMessage">Gespeichert! Deine lokale Top-5-Rangliste:</p><div id="leaderboard"></div></div></div>
+  <div id="avatarModal"><div class="card"><h2>Kampagne geschafft!</h2><p>Zeichne deinen Avatar und speichere deinen Lauf.</p><canvas id="drawCanvas" width="256" height="256"></canvas><input type="text" id="playerNameInput" placeholder="Dein Name (max. 15 Zeichen)" maxlength="15" style="width:100%;padding:8px 10px;margin-bottom:10px;border-radius:6px;border:1px solid rgba(255,255,255,.2);background:#2a1b12;color:#fff;font-size:14px;"><div class="row"><button id="clearDraw" class="secondary">Leeren</button><button id="saveScore">Score speichern</button><button id="restartBtn" style="display:none">Neuer Lauf</button></div><p id="finalTimeLabel" class="meta"></p><p id="savedMessage">Gespeichert! Deine lokale Top-5-Rangliste:</p><div id="leaderboard"></div></div></div>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
 const SUPABASE_URL = 'https://wudikbyybmuxbvwanaz.supabase.co';
@@ -82,7 +82,28 @@ function canvasPoint(e){const r=canvas.getBoundingClientRect();return{x:(e.clien
 canvas.addEventListener('pointerdown',e=>{if(gameState!=='PLAYING'||state.level>=5&&state.arrowsLeft<=0)return;const p=canvasPoint(e);if(p.x>=VIRTUAL_W*.5)return;e.preventDefault();canvas.setPointerCapture(e.pointerId);state.drawActive=true;state.drawStart=p;state.drawNow=p});canvas.addEventListener('pointermove',e=>{if(!state.drawActive)return;e.preventDefault();const p=canvasPoint(e);state.drawNow=p;state.power=getForce(Math.hypot(state.drawStart.x-p.x,state.drawStart.y-p.y))});function finishAim(e){if(!state.drawActive)return;if(e&&canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);const dx=state.drawStart.x-state.drawNow.x,dy=state.drawStart.y-state.drawNow.y,p=Math.hypot(dx,dy);state.drawActive=false;state.power=0;if(p>15)addArrow(Math.atan2(dy,dx),getForce(p))}canvas.addEventListener('pointerup',finishAim);canvas.addEventListener('pointercancel',finishAim);
 let avatarDrawing=false;drawCtx.fillStyle='#fff';drawCtx.fillRect(0,0,256,256);drawCtx.strokeStyle='#2f3542';drawCtx.lineWidth=5;drawCtx.lineCap='round';function avatarPoint(e){const r=drawCanvas.getBoundingClientRect();return{x:(e.clientX-r.left)*256/r.width,y:(e.clientY-r.top)*256/r.height}}drawCanvas.addEventListener('pointerdown',e=>{e.preventDefault();drawCanvas.setPointerCapture(e.pointerId);avatarDrawing=true;const p=avatarPoint(e);drawCtx.beginPath();drawCtx.moveTo(p.x,p.y)});drawCanvas.addEventListener('pointermove',e=>{if(!avatarDrawing)return;e.preventDefault();const p=avatarPoint(e);drawCtx.lineTo(p.x,p.y);drawCtx.stroke()});function finishAvatar(e){avatarDrawing=false;if(e&&drawCanvas.hasPointerCapture(e.pointerId))drawCanvas.releasePointerCapture(e.pointerId)}drawCanvas.addEventListener('pointerup',finishAvatar);drawCanvas.addEventListener('pointercancel',finishAvatar);clearDrawBtn.addEventListener('click',()=>{drawCtx.fillStyle='#fff';drawCtx.fillRect(0,0,256,256)});
 function getScores(){try{const d=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');return Array.isArray(d)?d:[]}catch(e){return[]}}function renderLeaderboard(scores){leaderboardEl.innerHTML=!scores.length?'<div class="meta">Noch keine gespeicherten Läufe.</div>':scores.map((s,i)=>'<div class="entry"><div class="rank">#'+(i+1)+'</div><img class="avatar" src="'+s.avatar+'" alt="Avatar '+(i+1)+'"><div class="meta">Lauf '+(i+1)+'</div><div style="font-weight:900">'+formatTime(s.timeMs)+'</div></div>').join('')}
-function showAvatarModal(){gameState='DRAW_AVATAR';state.scoreSaved=false;finalTimeLabel.textContent='Finale Zeit: '+formatTime(state.finalMs);savedMessage.style.display='none';saveScoreBtn.style.display='';restartBtn.style.display='none';avatarModal.style.display='flex';renderLeaderboard(getScores())}saveScoreBtn.addEventListener('click',()=>{if(state.scoreSaved)return;const scores=getScores();scores.push({timeMs:state.finalMs,avatar:drawCanvas.toDataURL('image/png')});scores.sort((a,b)=>a.timeMs-b.timeMs);const top=scores.slice(0,5);try{localStorage.setItem(STORAGE_KEY,JSON.stringify(top))}catch(e){}state.scoreSaved=true;finalTimeLabel.textContent='Gespeichert: '+formatTime(state.finalMs);savedMessage.style.display='block';saveScoreBtn.style.display='none';restartBtn.style.display='';renderLeaderboard(top)});restartBtn.addEventListener('click',()=>{avatarModal.style.display='none';startOverlay.style.display='flex';gameState='START'});startBtn.addEventListener('click',startGame);addEventListener('resize',()=>{resize();render()});resize();render();updateHud();requestAnimationFrame(loop);
+function showAvatarModal(){gameState='DRAW_AVATAR';state.scoreSaved=false;finalTimeLabel.textContent='Finale Zeit: '+formatTime(state.finalMs);savedMessage.style.display='none';saveScoreBtn.style.display='';restartBtn.style.display='none';avatarModal.style.display='flex';renderLeaderboard(getScores())}saveScoreBtn.addEventListener('click',()=>{
+  if(state.scoreSaved)return;
+  
+  // Spielername aus dem neuen Eingabefeld holen (Fallback auf "Anonym", falls leer)
+  const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
+  
+  // An Supabase senden (state.finalMs ist die benötigte Zeit in Millisekunden)
+  saveScoreToSupabase(playerName, state.finalMs);
+
+  const scores=getScores();
+  scores.push({timeMs:state.finalMs,avatar:drawCanvas.toDataURL('image/png')});
+  scores.sort((a,b)=>a.timeMs-b.timeMs);
+  const top=scores.slice(0,5);
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(top))}catch(e){}
+  
+  state.scoreSaved=true;
+  finalTimeLabel.textContent='Gespeichert: '+formatTime(state.finalMs);
+  savedMessage.style.display='block';
+  saveScoreBtn.style.display='none';
+  restartBtn.style.display='';
+  renderLeaderboard(top);
+});restartBtn.addEventListener('click',()=>{avatarModal.style.display='none';startOverlay.style.display='flex';gameState='START'});startBtn.addEventListener('click',startGame);addEventListener('resize',()=>{resize();render()});resize();render();updateHud();requestAnimationFrame(loop);
 });
 </script>
 </body>
