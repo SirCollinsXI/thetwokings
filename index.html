@@ -68,8 +68,7 @@
     /* Avatar & Leaderboard */
     #drawCanvas { display: block; width: 150px; height: 150px; margin: 0 auto 10px; background: #fff; border: 2px solid rgba(255,255,255,.2); border-radius: 10px; touch-action: none; }
     #leaderboard { display: grid; gap: 5px; max-height: 180px; margin-top: 8px; overflow-y: auto; }
-    .entry { display: grid; grid-template-columns: 22px 34px 1fr auto; gap: 8px; align-items: center; padding: 4px 6px; border-radius: 6px; background: rgba(255,255,255,.04); font-size: 11px; }
-    .avatar { width: 34px; height: 34px; border-radius: 6px; background: #fff; object-fit: cover; }
+    .entry { display: grid; grid-template-columns: 26px 1fr auto; gap: 8px; align-items: center; padding: 4px 6px; border-radius: 6px; background: rgba(255,255,255,.04); font-size: 11px; }
     .rank { color: #ffe59f; text-align: center; font-weight: 900; }
     .meta { color: #d8c6a8; font-size: 10px; }
     #savedMessage { display: none; color: #f6ff67; font-size: 12px; font-weight: 800; }
@@ -109,11 +108,11 @@
   <div id="startOverlay">
     <div class="card">
       <h1>Wüsten-Bogen</h1>
-      <p>Worms-inspirierter Wind mit echter Luftströmung, Böen und Flugbahn-Vorschau.</p>
+      <p>Realistische Wind-Simulation mit Luftströmung, Böen und Flugbahn-Vorschau.</p>
       <ul>
         <li>10 Level mit jeweils 3 Treffern</li>
         <li>Windstufen von 0 bis 10, nach jeder Runde neu</li>
-        <li>Ab Level 5: 10 Pfeile pro Runde</li>
+        <li>Ab Level 5: 10 Pfeile pro Runde (bei Leerstand: Ziel fixiert + Wind pro Schuss)</li>
       </ul>
       <div class="row">
         <button id="startBtn">Spiel starten</button>
@@ -149,11 +148,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   // 1. SUPABASE DATENBANK ANBINDUNG
   // ==========================================
-  const SUPABASE_URL = 'https://wudikbyybmuxbvwganaz.supabase.co'; // <--- URL korrigiert!
+  const SUPABASE_URL = 'https://wudikbyybmuxbvwganaz.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_CRo3O4Gjbk2vPIC3ZFOIOA_C3-RBONh';
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-  // Speichert den Score in die Cloud
   async function saveScoreToSupabase(playerName, finalScore) {
     const { data, error } = await supabase
       .from('leaderboard')
@@ -163,12 +161,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Lädt die Top 10 aus der Cloud (Kürzeste Zeit = beste Zeit)
   async function loadLeaderboardFromSupabase() {
     const { data, error } = await supabase
       .from('leaderboard')
       .select('name, score')
-      .order('score', { ascending: true }) // aufsteigend, weil Zeit (weniger ist besser)
+      .order('score', { ascending: true })
       .limit(10);
     if (error) {
       console.error('Fehler beim Laden des Leaderboards:', error);
@@ -177,7 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return data || [];
   }
 
-  // Hilfsfunktion: Schützt vor schadhaften Namen (XSS-Schutz)
   function escapeHtml(str) {
     return (str || "Anonym").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
@@ -202,24 +198,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const VIRTUAL_W = 1600, VIRTUAL_H = 900;
   const HIT_GOAL = 3, MAX_LEVEL = 10, MISS_PENALTY = 3000;
   const FIXED_DT = 1/240, MAX_FRAME_DT = 0.05, MAX_STEPS_PER_FRAME = 16;
-  const STORAGE_KEY = 'desert_archery_wind_physics_v1';
 
-  // Physik & Umwelt Variablen
-  const atmosphere = { gustStrength: 48, gustFrequency: 0.55, verticalGustStrength: 8 };
+  const atmosphere = { gustStrength: 64, gustFrequency: 0.55, verticalGustStrength: 10 };
   const arrowPhysics = { gravity: 810, dragCoefficient: 0.00022, sideDragCoefficient: 0.00040, alignmentStrength: 17, angularDamping: 8, maxAngularSpeed: 9 };
   const world = { groundY: 738, bowX: 190, bowY: 630, targetX: 1240, targetY: 525, targetRadius: 56, gravity: arrowPhysics.gravity };
   
   let W = 0, H = 0, DPR = 1, viewScale = 1, viewOffsetX = 0, viewOffsetY = 0;
   let lastTime = 0, accumulator = 0, gameState = 'START';
 
-  // Aktueller Spielzustand
   const state = {
     level: 1, hits: 0, arrowsLeft: -1, penaltyMs: 0, startMs: 0, finalMs: 0,
     windLevel: 0, wind: 0, windSeed: 0, targetDir: 1,
     drawActive: false, drawStart: { x: 0, y: 0 }, drawNow: { x: 0, y: 0 }, power: 0,
     arrows: [], tumbleweeds: [], fireworks: [], shuttle: null,
     celebrateTimer: 0, flashText: '', flashTimer: 0, hitGlow: 0, scoreSaved: false, simulationTime: 0,
-    staticMode: false // NEU: Kontrolliert den Strafe-Modus
+    staticMode: false
   };
 
 
@@ -236,7 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
     viewOffsetY = (H - VIRTUAL_H * viewScale) / 2;
     ctx.setTransform(DPR * viewScale, 0, 0, DPR * viewScale, DPR * viewOffsetX, DPR * viewOffsetY);
     
-    // Tumbleweeds initialisieren, falls noch nicht geschehen
     if (!state.tumbleweeds.length) {
       state.tumbleweeds = Array.from({ length: 7 }, () => ({
         x: Math.random() * VIRTUAL_W,
@@ -374,11 +366,10 @@ document.addEventListener('DOMContentLoaded', () => {
     state.hits = 0; state.arrows = [];
     state.arrowsLeft = state.level >= 5 ? 10 : -1;
     state.windLevel = Math.floor(Math.random() * 21) - 10;
-    state.wind = state.windLevel * 22;
+    state.wind = state.windLevel * 35;
     state.windSeed = Math.random() * Math.PI * 2;
     state.targetDir = Math.random() < 0.5 ? -1 : 1;
     
-    // NEU: Wenn wir im Straf-Modus sind, startet das Ziel direkt woanders
     if (state.staticMode) {
       world.targetY = 145 + Math.random() * (605 - 145);
     } else {
@@ -391,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
       level: 1, hits: 0, penaltyMs: 0, startMs: performance.now(), finalMs: 0,
       drawActive: false, power: 0, flashText: '', flashTimer: 0, hitGlow: 0,
       fireworks: [], shuttle: null, scoreSaved: false, simulationTime: 0,
-      staticMode: false // Reset
+      staticMode: false
     });
     accumulator = 0;
     startLevel();
@@ -412,10 +403,9 @@ document.addEventListener('DOMContentLoaded', () => {
       active: true, stuck: false, dead: false, stuckAngle: a, offsetX: 0, offsetY: 0
     });
 
-    // NEU: Im Fix-Modus wechselt der Wind mit JEDEM Schuss
     if (state.staticMode) {
       state.windLevel = Math.floor(Math.random() * 21) - 10;
-      state.wind = state.windLevel * 22;
+      state.wind = state.windLevel * 35;
       state.windSeed = Math.random() * Math.PI * 2;
     }
   }
@@ -455,14 +445,9 @@ document.addEventListener('DOMContentLoaded', () => {
     state.flashTimer = Math.max(0, state.flashTimer - dt);
     state.hitGlow = Math.max(0, state.hitGlow - dt * 2.4);
     
-    // NEU: Zielbewegung (Nur wenn NICHT im Static Mode)
     if (!state.staticMode) {
       let speed = 65 + state.level * 13;
-      
-      // NEU: Deutlich langsamer in Level 1 und 2
-      if (state.level <= 2) {
-        speed *= 0.35; 
-      }
+      if (state.level <= 2) speed *= 0.35;
       
       world.targetY += speed * state.targetDir * dt;
       const minY = 145, maxY = 605;
@@ -472,7 +457,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     
-    // Tumbleweeds berechnen
     state.tumbleweeds.forEach(w => {
       const wind = getWindAt(w.x, w.y, state.simulationTime);
       w.x += (wind.x * 0.32 + w.speed) * dt;
@@ -486,7 +470,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const hitRadius = Math.max(42, displayRadius * 1.32);
     let complete = false;
     
-    // Pfeile berechnen
     state.arrows.forEach(a => {
       if (a.stuck) { a.x = world.targetX + a.offsetX; a.y = world.targetY + a.offsetY; return; }
       if (!a.active) return;
@@ -495,7 +478,6 @@ document.addEventListener('DOMContentLoaded', () => {
       integrateRK4(a, state.simulationTime, dt);
       a.angle = a.heading;
       
-      // Treffererkennung
       if (segmentCircleHit(ox, oy, a.x, a.y, world.targetX, world.targetY, hitRadius)) {
         a.active = false; a.stuck = true;
         a.offsetX = a.x - world.targetX; a.offsetY = a.y - world.targetY;
@@ -508,13 +490,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (state.hits >= HIT_GOAL) {
           complete = true;
         } else if (state.staticMode) {
-          // NEU: Ziel springt sofort an eine neue Position bei einem Treffer
           world.targetY = 145 + Math.random() * (605 - 145);
         }
         return;
       }
       
-      // Aus dem Bild geflogen
       if (a.x < -100 || a.x > VIRTUAL_W + 100 || a.y > VIRTUAL_H + 100) {
         a.active = false; a.dead = true;
         state.penaltyMs += MISS_PENALTY;
@@ -526,12 +506,11 @@ document.addEventListener('DOMContentLoaded', () => {
     state.arrows = state.arrows.filter(a => !a.dead);
     
     if (complete) {
-      state.staticMode = false; // Zurücksetzen für das nächste Level
+      state.staticMode = false;
       if (state.level >= MAX_LEVEL) celebrate(); else { state.level++; startLevel(); }
       return;
     }
     
-    // NEU: Wenn Pfeile leer sind -> Strafe: ZIEL FIXIERT Modus
     if (state.level >= 5 && state.arrowsLeft === 0 && !state.arrows.some(a => a.active) && state.hits < HIT_GOAL) {
       state.staticMode = true;
       state.flashText = 'ZIEL FIXIERT!';
@@ -555,6 +534,40 @@ document.addEventListener('DOMContentLoaded', () => {
     ctx.beginPath(); ctx.moveTo(-50, 0); ctx.lineTo(-60, -6); ctx.lineTo(-60, 6); ctx.closePath(); ctx.fill();
   }
 
+  function drawWindField() {
+    const lvl = Math.abs(state.windLevel);
+    if (lvl < 2) return;
+
+    ctx.save();
+    ctx.globalAlpha = 0.03 + lvl * 0.004;
+    ctx.lineCap = 'round';
+
+    const count = 8 + lvl * 2;
+    const baseTime = state.simulationTime;
+    const baseY = 180;
+    const topY = 40;
+
+    for (let i = 0; i < count; i++) {
+      const seed = i * 137.3 + lvl * 19.7;
+      const x0 = (seed * 97.7) % VIRTUAL_W;
+      const y0 = topY + ((seed * 31.1) % (baseY - topY));
+      const wind = getWindAt(x0, y0, baseTime);
+
+      const len = 18 + lvl * 4;
+      const x1 = x0 + wind.x * 0.03 * len;
+      const y1 = y0 + wind.y * 0.03 * len;
+
+      ctx.strokeStyle = wind.x >= 0 ? 'rgba(246,255,103,0.20)' : 'rgba(255,220,170,0.16)';
+      ctx.lineWidth = 1 + lvl * 0.03;
+      ctx.beginPath();
+      ctx.moveTo(x0, y0);
+      ctx.lineTo(x1, y1);
+      ctx.stroke();
+    }
+
+    ctx.restore();
+  }
+
   function drawBackground() {
     const sky = ctx.createLinearGradient(0, 0, 0, world.groundY);
     sky.addColorStop(0, gameState === 'CELEBRATE' ? '#0b0614' : '#2c160b');
@@ -562,6 +575,9 @@ document.addEventListener('DOMContentLoaded', () => {
     sky.addColorStop(1, '#f3b177');
     ctx.fillStyle = sky; ctx.fillRect(0, 0, VIRTUAL_W, world.groundY);
     
+    // Windfeld direkt nach dem Himmel und vor den Hügeln zeichnen
+    drawWindField();
+
     ctx.fillStyle = '#a65428';
     ctx.beginPath(); ctx.moveTo(0, world.groundY);
     for (let x = 0; x <= VIRTUAL_W; x += 40) ctx.lineTo(x, world.groundY - 40 + Math.sin(x * 0.005) * 20);
