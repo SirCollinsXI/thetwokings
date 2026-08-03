@@ -129,6 +129,7 @@
       
       <!-- Eingabefeld für den Spielernamen -->
       <input type="text" id="playerNameInput" placeholder="Dein Name (max. 15 Zeichen)" maxlength="15" style="width:100%;padding:8px 10px;margin-bottom:10px;border-radius:6px;border:1px solid rgba(255,255,255,.2);background:#2a1b12;color:#fff;font-size:14px;">
+      <input type="text" id="commentInput" placeholder="Möchtest du der Welt etwas sagen?" maxlength="120" style="width:100%;padding:8px 10px;margin-bottom:10px;border-radius:6px;border:1px solid rgba(255,255,255,.2);background:#2a1b12;color:#fff;font-size:14px;">
       
       <div class="row">
         <button id="clearDraw" class="secondary">Leeren</button>
@@ -152,10 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const SUPABASE_KEY = 'sb_publishable_CRo3O4Gjbk2vPIC3ZFOIOA_C3-RBONh';
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-  async function saveScoreToSupabase(playerName, finalScore, avatarDataUrl) {
+  async function saveScoreToSupabase(playerName, finalScore, avatarDataUrl, comment) {
     const { data, error } = await supabase
       .from('leaderboard')
-      .insert([{ name: playerName, score: finalScore, avatarDataUrl }]);
+      .insert([{ name: playerName, score: finalScore, avatarDataUrl, comment }]);
     if (error) {
       console.error('Fehler beim Speichern des Scores:', error);
     }
@@ -164,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadLeaderboardFromSupabase() {
     const { data, error } = await supabase
       .from('leaderboard')
-      .select('name, score, avatarDataUrl')
+      .select('name, score, avatarDataUrl, comment')
       .order('score', { ascending: true })
       .limit(10);
     if (error) {
@@ -845,12 +846,19 @@ function drawBackground() {
             ? `<img src="${s.avatarDataUrl}" alt="" style="width:24px;height:24px;border-radius:4px;border:1px solid rgba(255,255,255,.2);margin-right:6px;background:#fff;">`
             : '<div style="width:24px;height:24px;border-radius:4px;border:1px solid rgba(255,255,255,.08);margin-right:6px;background:rgba(0,0,0,.15);"></div>';
 
+          const commentHtml = s.comment
+            ? '<div style="font-size:10px;color:#d8c6a8;margin-top:2px;">“' + escapeHtml(s.comment) + '”</div>'
+            : '';
+
           return (
             '<div class="entry" style="grid-template-columns:26px auto auto;">' +
               '<div class="rank">#' + (i + 1) + '</div>' +
-              '<div style="display:flex;align-items:center;overflow:hidden;text-overflow:ellipsis;">' +
-                avatar +
-                '<span style="font-weight:bold;">' + escapeHtml(s.name) + '</span>' +
+              '<div style="display:flex;flex-direction:column;justify-content:center;overflow:hidden;text-overflow:ellipsis;">' +
+                '<div style="display:flex;align-items:center;">' +
+                  avatar +
+                  '<span style="font-weight:bold;">' + escapeHtml(s.name) + '</span>' +
+                '</div>' +
+                commentHtml +
               '</div>' +
               '<div style="font-weight:900">' + formatTime(s.score) + '</div>' +
             '</div>'
