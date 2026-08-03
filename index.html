@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
   <title>Wüsten-Bogen – Wind Physics</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     :root{--ui:rgba(18,12,8,.92);--border:rgba(255,255,255,.14);--text:#fffdf7;--muted:#dcd0b8;--accent:#f6ff67;--danger:#ff7675;--top:max(14px,env(safe-area-inset-top));--right:max(14px,env(safe-area-inset-right));--bottom:max(14px,env(safe-area-inset-bottom));--left:max(14px,env(safe-area-inset-left))}
     *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#140c07}body{font-family:Arial,sans-serif;color:var(--text)}#gameCanvas{position:fixed;inset:0;display:block;width:100%;height:100%;touch-action:none}.panel{position:absolute;z-index:10;background:var(--ui);border:1px solid var(--border);border-radius:10px}#hudLeft{top:var(--top);left:var(--left);min-width:140px;padding:8px 12px}#hudRight{top:var(--top);right:var(--right);padding:8px 12px;text-align:right}#windBox{top:var(--top);left:50%;transform:translateX(-50%);padding:6px 12px;color:#f1c40f;font-size:13px;font-weight:800}#windBar{width:110px;height:5px;margin-top:4px;overflow:hidden;border-radius:10px;background:rgba(255,255,255,.13)}#windFill{width:50%;height:100%;margin-left:50%;transform-origin:left center;background:#f6ff67}#powerWrap{bottom:calc(var(--bottom) + 16px);left:var(--left);width:18px;height:min(22vh,140px);padding:2px;display:flex;align-items:flex-end}#powerBar{width:100%;height:0;border-radius:3px;background:linear-gradient(#fbffb0,#ffc860 50%,#ff805c)}#hintBox{bottom:var(--bottom);left:50%;transform:translateX(-50%);max-width:min(92vw,560px);padding:6px 12px;text-align:center;font-size:11px}.label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.value{font-size:14px;font-weight:800}#timer{font-size:22px;font-weight:900;color:var(--accent)}#ammoWrap{display:none;margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,.08)}#startOverlay,#avatarModal{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(8,5,3,.9)}#avatarModal{display:none}.card{width:min(94vw,460px);padding:18px;border:1px solid rgba(255,255,255,.15);border-radius:16px;background:#1a110a}h1,h2{margin:0 0 8px;color:#fff2d1;font-family:Georgia,serif}h1{font-size:clamp(20px,4vw,28px)}h2{font-size:20px}p,ul{margin:0 0 10px;color:#f2e2c4;font-size:13px;line-height:1.4}ul{padding-left:16px}.row{display:flex;gap:10px;flex-wrap:wrap}button{border:0;border-radius:8px;padding:10px 16px;color:#1b1208;background:linear-gradient(#f6ff67,#d8ea53);font-size:14px;font-weight:800;cursor:pointer;touch-action:manipulation}button.secondary{color:#fff;background:#3a2a20;border:1px solid rgba(255,255,255,.1)}#drawCanvas{display:block;width:150px;height:150px;margin:0 auto 10px;background:#fff;border:2px solid rgba(255,255,255,.2);border-radius:10px;touch-action:none}#leaderboard{display:grid;gap:5px;max-height:180px;margin-top:8px;overflow-y:auto}.entry{display:grid;grid-template-columns:22px 34px 1fr auto;gap:8px;align-items:center;padding:4px 6px;border-radius:6px;background:rgba(255,255,255,.04);font-size:11px}.avatar{width:34px;height:34px;border-radius:6px;background:#fff;object-fit:cover}.rank{color:#ffe59f;text-align:center;font-weight:900}.meta{color:#d8c6a8;font-size:10px}#savedMessage{display:none;color:#f6ff67;font-size:12px;font-weight:800}
@@ -19,6 +20,33 @@
   <div id="avatarModal"><div class="card"><h2>Kampagne geschafft!</h2><p>Zeichne deinen Avatar und speichere deinen Lauf.</p><canvas id="drawCanvas" width="256" height="256"></canvas><div class="row"><button id="clearDraw" class="secondary">Leeren</button><button id="saveScore">Score speichern</button><button id="restartBtn" style="display:none">Neuer Lauf</button></div><p id="finalTimeLabel" class="meta"></p><p id="savedMessage">Gespeichert! Deine lokale Top-5-Rangliste:</p><div id="leaderboard"></div></div></div>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
+const SUPABASE_URL = 'https://wudikbyybmuxbvwanaz.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_CRo3O4Gjbk2vPIC3ZFOIOA_C3-RBONh';
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+async function saveScoreToSupabase(playerName, finalScore) {
+  const { data, error } = await supabase
+    .from('leaderboard')
+    .insert([{ name: playerName, score: finalScore }]);
+
+  if (error) {
+    console.error('Fehler beim Speichern des Scores:', error);
+  }
+}
+
+async function loadLeaderboardFromSupabase() {
+  const { data, error } = await supabase
+    .from('leaderboard')
+    .select('name, score')
+    .order('score', { ascending: false })
+    .limit(10);
+
+  if (error) {
+    console.error('Fehler beim Laden des Leaderboards:', error);
+    return [];
+  }
+  return data;
+}
 const canvas=document.getElementById('gameCanvas'),drawCanvas=document.getElementById('drawCanvas'),ctx=canvas.getContext('2d'),drawCtx=drawCanvas.getContext('2d');
 const $=id=>document.getElementById(id),timerEl=$('timer'),hitsEl=$('hitsText'),goalEl=$('goalText'),levelEl=$('levelText'),windText=$('windText'),windFill=$('windFill'),powerBar=$('powerBar'),ammoWrap=$('ammoWrap'),ammoText=$('ammoText'),startOverlay=$('startOverlay'),avatarModal=$('avatarModal'),leaderboardEl=$('leaderboard'),finalTimeLabel=$('finalTimeLabel'),savedMessage=$('savedMessage'),startBtn=$('startBtn'),clearDrawBtn=$('clearDraw'),saveScoreBtn=$('saveScore'),restartBtn=$('restartBtn');
 const VIRTUAL_W=1600,VIRTUAL_H=900,STORAGE_KEY='desert_archery_wind_physics_v1',HIT_GOAL=3,MAX_LEVEL=10,MISS_PENALTY=3000,FIXED_DT=1/240,MAX_FRAME_DT=.05,MAX_STEPS_PER_FRAME=16;
