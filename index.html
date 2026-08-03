@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   // 1. SUPABASE DATENBANK ANBINDUNG
   // ==========================================
-  const SUPABASE_URL = 'https://wudikbyybmuxbvwanaz.supabase.co';
+  const SUPABASE_URL = 'https://wudikbyybmuxbvwganaz.supabase.co'; // <--- URL korrigiert!
   const SUPABASE_KEY = 'sb_publishable_CRo3O4Gjbk2vPIC3ZFOIOA_C3-RBONh';
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -218,7 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
     windLevel: 0, wind: 0, windSeed: 0, targetDir: 1,
     drawActive: false, drawStart: { x: 0, y: 0 }, drawNow: { x: 0, y: 0 }, power: 0,
     arrows: [], tumbleweeds: [], fireworks: [], shuttle: null,
-    celebrateTimer: 0, flashText: '', flashTimer: 0, hitGlow: 0, scoreSaved: false, simulationTime: 0
+    celebrateTimer: 0, flashText: '', flashTimer: 0, hitGlow: 0, scoreSaved: false, simulationTime: 0,
+    staticMode: false // NEU: Kontrolliert den Strafe-Modus
   };
 
 
@@ -376,14 +377,21 @@ document.addEventListener('DOMContentLoaded', () => {
     state.wind = state.windLevel * 22;
     state.windSeed = Math.random() * Math.PI * 2;
     state.targetDir = Math.random() < 0.5 ? -1 : 1;
-    world.targetY = 525;
+    
+    // NEU: Wenn wir im Straf-Modus sind, startet das Ziel direkt woanders
+    if (state.staticMode) {
+      world.targetY = 145 + Math.random() * (605 - 145);
+    } else {
+      world.targetY = 525;
+    }
   }
 
   function startGame() {
     Object.assign(state, {
       level: 1, hits: 0, penaltyMs: 0, startMs: performance.now(), finalMs: 0,
       drawActive: false, power: 0, flashText: '', flashTimer: 0, hitGlow: 0,
-      fireworks: [], shuttle: null, scoreSaved: false, simulationTime: 0
+      fireworks: [], shuttle: null, scoreSaved: false, simulationTime: 0,
+      staticMode: false // Reset
     });
     accumulator = 0;
     startLevel();
@@ -403,6 +411,13 @@ document.addEventListener('DOMContentLoaded', () => {
       angle: a, heading: a, angularVelocity: 0,
       active: true, stuck: false, dead: false, stuckAngle: a, offsetX: 0, offsetY: 0
     });
+
+    // NEU: Im Fix-Modus wechselt der Wind mit JEDEM Schuss
+    if (state.staticMode) {
+      state.windLevel = Math.floor(Math.random() * 21) - 10;
+      state.wind = state.windLevel * 22;
+      state.windSeed = Math.random() * Math.PI * 2;
+    }
   }
 
   function addFirework(x, y) {
@@ -440,12 +455,21 @@ document.addEventListener('DOMContentLoaded', () => {
     state.flashTimer = Math.max(0, state.flashTimer - dt);
     state.hitGlow = Math.max(0, state.hitGlow - dt * 2.4);
     
-    // Zielbewegung
-    world.targetY += (65 + state.level * 13) * state.targetDir * dt;
-    const minY = 145, maxY = 605;
-    if (world.targetY < minY || world.targetY > maxY) {
-      state.targetDir *= -1;
-      world.targetY = Math.max(minY, Math.min(maxY, world.targetY));
+    // NEU: Zielbewegung (Nur wenn NICHT im Static Mode)
+    if (!state.staticMode) {
+      let speed = 65 + state.level * 13;
+      
+      // NEU: Deutlich langsamer in Level 1 und 2
+      if (state.level <= 2) {
+        speed *= 0.35; 
+      }
+      
+      world.targetY += speed * state.targetDir * dt;
+      const minY = 145, maxY = 605;
+      if (world.targetY < minY || world.targetY > maxY) {
+        state.targetDir *= -1;
+        world.targetY = Math.max(minY, Math.min(maxY, world.targetY));
+      }
     }
     
     // Tumbleweeds berechnen
@@ -480,7 +504,13 @@ document.addEventListener('DOMContentLoaded', () => {
         state.hitGlow = 0.8;
         state.flashText = 'TREFFER!';
         state.flashTimer = 0.55;
-        if (state.hits >= HIT_GOAL) complete = true;
+        
+        if (state.hits >= HIT_GOAL) {
+          complete = true;
+        } else if (state.staticMode) {
+          // NEU: Ziel springt sofort an eine neue Position bei einem Treffer
+          world.targetY = 145 + Math.random() * (605 - 145);
+        }
         return;
       }
       
@@ -496,14 +526,16 @@ document.addEventListener('DOMContentLoaded', () => {
     state.arrows = state.arrows.filter(a => !a.dead);
     
     if (complete) {
+      state.staticMode = false; // Zurücksetzen für das nächste Level
       if (state.level >= MAX_LEVEL) celebrate(); else { state.level++; startLevel(); }
       return;
     }
     
-    // Runde Neu, wenn Pfeile leer sind
+    // NEU: Wenn Pfeile leer sind -> Strafe: ZIEL FIXIERT Modus
     if (state.level >= 5 && state.arrowsLeft === 0 && !state.arrows.some(a => a.active) && state.hits < HIT_GOAL) {
-      state.flashText = 'RUNDE NEU!';
-      state.flashTimer = 1.3;
+      state.staticMode = true;
+      state.flashText = 'ZIEL FIXIERT!';
+      state.flashTimer = 1.5;
       startLevel();
     }
   }
@@ -725,7 +757,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   // 9. ONLINE-LEADERBOARD & ABSCHLUSS
   // ==========================================
-  // Lädt das Supabase Leaderboard und zeigt es im Sieger-Modal an
   async function renderLeaderboard() {
     const onlineData = await loadLeaderboardFromSupabase();
     if (onlineData && onlineData.length > 0) {
@@ -742,7 +773,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Wird aufgerufen, wenn alle 10 Level geschafft sind
   async function showAvatarModal() {
     gameState = 'DRAW_AVATAR';
     state.scoreSaved = false;
@@ -755,22 +785,18 @@ document.addEventListener('DOMContentLoaded', () => {
     await renderLeaderboard();
   }
 
-  // Score speichern Button Event
   saveScoreBtn.addEventListener('click', async () => {
     if (state.scoreSaved) return;
     const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
     
-    // In Supabase Cloud speichern
     await saveScoreToSupabase(playerName, state.finalMs);
 
-    // Aktualisiere das Menü
     state.scoreSaved = true;
     finalTimeLabel.textContent = 'Gespeichert: ' + formatTime(state.finalMs);
     savedMessage.style.display = 'block';
     saveScoreBtn.style.display = 'none';
     restartBtn.style.display = '';
     
-    // Globale Liste direkt neu abrufen
     await renderLeaderboard();
   });
 
@@ -783,7 +809,6 @@ document.addEventListener('DOMContentLoaded', () => {
   startBtn.addEventListener('click', startGame);
   addEventListener('resize', () => { resize(); render(); });
   
-  // Spiel initialisieren
   resize(); render(); updateHud(); requestAnimationFrame(loop);
 });
 </script>
