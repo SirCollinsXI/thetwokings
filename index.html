@@ -881,12 +881,15 @@ function drawBackground() {
     await renderLeaderboard();
   }
 
-  saveScoreBtn.addEventListener('click', async () => {
-    if (state.scoreSaved) return;
-    const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
+saveScoreBtn.addEventListener('click', async () => {
+  if (state.scoreSaved) return;
+  
+  saveScoreBtn.disabled = true; // Klicks während des Ladens blockieren
 
-    const avatarDataUrl = drawCanvas.toDataURL('image/png');
-    
+  const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
+  const avatarDataUrl = drawCanvas.toDataURL('image/png');
+
+  try {
     await saveScoreToSupabase(playerName, state.finalMs, avatarDataUrl);
 
     state.scoreSaved = true;
@@ -894,9 +897,14 @@ function drawBackground() {
     savedMessage.style.display = 'block';
     saveScoreBtn.style.display = 'none';
     restartBtn.style.display = '';
-    
+
     await renderLeaderboard();
-  });
+  } catch (error) {
+    console.error('Fehler beim Speichern:', error);
+    saveScoreBtn.disabled = false;
+    // Optional: Fehler-Hinweis für den Spieler anzeigen
+  }
+});
 
   restartBtn.addEventListener('click', () => {
     avatarModal.style.display = 'none';
