@@ -882,24 +882,28 @@ function drawBackground() {
   }
 
 saveScoreBtn.addEventListener('click', async () => {
-  if (state.scoreSaved) return;
-  
-  saveScoreBtn.disabled = true; // Klicks während des Ladens blockieren
+    if (state.scoreSaved) return;
+    
+    // 1. Namen auslesen
+    const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
+    
+    // 2. NEU: Kommentar auslesen
+    const commentText = document.getElementById('commentInput').value.trim();
 
-  const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
-  const avatarDataUrl = drawCanvas.toDataURL('image/png');
-
-  try {
-    await saveScoreToSupabase(playerName, state.finalMs, avatarDataUrl);
+    // 3. Bild generieren
+    const avatarDataUrl = drawCanvas.toDataURL('image/png');
+    
+    // 4. WICHTIG: commentText als vierten Parameter an Supabase übergeben!
+    await saveScoreToSupabase(playerName, state.finalMs, avatarDataUrl, commentText);
 
     state.scoreSaved = true;
     finalTimeLabel.textContent = 'Gespeichert: ' + formatTime(state.finalMs);
     savedMessage.style.display = 'block';
     saveScoreBtn.style.display = 'none';
     restartBtn.style.display = '';
-
+    
     await renderLeaderboard();
-  } catch (error) {
+  }); catch (error) {
     console.error('Fehler beim Speichern:', error);
     saveScoreBtn.disabled = false;
     // Optional: Fehler-Hinweis für den Spieler anzeigen
