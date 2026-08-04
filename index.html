@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .from('leaderboard')
       .select('name, score, avatarDataUrl, comment')
       .order('score', { ascending: true })
-      .limit(10);
+      .limit(100000);
     if (error) {
       console.error('Fehler beim Laden des Leaderboards:', error);
       return [];
