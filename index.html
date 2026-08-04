@@ -9,7 +9,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   
   <style>
-    /* CSS Variablen und Basis-Styling */
+    /* ==========================================
+       1. CSS VARIABLEN & BASIS-STYLING
+       ========================================== */
     :root {
       --ui: rgba(18,12,8,.92);
       --border: rgba(255,255,255,.14);
@@ -24,9 +26,14 @@
     }
     
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #140c07; font-family: Arial, sans-serif; color: var(--text); }
+    html, body { 
+      margin: 0; width: 100%; height: 100%; overflow: hidden; 
+      background: #140c07; font-family: Arial, sans-serif; color: var(--text); 
+    }
     
-    /* UI Container & Panels */
+    /* ==========================================
+       2. UI CONTAINER & PANELS
+       ========================================== */
     #gameCanvas { position: fixed; inset: 0; display: block; width: 100%; height: 100%; touch-action: none; }
     .panel { position: absolute; z-index: 10; background: var(--ui); border: 1px solid var(--border); border-radius: 10px; }
     
@@ -49,7 +56,9 @@
     
     #ammoWrap { display: none; margin-top: 4px; padding-top: 4px; border-top: 1px solid rgba(255,255,255,.08); }
     
-    /* Modals & Overlays */
+    /* ==========================================
+       3. MODALS & OVERLAYS
+       ========================================== */
     #startOverlay, #avatarModal { position: fixed; inset: 0; z-index: 30; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(8,5,3,.9); }
     #avatarModal { display: none; }
     
@@ -65,19 +74,33 @@
     button { border: 0; border-radius: 8px; padding: 10px 16px; color: #1b1208; background: linear-gradient(#f6ff67, #d8ea53); font-size: 14px; font-weight: 800; cursor: pointer; touch-action: manipulation; }
     button.secondary { color: #fff; background: #3a2a20; border: 1px solid rgba(255,255,255,.1); }
     
-    /* Avatar & Leaderboard */
+    /* ==========================================
+       4. AVATAR & LEADERBOARD STYLING
+       ========================================== */
     #drawCanvas { display: block; width: 150px; height: 150px; margin: 0 auto 10px; background: #fff; border: 2px solid rgba(255,255,255,.2); border-radius: 10px; touch-action: none; }
     #leaderboard { display: grid; gap: 5px; max-height: 180px; margin-top: 8px; overflow-y: auto; }
     .entry { display: grid; grid-template-columns: 26px 1fr auto; gap: 8px; align-items: center; padding: 4px 6px; border-radius: 6px; background: rgba(255,255,255,.04); font-size: 11px; }
     .rank { color: #ffe59f; text-align: center; font-weight: 900; }
     .meta { color: #d8c6a8; font-size: 10px; }
     #savedMessage { display: none; color: #f6ff67; font-size: 12px; font-weight: 800; }
+    
+    /* Eingabefelder */
+    .input-field {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,.2);
+      background: #2a1b12;
+      color: #fff;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
   <canvas id="gameCanvas"></canvas>
   
-  <!-- HUD Links: Level & Treffer -->
+  <!-- HUD Links: Level, Treffer & Pfeile -->
   <div id="hudLeft" class="panel">
     <div id="levelText" class="value">Level 1 / 10</div>
     <div class="label">Treffer</div>
@@ -127,9 +150,9 @@
       <p>Zeichne deinen Avatar und speichere deinen Lauf.</p>
       <canvas id="drawCanvas" width="256" height="256"></canvas>
       
-      <!-- Eingabefeld für den Spielernamen -->
-      <input type="text" id="playerNameInput" placeholder="Dein Name (max. 15 Zeichen)" maxlength="15" style="width:100%;padding:8px 10px;margin-bottom:10px;border-radius:6px;border:1px solid rgba(255,255,255,.2);background:#2a1b12;color:#fff;font-size:14px;">
-      <input type="text" id="commentInput" placeholder="Möchtest du der Welt etwas sagen?" maxlength="120" style="width:100%;padding:8px 10px;margin-bottom:10px;border-radius:6px;border:1px solid rgba(255,255,255,.2);background:#2a1b12;color:#fff;font-size:14px;">
+      <!-- Eingabefelder -->
+      <input type="text" id="playerNameInput" class="input-field" placeholder="Dein Name (max. 15 Zeichen)" maxlength="15">
+      <input type="text" id="commentInput" class="input-field" placeholder="Möchtest du der Welt etwas sagen?" maxlength="120">
       
       <div class="row">
         <button id="clearDraw" class="secondary">Leeren</button>
@@ -159,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .insert([{ name: playerName, score: finalScore, avatarDataUrl, comment }]);
     if (error) {
       console.error('Fehler beim Speichern des Scores:', error);
+      throw error; // Fehler weiterwerfen, damit der Try-Catch-Block ihn fängt
     }
   }
 
@@ -410,7 +434,6 @@ document.addEventListener('DOMContentLoaded', () => {
       angle: a, heading: a, angularVelocity: 0,
       active: true, stuck: false, dead: false, stuckAngle: a, offsetX: 0, offsetY: 0
     });
-
   }
 
   function addFirework(x, y) {
@@ -550,16 +573,10 @@ document.addEventListener('DOMContentLoaded', () => {
     ctx.globalAlpha = 0.06 + lvl * 0.01;
     ctx.lineCap = 'round';
 
-    const count = (lvl >= 7) ? 18 + lvl * 5 : 10 + lvl * 3;
+    // Reduzierte Anzahl für bessere Performance
+    const count = (lvl >= 7) ? 14 + lvl * 3 : 10 + lvl * 3;
     const baseY = 260;
     const topY = 60;
-
-    if (lvl >= 7) {
-      ctx.shadowBlur = 10;
-      ctx.shadowColor = state.windLevel >= 0
-        ? 'rgba(246,255,103,0.45)'
-        : 'rgba(116,185,255,0.45)';
-    }
 
     for (let i = 0; i < count; i++) {
       const seed = i * 137.3 + lvl * 19.7;
@@ -594,7 +611,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ctx.restore();
   }
 
-  
   function drawGroundDust() {
     const lvl = Math.abs(state.windLevel);
     if (lvl < 4) return;
@@ -631,17 +647,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ctx.restore();
   }
-function drawBackground() {
+
+  function drawBackground() {
     const sky = ctx.createLinearGradient(0, 0, 0, world.groundY);
     sky.addColorStop(0, gameState === 'CELEBRATE' ? '#0b0614' : '#2c160b');
     sky.addColorStop(0.5, gameState === 'CELEBRATE' ? '#1f0d2e' : '#bd5322');
     sky.addColorStop(1, '#f3b177');
     ctx.fillStyle = sky; ctx.fillRect(0, 0, VIRTUAL_W, world.groundY);
     
-    // Windfeld + Bodensand direkt nach dem Himmel und vor den Hügeln zeichnen
+    // Windfeld + Bodensand
     drawWindField();
     drawGroundDust();
 
+    // Hintergrund-Hügel
     ctx.fillStyle = '#a65428';
     ctx.beginPath(); ctx.moveTo(0, world.groundY);
     for (let x = 0; x <= VIRTUAL_W; x += 40) ctx.lineTo(x, world.groundY - 40 + Math.sin(x * 0.005) * 20);
@@ -874,41 +892,45 @@ function drawBackground() {
     state.scoreSaved = false;
     finalTimeLabel.textContent = 'Finale Zeit: ' + formatTime(state.finalMs);
     savedMessage.style.display = 'none';
+    
+    // UI-Elemente zurücksetzen
     saveScoreBtn.style.display = '';
+    saveScoreBtn.disabled = false;
     restartBtn.style.display = 'none';
     avatarModal.style.display = 'flex';
     
     await renderLeaderboard();
   }
 
-saveScoreBtn.addEventListener('click', async () => {
+  saveScoreBtn.addEventListener('click', async () => {
     if (state.scoreSaved) return;
     
-    // 1. Namen auslesen
-    const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
+    // Button während des Ladevorgangs deaktivieren, um Doppel-Klicks zu verhindern
+    saveScoreBtn.disabled = true;
     
-    // 2. NEU: Kommentar auslesen
+    const playerName = document.getElementById('playerNameInput').value.trim() || 'Anonym';
     const commentText = document.getElementById('commentInput').value.trim();
-
-    // 3. Bild generieren
     const avatarDataUrl = drawCanvas.toDataURL('image/png');
     
-    // 4. WICHTIG: commentText als vierten Parameter an Supabase übergeben!
-    await saveScoreToSupabase(playerName, state.finalMs, avatarDataUrl, commentText);
+    try {
+      // Speichern in Supabase
+      await saveScoreToSupabase(playerName, state.finalMs, avatarDataUrl, commentText);
 
-    state.scoreSaved = true;
-    finalTimeLabel.textContent = 'Gespeichert: ' + formatTime(state.finalMs);
-    savedMessage.style.display = 'block';
-    saveScoreBtn.style.display = 'none';
-    restartBtn.style.display = '';
-    
-    await renderLeaderboard();
-  }); catch (error) {
-    console.error('Fehler beim Speichern:', error);
-    saveScoreBtn.disabled = false;
-    // Optional: Fehler-Hinweis für den Spieler anzeigen
-  }
-});
+      // UI nach erfolgreichem Speichern anpassen
+      state.scoreSaved = true;
+      finalTimeLabel.textContent = 'Gespeichert: ' + formatTime(state.finalMs);
+      savedMessage.style.display = 'block';
+      saveScoreBtn.style.display = 'none';
+      restartBtn.style.display = '';
+      
+      // Bestenliste neu laden
+      await renderLeaderboard();
+      
+    } catch (error) {
+      console.error('Fehler im Speicher-Prozess:', error);
+      saveScoreBtn.disabled = false;
+    }
+  });
 
   restartBtn.addEventListener('click', () => {
     avatarModal.style.display = 'none';
@@ -919,6 +941,7 @@ saveScoreBtn.addEventListener('click', async () => {
   startBtn.addEventListener('click', startGame);
   addEventListener('resize', () => { resize(); render(); });
   
+  // Spiel initialisieren
   resize(); render(); updateHud(); requestAnimationFrame(loop);
 });
 </script>
