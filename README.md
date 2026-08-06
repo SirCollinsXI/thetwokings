@@ -1,4 +1,4 @@
-# The Two Kings – Multi-Page Game Hub v1.3
+# The Two Kings – Multi-Page Game Hub v1.3.1
 
 ## Seiten
 - `/` Game Hub
@@ -29,3 +29,9 @@
 - Supabase DPA, Projektregion und Aufbewahrung prüfen.
 - Browser-Netzwerk prüfen: erwartet werden nur eigene Domain und Supabase.
 - Impressum, Datenschutz, Einwilligungscheckbox und Löschkontakt testen.
+
+## v1.3.1 Mobile Fix
+- T.-rex-Startdialog im Querformat scrollbar.
+- Kompakte Darstellung bei geringer Displayhöhe.
+- Startbuttons bleiben beim Scrollen erreichbar.
+- Safari-Dynamic-Viewport und Safe Areas berücksichtigt.
