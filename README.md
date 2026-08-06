@@ -1,4 +1,4 @@
-# The Two Kings – Multi-Page Game Hub v1.3.1
+# The Two Kings – Multi-Page Game Hub v1.3.2
 
 ## Seiten
 - `/` Game Hub
@@ -35,3 +35,10 @@
 - Kompakte Darstellung bei geringer Displayhöhe.
 - Startbuttons bleiben beim Scrollen erreichbar.
 - Safari-Dynamic-Viewport und Safe Areas berücksichtigt.
+
+## v1.3.2 Datenschutz und Optik
+- Rechtliche Seiten mit breiterem, mobil optimiertem Layout.
+- T.-rex-Einstellungen und lokaler Score-Fallback vollständig auf `sessionStorage` umgestellt.
+- Kein `localStorage` mehr im Anwendungscode.
+- Cloudflare-, Supabase-, Speicher- und Löschhinweise präzisiert.
+- Nutzungsregeln um Avatar-Nutzungsrechte ergänzt.
