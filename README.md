@@ -1,4 +1,4 @@
-# The Two Kings – Multi-Page Game Hub v1.3.2
+# The Two Kings – Multi-Page Game Hub v1.3.3
 
 ## Seiten
 - `/` Game Hub
@@ -42,3 +42,9 @@
 - Kein `localStorage` mehr im Anwendungscode.
 - Cloudflare-, Supabase-, Speicher- und Löschhinweise präzisiert.
 - Nutzungsregeln um Avatar-Nutzungsrechte ergänzt.
+
+## v1.3.3 Mobile Gameplay Fixes
+- T.-rex-Drehhinweis erscheint nur während aktivem Spiel im Hochformat.
+- Abschlussdialog und Bestenliste dürfen wieder im Hochformat bedient werden.
+- T.-rex-Statusanzeige aus der Netzklickzone verschoben und für Touch-Eingaben durchlässig gemacht.
+- Bogen-Vorschau simuliert steile Flugbahnen auch oberhalb des sichtbaren Canvas bis zur Rückkehr beziehungsweise Landung.
