@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="dark" name="color-scheme"/>
+<title>The Two Kings – Game Hub</title>
+<style>
+:root{--bg:#090504;--panel:#1b1009;--line:#6f4728;--lime:#f6ff67;--cream:#fff2d1;--muted:#d8c6a8;--green:#55ef9f;--blue:#74b9ff}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:20px;background:radial-gradient(circle at 50% 15%,#321b0f,var(--bg) 65%);color:#fff;font-family:Arial,sans-serif}.hub{width:min(96vw,980px);margin:auto;padding:clamp(20px,4vw,40px);background:rgba(27,16,9,.96);border:2px solid var(--line);border-radius:22px;box-shadow:0 28px 80px #000b}header{text-align:center}h1{margin:0 0 8px;color:var(--cream);font:clamp(30px,6vw,52px) Georgia,serif}.subtitle{margin:0;color:var(--muted)}.progress-wrap{margin:24px auto 6px;max-width:620px}.progress-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:8px;color:var(--cream);font-weight:800}.progress{height:12px;overflow:hidden;border:1px solid #ffffff26;border-radius:999px;background:#0d0805}.progress>span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#d8ea53,var(--lime));transition:width .35s ease}.campaign{min-height:20px;margin:10px 0 0;color:var(--lime);font-weight:800}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:24px}.game{position:relative;display:block;min-height:245px;padding:22px 18px;border:2px solid #5b341b;border-radius:15px;background:linear-gradient(145deg,#342017,#21130d);color:#fff;text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}.game:hover,.game:focus-visible{transform:translateY(-5px);border-color:var(--lime);box-shadow:0 12px 30px #0008;outline:none}.game.started{border-color:var(--blue)}.game.completed{border-color:var(--green);background:linear-gradient(145deg,#183b2a,#21130d)}.game.last{box-shadow:0 0 0 3px #f6ff6730,0 12px 30px #0008}.badge{position:absolute;right:12px;top:12px;padding:5px 8px;border-radius:999px;background:#140c08;color:var(--muted);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.started .badge{color:var(--blue)}.completed .badge{color:var(--green)}.icon{font-size:52px}.game h2{margin:10px 0 6px;color:var(--lime);font:700 23px Georgia,serif}.game p{margin:0;color:#ead9ba;line-height:1.45}.game-meta{display:grid;gap:5px;margin-top:16px;padding-top:13px;border-top:1px solid #ffffff18;color:var(--muted);font-size:12px}.game-meta strong{color:#fff}.last-note{color:var(--lime)}.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}button{padding:10px 15px;border:1px solid #ffffff1f;border-radius:9px;background:#39261a;color:#fff;font-weight:800;cursor:pointer}button:hover,button:focus-visible{border-color:var(--lime);outline:none}.foot{text-align:center;margin:21px 0 0;color:#9f8e74;font-size:12px}@media(max-width:560px){.hub{padding:20px 15px}.game{min-height:225px}.progress-head{font-size:13px}}
+.legal-nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px;color:#9f8e74;font-size:12px}.legal-nav a{color:#d8c6a8;text-decoration:none}.legal-nav a:hover,.legal-nav a:focus-visible{color:#f6ff67;text-decoration:underline}</style>
+</head>
+<body>
+<main class="hub">
+<header><h1>The Two Kings</h1><p class="subtitle">Wähle ein Abenteuer aus. Dein Fortschritt wird für den aktuellen Browser-Tab gespeichert.</p></header>
+<section aria-label="Session-Fortschritt" class="progress-wrap"><div class="progress-head"><span>Session-Fortschritt</span><span id="progressText">0 / 2 abgeschlossen</span></div><div class="progress"><span id="progressFill"></span></div><p aria-live="polite" class="campaign" id="campaignMessage" role="status"></p></section>
+<nav aria-label="Spieleauswahl" class="grid">
+<a class="game" data-game="bogen" href="bogen.html" id="card-bogen"><span class="badge" id="badge-bogen">Noch nicht gespielt</span><div aria-hidden="true" class="icon">🏹</div><h2>Wüsten-Bogen</h2><p>Präzisionsschießen im Wüstensand mit Wind und Böen.</p><div class="game-meta"><span>Status: <strong id="status-bogen">Noch nicht gespielt</strong></span><span id="time-bogen">Session-Bestzeit: –</span><span id="last-bogen"></span></div></a>
+<a class="game" data-game="trex" href="trex.html" id="card-trex"><span class="badge" id="badge-trex">Noch nicht gespielt</span><div aria-hidden="true" class="icon">🦖</div><h2>T. rex Piratenjagd</h2><p>Fange den ausgebrochenen T. rex unter Deck.</p><div class="game-meta"><span>Status: <strong id="status-trex">Noch nicht gespielt</strong></span><span id="time-trex">Session-Bestzeit: –</span><span id="last-trex"></span></div></a>
+</nav>
+<div class="actions"><button id="resetSession" type="button">Session-Fortschritt zurücksetzen</button></div><footer aria-label="Rechtliche Informationen" class="legal-nav"><a href="impressum.html">Impressum</a><span aria-hidden="true">·</span><a href="datenschutz.html">Datenschutz</a><span aria-hidden="true">·</span><a href="nutzungsregeln.html">Bestenlisten-Regeln</a></footer><p class="foot">thetwokings.de · Game Hub</p>
+</main>
+<script>
+'use strict';
+(()=>{
+const KEY='ttk_session_progress_v1',GAMES=['bogen','trex'];
+const $=id=>document.getElementById(id);
+function empty(){return{games:{bogen:{status:'not_started',bestTimeMs:null,lastPlayedAt:null},trex:{status:'not_started',bestTimeMs:null,lastPlayedAt:null}},lastGame:null}}
+function load(){try{const value=JSON.parse(sessionStorage.getItem(KEY)||'null');if(!value||!value.games)return empty();return value}catch{return empty()}}
+function format(ms){if(!Number.isFinite(ms))return'–';const m=Math.floor(ms/60000),s=Math.floor(ms%60000/1000),c=Math.floor(ms%1000/10);return String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')+','+String(c).padStart(2,'0')}
+function render(){const data=load();let completed=0;for(const game of GAMES){const info=data.games[game]||empty().games[game],card=$('card-'+game),status=$('status-'+game),badge=$('badge-'+game),time=$('time-'+game),last=$('last-'+game);card.classList.remove('started','completed','last');let label='Noch nicht gespielt';if(info.status==='started'){label='In dieser Session gestartet';card.classList.add('started')}if(info.status==='completed'){label='Abgeschlossen';card.classList.add('completed');completed++}if(data.lastGame===game){card.classList.add('last');last.textContent='Zuletzt gespielt';last.className='last-note'}else{last.textContent='';last.className=''}status.textContent=label;badge.textContent=label;time.textContent='Session-Bestzeit: '+format(info.bestTimeMs)}$('progressText').textContent=completed+' / 2 abgeschlossen';$('progressFill').style.width=(completed/2*100)+'%';$('campaignMessage').textContent=completed===2?'🏆 Session-Kampagne abgeschlossen!':completed===1?'Ein Abenteuer geschafft. Eines wartet noch.':'Starte dein erstes Abenteuer.'}
+for(const game of GAMES)$('card-'+game).addEventListener('click',()=>{const data=load();data.lastGame=game;sessionStorage.setItem(KEY,JSON.stringify(data))});
+$('resetSession').addEventListener('click',()=>{sessionStorage.removeItem(KEY);render()});
+addEventListener('pageshow',render);addEventListener('storage',render);render();
+})();
+</script>
+</body></html>

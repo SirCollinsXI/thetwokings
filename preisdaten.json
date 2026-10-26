@@ -1,0 +1,2696 @@
+{
+  "asOf": "2026-10-19",
+  "panels": [
+    {
+      "id": "ddr5",
+      "title": "DDR5 · 32 GB, mindestens 6000 MT/s",
+      "subtitle": "2 × 16 GB · Deutschland · Juli 2025 bis Oktober 2026",
+      "mode": "eur",
+      "wide": true,
+      "series": [
+        {
+          "id": "ddr5",
+          "label": "DDR5 32 GB (2 × 16 GB)",
+          "color": 3,
+          "points": [
+            {
+              "date": "2025-07-12",
+              "dateEnd": "2025-07-13",
+              "price": 75,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-maerz-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2025-08-16",
+              "dateEnd": "2025-08-17",
+              "price": 88,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-maerz-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2025-09-13",
+              "dateEnd": "2025-09-14",
+              "price": 88,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-maerz-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2025-10-18",
+              "dateEnd": "2025-10-19",
+              "price": 95,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-maerz-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2025-11-15",
+              "dateEnd": "2025-11-16",
+              "price": 135,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-maerz-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2025-12-14",
+              "dateEnd": "",
+              "price": 301,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-01-18",
+              "dateEnd": "",
+              "price": 395,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-02-15",
+              "dateEnd": "",
+              "price": 379,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-03-15",
+              "dateEnd": "",
+              "price": 362,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-04-18",
+              "dateEnd": "",
+              "price": 352,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-05-17",
+              "dateEnd": "",
+              "price": 363,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-06-14",
+              "dateEnd": "",
+              "price": 367,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-07-18",
+              "dateEnd": "",
+              "price": 393,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-08-16",
+              "dateEnd": "",
+              "price": 393,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-09-13",
+              "dateEnd": "",
+              "price": 430,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            },
+            {
+              "date": "2026-10-17",
+              "dateEnd": "",
+              "price": 447,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-oktober-2026",
+              "note": "Günstigstes lieferbares Angebot der Kategorie; beliebiger Hersteller."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nvidia",
+      "title": "NVIDIA GeForce RTX 50",
+      "subtitle": "Preisstichproben ab dem ersten belegten Händlerpreis · Einführungsjahr 2025",
+      "gpu": true,
+      "series": [
+        {
+          "id": "rtx-5090",
+          "label": "RTX 5090",
+          "uvp": 2329,
+          "release": "2025-01-30",
+          "color": 1,
+          "points": [
+            {
+              "date": "2025-02-23",
+              "price": 3800,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Ungefährer Händlerpreis.",
+              "approx": true,
+              "early": true
+            },
+            {
+              "date": "2025-03-14",
+              "price": 3419,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-04-18",
+              "price": 2799,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-05-15",
+              "price": 2649,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-06-18",
+              "price": 2399,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-07-13",
+              "price": 2289,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-08-17",
+              "price": 2345,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-09-14",
+              "price": 2319,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-10-19",
+              "price": 2449,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-11-16",
+              "price": 2628,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-12-14",
+              "price": 2689,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-01-18",
+              "price": 3079,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-02-15",
+              "price": 3280,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-03-15",
+              "price": 3365,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-04-18",
+              "price": 3539,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-05-17",
+              "price": 3550,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-06-14",
+              "price": 3999,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-07-18",
+              "price": 3973,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-08-16",
+              "price": 4549,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-09-13",
+              "price": 5249,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-10-17",
+              "price": 6790,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-oktober-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            }
+          ]
+        },
+        {
+          "id": "rtx-5080",
+          "label": "RTX 5080",
+          "uvp": 1169,
+          "release": "2025-01-30",
+          "color": 2,
+          "points": [
+            {
+              "date": "2025-02-23",
+              "price": 1600,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Ungefährer Händlerpreis.",
+              "approx": true,
+              "early": true
+            },
+            {
+              "date": "2025-03-14",
+              "price": 1449,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-04-18",
+              "price": 1186,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-05-15",
+              "price": 1104,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-06-18",
+              "price": 1049,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-07-13",
+              "price": 1096,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-08-17",
+              "price": 1029,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-09-14",
+              "price": 1027,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-10-19",
+              "price": 1019,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-11-16",
+              "price": 1019,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-12-14",
+              "price": 1009,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-01-18",
+              "price": 1238,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-02-15",
+              "price": 1259,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-03-15",
+              "price": 1219,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-04-18",
+              "price": 1189,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-05-17",
+              "price": 1148,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-06-14",
+              "price": 1169,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-07-18",
+              "price": 1179,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-08-16",
+              "price": 1299,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-09-13",
+              "price": 1389,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-10-17",
+              "price": 1579,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-oktober-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            }
+          ]
+        },
+        {
+          "id": "rtx-5070",
+          "label": "RTX 5070",
+          "uvp": 649,
+          "release": "2025-03-05",
+          "color": 3,
+          "points": [
+            {
+              "date": "2025-03-06",
+              "price": 809,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-03-14",
+              "price": 699,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-04-18",
+              "price": 599,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-05-15",
+              "price": 565,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-06-18",
+              "price": 559,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-07-13",
+              "price": 549,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-08-17",
+              "price": 531,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-09-14",
+              "price": 529,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-10-19",
+              "price": 530,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-11-16",
+              "price": 529,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-12-14",
+              "price": 526,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-01-18",
+              "price": 574,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-02-15",
+              "price": 619,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-03-15",
+              "price": 589,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-04-18",
+              "price": 579,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-05-17",
+              "price": 549,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-06-14",
+              "price": 569,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-07-18",
+              "price": 568,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-08-16",
+              "price": 701,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-09-13",
+              "price": 730,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-10-17",
+              "price": 834,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-oktober-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amd",
+      "title": "AMD Radeon RX 9000",
+      "subtitle": "Preisstichproben ab dem ersten belegten Händlerpreis · Einführungsjahr 2025",
+      "gpu": true,
+      "series": [
+        {
+          "id": "rx-9070-xt",
+          "label": "RX 9070 XT",
+          "uvp": 689,
+          "release": "2025-03-06",
+          "color": 4,
+          "points": [
+            {
+              "date": "2025-03-06",
+              "price": 919,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-03-14",
+              "price": 826,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-04-18",
+              "price": 749,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-05-15",
+              "price": 739,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-06-18",
+              "price": 709,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-07-13",
+              "price": 659,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-08-17",
+              "price": 659,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-09-14",
+              "price": 639,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-10-19",
+              "price": 619,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-11-16",
+              "price": 609,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-12-14",
+              "price": 593,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-01-18",
+              "price": 671,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-02-15",
+              "price": 688,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-03-15",
+              "price": 655,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-04-18",
+              "price": 649,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-05-17",
+              "price": 619,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-06-14",
+              "price": 639,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-07-18",
+              "price": 648,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-08-16",
+              "price": 709,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-09-13",
+              "price": 750,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-10-17",
+              "price": 835,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-oktober-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            }
+          ]
+        },
+        {
+          "id": "rx-9070",
+          "label": "RX 9070",
+          "uvp": 629,
+          "release": "2025-03-06",
+          "color": 5,
+          "points": [
+            {
+              "date": "2025-03-06",
+              "price": 729,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-03-14",
+              "price": 699,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-04-18",
+              "price": 649,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-05-15",
+              "price": 648,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-06-18",
+              "price": 599,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-2-juli-2025",
+              "note": "Unteres Ende lieferbarer Angebote.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-07-13",
+              "price": 620,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-08-17",
+              "price": 589,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-09-14",
+              "price": 549,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-10-19",
+              "price": 541,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-11-16",
+              "price": 539,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-12-14",
+              "price": 529,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-01-18",
+              "price": 599,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-02-15",
+              "price": 613,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-03-15",
+              "price": 594,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-04-18",
+              "price": 566,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-05-17",
+              "price": 546,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-06-14",
+              "price": 559,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-07-18",
+              "price": 576,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-08-16",
+              "price": 608,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-09-13",
+              "price": 635,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-10-17",
+              "price": 709,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-oktober-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            }
+          ]
+        },
+        {
+          "id": "rx-9060-xt-16-gb",
+          "label": "RX 9060 XT 16 GB",
+          "uvp": 369,
+          "release": "2025-06-05",
+          "color": 6,
+          "points": [
+            {
+              "date": "2025-06-05",
+              "price": 369,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-5-juni-2025",
+              "note": "Zum Verkaufsstart waren lieferbare Angebote zur UVP belegt.",
+              "approx": false,
+              "early": true
+            },
+            {
+              "date": "2025-07-13",
+              "price": 359,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-08-17",
+              "price": 349,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-09-14",
+              "price": 329,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-10-19",
+              "price": 349,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-11-16",
+              "price": 339,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot. Das Datum bezeichnet das Erhebungswochenende, nicht einen tagesgenauen Einzelpreis.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2025-12-14",
+              "price": 349,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/news/news-des-12-januar-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-01-18",
+              "price": 389,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-02-15",
+              "price": 438,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-03-15",
+              "price": 399,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-04-18",
+              "price": 389,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-05-17",
+              "price": 389,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-06-14",
+              "price": 399,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-07-18",
+              "price": 400,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-08-16",
+              "price": 447,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-09-13",
+              "price": 484,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-september-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            },
+            {
+              "date": "2026-10-17",
+              "price": 550,
+              "unit": "EUR",
+              "source": "https://www.3dcenter.org/artikel/speicherkrise-preisindex-oktober-2026",
+              "note": "Günstigstes lieferbares deutsches Händlerangebot.",
+              "approx": false,
+              "early": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "title": "DDR4-RAM und NVMe-SSDs · fünf Jahre",
+      "subtitle": "Günstige beobachtete US-Angebote je GB · Oktober 2021 bis September 2026",
+      "mode": "index",
+      "wide": true,
+      "series": [
+        {
+          "id": "ddr4-ram",
+          "label": "DDR4-RAM",
+          "color": 2,
+          "points": [
+            {
+              "date": "2021-10-02",
+              "price": 3.0,
+              "value": 100.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "1x 16GB DIMM DDR4-2400 @ $48.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2021-12-03",
+              "price": 2.6,
+              "value": 86.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB DIMM DDR4-2666 @ $84.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-01-01",
+              "price": 2.8,
+              "value": 93.33333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB DIMM DDR4-2666 @ $92.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-01-30",
+              "price": 2.9,
+              "value": 96.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB DIMM DDR4-2666 @ $93.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-03-04",
+              "price": 3.1,
+              "value": 103.33333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB DIMM DDR4-3200 @ $99.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-04-02",
+              "price": 3.1,
+              "value": 103.33333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "1x 16GB DIMM DDR4-2400 @ $49.99 + $0.99 shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-05-01",
+              "price": 2.7,
+              "value": 90.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "1x 32GB SO-DIMM DDR4-3200 @ $87.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-06-03",
+              "price": 2.6,
+              "value": 86.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB SO-DIMM DDR4-3200 @ $84.97 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-08-01",
+              "price": 2.3,
+              "value": 76.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "1x 32GB SO-DIMM DDR4-3200 @ $74.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-09-03",
+              "price": 2.2,
+              "value": 73.33333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "1x 32GB SO-DIMM DDR4-2666 @ $72.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-10-02",
+              "price": 2.2,
+              "value": 73.33333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB SO-DIMM DDR4-2666 @ $72.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-10-31",
+              "price": 2.1,
+              "value": 70.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "1x 32GB SO-DIMM DDR4-2666 @ $69.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-12-03",
+              "price": 2.1,
+              "value": 70.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB DIMM DDR4-2400 @ $68.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-01-01",
+              "price": 2.0,
+              "value": 66.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "1x 32GB SO-DIMM DDR4-2666 @ $61.99 + $1.99 shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-01-30",
+              "price": 1.8,
+              "value": 60.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB SO-DIMM DDR4-3200 @ $114.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-03-04",
+              "price": 1.8,
+              "value": 60.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB SO-DIMM DDR4-3200 @ $114.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-05-01",
+              "price": 1.5,
+              "value": 50.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB SO-DIMM DDR4-3200 @ $97.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-06-03",
+              "price": 1.43,
+              "value": 47.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB DIMM DDR4-2666 @ $93.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-07-02",
+              "price": 1.4,
+              "value": 46.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB SO-DIMM DDR4-3200 @ $45.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-09-03",
+              "price": 1.42,
+              "value": 47.33333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB DIMM DDR4-3200 @ $92.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-10-02",
+              "price": 1.37,
+              "value": 45.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB SO-DIMM DDR4-3200 @ $89.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-10-31",
+              "price": 1.28,
+              "value": 42.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB SO-DIMM DDR4-2666 @ $41.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-01-01",
+              "price": 1.57,
+              "value": 52.33333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB SO-DIMM DDR4-3200 @ $102.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-01-30",
+              "price": 1.68,
+              "value": 56.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB SO-DIMM DDR4-3200 @ $109.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-03-03",
+              "price": 1.53,
+              "value": 51.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB DIMM DDR4-2666 @ $99.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-04-30",
+              "price": 1.62,
+              "value": 54.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 16GB DIMM DDR4-3200 @ $52.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-07-01",
+              "price": 1.53,
+              "value": 51.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Einzelbeobachtung",
+              "product": "2x 32GB DIMM DDR4-3600 @ $99.99 + free shipping",
+              "monthly": false,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-08-01",
+              "price": 0.89797,
+              "value": 29.93233,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "FURY Beast 64GB, 4 X 16GGB DDR4 SDRAM Memory KIT",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": true
+            },
+            {
+              "date": "2024-09-01",
+              "price": 1.625,
+              "value": 54.16667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-10-01",
+              "price": 1.79375,
+              "value": 59.79167,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-11-01",
+              "price": 1.80906,
+              "value": 60.302,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-12-01",
+              "price": 1.83281,
+              "value": 61.09367,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-01-01",
+              "price": 1.88594,
+              "value": 62.86467,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-02-01",
+              "price": 1.85813,
+              "value": 61.93767,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-03-01",
+              "price": 1.7875,
+              "value": 59.58333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-04-01",
+              "price": 1.75344,
+              "value": 58.448,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill 32GB (2 x 16G) Ripjaws Series DDR4 PC4-17000 2133MHz Laptop Memory Model F4-2133C1",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-05-01",
+              "price": 1.74875,
+              "value": 58.29167,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "A-Tech 8GB RAM for Intel NUC7i3DNKTC NUC 7 Business Mini PC | DDR4 2133MHz PC4-17000 1.2V ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-06-01",
+              "price": 1.92375,
+              "value": 64.125,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "A-Tech 8GB RAM for Intel NUC7i3DNKTC NUC 7 Business Mini PC | DDR4 2133MHz PC4-17000 1.2V ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-07-01",
+              "price": 2.75,
+              "value": 91.66667,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.SKILL Trident Z RGB Series DDR4 RAM (XMP) 16GB (2x8GB) 3000MT/s CL16-18-18-38 1.35V Inte",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-08-01",
+              "price": 3.05875,
+              "value": 101.95833,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill Ripjaws V 16GB DDR4 K2 16GVK 4000 (2x8GB) C18",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-09-01",
+              "price": 2.11625,
+              "value": 70.54167,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "A-Tech 8GB RAM for Intel NUC7i3DNKTC NUC 7 Business Mini PC | DDR4 2133MHz PC4-17000 1.2V ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-10-01",
+              "price": 2.44375,
+              "value": 81.45833,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "A-Tech 8GB RAM for Intel NUC7i3DNKTC NUC 7 Business Mini PC | DDR4 2133MHz PC4-17000 1.2V ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-11-01",
+              "price": 3.67375,
+              "value": 122.45833,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "A-Tech 8GB RAM for Intel NUC7i3DNKTC NUC 7 Business Mini PC | DDR4 2133MHz PC4-17000 1.2V ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-12-01",
+              "price": 4.03562,
+              "value": 134.52067,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill Ripjaws V 16GB DDR4 K2 16GVK 4000 (2x8GB) C18",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-01-01",
+              "price": 4.03562,
+              "value": 134.52067,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "G.Skill Ripjaws V 16GB DDR4 K2 16GVK 4000 (2x8GB) C18",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-02-01",
+              "price": 6.2475,
+              "value": 208.25,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "parts-quick 4GB Memory for Lenovo ThinkCentre M910x Tiny DDR4 2400MHz SODIMM Compatible RA",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-03-01",
+              "price": 7.21781,
+              "value": 240.59367,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "parts-quick 32GB Memory for HP ProBook 455 G5, 470 G5 Compatible RAM Upgrade DDR4-2666 SOD",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-04-01",
+              "price": 7.18375,
+              "value": 239.45833,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Mushkin 8GB (4GB x 2) Essentials 260-Pin DDR4 SO-DIMM DDR4 2666MHz Laptop Memory Model MES",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-05-01",
+              "price": 7.2475,
+              "value": 241.58333,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Mushkin 8GB (4GB x 2) Essentials 260-Pin DDR4 SO-DIMM DDR4 2666MHz Laptop Memory Model MES",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-06-01",
+              "price": 5.95812,
+              "value": 198.604,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "A-Tech 16GB RAM Replacement for Fujitsu 38046017 | DDR4 2133MHz PC4-17000 2Rx8 1.2V SODIMM",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-07-01",
+              "price": 7.86562,
+              "value": 262.18733,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "OFFTEK 16GB Replacement Memory RAM Upgrade for ZOTAC ZBOX EN1060K (DDR4-17000) Desktop Mem",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-08-01",
+              "price": 6.25687,
+              "value": 208.56233,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "A-Tech 32GB (2 x 16GB) RAM for Intel NUC7i5BNK NUC Kit | DDR4 2133MHz PC4-17000 1.2V SODIM",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-09-01",
+              "price": 6.55469,
+              "value": 218.48967,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Adamanta 128GB (4x32GB) Compatible for Dell Precision 5760, 7550, 7750, 7760 Laptop DDR4 2",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            }
+          ]
+        },
+        {
+          "id": "nvme-ssd",
+          "label": "NVMe-SSD",
+          "color": 5,
+          "points": [
+            {
+              "date": "2021-10-01",
+              "price": 0.07999,
+              "value": 100.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "msi SPATIUM M370 NVMe M.2 1TB Internal SSD PCIe Gen3 NVMe 1.3 3D NAND 1600 TBW",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2021-11-01",
+              "price": 0.07999,
+              "value": 100.0,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "msi SPATIUM M370 NVMe M.2 1TB Internal SSD PCIe Gen3 NVMe 1.3 3D NAND 1600 TBW",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2021-12-01",
+              "price": 0.08,
+              "value": 100.0125,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P2 2TB 3D NAND NVMe PCIe M.2 SSD Up to 2400MB/s - CT2000P2SSD8",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-01-01",
+              "price": 0.0845,
+              "value": 105.6382,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "msi SPATIUM M370 NVMe M.2 1TB Internal SSD PCIe Gen3 NVMe 1.3 3D NAND 1600 TBW",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-02-01",
+              "price": 0.0905,
+              "value": 113.13914,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "WD_BLACK 2TB SN750 NVMe Internal Gaming SSD Solid State Drive - Gen3 PCIe, M.2 2280, 3D NA",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-03-01",
+              "price": 0.075,
+              "value": 93.76172,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "WD_BLACK 2TB SN750 NVMe Internal Gaming SSD Solid State Drive - Gen3 PCIe, M.2 2280, 3D NA",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-04-01",
+              "price": 0.085,
+              "value": 106.26328,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P2 2TB 3D NAND NVMe PCIe M.2 SSD Up to 2400MB/s - CT2000P2SSD8",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-05-01",
+              "price": 0.08,
+              "value": 100.0125,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P2 2TB 3D NAND NVMe PCIe M.2 SSD Up to 2400MB/s - CT2000P2SSD8",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-06-01",
+              "price": 0.07799,
+              "value": 97.49969,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "XPG Gammix S5 1TB PCIe 3D NAND PCIe Gen3x4 M.2 2280 NVMe 1.3 R/W up to 2100/1500MB/s SSD (",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-07-01",
+              "price": 0.07,
+              "value": 87.51094,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P2 2TB 3D NAND NVMe PCIe M.2 SSD Up to 2400MB/s - CT2000P2SSD8",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-08-01",
+              "price": 0.06999,
+              "value": 87.49844,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "XPG Gammix S5 1TB PCIe 3D NAND PCIe Gen3x4 M.2 2280 NVMe 1.3 R/W up to 2100/1500MB/s SSD (",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-09-01",
+              "price": 0.05699,
+              "value": 71.24641,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-10-01",
+              "price": 0.05599,
+              "value": 69.99625,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-11-01",
+              "price": 0.04999,
+              "value": 62.49531,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2022-12-01",
+              "price": 0.04899,
+              "value": 61.24516,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-01-01",
+              "price": 0.04999,
+              "value": 62.49531,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-02-01",
+              "price": 0.04299,
+              "value": 53.74422,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-03-01",
+              "price": 0.04299,
+              "value": 53.74422,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-04-01",
+              "price": 0.03999,
+              "value": 49.99375,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JP600 1TB Up to 2100 MB/s PCIe NVMe Internal SSD (Solid State Drive)- Gen3x4 M.2 228",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-05-01",
+              "price": 0.03999,
+              "value": 49.99375,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Silicon Power 2TB w/DRAM Cache NVMe M.2 PCIe Gen3x4 2280 SSD R/W up to 3,400/3,000MB/s (SU",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-06-01",
+              "price": 0.03899,
+              "value": 48.74359,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Ediloca EN600 PRO SSD 1TB PCIe 3.0 Gen 3x4, NVMe M.2 2280, Up to 3200MB/s, Internal Solid ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-07-01",
+              "price": 0.03699,
+              "value": 46.24328,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 1TB PCIe Gen4 Speed up to 5,000MB/s, 3D NAND NVMe M.2 SSD with Thermal Pad an",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-08-01",
+              "price": 0.03699,
+              "value": 46.24328,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 1TB PCIe Gen4 Speed up to 5,000MB/s, 3D NAND NVMe M.2 SSD with Thermal Pad an",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-09-01",
+              "price": 0.03299,
+              "value": 41.24266,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Solidigm™ P41 Plus Series 1TB PCIe GEN 4 NVMe 4.0 x4 M.2 2280 3D NAND Internal Solid State",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-10-01",
+              "price": 0.03499,
+              "value": 43.74297,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Solidigm™ P41 Plus Series 1TB PCIe GEN 4 NVMe 4.0 x4 M.2 2280 3D NAND Internal Solid State",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-11-01",
+              "price": 0.03949,
+              "value": 49.36867,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Silicon Power 4TB UD90 NVMe 4.0 Gen4 PCIe M.2 SSD R/W up to 5,000/4,500 MB/s (SP04KGBP44UD",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2023-12-01",
+              "price": 0.04124,
+              "value": 51.55644,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Silicon Power 4TB UD90 NVMe 4.0 Gen4 PCIe M.2 SSD R/W up to 5,000/4,500 MB/s (SP04KGBP44UD",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-01-01",
+              "price": 0.03949,
+              "value": 49.36867,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Silicon Power 4TB UD90 NVMe 4.0 Gen4 PCIe M.2 SSD R/W up to 5,000/4,500 MB/s (SP04KGBP44UD",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-02-01",
+              "price": 0.04125,
+              "value": 51.56895,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P3 PCIe Gen3 NVMe 4TB SSD, Up to 3,500MB/s Read, Laptop & Desktop (PC) Compatible,",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-03-01",
+              "price": 0.0475,
+              "value": 59.38242,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 4TB PCIe Gen4 Speed up to 5,000MB/s 3D NAND NVMe M.2 SSD with Thermal Pad and",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-04-01",
+              "price": 0.04799,
+              "value": 59.995,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Silicon Power 4TB UD90 NVMe 4.0 Gen4 PCIe M.2 SSD R/W up to 5,000/4,500 MB/s (SP04KGBP44UD",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-05-01",
+              "price": 0.04626,
+              "value": 57.83223,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Western Digital 500GB WD Blue SN570 NVMe Internal Solid State Drive SSD - Gen3 x4 PCIe 8Gb",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-06-01",
+              "price": 0.05125,
+              "value": 64.07051,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P3 PCIe Gen3 NVMe 4TB SSD, Up to 3,500MB/s Read, Laptop & Desktop (PC) Compatible,",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-07-01",
+              "price": 0.045,
+              "value": 56.25703,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Ausgeschlossen: als Renewed angeboten",
+              "product": "Dell KP2TG Solid State Drive - 1 TB - M.2 2280 - NVMe - PCIe Gen4 x 4 (Renewed)",
+              "monthly": true,
+              "excluded": true,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-08-01",
+              "price": 0.0475,
+              "value": 59.38242,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 4TB PCIe Gen4 Speed up to 5,000MB/s 3D NAND NVMe M.2 SSD with Thermal Pad and",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-09-01",
+              "price": 0.0356,
+              "value": 44.50556,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "V7 1 TB Solid State Drive - M.2 Internal - PCI Express NVMe (PCI Express 3.0 x4) - TAA Com",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-10-01",
+              "price": 0.0475,
+              "value": 59.38242,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 4TB PCIe Gen4 Speed up to 5,000MB/s 3D NAND NVMe M.2 SSD with Thermal Pad and",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-11-01",
+              "price": 0.0356,
+              "value": 44.50556,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "V7 1 TB Solid State Drive - M.2 Internal - PCI Express NVMe (PCI Express 3.0 x4) - TAA Com",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2024-12-01",
+              "price": 0.04674,
+              "value": 58.4323,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Ediloca 2TB M2 NVME SSD with Heatsink - PCIe Gen4.0 NVMe M.2 2280 3D NAND TLC, 4800MB/s Re",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-01-01",
+              "price": 0.04625,
+              "value": 57.81973,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 4TB PCIe Gen4 Speed up to 5,000MB/s 3D NAND NVMe M.2 SSD with Thermal Pad and",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-02-01",
+              "price": 0.04749,
+              "value": 59.36992,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Colorful 2TB M2 SSD NVMe 2280 Internal Solid State Drive,SLC Cache 3D NAND TLC,Up to 3200M",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-03-01",
+              "price": 0.045,
+              "value": 56.25703,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Colorful 2TB M2 SSD NVMe 2280 Internal Solid State Drive,SLC Cache 3D NAND TLC,Up to 3200M",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-04-01",
+              "price": 0.045,
+              "value": 56.25703,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Colorful 2TB M2 SSD NVMe 2280 Internal Solid State Drive,SLC Cache 3D NAND TLC,Up to 3200M",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-05-01",
+              "price": 0.045,
+              "value": 56.25703,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Colorful 2TB M2 SSD NVMe 2280 Internal Solid State Drive,SLC Cache 3D NAND TLC,Up to 3200M",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-06-01",
+              "price": 0.045,
+              "value": 56.25703,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Colorful 2TB M2 SSD NVMe 2280 Internal Solid State Drive,SLC Cache 3D NAND TLC,Up to 3200M",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-07-01",
+              "price": 0.04462,
+              "value": 55.78197,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Ediloca 4TB SSD NVMe M.2 2280 PCIe Gen4 x4 Internal Solid State Drive - Up to 5000MB/s, 4T",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-08-01",
+              "price": 0.0455,
+              "value": 56.88211,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Ediloca 4TB SSD NVMe M.2 2280 PCIe Gen4 x4 Internal Solid State Drive - Up to 5000MB/s, 4T",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-09-01",
+              "price": 0.04559,
+              "value": 56.99462,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Ediloca 2TB M2 NVME SSD with Heatsink - PCIe Gen4.0 NVMe M.2 2280 3D NAND TLC, 4800MB/s Re",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-10-01",
+              "price": 0.04925,
+              "value": 61.5702,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Corsair MP600 PRO NH 2TB PCIe Gen4 x4 NVMe M.2 SSD – High-Density TLC NAND – M.2 2280 – Di",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-11-01",
+              "price": 0.04925,
+              "value": 61.5702,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Corsair MP600 CORE XT 2TB M.2 PCIe Gen4 NVMe SSD – Up to 5900MB/s – QLC NAND – M.2 2280 – ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2025-12-01",
+              "price": 0.0569,
+              "value": 71.13389,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P3 PCIe Gen3 NVMe 4TB SSD, Up to 3,500MB/s Read, Laptop & Desktop (PC) Compatible,",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-01-01",
+              "price": 0.05,
+              "value": 62.50781,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 4TB PCIe Gen4 Speed up to 5,000MB/s 3D NAND NVMe M.2 SSD with Thermal Pad and",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-02-01",
+              "price": 0.085,
+              "value": 106.26328,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "LEVEN JPS800 4TB PCIe Gen4 Speed up to 5,000MB/s 3D NAND NVMe M.2 SSD with Thermal Pad and",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-03-01",
+              "price": 0.08723,
+              "value": 109.05113,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Corsair MP600 PRO XT 8TB Gen4 PCIe x4 NVMe M.2 SSD - Up to 7,000 MB/s Sequential Read and ",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-04-01",
+              "price": 0.096,
+              "value": 120.015,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "SAMSUNG 1TB M.2 2230 30mm PM991a NVMe PCIe Gen3 x4 TLC SSD (MZ9LQ1T0HBLB) for Xbox Surface",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-05-01",
+              "price": 0.0995,
+              "value": 124.39055,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "WD_Black 2TB SN770 NVMe Internal Gaming SSD Solid State Drive - Gen4 PCIe, M.2 2280, Up to",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-06-01",
+              "price": 0.09753,
+              "value": 121.92774,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Western Digital 4TB WD Blue SN5000 NVMe Internal Solid State Drive SSD - PCIe Gen 4.0, M.2",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-07-01",
+              "price": 0.08786,
+              "value": 109.83873,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "TICOWTEK M.2 2280 SSD PCIe NVMe 2TB Internal Solid State Drive",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-08-01",
+              "price": 0.08999,
+              "value": 112.50156,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Crucial P3 PCIe Gen3 NVMe 1TB SSD, Up to 3,500MB/s Read, Laptop & Desktop (PC) Compatible,",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            },
+            {
+              "date": "2026-09-01",
+              "price": 0.07932,
+              "value": 99.1624,
+              "unit": "USD/GB",
+              "source": "https://dam.stanford.edu/memory-prices.html",
+              "note": "Monatsminimum der Stichprobe",
+              "product": "Western Digital 1TB WD Blue SN570 NVMe Internal Solid State Drive SSD - Gen3 x4 PCIe 8Gb/s",
+              "monthly": true,
+              "excluded": false,
+              "gapBefore": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
