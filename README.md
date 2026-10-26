@@ -1,3 +1,20 @@
+# TheTwoKings – Comics, Spiele und Hardware-Garage
+
+Aktuelle Website: https://thetwokings.de
+
+Statische Website direkt aus dem Repository-Root. Kein Build-Schritt erforderlich. Die Veröffentlichung erfolgt über die bestehende Cloudflare-Pages-Anbindung des Branches main.
+
+- Startseite: index.html
+- Comic-Leser: comic.html
+- Hardware-Garage: werkstatt.html und preisradar.html
+- Neues Spiellabor: piratenjagd.html
+- Klassischer Game Hub: klassischer-game-hub.html
+
+Prüfungen: node scripts/check-site.mjs und node scripts/test-capture.cjs.
+Details: RELEASE-2026-10-27.md. Datenstand der Preisreihen: 19.10.2026.
+
+## Bisheriger Game Hub – technische Dokumentation
+
 # The Two Kings – Multi-Page Game Hub v1.3.3
 
 ## Seiten
