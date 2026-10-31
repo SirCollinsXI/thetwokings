@@ -6,3 +6,9 @@
 .page{scroll-margin-top:85px}
 
 .reader-gap{padding:70px 30px;background:#24212b;border:1px dashed #9c82ce;text-align:center;line-height:1.8}.reader-gap p{max-width:600px;margin:20px auto;color:#bbb}.page img[hidden],.reader-gap[hidden]{display:none}footer>a:not(.brand){font-size:10px;color:#aaa}
+
+/* KingLab research entry - intentionally isolated from existing site modules */
+.kinglab-thumb{background:radial-gradient(ellipse at 70% 12%,#1f5672 0%,#0d1d30 55%,#080f1c 100%);color:#eaf7ff;border:1px solid #32718a;isolation:isolate}
+.kinglab-kicker{position:absolute;top:24px;left:23px;font-size:10px;letter-spacing:1.9px;color:#8adbe3;font-weight:750}
+.kinglab-visual{position:absolute;left:25px;top:76px;display:flex;flex-direction:column;line-height:1}.kinglab-visual span{font-size:100px;font-weight:900;letter-spacing:-7px;color:#8df4df;text-shadow:0 0 30px #3bafc566}.kinglab-visual small{font-size:15px;font-weight:700;letter-spacing:2px;color:#d6efff;margin-top:9px}
+.kinglab-dash{position:absolute;left:24px;right:22px;top:212px;border-top:2px dashed #8df4df;opacity:.8}.kinglab-thumb .corner{color:#d7eef9}
