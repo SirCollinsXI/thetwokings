@@ -42,3 +42,13 @@
 @media(max-width:1000px){.kinglab-feature{grid-template-columns:1fr 1fr;gap:15px}.kinglab-copy strong{font-size:clamp(25px,4.7vw,56px);letter-spacing:-2px}.kinglab-thumb{padding:20px}}
 @media(max-width:650px){.kinglab-thumb{padding:17px;min-height:0}.kinglab-head{font-size:8px;letter-spacing:.8px}.kinglab-chip{font-size:7px;padding:6px;letter-spacing:0}.kinglab-feature{grid-template-columns:1fr;gap:17px;margin:20px 0 10px}.kinglab-copy strong{font-size:clamp(29px,9.5vw,53px);white-space:normal}.kinglab-slogan{font-size:22px}.kinglab-graphic{width:100%}.kinglab-bottomline{font-size:8px;line-height:1.5;flex-wrap:wrap}.kinglab-chart{height:148px}.kinglab-column small{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.kinglab-project .thumb{transition:none}}
+
+
+/* Header language selector: English / Deutsch / 简体中文 */
+.language-picker{display:flex;align-items:center;gap:3px;padding:3px;border:1px solid #53505f;border-radius:30px;background:#25242c;flex-shrink:0}
+.language-picker button{color:#d8d7df;background:transparent;border:0;border-radius:22px;padding:8px 11px;font-size:11px;line-height:1;white-space:nowrap;font-weight:750;transition:background .2s,color .2s}
+.language-picker button.selected{color:#18161f;background:var(--lime)}
+.language-picker button:hover:not(.selected){background:#444052}
+@media(max-width:1050px){header{gap:14px}header nav{gap:16px}.language-picker button{padding:7px 9px}}
+@media(max-width:760px){header{justify-content:space-between}.language-picker{order:1;margin-left:auto}header nav{order:2;width:100%}.language-picker button{padding:8px 9px}.language-picker button:last-child{font-size:10px}}
+@media(max-width:380px){.language-picker button{padding:7px 6px;font-size:10px}.language-picker button:last-child{font-size:9px}}
