@@ -34,11 +34,20 @@ body:before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.22;ba
 @media(max-width:480px){.shell{padding:18px 11px 40px}.cinematic-hero{padding:28px 18px}.cinematic-hero h1{font-size:clamp(41px,11vw,61px)}.hero-tagline{font-size:18px}.hero-button,.hero-link{font-size:11px}.bean-cards{grid-template-columns:1fr 1fr}.factor-card{grid-column:1/-1;flex-direction:row;gap:10px;justify-content:center}.factor-card strong{font-size:44px}.bean-card .bean-icon{font-size:14px}.panel{padding:15px}.barrow{grid-template-columns:96px minmax(0,1fr);gap:7px}.prod{font-size:10px}.prod small{font-size:8px}.barvalue{font-size:10px;margin-left:5px}.badge#benchmark-badge{font-size:9px}.stats .stat strong{font-size:22px}.stat small{font-size:10px}.benchmark span{font-size:9px;white-space:normal;width:70px}}
 @media(prefers-reduced-motion:reduce){.cinematic-hero:before,.hero-orbit .ring,.sparkles span{animation:none!important}}
 
+
+/* Multilingual KingLab controls; visible on desktop and phones */
+.kinglab-language{display:flex;align-items:center;gap:3px;padding:3px;border:1px solid #39627b;background:#091a2d;border-radius:40px;flex-shrink:0}
+.kinglab-language button{border:0;background:transparent;color:#c7dfec;font:800 11px/1.2 system-ui,-apple-system,sans-serif;padding:9px 12px;border-radius:25px;white-space:nowrap;cursor:pointer}
+.kinglab-language button.selected{color:#08242f;background:#59eaff;box-shadow:0 0 12px #13cde966}
+.kinglab-language button:hover:not(.selected){background:#1c3952}
+.kinglab-language button:focus-visible{outline:2px solid #ffc66e;outline-offset:2px}
+@media(max-width:650px){.top{gap:9px}.kinglab-language{margin-left:auto}.kinglab-language button{padding:8px 9px;font-size:10px}.badge{font-size:9px}}
+@media(max-width:360px){.kinglab-language button{padding:7px 6px;font-size:9px}.top>.badge{display:none}}
 </style>
 </head>
 <body>
 <main class="shell">
-  <div class="top"><a class="brand" href="/" aria-label="Zurück zur TheTwoKings Startseite">♛ THETWOKINGS <b>/ KINGLAB</b></a><span class="badge">RESEARCH SERIES · #001</span><nav><a href="#vergleich">Vergleich</a><a href="#rechner">Mix-Rechner</a><a href="#quellen">Quellen</a></nav></div>
+  <div class="top"><a class="brand" href="/" aria-label="Zurück zur TheTwoKings Startseite">♛ THETWOKINGS <b>/ KINGLAB</b></a><span class="badge">RESEARCH SERIES · #001</span><nav><a href="#vergleich">Vergleich</a><a href="#rechner">Mix-Rechner</a><a href="#quellen">Quellen</a></nav><div class="kinglab-language" role="group" aria-label="Website language"><button type="button" data-set-language="de" lang="de" aria-pressed="true">DE</button><button type="button" data-set-language="en" lang="en" aria-pressed="false">EN</button><button type="button" data-set-language="zh" lang="zh-CN" aria-pressed="false">简体中文</button></div></div>
   <header class="cinematic-hero">
     <div class="sparkles" aria-hidden="true"><span class="s1">✳</span><span class="s2">✦</span><span class="s3">✧</span></div>
     <div class="hero-copy"><div class="eyebrow">⚡ THE EXPERIMENT · CHINA × DEUTSCHLAND · #001</div>
@@ -122,5 +131,6 @@ beanSlider.addEventListener('input',renderBeanFactor);renderBeanFactor();
 renderPlot();renderMixer();renderTable();window.addEventListener('resize',()=>{if(metric==='concentration')renderPlot()});
 })();
 </script>
+<script src="i18n.js"></script>
 </body>
 </html>
