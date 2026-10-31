@@ -6,3 +6,39 @@
 .page{scroll-margin-top:85px}
 
 .reader-gap{padding:70px 30px;background:#24212b;border:1px dashed #9c82ce;text-align:center;line-height:1.8}.reader-gap p{max-width:600px;margin:20px auto;color:#bbb}.page img[hidden],.reader-gap[hidden]{display:none}footer>a:not(.brand){font-size:10px;color:#aaa}
+
+
+/* KingLab Research #001 — eigenständige Feature-Kachel */
+.kinglab-project{grid-column:1/-1}
+.kinglab-thumb{--lab-cyan:#48dffa;--lab-orange:#ffb445;position:relative;isolation:isolate;min-height:338px;height:auto;padding:22px 26px 18px;background:radial-gradient(circle at 25% 100%,#79401c80,transparent 44%),radial-gradient(circle at 90% 0%,#066d8d88,transparent 45%),linear-gradient(115deg,#08121e,#0b1120 54%,#06192b);border:1px solid #2787a4;color:#f7f8ff;box-shadow:inset 0 0 35px #16658966,0 0 18px #16a4c933}
+.kinglab-thumb:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(#5fdcfc88 .8px,transparent .9px);background-size:19px 19px;opacity:.18}
+.kinglab-head,.kinglab-bottomline{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;font-weight:900;letter-spacing:1.6px}
+.kinglab-head{color:#a0eaff}
+.kinglab-chip{padding:7px 11px;border:1px solid #38ccef88;border-radius:30px;color:#fff;background:#0a46624f;letter-spacing:1px;font-size:9px}
+.kinglab-feature{display:grid;grid-template-columns:1.15fr 1fr;gap:25px;align-items:center;flex:1;margin:13px 0 6px;min-width:0}
+.kinglab-copy{display:flex;flex-direction:column;align-items:start;gap:5px}
+.kinglab-eyebrow{color:#68edff;font-size:11px;letter-spacing:2px;font-weight:800}
+.kinglab-copy strong{font-size:clamp(32px,5.2vw,75px);line-height:1.05;letter-spacing:-3px;font-weight:1000;white-space:nowrap;text-shadow:0 2px 23px #008cc955}
+.kinglab-copy strong em{font-style:italic;color:#ffb43e;text-shadow:0 0 28px #ff7b2388}
+.kinglab-slogan{font-size:clamp(15px,2.4vw,25px);font-weight:900;line-height:1.12;color:#fff;letter-spacing:1px;margin-top:3px}
+.kinglab-explainer{color:#bdcedd;font-size:11px;line-height:1.5}
+.kinglab-cta{display:inline-flex;align-items:center;gap:14px;margin-top:12px;border-radius:4px;padding:11px 14px;background:#ffbc4c;color:#101725;font-size:10px;font-weight:900;letter-spacing:.8px;box-shadow:0 0 15px #ff9e4b66}
+.kinglab-cta b{font-size:16px}
+.kinglab-graphic{border:1px solid #39c9e484;background:#08111edb;border-radius:8px;padding:14px 16px 12px;min-width:0;box-shadow:inset 0 0 22px #21748b5e}
+.kinglab-chart-heading{color:#f0f7fa;font-size:10px;font-weight:900;letter-spacing:1px}
+.kinglab-chart{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));height:151px;gap:12px;align-items:end;padding:5px 15px 0;border-bottom:1px solid #85bed180}
+.kinglab-reference{position:absolute;left:0;right:0;bottom:34px;height:1px;border-top:2px dashed #ed65ceaa;z-index:2}
+.kinglab-reference span{position:absolute;right:0;top:-20px;color:#fda7e6;font-size:9px;background:#071520;padding:2px 5px}
+.kinglab-column{height:100%;display:flex;align-items:center;justify-content:end;flex-direction:column;gap:3px;position:relative;z-index:1}
+.kinglab-column i{display:block;width:min(64px,80%);border-radius:4px 4px 0 0;min-height:7px}
+.kinglab-coffee-bar{height:112px;background:linear-gradient(#ffd58a,#d57c34);box-shadow:0 0 14px #ffa64255}
+.kinglab-monster-bar{height:26px;background:linear-gradient(#89eafa,#1798cc);box-shadow:0 0 12px #23dcfc55}
+.kinglab-redbull-bar{height:13px;background:linear-gradient(#fce877,#ffa927)}
+.kinglab-number{color:#fff;font-size:13px;font-weight:900}
+.kinglab-column small{font-size:8px;color:#d5dce4;white-space:nowrap;padding:5px 0;letter-spacing:.2px}
+.kinglab-chart-note{display:block;margin-top:7px;color:#9fb8c7;font-size:9px;line-height:1.45}
+.kinglab-bottomline{padding-top:12px;border-top:1px solid #39c9e455;color:#c5e6f4;font-size:9px;letter-spacing:1px}
+.kinglab-bottomline span:first-child{color:#ffca72}
+@media(max-width:1000px){.kinglab-feature{grid-template-columns:1fr 1fr;gap:15px}.kinglab-copy strong{font-size:clamp(25px,4.7vw,56px);letter-spacing:-2px}.kinglab-thumb{padding:20px}}
+@media(max-width:650px){.kinglab-thumb{padding:17px;min-height:0}.kinglab-head{font-size:8px;letter-spacing:.8px}.kinglab-chip{font-size:7px;padding:6px;letter-spacing:0}.kinglab-feature{grid-template-columns:1fr;gap:17px;margin:20px 0 10px}.kinglab-copy strong{font-size:clamp(29px,9.5vw,53px);white-space:normal}.kinglab-slogan{font-size:22px}.kinglab-graphic{width:100%}.kinglab-bottomline{font-size:8px;line-height:1.5;flex-wrap:wrap}.kinglab-chart{height:148px}.kinglab-column small{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.kinglab-project .thumb{transition:none}}
