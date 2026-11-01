@@ -1059,6 +1059,326 @@
           }
         }
       ]
+    },
+    "09A": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Piet bringt Störtebeker zur Rettung. Sie sichern das Floß und steuern die Insel an.",
+        "en": "Piet brings Störtebeker to help, secures the raft and sets course for the island.",
+        "zh": "Piet 找来 Störtebeker 帮忙，把木筏系好后一起驶向小岛。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Pass auf dich auf, Piet!",
+            "en": "Take care, Piet!",
+            "zh": "Piet，小心点！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Ich bin schnell wieder da!",
+            "en": "I'll be back in no time!",
+            "zh": "我很快就回来！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Klaus! Wir brauchen deine Hilfe!",
+            "en": "Klaus! We need your help!",
+            "zh": "Klaus！我们需要你帮忙！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Los, Störtebeker! Sam wartet schon!",
+            "en": "Come on, Störtebeker! Sam is waiting!",
+            "zh": "快点，Störtebeker！Sam 还在等我们！"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Klar doch! Volle Kraft voraus!",
+            "en": "Sure thing! Full speed ahead!",
+            "zh": "没问题！全速前进！"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Da seid ihr!",
+            "en": "There you are!",
+            "zh": "你们终于来了！"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Sam! Wir sind da!",
+            "en": "Sam! We're here!",
+            "zh": "Sam！我们来了！"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 6,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "So, fest! Das hält.",
+            "en": "There, tied tight! It'll hold.",
+            "zh": "好了，绑紧了！应该牢靠了。"
+          }
+        },
+        {
+          "id": 9,
+          "panel": 6,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Bereit, Mannschaft?",
+            "en": "Ready, crew?",
+            "zh": "船员们，准备好了吗？"
+          }
+        },
+        {
+          "id": 10,
+          "panel": 7,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Dann los, Störtebeker!",
+            "en": "Let's go, Störtebeker!",
+            "zh": "出发吧，Störtebeker！"
+          }
+        },
+        {
+          "id": 11,
+          "panel": 7,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Auf zur Insel!",
+            "en": "To the island!",
+            "zh": "向小岛进发！"
+          }
+        }
+      ]
+    },
+    "09B": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Störtebeker zieht das Floß durch die Wellen. Die Freunde entdecken eine Insel und eine Hütte.",
+        "en": "Störtebeker pulls the raft through the waves. The friends spot an island and a hut.",
+        "zh": "Störtebeker 拉着木筏越过海浪，朋友们发现一座有小屋的岛屿。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Bereit, Störtebeker?",
+            "en": "Ready, Störtebeker?",
+            "zh": "准备好了，Störtebeker？"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Immer doch!",
+            "en": "Always!",
+            "zh": "随时都准备好了！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Los, Freund!",
+            "en": "Let's go, my friend!",
+            "zh": "出发吧，朋友！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Wow! Du bist ja echt stark, Störtebeker!",
+            "en": "Wow, you're really strong, Störtebeker!",
+            "zh": "哇，Störtebeker，你可真有力气！"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Kleine Wellen? Kein Problem!",
+            "en": "Little waves? No problem!",
+            "zh": "这点小浪？没问题！"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Da vorne! Eine Insel!",
+            "en": "Look ahead! An island!",
+            "zh": "看前面！有座岛！"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Und eine Hütte!",
+            "en": "And a hut!",
+            "zh": "还有一间小屋！"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Dann haben wir es geschafft.",
+            "en": "Then we've made it.",
+            "zh": "那我们就成功了。"
+          }
+        },
+        {
+          "id": 9,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Unser nächstes Abenteuer!",
+            "en": "Our next adventure!",
+            "zh": "我们的下一场冒险！"
+          }
+        }
+      ]
     }
   }
 }
