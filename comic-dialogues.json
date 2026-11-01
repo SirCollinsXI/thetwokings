@@ -4,6 +4,196 @@
   "last_reviewed": "2026-11-01",
   "editorial_note": "Dialogues for page 01 transcribed from the source comic artwork. Translations are editorial drafts; other pages must be transcribed before publication.",
   "pages": {
+    "12": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam, Piet und Störtebeker entdecken eine Piratenhütte und finden eine Karte mit einem markierten Ziel.",
+        "en": "Sam, Piet and Störtebeker discover a pirate hut and a map marking their next destination.",
+        "zh": "Sam、Piet 和 Störtebeker 发现海盗小屋和标着下一站的地图。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Wow ... hier ist sie wirklich!",
+            "en": "Wow... it's really here!",
+            "zh": "哇……它真的在这里！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Eine echte Piratenhütte!",
+            "en": "A real pirate hut!",
+            "zh": "一间真正的海盗小屋！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Sieht aus, als wäre hier jemand schnell verschwunden.",
+            "en": "Looks like someone left here in a hurry.",
+            "zh": "看起来这里的人走得很匆忙。"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Schaut mal hier rein!",
+            "en": "Come look inside!",
+            "zh": "快进来看看！"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Das ist ja genau wie auf einer Schatzinsel!",
+            "en": "It's just like a treasure island!",
+            "zh": "这里简直就是藏宝岛！"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Hier liegt eine Karte!",
+            "en": "There's a map here!",
+            "zh": "这里有张地图！"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Schaut mal! Das muss eine Inselkarte sein.",
+            "en": "Look! This must be a map of the islands.",
+            "zh": "快看！这一定是群岛地图。"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Da! Ein Kreuz!",
+            "en": "There! An X!",
+            "zh": "那里！一个叉号！"
+          }
+        },
+        {
+          "id": 9,
+          "panel": 6,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Hier ist unser nächstes Ziel!",
+            "en": "Here's our next destination!",
+            "zh": "这就是我们的下一个目的地！"
+          }
+        },
+        {
+          "id": 10,
+          "panel": 7,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Dann wissen wir ja, was wir als Nächstes machen.",
+            "en": "Now we know what to do next.",
+            "zh": "那我们就知道下一步该做什么了。"
+          }
+        },
+        {
+          "id": 11,
+          "panel": 8,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Genau! Wir segeln zur nächsten Insel und finden den Schatz!",
+            "en": "Exactly! We'll sail to the next island and find the treasure!",
+            "zh": "没错！我们要驶向下一座岛，找到宝藏！"
+          }
+        },
+        {
+          "id": 12,
+          "panel": 8,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Ein weiteres Abenteuer wartet auf uns!",
+            "en": "Another adventure awaits us!",
+            "zh": "新的冒险正等着我们！"
+          }
+        }
+      ]
+    },
     "01": {
       "review_status": "source_transcribed",
       "chapter": "01",
