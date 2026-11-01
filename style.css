@@ -52,3 +52,6 @@
 @media(max-width:1050px){header{gap:14px}header nav{gap:16px}.language-picker button{padding:7px 9px}}
 @media(max-width:760px){header{justify-content:space-between}.language-picker{order:1;margin-left:auto}header nav{order:2;width:100%}.language-picker button{padding:8px 9px}.language-picker button:last-child{font-size:10px}}
 @media(max-width:380px){.language-picker button{padding:7px 6px;font-size:10px}.language-picker button:last-child{font-size:9px}}
+
+/* Pilot translation hint for Sam & Piet card */
+.comic-translation-badge{display:inline-flex;align-items:center;flex-wrap:wrap;gap:7px;max-width:100%;margin:10px 0 2px;padding:8px 11px;border:1px solid #a78afa70;border-radius:30px;background:#2b1f3fbb;color:#e1cdfd;font:800 10px/1.45 Arial,sans-serif;letter-spacing:.25px}
