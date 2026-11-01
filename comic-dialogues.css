@@ -1,0 +1,41 @@
+/* Sam & Piet · Dialogue Deck v1 — scoped to the comic reader */
+#dialogue-deck{--dd-lime:#c8fa72;--dd-violet:#bc91ff;--dd-blue:#68d9ec;position:relative;isolation:isolate;overflow:hidden;width:min(920px,calc(100% - 24px));margin:0 auto 46px;border:1px solid #73549b;border-radius:19px;background:radial-gradient(ellipse at 98% 0%,#52237774,transparent 50%),radial-gradient(ellipse at 0% 100%,#16455b77,transparent 48%),linear-gradient(135deg,#181526,#0f1420 60%,#11131b);box-shadow:0 10px 38px #0009,0 0 32px #6852bd22;color:#f9f7ff}
+#dialogue-deck::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:.18;background:radial-gradient(#e9dafc 1px,transparent 1px) 0 0/22px 22px}
+#dialogue-deck>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 26px;cursor:pointer;list-style:none;user-select:none;border-bottom:1px solid transparent}
+#dialogue-deck>summary::-webkit-details-marker{display:none}
+#dialogue-deck[open]>summary{border-bottom-color:#8a63b84c}
+#dialogue-deck>summary:focus-visible{outline:3px solid var(--dd-lime);outline-offset:-4px}
+.dd-tag{display:inline-block;color:var(--dd-blue);font:800 10px/1.5 Arial,sans-serif;letter-spacing:2px}
+.dd-main-title{display:block;font-size:clamp(24px,4.6vw,35px);line-height:1.15;letter-spacing:-1px;margin:6px 0 4px;font-weight:900}
+.dd-main-title em{font-style:normal;color:var(--dd-lime)}
+.dd-subtitle{color:#bdb5d1;font-size:12px;line-height:1.5}
+.dd-toggle{display:grid;place-items:center;flex:0 0 36px;height:36px;border-radius:50%;border:1px solid #aa89dc77;background:#2c2140;color:#f7e9ff;font-size:21px;transition:transform .2s}
+#dialogue-deck[open] .dd-toggle{transform:rotate(45deg)}
+.dd-body{padding:22px 26px 26px}
+.dd-status{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:17px;color:#c7c3cf;font-size:11px}
+.dd-status strong{color:#f6c979;font-weight:900}
+.dd-original-label{display:inline-flex;align-items:center;gap:7px;font-weight:700}
+.dd-flag{width:6px;height:6px;border-radius:50%;background:var(--dd-lime);box-shadow:0 0 12px var(--dd-lime)}
+.dd-tabs{display:flex;gap:7px;flex-wrap:wrap;padding:5px;border:1px solid #5b567166;border-radius:12px;background:#090d18aa;margin:0 0 20px}
+.dd-tabs button{flex:1;min-width:70px;color:#c9c4dc;background:transparent;border:1px solid transparent;border-radius:9px;padding:11px 15px;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap}
+.dd-tabs button[aria-selected="true"]{background:linear-gradient(100deg,#b2f36c,#d8fc9c);color:#17201c;box-shadow:0 0 22px #b0fa6c33}
+.dd-tabs button:focus-visible{outline:2px solid #fff1b3;outline-offset:2px}
+.dd-panel{min-height:64px}
+.dd-panel:focus{outline:none}
+.dd-list{list-style:none;counter-reset:none;padding:0;margin:0;display:grid;gap:10px}
+.dd-line{display:grid;grid-template-columns:41px minmax(0,1fr);align-items:start;gap:13px;padding:15px 17px;border:1px solid #7a6d984a;border-radius:13px;background:linear-gradient(100deg,#302741b5,#171926cc)}
+.dd-line-num{display:grid;place-items:center;width:36px;height:36px;border:1px solid #baa7d44a;border-radius:10px;background:#130e1e;color:#e2d8f4;font-size:11px;font-weight:900;font-variant-numeric:tabular-nums}
+.dd-line-who{font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:900;color:var(--dd-violet);margin:0 0 6px}
+.dd-line-text{margin:0;color:#fff;line-height:1.5;font-size:clamp(15px,2.6vw,18px);font-weight:650;overflow-wrap:anywhere}
+.dd-line.dd-thought .dd-line-text{font-style:italic}
+.dd-line.dd-thought{border-style:dashed}
+.dd-summary{display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:start;margin-top:22px;padding:17px 18px;background:#12334377;border:1px solid #3cbedb44;border-radius:12px}
+.dd-summary-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#083948;color:#6ae5fb;font-size:17px}
+.dd-summary-heading{margin:0 0 7px;font-size:10px;letter-spacing:1.5px;font-weight:900;color:var(--dd-blue)}
+.dd-summary-text{margin:0;font-size:13px;line-height:1.7;color:#e4e7ed}
+.dd-pending{padding:25px 18px;border:1px dashed #8b80a488;border-radius:12px;background:#0f1220;color:#d5d4df;text-align:center;font-size:14px;line-height:1.65}
+.dd-pending strong{display:block;color:#fff3d0;margin-bottom:5px}
+.dd-credit{display:block;margin-top:17px;color:#9e9bb1;font-size:10px;line-height:1.6}
+#comic-language-notice{display:none!important}
+@media(max-width:600px){#dialogue-deck{width:calc(100% - 20px);border-radius:14px;margin-bottom:30px}#dialogue-deck>summary{padding:20px 17px;gap:10px}.dd-body{padding:17px 13px 19px}.dd-subtitle{font-size:11px}.dd-main-title{font-size:25px}.dd-line{grid-template-columns:32px minmax(0,1fr);gap:9px;padding:13px 11px}.dd-line-num{width:30px;height:30px;border-radius:8px}.dd-tabs button{padding:12px 9px}.dd-summary{grid-template-columns:28px minmax(0,1fr);padding:14px 11px;gap:8px}.dd-summary-icon{width:27px;height:27px}.dd-status{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.dd-toggle{transition:none}}
