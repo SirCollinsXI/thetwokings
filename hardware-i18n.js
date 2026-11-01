@@ -87,8 +87,11 @@ function apply(){
    {de:'Interaktive PC-Preishistorie mit transparenten Quellen.',en:'Interactive PC hardware price history with sourced observations.',zh:'电脑硬件历史价格交互式图表，包含数据来源。'}[language]:
    {de:'PC-Werkstatt für Upgrades und Preisvergleiche.',en:'PC upgrade planning and price comparison tools.',zh:'电脑升级规划与价格比较工具。'}[language];
   document.querySelectorAll('[data-set-language]').forEach(b=>{const on=b.dataset.setLanguage===language;b.classList.toggle('selected',on);b.setAttribute('aria-pressed',String(on));});
-  for(const a of document.querySelectorAll('a[href="index.html"],a[href="index.html#pc"],a[href="werkstatt.html"],a[href="preisradar.html"]')){
-   const raw=a.getAttribute('href').split('?')[0];a.href=raw+'?lang='+language;
+  for(const a of document.querySelectorAll('a[href^="index.html"],a[href^="werkstatt.html"],a[href^="preisradar.html"]')){
+   const raw=a.getAttribute('href').replace(/\?lang=(de|en|zh)(?=#|$)/,'');
+   const target=new URL(raw,location.href);
+   target.searchParams.set('lang',language);
+   a.setAttribute('href',target.pathname.split('/').pop()+target.search+target.hash);
   }
  }finally{busy=false;}
 }
