@@ -1,0 +1,8 @@
+/* Shared unobtrusive language selector for comics and playable game pages */
+#language-tools{display:flex;align-items:center;justify-content:center;gap:3px;position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:120;padding:5px;border-radius:30px;background:#0b111ce8;border:1px solid #69d5eca6;box-shadow:0 3px 18px #0009;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font:700 12px/1.2 system-ui,sans-serif}
+#language-tools button{font:700 11px/1.15 system-ui,sans-serif;cursor:pointer;border:0!important;background:transparent!important;box-shadow:none!important;color:#f0f5fa!important;padding:8px 11px!important;border-radius:20px!important;white-space:nowrap;min-height:29px;min-width:auto}
+#language-tools button.selected{color:#09222d!important;background:#66e0ee!important}
+#language-tools button:focus-visible{outline:2px solid #fff1a1;outline-offset:2px}
+#language-tools button:hover:not(.selected){background:#244459!important}
+#comic-language-notice{display:block;max-width:700px;margin:14px auto;padding:11px 15px;border-radius:8px;background:#192d3a;border:1px solid #477085;color:#d8ebf6;font:12px/1.55 system-ui,sans-serif}
+@media(max-width:560px){#language-tools{bottom:max(8px,env(safe-area-inset-bottom));right:max(7px,env(safe-area-inset-right));padding:4px;gap:1px}#language-tools button{padding:7px 8px!important;font-size:10px!important}}
