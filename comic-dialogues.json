@@ -194,6 +194,106 @@
         }
       ]
     },
+    "13": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Die drei Freunde sammeln Kokosnüsse, Bananen und Feuerholz für ihr Abendessen.",
+        "en": "The three friends gather coconuts, bananas and firewood for dinner.",
+        "zh": "三个朋友收集椰子、香蕉和柴火，准备晚餐。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Ohne Mampf kein Kampf! Ich habe Hunger!",
+            "en": "No food, no fight! I'm hungry!",
+            "zh": "不吃饱哪有力气冒险！我饿了！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Dann erst mal Proviant.",
+            "en": "Supplies first, then.",
+            "zh": "那就先准备吃的吧。"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Endlich ein Plan, den ich sofort mag.",
+            "en": "Finally a plan I like right away.",
+            "zh": "终于有个让我立刻赞成的计划了！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Das sollte fürs Erste reichen.",
+            "en": "That should do for now.",
+            "zh": "这些暂时应该够了。"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Fürs Erste? Ich plane schon fürs Zweite.",
+            "en": "For now? I'm already planning the next meal.",
+            "zh": "暂时？我已经在计划下一顿了。"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Vorwärts zum Abendessen!",
+            "en": "Onward to dinner!",
+            "zh": "向晚餐进发！"
+          }
+        }
+      ]
+    },
     "01": {
       "review_status": "source_transcribed",
       "chapter": "01",
