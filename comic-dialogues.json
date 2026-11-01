@@ -769,6 +769,296 @@
           }
         }
       ]
+    },
+    "07": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Piet entdeckt Sams Floß; die Freunde sind wieder vereint.",
+        "en": "Piet finds Sam's raft and the two friends reunite.",
+        "zh": "Piet 找到 Sam 的木筏，两位朋友终于重逢。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Piet!",
+            "en": "Piet!",
+            "zh": "Piet！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Sam!",
+            "en": "Sam!",
+            "zh": "Sam！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Ich hab dich überall gesucht!",
+            "en": "I've looked everywhere for you!",
+            "zh": "我到处都在找你！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Ich hab auf dich gewartet.",
+            "en": "I've been waiting for you.",
+            "zh": "我一直在等你。"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Wo warst du?!",
+            "en": "Where have you been?!",
+            "zh": "你到底去哪儿了？！"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "In einer Schildkröte.",
+            "en": "Inside a turtle.",
+            "zh": "在一只海龟肚子里。"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Das ist keine Antwort.",
+            "en": "That's not an answer.",
+            "zh": "这算什么回答啊。"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Leider doch.",
+            "en": "Unfortunately, it is.",
+            "zh": "可惜这是真的。"
+          }
+        }
+      ]
+    },
+    "08": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Piet sucht Hilfe bei Klaus Störtebeker, während Sam auf dem Floß bleibt.",
+        "en": "Piet sets off to find help from Klaus Störtebeker while Sam stays aboard the raft.",
+        "zh": "Piet 前往寻找 Klaus Störtebeker 帮忙，Sam 留在木筏上。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Äh ... Sam?",
+            "en": "Um... Sam?",
+            "zh": "呃……Sam？"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Hm?",
+            "en": "Hmm?",
+            "zh": "嗯？"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Du treibst ja nur!",
+            "en": "You're just drifting!",
+            "zh": "你一直在漂着呀！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Ich hatte andere Prioritäten.",
+            "en": "I had other priorities.",
+            "zh": "我还有更重要的事。"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Wir brauchen Klaus Störtebeker.",
+            "en": "We need Klaus Störtebeker.",
+            "zh": "我们需要 Klaus Störtebeker 的帮助。"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Die kleine Schildkröte?",
+            "en": "The little turtle?",
+            "zh": "那只小海龟？"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Genau. Bleib hier!",
+            "en": "Exactly. Stay here!",
+            "zh": "对。你待在这里！"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Als hätte ich gerade viel Auswahl.",
+            "en": "As if I had much choice.",
+            "zh": "说得好像我还有别的选择似的。"
+          }
+        },
+        {
+          "id": 9,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Ich bin gleich zurück!",
+            "en": "I'll be right back!",
+            "zh": "我马上回来！"
+          }
+        },
+        {
+          "id": 10,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Ich zähle drauf.",
+            "en": "I'm counting on it.",
+            "zh": "那就靠你了。"
+          }
+        }
+      ]
     }
   }
 }
