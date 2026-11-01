@@ -13,8 +13,6 @@
 
 :root{color-scheme:dark;--bg:#141416;--panel:#202024;--text:#f4f3ec;--muted:#aaa6b5;--border:#3a3642;--grid:#34313c;--accent:#c8fa72;--tip:#292532;--focus:#a78afa;--c1:#65c78b;--c2:#77b6ff;--c3:#c4a0ff;--c4:#ff9490;--c5:#edb762;--c6:#c4a0ff}.grid{grid-template-columns:1fr}.chart{margin-bottom:24px}.chart-head select{background:#202024}
 </style>
-</head>
-<body data-page-i18n="radar">
 <style>
 .language-picker{display:inline-flex;align-items:center;gap:3px;padding:3px;border:1px solid var(--border);border-radius:25px;background:var(--panel);vertical-align:middle}
 .language-picker button{font:700 11px/1.2 system-ui,sans-serif;white-space:nowrap;border:0;background:transparent;border-radius:19px;padding:7px 10px;color:var(--text)}
@@ -24,6 +22,8 @@
 .radar-lang-top a{margin-bottom:0!important}
 @media(max-width:540px){.language-picker button{padding:7px 8px;font-size:10px}.tabs{min-width:0}}
 </style>
+</head>
+<body data-page-i18n="radar">
 <main id="preisradar">
 <header><div class="radar-lang-top"><a href="werkstatt.html">← Zur Hardware-Garage</a><div class="language-picker" role="group" aria-label="Website language"><button type="button" data-set-language="de" lang="de" aria-pressed="true">DE</button><button type="button" data-set-language="en" lang="en" aria-pressed="false">EN</button><button type="button" data-set-language="zh" lang="zh-CN" aria-pressed="false">简体中文</button></div></div><div class="eyebrow">TheTwoKings / PC Hardwarekomponenten</div><h1>Preise im Verlauf</h1><p class="muted">DDR5, GeForce RTX 50 und Radeon RX 9000 · deutsche Händlerpreise bis 17.10.2026</p><p class="caption">Mouseover zeigt veröffentlichte Messpunkte. Klicken oder tippen fixiert die Werte und Quellenlinks. Mit Tab und den Pfeiltasten lassen sich die Messpunkte auch per Tastatur erkunden.</p></header>
 <div class="toolbar"><div class="tabs" role="tablist" aria-label="Preisvergleich"><button role="tab" type="button" data-view="current" aria-selected="true" aria-controls="current">DDR5 & aktuelle Grafikkarten</button><button role="tab" type="button" data-view="history" aria-selected="false" aria-controls="history">RAM & SSD: fünf Jahre</button></div><button type="button" id="csv-download">Preisdaten als CSV</button></div>
