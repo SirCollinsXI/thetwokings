@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "source_language": "de",
+  "last_reviewed": "2026-11-01",
+  "editorial_note": "Dialogues for page 01 transcribed from the source comic artwork. Translations are editorial drafts; other pages must be transcribed before publication.",
+  "pages": {
+    "01": {
+      "review_status": "source_transcribed",
+      "chapter": "01",
+      "title": {
+        "de": "Sam auf der Planke",
+        "en": "Sam on the plank",
+        "zh": "Sam 站在木板上"
+      },
+      "summary": {
+        "de": "Sam steht auf einer Planke am Piratenschiff. Er stürzt in das offene Maul einer riesigen Meeresschildkröte und findet sich in einer geheimnisvollen, wasserreichen Welt wieder.",
+        "en": "Sam stands on a plank extending from a pirate ship. He falls into the open mouth of a giant sea turtle and finds himself in a mysterious world filled with water.",
+        "zh": "Sam 站在海盗船伸出的木板上，突然跌入一只巨型海龟张开的大嘴，随后发现自己来到了一个神秘的水世界。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Bleib stehen!",
+            "en": "Stop right there!",
+            "zh": "站住！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Zurück, Junge!",
+            "en": "Get back, boy!",
+            "zh": "回来，小子！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Was ist DAS denn?!",
+            "en": "What IS that?!",
+            "zh": "那到底是什么？！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Waaah!",
+            "en": "Aaaah!",
+            "zh": "啊啊啊！"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 4,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Wo bin ich hier gelandet?",
+            "en": "Where have I ended up?",
+            "zh": "我这是到了什么地方？"
+          }
+        }
+      ]
+    }
+  }
+}
