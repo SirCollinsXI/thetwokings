@@ -94,6 +94,681 @@
           }
         }
       ]
+    },
+    "02": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam entdeckt eine riesige Wasserwelt in der Schildkröte, belauscht drei Piraten und sucht nach einem sicheren Ausgang.",
+        "en": "Inside the giant turtle, Sam discovers a vast flooded world, overhears three pirates and searches for a safe exit.",
+        "zh": "Sam 在巨型海龟体内发现辽阔的水世界，偷听三名海盗的谈话，并寻找安全出口。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Wow ... was für ein riesiger Innenraum!",
+            "en": "Wow... what an enormous space in here!",
+            "zh": "哇……这里面也太大了！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Hier drin ist eine ganze Welt ...",
+            "en": "There's a whole world in here...",
+            "zh": "里面简直是另一个世界……"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Drei Piraten ... und die haben mich noch nicht gesehen.",
+            "en": "Three pirates... and they haven't spotted me yet.",
+            "zh": "三个海盗……他们还没发现我。"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "So ein Luxus: Feuer, Essen und kein Sturm!",
+            "en": "What luxury: a fire, food, and no storm!",
+            "zh": "真是享受：有火、有吃的，还不用挨风暴！"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Aye. Seit Wochen nur Höhle, Schlamm und Geschichten.",
+            "en": "Aye. Weeks of nothing but caves, mud and stories.",
+            "zh": "是啊。好几个星期了，除了洞穴、泥巴和故事，什么都没有。"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Immerhin gemütlich.",
+            "en": "At least it's cozy.",
+            "zh": "至少还算舒服。"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 3,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Da vorne ist das Maul!",
+            "en": "The mouth is up ahead!",
+            "zh": "前面就是它的嘴！"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 3,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Da komme ich vielleicht raus!",
+            "en": "Maybe I can get out that way!",
+            "zh": "也许我能从那里出去！"
+          }
+        },
+        {
+          "id": 9,
+          "panel": 4,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Und dort hinten ... ein zweiter Ausgang.",
+            "en": "And back there... another exit.",
+            "zh": "后面还有……另一个出口。"
+          }
+        },
+        {
+          "id": 10,
+          "panel": 4,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Der sieht nicht gerade einladend aus ...",
+            "en": "That one doesn't look very inviting...",
+            "zh": "但那里看起来可不怎么友好……"
+          }
+        }
+      ]
+    },
+    "03": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam sucht etwas Schwimmfähiges, findet eine stabile Planke und ein leuchtend oranges Tuch als Signal.",
+        "en": "Sam looks for something that will float and finds a sturdy plank and a bright orange cloth for a signal.",
+        "zh": "Sam 寻找能漂浮的东西，找到一块结实的木板和一块鲜艳的橙色布，准备发出求救信号。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Ich brauche etwas, das mich trägt ...",
+            "en": "I need something that can keep me afloat...",
+            "zh": "我需要一个能托住我的东西……"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Die Planke sieht stabil aus.",
+            "en": "That plank looks sturdy.",
+            "zh": "这块木板看起来很结实。"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Perfekt. Die nehme ich mit!",
+            "en": "Perfect. I'm taking it!",
+            "zh": "太好了，就拿它！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 4,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Ein großes Tuch ... quietschorange!",
+            "en": "A big piece of cloth... bright orange!",
+            "zh": "一大块布……还是亮橙色的！"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Das kann ich als Signal benutzen.",
+            "en": "I can use it as a signal.",
+            "zh": "我可以用它发信号。"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 5,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Jetzt habe ich beides: die Planke und das Tuch.",
+            "en": "Now I've got both: the plank and the cloth.",
+            "zh": "现在两样都有了：木板和布。"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 5,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Ich warte auf den richtigen Moment ...",
+            "en": "I'll wait for the right moment...",
+            "zh": "我得等一个合适的时机……"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 5,
+          "type": "thought",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Die Piraten dürfen mich auf keinen Fall sehen.",
+            "en": "The pirates mustn't see me.",
+            "zh": "绝不能让海盗发现我。"
+          }
+        }
+      ]
+    },
+    "04": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam nutzt den richtigen Moment, stürzt sich mit der Planke in die Strömung und entkommt aus der Schildkröte ins Meer.",
+        "en": "Seizing his chance, Sam rides the current on his plank and escapes from the turtle into the open sea.",
+        "zh": "Sam 抓准时机，抱着木板顺着水流冲出海龟，终于回到大海。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Jetzt oder nie!",
+            "en": "It's now or never!",
+            "zh": "就是现在！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Waaah!",
+            "en": "Aaaah!",
+            "zh": "啊啊啊！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Festhalten!",
+            "en": "Hold on tight!",
+            "zh": "抓紧！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Geschafft...?",
+            "en": "Did I make it...?",
+            "zh": "成功了吗……？"
+          }
+        }
+      ]
+    },
+    "05": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam bekommt auf seinem improvisierten Floß endlich Luft. Hinter ihm tauchen drei durchnässte Piraten auf. Er bereitet sein oranges Signal vor.",
+        "en": "Sam finally catches his breath on his makeshift raft. Three drenched pirates surface behind him as he prepares his orange signal.",
+        "zh": "Sam 趴在临时木筏上终于能喘口气。身后三名浑身湿透的海盗也浮出水面，他则开始准备橙色求救信号。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Luft ... endlich.",
+            "en": "Air... finally.",
+            "zh": "空气……终于能呼吸了。"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Dann eben der Hinterausgang!",
+            "en": "The back exit, then!",
+            "zh": "那就走后门呗！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Hauptsache trocken.",
+            "en": "As long as we stay dry.",
+            "zh": "只要能保持干燥就行。"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Wir sollten ,trocken‘ später noch mal besprechen.",
+            "en": "We should revisit the word 'dry' later.",
+            "zh": "“干燥”这个词，我们之后得好好讨论一下。"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Kein. Wort.",
+            "en": "Not. A. Word.",
+            "zh": "一。个。字。都别说。"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Ich hab gar nichts gesagt.",
+            "en": "I didn't say anything.",
+            "zh": "我什么都没说。"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Quietschorange. Deine Stunde.",
+            "en": "Bright orange. It's your moment.",
+            "zh": "亮橙色，该你出场了。"
+          }
+        }
+      ]
+    },
+    "06A": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam baut aus Treibholz ein Floß, befestigt eine Stange und hisst sein oranges Tuch, damit Piet ihn finden kann.",
+        "en": "Sam builds a raft from driftwood, raises a mast and hoists his orange cloth so Piet can find him.",
+        "zh": "Sam 用漂流木扎起木筏，竖起桅杆，挂上橙色布，希望 Piet 能找到自己。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "So. Schwimmen kann es.",
+            "en": "There. It floats.",
+            "zh": "好了，至少它能浮起来。"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Jetzt müsste es nur noch auffallen.",
+            "en": "Now it just needs to stand out.",
+            "zh": "接下来得让别人注意到它。"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Quietschorange. Subtil geht anders.",
+            "en": "Bright orange. Not exactly subtle.",
+            "zh": "亮橙色……还真是一点都不低调。"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Komm schon, Piet. Irgendwo da oben musst du sein.",
+            "en": "Come on, Piet. You've got to be up there somewhere.",
+            "zh": "加油啊，Piet。你一定就在上面的某个地方。"
+          }
+        }
+      ]
+    },
+    "06B": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Piet sucht Sam aus der Luft und erkennt schließlich das orange Segel. Die Piraten im Wasser hoffen vergeblich auf Rettung.",
+        "en": "Searching from above, Piet finally spots Sam's orange sail. The pirates in the water mistakenly hope to be rescued.",
+        "zh": "Piet 在空中寻找 Sam，终于发现了橙色船帆。海里的海盗误以为自己也会获救。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Sam? Wo steckst du nur?",
+            "en": "Sam? Where could you be?",
+            "zh": "Sam？你到底在哪里？"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Moment ... orange?",
+            "en": "Wait... orange?",
+            "zh": "等等……橙色？"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Da unten!",
+            "en": "Down there!",
+            "zh": "在下面！"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Das kann nur Sam sein!",
+            "en": "That has to be Sam!",
+            "zh": "那一定是 Sam！"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Da! Hilfe!",
+            "en": "There! Help!",
+            "zh": "在那里！救命！"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Jetzt sind wir gerettet!",
+            "en": "We're saved!",
+            "zh": "我们得救了！"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Pirat",
+            "en": "Pirate",
+            "zh": "海盗"
+          },
+          "text": {
+            "de": "Nein. Nur überflogen.",
+            "en": "No. Just flown over.",
+            "zh": "不，他只是从上面飞过去了。"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Halte durch, Sam!",
+            "en": "Hang on, Sam!",
+            "zh": "坚持住，Sam！"
+          }
+        }
+      ]
     }
   }
 }
