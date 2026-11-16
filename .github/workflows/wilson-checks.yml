@@ -28,3 +28,24 @@ jobs:
         run: node scripts/check-site.mjs
       - name: Test Wilson input and scheduling
         run: node scripts/test-wilson-input.cjs
+      - name: Smoke-test mobile browser rendering
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/wilson-server.log 2>&1 &
+          sleep 1
+          CHROME="$(command -v google-chrome || command -v chromium || true)"
+          test -n "$CHROME" || { echo "Chrome not found on runner"; exit 1; }
+          DOM="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=2500 --dump-dom http://127.0.0.1:8765/wilson-input.html 2>/dev/null)"
+          grep -Fq 'id="round-note">新单词' <<< "$DOM" || { echo "Wilson trainer did not initialize"; exit 1; }
+          "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=2000 --screenshot="$RUNNER_TEMP/wilson-mobile.png" http://127.0.0.1:8765/wilson-input.html >/dev/null 2>&1
+          "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=1280,850 --virtual-time-budget=2000 --screenshot="$RUNNER_TEMP/wilson-desktop.png" http://127.0.0.1:8765/wilson-input.html >/dev/null 2>&1
+          test -s "$RUNNER_TEMP/wilson-mobile.png"
+          test -s "$RUNNER_TEMP/wilson-desktop.png"
+      - name: Archive responsive screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wilson-browser-previews
+          path: |
+            ${{ runner.temp }}/wilson-mobile.png
+            ${{ runner.temp }}/wilson-desktop.png
+          if-no-files-found: ignore
