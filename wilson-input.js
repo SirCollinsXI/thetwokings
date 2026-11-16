@@ -169,7 +169,7 @@
     $('question').textContent=t(w.numberMode==='both'?'askBoth':w.numberMode==='plural'?'askPlural':'askOne');
     $('format').textContent=t(w.numberMode==='both'?'both':w.numberMode==='plural'?'plural':'singular');
     $('submit').textContent=stage===2?t('next'):t('check');
-    $('typed').placeholder=expected(w);
+    $('typed').placeholder=w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
     $('typed').removeAttribute('disabled');
     $('listen').hidden=stage!==2;
     $('solution').hidden=stage!==2;
