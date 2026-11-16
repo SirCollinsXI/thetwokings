@@ -55,3 +55,6 @@
 
 /* Pilot translation hint for Sam & Piet card */
 .comic-translation-badge{display:inline-flex;align-items:center;flex-wrap:wrap;gap:7px;max-width:100%;margin:10px 0 2px;padding:8px 11px;border:1px solid #a78afa70;border-radius:30px;background:#2b1f3fbb;color:#e1cdfd;font:800 10px/1.45 Arial,sans-serif;letter-spacing:.25px}
+
+/* Keep named Wilson navigation discoverable on narrow phones without clipping links. */
+@media(max-width:760px){header nav{justify-content:flex-start;flex-wrap:wrap;gap:10px 16px}header nav a:first-child{font-weight:800;color:var(--lime)}}
