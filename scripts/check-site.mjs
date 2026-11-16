@@ -11,7 +11,7 @@ for(const file of fs.readdirSync(root)){
   if(/type=["']application\/json/.test(m[1]))JSON.parse(m[2]);else new vm.Script(m[2],{filename:file});
  }
  for(const m of html.matchAll(/(?:src|href)="([^"]+)"/g)){
-  const link=m[1].split('#')[0];if(!link||link.includes(':')||link.startsWith('//')||link.includes('+')||link.includes('${'))continue;
+  const link=m[1].split(/[?#]/)[0];if(!link||link.includes(':')||link.startsWith('//')||link.includes('+')||link.includes('${'))continue;
   if(!fs.existsSync(path.join(root,link)))throw Error(file+' missing '+link);
  }
 }
