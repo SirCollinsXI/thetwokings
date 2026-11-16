@@ -36,7 +36,7 @@
   const COPY = {
     zh:{
       back:'← 学习角',heading:'看图，<span>写德语。</span>',subtitle:'没有每日上限。输入德语单复数，按 Enter 检查；再按 Enter 进入下一张图片。',
-      tested:'已测试词数',due:'待复习',first:'首次正确率',picture:'观察图片，然后输入德语',
+      tested:'已练习的不同词汇',attempts:'完成的练习次数',caseNote:'词语正确，请注意大小写：',due:'待复习',first:'首次正确率',picture:'观察图片，然后输入德语',
       askBoth:'写出单数（含冠词）和复数',askOne:'写出单数（含冠词）',askPlural:'写出复数（含冠词）',
       both:'格式：der Apfel, Äpfel（复数也接受 die Äpfel）',singular:'只需输入单数：das Wasser',plural:'只需输入复数：die Arbeitsbedingungen',
       check:'检查 ↵',next:'下一张图片 ↵',listen:'🔊 再听一遍',
@@ -48,7 +48,7 @@
     },
     de:{
       back:'← Trainingsecke',heading:'Bild sehen. <span>Wort schreiben.</span>',subtitle:'Kein Tageslimit. Singular mit Artikel und Plural eingeben. Enter prüft; das nächste Enter zeigt das nächste Bild.',
-      tested:'Wörter geprüft',due:'Wiederholung fällig',first:'Im ersten Versuch richtig',picture:'Bild ansehen und deutsches Wort eingeben',
+      tested:'Verschiedene Wörter',attempts:'Übungen insgesamt',caseNote:'Wort erkannt. Achte auf die Groß-/Kleinschreibung: ',due:'Wiederholung fällig',first:'Im ersten Versuch richtig',picture:'Bild ansehen und deutsches Wort eingeben',
       askBoth:'Singular (mit Artikel) und Plural eingeben',askOne:'Singular mit Artikel eingeben',askPlural:'Plural mit Artikel eingeben',
       both:'Format: der Apfel, Äpfel (auch die Äpfel erlaubt)',singular:'Nur Singular: das Wasser',plural:'Nur Plural: die Arbeitsbedingungen',
       check:'Prüfen ↵',next:'Nächstes Bild ↵',listen:'🔊 Noch einmal hören',
@@ -60,7 +60,7 @@
     },
     en:{
       back:'← Learning corner',heading:'See the picture. <span>Type the word.</span>',subtitle:'No daily limit. Type the singular with article and the plural. Enter checks; press Enter again for the next picture.',
-      tested:'Words tested',due:'Due for review',first:'Correct on first try',picture:'Look at the picture and type the German word',
+      tested:'Different words practised',attempts:'Exercises completed',caseNote:'Word recognised. Check capitalisation: ',due:'Due for review',first:'Correct on first try',picture:'Look at the picture and type the German word',
       askBoth:'Enter singular (with article) and plural',askOne:'Enter singular with article',askPlural:'Enter plural with article',
       both:'Format: der Apfel, Äpfel (also accepts die Äpfel)',singular:'Singular only: das Wasser',plural:'Plural only: die Arbeitsbedingungen',
       check:'Check ↵',next:'Next picture ↵',listen:'🔊 Listen again',
@@ -90,7 +90,7 @@
     return x;
   }
   try { const saved = JSON.parse(localStorage.getItem(STORAGE)); const clean=parseProgress(saved); if(clean)progress=clean; } catch(e){}
-  try { const locale=localStorage.getItem(STORAGE+'-lang'); if(COPY[locale])lang=locale; } catch(e){}
+  try { const locale=localStorage.getItem(STORAGE+'-lang'); if(Object.hasOwn(COPY,locale))lang=locale; } catch(e){}
   function warn(message){$('warning').textContent=message;}
   function save(){
     try { localStorage.setItem(STORAGE,JSON.stringify(progress)); }
@@ -98,7 +98,8 @@
   }
   function dueCount(){return words.filter(w=>progress.items[w.id] && progress.items[w.id].due<=Date.now()).length;}
   function stats(){
-    $('tested').textContent=progress.tested;
+    $('tested').textContent=Object.values(progress.items).filter(r=>r.seen>0).length;
+    $('attempts').textContent=progress.tested;
     $('due').textContent=dueCount();
     $('accuracy').textContent=progress.tested ? Math.round(progress.firstCorrect/progress.tested*100)+'%' : '—';
   }
@@ -109,6 +110,7 @@
     $('heading').innerHTML=t('heading');
     $('subtitle').textContent=t('subtitle');
     $('tested-label').textContent=t('tested');
+    $('attempts-label').textContent=t('attempts');
     $('due-label').textContent=t('due');
     $('first-label').textContent=t('first');
     $('picture-note').textContent=t('picture');
@@ -139,10 +141,18 @@
     return s+', '+String(p).replace(/^die\s+/i,'');
   }
   function matches(value,w){
-    const parts=String(value).split(',').map(normal);
+    const parts=String(value).replace(/，/g,',').split(',').map(normal);
     if(w.numberMode==='singular') return parts.length===1 && matchSing(parts[0],w);
     if(w.numberMode==='plural') return parts.length===1 && matchPlural(parts[0],w,true);
     return parts.length===2 && matchSing(parts[0],w) && matchPlural(parts[1],w,false);
+  }
+  function caseMatches(value,w){
+    const clean=s=>String(s).normalize('NFC').trim().replace(/\s+/g,' ');
+    const parts=String(value).replace(/，/g,',').split(',').map(clean);
+    const singulars=[w.de,...(w.articleVariants||[]).map(a=>a+' '+w.de.replace(/^\S+\s+/,''))];
+    if(w.numberMode==='singular')return singulars.includes(parts[0]);
+    if(w.numberMode==='plural')return parts[0]===w.plural;
+    return singulars.includes(parts[0])&&[w.plural,w.plural.replace(/^die\s+/,'')].includes(parts[1]);
   }
   function matchSing(s,w){
     const candidates=[w.de];
@@ -167,6 +177,7 @@
     $('submit').textContent=stage===2?t('next'):t('check');
     $('typed').placeholder=w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
     $('typed').removeAttribute('disabled');
+    $('typed').readOnly=stage===2;
     $('listen').hidden=stage!==2;
     $('solution').hidden=stage!==2;
     if(reset){$('typed').value='';$('status').textContent='';$('status').className='status';}
@@ -186,6 +197,7 @@
     voice.lang='de-DE'; voice.rate=.85;
     const voices=window.speechSynthesis.getVoices();
     const german=voices.find(v=>v.lang.toLowerCase().startsWith('de'));
+    if(voices.length&&!german){warn(t('speechfail'));return;}
     if(german)voice.voice=german;
     voice.onerror=()=>warn(t('speechfail'));
     window.speechSynthesis.cancel();
@@ -204,12 +216,14 @@
   function resolve(ok,firstTry){
     const w=current.word,now=Date.now();
     const old=progress.items[w.id]||{seen:0,streak:0,due:0,last:0};
-    const streak=ok&&firstTry?old.streak+1:0;
+    const early=current.extra && old.due>now;
+    const streak=ok&&firstTry?(early?old.streak:old.streak+1):0;
     const intervals=[1,3,7,14,30,60,120];
     let due=ok&&firstTry ? now+intervals[Math.min(streak-1,intervals.length-1)]*DAY :
             ok ? now+6*3600000 : now+10*60000;
     // An early successful review must not postpone its already planned due date.
-    if(current.extra && ok && old.due>now) due=old.due;
+    if(early && ok && firstTry) due=old.due;
+    else if(early) due=Math.min(old.due,due);
     progress.items[w.id]={seen:old.seen+1,streak:streak,due,last:now};
     progress.tested++;
     if(ok&&firstTry)progress.firstCorrect++;
@@ -223,14 +237,18 @@
     if(!current) return;
     if(stage===2){nextWord();return;}
     const ok=matches(value,current.word);
-    if(ok){resolve(true,stage===0);return;}
+    if(ok){const spelling=caseMatches(value,current.word);resolve(true,stage===0);if(!spelling)$('status').textContent+=' '+t('caseNote')+expected(current.word);return;}
     if(stage===0){
       stage=1;wasFirstWrong=true;
       $('status').className='status warn';$('status').textContent=t('retry');
       $('typed').focus();$('typed').select();
     } else resolve(false,false);
   }
-  $('entry').addEventListener('submit',e=>{e.preventDefault();submit($('typed').value);});
+  let composing=false;
+  $('typed').addEventListener('compositionstart',()=>composing=true);
+  $('typed').addEventListener('compositionend',()=>composing=false);
+  $('typed').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.isComposing||composing||e.keyCode===229))e.preventDefault();});
+  $('entry').addEventListener('submit',e=>{e.preventDefault();if(!composing)submit($('typed').value);});
   $('listen').addEventListener('click',speak);
   document.querySelectorAll('[data-char]').forEach(btn=>btn.addEventListener('click',()=>{
     const inp=$('typed'),start=inp.selectionStart,end=inp.selectionEnd;
@@ -238,7 +256,7 @@
     inp.focus();inp.setSelectionRange(start+1,start+1);
   }));
   $('lang').addEventListener('change',e=>{
-    lang=COPY[e.target.value]?e.target.value:'zh';
+    lang=Object.hasOwn(COPY,e.target.value)?e.target.value:'zh';
     try{localStorage.setItem(STORAGE+'-lang',lang);}catch(err){}
     renderLang();
   });
