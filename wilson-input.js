@@ -5,14 +5,7 @@
   const $ = id => document.getElementById(id);
   const STORAGE = 'ttk-wilson-picture-input-v1';
   const DAY = 86400000;
-  const pictureWords = [
-    ['cup','die Tasse'], ['apple','der Apfel'], ['bread','das Brot'],
-    ['water','das Wasser'], ['egg','das Ei'], ['banana','die Banane'],
-    ['chair','der Stuhl'], ['book','das Buch'], ['key','der Schlüssel'],
-    ['phone','das Handy'], ['bed','das Bett'], ['clock','die Uhr'],
-    ['car','das Auto'], ['bike','das Fahrrad'], ['bus','der Bus'],
-    ['plane','das Flugzeug'], ['house','das Haus'], ['tree','der Baum']
-  ];
+  const pictureWords = [["cup","die Tasse","die Tassen","cup","杯子","bēizi"],["apple","der Apfel","die Äpfel","apple","苹果","píngguǒ"],["bread","das Brot","die Brote","bread","面包","miànbāo"],["water","das Wasser","—","water","水","shuǐ"],["egg","das Ei","die Eier","egg","鸡蛋","jīdàn"],["banana","die Banane","die Bananen","banana","香蕉","xiāngjiāo"],["chair","der Stuhl","die Stühle","chair","椅子","yǐzi"],["book","das Buch","die Bücher","book","书","shū"],["key","der Schlüssel","die Schlüssel","key","钥匙","yàoshi"],["phone","das Handy","die Handys","mobile phone","手机","shǒujī"],["bed","das Bett","die Betten","bed","床","chuáng"],["clock","die Uhr","die Uhren","clock","时钟","shízhōng"],["car","das Auto","die Autos","car","汽车","qìchē"],["bike","das Fahrrad","die Fahrräder","bicycle","自行车","zìxíngchē"],["bus","der Bus","die Busse","bus","公共汽车","gōnggòng qìchē"],["plane","das Flugzeug","die Flugzeuge","airplane","飞机","fēijī"],["house","das Haus","die Häuser","house","房子","fángzi"],["tree","der Baum","die Bäume","tree","树","shù"]];
   const pronunciation = {
     'die Tasse':'/ˈtasə/', 'der Apfel':'/ˈapfəl/',
     'das Brot':'/bʁoːt/', 'das Wasser':'/ˈvasɐ/',
@@ -26,8 +19,8 @@
   };
   // This linguistic annotation also supports future pictured entries.
   const weakNouns = new Set(['der Junge','der Kollege','der Kunde','der Student','der Mensch','der Herr']);
-  const words = pictureWords.map(([picture,de]) => {
-    const source = LEXICON.find(w => w.de === de && w.pos === 'noun');
+  const words = pictureWords.map(([picture,de,plural,en,zh,pinyin]) => {
+    const source = LEXICON.find(w => w.de === de && w.pos === 'noun') || {id:picture,de,plural,en,zh,pinyin,pos:'noun',articleVariants:[]};
     if (!source) return null;
     return Object.assign({}, source, {
       picture,
