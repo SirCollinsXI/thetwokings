@@ -136,7 +136,7 @@
     const s=w.de,p=w.plural;
     if(w.numberMode==='singular') return s;
     if(w.numberMode==='plural') return p;
-    return s+', '+simple(p);
+    return s+', '+String(p).replace(/^die\s+/i,'');
   }
   function matches(value,w){
     const parts=String(value).split(',').map(normal);
