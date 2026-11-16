@@ -1,5 +1,6 @@
 name: Diagnose Wilson Live
 on:
+  pull_request:
   push:
     branches:
       - fix/wilson-production-check
