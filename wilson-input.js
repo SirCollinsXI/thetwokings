@@ -5,7 +5,7 @@
   const $ = id => document.getElementById(id);
   const STORAGE = 'ttk-wilson-picture-input-v1';
   const DAY = 86400000;
-  const pictureWords = [["cup","die Tasse","die Tassen","cup","杯子","bēizi"],["apple","der Apfel","die Äpfel","apple","苹果","píngguǒ"],["bread","das Brot","die Brote","bread","面包","miànbāo"],["water","das Wasser","—","water","水","shuǐ"],["egg","das Ei","die Eier","egg","鸡蛋","jīdàn"],["banana","die Banane","die Bananen","banana","香蕉","xiāngjiāo"],["chair","der Stuhl","die Stühle","chair","椅子","yǐzi"],["book","das Buch","die Bücher","book","书","shū"],["key","der Schlüssel","die Schlüssel","key","钥匙","yàoshi"],["phone","das Handy","die Handys","mobile phone","手机","shǒujī"],["bed","das Bett","die Betten","bed","床","chuáng"],["clock","die Uhr","die Uhren","clock","时钟","shízhōng"],["car","das Auto","die Autos","car","汽车","qìchē"],["bike","das Fahrrad","die Fahrräder","bicycle","自行车","zìxíngchē"],["bus","der Bus","die Busse","bus","公共汽车","gōnggòng qìchē"],["plane","das Flugzeug","die Flugzeuge","airplane","飞机","fēijī"],["house","das Haus","die Häuser","house","房子","fángzi"],["tree","der Baum","die Bäume","tree","树","shù"]];
+  const pictureWords = [["cup","die Tasse","die Tassen","cup","杯子","bēizi"],["apple","der Apfel","die Äpfel","apple","苹果","píngguǒ"],["bread","das Brot","die Brote","bread","面包","miànbāo"],["water","das Wasser","—","water","水","shuǐ"],["egg","das Ei","die Eier","egg","鸡蛋","jīdàn"],["banana","die Banane","die Bananen","banana","香蕉","xiāngjiāo"],["chair","der Stuhl","die Stühle","chair","椅子","yǐzi"],["book","das Buch","die Bücher","book","书","shū"],["key","der Schlüssel","die Schlüssel","key","钥匙","yàoshi"],["phone","das Handy","die Handys","mobile phone","手机","shǒujī"],["bed","das Bett","die Betten","bed","床","chuáng"],["clock","die Uhr","die Uhren","clock","时钟","shízhōng"],["car","das Auto","die Autos","car","汽车","qìchē"],["bike","das Fahrrad","die Fahrräder","bicycle","自行车","zìxíngchē"],["bus","der Bus","die Busse","bus","公共汽车","gōnggòng qìchē"],["plane","das Flugzeug","die Flugzeuge","airplane","飞机","fēijī"],["house","das Haus","die Häuser","house","房子","fángzi"],["tree","der Baum","die Bäume","tree","树","shù"],["junge","der Junge","die Jungen","boy","男孩","nánhái"],["kollege","der Kollege","die Kollegen","colleague (male)","男同事","nán tóngshì"],["eltern","die Eltern","die Eltern","parents","父母","fùmǔ","plural"],["ferien","die Ferien","die Ferien","holidays / vacation","假期","jiàqī","plural"]];
   const pronunciation = {
     'die Tasse':'/ˈtasə/', 'der Apfel':'/ˈapfəl/',
     'das Brot':'/bʁoːt/', 'das Wasser':'/ˈvasɐ/',
@@ -14,18 +14,21 @@
     'der Schlüssel':'/ˈʃlʏsl̩/', 'das Handy':'/ˈhɛndi/',
     'das Bett':'/bɛt/', 'die Uhr':'/uːɐ̯/',
     'das Auto':'/ˈaʊ̯to/', 'das Fahrrad':'/ˈfaːɐ̯ʁaːt/',
+    'der Junge':'/ˈjʊŋə/', 'der Kollege':'/kɔˈleːɡə/',
+    'die Eltern':'/ˈɛltɐn/', 'die Ferien':'/ˈfeːʁi̯ən/',
     'der Bus':'/bʊs/', 'das Flugzeug':'/ˈfluːktsɔʏ̯k/',
     'das Haus':'/haʊ̯s/', 'der Baum':'/baʊ̯m/'
   };
   // This linguistic annotation also supports future pictured entries.
   const weakNouns = new Set(['der Junge','der Kollege','der Kunde','der Student','der Mensch','der Herr']);
-  const words = pictureWords.map(([picture,de,plural,en,zh,pinyin]) => {
+  const words = pictureWords.map(([picture,de,plural,en,zh,pinyin,numberMode]) => {
     const source = LEXICON.find(w => w.de === de && w.pos === 'noun') || {id:picture,de,plural,en,zh,pinyin,pos:'noun',articleVariants:[]};
     if (!source) return null;
     return Object.assign({}, source, {
       picture,
-      numberMode: source.pos === 'plural' ? 'plural' :
-                  source.plural === '—' ? 'singular' : 'both',
+      numberMode: numberMode || (source.pos === 'plural' ? 'plural' :
+                  plural === '—' ? 'singular' : 'both'),
+      plural: numberMode === 'plural' ? de : plural,
       nDeclension: weakNouns.has(de),
       ipa: pronunciation[de] || ''
     });
@@ -40,7 +43,7 @@
       retry:'还没完全正确。再试一次！',good:'回答正确！',second:'第二次回答正确！',wrong:'请记住正确答案。',dueWord:'现在该复习了',newWord:'新单词',extra:'自由练习 · 提前复习',
       repeat:'下次复习：',n:'N-Deklination（弱变化阳性名词）：单数的宾格、与格、属格通常加 -n/-en。',
       tools:'数据备份 / Data backup',storage:'学习记录只保存在此设备的浏览器中。清除浏览器数据可能导致记录丢失。',
-      export:'导出学习记录',import:'导入：',foot:'当前有 18 张原创图片。使用受遗忘曲线启发的分级复习间隔，并非对个人遗忘曲线的精确预测。语音使用设备可用的德语声音。',
+      export:'导出学习记录',import:'导入：',foot:'当前有 22 张原创图片。使用受遗忘曲线启发的分级复习间隔，并非对个人遗忘曲线的精确预测。语音使用设备可用的德语声音。',
       invalid:'无效的备份文件。',loaded:'学习记录已导入。',savefail:'无法保存。请检查隐私浏览设置，并及时导出备份。',speechfail:'此设备目前无法播放德语语音。',empty:'没有可用的图片词汇。'
     },
     de:{
@@ -52,7 +55,7 @@
       retry:'Noch nicht ganz richtig. Ein zweiter Versuch!',good:'Auf Anhieb richtig!',second:'Im zweiten Versuch richtig!',wrong:'Merke dir die richtige Lösung.',dueWord:'Jetzt wiederholen',newWord:'Neuer Begriff',extra:'Freies Training · vorgezogene Wiederholung',
       repeat:'Nächste Wiederholung: ',n:'N-Deklination: Schwache maskuline Nomen erhalten in den meisten Singularfällen außer dem Nominativ -n/-en.',
       tools:'Lernstand sichern',storage:'Der Lernstand bleibt ausschließlich in diesem Browser. Beim Löschen von Browserdaten kann er verloren gehen.',
-      export:'Lernstand exportieren',import:'Import:',foot:'Derzeit 18 originale Bildkarten. Wiederholungsintervalle sind von Ebbinghaus inspiriert, keine individuell kalibrierte Prognose. Audio verwendet die verfügbare Gerätestimme.',
+      export:'Lernstand exportieren',import:'Import:',foot:'Derzeit 22 originale Bildkarten. Wiederholungsintervalle sind von Ebbinghaus inspiriert, keine individuell kalibrierte Prognose. Audio verwendet die verfügbare Gerätestimme.',
       invalid:'Ungültige Sicherungsdatei.',loaded:'Lernstand importiert.',savefail:'Fortschritt konnte nicht gespeichert werden. Bitte Sicherung exportieren.',speechfail:'Keine deutsche Sprachausgabe verfügbar.',empty:'Keine Bildwörter verfügbar.'
     },
     en:{
@@ -64,7 +67,7 @@
       retry:'Not quite right. Try one more time!',good:'Correct on the first try!',second:'Correct on the second try!',wrong:'Remember the correct answer.',dueWord:'Time to review',newWord:'New word',extra:'Free practice · early review',
       repeat:'Next review: ',n:'N-declension: Weak masculine nouns usually take -n/-en outside the nominative singular.',
       tools:'Back up progress',storage:'Progress is saved only in this browser. Clearing browser data may delete it.',
-      export:'Export progress',import:'Import:',foot:'Currently 18 original picture cards. Intervals are inspired by the Ebbinghaus forgetting curve, not fitted to individual memory. Audio uses the device voice.',
+      export:'Export progress',import:'Import:',foot:'Currently 22 original picture cards. Intervals are inspired by the Ebbinghaus forgetting curve, not fitted to individual memory. Audio uses the device voice.',
       invalid:'Invalid backup file.',loaded:'Progress imported.',savefail:'Could not save progress. Please export a backup.',speechfail:'German speech is not available on this device.',empty:'No pictured vocabulary is available.'
     }
   };
