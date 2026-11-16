@@ -1,0 +1,30 @@
+name: Wilson Trainer Checks
+on:
+  pull_request:
+    paths:
+      - 'wilson-input.*'
+      - 'wilson/**'
+      - 'wilson.html'
+      - '_redirects'
+      - 'scripts/test-wilson-input.cjs'
+      - '.github/workflows/wilson-checks.yml'
+  push:
+    branches:
+      - feature/wilson-picture-input-srs
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check website assets and scripts
+        run: node scripts/check-site.mjs
+      - name: Test Wilson input and scheduling
+        run: node scripts/test-wilson-input.cjs
