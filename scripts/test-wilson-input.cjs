@@ -104,6 +104,7 @@ test.submit('still wrong');
 assert.equal(test.dump().tested,before+1);
 assert.match(test.get('status').textContent,/正确答案/);
 // No audio hardware: the app should give a warning, not crash.
+delete stored[STORE];
 const noSpeech=boot({audio:false});
 noSpeech.submit('die Tasse, Tassen');
 assert.match(noSpeech.get('warning').textContent,/语音/);
