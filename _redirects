@@ -1,5 +1,3 @@
-# Wilson's shareable URL. Temporary redirects while the prototype evolves.
-/Wilson /wilson.html 302
-/Wilson/ /wilson.html 302
-/wilson /wilson.html 302
-/wilson/ /wilson.html 302
+# Wilson shortcut: redirect only uppercase aliases. Cloudflare Pages handles its own clean-URL canonicalization.
+/Wilson /wilson 302
+/Wilson/ /wilson 302
