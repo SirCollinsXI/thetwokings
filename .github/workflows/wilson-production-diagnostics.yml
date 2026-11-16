@@ -44,3 +44,14 @@ jobs:
             echo "browser errors:"
             grep -E 'CONSOLE|ERR_|error|Error' /tmp/chrome-errors | head -12 || true
           done
+
+      - name: Assert fixed Cloudflare preview has no redirect loops
+        shell: bash
+        run: |
+          BASE=https://fix-wilson-production-check.wuesten-bogen-app.pages.dev
+          for path in /Wilson /wilson /wilson.html /wilson-input.html; do
+            echo "=== Testing ${BASE}${path}"
+            curl -fsSL --max-redirs 6 --max-time 25 -o /tmp/wilson-probe -w 'HTTP:%{http_code} final:%{url_effective}\n' "${BASE}${path}"
+            grep -Eiq 'Wilson Jiang|Wilson.*Picture|Wilson · Picture|Wilson Challenge' /tmp/wilson-probe
+          done
+          echo "All Wilson routes load successfully, without redirect loops"
