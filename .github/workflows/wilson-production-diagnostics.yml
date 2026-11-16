@@ -1,0 +1,45 @@
+name: Diagnose Wilson Live
+on:
+  push:
+    branches:
+      - fix/wilson-production-check
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe the published production and preview URLs
+        shell: bash
+        run: |
+          for url in \
+            https://thetwokings.de/ \
+            https://thetwokings.de/Wilson \
+            https://thetwokings.de/wilson.html \
+            https://thetwokings.de/wilson.js \
+            https://thetwokings.de/wilson-paths.js?v=5 \
+            https://thetwokings.de/wilson-lexicon.js \
+            https://thetwokings.de/wilson-input.html \
+            https://51940b5a.wuesten-bogen-app.pages.dev/wilson.html \
+            https://51940b5a.wuesten-bogen-app.pages.dev/wilson-input.html; do
+            echo "=== PROBE $url"
+            curl -sSL --retry 1 --connect-timeout 8 --max-time 25 \
+              -o /tmp/probe.html -w 'HTTP:%{http_code} FINAL:%{url_effective} BYTES:%{size_download} TYPE:%{content_type}\n' "$url" || true
+            head -c 120 /tmp/probe.html | tr '\n' ' '; echo
+          done
+      - name: Browser smoke-test published pages
+        shell: bash
+        run: |
+          CHROME="$(command -v google-chrome || command -v chromium)"
+          for url in https://thetwokings.de/wilson.html https://thetwokings.de/Wilson https://thetwokings.de/wilson-input.html; do
+            echo "=== CHROME $url"
+            D="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom "$url" 2>/tmp/chrome-errors || true)"
+            echo "DOM length: ${#D}"
+            echo "chooser: $(grep -o 'Wie möchtest du heute lernen' <<<"$D" | head -1 || true)"
+            echo "selector: $(grep -o 'path-card' <<<"$D" | wc -l)"
+            echo "question: $(grep -o 'id="question"[^>]*>[^<]*' <<<"$D" | head -1 || true)"
+            echo "browser errors:"
+            grep -E 'CONSOLE|ERR_|error|Error' /tmp/chrome-errors | head -12 || true
+          done
