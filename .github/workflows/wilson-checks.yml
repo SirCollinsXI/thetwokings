@@ -12,6 +12,7 @@ on:
       - 'style.css'
       - '_redirects'
       - 'scripts/test-wilson-input.cjs'
+      - 'scripts/test-wilson-cta.cjs'
       - '.github/workflows/wilson-checks.yml'
   push:
     branches:
@@ -33,6 +34,8 @@ jobs:
         run: node scripts/check-site.mjs
       - name: Test Wilson input and scheduling
         run: node scripts/test-wilson-input.cjs
+      - name: Test CTA cache fallbacks and multilingual labels
+        run: node scripts/test-wilson-cta.cjs
       - name: Smoke-test mobile browser rendering
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/wilson-server.log 2>&1 &
