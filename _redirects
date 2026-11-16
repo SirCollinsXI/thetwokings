@@ -1,0 +1,5 @@
+# Wilson's shareable URL. Temporary redirects while the prototype evolves.
+/Wilson /wilson.html 302
+/Wilson/ /wilson.html 302
+/wilson /wilson.html 302
+/wilson/ /wilson.html 302
