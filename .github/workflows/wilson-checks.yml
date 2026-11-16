@@ -5,6 +5,11 @@ on:
       - 'wilson-input.*'
       - 'wilson/**'
       - 'wilson.html'
+      - 'index.html'
+      - 'i18n-home.js'
+      - 'wilson.js'
+      - 'wilson.css'
+      - 'style.css'
       - '_redirects'
       - 'scripts/test-wilson-input.cjs'
       - '.github/workflows/wilson-checks.yml'
@@ -40,6 +45,24 @@ jobs:
           "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=1280,850 --virtual-time-budget=2000 --screenshot="$RUNNER_TEMP/wilson-desktop.png" http://127.0.0.1:8765/wilson-input.html >/dev/null 2>&1
           test -s "$RUNNER_TEMP/wilson-mobile.png"
           test -s "$RUNNER_TEMP/wilson-desktop.png"
+      - name: Verify localized navigation and challenge on mobile
+        run: |
+          CHROME="$(command -v google-chrome || command -v chromium)"
+          for lang in de en zh; do
+            case "$lang" in
+              de) label='Wilson’s Trainingsecke' ;;
+              en) label='Wilson’s Learning Corner' ;;
+              zh) label='Wilson 的德语学习角' ;;
+            esac
+            DOM="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom "http://127.0.0.1:8765/index.html?lang=$lang" 2>/dev/null)"
+            grep -Fq "$label" <<< "$DOM" || { echo "Missing homepage navigation: $lang"; exit 1; }
+          done
+          WILSON="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom 'http://127.0.0.1:8765/wilson.html' 2>/dev/null)"
+          grep -Fq '章鱼哥的德语单复数挑战' <<< "$WILSON" || { echo 'Chinese Challenge title not displayed'; exit 1; }
+          grep -Fq '看图输入：冠词＋单数、复数' <<< "$WILSON" || { echo 'Chinese challenge explanation missing'; exit 1; }
+          grep -Fq 'href="wilson-input"' <<< "$WILSON" || { echo 'Challenge link missing'; exit 1; }
+          "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=2500 --screenshot="$RUNNER_TEMP/wilson-chinese-entry.png" 'http://127.0.0.1:8765/wilson.html' >/dev/null 2>&1
+          test -s "$RUNNER_TEMP/wilson-chinese-entry.png"
       - name: Archive responsive screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -48,4 +71,5 @@ jobs:
           path: |
             ${{ runner.temp }}/wilson-mobile.png
             ${{ runner.temp }}/wilson-desktop.png
+            ${{ runner.temp }}/wilson-chinese-entry.png
           if-no-files-found: ignore
