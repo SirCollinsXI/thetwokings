@@ -60,7 +60,7 @@ jobs:
           WILSON="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom 'http://127.0.0.1:8765/wilson.html' 2>/dev/null)"
           grep -Fq '章鱼哥的德语单复数挑战' <<< "$WILSON" || { echo 'Chinese Challenge title not displayed'; exit 1; }
           grep -Fq '看图输入：冠词＋单数、复数' <<< "$WILSON" || { echo 'Chinese challenge explanation missing'; exit 1; }
-          grep -Fq 'href="wilson-input"' <<< "$WILSON" || { echo 'Challenge link missing'; exit 1; }
+          grep -Fq 'href="wilson-input.html"' <<< "$WILSON" || { echo 'Challenge link missing'; exit 1; }
           "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=2500 --screenshot="$RUNNER_TEMP/wilson-chinese-entry.png" 'http://127.0.0.1:8765/wilson.html' >/dev/null 2>&1
           test -s "$RUNNER_TEMP/wilson-chinese-entry.png"
       - name: Archive responsive screenshots
