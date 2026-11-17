@@ -2,7 +2,8 @@ name: Wilson Trainer Checks
 on:
   pull_request:
     paths:
-      - 'wilson-input.*'
+      - 'wilson*'
+      - 'scripts/*wilson*'
       - 'wilson/**'
       - 'wilson.html'
       - 'index.html'
@@ -16,7 +17,13 @@ on:
       - '.github/workflows/wilson-checks.yml'
   push:
     branches:
+      - main
       - feature/wilson-picture-input-srs
+    paths:
+      - 'wilson*'
+      - 'wilson/**'
+      - 'scripts/*wilson*'
+      - '.github/workflows/wilson-checks.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -34,6 +41,8 @@ jobs:
         run: node scripts/check-site.mjs
       - name: Test Wilson input and scheduling
         run: node scripts/test-wilson-input.cjs
+      - name: Verify shared vocabulary, exclusions and credits
+        run: node scripts/test-wilson-vocabulary.cjs
       - name: Test CTA cache fallbacks and multilingual labels
         run: node scripts/test-wilson-cta.cjs
       - name: Smoke-test mobile browser rendering

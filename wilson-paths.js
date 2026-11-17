@@ -10,8 +10,8 @@ const KEYS={path:'ttk-wilson-path-v1',child:'ttk-wilson-child-v1'};
 let path='',kidRound=null,kidSettings={target:'de',stage:'visual',topic:'food'},child={version:1,rounds:0};
 try{const c=JSON.parse(localStorage.getItem(KEYS.child));if(c?.version===1&&Number.isSafeInteger(c.rounds)&&c.rounds>=0)child=c}catch{}
 const persist=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{notice(t('nostorage'))}};
-const illustrated=()=>WORDS.filter(w=>w.picture);
-const pic=w=>image(w);
+const illustrated=()=>WORDS.filter(w=>w.picture && (path!=='kids'||w.childSuitable));
+const pic=w=>image(w)+(w.imageCredit?'<small class="image-credit">Mulberry Symbols © Steve Lee · CC BY-SA 4.0 · SVG unchanged</small>':'');
 const oldBrowse=browse;
 const labels=()=>['de','en','zh'].map(l=>`<option value="${l}">${{de:'Deutsch',en:'English',zh:'中文'}[l]}</option>`).join('');
 const topics=()=>['food','home','travel','all'].map(k=>`<option value="${k}">${tr(k)}</option>`).join('');

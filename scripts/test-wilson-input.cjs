@@ -20,6 +20,7 @@ const pictures=[
 ['junge','der Junge','die Jungen'],['kollege','der Kollege','die Kollegen'],
 ['eltern','die Eltern','die Eltern'],['ferien','die Ferien','die Ferien']
 ];
+const shared=vm.runInNewContext(['wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(ROOT,f),'utf8')).join('\n')+';WILSON_VOCABULARY',{LEXICON:code});
 const STORE='ttk-wilson-picture-input-v1';
 const stored={};
 const storage={getItem:k=>stored[k]??null,setItem:(k,v)=>{stored[k]=v}};
@@ -29,17 +30,17 @@ function boot({audio=true}={}){
     id, value:'', textContent:'', placeholder:'', hidden:false, className:'', dataset:{},
     addEventListener:(n,fn)=>events[id+':'+n]=fn,
     focus(){},select(){},setSelectionRange(){},
-    removeAttribute(){},setAttribute(){},click(){}
+    removeAttribute(){},setAttribute(){},click(){},append(){},replaceChildren(){}
  });
  const get=id=>{if(!elements.has(id))elements.set(id,makeElement(id));return elements.get(id);};
- const doc={getElementById:get,documentElement:{lang:'zh-Hans'},querySelectorAll:()=>[]};
+ const doc={createElement:makeElement,getElementById:get,documentElement:{lang:'zh-Hans'},querySelectorAll:()=>[]};
  const speech=audio?{getVoices(){return [{lang:'de-DE',name:'German Voice'}]},cancel(){},speak(u){plays.push(u.text)}}:undefined;
  const win=audio?{speechSynthesis:speech}:{};
- const ctx={document:doc,window:win,localStorage:storage,LEXICON:code,
+ const ctx={document:doc,window:win,localStorage:storage,LEXICON:code,WILSON_VOCABULARY:shared,
    SpeechSynthesisUtterance:function(text){this.text=text;},
    Date,JSON,Math,Number,String,Object,Array,Intl,encodeURIComponent,setTimeout(){}};
  vm.runInNewContext(app,ctx,{filename:'wilson-input.js'});
- return {get,plays,
+ return {get,plays,events,
     submit(value){get('typed').value=value;events['entry:submit']({preventDefault(){}});},
     dump(){return JSON.parse(stored[STORE])}
  };
@@ -77,14 +78,24 @@ for(const [id,de,plural] of pictures.slice(2)){
    assert.equal(test.get('correct-answer').textContent,format(de,plural),'incorrect number form');
  test.submit(''); // advance
 }
-assert.equal(test.dump().tested,pictures.length,'all 22 answers must be saved');
-assert.equal(test.dump().firstCorrect,pictures.length-1);
-assert.equal(Object.keys(test.dump().items).length,pictures.length);
-assert.equal(test.plays.length,pictures.length,'speak after every fully judged word');
-assert.equal(test.get('tested').textContent,pictures.length);
+// Newly approved entries must all be reachable and accept the displayed number forms.
+for (const w of shared.inputWords.slice(22)) {
+ assert.ok(fs.existsSync(path.join(ROOT,w.imagePath)),w.id+' missing approved asset');
+ assert.equal(test.get('word-image').src,w.imagePath,w.id+' image');
+ test.submit(w.numberMode==='singular'?w.de:w.numberMode==='plural'?w.plural:format(w.de,w.plural));
+ assert.equal(test.get('solution').hidden,false,w.id+' did not resolve');
+ assert.ok(test.get('ipa').textContent.startsWith('IPA /'),w.id+' missing IPA');
+ test.submit('');
+}
+const total=shared.inputWords.length;
+assert.equal(test.dump().tested,total,'all approved answers must be saved');
+assert.equal(test.dump().firstCorrect,total-1);
+assert.equal(Object.keys(test.dump().items).length,total);
+assert.equal(test.plays.length,total,'speak after every fully judged word');
+assert.equal(test.get('tested').textContent,total);
 // A reload retains the count and offers an unlimited extra round.
 test=boot();
-assert.equal(test.get('tested').textContent,pictures.length);
+assert.equal(test.get('tested').textContent,total);
 assert.match(test.get('round-note').textContent,/自由练习/);
 // Force the n-declension card to be due: scheduler must prioritize due before extra.
 const progress=test.dump(),junge=dictionary.get('der Junge').id;
@@ -93,7 +104,7 @@ stored[STORE]=JSON.stringify(progress);
 test=boot();
 assert.equal(test.get('word-image').src,'wilson/junge.svg','due words must have highest priority');
 test.submit('der Junge, Jungen');
-assert.equal(test.dump().tested,pictures.length+1);
+assert.equal(test.dump().tested,total+1);
 assert.ok(test.dump().items[junge].due>Date.now());
 // Two wrong attempts: exactly one scored item and a near-term retry.
 test.submit('');
@@ -108,4 +119,30 @@ delete stored[STORE];
 const noSpeech=boot({audio:false});
 noSpeech.submit('die Tasse, Tassen');
 assert.match(noSpeech.get('warning').textContent,/语音/);
-console.log('Wilson tests passed: 22 illustrated cards, spelling, retry, audio hooks, N-declension, plural-only, persistence, scheduling and fallback.');
+console.log('Wilson tests passed: '+total+' illustrated cards, spelling, retry, audio hooks, N-declension, plural-only, persistence, scheduling and fallback.');
+
+// Cross-release storage compatibility, IME protection and punctuation/case feedback.
+delete stored[STORE];
+test=boot();
+test.events['typed:compositionstart']();
+test.submit('die Tasse, Tassen');
+assert.equal(stored[STORE],undefined,'composing input must not be scored');
+test.events['typed:compositionend']();
+test.submit('die tasse，die tassen');
+assert.equal(test.dump().firstCorrect,1);
+assert.match(test.get('status').textContent,/大小写/);
+const originalDue=test.dump().items[shared.inputWords[0].id].due;
+// Score all remaining words, then take an early review and preserve its due date and streak.
+for (const w of shared.inputWords.slice(1)) {test.submit('');test.submit(w.numberMode==='singular'?w.de:w.numberMode==='plural'?w.plural:format(w.de,w.plural));}
+test.submit('');
+const firstID=shared.inputWords[0].id;
+const oldStreak=test.dump().items[firstID].streak;
+test.submit('die Tasse, Tassen');
+assert.equal(test.dump().items[firstID].due,originalDue);
+assert.equal(test.dump().items[firstID].streak,oldStreak);
+const backup=test.dump();
+backup.items.retired_card={seen:2,streak:1,due:100,last:90};
+stored[STORE]=JSON.stringify(backup);
+test=boot();
+assert.equal(test.get('attempts').textContent,backup.tested,'temporarily absent IDs must not discard the whole backup');
+console.log('Compatibility passed: original IDs, future/retired records, Chinese comma, capitalisation, IME, early reviews.');

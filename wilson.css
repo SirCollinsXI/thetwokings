@@ -13,3 +13,5 @@
 .wilson-challenge-link:focus-visible{outline:3px solid #d59a22;outline-offset:4px}
 .wilson-challenge-title{font-size:clamp(16px,2vw,19px);font-weight:750;overflow-wrap:anywhere}
 .wilson-challenge-subtitle{font-size:13px;font-weight:500;opacity:.9;overflow-wrap:anywhere}
+
+.image-credit{font-size:11px;line-height:1.5;font-weight:400;color:#536c60;overflow-wrap:anywhere}.image-credit a{text-decoration:underline}
