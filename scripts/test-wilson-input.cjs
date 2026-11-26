@@ -24,7 +24,7 @@ const shared=vm.runInNewContext(['wilson-image-candidates.js','wilson-vocabulary
 const STORE='ttk-wilson-picture-input-v1';
 const stored={};
 const storage={getItem:k=>stored[k]??null,setItem:(k,v)=>{stored[k]=v}};
-function boot({audio=true}={}){
+function boot({audio=true,word=''}={}){
  const elements=new Map(),events={},plays=[];
  const makeElement=id=>({
     id, value:'', textContent:'', placeholder:'', hidden:false, className:'', dataset:{},
@@ -36,9 +36,10 @@ function boot({audio=true}={}){
  const doc={createElement:makeElement,getElementById:get,documentElement:{lang:'zh-Hans'},querySelectorAll:()=>[]};
  const speech=audio?{getVoices(){return [{lang:'de-DE',name:'German Voice'}]},cancel(){},speak(u){plays.push(u.text)}}:undefined;
  const win=audio?{speechSynthesis:speech}:{};
+ win.location={search:word?'?word='+encodeURIComponent(word):''};
  const ctx={document:doc,window:win,localStorage:storage,LEXICON:code,WILSON_VOCABULARY:shared,
    SpeechSynthesisUtterance:function(text){this.text=text;},
-   Date,JSON,Math,Number,String,Object,Array,Intl,encodeURIComponent,setTimeout(){}};
+   Date,JSON,Math,Number,String,Object,Array,Intl,URLSearchParams,encodeURIComponent,setTimeout(){}};
  vm.runInNewContext(app,ctx,{filename:'wilson-input.js'});
  return {get,plays,events,
     submit(value){get('typed').value=value;events['entry:submit']({preventDefault(){}});},
@@ -48,6 +49,7 @@ function boot({audio=true}={}){
 function format(de,plural){
  return plural==='—'?de:plural===de?de:de+', '+plural.replace(/^die /,'');
 }
+const answerFor=w=>w.numberMode==='both'?w.de+', '+w.plural.replace(/^die /,''):w.numberMode==='plural'?w.plural:w.de;
 let test=boot();
 assert.equal(test.get('typed').placeholder,'der ..., ...','must not leak answer');
 assert.equal(test.get('word-image').src,'wilson/cup.svg');
@@ -82,7 +84,7 @@ for(const [id,de,plural] of pictures.slice(2)){
 for (const w of shared.inputWords.slice(22)) {
  assert.ok(fs.existsSync(path.join(ROOT,w.imagePath)),w.id+' missing approved asset');
  assert.equal(test.get('word-image').src,w.imagePath,w.id+' image');
- test.submit(w.numberMode==='singular'?w.de:w.numberMode==='plural'?w.plural:format(w.de,w.plural));
+ test.submit(answerFor(w));
  assert.equal(test.get('solution').hidden,false,w.id+' did not resolve');
  assert.ok(test.get('ipa').textContent.startsWith('IPA /'),w.id+' missing IPA');
  test.submit('');
@@ -133,7 +135,7 @@ assert.equal(test.dump().firstCorrect,1);
 assert.match(test.get('status').textContent,/大小写/);
 const originalDue=test.dump().items[shared.inputWords[0].id].due;
 // Score all remaining words, then take an early review and preserve its due date and streak.
-for (const w of shared.inputWords.slice(1)) {test.submit('');test.submit(w.numberMode==='singular'?w.de:w.numberMode==='plural'?w.plural:format(w.de,w.plural));}
+for (const w of shared.inputWords.slice(1)) {test.submit('');test.submit(answerFor(w));}
 test.submit('');
 const firstID=shared.inputWords[0].id;
 const oldStreak=test.dump().items[firstID].streak;
@@ -146,3 +148,41 @@ stored[STORE]=JSON.stringify(backup);
 test=boot();
 assert.equal(test.get('attempts').textContent,backup.tested,'temporarily absent IDs must not discard the whole backup');
 console.log('Compatibility passed: original IDs, future/retired records, Chinese comma, capitalisation, IME, early reviews.');
+
+// New task types must request an infinitive/number, never a noun article or plural.
+delete stored[STORE];
+test=boot({word:'v424'});
+assert.match(test.get('question').textContent,/动词原形/);
+assert.equal(test.get('typed').placeholder,'…');
+test.submit('das Gießen');
+assert.equal(test.get('solution').hidden,true);
+test.submit('gießen');
+assert.equal(test.get('correct-answer').textContent,'gießen');
+assert.equal(test.dump().tested,1);
+assert.equal(test.dump().firstCorrect,0);
+test=boot({word:'v424'});
+const earlyDue=test.dump().items.v424.due;
+test.submit('gießen');
+assert.equal(test.dump().items.v424.due,earlyDue,'explicit early practice must preserve the due date');
+test=boot({word:'v8'});
+assert.match(test.get('question').textContent,/数量/);
+test.submit('8');
+assert.equal(test.get('solution').hidden,true,'number task must teach the German word');
+test.submit('acht');
+assert.equal(test.get('correct-answer').textContent,'acht');
+test=boot({word:'v513'});
+test.submit('einhundert');
+assert.equal(test.get('solution').hidden,false,'einhundert is an accepted variant of hundert');
+test=boot({word:'v1137'});
+test.submit('eintausend');
+assert.equal(test.get('solution').hidden,false,'eintausend is an accepted variant of tausend');
+test=boot({word:'v177'});
+assert.match(test.get('question').textContent,/复数/);
+test.submit('die Chips');
+assert.equal(test.get('correct-answer').textContent,'die Chips');
+test=boot({word:'v407'});
+test.submit('der Geldautomat, Geldautomaten');
+assert.equal(test.get('declension').hidden,false,'Geldautomat is a weak noun');
+test=boot({word:'v335'});
+assert.equal(test.get('word-image').src,'wilson/cup.svg','blocked card cannot be selected through a URL');
+console.log('New tasks verified: verb retry, early direct practice, number words, plural-only Chips, weak Geldautomat and blocked-link rejection.');

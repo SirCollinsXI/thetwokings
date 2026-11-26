@@ -22,6 +22,196 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v5",
+    "de": "der Absatz",
+    "en": "heel of a shoe",
+    "plural": "die Absätze",
+    "zh": "鞋跟",
+    "sourcePath": "EN/heel_of_shoe.svg",
+    "path": "wilson/mulberry/v5.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/heel_of_shoe.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈapzats/",
+      "childSuitable": false
+    },
+    "svgSha256": "356f49e6f7f25cf836d9adfe8b005b3f6bb63870571bef1f09e1d0468d542150",
+    "upstreamBlobSha": "42b28020ca480e5e9876c54314bd6b79603e8e9d"
+  },
+  {
+    "id": "v8",
+    "de": "acht",
+    "en": "eight",
+    "plural": "—",
+    "zh": "八",
+    "sourcePath": "EN/eight.svg",
+    "path": "wilson/mulberry/v8.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eight.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/axt/",
+      "childSuitable": true
+    },
+    "svgSha256": "6f50785b933d986b1263fe9db3f8e7bfd1b02767980c333eee4161d3af31df4e",
+    "upstreamBlobSha": "60d9cf2f739a6d8fceac1f9e57274f878d1c604b"
+  },
+  {
+    "id": "v12",
+    "de": "achtzehn",
+    "en": "eighteen",
+    "plural": "—",
+    "zh": "十八",
+    "sourcePath": "EN/eighteen.svg",
+    "path": "wilson/mulberry/v12.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eighteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈaxtseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "38a257aac176911f12423ba7052df6ea55f9336dbf363afccdc475218760a681",
+    "upstreamBlobSha": "bef26426a99e3223714ffe22442afb58f0f509ac"
+  },
+  {
+    "id": "v14",
+    "de": "achtzig",
+    "en": "eighty",
+    "plural": "—",
+    "zh": "八十",
+    "sourcePath": "EN/eighty.svg",
+    "path": "wilson/mulberry/v14.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eighty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈaxtsɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "1edf7585a616631629368aad8274e466e272303743bae39d22236b1b9047a2b6",
+    "upstreamBlobSha": "a1e9f0a7c01327af0a02a805ece45ed70c20f064"
+  },
+  {
+    "id": "v17",
+    "de": "addieren",
+    "en": "to add numbers",
+    "plural": "—",
+    "zh": "相加",
+    "sourcePath": "EN/add.svg",
+    "path": "wilson/mulberry/v17.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/add.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/aˈdiːʁən/",
+      "childSuitable": false
+    },
+    "svgSha256": "357acb7928a742deae60d7d90cb2c31c736a8e3c0ba5c9c5395537e0df555935",
+    "upstreamBlobSha": "edfaf2f1afaad6de67040217528e672c012682ef"
+  },
+  {
+    "id": "v24",
+    "de": "die Ampel",
+    "en": "traffic light",
+    "plural": "die Ampeln",
+    "zh": "交通信号灯",
+    "sourcePath": "EN/traffic_lights.svg",
+    "path": "wilson/mulberry/v24.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/traffic_lights.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈampl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "076bddd16f9f2ebef7ba21259ed4aa058ec04871486ec0229c57c51aeaf4f58a",
+    "upstreamBlobSha": "793f990d1fc00bdacc1969f4797b98e3545c67b7"
+  },
+  {
+    "id": "v27",
+    "de": "der Anhang",
+    "en": "attachment",
+    "plural": "die Anhänge",
+    "zh": "附件",
+    "sourcePath": "EN/email_attachment.svg",
+    "path": "wilson/mulberry/v27.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/email_attachment.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Zwei Bildschirme mit Übertragungspfeil: E-Mail-Anhang ist nicht eindeutig dargestellt."
+    },
+    "svgSha256": "b6dcf3dbe4b395172375c251b2c701a0a99cb5bf0c21f0355a70e5ea56d1dee7",
+    "upstreamBlobSha": "f202db8fd84b1b074a8d1fdfaf3ed7cff4ce99a8"
+  },
+  {
+    "id": "v30",
+    "de": "der Anzug",
+    "en": "suit",
+    "plural": "die Anzüge",
+    "zh": "西装",
+    "sourcePath": "EN/suit_-_mans.svg",
+    "path": "wilson/mulberry/v30.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/suit_-_mans.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈantsuːk/",
+      "childSuitable": true
+    },
+    "svgSha256": "8df99585aa166ceb522b456a8ba92abdee83a85dc5f16e4da965d6b3b91b5d4c",
+    "upstreamBlobSha": "cf484b65272f39bdafb7b81a45efa4b03232b493"
+  },
+  {
     "id": "v31",
     "de": "der Apfel",
     "en": "apple",
@@ -174,6 +364,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v55",
+    "de": "aussteigen",
+    "en": "to get off a vehicle",
+    "plural": "—",
+    "zh": "下车",
+    "sourcePath": "EN/get_off_bus_,_to.svg",
+    "path": "wilson/mulberry/v55.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/get_off_bus_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈaʊ̯sˌʃtaɪ̯ɡn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "9f82d69a1d693adf5ba0e20d709b5ebf1bc624bc86c642b69a909cdd71d06c28",
+    "upstreamBlobSha": "b2739dfde632c6ea4d26943f52c66833a1e61528"
+  },
+  {
     "id": "v58",
     "de": "das Baby",
     "en": "baby",
@@ -218,6 +432,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v69",
+    "de": "der Badeanzug",
+    "en": "swimsuit",
+    "plural": "die Badeanzüge",
+    "zh": "泳衣",
+    "sourcePath": "EN/swimming_costume.svg",
+    "path": "wilson/mulberry/v69.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/swimming_costume.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈbaːdəˌantsuːk/",
+      "childSuitable": true
+    },
+    "svgSha256": "8be9c910fbd3e8ca2ec9a1fd7d8b622ec0d5f3fd83c3c0b3f974dabe01edf84e",
+    "upstreamBlobSha": "a88c600b08bb703b08e815103924c5f176d6f16b"
+  },
+  {
     "id": "v70",
     "de": "die Badehose",
     "en": "swimming trunks",
@@ -240,24 +478,64 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v71",
+    "de": "die Badewanne",
+    "en": "bathtub",
+    "plural": "die Badewannen",
+    "zh": "浴缸",
+    "sourcePath": "EN/bath.svg",
+    "path": "wilson/mulberry/v71.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bath.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈbaːdəˌvanə/",
+      "childSuitable": true
+    },
+    "svgSha256": "4fbba77f1f9e052d4d46a76590354513ea6b08451c27f8ef0bbcac02763206ef",
+    "upstreamBlobSha": "98d7fe7bdc7955bd0b5e2f55134c85479f89b4fb"
+  },
+  {
     "id": "v72",
     "de": "der Bagel",
     "en": "bagel",
     "plural": "die Bagels",
     "zh": "贝果",
-    "sourcePath": "EN/bagel.svg",
+    "sourcePath": "EN/bagel_2.svg",
     "path": "wilson/mulberry/v72.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bagel.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bagel_2.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bagel.svg",
+        "sourcePath": "EN/bagel.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Flacher Ring ohne erkennbare Brotstruktur; Bagel nicht hinreichend eindeutig."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Flacher Ring ohne erkennbare Brotstruktur; Bagel nicht hinreichend eindeutig."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv zeigt aufgeschnittenes Ringbrötchen mit Füllung und klarer Lochform.",
+      "ipa": "/ˈbeːɡl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "eaab0fafec4711f6bdf1aaa04c86962906c78cf348cbd3a4e719de79be0e64e4",
+    "upstreamBlobSha": "18b8892ae6075b33cc727847851b02f5ad1d3e5c"
   },
   {
     "id": "v76",
@@ -304,6 +582,60 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v80",
+    "de": "die Batterie",
+    "en": "battery",
+    "plural": "die Batterien",
+    "zh": "电池",
+    "sourcePath": "EN/battery_1.svg",
+    "path": "wilson/mulberry/v80.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/battery_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/batəˈʁiː/",
+      "childSuitable": true
+    },
+    "svgSha256": "94fe2516687a3078089476ac7e71dea67b0c20ec2047a3a6b0694aa2405f9d40",
+    "upstreamBlobSha": "2d994ce3ee31c86850dd8c9eea0b0b16806f0b8e"
+  },
+  {
+    "id": "v85",
+    "de": "der Becher",
+    "en": "beaker",
+    "plural": "die Becher",
+    "zh": "杯子",
+    "sourcePath": "EN/beaker_2.svg",
+    "path": "wilson/mulberry/v85.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/beaker_2.svg",
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/beaker_1.svg",
+        "date": "2026-11-26",
+        "decision": "replaced",
+        "reason": "Erstmotiv im selben Prüflauf visuell verworfen; Ersatzmotiv erneut gerendert und geprüft."
+      }
+    ],
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Beide beaker-Varianten zeigen Laborglas (Erlenmeyerkolben bzw. Messbecher), keinen Trinkbecher."
+    },
+    "svgSha256": "5d0d356c74d5786e70f5112848459d387156b602dd2867208c21fdd1a93c47fb",
+    "upstreamBlobSha": "33e77c96f08d2f651bd4cd71298d150082c20cd8"
+  },
+  {
     "id": "v91",
     "de": "das Bein",
     "en": "leg",
@@ -326,6 +658,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v96",
+    "de": "das belegte Brötchen",
+    "en": "filled bread roll",
+    "plural": "die belegten Brötchen",
+    "zh": "夹馅小面包",
+    "sourcePath": "EN/bread_roll_filled.svg",
+    "path": "wilson/mulberry/v96.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bread_roll_filled.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/bəˈleːktəs ˈbʁøːtçən/",
+      "childSuitable": true
+    },
+    "svgSha256": "da5872e200111b3bcfe5d0b13a08c6b03382c847b1fdf5ae0807854f7362b760",
+    "upstreamBlobSha": "3bde816bfc2f862b08ea93b8f402bca915360c08"
+  },
+  {
     "id": "v102",
     "de": "der Besen",
     "en": "broom",
@@ -346,6 +702,28 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈbeːzn̩/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v104",
+    "de": "bestellen",
+    "en": "to order",
+    "plural": "—",
+    "zh": "点餐；订购",
+    "sourcePath": "EN/order_1_,_to.svg",
+    "path": "wilson/mulberry/v104.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/order_1_,_to.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Bestell-/Checkliste ohne Bestellung einer Ware oder Speise; Tätigkeit mehrdeutig."
+    },
+    "svgSha256": "a7ccb27e81006b3724b434c6b3f9b214b647e8a095e0c03dcfb0d3b4274aa4c8",
+    "upstreamBlobSha": "e51f0d4218d0ec6f5781375669477b80758a30db"
   },
   {
     "id": "v111",
@@ -390,6 +768,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/biːɐ̯/",
       "childSuitable": false
     }
+  },
+  {
+    "id": "v113",
+    "de": "der Bildschirm",
+    "en": "screen",
+    "plural": "die Bildschirme",
+    "zh": "屏幕",
+    "sourcePath": "EN/computer_monitor.svg",
+    "path": "wilson/mulberry/v113.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_monitor.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈbɪltʃɪʁm/",
+      "childSuitable": false
+    },
+    "svgSha256": "9b241b4028bfc0dfb4805394d09fb524a38cb273803439f5fc7bbff023bb242c",
+    "upstreamBlobSha": "386f221eb20e9400441c6ce5e94d396c9eae4414"
   },
   {
     "id": "v115",
@@ -480,6 +882,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v129",
+    "de": "die Blumenvase",
+    "en": "flower vase",
+    "plural": "die Blumenvasen",
+    "zh": "花瓶",
+    "sourcePath": "EN/vase.svg",
+    "path": "wilson/mulberry/v129.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/vase.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈbluːmənˌvaːzə/",
+      "childSuitable": true
+    },
+    "svgSha256": "df4496693f4de54973c6fc80862840c5e46dd0f6013bdaad0a00e00ab5adae04",
+    "upstreamBlobSha": "966491152a0d1fa7484be432dc6adc826f801f39"
+  },
+  {
     "id": "v130",
     "de": "die Bluse",
     "en": "blouse",
@@ -522,6 +948,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈboːʁɐ/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v137",
+    "de": "braten",
+    "en": "to fry",
+    "plural": "—",
+    "zh": "煎",
+    "sourcePath": "EN/fry_,_to.svg",
+    "path": "wilson/mulberry/v137.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fry_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈbʁaːtn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "e82cab3322f162036cbf294d45a50e5b0750c6aafa663292f63bc9a04ec32646",
+    "upstreamBlobSha": "77dd489df5b8ee878ba4c9c242361bff5a30043b"
   },
   {
     "id": "v138",
@@ -694,6 +1144,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v160",
+    "de": "das Bücherregal",
+    "en": "bookshelf",
+    "plural": "die Bücherregale",
+    "zh": "书架",
+    "sourcePath": "EN/book_shelf.svg",
+    "path": "wilson/mulberry/v160.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/book_shelf.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈbyːçɐʁeˌɡaːl/",
+      "childSuitable": true
+    },
+    "svgSha256": "659bfaf57d1816562fb14345ae45f424029ff9b77799d773e277f886fc175152",
+    "upstreamBlobSha": "16c4af8858514eedb1ffb91954a67d19e88f6ed2"
+  },
+  {
     "id": "v161",
     "de": "das Bügelbrett",
     "en": "ironing board",
@@ -714,6 +1188,78 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈbyːɡl̩ˌbʁɛt/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v162",
+    "de": "das Bügeleisen",
+    "en": "iron for clothes",
+    "plural": "die Bügeleisen",
+    "zh": "熨斗",
+    "sourcePath": "EN/iron.svg",
+    "path": "wilson/mulberry/v162.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/iron.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈbyːɡl̩ˌaɪ̯zn̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "7d355c6f95f637dadaa9c3760fc4bde855c21bb90c118f565a9d52f1f7927096",
+    "upstreamBlobSha": "b8330fd2f143045ef5fc33efacacfbdc324052d3"
+  },
+  {
+    "id": "v163",
+    "de": "bügeln",
+    "en": "to iron",
+    "plural": "—",
+    "zh": "熨衣服",
+    "sourcePath": "EN/iron_,_to.svg",
+    "path": "wilson/mulberry/v163.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/iron_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈbyːɡl̩n/",
+      "childSuitable": false
+    },
+    "svgSha256": "2989017aa37f3efa95c3abc10e6cf7942029e659b2f3d446d0ac3ca252c26241",
+    "upstreamBlobSha": "51ab8f82967eec6b1a466f5af35018eb5903817a"
+  },
+  {
+    "id": "v165",
+    "de": "die Büroklammer",
+    "en": "paper clip",
+    "plural": "die Büroklammern",
+    "zh": "回形针",
+    "sourcePath": "EN/paperclip.svg",
+    "path": "wilson/mulberry/v165.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/paperclip.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/byˈʁoːˌklamɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "107b35dd92f74a76c7ab1d76c3839e076c8401f17fcb48f857efe567a306ea8f",
+    "upstreamBlobSha": "a4fba95994b37487148640d5f7e520596e0f3b2d"
   },
   {
     "id": "v169",
@@ -758,6 +1304,33 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈtʃiːliˌʃoːtə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v177",
+    "de": "die Chips",
+    "en": "crisps",
+    "plural": "—",
+    "zh": "薯片",
+    "sourcePath": "EN/crisps.svg",
+    "path": "wilson/mulberry/v177.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/crisps.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/tʃɪps/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Chips"
+      }
+    },
+    "svgSha256": "c04c8f77882270f95451631a5732895c3146bd5f5b8e279dc8dfd4e09172d88f",
+    "upstreamBlobSha": "0a4a842a57aab8a7c9a04884065a55408756e2f6"
   },
   {
     "id": "v180",
@@ -809,19 +1382,33 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "file",
     "plural": "die Dateien",
     "zh": "文件",
-    "sourcePath": "EN/file.svg",
+    "sourcePath": "EN/new_document.svg",
     "path": "wilson/mulberry/v191.svg",
     "status": "needs-replacement-or-context",
     "active": false,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/file.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/new_document.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/file.svg",
+        "sourcePath": "EN/file.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Englisches file ist hier eine Metallfeile, keine Computerdatei."
+        }
+      }
+    ],
     "review": {
       "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Englisches file ist hier eine Metallfeile, keine Computerdatei."
-    }
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dokumentsymbol ohne Computerkontext; Datei bleibt gegenüber Blatt/Papier mehrdeutig."
+    },
+    "svgSha256": "bb38da83aceb446b1b6c1993aecd936cdb6638e2ee047f376a23ddcc0d0fc424",
+    "upstreamBlobSha": "7dc9b1bee826a6083374335f8cb7e46b643b96d5"
   },
   {
     "id": "v196",
@@ -829,19 +1416,33 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "date",
     "plural": "die Daten",
     "zh": "日期",
-    "sourcePath": "EN/date.svg",
+    "sourcePath": "EN/calendar_month.svg",
     "path": "wilson/mulberry/v196.svg",
     "status": "needs-replacement-or-context",
     "active": false,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/date.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/calendar_month.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/date.svg",
+        "sourcePath": "EN/date.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt Tag/Sonne, kein bestimmtes Kalenderdatum."
+        }
+      }
+    ],
     "review": {
       "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Tag/Sonne, kein bestimmtes Kalenderdatum."
-    }
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Leerer Monatskalender ohne markiertes Datum; Datum nicht eindeutig bezeichnet."
+    },
+    "svgSha256": "4bb06db990026333e34953315e8c002c1428454c0d797d2b332f77c1632738f7",
+    "upstreamBlobSha": "11c31edb9f98f1ed193f6dea9d6cfcd7128ff907"
   },
   {
     "id": "v197",
@@ -932,6 +1533,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v204",
+    "de": "der Desktop-Computer",
+    "en": "desktop computer",
+    "plural": "die Desktop-Computer",
+    "zh": "台式电脑",
+    "sourcePath": "EN/computer_1.svg",
+    "path": "wilson/mulberry/v204.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈdɛsktɔp kɔmˌpjuːtɐ/",
+      "childSuitable": false
+    },
+    "svgSha256": "fb211419930f4c3234ce1c0fb09bb6dd5d92767b64dc3cc6f8dfe801bd2c529a",
+    "upstreamBlobSha": "d5d6cd091cffdeb182c4c611517b47f875dfc862"
+  },
+  {
+    "id": "v215",
+    "de": "dividieren",
+    "en": "to divide numbers",
+    "plural": "—",
+    "zh": "相除",
+    "sourcePath": "EN/divide.svg",
+    "path": "wilson/mulberry/v215.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/divide.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/diviˈdiːʁən/",
+      "childSuitable": false
+    },
+    "svgSha256": "ff182418e8ebaf7e921aed709e5d3f80f8bab5c76c281a57692d9b39b2d8a244",
+    "upstreamBlobSha": "33e065e765b22e61ffdc50922120497c9e068b3d"
+  },
+  {
     "id": "v217",
     "de": "das Doppelbett",
     "en": "double bed",
@@ -954,6 +1603,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v219",
+    "de": "der Dosenöffner",
+    "en": "tin opener",
+    "plural": "die Dosenöffner",
+    "zh": "开罐器",
+    "sourcePath": "EN/can_opener.svg",
+    "path": "wilson/mulberry/v219.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/can_opener.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈdoːzn̩ˌœfnɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "65fb217a28cb091b4da317abf4300413296b13d5302cdbe0b66775eaa20fc768",
+    "upstreamBlobSha": "a3f3b990e33943058dde93411de36f699fc2d0ad"
+  },
+  {
     "id": "v221",
     "de": "der Download",
     "en": "download",
@@ -974,6 +1647,126 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈdaʊ̯nloʊ̯d/",
       "childSuitable": false
     }
+  },
+  {
+    "id": "v222",
+    "de": "drei",
+    "en": "three",
+    "plural": "—",
+    "zh": "三",
+    "sourcePath": "EN/three.svg",
+    "path": "wilson/mulberry/v222.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/three.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/dʁaɪ̯/",
+      "childSuitable": true
+    },
+    "svgSha256": "b8a63eec15dad9fc66c5a48df199473d7af69644e715f76324a958aec7e969cd",
+    "upstreamBlobSha": "6758b90e67a1dd60415bfd5e99a25eefc5b2a376"
+  },
+  {
+    "id": "v224",
+    "de": "drei Viertel",
+    "en": "three quarters",
+    "plural": "—",
+    "zh": "四分之三",
+    "sourcePath": "EN/three_quarters.svg",
+    "path": "wilson/mulberry/v224.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/three_quarters.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/dʁaɪ̯ ˈfɪʁtl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "78e035c1c300690f3cf9642b5607366007c677335b4690bfe726e0d6ffb530ff",
+    "upstreamBlobSha": "94f32972199379b9eeab837e46ef8e49f73b4cfd"
+  },
+  {
+    "id": "v228",
+    "de": "dreißig",
+    "en": "thirty",
+    "plural": "—",
+    "zh": "三十",
+    "sourcePath": "EN/thirty.svg",
+    "path": "wilson/mulberry/v228.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/thirty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈdʁaɪ̯sɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "19f825d42bdcaa013b138e629b8e33974ae2330703348d57926d0db7f303ad8b",
+    "upstreamBlobSha": "213f1d6cff7a51daf4eb9e3faed4d3d628df6c59"
+  },
+  {
+    "id": "v232",
+    "de": "dreizehn",
+    "en": "thirteen",
+    "plural": "—",
+    "zh": "十三",
+    "sourcePath": "EN/thirteen.svg",
+    "path": "wilson/mulberry/v232.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/thirteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈdʁaɪ̯tseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "f0dce045bda1be69da88ef3e43bc3b7248b71b64fc9702206bc169182c7a8c5b",
+    "upstreamBlobSha": "1b9f5ec1b71ee87c303a6014cc05028dc8adf3eb"
+  },
+  {
+    "id": "v236",
+    "de": "ein Drittel",
+    "en": "one third",
+    "plural": "—",
+    "zh": "三分之一",
+    "sourcePath": "EN/one_third.svg",
+    "path": "wilson/mulberry/v236.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/one_third.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/aɪ̯n ˈdʁɪtl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "7335a982e9950411e178b5ae4c7567a0ecf1f6752b76302e270fc7366bf23caf",
+    "upstreamBlobSha": "12c1baa121cdf4c56a07955e0667b53eb4292da2"
   },
   {
     "id": "v242",
@@ -1102,6 +1895,76 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v267",
+    "de": "einfügen",
+    "en": "to insert",
+    "plural": "—",
+    "zh": "插入",
+    "sourcePath": "EN/insert_,_to.svg",
+    "path": "wilson/mulberry/v267.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/insert_,_to.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Physisches Einstecken einer Karte statt Computerbefehl Einfügen aus dem Wortbestand."
+    },
+    "svgSha256": "b78120c132f9adfe727923fb9bba7148d8701f22c782c3e1bf2ff3c36f5836bf",
+    "upstreamBlobSha": "d6cce8aac894b8d8f750091474af8aef1374a3d2"
+  },
+  {
+    "id": "v273",
+    "de": "eins",
+    "en": "one",
+    "plural": "—",
+    "zh": "一",
+    "sourcePath": "EN/one.svg",
+    "path": "wilson/mulberry/v273.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/one.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/aɪ̯ns/",
+      "childSuitable": true
+    },
+    "svgSha256": "973d0f83a8d5c6823f98727684608302c4f0ac14f2d73fff98fb2e5c8d9160da",
+    "upstreamBlobSha": "3bd7add93a3fea569b1c8299355b056d959fb2e1"
+  },
+  {
+    "id": "v275",
+    "de": "einsteigen",
+    "en": "to get on (a vehicle)",
+    "plural": "—",
+    "zh": "上车",
+    "sourcePath": "EN/get_on_bus_,_to.svg",
+    "path": "wilson/mulberry/v275.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/get_on_bus_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈaɪ̯nˌʃtaɪ̯ɡn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "82d25a40f43487c22ff02c331a5b1566339a33c974568ebe76b13853c34eadb0",
+    "upstreamBlobSha": "90553666107570c5b982d91246f2ea618412b762"
+  },
+  {
     "id": "v281",
     "de": "das Eiweiß",
     "en": "egg white",
@@ -1129,6 +1992,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v282",
+    "de": "der Elektrobohrer",
+    "en": "electric drill",
+    "plural": "die Elektrobohrer",
+    "zh": "电钻",
+    "sourcePath": "EN/drill_electric.svg",
+    "path": "wilson/mulberry/v282.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/drill_electric.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/eˈlɛktʁoˌboːʁɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "624669e422932c0a1c3b8b8514a5a7709bf092d45faa158288daab69057f5b42",
+    "upstreamBlobSha": "e5e61f752b17ef510a318bec3ba74d95c4eb5e03"
+  },
+  {
+    "id": "v283",
+    "de": "elf",
+    "en": "eleven",
+    "plural": "—",
+    "zh": "十一",
+    "sourcePath": "EN/eleven.svg",
+    "path": "wilson/mulberry/v283.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eleven.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ɛlf/",
+      "childSuitable": true
+    },
+    "svgSha256": "7b4faf08eacca9e52471e8f97609e1146861e132f109caff0788f36892453c1a",
+    "upstreamBlobSha": "94d7a34f3624cf95c130a74c799a54f539741e76"
+  },
+  {
     "id": "v285",
     "de": "der Ellbogen",
     "en": "elbow",
@@ -1151,6 +2062,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v288",
+    "de": "empfangen",
+    "en": "to receive",
+    "plural": "—",
+    "zh": "接收",
+    "sourcePath": "EN/receive_,_to.svg",
+    "path": "wilson/mulberry/v288.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/receive_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ɛmˈpfaŋən/",
+      "childSuitable": false
+    },
+    "svgSha256": "3b9a395dbcda9ff819d2a78ba91d0be71f9d3c47fc1a096c3aabc9c2bea02c58",
+    "upstreamBlobSha": "eec6d21ed7de7bc55109c0b29222f46d487b202f"
+  },
+  {
     "id": "v296",
     "de": "die Erdbeere",
     "en": "strawberry",
@@ -1171,6 +2106,52 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈeːɐ̯tˌbeːʁə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v300",
+    "de": "ernten",
+    "en": "to harvest",
+    "plural": "—",
+    "zh": "收获",
+    "sourcePath": "EN/harvest.svg",
+    "path": "wilson/mulberry/v300.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/harvest.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Erntekorb ohne Erntehandlung; für den Infinitiv ernten fehlt die Tätigkeit."
+    },
+    "svgSha256": "84f6276d4b5c8e076e45fa087c43b1d4734838800424a68f49c06179f6a51fbe",
+    "upstreamBlobSha": "a874580426c94871da4b998afc74a108e98ded31"
+  },
+  {
+    "id": "v304",
+    "de": "der Erste-Hilfe-Kasten",
+    "en": "first-aid kit",
+    "plural": "die Erste-Hilfe-Kästen",
+    "zh": "急救箱",
+    "sourcePath": "EN/first_aid_box.svg",
+    "path": "wilson/mulberry/v304.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/first_aid_box.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˌeːɐ̯stəˈhɪlfəˌkastn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "e18d49b24824d07aec02597c89a51aafe8016227ce2a7575849baf1dbf76d1ab",
+    "upstreamBlobSha": "aeca52be533882364fd072b2c3fb8e58cb0e8832"
   },
   {
     "id": "v308",
@@ -1213,6 +2194,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈɛsˌtɪʃ/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v317",
+    "de": "der Fahrradhelm",
+    "en": "bicycle helmet",
+    "plural": "die Fahrradhelme",
+    "zh": "自行车头盔",
+    "sourcePath": "EN/cycle_helmet.svg",
+    "path": "wilson/mulberry/v317.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cycle_helmet.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈfaːɐ̯ʁaːtˌhɛlm/",
+      "childSuitable": true
+    },
+    "svgSha256": "39b65aca068f3ddaa09cfe0998852c82f15b83f33d4cfac8777e5c69555008bd",
+    "upstreamBlobSha": "4e36053bd46bfe411fa45a262e82be7912dd7809"
   },
   {
     "id": "v324",
@@ -1286,19 +2291,55 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "fat",
     "plural": "die Fette",
     "zh": "脂肪",
-    "sourcePath": "EN/fat.svg",
+    "sourcePath": "EN/fats.svg",
     "path": "wilson/mulberry/v332.svg",
     "status": "needs-replacement-or-context",
     "active": false,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fat.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fats.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fat.svg",
+        "sourcePath": "EN/fat.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt Körperfülle statt den Stoff Fett; ungeeignete Bedeutungszuordnung."
+        }
+      }
+    ],
     "review": {
       "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Körperfülle statt den Stoff Fett; ungeeignete Bedeutungszuordnung."
-    }
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Gemischte fettreiche Speisen statt klar dargestelltem Stoff Fett."
+    },
+    "svgSha256": "8e78dfbae7a6c9d9f26839f6c3b4eb6de5755f6da936fe8221dab20b4bde6ee3",
+    "upstreamBlobSha": "79e469ec82fe478a7067ab0724a5c3712a2eb4b2"
+  },
+  {
+    "id": "v335",
+    "de": "der Feuerwehrmann",
+    "en": "firefighter (male)",
+    "plural": "die Feuerwehrmänner",
+    "zh": "男消防员",
+    "sourcePath": "EN/fire_engine.svg",
+    "path": "wilson/mulberry/v335.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fire_engine.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Feuerwehrauto statt Feuerwehrmann; nicht aktiviert."
+    },
+    "svgSha256": "a1115193db0c2068f0cefa61ee254830a7dfd3f7bfb4ff33143794271756387f",
+    "upstreamBlobSha": "05f120765a258c07a66f617a9792768db64f5ab5"
   },
   {
     "id": "v338",
@@ -1321,6 +2362,239 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈfɪŋɐˌnaːɡl̩/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v341",
+    "de": "der Flachpinsel",
+    "en": "flat paintbrush",
+    "plural": "die Flachpinsel",
+    "zh": "扁平漆刷",
+    "sourcePath": "EN/paint_brush_2.svg",
+    "path": "wilson/mulberry/v341.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/paint_brush_2.svg",
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/paint_brush.svg",
+        "date": "2026-11-26",
+        "decision": "replaced",
+        "reason": "Erstmotiv im selben Prüflauf visuell verworfen; Ersatzmotiv erneut gerendert und geprüft."
+      }
+    ],
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv zeigt breiten, flachen Pinselkopf statt Rundpinsel.",
+      "ipa": "/ˈflaxˌpɪnzl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "403d2acc74df51543cf6039bfb67562646e57beb967428a2273d219d792ad66f",
+    "upstreamBlobSha": "031a5d7ff57a234aec40c570542c19be8c540b08"
+  },
+  {
+    "id": "v348",
+    "de": "der Flip-Flop",
+    "en": "flip-flop sandal",
+    "plural": "die Flip-Flops",
+    "zh": "人字拖",
+    "sourcePath": "EN/slippers.svg",
+    "path": "wilson/mulberry/v348.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/slippers.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Geschlossene Hausschuhe statt Flip-Flops."
+    },
+    "svgSha256": "a8b8f537461017327e42f2e5b5656177448bbb301442a71cb3defc78ce1a041c",
+    "upstreamBlobSha": "6ca8aea9eb27894f26d7ccfd1e2662728fb8f4ab"
+  },
+  {
+    "id": "v353",
+    "de": "die Frau",
+    "en": "woman",
+    "plural": "die Frauen",
+    "zh": "女人",
+    "sourcePath": "EN/lady_-_face.svg",
+    "path": "wilson/mulberry/v353.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lady_-_face.svg",
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/female_body.svg",
+        "date": "2026-11-26",
+        "decision": "replaced",
+        "reason": "Erstmotiv im selben Prüflauf visuell verworfen; Ersatzmotiv erneut gerendert und geprüft."
+      }
+    ],
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Porträt einer erwachsenen Frau statt isolierter Körper-/Anatomiedarstellung.",
+      "ipa": "/fʁaʊ̯/",
+      "childSuitable": true
+    },
+    "svgSha256": "25e6a8fcd150d4a1cd49d22565b981b1091f02fcd887152d4e2f8d14ab514ffe",
+    "upstreamBlobSha": "cdaa76918637ad60ecbc170048074ce05e08fbd5"
+  },
+  {
+    "id": "v361",
+    "de": "der Frühling",
+    "en": "spring (season)",
+    "plural": "die Frühlinge",
+    "zh": "春天",
+    "sourcePath": "EN/spring.svg",
+    "path": "wilson/mulberry/v361.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spring.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈfʁyːlɪŋ/",
+      "childSuitable": true
+    },
+    "svgSha256": "e7e0a7c9a6e02b1f25b5714afa6de2dec5b93554cddd1ad8baa9f71ba8734b6f",
+    "upstreamBlobSha": "747b980c4417342308029948a331655e98c28e72"
+  },
+  {
+    "id": "v362",
+    "de": "die Frühlingszwiebel",
+    "en": "spring onion",
+    "plural": "die Frühlingszwiebeln",
+    "zh": "小葱",
+    "sourcePath": "EN/spring_onions.svg",
+    "path": "wilson/mulberry/v362.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spring_onions.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈfʁyːlɪŋsˌtsviːbl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "f14132f12afbddaf3f89a2a9d9beb225502157ec202ed00d72819791ef403f2d",
+    "upstreamBlobSha": "e0f9ebdbaf58983ead3d330d227c7af6416b55af"
+  },
+  {
+    "id": "v363",
+    "de": "die Frühstücksflocken",
+    "en": "breakfast cereal",
+    "plural": "—",
+    "zh": "早餐谷物",
+    "sourcePath": "EN/cornflakes.svg",
+    "path": "wilson/mulberry/v363.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cornflakes.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈfʁyːʃtʏksˌflɔkn̩/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Frühstücksflocken"
+      }
+    },
+    "svgSha256": "5253ad91671c99ed572db99c705bc962a70d85897f0b23f724aacc0e4a9df190",
+    "upstreamBlobSha": "565839a2e07f12eeb63f92fc777e56435859ff29"
+  },
+  {
+    "id": "v365",
+    "de": "fünf",
+    "en": "five",
+    "plural": "—",
+    "zh": "五",
+    "sourcePath": "EN/five.svg",
+    "path": "wilson/mulberry/v365.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/five.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/fʏnf/",
+      "childSuitable": true
+    },
+    "svgSha256": "9afda94f17d56a5f0c3f7c3c88f93a70dbcce6369074d5329f4a1018d25c15fd",
+    "upstreamBlobSha": "169884162c273c6b3b450173333f145870760560"
+  },
+  {
+    "id": "v373",
+    "de": "fünfzehn",
+    "en": "fifteen",
+    "plural": "—",
+    "zh": "十五",
+    "sourcePath": "EN/fifteen.svg",
+    "path": "wilson/mulberry/v373.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fifteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈfʏnftseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "4e3977d522dcf1392df953991627cc4aaf383bca48c047677eb301b55bf69629",
+    "upstreamBlobSha": "91edde643ed49a44e207e7f1ea1f6f236efab1c1"
+  },
+  {
+    "id": "v376",
+    "de": "fünfzig",
+    "en": "fifty",
+    "plural": "—",
+    "zh": "五十",
+    "sourcePath": "EN/fifty.svg",
+    "path": "wilson/mulberry/v376.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fifty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈfʏnftsɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "3698fa991ae709bfb5468810dc874483acf0812b308153e122a6572c9889b8a0",
+    "upstreamBlobSha": "a6d42540b5e09bcd0d017ca7a953fc441d4139e1"
   },
   {
     "id": "v380",
@@ -1411,6 +2685,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v389",
+    "de": "der Gartenschlauch",
+    "en": "garden hose",
+    "plural": "die Gartenschläuche",
+    "zh": "花园水管",
+    "sourcePath": "EN/hose.svg",
+    "path": "wilson/mulberry/v389.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hose.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡaʁtn̩ˌʃlaʊ̯x/",
+      "childSuitable": true
+    },
+    "svgSha256": "62fe522c4f023c5525d0494ee77614bfa3fe45a56d1fcc16eca6ea90eea8a1b6",
+    "upstreamBlobSha": "51a30b8c24ab6021015f3246edbccdc4a3577516"
+  },
+  {
     "id": "v398",
     "de": "der Gefrierschrank",
     "en": "freezer",
@@ -1431,6 +2729,79 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ɡəˈfʁiːɐ̯ˌʃʁaŋk/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v407",
+    "de": "der Geldautomat",
+    "en": "ATM",
+    "plural": "die Geldautomaten",
+    "zh": "自动取款机",
+    "sourcePath": "EN/cash_point.svg",
+    "path": "wilson/mulberry/v407.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cash_point.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡɛltʔaʊ̯toˌmaːt/",
+      "childSuitable": false,
+      "nDeclension": true
+    },
+    "svgSha256": "b42507ccb459b99fdf0bccadb6ac74e5057d828716dc4524e4362e32736d8517",
+    "upstreamBlobSha": "0683810777feae08de46147a3ba80a64dcd822d9"
+  },
+  {
+    "id": "v424",
+    "de": "gießen",
+    "en": "to water (plants)",
+    "plural": "—",
+    "zh": "浇水",
+    "sourcePath": "EN/water_plants_,_to.svg",
+    "path": "wilson/mulberry/v424.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/water_plants_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈɡiːsn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "eba000afbee8d034af68ac50f2d7251fe3beee7fc0c9be98d5b54a74b12059f1",
+    "upstreamBlobSha": "e201458afe36ea91ea0b5345f82aebb0ab00cded"
+  },
+  {
+    "id": "v427",
+    "de": "die Glühbirne",
+    "en": "light bulb",
+    "plural": "die Glühbirnen",
+    "zh": "灯泡",
+    "sourcePath": "EN/lightbulb.svg",
+    "path": "wilson/mulberry/v427.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lightbulb.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡlyːˌbɪʁnə/",
+      "childSuitable": true
+    },
+    "svgSha256": "38fbc4c4e891542d691480a04ccd4e6ec584d88a539de76b49d0e6f260ac9edf",
+    "upstreamBlobSha": "e759f0cf54477cc3ccd75cd5796e7a8d6824516e"
   },
   {
     "id": "v431",
@@ -1495,6 +2866,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v440",
+    "de": "die grüne Bohne",
+    "en": "green bean",
+    "plural": "die grünen Bohnen",
+    "zh": "四季豆",
+    "sourcePath": "EN/green_beans.svg",
+    "path": "wilson/mulberry/v440.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/green_beans.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡʁyːnə ˈboːnə/",
+      "childSuitable": true
+    },
+    "svgSha256": "1cfe5e50a593cfd69acbc0716ba0ad09f4a8d3742165f9be4a9fdd84b708c4f5",
+    "upstreamBlobSha": "577b6b21066d8f06eb0957e57f4d00635227508f"
+  },
+  {
+    "id": "v442",
+    "de": "der Gummistiefel",
+    "en": "rubber boot",
+    "plural": "die Gummistiefel",
+    "zh": "雨靴",
+    "sourcePath": "EN/wellington_boots.svg",
+    "path": "wilson/mulberry/v442.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wellington_boots.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡʊmiˌʃtiːfl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "af1d2e48278ba70a9fd4c2899dd323915100035ab041260c24caef51bddcdc1d",
+    "upstreamBlobSha": "8ec4cc9ee767ea9f024b55f20101180ee5a5a3ab"
+  },
+  {
     "id": "v444",
     "de": "der Gürtel",
     "en": "belt",
@@ -1537,6 +2956,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈhaːɐ̯ˌbʏʁstə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v453",
+    "de": "die Haftnotiz",
+    "en": "sticky note",
+    "plural": "die Haftnotizen",
+    "zh": "便利贴",
+    "sourcePath": "EN/post-it.svg",
+    "path": "wilson/mulberry/v453.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/post-it.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈhaftnoˌtiːts/",
+      "childSuitable": true
+    },
+    "svgSha256": "9b2a36ac9caeae177cf5970093d77f30bbb74d7a9d4cc76668a8adc587da5c40",
+    "upstreamBlobSha": "bef9fbd66e114b2cb27e6860e84490a977ddb55c"
   },
   {
     "id": "v459",
@@ -1605,6 +3048,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v466",
+    "de": "die Hand",
+    "en": "hand",
+    "plural": "die Hände",
+    "zh": "手",
+    "sourcePath": "EN/left_hand.svg",
+    "path": "wilson/mulberry/v466.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/left_hand.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/hant/",
+      "childSuitable": true
+    },
+    "svgSha256": "3bbae3094ba506d28aaa2f9c0128e9c258bd6af1b74bf96e80f81318e132f4dc",
+    "upstreamBlobSha": "a3afd1f51072eb48a2ef6ec00137d1ecedecf736"
+  },
+  {
     "id": "v470",
     "de": "das Handgelenk",
     "en": "wrist",
@@ -1632,19 +3099,57 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "hand mixer",
     "plural": "die Handrührgeräte",
     "zh": "手持搅拌器",
-    "sourcePath": "EN/hand_mixer.svg",
+    "sourcePath": "EN/mixer.svg",
     "path": "wilson/mulberry/v471.svg",
     "status": "needs-replacement-or-context",
     "active": false,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hand_mixer.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mixer.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hand_mixer.svg",
+        "sourcePath": "EN/hand_mixer.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt Stabmixer, kein Handrührgerät mit Rührbesen."
+        }
+      }
+    ],
     "review": {
       "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Stabmixer, kein Handrührgerät mit Rührbesen."
-    }
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Stand-Küchenmaschine mit Schüssel statt Handrührgerät."
+    },
+    "svgSha256": "5955190f1f0ed3716bd03125aeaca8c4367915d20479c6dd9d3206b323351ded",
+    "upstreamBlobSha": "8dd21309f9444f7124abf913481cecfd2c450878"
+  },
+  {
+    "id": "v472",
+    "de": "die Handsäge",
+    "en": "handsaw",
+    "plural": "die Handsägen",
+    "zh": "手锯",
+    "sourcePath": "EN/saw.svg",
+    "path": "wilson/mulberry/v472.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saw.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈhantˌzɛːɡə/",
+      "childSuitable": true
+    },
+    "svgSha256": "afa4c7e7025c5949d46bf5f3d23297a2fc8e7ed493cdc758b8070c9b725cd303",
+    "upstreamBlobSha": "92835ab48466f4e4f2ad25976abe1d01945049cb"
   },
   {
     "id": "v474",
@@ -1711,6 +3216,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈhaʊ̯sˌtyːɐ̯/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v482",
+    "de": "der Hautausschlag",
+    "en": "skin rash",
+    "plural": "die Hautausschläge",
+    "zh": "皮疹",
+    "sourcePath": "EN/rash.svg",
+    "path": "wilson/mulberry/v482.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rash.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈhaʊ̯tʔaʊ̯sˌʃlaːk/",
+      "childSuitable": false
+    },
+    "svgSha256": "40db8150db562f36d61eeae2652b053167dec47d2dffe63ffc3975add5f6ed06",
+    "upstreamBlobSha": "182ee21ac6838ac0b7113e5a7910e1b73efab747"
   },
   {
     "id": "v488",
@@ -1845,6 +3374,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v508",
+    "de": "das Hörgerät",
+    "en": "hearing aid",
+    "plural": "die Hörgeräte",
+    "zh": "助听器",
+    "sourcePath": "EN/hearing_aid_1.svg",
+    "path": "wilson/mulberry/v508.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hearing_aid_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈhøːɐ̯ɡəˌʁɛːt/",
+      "childSuitable": false
+    },
+    "svgSha256": "4a069b257a695d084ccb7fd78a3c3a0d7644e09506191083a9cdc54d90479f7d",
+    "upstreamBlobSha": "953cc7384661bfb261b4620faf20cb79c31ab655"
+  },
+  {
+    "id": "v509",
+    "de": "die Hose",
+    "en": "pair of trousers",
+    "plural": "die Hosen",
+    "zh": "裤子",
+    "sourcePath": "EN/trousers.svg",
+    "path": "wilson/mulberry/v509.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/trousers.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈhoːzə/",
+      "childSuitable": true
+    },
+    "svgSha256": "3c4a28f606263a7594b01be9433e961cb2379e919038780186c5174b242d270c",
+    "upstreamBlobSha": "59985eda3d4e5b5647d0d96a21173be906116a5d"
+  },
+  {
     "id": "v510",
     "de": "die Hüfte",
     "en": "hip",
@@ -1865,6 +3442,57 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈhʏftə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v513",
+    "de": "hundert",
+    "en": "one hundred",
+    "plural": "—",
+    "zh": "一百",
+    "sourcePath": "EN/hundred.svg",
+    "path": "wilson/mulberry/v513.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hundred.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈhʊndɐt/",
+      "childSuitable": true,
+      "answerVariants": [
+        "einhundert"
+      ]
+    },
+    "svgSha256": "f9c1caf6d2a21cf4aa319fb2d7cd85cc6cf7ba327609403a232ad3afb83a1d49",
+    "upstreamBlobSha": "79b121df82532dfe205fdb4dc6e2579de49fda30"
+  },
+  {
+    "id": "v538",
+    "de": "die Jeans",
+    "en": "pair of jeans",
+    "plural": "die Jeans",
+    "zh": "牛仔裤",
+    "sourcePath": "EN/jeans.svg",
+    "path": "wilson/mulberry/v538.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/jeans.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/dʒiːns/",
+      "childSuitable": true
+    },
+    "svgSha256": "6015ee0d3ab37a127fd50d410bc38ca7146d80380847d91d36c2d500dfb64e99",
+    "upstreamBlobSha": "1fd3b233554c837204f7661275a0b11fce4d63a5"
   },
   {
     "id": "v548",
@@ -1907,6 +3535,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈkafe/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v555",
+    "de": "die Kaffeemaschine",
+    "en": "coffee machine",
+    "plural": "die Kaffeemaschinen",
+    "zh": "咖啡机",
+    "sourcePath": "EN/coffee_maker.svg",
+    "path": "wilson/mulberry/v555.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/coffee_maker.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkafeːmaˌʃiːnə/",
+      "childSuitable": true
+    },
+    "svgSha256": "c7f56a28044f1b3fed7425150601b71b1d480ca04489179176254d976cff1be8",
+    "upstreamBlobSha": "e33b9376bc87bbf771a2983c1b894de2d6061d84"
   },
   {
     "id": "v557",
@@ -2019,6 +3671,52 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v568",
+    "de": "die Kehrschaufel",
+    "en": "dustpan",
+    "plural": "die Kehrschaufeln",
+    "zh": "簸箕",
+    "sourcePath": "EN/broom.svg",
+    "path": "wilson/mulberry/v568.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/broom.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Besen statt Kehrschaufel; identisches Motiv bereits bei v102 aktiv."
+    },
+    "svgSha256": "3babe39f355c4c6f972663ffbabb9e30dc482d663b8da130869997960f9232fa",
+    "upstreamBlobSha": "c7f41e5666602c47288b900f1b46618ef16967f5"
+  },
+  {
+    "id": "v571",
+    "de": "die Kerze",
+    "en": "candle",
+    "plural": "die Kerzen",
+    "zh": "蜡烛",
+    "sourcePath": "EN/candle_2.svg",
+    "path": "wilson/mulberry/v571.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/candle_2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɛʁtsə/",
+      "childSuitable": true
+    },
+    "svgSha256": "0e7365782826c0144dbfb75a2de10c59a5d4cb44a4d406664774afdb6c4bef9d",
+    "upstreamBlobSha": "8f7bdd5ae25176eb9e6e26e13a8a0980e69c0aba"
+  },
+  {
     "id": "v578",
     "de": "das Kinn",
     "en": "chin",
@@ -2105,6 +3803,78 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈklaɪ̯dɐˌbyːɡl̩/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v585",
+    "de": "der Kleinbus",
+    "en": "minibus",
+    "plural": "die Kleinbusse",
+    "zh": "小型客车",
+    "sourcePath": "EN/mini_bus.svg",
+    "path": "wilson/mulberry/v585.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mini_bus.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈklaɪ̯nˌbʊs/",
+      "childSuitable": true
+    },
+    "svgSha256": "33b5ee3c201ce3c51e93ff30177c629987b569cac3533d96372ebad0db43718a",
+    "upstreamBlobSha": "8bc5629dba8a25757f182f1a1268eba1c0f81d43"
+  },
+  {
+    "id": "v591",
+    "de": "klingeln",
+    "en": "ring",
+    "plural": "—",
+    "zh": "响铃",
+    "sourcePath": "EN/ring_doorbell_,_to.svg",
+    "path": "wilson/mulberry/v591.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ring_doorbell_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈklɪŋl̩n/",
+      "childSuitable": false
+    },
+    "svgSha256": "4cb9f93b2852e8d4a1d7cc636b1d58ad734bc63ac1322f8c44cd1bfa765aa53c",
+    "upstreamBlobSha": "19e520743266bc69ac6b6c463c2cb48390a46db3"
+  },
+  {
+    "id": "v592",
+    "de": "der Klingelton",
+    "en": "ringtone",
+    "plural": "die Klingeltöne",
+    "zh": "铃声",
+    "sourcePath": "EN/mobile_phone_ring_tone.svg",
+    "path": "wilson/mulberry/v592.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mobile_phone_ring_tone.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈklɪŋl̩ˌtoːn/",
+      "childSuitable": false
+    },
+    "svgSha256": "0467c7edece2b621f957c0395cba61a33b2f16d0205ac1e9c9ddc9f744ce70b8",
+    "upstreamBlobSha": "2fcbdf26cd81c9378364da21d3273af9874587a1"
   },
   {
     "id": "v595",
@@ -2195,6 +3965,78 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v601",
+    "de": "der Kochlöffel",
+    "en": "cooking spoon",
+    "plural": "die Kochlöffel",
+    "zh": "烹饪勺",
+    "sourcePath": "EN/wooden_spoon.svg",
+    "path": "wilson/mulberry/v601.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wooden_spoon.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɔxˌlœfl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "fa54b2e7f8fcf9977e2b46b80e33564701700794e128bded41798b1b5e0b7c7a",
+    "upstreamBlobSha": "61f3cc2b62d03b8867f1eab23ff5f45d3b4fb98d"
+  },
+  {
+    "id": "v602",
+    "de": "der Kochtopf",
+    "en": "cooking pot",
+    "plural": "die Kochtöpfe",
+    "zh": "锅",
+    "sourcePath": "EN/saucepan.svg",
+    "path": "wilson/mulberry/v602.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saucepan.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɔxˌtɔpf/",
+      "childSuitable": true
+    },
+    "svgSha256": "2b05b642a0782670c40d7bfb2d0363e0aea305d31d6fcfb9b5c8a08a12dde4f0",
+    "upstreamBlobSha": "0a56f88a190020967e4b41fc2ac677a53141ffd1"
+  },
+  {
+    "id": "v603",
+    "de": "der Koffer",
+    "en": "suitcase",
+    "plural": "die Koffer",
+    "zh": "行李箱",
+    "sourcePath": "EN/suitcase_1.svg",
+    "path": "wilson/mulberry/v603.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/suitcase_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɔfɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "536a770d23f785473a603cb8c9262675f06a3cdc5352bb525ea0ec8c376777e5",
+    "upstreamBlobSha": "7ca9885d0db8ac922796e327e1b8862898e21274"
+  },
+  {
     "id": "v604",
     "de": "der Kofferraum",
     "en": "car boot",
@@ -2215,6 +4057,28 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈkɔfɐˌʁaʊ̯m/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v607",
+    "de": "die Kombizange",
+    "en": "combination pliers",
+    "plural": "die Kombizangen",
+    "zh": "钢丝钳",
+    "sourcePath": "EN/pliers.svg",
+    "path": "wilson/mulberry/v607.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pliers.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Spitze Zange; eine Kombizange mit typischem Greif- und Schneidkopf ist nicht erkennbar."
+    },
+    "svgSha256": "f43174ca5ca9712b4ffd54f5fb572805116dc190989306c02bf3a3e64b0fb4f1",
+    "upstreamBlobSha": "1f882dc8d873052560cbb639d37b30e946101dc2"
   },
   {
     "id": "v608",
@@ -2281,6 +4145,81 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v622",
+    "de": "die Kopfschmerzen",
+    "en": "headache",
+    "plural": "—",
+    "zh": "头痛",
+    "sourcePath": "EN/headache.svg",
+    "path": "wilson/mulberry/v622.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/headache.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɔpfˌʃmɛʁtsn̩/",
+      "childSuitable": false,
+      "corrections": {
+        "plural": "die Kopfschmerzen"
+      }
+    },
+    "svgSha256": "0da00771e96ebf3acb29b815813cb316afe55fe9afc23bab17412b29bd2fd0fe",
+    "upstreamBlobSha": "42881556bcccb279debfbef073f0734b2a8273a4"
+  },
+  {
+    "id": "v624",
+    "de": "kopieren",
+    "en": "copy",
+    "plural": "—",
+    "zh": "复制",
+    "sourcePath": "EN/copy_,_to.svg",
+    "path": "wilson/mulberry/v624.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/copy_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/koˈpiːʁən/",
+      "childSuitable": false
+    },
+    "svgSha256": "0a8c816931b15b8d9f5433e9f6113a722942b2ff1d87d4293707061c8b5fb5c6",
+    "upstreamBlobSha": "2380dc59e709f93ca6f99614ba24d84a2432b232"
+  },
+  {
+    "id": "v626",
+    "de": "der Kragen",
+    "en": "collar",
+    "plural": "die Kragen",
+    "zh": "衣领",
+    "sourcePath": "EN/collar_1.svg",
+    "path": "wilson/mulberry/v626.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/collar_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʁaːɡn̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "01c82b92412df749844f6e2490a25142fd7c505ad3da0bb2c7bc161838a5494b",
+    "upstreamBlobSha": "0a540a27b40633e00b04c8584cd0822ffc1ede71"
+  },
+  {
     "id": "v630",
     "de": "die Krawatte",
     "en": "tie",
@@ -2345,6 +4284,172 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈkʁoːnˌlɔʏ̯çtɐ/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v636",
+    "de": "die Krücke",
+    "en": "crutch",
+    "plural": "die Krücken",
+    "zh": "拐杖",
+    "sourcePath": "EN/crutches_1.svg",
+    "path": "wilson/mulberry/v636.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/crutches_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʁʏkə/",
+      "childSuitable": true
+    },
+    "svgSha256": "d09f224d5b839005d41ef1e91806d054b00608c937ace8d6c85bf9c4f9bf9169",
+    "upstreamBlobSha": "b5a21c9665b651517c932de49e7dd909f973bf74"
+  },
+  {
+    "id": "v637",
+    "de": "der Küchenhocker",
+    "en": "kitchen stool",
+    "plural": "die Küchenhocker",
+    "zh": "厨房凳子",
+    "sourcePath": "EN/stool.svg",
+    "path": "wilson/mulberry/v637.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/stool.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Allgemeiner Hocker; identisches Motiv bei v502 (der Hocker) aktiv. Kein zusätzliches Bildwort."
+    },
+    "svgSha256": "3dfee0c613461e76e0841f0e1b3be14a047115675cce7940fcf36225c763883a",
+    "upstreamBlobSha": "df0918611db4469d5a3134bfd5a3dd57cac55faa"
+  },
+  {
+    "id": "v641",
+    "de": "das Küchensieb",
+    "en": "kitchen sieve",
+    "plural": "die Küchensiebe",
+    "zh": "厨房滤网",
+    "sourcePath": "EN/sieve.svg",
+    "path": "wilson/mulberry/v641.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sieve.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʏçn̩ˌziːp/",
+      "childSuitable": true
+    },
+    "svgSha256": "5c3a88fa32061527c4946d42e528737f7294ac53129d45191ccbbffcd1983e3f",
+    "upstreamBlobSha": "3ea7d8e72d3072a2b1eb19cb25fee7516eec01ba"
+  },
+  {
+    "id": "v642",
+    "de": "die Küchenwaage",
+    "en": "kitchen scales",
+    "plural": "die Küchenwaagen",
+    "zh": "厨房秤",
+    "sourcePath": "EN/scales_2.svg",
+    "path": "wilson/mulberry/v642.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/scales_2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʏçn̩ˌvaːɡə/",
+      "childSuitable": true
+    },
+    "svgSha256": "fe607c1ec29b287df0bdc9cb16e26250a1bb49a549e90bd4d3717d797c75e166",
+    "upstreamBlobSha": "816a0612b53a979fca14756faed771d77b55943e"
+  },
+  {
+    "id": "v643",
+    "de": "der Kugelschreiber",
+    "en": "ballpoint pen",
+    "plural": "die Kugelschreiber",
+    "zh": "圆珠笔",
+    "sourcePath": "EN/pen.svg",
+    "path": "wilson/mulberry/v643.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkuːɡl̩ˌʃʁaɪ̯bɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "abea206e4653e7a9f3a1a687f6b12c40a1b857a854d1abcd3fc9cfd5a8f3903b",
+    "upstreamBlobSha": "b8efc1b2f05f2fcb89c1ef50f1465ed66aaad5c8"
+  },
+  {
+    "id": "v647",
+    "de": "der Kühlschrank",
+    "en": "refrigerator",
+    "plural": "die Kühlschränke",
+    "zh": "冰箱",
+    "sourcePath": "EN/fridge.svg",
+    "path": "wilson/mulberry/v647.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fridge.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkyːlˌʃʁaŋk/",
+      "childSuitable": true
+    },
+    "svgSha256": "e0e6e75a6daeeb4c9a6af01f2343546034e5e4336b6e4fcb33e30b2142201c49",
+    "upstreamBlobSha": "b270cbd02efe15e2109b5514aa3f7a1338df746a"
+  },
+  {
+    "id": "v652",
+    "de": "lachen",
+    "en": "laugh",
+    "plural": "—",
+    "zh": "笑",
+    "sourcePath": "EN/laughing_lady.svg",
+    "path": "wilson/mulberry/v652.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/laughing_lady.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈlaxn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "13c44822bfc3d0cc45b24500f473f3631125ecb7ca3852f3e63ab06d63dcacdd",
+    "upstreamBlobSha": "f80022b57701ff7f89d6c8643cab342d4e9ab27f"
   },
   {
     "id": "v657",
@@ -2435,6 +4540,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v672",
+    "de": "der Lenker",
+    "en": "handlebars",
+    "plural": "die Lenker",
+    "zh": "车把",
+    "sourcePath": "EN/handle_bars.svg",
+    "path": "wilson/mulberry/v672.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/handle_bars.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈlɛŋkɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "3a5675b43dc21a7eac41d1ea71a396365c7c216f30b1e54a9917aeb3289fde0b",
+    "upstreamBlobSha": "cf5a99673ac281f36fa8eede27444088ecb18165"
+  },
+  {
+    "id": "v676",
+    "de": "liefern",
+    "en": "deliver",
+    "plural": "—",
+    "zh": "送货",
+    "sourcePath": "EN/deliver_,_to.svg",
+    "path": "wilson/mulberry/v676.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/deliver_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈliːfɐn/",
+      "childSuitable": false
+    },
+    "svgSha256": "b73f89aede5a5d2adc8c24482d8b39e52da8aeaeaf6b6630d64eb49f54145565",
+    "upstreamBlobSha": "bca661bff4017f206bd985075ebdc24b0a0524fa"
+  },
+  {
     "id": "v678",
     "de": "die Limette",
     "en": "lime",
@@ -2501,6 +4654,52 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v688",
+    "de": "die Lunge",
+    "en": "lung",
+    "plural": "die Lungen",
+    "zh": "肺",
+    "sourcePath": "EN/lungs.svg",
+    "path": "wilson/mulberry/v688.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lungs.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈlʊŋə/",
+      "childSuitable": false
+    },
+    "svgSha256": "b375ed9c0387b74009b992f3cfc7082c9b458b9012999c5004a6ccfab425b7e4",
+    "upstreamBlobSha": "cc97f0926436477a5e853c3a23307bb8b76aa358"
+  },
+  {
+    "id": "v689",
+    "de": "das Mädchen",
+    "en": "girl",
+    "plural": "die Mädchen",
+    "zh": "女孩",
+    "sourcePath": "EN/pupil.svg",
+    "path": "wilson/mulberry/v689.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pupil.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Englisches pupil bezeichnet hier die Pupille, nicht ein Mädchen."
+    },
+    "svgSha256": "f1db0ca26f9dec08d58605e0f96b2d9263a1b2ba36aa48c7bb39b0e2974ef3e0",
+    "upstreamBlobSha": "13f649d57fc717795d25a3a94a439ba54188b98c"
+  },
+  {
     "id": "v690",
     "de": "der Magen",
     "en": "stomach",
@@ -2521,6 +4720,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈmaːɡn̩/",
       "childSuitable": false
     }
+  },
+  {
+    "id": "v693",
+    "de": "der Mais",
+    "en": "maize",
+    "plural": "—",
+    "zh": "玉米",
+    "sourcePath": "EN/sweetcorn.svg",
+    "path": "wilson/mulberry/v693.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sweetcorn.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/maɪ̯s/",
+      "childSuitable": true
+    },
+    "svgSha256": "65d7af187313d84281bf211a372fcab4cf6daf01eac6e733cf1621ef82edaa4e",
+    "upstreamBlobSha": "a37a3784e0cdd97a20cc9af0f43e87c870f2d158"
+  },
+  {
+    "id": "v697",
+    "de": "der Mann",
+    "en": "man",
+    "plural": "die Männer",
+    "zh": "男人",
+    "sourcePath": "EN/man_-_face.svg",
+    "path": "wilson/mulberry/v697.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/man_-_face.svg",
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/male_body.svg",
+        "date": "2026-11-26",
+        "decision": "replaced",
+        "reason": "Erstmotiv im selben Prüflauf visuell verworfen; Ersatzmotiv erneut gerendert und geprüft."
+      }
+    ],
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Porträt eines erwachsenen Mannes statt isolierter Körper-/Anatomiedarstellung.",
+      "ipa": "/man/",
+      "childSuitable": true
+    },
+    "svgSha256": "d57a97363dc907e1d6a25a02044dc808f36cff3fe0383c3684ea482e997a55f1",
+    "upstreamBlobSha": "a2ffdf9ca1f77a1436ee6169d667dde53eb5dcc3"
   },
   {
     "id": "v699",
@@ -2545,6 +4800,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v701",
+    "de": "die Maus",
+    "en": "computer mouse",
+    "plural": "die Mäuse",
+    "zh": "鼠标",
+    "sourcePath": "EN/computer_mouse_1.svg",
+    "path": "wilson/mulberry/v701.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_mouse_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/maʊ̯s/",
+      "childSuitable": false
+    },
+    "svgSha256": "b96be53bfd02f95ba4e4d9b15d641e59b920a778230fcfc2c9be44182a85a167",
+    "upstreamBlobSha": "ed3e78c7af06562b12c99397168f768b757c2ee5"
+  },
+  {
+    "id": "v702",
+    "de": "das Mauspad",
+    "en": "mouse pad",
+    "plural": "die Mauspads",
+    "zh": "鼠标垫",
+    "sourcePath": "EN/mouse_mat.svg",
+    "path": "wilson/mulberry/v702.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mouse_mat.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈmaʊ̯sˌpɛt/",
+      "childSuitable": false
+    },
+    "svgSha256": "c781d2333f21c4871fbf263797d6f99fee9b90e13bfcca8d3ac7343373ed2f3c",
+    "upstreamBlobSha": "22e1281726649447e74d5ddf542eece915f60dd1"
+  },
+  {
     "id": "v704",
     "de": "die Mayonnaise",
     "en": "mayonnaise",
@@ -2563,6 +4866,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
       "reason": "Unbeschriftetes Glas; Mayonnaise nicht eindeutig erkennbar."
     }
+  },
+  {
+    "id": "v711",
+    "de": "der Messbecher",
+    "en": "measuring cup",
+    "plural": "die Messbecher",
+    "zh": "量杯",
+    "sourcePath": "EN/measuring_jug.svg",
+    "path": "wilson/mulberry/v711.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/measuring_jug.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈmɛsˌbɛçɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "be8013bba93d669d5a4c69e28bc56840ca8efa07ac1c6d7767955eab323369ff",
+    "upstreamBlobSha": "ffc659e3e7ce8b71045be1d71d973b805e2b2157"
   },
   {
     "id": "v712",
@@ -2631,6 +4958,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v722",
+    "de": "die Mikrowelle",
+    "en": "microwave oven",
+    "plural": "die Mikrowellen",
+    "zh": "微波炉",
+    "sourcePath": "EN/microwave.svg",
+    "path": "wilson/mulberry/v722.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/microwave.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈmiːkʁoˌvɛlə/",
+      "childSuitable": true
+    },
+    "svgSha256": "14939fdd4b78246ba2abdf8ed8c76bc404312411ed51632380141193032e8c20",
+    "upstreamBlobSha": "d7b85b5f376ced040c42e7c3e3e83eec5eb2ac27"
+  },
+  {
     "id": "v723",
     "de": "die Milch",
     "en": "milk",
@@ -2653,6 +5004,33 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v724",
+    "de": "die Milchprodukte",
+    "en": "dairy products",
+    "plural": "—",
+    "zh": "乳制品",
+    "sourcePath": "EN/dairy_products.svg",
+    "path": "wilson/mulberry/v724.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dairy_products.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈmɪlçpʁoˌdʊktə/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Milchprodukte"
+      }
+    },
+    "svgSha256": "dfe2d6d8ba10298507a42918ab117d5947c2dbf0ed6d0ddb44670a31109b5932",
+    "upstreamBlobSha": "09ed17a4c7c38af9d6d1235cc178928c727b6229"
+  },
+  {
     "id": "v732",
     "de": "die Minute",
     "en": "minute",
@@ -2673,6 +5051,38 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/miˈnuːtə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v739",
+    "de": "der Mixer",
+    "en": "blender",
+    "plural": "die Mixer",
+    "zh": "搅拌机",
+    "sourcePath": "EN/blender_drinks.svg",
+    "path": "wilson/mulberry/v739.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/blender_drinks.svg",
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/food_blender.svg",
+        "date": "2026-11-26",
+        "decision": "replaced",
+        "reason": "Erstmotiv im selben Prüflauf visuell verworfen; Ersatzmotiv erneut gerendert und geprüft."
+      }
+    ],
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv zeigt Standmixer mit hohem Mixkrug und Messerbereich statt Küchenmaschine.",
+      "ipa": "/ˈmɪksɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "d94b40542add5da2c2c766aa16ae9a97e16f005a5b5ff0ddf308b804490b3ca3",
+    "upstreamBlobSha": "3c824b25439032d5329d3a029a53a1f7647f5fe5"
   },
   {
     "id": "v744",
@@ -2719,6 +5129,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v748",
+    "de": "der Müllbeutel",
+    "en": "rubbish bag",
+    "plural": "die Müllbeutel",
+    "zh": "垃圾袋",
+    "sourcePath": "EN/bin_bag.svg",
+    "path": "wilson/mulberry/v748.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bin_bag.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈmʏlˌbɔʏ̯tl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "9ad0b9a7a953a2a0225d9c8020913dfdd870a32a261ddb7e63e5678a7a50f93d",
+    "upstreamBlobSha": "000e19aff3339a859e5dc6c1c4376f5c394bb874"
+  },
+  {
+    "id": "v750",
+    "de": "multiplizieren",
+    "en": "multiply",
+    "plural": "—",
+    "zh": "相乘",
+    "sourcePath": "EN/multiply.svg",
+    "path": "wilson/mulberry/v750.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/multiply.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/mʊltipliˈtsiːʁən/",
+      "childSuitable": false
+    },
+    "svgSha256": "3fd0d3fe40421933bacc59bcbb5860652383d027f4f9f6e0f7895a11d52e8e60",
+    "upstreamBlobSha": "b8e3f24ada9b1b824227ab9de4f9780f6514b957"
+  },
+  {
     "id": "v751",
     "de": "der Mund",
     "en": "mouth",
@@ -2746,19 +5204,35 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "cap",
     "plural": "die Mützen",
     "zh": "帽子",
-    "sourcePath": "EN/cap.svg",
+    "sourcePath": "EN/bobble_hat.svg",
     "path": "wilson/mulberry/v755.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cap.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bobble_hat.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cap.svg",
+        "sourcePath": "EN/cap.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt Schirmkappe; gezielteres Motiv oder akzeptierte Synonyme für Mütze nötig."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Schirmkappe; gezielteres Motiv oder akzeptierte Synonyme für Mütze nötig."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv zeigt gestrickte Bommelmütze statt Schirmkappe.",
+      "ipa": "/ˈmʏtsə/",
+      "childSuitable": true
+    },
+    "svgSha256": "50b94a9531df2c407a99a275b7fabf6c07b649ce395e5241ef0bc024930c3928",
+    "upstreamBlobSha": "6a96c16e9fe17397d558980a6a62a2225a6e8a23"
   },
   {
     "id": "v759",
@@ -2779,6 +5253,52 @@ const WILSON_IMAGE_CANDIDATES=[
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
       "reason": "Sonne am Horizont unterscheidet Nachmittag nicht von Sonnenuntergang."
     }
+  },
+  {
+    "id": "v761",
+    "de": "der Nachttisch",
+    "en": "bedside table",
+    "plural": "die Nachttische",
+    "zh": "床头柜",
+    "sourcePath": "EN/coffee_table.svg",
+    "path": "wilson/mulberry/v761.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/coffee_table.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Couchtisch statt Nachttisch; identisches Motiv bei v180 aktiv."
+    },
+    "svgSha256": "a574bbe8910048ec6c527830589e14162cc2daedde3380ba52ed89bd1f1434b7",
+    "upstreamBlobSha": "bed94ae7d48cd1aed26ae4a7696b3164753bc6ff"
+  },
+  {
+    "id": "v764",
+    "de": "der Nagel",
+    "en": "nail (fastener)",
+    "plural": "die Nägel",
+    "zh": "钉子",
+    "sourcePath": "EN/nail.svg",
+    "path": "wilson/mulberry/v764.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nail.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/naːɡl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "36267c711adfba1f8c58e74fc9986b4d568d2fc9743a1eccf1fa91873bac5111",
+    "upstreamBlobSha": "965962a30d5f03ae621dc6df1f65a25825b6143e"
   },
   {
     "id": "v765",
@@ -2803,6 +5323,100 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v773",
+    "de": "neun",
+    "en": "nine",
+    "plural": "—",
+    "zh": "九",
+    "sourcePath": "EN/nine.svg",
+    "path": "wilson/mulberry/v773.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nine.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/nɔʏ̯n/",
+      "childSuitable": true
+    },
+    "svgSha256": "835d4f64958fec50f102be3f417ff6fd04897df5db0f4557840e26a867861e3c",
+    "upstreamBlobSha": "7aa1ca88bfb962adc76db57f1e6d078e7b159a96"
+  },
+  {
+    "id": "v775",
+    "de": "neunzehn",
+    "en": "nineteen",
+    "plural": "—",
+    "zh": "十九",
+    "sourcePath": "EN/nineteen.svg",
+    "path": "wilson/mulberry/v775.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nineteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈnɔʏ̯ntseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "629b23f87474fae526c278f01c4a7810e3ab53cbcba93d472bcc7e6ae31e370d",
+    "upstreamBlobSha": "2c01aa439294e6abf56c56c06ec89361a23e024d"
+  },
+  {
+    "id": "v777",
+    "de": "neunzig",
+    "en": "ninety",
+    "plural": "—",
+    "zh": "九十",
+    "sourcePath": "EN/ninety.svg",
+    "path": "wilson/mulberry/v777.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ninety.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈnɔʏ̯ntsɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "8752507e011bd7f1e41b9231aa3e78cd57f8a58ffb217bf030a8640debb86f40",
+    "upstreamBlobSha": "05b0249e67bee34b94e3ccf18bd940e282fd31d1"
+  },
+  {
+    "id": "v785",
+    "de": "das Niesen",
+    "en": "sneezing",
+    "plural": "—",
+    "zh": "打喷嚏",
+    "sourcePath": "EN/sneeze_cold.svg",
+    "path": "wilson/mulberry/v785.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sneeze_cold.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Person mit Taschentuch zeigt Erkältung/Naseputzen; Niesvorgang nicht eindeutig."
+    },
+    "svgSha256": "850df61b4f17d84c43abe93c26d8b657251f660d51e07d65d78623ab03066140",
+    "upstreamBlobSha": "3d6a328a1c4f531d2a501f8b0829894380b84899"
+  },
+  {
     "id": "v787",
     "de": "das Notizbuch",
     "en": "notebook",
@@ -2823,6 +5437,54 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/noˈtiːtsˌbuːx/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v789",
+    "de": "das Nugget",
+    "en": "chicken nugget",
+    "plural": "die Nuggets",
+    "zh": "鸡块",
+    "sourcePath": "EN/chicken_nuggets.svg",
+    "path": "wilson/mulberry/v789.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chicken_nuggets.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈnaɡət/",
+      "childSuitable": true
+    },
+    "svgSha256": "0b6aff89567a6b6148de4a1cb1c12832c82b1c8c345d39ab3498ce32acc5970c",
+    "upstreamBlobSha": "f71d3cceb8f4c167118e4495d3d1acf699c15f65"
+  },
+  {
+    "id": "v790",
+    "de": "null",
+    "en": "zero",
+    "plural": "—",
+    "zh": "零",
+    "sourcePath": "EN/Zero.svg",
+    "path": "wilson/mulberry/v790.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/Zero.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈnʊl/",
+      "childSuitable": true
+    },
+    "svgSha256": "0142ee3784ef4058a2056f3f00bf6afc09d91b2c445922d1898198b9d9d2b04e",
+    "upstreamBlobSha": "d32fee086e128d1d0cc16fee5973e1b2f0926715"
   },
   {
     "id": "v793",
@@ -2891,6 +5553,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v803",
+    "de": "die Orange",
+    "en": "orange (fruit)",
+    "plural": "die Orangen",
+    "zh": "橙子",
+    "sourcePath": "EN/orange.svg",
+    "path": "wilson/mulberry/v803.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/orange.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/oˈʁaŋʒə/",
+      "childSuitable": true
+    },
+    "svgSha256": "6c800b08b66a9ca51cf0d05110f3da9ac9e757d5645f40c7c29824fe7edbb70a",
+    "upstreamBlobSha": "f4bac6216d42ef6d34f40bb152c1b3bc2ebff693"
+  },
+  {
     "id": "v804",
     "de": "der Orangensaft",
     "en": "orange juice",
@@ -2911,6 +5597,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/oˈʁaŋʒn̩ˌzaft/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v805",
+    "de": "der Ordner",
+    "en": "folder",
+    "plural": "die Ordner",
+    "zh": "文件夹",
+    "sourcePath": "EN/computer_folder.svg",
+    "path": "wilson/mulberry/v805.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_folder.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈɔʁdnɐ/",
+      "childSuitable": false
+    },
+    "svgSha256": "8a8476507ae515335e98cba670543c06b5ed3b87564248e6fe4945006bcb11c3",
+    "upstreamBlobSha": "bec47ac7203f8ca284a2659bed9a6023867dfe63"
   },
   {
     "id": "v812",
@@ -2957,6 +5667,28 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v820",
+    "de": "der Pfeffer",
+    "en": "pepper (spice)",
+    "plural": "—",
+    "zh": "胡椒",
+    "sourcePath": "EN/pepper_mill.svg",
+    "path": "wilson/mulberry/v820.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pepper_mill.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Pfeffermühle statt Gewürz Pfeffer; identisches Motiv bei v821 aktiv."
+    },
+    "svgSha256": "d89310b09681a8946b80305a7e560d8a11d3b0b7fdb405fa3919bded8b915805",
+    "upstreamBlobSha": "b9373eb7370c029e6bdcbe5b5d5d2c395dbcf699"
+  },
+  {
     "id": "v821",
     "de": "die Pfeffermühle",
     "en": "pepper mill",
@@ -2997,6 +5729,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
       "reason": "Pfirsich ohne Schnitt oder weiteres Merkmal schwer von Aprikose zu unterscheiden."
     }
+  },
+  {
+    "id": "v823",
+    "de": "das Pflaster",
+    "en": "adhesive bandage",
+    "plural": "die Pflaster",
+    "zh": "创可贴",
+    "sourcePath": "EN/plaster.svg",
+    "path": "wilson/mulberry/v823.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/plaster.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈpflastɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "7a8c51321566da20bb29b386ac15916f759940ea1c2ece76e1a934f6b2ea89b4",
+    "upstreamBlobSha": "7b5ed2a078c843574e64991252c4c3b00ae7203a"
   },
   {
     "id": "v824",
@@ -3085,6 +5841,33 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v834",
+    "de": "die Pommes frites",
+    "en": "French fries",
+    "plural": "—",
+    "zh": "炸薯条",
+    "sourcePath": "EN/chips.svg",
+    "path": "wilson/mulberry/v834.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chips.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/pɔm ˈfʁɪt/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Pommes frites"
+      }
+    },
+    "svgSha256": "0b2ba4b0d7a063fc131f56ab801e221a1e5cf77844e1b9ac5357fc8589f54ea5",
+    "upstreamBlobSha": "f0deb177a082a35cb07eed21d5abcf2d9d4f0c7c"
+  },
+  {
     "id": "v838",
     "de": "der Postausgang",
     "en": "outbox",
@@ -3171,6 +5954,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈpʊpə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v855",
+    "de": "das Püree",
+    "en": "purée",
+    "plural": "die Pürees",
+    "zh": "泥状食物",
+    "sourcePath": "EN/mash_potato_1.svg",
+    "path": "wilson/mulberry/v855.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mash_potato_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/pyˈʁeː/",
+      "childSuitable": true
+    },
+    "svgSha256": "5a05903a0b2d384cc55b16aec59fd66163c2a02624abea24afbdb7779d1657e0",
+    "upstreamBlobSha": "9384e63ba17f56ca7dd5012877117bb66028d12a"
   },
   {
     "id": "v862",
@@ -3481,6 +6288,52 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v900",
+    "de": "der Rosenkohl",
+    "en": "Brussels sprouts",
+    "plural": "—",
+    "zh": "抱子甘蓝",
+    "sourcePath": "EN/brussel_sprouts.svg",
+    "path": "wilson/mulberry/v900.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/brussel_sprouts.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Zwei generische Kohlköpfe ohne Größen- oder Stängelkontext; Rosenkohl nicht eindeutig genug."
+    },
+    "svgSha256": "a71439e0b2510d9450bbe39edcebe531c0ed4fc403ff459ba1352ed2b907a605",
+    "upstreamBlobSha": "9ee571e9364a0f506291e01ae1edeb3ae63c4ce5"
+  },
+  {
+    "id": "v901",
+    "de": "die Rosenschere",
+    "en": "pruning shears",
+    "plural": "die Rosenscheren",
+    "zh": "修枝剪",
+    "sourcePath": "EN/garden_clippers.svg",
+    "path": "wilson/mulberry/v901.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/garden_clippers.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁoːzn̩ˌʃeːʁə/",
+      "childSuitable": true
+    },
+    "svgSha256": "6a71c245a2ec5dd33802df1875834b61476a5f50bd306d355a32bb9bfc51add9",
+    "upstreamBlobSha": "0920aa915155d181d6b3a5f5d1f2ae0d8da93c2d"
+  },
+  {
     "id": "v902",
     "de": "die Rote Bete",
     "en": "beetroot",
@@ -3525,24 +6378,62 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v908",
+    "de": "der Rücken",
+    "en": "back (body)",
+    "plural": "die Rücken",
+    "zh": "背部",
+    "sourcePath": "EN/back.svg",
+    "path": "wilson/mulberry/v908.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/back.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁʏkn̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "b7fd0cfe4a735afa79cf742e394568af95990f0c09d22ec0d1625c0cc27a572f",
+    "upstreamBlobSha": "69f78abe5503ac11025dc9899d590a50a14881ae"
+  },
+  {
     "id": "v918",
     "de": "die Sahne",
     "en": "cream",
     "plural": "—",
     "zh": "奶油",
-    "sourcePath": "EN/cream.svg",
+    "sourcePath": "EN/cream_2.svg",
     "path": "wilson/mulberry/v918.svg",
     "status": "needs-replacement-or-context",
     "active": false,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cream.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cream_2.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cream.svg",
+        "sourcePath": "EN/cream.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Motiv nutzt nur winzigen Teil der Zeichenfläche; Sahne außerdem nicht eindeutig."
+        }
+      }
+    ],
     "review": {
       "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Motiv nutzt nur winzigen Teil der Zeichenfläche; Sahne außerdem nicht eindeutig."
-    }
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Sahne gegenüber Creme/anderem hellen Stoff nicht eindeutig; Gießmotiv uneindeutig."
+    },
+    "svgSha256": "94e7130cbe74052a9d74477a2391311b6b2ae29225bbb683cff3120c61dca3a4",
+    "upstreamBlobSha": "7bb5ba177525be5d6d800308b7a847b65cb04dd9"
   },
   {
     "id": "v920",
@@ -3565,6 +6456,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/zaˈlaːt/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v921",
+    "de": "die Salbe",
+    "en": "ointment",
+    "plural": "die Salben",
+    "zh": "药膏",
+    "sourcePath": "EN/cream_ointment.svg",
+    "path": "wilson/mulberry/v921.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cream_ointment.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈzalbə/",
+      "childSuitable": false
+    },
+    "svgSha256": "d2193514e0b3fea29ad39188aba88467ac614332169e8a1f80030c3b671d14b8",
+    "upstreamBlobSha": "21c7488e18fb7e671a4ebab4890022af25ef20a5"
   },
   {
     "id": "v922",
@@ -3611,6 +6526,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v927",
+    "de": "die Sandale",
+    "en": "sandal",
+    "plural": "die Sandalen",
+    "zh": "凉鞋",
+    "sourcePath": "EN/sandals.svg",
+    "path": "wilson/mulberry/v927.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sandals.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/zanˈdaːlə/",
+      "childSuitable": true
+    },
+    "svgSha256": "a9aeaadc89b09874e76c4b7bacc1def91da0fe442cca8a107873afc7cc508df2",
+    "upstreamBlobSha": "74a3a88efe280f0f7aa14d5ea8768d50a4b49791"
+  },
+  {
     "id": "v929",
     "de": "das Sandwich",
     "en": "sandwich",
@@ -3640,17 +6579,62 @@ const WILSON_IMAGE_CANDIDATES=[
     "zh": "车座",
     "sourcePath": "EN/saddle.svg",
     "path": "wilson/mulberry/v931.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
     "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saddle.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saddle.svg",
+        "sourcePath": "EN/saddle.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Reitsattel abgebildet; chinesische Übersetzung bezeichnet aktuell Fahrradsitz."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Reitsattel abgebildet; chinesische Übersetzung bezeichnet aktuell Fahrradsitz."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Reitsattel visuell passend. Chinesische Bedeutung zu 马鞍 (mǎ'ān) korrigiert; kein Fahrradsitz.",
+      "ipa": "/ˈzatl̩/",
+      "childSuitable": false,
+      "corrections": {
+        "zh": "马鞍",
+        "pinyin": "mǎ'ān",
+        "en": "saddle (horse)"
+      }
+    },
+    "svgSha256": "8aa52f3b860e6e77bd79c47f5cf022972a5e9b2b6a3a3970668c838b7798aadc",
+    "upstreamBlobSha": "6a69b9a3371897eda6c8d1cdbdf005047ab2d7cf"
+  },
+  {
+    "id": "v934",
+    "de": "schälen",
+    "en": "to peel",
+    "plural": "—",
+    "zh": "削皮",
+    "sourcePath": "EN/peel_,_to.svg",
+    "path": "wilson/mulberry/v934.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/peel_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈʃɛːlən/",
+      "childSuitable": false
+    },
+    "svgSha256": "2510ab22af53d01079cae465e2d530f8ca466a798f7a4344cde3d8a2da712145",
+    "upstreamBlobSha": "af8928f844e33b691e96b7145120222f256ad23d"
   },
   {
     "id": "v935",
@@ -3680,19 +6664,35 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "slice",
     "plural": "die Scheiben",
     "zh": "薄片",
-    "sourcePath": "EN/slice.svg",
+    "sourcePath": "EN/bread_slice.svg",
     "path": "wilson/mulberry/v940.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/slice.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bread_slice.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/slice.svg",
+        "sourcePath": "EN/slice.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt herausgeschnittenes Käsestück; Scheibe als flaches Stück nicht klar."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt herausgeschnittenes Käsestück; Scheibe als flaches Stück nicht klar."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv zeigt klar eine einzelne flach geschnittene Brotscheibe.",
+      "ipa": "/ˈʃaɪ̯bə/",
+      "childSuitable": true
+    },
+    "svgSha256": "9f3c2e607552d70282108a55fa67f1fca7ef094becd8a8ee1e8fbca50cafca09",
+    "upstreamBlobSha": "8fbe98e5a13e3c9f20cc9926104cbfe01391528f"
   },
   {
     "id": "v943",
@@ -3827,6 +6827,58 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v959",
+    "de": "schneiden",
+    "en": "to cut",
+    "plural": "—",
+    "zh": "切",
+    "sourcePath": "EN/cut_with_scissors_,_to.svg",
+    "path": "wilson/mulberry/v959.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cut_with_scissors_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈʃnaɪ̯dn̩/",
+      "childSuitable": false,
+      "corrections": {
+        "zh": "剪；切",
+        "pinyin": "jiǎn; qiē"
+      }
+    },
+    "svgSha256": "da23821dc91d6e0cd11e1d75aed68a12b17a2f3d4f957482052a85cd0f69db8e",
+    "upstreamBlobSha": "4baeb74cc8797ef41752d9a8c7154bae9b7960cf"
+  },
+  {
+    "id": "v964",
+    "de": "der Schnürschuh",
+    "en": "lace-up shoe",
+    "plural": "die Schnürschuhe",
+    "zh": "系带鞋",
+    "sourcePath": "EN/shoe_-_mans.svg",
+    "path": "wilson/mulberry/v964.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/shoe_-_mans.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃnyːɐ̯ˌʃuː/",
+      "childSuitable": true
+    },
+    "svgSha256": "ae64045b6e93a9ff9ac65d635f5095d688fc3306be7d47251830475151a49228",
+    "upstreamBlobSha": "275143037c40eaeac03a7f6b9632bb1e92c2f6f6"
+  },
+  {
     "id": "v966",
     "de": "der Schokoriegel",
     "en": "chocolate bar",
@@ -3893,6 +6945,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v969",
+    "de": "der Schraubenschlüssel",
+    "en": "spanner",
+    "plural": "die Schraubenschlüssel",
+    "zh": "扳手",
+    "sourcePath": "EN/wrench.svg",
+    "path": "wilson/mulberry/v969.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wrench.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃʁaʊ̯bn̩ˌʃlʏsl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "0960e058e3bb8031d1ec2e9daff8fc857f2c1612c988bd223ef141465460702f",
+    "upstreamBlobSha": "d9d76f6aafdcf9c361b231017ea458631f8ca90b"
+  },
+  {
     "id": "v970",
     "de": "der Schraubenzieher",
     "en": "screwdriver",
@@ -3957,6 +7033,28 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈʃuːpˌlaːdə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v977",
+    "de": "der Schulranzen",
+    "en": "school satchel",
+    "plural": "die Schulranzen",
+    "zh": "书包",
+    "sourcePath": "EN/school_bag.svg",
+    "path": "wilson/mulberry/v977.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/school_bag.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Generischer Rucksack; Schulranzen nicht durch schulischen Kontext oder Form erkennbar."
+    },
+    "svgSha256": "ac82b61d64011ea12d76e1e95724836804336d8ae610d0e4f66747468f418210",
+    "upstreamBlobSha": "9c208f48712f9a9402201ef39bcc9fde3bf99432"
   },
   {
     "id": "v978",
@@ -4045,6 +7143,78 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v997",
+    "de": "sechs",
+    "en": "six",
+    "plural": "—",
+    "zh": "六",
+    "sourcePath": "EN/six.svg",
+    "path": "wilson/mulberry/v997.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/six.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/zɛks/",
+      "childSuitable": true
+    },
+    "svgSha256": "05d8b3a17c5769c8d0b51d49c61bc590f67ad1f862c31e927da006fff7c7e4dd",
+    "upstreamBlobSha": "f1f0f19bfdac9a067775aa2f01a0920d2cafa280"
+  },
+  {
+    "id": "v1001",
+    "de": "sechzehn",
+    "en": "sixteen",
+    "plural": "—",
+    "zh": "十六",
+    "sourcePath": "EN/sixteen.svg",
+    "path": "wilson/mulberry/v1001.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sixteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈzɛçtseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "a9a170accde2052265b89eff0c0279534ac063009cf937d7ddd569a8204a8c7c",
+    "upstreamBlobSha": "240890fee741617d3546b3101fbcc10f00c70717"
+  },
+  {
+    "id": "v1004",
+    "de": "sechzig",
+    "en": "sixty",
+    "plural": "—",
+    "zh": "六十",
+    "sourcePath": "EN/sixty.svg",
+    "path": "wilson/mulberry/v1004.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sixty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈzɛçtsɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "c937e734d54b36073ce5998479fb5b277863cec2a74ada60f0367446cbca20fa",
+    "upstreamBlobSha": "83e63661cc11c3b2f5a106254a009666ab980937"
+  },
+  {
     "id": "v1006",
     "de": "die Seife",
     "en": "soap",
@@ -4065,6 +7235,54 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈzaɪ̯fə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1016",
+    "de": "die Serviette",
+    "en": "napkin",
+    "plural": "die Servietten",
+    "zh": "餐巾",
+    "sourcePath": "EN/serviette.svg",
+    "path": "wilson/mulberry/v1016.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/serviette.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/zɛʁˈvi̯ɛtə/",
+      "childSuitable": true
+    },
+    "svgSha256": "5f840f25c9e51940e6d65d6727942f28b45b45823297532d1b1522b80b86507d",
+    "upstreamBlobSha": "242fce4e762e6c611e0bb31719538d17c249ab2a"
+  },
+  {
+    "id": "v1017",
+    "de": "der Sessel",
+    "en": "armchair",
+    "plural": "die Sessel",
+    "zh": "扶手椅",
+    "sourcePath": "EN/arm_chair.svg",
+    "path": "wilson/mulberry/v1017.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/arm_chair.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈzɛsl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "72a6ef6276dd9aa62288a48289291e64a62e7a5ab4d4fde34c2e4ccc06192bd5",
+    "upstreamBlobSha": "7df44c553d98ee751fa547023d19b1e44015c6d8"
   },
   {
     "id": "v1018",
@@ -4089,6 +7307,33 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1019",
+    "de": "die Shorts",
+    "en": "shorts",
+    "plural": "—",
+    "zh": "短裤",
+    "sourcePath": "EN/shorts.svg",
+    "path": "wilson/mulberry/v1019.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/shorts.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ʃɔːɐ̯ts/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Shorts"
+      }
+    },
+    "svgSha256": "8c64537de54fdbbb686c27d33f96288fb498d27c29dd48715b17af76075ee10b",
+    "upstreamBlobSha": "01b4e4f115325669d88477f80f8372479faddb23"
+  },
+  {
     "id": "v1020",
     "de": "der Sicherheitsgurt",
     "en": "seat belt",
@@ -4109,6 +7354,174 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈzɪçɐhaɪ̯tsˌɡʊʁt/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1024",
+    "de": "die Sichtverpackung",
+    "en": "blister pack",
+    "plural": "die Sichtverpackungen",
+    "zh": "透明泡罩包装",
+    "sourcePath": "EN/tablet_blister_pack.svg",
+    "path": "wilson/mulberry/v1024.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tablet_blister_pack.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈzɪçtfɛɐ̯ˌpakʊŋ/",
+      "childSuitable": false
+    },
+    "svgSha256": "a3b42831b0dbe7ac2d9cb3787e767ad89b54ae826d0708f4147c8a84224140b4",
+    "upstreamBlobSha": "d728ee962af4ea876f08744483e85b24f9a0bb2e"
+  },
+  {
+    "id": "v1025",
+    "de": "sieben",
+    "en": "seven",
+    "plural": "—",
+    "zh": "七",
+    "sourcePath": "EN/seven.svg",
+    "path": "wilson/mulberry/v1025.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seven.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈziːbn̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "527f2c94bbc65133f7d7ba8e55f0a74c1079ab2724e27b7923cc0b633d306f68",
+    "upstreamBlobSha": "e69a56b2cc7e6e906cd267f8c9268415a478e778"
+  },
+  {
+    "id": "v1029",
+    "de": "siebzehn",
+    "en": "seventeen",
+    "plural": "—",
+    "zh": "十七",
+    "sourcePath": "EN/seventeen.svg",
+    "path": "wilson/mulberry/v1029.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seventeen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈziːptseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "e6d4441814101539a7d3b49f8d8d0c135bcd933fcaea5c2695a2699c9d3dfe06",
+    "upstreamBlobSha": "58f8abd11289326508132381ad847e36efda58c6"
+  },
+  {
+    "id": "v1032",
+    "de": "siebzig",
+    "en": "seventy",
+    "plural": "—",
+    "zh": "七十",
+    "sourcePath": "EN/seventy.svg",
+    "path": "wilson/mulberry/v1032.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seventy.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈziːptsɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "fdc086e160094b20af1a6da4b17dbb9114cdf5185bcee774267376c8a7dad07d",
+    "upstreamBlobSha": "71a2257ec6be35d798bd7a5f27d829619dadb33c"
+  },
+  {
+    "id": "v1037",
+    "de": "der Slip",
+    "en": "briefs",
+    "plural": "die Slips",
+    "zh": "内裤",
+    "sourcePath": "EN/knickers.svg",
+    "path": "wilson/mulberry/v1037.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/knickers.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/slɪp/",
+      "childSuitable": true
+    },
+    "svgSha256": "721286f103b79c13d55a708c8fec705e9603b6121433b39f4fd109e7815920ee",
+    "upstreamBlobSha": "95bc6cb459a08dc8ceea8a6f91b493b41a7820c7"
+  },
+  {
+    "id": "v1043",
+    "de": "die Socke",
+    "en": "sock",
+    "plural": "die Socken",
+    "zh": "袜子",
+    "sourcePath": "EN/socks.svg",
+    "path": "wilson/mulberry/v1043.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/socks.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈzɔkə/",
+      "childSuitable": true
+    },
+    "svgSha256": "f59d69813a294e1d8719f45593bc68b43a8c9ca0d280454af9cea8ab04d87cc5",
+    "upstreamBlobSha": "b7b497420a93c9a27d0f6d578af5a733e4e93f14"
+  },
+  {
+    "id": "v1044",
+    "de": "das Sofa",
+    "en": "sofa",
+    "plural": "die Sofas",
+    "zh": "沙发",
+    "sourcePath": "EN/settee_1.svg",
+    "path": "wilson/mulberry/v1044.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/settee_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈzoːfa/",
+      "childSuitable": true
+    },
+    "svgSha256": "fcd0a0ecca95c9c3b3cb51d7336e7ba5de88c851d5e87b1fdc1b651f7a6425f9",
+    "upstreamBlobSha": "031c84cbe646ee218585d14bd6e86b21fb2e28f7"
   },
   {
     "id": "v1047",
@@ -4197,6 +7610,28 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1057",
+    "de": "der Spachtel",
+    "en": "filling knife",
+    "plural": "die Spachtel",
+    "zh": "刮刀",
+    "sourcePath": "EN/spatula.svg",
+    "path": "wilson/mulberry/v1057.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spatula.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Küchenwender statt Spachtel für Renovierungsarbeiten."
+    },
+    "svgSha256": "604b5679457e20b975a23c514021a9d99838ebaee7a5ade68476074187661a81",
+    "upstreamBlobSha": "535abee5d47a89534cf6adac3c3f3afd129b83df"
+  },
+  {
     "id": "v1062",
     "de": "der Spaten",
     "en": "spade",
@@ -4217,6 +7652,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈʃpaːtn̩/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1064",
+    "de": "speichern",
+    "en": "to save (data)",
+    "plural": "—",
+    "zh": "保存",
+    "sourcePath": "EN/save.svg",
+    "path": "wilson/mulberry/v1064.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/save.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈʃpaɪ̯çɐn/",
+      "childSuitable": false
+    },
+    "svgSha256": "2fb1f848746e38a4e56c306fca616215cdd1dc062383313ba0528b73c1f338a9",
+    "upstreamBlobSha": "b2f1c76a663ed32db6fcd3d9725230cd7a6853be"
   },
   {
     "id": "v1065",
@@ -4283,24 +7742,64 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1071",
+    "de": "die Sprühflasche",
+    "en": "spray bottle",
+    "plural": "die Sprühflaschen",
+    "zh": "喷雾瓶",
+    "sourcePath": "EN/cleaner_spray.svg",
+    "path": "wilson/mulberry/v1071.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cleaner_spray.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃpʁyːˌflaʃə/",
+      "childSuitable": false
+    },
+    "svgSha256": "0a9ae7a049e6c0c47a7ac9224b29e508fa16f20c8b6591ce6334a96d1e93100f",
+    "upstreamBlobSha": "1f0fea554d7f293feb72df16dc3fd12bbdfc530a"
+  },
+  {
     "id": "v1072",
     "de": "das Spülbecken",
     "en": "sink",
     "plural": "die Spülbecken",
     "zh": "洗涤槽",
-    "sourcePath": "EN/sink.svg",
+    "sourcePath": "EN/sink_2.svg",
     "path": "wilson/mulberry/v1072.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sink.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sink_2.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sink.svg",
+        "sourcePath": "EN/sink.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt Badezimmerwaschbecken, nicht das vorgesehene Küchenspülbecken."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Badezimmerwaschbecken, nicht das vorgesehene Küchenspülbecken."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv zeigt Küchenspülbecken mit Rand und Küchenarmatur statt Badezimmerwaschbecken.",
+      "ipa": "/ˈʃpyːlˌbɛkŋ̍/",
+      "childSuitable": true
+    },
+    "svgSha256": "c21726163a6e9fbc82b7ad208473596ee917ccdf11902ebb78f89248048a0e66",
+    "upstreamBlobSha": "031b4e3677455389000cd96799074c96696a8bb2"
   },
   {
     "id": "v1073",
@@ -4367,6 +7866,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1081",
+    "de": "die Steckdose",
+    "en": "electrical socket",
+    "plural": "die Steckdosen",
+    "zh": "插座",
+    "sourcePath": "EN/mains_socket.svg",
+    "path": "wilson/mulberry/v1081.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mains_socket.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃtɛkˌdoːzə/",
+      "childSuitable": false
+    },
+    "svgSha256": "b6c50ca8aceb9b979b809fe620ade77f9bda7eaabfaddecc770089cf59cdabce",
+    "upstreamBlobSha": "0d1fc604ea4b197007155753a10b238edfc122e9"
+  },
+  {
+    "id": "v1082",
+    "de": "der Stecker",
+    "en": "electrical plug",
+    "plural": "die Stecker",
+    "zh": "插头",
+    "sourcePath": "EN/plug_2.svg",
+    "path": "wilson/mulberry/v1082.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/plug_2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃtɛkɐ/",
+      "childSuitable": false
+    },
+    "svgSha256": "053723663addcdec1178ca8e972ad3dc00e52095738515fc50612923e57af558",
+    "upstreamBlobSha": "9543c5e6803325f90058ecdd4c5fae6d7a4ebd8c"
+  },
+  {
     "id": "v1084",
     "de": "das Stethoskop",
     "en": "stethoscope",
@@ -4387,6 +7934,52 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ʃtetoˈskoːp/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1094",
+    "de": "die Stoßstange",
+    "en": "bumper",
+    "plural": "die Stoßstangen",
+    "zh": "保险杠",
+    "sourcePath": "EN/car_bumper.svg",
+    "path": "wilson/mulberry/v1094.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/car_bumper.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃtoːsˌʃtaŋə/",
+      "childSuitable": false
+    },
+    "svgSha256": "b8f96bd4b41fafb872c24f8a082b1e34d545095496c3c517edf81e7e056f6d84",
+    "upstreamBlobSha": "6758fddbd27d34918fdff2906385b1ce749071f0"
+  },
+  {
+    "id": "v1101",
+    "de": "das Stromkabel",
+    "en": "power cable",
+    "plural": "die Stromkabel",
+    "zh": "电源线",
+    "sourcePath": "EN/computer_cable.svg",
+    "path": "wilson/mulberry/v1101.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_cable.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Computer-Datenkabel statt Stromkabel."
+    },
+    "svgSha256": "da0a44b27ebd620aa94eb0353220445f300658fe4f41d988ae9caae89af39de3",
+    "upstreamBlobSha": "8cc0f6abab56866ee1f57c2b1395f7af5b2464cc"
   },
   {
     "id": "v1103",
@@ -4431,6 +8024,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ʃtuːl/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1106",
+    "de": "subtrahieren",
+    "en": "to subtract",
+    "plural": "—",
+    "zh": "减去",
+    "sourcePath": "EN/subtract.svg",
+    "path": "wilson/mulberry/v1106.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/subtract.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/zʊptʁaˈhiːʁən/",
+      "childSuitable": false
+    },
+    "svgSha256": "50c841f2910b3f951526a159affe42fef252dc5ddb108770d472e870d7866895",
+    "upstreamBlobSha": "48161d94cdae41853029c29eea3164ee48eb7c81"
   },
   {
     "id": "v1109",
@@ -4497,6 +8114,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/taˈblɛt/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1118",
+    "de": "die Tablette",
+    "en": "tablet; pill",
+    "plural": "die Tabletten",
+    "zh": "药片",
+    "sourcePath": "EN/tablets.svg",
+    "path": "wilson/mulberry/v1118.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tablets.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/taˈblɛtə/",
+      "childSuitable": false
+    },
+    "svgSha256": "1b176efc705e0259303c8439149b74cb000625cb062ca8b22613b1b314a7f318",
+    "upstreamBlobSha": "717465b2622b4d72132388e38b1f9a93a75ad701"
   },
   {
     "id": "v1119",
@@ -4585,6 +8226,57 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1135",
+    "de": "die Tastatur",
+    "en": "keyboard",
+    "plural": "die Tastaturen",
+    "zh": "键盘",
+    "sourcePath": "EN/computer_keyboard.svg",
+    "path": "wilson/mulberry/v1135.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_keyboard.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/tastaˈtuːɐ̯/",
+      "childSuitable": true
+    },
+    "svgSha256": "6dedc79954b51abe38c4c46c3f446c09611204e10372b021786bd6ac760d8162",
+    "upstreamBlobSha": "8f468555f7a2398481ed90a0050f4ace708ef186"
+  },
+  {
+    "id": "v1137",
+    "de": "tausend",
+    "en": "one thousand",
+    "plural": "—",
+    "zh": "一千",
+    "sourcePath": "EN/thousand.svg",
+    "path": "wilson/mulberry/v1137.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/thousand.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈtaʊ̯zn̩t/",
+      "childSuitable": true,
+      "answerVariants": [
+        "eintausend"
+      ]
+    },
+    "svgSha256": "5453e2a9bcd93a64d3a8ed8b2e250dfd5278d6b8a818a995b4e829923fe2d64e",
+    "upstreamBlobSha": "93a47eda3d45a2a99bcdafd45b9602d6a404a3df"
+  },
+  {
     "id": "v1140",
     "de": "der Teebeutel",
     "en": "tea bag",
@@ -4607,6 +8299,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1144",
+    "de": "der Telefonhörer",
+    "en": "telephone receiver",
+    "plural": "die Telefonhörer",
+    "zh": "电话听筒",
+    "sourcePath": "EN/telephone_handset.svg",
+    "path": "wilson/mulberry/v1144.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/telephone_handset.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/teleˈfoːnˌhøːʁɐ/",
+      "childSuitable": false
+    },
+    "svgSha256": "746a5b5eb16c23c7a6f8cfae1adfec8ad0e2a0d449509eb2ae3d538532fea89b",
+    "upstreamBlobSha": "545d10f745164f1b0484c27e4b6b34b25e77aac3"
+  },
+  {
     "id": "v1146",
     "de": "der Teppich",
     "en": "rug",
@@ -4627,6 +8343,52 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈtɛpɪç/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1153",
+    "de": "die Tiefkühlkost",
+    "en": "frozen food",
+    "plural": "—",
+    "zh": "冷冻食品",
+    "sourcePath": "EN/frozen_food_box.svg",
+    "path": "wilson/mulberry/v1153.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/frozen_food_box.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Unbeschriftete Schachtel mit Schneeflocke; Inhalt Tiefkühlkost nicht sichtbar."
+    },
+    "svgSha256": "19bc76bd3f86a5385a11166735834dc55157643c2154771678ce84603b889d9d",
+    "upstreamBlobSha": "fe72832420ef32c48cec2dc7ff3dff719611e306"
+  },
+  {
+    "id": "v1156",
+    "de": "tippen",
+    "en": "to type",
+    "plural": "—",
+    "zh": "打字",
+    "sourcePath": "EN/type_,_to.svg",
+    "path": "wilson/mulberry/v1156.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/type_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈtɪpn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "6833207c9a01dd34187b5080ccf34f9e7dc37566b3bbc4afe7f90b5a431c83f4",
+    "upstreamBlobSha": "2eca277fd6886f5814047e14a52c66e801c0a55a"
   },
   {
     "id": "v1157",
@@ -4715,6 +8477,30 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1163",
+    "de": "das Toilettenpapier",
+    "en": "toilet paper",
+    "plural": "—",
+    "zh": "卫生纸",
+    "sourcePath": "EN/toilet_roll.svg",
+    "path": "wilson/mulberry/v1163.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/toilet_roll.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/to̯aˈlɛtn̩paˌpiːɐ̯/",
+      "childSuitable": true
+    },
+    "svgSha256": "4435c5187ba15f911b9c7db65c5ab57fa53b5ed936a803c2b949a1ecd2509c76",
+    "upstreamBlobSha": "6c3ea8fe25fa7fc614601ed6e3ee9bc290d7b0e0"
+  },
+  {
     "id": "v1164",
     "de": "die Tomate",
     "en": "tomato",
@@ -4737,6 +8523,50 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1166",
+    "de": "das Töpfchen",
+    "en": "potty",
+    "plural": "die Töpfchen",
+    "zh": "儿童便盆",
+    "sourcePath": "EN/potty_chair.svg",
+    "path": "wilson/mulberry/v1166.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/potty_chair.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Toilettenstuhl für Erwachsene statt Kinder-Töpfchen."
+    },
+    "svgSha256": "4cc7372e5175da086e49a7d8b13e77a2687b976d08acd52ea19eaa8693f1f226",
+    "upstreamBlobSha": "5a9b283f96c6753e2a6cad70fa1a85655bfbba58"
+  },
+  {
+    "id": "v1167",
+    "de": "der Topfhandschuh",
+    "en": "oven glove",
+    "plural": "die Topfhandschuhe",
+    "zh": "隔热手套",
+    "sourcePath": "EN/mittens.svg",
+    "path": "wilson/mulberry/v1167.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mittens.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Gestrickte Fäustlinge statt hitzefestem Topfhandschuh."
+    },
+    "svgSha256": "798b8b28b821200130d57ab76482fb55680d168e3425b35246280a7dd4eee056",
+    "upstreamBlobSha": "c5936cd04f67632b1519002333f7e1c00484a29f"
+  },
+  {
     "id": "v1168",
     "de": "das Tortendiagramm",
     "en": "pie chart",
@@ -4757,6 +8587,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈtɔʁtn̩diaˌɡʁam/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1170",
+    "de": "der Touchscreen",
+    "en": "touchscreen",
+    "plural": "die Touchscreens",
+    "zh": "触摸屏",
+    "sourcePath": "EN/touch_screen.svg",
+    "path": "wilson/mulberry/v1170.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/touch_screen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈtatʃskʁiːn/",
+      "childSuitable": false
+    },
+    "svgSha256": "19c124872d42b2bec3021e14731180c31625d7d08060ebc454e3781e8a313815",
+    "upstreamBlobSha": "396492f11054e0b447fd279d641f910fc651b60c"
   },
   {
     "id": "v1177",
@@ -4801,6 +8655,314 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1182",
+    "de": "der Turnschuh",
+    "en": "trainer; sneaker",
+    "plural": "die Turnschuhe",
+    "zh": "运动鞋",
+    "sourcePath": "EN/trainers.svg",
+    "path": "wilson/mulberry/v1182.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/trainers.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈtʊʁnˌʃuː/",
+      "childSuitable": true
+    },
+    "svgSha256": "7194b20c35dddaad5cc2304da9fd012db96007cefc1655721b8913b97d150242",
+    "upstreamBlobSha": "af2244f6e29da69459f656fd5c87a03266e065a7"
+  },
+  {
+    "id": "v1185",
+    "de": "die U-Bahn",
+    "en": "underground train; metro",
+    "plural": "die U-Bahnen",
+    "zh": "地铁",
+    "sourcePath": "EN/underground_train.svg",
+    "path": "wilson/mulberry/v1185.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/underground_train.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈuːˌbaːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "d0870e1e1cab2dbda743b54fc11dc56e0a75dd1121ba47ac8ad5283c96da9805",
+    "upstreamBlobSha": "9bdd893df11bc983f1e1ab1685557a31ccf65cf5"
+  },
+  {
+    "id": "v1198",
+    "de": "sich umarmen",
+    "en": "to hug each other",
+    "plural": "—",
+    "zh": "互相拥抱",
+    "sourcePath": "EN/hug_,_to.svg",
+    "path": "wilson/mulberry/v1198.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hug_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/zɪç ʊmˈʔaʁmən/",
+      "childSuitable": false
+    },
+    "svgSha256": "15a9cbb8b248cceefd934ef295870bf66e9e6781435e7f3eb8acd3a48cc1d959",
+    "upstreamBlobSha": "7c9976d584a62c126448504dd61b216700d8028d"
+  },
+  {
+    "id": "v1205",
+    "de": "die Unterhose",
+    "en": "underpants",
+    "plural": "die Unterhosen",
+    "zh": "内裤",
+    "sourcePath": "EN/pants.svg",
+    "path": "wilson/mulberry/v1205.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pants.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʊntɐˌhoːzə/",
+      "childSuitable": true
+    },
+    "svgSha256": "76cf58cc67a307fd9dcb4263f131699f4ae1b8517372448e7f94ce7d6955084b",
+    "upstreamBlobSha": "9f4ff6fb306ea4a984ee44a8b30a32761da16941"
+  },
+  {
+    "id": "v1208",
+    "de": "der USB-Stick",
+    "en": "USB flash drive",
+    "plural": "die USB-Sticks",
+    "zh": "U盘",
+    "sourcePath": "EN/usb_stick.svg",
+    "path": "wilson/mulberry/v1208.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/usb_stick.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/uːʔɛsˈbeːˌstɪk/",
+      "childSuitable": false
+    },
+    "svgSha256": "d8590dccaeaa04f00ff116152145071f55b447c8ab28ae89fbc040c7cfade3db",
+    "upstreamBlobSha": "cab76a6de5c6b62a02589ca83ccf5e989cc3f961"
+  },
+  {
+    "id": "v1214",
+    "de": "der Verband",
+    "en": "bandage; dressing",
+    "plural": "die Verbände",
+    "zh": "绷带",
+    "sourcePath": "EN/sling.svg",
+    "path": "wilson/mulberry/v1214.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sling.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Armschlinge; Verband/Verbandsmaterial nicht eindeutig abgebildet."
+    },
+    "svgSha256": "7a4dadedee345ff9d39eeda204b62126918a0dc121c74e8cd128e11f9111eae4",
+    "upstreamBlobSha": "161af976bd4fab8ac9a8c34a4e5b600b5f8a05ee"
+  },
+  {
+    "id": "v1217",
+    "de": "sich verbeugen",
+    "en": "to bow",
+    "plural": "—",
+    "zh": "鞠躬",
+    "sourcePath": "EN/bow.svg",
+    "path": "wilson/mulberry/v1217.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bow.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Englisches bow bezeichnet hier eine Schleife, keine Verbeugung."
+    },
+    "svgSha256": "663f39775a5e4535bde8c0a651ee4b832b0ac4105ff18b638fc300da99379e14",
+    "upstreamBlobSha": "dd35de2797e10f4770bc0f72bd2f27b7e2c2e2b8"
+  },
+  {
+    "id": "v1226",
+    "de": "das Verlängerungskabel",
+    "en": "extension cable",
+    "plural": "die Verlängerungskabel",
+    "zh": "延长线",
+    "sourcePath": "EN/extension_lead.svg",
+    "path": "wilson/mulberry/v1226.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/extension_lead.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/fɛɐ̯ˈlɛŋəʁʊŋsˌkaːbl̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "6033e13e20b00f97b7444a7d05f88a7475720fd0b1cd9e62a48410d0dc720e0a",
+    "upstreamBlobSha": "c37a7822a23f7184d1a6a1eeb2f692c11aa78081"
+  },
+  {
+    "id": "v1243",
+    "de": "vier",
+    "en": "four",
+    "plural": "—",
+    "zh": "四",
+    "sourcePath": "EN/four.svg",
+    "path": "wilson/mulberry/v1243.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/four.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/fiːɐ̯/",
+      "childSuitable": true
+    },
+    "svgSha256": "2754b5277787f42934eaf9d602b37a2056e5bc5873c8936eb1dec0050b438f91",
+    "upstreamBlobSha": "99b10618f7a4d0b194c365c82a6f3ce2bbc0b506"
+  },
+  {
+    "id": "v1248",
+    "de": "ein Viertel",
+    "en": "one quarter",
+    "plural": "—",
+    "zh": "四分之一",
+    "sourcePath": "EN/quarter.svg",
+    "path": "wilson/mulberry/v1248.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/quarter.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/aɪ̯n ˈfɪʁtl̩/",
+      "childSuitable": true
+    },
+    "svgSha256": "873a1d99759997e41acdc2fd6fe05a87db6271c13159a1921352e3cfc96c9cf9",
+    "upstreamBlobSha": "2ce547a582459dc4cf775064d346fd23e5d4f73d"
+  },
+  {
+    "id": "v1251",
+    "de": "vierzehn",
+    "en": "fourteen",
+    "plural": "—",
+    "zh": "十四",
+    "sourcePath": "EN/fourteen.svg",
+    "path": "wilson/mulberry/v1251.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fourteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈfɪʁtseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "62518f608aea2f3300eb32ca00033f2925bbf42d83f53274ae7a21a9d2f21821",
+    "upstreamBlobSha": "2eb673e4256e091aa542de6b04a79f1d43b81e8a"
+  },
+  {
+    "id": "v1254",
+    "de": "vierzig",
+    "en": "forty",
+    "plural": "—",
+    "zh": "四十",
+    "sourcePath": "EN/forty.svg",
+    "path": "wilson/mulberry/v1254.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/forty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈfɪʁtsɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "df2df912346e98cafffb323b25290eaa572ed02770e23e4838d7a8cb220e0458",
+    "upstreamBlobSha": "b54cd9d232b306e2b90aa5197f762daff7e6aca0"
+  },
+  {
+    "id": "v1266",
+    "de": "der Vorhang",
+    "en": "curtain",
+    "plural": "die Vorhänge",
+    "zh": "窗帘",
+    "sourcePath": "EN/curtains.svg",
+    "path": "wilson/mulberry/v1266.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/curtains.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈfoːɐ̯ˌhaŋ/",
+      "childSuitable": true
+    },
+    "svgSha256": "8810525f52900ff40c31e3e8a4df6f560299de650b83984ad9fad894d8667430",
+    "upstreamBlobSha": "4399010d41edc89920adcfc14b4fc0d0877b1a6b"
+  },
+  {
     "id": "v1268",
     "de": "die Waage",
     "en": "scales",
@@ -4821,6 +8983,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈvaːɡə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1270",
+    "de": "wählen",
+    "en": "to dial",
+    "plural": "—",
+    "zh": "拨号",
+    "sourcePath": "EN/dial_,_to.svg",
+    "path": "wilson/mulberry/v1270.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dial_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈvɛːlən/",
+      "childSuitable": false
+    },
+    "svgSha256": "3a6ec0814ec0168228579c6701080f5f94a4ca0b5525dc14453fd4246f1bb71c",
+    "upstreamBlobSha": "057013d4197160802104561ab72f722b9c297963"
   },
   {
     "id": "v1274",
@@ -4845,6 +9031,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1281",
+    "de": "das Waschbecken",
+    "en": "washbasin",
+    "plural": "die Waschbecken",
+    "zh": "洗手池",
+    "sourcePath": "EN/sink.svg",
+    "path": "wilson/mulberry/v1281.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sink.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈvaʃˌbɛkn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "e3ef03d61ae30bd4ab4a0346e25f4269974b92fa5b463aabeaa52a139995fa4a",
+    "upstreamBlobSha": "b17869f44191bf29a762ec03965e061f88c60dec"
+  },
+  {
+    "id": "v1283",
+    "de": "die Wäsche waschen",
+    "en": "to wash the laundry",
+    "plural": "—",
+    "zh": "洗衣服",
+    "sourcePath": "EN/wash_clothes_,_to.svg",
+    "path": "wilson/mulberry/v1283.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wash_clothes_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/diː ˈvɛʃə ˈvaʃn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "24e1bbdca17524b8d5c78826e784dc0bb9f055a7cde687b100421c0b9063da40",
+    "upstreamBlobSha": "c76ad7fd6cc0e126408bc419300fb948783e73de"
+  },
+  {
     "id": "v1285",
     "de": "die Wäscheklammer",
     "en": "clothes peg",
@@ -4865,6 +9099,30 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈvɛʃəˌklamɐ/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1286",
+    "de": "die Wäscheleine",
+    "en": "clothesline",
+    "plural": "die Wäscheleinen",
+    "zh": "晾衣绳",
+    "sourcePath": "EN/rotary_washing_line.svg",
+    "path": "wilson/mulberry/v1286.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rotary_washing_line.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈvɛʃəˌlaɪ̯nə/",
+      "childSuitable": true
+    },
+    "svgSha256": "b503677a1e347423dfa4aec3d6661d765bec56cea844b90e3da8bf2ce3a3bfcb",
+    "upstreamBlobSha": "6e87e71326c67f8ce270e17a861ec2b926216682"
   },
   {
     "id": "v1289",
@@ -4933,6 +9191,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1294",
+    "de": "der Wasserhahn",
+    "en": "tap; faucet",
+    "plural": "die Wasserhähne",
+    "zh": "水龙头",
+    "sourcePath": "EN/tap.svg",
+    "path": "wilson/mulberry/v1294.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tap.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈvasɐˌhaːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "f8d454b7533621fbe96f4b77d778467e14cc2d0e94e0e36a0f416f0080c63e64",
+    "upstreamBlobSha": "f1ddf09eaee1de5940ba6eb81eb57d0b1e540ace"
+  },
+  {
+    "id": "v1295",
+    "de": "der Wasserkocher",
+    "en": "electric kettle",
+    "plural": "die Wasserkocher",
+    "zh": "电热水壶",
+    "sourcePath": "EN/kettle.svg",
+    "path": "wilson/mulberry/v1295.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/kettle.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈvasɐˌkɔxɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "fa14dc8c1a44bc807b2912a38a3c7099ecad353ae137f62730f0cabb2ab0cddb",
+    "upstreamBlobSha": "36352280f85243ff52b36358fd4a1678c070cbc3"
+  },
+  {
     "id": "v1296",
     "de": "die Wassermelone",
     "en": "watermelon",
@@ -4975,6 +9281,52 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈwɛpˌkɛm/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1304",
+    "de": "weinen",
+    "en": "to cry",
+    "plural": "—",
+    "zh": "哭",
+    "sourcePath": "EN/sad_lady.svg",
+    "path": "wilson/mulberry/v1304.svg",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sad_lady.svg",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Trauriger Gesichtsausdruck ohne Tränen; weinen nicht eindeutig dargestellt."
+    },
+    "svgSha256": "5dffc4d6644fdd21cf44961ed339624717cbe5df4b381c99dcdfe614877ab7c9",
+    "upstreamBlobSha": "33c9221ddcdf09c51d17c882f1ef0052333670de"
+  },
+  {
+    "id": "v1306",
+    "de": "die Weintraube",
+    "en": "grape",
+    "plural": "die Weintrauben",
+    "zh": "葡萄",
+    "sourcePath": "EN/grapes.svg",
+    "path": "wilson/mulberry/v1306.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/grapes.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈvaɪ̯nˌtʁaʊ̯bə/",
+      "childSuitable": true
+    },
+    "svgSha256": "fbe0327cb108a7ae6aab1415c027f869b47b1815126a2c0dbfcf6b2533a363de",
+    "upstreamBlobSha": "cbb9e7936a7c0793b0274acd47cc9185eb6b2c4f"
   },
   {
     "id": "v1321",
@@ -5048,19 +9400,35 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "week",
     "plural": "die Wochen",
     "zh": "星期",
-    "sourcePath": "EN/week.svg",
+    "sourcePath": "EN/week_1.svg",
     "path": "wilson/mulberry/v1328.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/week.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/week_1.svg",
+    "reviewHistory": [
+      {
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/week.svg",
+        "sourcePath": "EN/week.svg",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt nur Montag bis Freitag; ganze Woche nicht korrekt dargestellt."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt nur Montag bis Freitag; ganze Woche nicht korrekt dargestellt."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv enthält alle sieben Wochentage (Mo–So), nicht nur Arbeitstage.",
+      "ipa": "/ˈvɔxə/",
+      "childSuitable": true
+    },
+    "svgSha256": "9eedf7dcc675e1fc1a1884f3004a1b2b2ca5095af9824b8957286bcfb53e2221",
+    "upstreamBlobSha": "ae4d38f6384f1ddc8388b7e5997210b8a47717e2"
   },
   {
     "id": "v1329",
@@ -5149,6 +9517,54 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1339",
+    "de": "zehn",
+    "en": "ten",
+    "plural": "—",
+    "zh": "十",
+    "sourcePath": "EN/ten.svg",
+    "path": "wilson/mulberry/v1339.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ten.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/tseːn/",
+      "childSuitable": true
+    },
+    "svgSha256": "38cb9bcc8c1eb9489fa8f229533c098d1d8126dc78fc2a0534f0795c6bc27f00",
+    "upstreamBlobSha": "d6d215b2264f0dc946807651f94a837f8f494010"
+  },
+  {
+    "id": "v1348",
+    "de": "die Zimmerpflanze",
+    "en": "houseplant",
+    "plural": "die Zimmerpflanzen",
+    "zh": "室内植物",
+    "sourcePath": "EN/potted_plant.svg",
+    "path": "wilson/mulberry/v1348.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/potted_plant.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈtsɪmɐˌpflantsə/",
+      "childSuitable": true
+    },
+    "svgSha256": "7b7e0a8f313b14e5c725a8fe5297fb5a39b6985a9cbdecb384d3648e520e83a0",
+    "upstreamBlobSha": "cb751447c9e8edae19fe1eaf15ff8e4a0e7ef911"
+  },
+  {
     "id": "v1350",
     "de": "die Zitrone",
     "en": "lemon",
@@ -5169,6 +9585,54 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/tsiˈtʁoːnə/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1353",
+    "de": "die Zucchini",
+    "en": "courgette; zucchini",
+    "plural": "die Zucchini",
+    "zh": "西葫芦",
+    "sourcePath": "EN/courgette.svg",
+    "path": "wilson/mulberry/v1353.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/courgette.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/tsuˈkiːni/",
+      "childSuitable": true
+    },
+    "svgSha256": "06c798ba9eaa5e92ecff10e9917e1fde56bcda81799a65be2b4572cbfc210e78",
+    "upstreamBlobSha": "5829418b8532b4ea467c99e1c293962b866fdcd2"
+  },
+  {
+    "id": "v1355",
+    "de": "der Zucker",
+    "en": "sugar",
+    "plural": "—",
+    "zh": "糖",
+    "sourcePath": "EN/sugar_white.svg",
+    "path": "wilson/mulberry/v1355.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sugar_white.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈtsʊkɐ/",
+      "childSuitable": true
+    },
+    "svgSha256": "9e61457d07be865825692638dcfae212228a487a97a277cea83f8ea81f78ea0c",
+    "upstreamBlobSha": "831aa44a80e3b59e0ffcae947f6fbc74cd4e8ce8"
   },
   {
     "id": "v1358",
@@ -5193,6 +9657,78 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1359",
+    "de": "zurückschneiden",
+    "en": "to prune",
+    "plural": "—",
+    "zh": "修剪",
+    "sourcePath": "EN/trim_hedge_,_to.svg",
+    "path": "wilson/mulberry/v1359.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/trim_hedge_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/tsuˈʁʏkˌʃnaɪ̯dn̩/",
+      "childSuitable": false
+    },
+    "svgSha256": "cce4ca1e5967677f26a63832053370224f424f56e0f6057daee1d41aa6a2ea9f",
+    "upstreamBlobSha": "71bdd0ae8257d6ff5767f0635219490d60d89124"
+  },
+  {
+    "id": "v1360",
+    "de": "zwanzig",
+    "en": "twenty",
+    "plural": "—",
+    "zh": "二十",
+    "sourcePath": "EN/twenty.svg",
+    "path": "wilson/mulberry/v1360.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/twenty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/ˈtsvantsɪç/",
+      "childSuitable": true
+    },
+    "svgSha256": "4146041c2403d2305a3288637c8cb85a1a388c156005bb4f8d7aab99abf19170",
+    "upstreamBlobSha": "3aa35fec183e3ffc74562ab115bd7f370563a4fc"
+  },
+  {
+    "id": "v1364",
+    "de": "zwei",
+    "en": "two",
+    "plural": "—",
+    "zh": "二",
+    "sourcePath": "EN/two.svg",
+    "path": "wilson/mulberry/v1364.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/two.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/tsvaɪ̯/",
+      "childSuitable": true
+    },
+    "svgSha256": "c464864dccae26f2c04753abaecb8449597873001705fd1b39066d206f630ec2",
+    "upstreamBlobSha": "18089a66d9bb8609dd380d6e0eacaea194865266"
+  },
+  {
     "id": "v1376",
     "de": "die Zwiebel",
     "en": "onion",
@@ -5213,5 +9749,77 @@ const WILSON_IMAGE_CANDIDATES=[
       "ipa": "/ˈtsviːbl̩/",
       "childSuitable": true
     }
+  },
+  {
+    "id": "v1378",
+    "de": "zwölf",
+    "en": "twelve",
+    "plural": "—",
+    "zh": "十二",
+    "sourcePath": "EN/twelve.svg",
+    "path": "wilson/mulberry/v1378.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/twelve.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ziffer bzw. Bruchdiagramm visuell mit deutschem Zahlwort und EN/ZH-Bedeutung abgeglichen; als Zahlwort, nicht als Nomen abfragen.",
+      "ipa": "/tsvœlf/",
+      "childSuitable": true
+    },
+    "svgSha256": "5133d32243d07defddf7563e6f2fa403c14c72d3fb5f6d104680a9b102d1a1c9",
+    "upstreamBlobSha": "367c52756072baafa4dd0e9d0f2a09150fc522cc"
+  },
+  {
+    "id": "vg16",
+    "de": "die Damentoilette",
+    "en": "women's toilet",
+    "plural": "die Damentoiletten",
+    "zh": "女洗手间",
+    "sourcePath": "EN/ladies_toilet.svg",
+    "path": "wilson/mulberry/vg16.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ladies_toilet.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈdaːmənto̯aˌlɛtə/",
+      "childSuitable": false
+    },
+    "svgSha256": "e8ea8419f8caaa5f73f7124be21919d693ef02135a0115c53271d7112f5f4916",
+    "upstreamBlobSha": "f6ec6293ed66ecf94434a5b5a3b061c298cd99ac"
+  },
+  {
+    "id": "vg17",
+    "de": "die Herrentoilette",
+    "en": "men's toilet",
+    "plural": "die Herrentoiletten",
+    "zh": "男洗手间",
+    "sourcePath": "EN/mens_toilet.svg",
+    "path": "wilson/mulberry/vg17.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mens_toilet.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈhɛʁənto̯aˌlɛtə/",
+      "childSuitable": false
+    },
+    "svgSha256": "3204699f81087ebd624b40d32e9f37c97cad7c7f5a6ce86a7e199e2b9badad62",
+    "upstreamBlobSha": "d14aaa91b0c521efe4c2ce634633bd7d6d3f906b"
   }
 ];

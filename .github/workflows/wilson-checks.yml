@@ -4,6 +4,7 @@ on:
     paths:
       - 'wilson*'
       - 'scripts/*wilson*'
+      - 'scripts/fixtures/wilson*'
       - 'wilson/**'
       - 'wilson.html'
       - 'index.html'
@@ -23,6 +24,7 @@ on:
       - 'wilson*'
       - 'wilson/**'
       - 'scripts/*wilson*'
+      - 'scripts/fixtures/wilson*'
       - '.github/workflows/wilson-checks.yml'
   workflow_dispatch:
 permissions:
@@ -37,6 +39,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify reproducible standalone download
+        run: |
+          node scripts/build-wilson-offline.cjs
+          git diff --exit-code -- wilson-offline.html
       - name: Check website assets and scripts
         run: node scripts/check-site.mjs
       - name: Test Wilson input and scheduling

@@ -6,11 +6,14 @@
   const STORAGE = 'ttk-wilson-picture-input-v1';
   const DAY = 86400000;
   const words = WILSON_VOCABULARY.inputWords;
+  // A gallery link may explicitly request one active card. Normal practice remains due-first.
+  let requestedWord = words.find(w => w.id === new URLSearchParams(window.location?.search || '').get('word'));
   const COPY = {
     zh:{
-      back:'← 学习角',heading:'看图，<span>写德语。</span>',subtitle:'没有每日上限。输入德语单复数，按 Enter 检查；再按 Enter 进入下一张图片。',
+      back:'← 学习角',heading:'看图，<span>写德语。</span>',subtitle:'没有每日上限。看图作答：名词输入冠词、单数和复数，动词输入原形，数量用德语单词。Enter 检查，再按 Enter 进入下一张。',
       tested:'已练习的不同词汇',attempts:'完成的练习次数',caseNote:'词语正确，请注意大小写：',due:'待复习',first:'首次正确率',picture:'观察图片，然后输入德语',
-      askBoth:'写出单数（含冠词）和复数',askOne:'写出单数（含冠词）',askPlural:'写出复数（含冠词）',
+      askBoth:'写出单数（含冠词）和复数',askOne:'写出单数（含冠词）',askPlural:'写出复数（含冠词）',askVerb:'用德语动词原形描述动作',askNumber:'用德语单词写出数量',askWord:'写出图片表达的德语词语',
+      verb:'只输入动词原形；如需反身代词，请加上 sich。',number:'用德语单词作答，不用阿拉伯数字。',word:'只输入德语词语，不需要冠词或复数。',
       both:'格式：der Apfel, Äpfel（复数也接受 die Äpfel）',singular:'只需输入单数：das Wasser',plural:'只需输入复数：die Arbeitsbedingungen',
       check:'检查 ↵',next:'下一张图片 ↵',listen:'🔊 再听一遍',
       retry:'还没完全正确。再试一次！',good:'回答正确！',second:'第二次回答正确！',wrong:'请记住正确答案。',dueWord:'现在该复习了',newWord:'新单词',extra:'自由练习 · 提前复习',
@@ -20,9 +23,10 @@
       invalid:'无效的备份文件。',loaded:'学习记录已导入。',savefail:'无法保存。请检查隐私浏览设置，并及时导出备份。',speechfail:'此设备目前无法播放德语语音。',empty:'没有可用的图片词汇。'
     },
     de:{
-      back:'← Trainingsecke',heading:'Bild sehen. <span>Wort schreiben.</span>',subtitle:'Kein Tageslimit. Singular mit Artikel und Plural eingeben. Enter prüft; das nächste Enter zeigt das nächste Bild.',
+      back:'← Trainingsecke',heading:'Bild sehen. <span>Wort schreiben.</span>',subtitle:'Kein Tageslimit. Nomen: Artikel, Singular und Plural. Tätigkeiten: Infinitiv. Zahlen: als Wort. Enter prüft; das nächste Enter zeigt das nächste Bild.',
       tested:'Verschiedene Wörter',attempts:'Übungen insgesamt',caseNote:'Wort erkannt. Achte auf die Groß-/Kleinschreibung: ',due:'Wiederholung fällig',first:'Im ersten Versuch richtig',picture:'Bild ansehen und deutsches Wort eingeben',
-      askBoth:'Singular (mit Artikel) und Plural eingeben',askOne:'Singular mit Artikel eingeben',askPlural:'Plural mit Artikel eingeben',
+      askBoth:'Singular (mit Artikel) und Plural eingeben',askOne:'Singular mit Artikel eingeben',askPlural:'Plural mit Artikel eingeben',askVerb:'Tätigkeit im Infinitiv eingeben',askNumber:'Menge als deutsches Zahlwort eingeben',askWord:'Passenden deutschen Ausdruck eingeben',
+      verb:'Grundform des Verbs; bei reflexiven Verben mit „sich“.',number:'Die Zahl als Wort schreiben, keine Ziffern.',word:'Nur den Ausdruck eingeben, ohne Artikel und Plural.',
       both:'Format: der Apfel, Äpfel (auch die Äpfel erlaubt)',singular:'Nur Singular: das Wasser',plural:'Nur Plural: die Arbeitsbedingungen',
       check:'Prüfen ↵',next:'Nächstes Bild ↵',listen:'🔊 Noch einmal hören',
       retry:'Noch nicht ganz richtig. Ein zweiter Versuch!',good:'Auf Anhieb richtig!',second:'Im zweiten Versuch richtig!',wrong:'Merke dir die richtige Lösung.',dueWord:'Jetzt wiederholen',newWord:'Neuer Begriff',extra:'Freies Training · vorgezogene Wiederholung',
@@ -32,9 +36,10 @@
       invalid:'Ungültige Sicherungsdatei.',loaded:'Lernstand importiert.',savefail:'Fortschritt konnte nicht gespeichert werden. Bitte Sicherung exportieren.',speechfail:'Keine deutsche Sprachausgabe verfügbar.',empty:'Keine Bildwörter verfügbar.'
     },
     en:{
-      back:'← Learning corner',heading:'See the picture. <span>Type the word.</span>',subtitle:'No daily limit. Type the singular with article and the plural. Enter checks; press Enter again for the next picture.',
+      back:'← Learning corner',heading:'See the picture. <span>Type the word.</span>',subtitle:'No daily limit. Nouns: singular with article and plural. Actions: infinitive. Numbers: German words. Enter checks; press Enter again for the next picture.',
       tested:'Different words practised',attempts:'Exercises completed',caseNote:'Word recognised. Check capitalisation: ',due:'Due for review',first:'Correct on first try',picture:'Look at the picture and type the German word',
-      askBoth:'Enter singular (with article) and plural',askOne:'Enter singular with article',askPlural:'Enter plural with article',
+      askBoth:'Enter singular (with article) and plural',askOne:'Enter singular with article',askPlural:'Enter plural with article',askVerb:'Enter the action as a German infinitive',askNumber:'Write the amount in German words',askWord:'Enter the German expression shown',
+      verb:'Use the infinitive; include “sich” for reflexive verbs.',number:'Write German words, not digits.',word:'Enter the expression without an article or plural.',
       both:'Format: der Apfel, Äpfel (also accepts die Äpfel)',singular:'Singular only: das Wasser',plural:'Plural only: die Arbeitsbedingungen',
       check:'Check ↵',next:'Next picture ↵',listen:'🔊 Listen again',
       retry:'Not quite right. Try one more time!',good:'Correct on the first try!',second:'Correct on the second try!',wrong:'Remember the correct answer.',dueWord:'Time to review',newWord:'New word',extra:'Free practice · early review',
@@ -98,6 +103,11 @@
   }
   function findNext(){
     const now=Date.now();
+    if(requestedWord){
+      const word=requestedWord;requestedWord=null;
+      const item=progress.items[word.id];
+      return {word,kind:!item?'newWord':item.due<=now?'dueWord':'extra',extra:!!item&&item.due>now};
+    }
     const due=words.filter(w=>progress.items[w.id] && progress.items[w.id].due<=now)
       .sort((a,b)=>progress.items[a.id].due-progress.items[b.id].due);
     if(due.length) return {word:due[0],kind:'dueWord',extra:false};
@@ -109,12 +119,13 @@
   }
   function expected(w){
     const s=w.de,p=w.plural;
-    if(w.numberMode==='singular') return s;
+    if(w.numberMode==='singular'||w.numberMode==='word') return s;
     if(w.numberMode==='plural') return p;
     return s+', '+String(p).replace(/^die\s+/i,'');
   }
   function matches(value,w){
     const parts=String(value).replace(/，/g,',').split(',').map(normal);
+    if(w.numberMode==='word') return parts.length===1 && [w.de,...(w.answerVariants||[])].some(x=>parts[0]===normal(x));
     if(w.numberMode==='singular') return parts.length===1 && matchSing(parts[0],w);
     if(w.numberMode==='plural') return parts.length===1 && matchPlural(parts[0],w,true);
     return parts.length===2 && matchSing(parts[0],w) && matchPlural(parts[1],w,false);
@@ -123,6 +134,7 @@
     const clean=s=>String(s).normalize('NFC').trim().replace(/\s+/g,' ');
     const parts=String(value).replace(/，/g,',').split(',').map(clean);
     const singulars=[w.de,...(w.articleVariants||[]).map(a=>a+' '+w.de.replace(/^\S+\s+/,''))];
+    if(w.numberMode==='word')return [w.de,...(w.answerVariants||[])].includes(parts[0]);
     if(w.numberMode==='singular')return singulars.includes(parts[0]);
     if(w.numberMode==='plural')return parts[0]===w.plural;
     return singulars.includes(parts[0])&&[w.plural,w.plural.replace(/^die\s+/,'')].includes(parts[1]);
@@ -146,10 +158,11 @@
     $('word-image').alt='Illustration';
     renderImageCredit(w);
     $('round-note').textContent=t(current.kind);
-    $('question').textContent=t(w.numberMode==='both'?'askBoth':w.numberMode==='plural'?'askPlural':'askOne');
-    $('format').textContent=t(w.numberMode==='both'?'both':w.numberMode==='plural'?'plural':'singular');
+    const plain=w.numberMode==='word';
+    $('question').textContent=t(plain?(w.taskType==='verb'?'askVerb':w.taskType==='number'?'askNumber':'askWord'):w.numberMode==='both'?'askBoth':w.numberMode==='plural'?'askPlural':'askOne');
+    $('format').textContent=t(plain?(w.taskType==='verb'?'verb':w.taskType==='number'?'number':'word'):w.numberMode==='both'?'both':w.numberMode==='plural'?'plural':'singular');
     $('submit').textContent=stage===2?t('next'):t('check');
-    $('typed').placeholder=w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
+    $('typed').placeholder=plain?'…':w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
     $('typed').removeAttribute('disabled');
     $('typed').readOnly=stage===2;
     $('listen').hidden=stage!==2;

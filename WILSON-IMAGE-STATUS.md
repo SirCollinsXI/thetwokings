@@ -1,47 +1,49 @@
-# Wilson picture cards — 2026-11-17
+# Wilson picture cards — 2026-11-26
 
-Target: **1500 individually reviewed usable picture cards**. Current release: **222 active unique word cards** (22 previous cards + 200 additional Mulberry cards). Remaining gap: **1278**. The 1500-card goal is **not complete**.
+Target: **1500 individually reviewed usable picture cards**. Current release: **388 active unique word cards**: 333 nouns, 22 verb/action tasks, 33 number-word tasks. **1112 cards remain**. This is a reviewed expansion, not completion of the 1500-card target.
 
-## Review of the 240 saved candidates
+## Inventory and review decisions
 
-| Decision | Count | Used by trainer |
+| Inventory | Count | Used by trainer |
 | --- | ---: | --- |
-| Approved additional words | 200 | Yes |
-| Approved alternative motifs for existing words | 5 | No; existing illustrations retained |
-| Blocked: replacement or context required | 35 | No |
-| Not yet assessed in this batch | 0 | No |
+| Previous project illustrations | 22 | Yes |
+| Approved Mulberry word/image mappings | 366 | Yes |
+| Blocked mappings needing replacement/context | 53 | No |
+| Alternative motifs for existing words | 5 | No; never counted again |
+| Unreviewed saved candidates | 0 | No |
 
-All 240 SVGs were rendered with Inkscape and individually inspected in eight labeled 30-card contact sheets. DE article/lemma/plural, EN and ZH meanings were assessed alongside each rendered motif. Each manifest record now stores its decision, reason, date, method, and, when approved, editorial broad German IPA without the article. This is an **AI-assisted editorial first review**, not independent native-speaker/phonetics validation or a security guarantee.
+The repository contains 424 Mulberry candidate records. The baseline at commit `1634346e04916ad68d2dcd92400fe420dcad8f9d` already had 222 active cards and a shared vocabulary projection, despite the older handover describing 22. This release adds **166 active words**. Of the initial 35 blocked mappings, six are now usable: Bagel, Mütze, Sattel, Scheibe, Spülbecken, Woche. Five have a new motif; Sattel retains its horse-saddle image with the Chinese meaning corrected to 马鞍 (mǎ'ān).
 
-Examples deliberately blocked: file (metal file, not computer file), hand mixer (stick blender), fat (body size), saddle (horse saddle vs bicycle-seat translation), kitchen sink (bathroom basin), week (only Monday–Friday), several family relationships requiring explained reference persons. Some generic food containers and visually ambiguous fruit motifs also remain blocked. No blocked motif is included in training.
+184 additional candidates and 16 replacement trials were downloaded from the same pinned Mulberry revision, checked against their upstream Git blob hashes, rendered with Inkscape and inspected individually in labeled contact sheets (enlarged where needed). DE lemma/article/plural, EN/ZH meanings and broad German IPA were assessed alongside the pictures. All new decisions and reasons are stored in `wilson-image-candidates.js`; replaced decisions retain their history. Rejected examples include pupil (eye pupil, not girl), bow (ribbon, not bowing), a data cable for power cable, a stand mixer for hand mixer and a broom for dustpan. Duplicate existing images for Hocker, Couchtisch and Pfeffermühle do not add words.
 
-## Shared data and stable progress
+This is an **AI editorial first review**, not independent native-speaker/phonetics validation, a pedagogical certification or a security guarantee. Unpictured vocabulary remains a draft and does not count toward the picture-card target.
 
-- `wilson-lexicon.js` remains the stable base inventory; no lexicon IDs were renumbered.
-- `wilson-image-candidates.js` contains review decisions, sources and the reviewed correction for egg white as an ingredient (singular-only exercise).
-- `wilson-vocabulary.js` projects this data for the input trainer and main application. Original main-app English IDs and original input-trainer IDs are intentionally preserved separately; this is **not a migration or merge of progress stores**.
-- Input keeps its original storage key and version. Historical records for temporarily unavailable cards are retained instead of rejecting the entire backup. Due-first scheduling and export/import remain in place.
-- Simple, Pro and Kids use the same vocabulary/image projection. Kids retains its own progress key and filters the new material using editorial child-suitability annotations; these annotations are not a pedagogical certification.
-- The standalone offline download is reproducibly rebuilt from the same source with `node scripts/build-wilson-offline.cjs`. All 222 active SVGs are embedded. External source/license/navigation links need internet; device audio may too.
+## Shared data and protected progress
+
+- `wilson-lexicon.js` remains unchanged. No stable lexicon IDs were renumbered. `wilson-image-candidates.js` stores approved corrections, images, credit, review decisions and explicit answer variants; `wilson-vocabulary.js` projects it for both applications.
+- All 222 previous active input IDs, German lemmas, image paths and image hashes are protected by a regression fixture. Existing main-app English IDs and input-trainer IDs remain separate. No progress-store migration occurred.
+- Input keeps `ttk-wilson-picture-input-v1` and backup version 1; unknown historical IDs remain preserved. Simple and Pro remain present, and Kids retains its separate progress key and suitability filter.
+- Nouns ask the appropriate singular/plural forms. Plural-only nouns such as Chips and Shorts now use the actual plural rather than the source inventory's dash. Weak Geldautomat is marked for N-declension.
+- Verbs ask for the infinitive, including reflexive pronouns where needed; numbers ask for German words. No artificial noun article/plural is requested. Hundert/einhundert and tausend/eintausend are accepted.
+- Gallery filters separate nouns, activities and number words. Active cards have direct practice links. A direct link requests that one active word first, then ordinary due-first practice resumes. Early successful direct practice does not increase the planned interval/streak. Blocked IDs cannot be selected through a URL.
+- No daily cap, account or automatic device sync was added. Device-local backups remain exportable/importable.
+- `node scripts/build-wilson-offline.cjs` rebuilds the standalone main app with all 388 SVGs embedded. Source/license/navigation links require internet; device audio may too.
 
 ## Provenance
 
-Mulberry Symbols revision: `fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf`.
-Copyright 2018–2026 Steve Lee, **CC BY-SA 4.0**. Original upstream `wilson/mulberry/LICENSE.txt` retained unchanged. All SVG files retained unchanged. Each candidate has its pinned upstream source link. The input trainer displays creator, source and license links beside each Mulberry image. Main word details link the individual source; cards and the persistent footer identify the creator/license, with the source gallery accessible from every learning path. No blanket legal-clearance claim is made.
+Mulberry Symbols revision: `fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf`. Copyright 2018–2026 Steve Lee, **CC BY-SA 4.0**. `wilson/mulberry/LICENSE.txt` is retained unchanged. Each SVG is an unchanged upstream file and has an individual pinned source link. New/replaced files carry SHA-256 and upstream Git blob hashes. The trainer, word details, gallery and learning-path footer expose creator, source and license attribution. No blanket legal-clearance claim is made.
 
-No PONS images, pages or recordings were copied. Remaining unpictured vocabulary is still an editorial draft and must not be counted as finished picture cards.
+No PONS pictures, book pages or recordings were copied. Audio is device speech synthesis. No paid service was used. This environment is Linux, without access to the Windows DPAPI key store and without `MOONSHOT_API_KEY`; Moonshot answered unauthenticated HTTP 401, so **no Kimi request or review was made**. No secret was printed or committed. DNS and hosting configuration were unchanged.
 
-## Validation and limits
+## Validation
 
-- Logic tests exercise all 222 cards, number modes, first/second attempt, Chinese comma, capitalisation, IME guard, pronunciation hooks, missing-audio fallback, persistence, due-first selection and early-review intervals.
-- Content tests check unique IDs and image hashes, complete active language/IPA fields, local image existence, static SVG patterns, individual pinned sources, blocked-image exclusion, alternative-image exclusion, legacy IDs and child separation.
-- Browser QA uses the real rendered trainer at 390px and 1280px CSS frame widths, Enter/retry/next, reload/continue, new Mulberry card attribution, gallery filtering, and Simple/Pro/Kids navigation. On mobile, advancing a card brings its picture into view without forcing the keyboard open.
-- A real iPhone/Android keyboard, IME and audible device output still need physical-device verification. Mandarin and IPA should receive independent review.
+Logic/content checks cover every active canonical answer and image, first/second attempt, Chinese comma, capitalization, IME, pronunciation hooks/fallback, save/reload, export/import validation, due-first/early reviews, number tasks, weak nouns, blocked links, source hashes, duplicate-image exclusions and old IDs. The site/CTA checks and offline rebuild are included in the existing GitHub workflow.
 
-## Next expansion work
+Browser verification is recorded with the deployment checks for this release. Physical iPhone/Android keyboard, IME and audible device output still require real-device verification; desktop narrow-width rendering is not a substitute. Independent Mandarin/IPA review remains outstanding.
 
-1. Replace or provide task-appropriate scene context for the 35 blocked items; keep existing IDs.
-2. Find and license additional concrete-object imagery; preserve creator, license, pinned source and review records from acquisition onward.
-3. Design distinct scenes and prompts for actions and abstract concepts. A download, duplicate, generic placeholder or unrelated symbol must never count as a card.
-4. Review newly rendered motifs individually against DE/EN/ZH forms and IPA, then activate only reviewed entries.
-5. Keep reporting active unique words, pending material and the gap to 1500 separately. Do not represent this release as completion of the expansion.
+## Work remaining
+
+1. Reach 1500 with **1112 further distinct, reviewed, usable word/image tasks**. Downloads, duplicate motifs and generic placeholders do not fill this gap.
+2. Replace or contextualize the 53 blocked mappings; retain their IDs and review history.
+3. Expand beyond the easy exact-name matches using appropriate objects and distinct action/relationship scenes. The finite Mulberry collection does not cover the whole draft inventory.
+4. Add independently checked language/phonetics corrections and real-device QA. Keep active cards, rejected/pending material and the remaining gap separate in every report.

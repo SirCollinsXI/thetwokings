@@ -29,12 +29,14 @@ const WILSON_VOCABULARY = (() => {
   const words = LEXICON.map(w => {
     const candidate = reviewed.get(w.id), row = originals.get(w.de);
     const patch = candidate?.review?.corrections || {};
-    return {...w, ...patch, ...(row ? {de:row[1],plural:row[6]==='plural'?row[1]:row[2],en:row[3],zh:row[4],pinyin:row[5]} : {}),
-      numberMode: row?.[6] || (w.pos==='plural'?'plural':(patch.plural ?? w.plural)==='—'?'singular':'both'),
+    return {...w, ...patch, ...(w.pos==='plural'?{plural:patch.plural || w.de}:{}), ...(row ? {de:row[1],plural:row[6]==='plural'?row[1]:row[2],en:row[3],zh:row[4],pinyin:row[5]} : {}),
+      taskType: ['noun','plural'].includes(w.pos) ? 'noun' : w.pos==='verb' ? 'verb' : w.pos==='number' ? 'number' : 'word',
+      numberMode: row?.[6] || (!['noun','plural'].includes(w.pos)?'word':w.pos==='plural'?'plural':(patch.plural ?? w.plural)==='—'?'singular':'both'),
       imagePath: row ? 'wilson/'+row[0]+'.svg' : candidate?.path || '',
       imageCredit: row ? null : candidate || null,
       ipa: originalIPA[w.de] || candidate?.review?.ipa || '',
-      nDeclension: ['der Junge','der Kollege','der Kunde','der Student','der Mensch','der Herr'].includes(w.de),
+      answerVariants: candidate?.review?.answerVariants || [],
+      nDeclension: candidate?.review?.nDeclension === true || ['der Junge','der Kollege','der Kunde','der Student','der Mensch','der Herr','der Geldautomat'].includes(w.de),
       childSuitable: row ? !['der Kollege','die Ferien','die Eltern'].includes(w.de) : candidate?.review?.childSuitable === true,
       picture: !!(row || candidate)
     };
