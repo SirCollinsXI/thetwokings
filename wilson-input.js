@@ -8,7 +8,8 @@
   const words = WILSON_VOCABULARY.inputWords;
   const COPY = {
     zh:{
-      back:'← 学习角',heading:'看图，<span>写德语。</span>',subtitle:'没有每日上限。输入德语单复数，按 Enter 检查；再按 Enter 进入下一张图片。',
+      back:'← 学习角',heading:'看图，<span>写德语。</span>',subtitle:'没有每日上限。名词练习冠词和单复数；动作和数字有对应的题目。按 Enter 检查，再按 Enter 看下一张。',
+      selectedWord:'指定图片练习',alternatives:'也接受：',
       tested:'已练习的不同词汇',attempts:'完成的练习次数',caseNote:'词语正确，请注意大小写：',due:'待复习',first:'首次正确率',picture:'观察图片，然后输入德语',
       askBoth:'写出单数（含冠词）和复数',askOne:'写出单数（含冠词）',askPlural:'写出复数（含冠词）',
       both:'格式：der Apfel, Äpfel（复数也接受 die Äpfel）',singular:'只需输入单数：das Wasser',plural:'只需输入复数：die Arbeitsbedingungen',
@@ -20,7 +21,8 @@
       invalid:'无效的备份文件。',loaded:'学习记录已导入。',savefail:'无法保存。请检查隐私浏览设置，并及时导出备份。',speechfail:'此设备目前无法播放德语语音。',empty:'没有可用的图片词汇。'
     },
     de:{
-      back:'← Trainingsecke',heading:'Bild sehen. <span>Wort schreiben.</span>',subtitle:'Kein Tageslimit. Singular mit Artikel und Plural eingeben. Enter prüft; das nächste Enter zeigt das nächste Bild.',
+      back:'← Trainingsecke',heading:'Bild sehen. <span>Wort schreiben.</span>',subtitle:'Kein Tageslimit. Nomen mit Artikel und Zahlform üben; Tätigkeiten und Zahlen haben passende Aufgaben. Enter prüft, das nächste Enter zeigt das nächste Bild.',
+      selectedWord:'Gezielte Bildübung',alternatives:'Ebenfalls passend: ',
       tested:'Verschiedene Wörter',attempts:'Übungen insgesamt',caseNote:'Wort erkannt. Achte auf die Groß-/Kleinschreibung: ',due:'Wiederholung fällig',first:'Im ersten Versuch richtig',picture:'Bild ansehen und deutsches Wort eingeben',
       askBoth:'Singular (mit Artikel) und Plural eingeben',askOne:'Singular mit Artikel eingeben',askPlural:'Plural mit Artikel eingeben',
       both:'Format: der Apfel, Äpfel (auch die Äpfel erlaubt)',singular:'Nur Singular: das Wasser',plural:'Nur Plural: die Arbeitsbedingungen',
@@ -32,7 +34,8 @@
       invalid:'Ungültige Sicherungsdatei.',loaded:'Lernstand importiert.',savefail:'Fortschritt konnte nicht gespeichert werden. Bitte Sicherung exportieren.',speechfail:'Keine deutsche Sprachausgabe verfügbar.',empty:'Keine Bildwörter verfügbar.'
     },
     en:{
-      back:'← Learning corner',heading:'See the picture. <span>Type the word.</span>',subtitle:'No daily limit. Type the singular with article and the plural. Enter checks; press Enter again for the next picture.',
+      back:'← Learning corner',heading:'See the picture. <span>Type the word.</span>',subtitle:'No daily limit. Practise nouns with articles and number forms; actions and numbers have matching tasks. Enter checks; press Enter again for the next picture.',
+      selectedWord:'Selected picture practice',alternatives:'Also accepted: ',
       tested:'Different words practised',attempts:'Exercises completed',caseNote:'Word recognised. Check capitalisation: ',due:'Due for review',first:'Correct on first try',picture:'Look at the picture and type the German word',
       askBoth:'Enter singular (with article) and plural',askOne:'Enter singular with article',askPlural:'Enter plural with article',
       both:'Format: der Apfel, Äpfel (also accepts die Äpfel)',singular:'Singular only: das Wasser',plural:'Plural only: die Arbeitsbedingungen',
@@ -47,6 +50,8 @@
   let lang = 'zh';
   let progress = {version:1,tested:0,firstCorrect:0,items:{}};
   let current = null, stage = 0, wasFirstWrong = false;
+  // A gallery link can open one chosen card; subsequent cards use the due-first queue.
+  let requestedID = new URLSearchParams(window.location?.search || '').get('word');
   const normal = s => String(s||'').normalize('NFC').trim().replace(/\s+/g,' ').toLocaleLowerCase('de-DE');
   const simple = s => normal(s).replace(/^die\s+/,'');
   const escapeTag = s => String(s).replace(/[&<>"]/g, ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));
@@ -62,7 +67,10 @@
     }
     return x;
   }
-  try { const saved = JSON.parse(localStorage.getItem(STORAGE)); const clean=parseProgress(saved); if(clean)progress=clean; } catch(e){}
+  function readLatestProgress(){
+    try { const clean=parseProgress(JSON.parse(localStorage.getItem(STORAGE))); if(clean)progress=clean; } catch(e){}
+  }
+  readLatestProgress();
   try { const locale=localStorage.getItem(STORAGE+'-lang'); if(Object.hasOwn(COPY,locale))lang=locale; } catch(e){}
   function warn(message){$('warning').textContent=message;}
   function save(){
@@ -98,6 +106,10 @@
   }
   function findNext(){
     const now=Date.now();
+    if(requestedID){
+      const selected=words.find(w=>w.id===requestedID);requestedID=null;
+      if(selected)return {word:selected,kind:'selectedWord',extra:!!progress.items[selected.id] && progress.items[selected.id].due>now};
+    }
     const due=words.filter(w=>progress.items[w.id] && progress.items[w.id].due<=now)
       .sort((a,b)=>progress.items[a.id].due-progress.items[b.id].due);
     if(due.length) return {word:due[0],kind:'dueWord',extra:false};
@@ -108,19 +120,24 @@
     return null;
   }
   function expected(w){
+    if(w.task)return w.de;
     const s=w.de,p=w.plural;
     if(w.numberMode==='singular') return s;
     if(w.numberMode==='plural') return p;
     return s+', '+String(p).replace(/^die\s+/i,'');
   }
   function matches(value,w){
+    if(w.task)return [w.de,...(w.task.answers||[])].some(answer=>normal(value)===normal(answer));
+    if(w.answerVariants?.some(variant=>matches(value,{...w,...variant,answerVariants:[]})))return true;
     const parts=String(value).replace(/，/g,',').split(',').map(normal);
     if(w.numberMode==='singular') return parts.length===1 && matchSing(parts[0],w);
     if(w.numberMode==='plural') return parts.length===1 && matchPlural(parts[0],w,true);
     return parts.length===2 && matchSing(parts[0],w) && matchPlural(parts[1],w,false);
   }
   function caseMatches(value,w){
+    if(w.answerVariants?.some(variant=>matches(value,{...w,...variant,answerVariants:[]}) && caseMatches(value,{...w,...variant,answerVariants:[]})))return true;
     const clean=s=>String(s).normalize('NFC').trim().replace(/\s+/g,' ');
+    if(w.task)return [w.de,...(w.task.answers||[])].some(answer=>clean(value)===clean(answer));
     const parts=String(value).replace(/，/g,',').split(',').map(clean);
     const singulars=[w.de,...(w.articleVariants||[]).map(a=>a+' '+w.de.replace(/^\S+\s+/,''))];
     if(w.numberMode==='singular')return singulars.includes(parts[0]);
@@ -142,14 +159,15 @@
     if(!current)return;
     const w=current.word;
     if(reset){stage=0;wasFirstWrong=false;}
+    $('picture-note').textContent=w.context?.[lang] || t('picture');
     $('word-image').src=w.imagePath;
     $('word-image').alt='Illustration';
     renderImageCredit(w);
     $('round-note').textContent=t(current.kind);
-    $('question').textContent=t(w.numberMode==='both'?'askBoth':w.numberMode==='plural'?'askPlural':'askOne');
-    $('format').textContent=t(w.numberMode==='both'?'both':w.numberMode==='plural'?'plural':'singular');
+    $('question').textContent=w.task ? w.task.prompt[lang] : t(w.numberMode==='both'?'askBoth':w.numberMode==='plural'?'askPlural':'askOne');
+    $('format').textContent=w.task ? (w.task.hint?.[lang] || '') : t(w.numberMode==='both'?'both':w.numberMode==='plural'?'plural':'singular');
     $('submit').textContent=stage===2?t('next'):t('check');
-    $('typed').placeholder=w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
+    $('typed').placeholder=w.task?'…':w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
     $('typed').removeAttribute('disabled');
     $('typed').readOnly=stage===2;
     $('listen').hidden=stage!==2;
@@ -167,6 +185,10 @@
     const credit=$('image-credit');
     credit.replaceChildren();
     if(!w.imageCredit){credit.textContent={de:'Projektillustration · TheTwoKings',en:'Project illustration · TheTwoKings',zh:'项目插图 · TheTwoKings'}[lang];return;}
+    if(w.imageCredit.provider==='project'){
+      credit.textContent={de:'Eigene SVG-Zeichnung · TheTwoKings · KI-gestützt',en:'Original SVG drawing · TheTwoKings · AI-assisted',zh:'原创 SVG 插图 · TheTwoKings · AI 辅助'}[lang];
+      return;
+    }
     credit.append('Mulberry Symbols · © Steve Lee · ');
     for(const [label,url] of [['Original',w.imageCredit.source],['CC BY-SA 4.0','https://creativecommons.org/licenses/by-sa/4.0/']]){
       const a=document.createElement('a');a.href=url;a.textContent=label;a.target='_blank';a.rel='noopener';credit.append(a,' · ');
@@ -175,13 +197,14 @@
   }
   function nextWord(){
     if('speechSynthesis' in window) window.speechSynthesis.cancel();
+    readLatestProgress();
     current=findNext();
     if(!current){$('question').textContent=t('empty');$('typed').disabled=true;return;}
     renderQuestion(true);
   }
   function speak(){
     if(!('speechSynthesis' in window)){warn(t('speechfail'));return;}
-    const w=current.word, voice=new SpeechSynthesisUtterance(w.de+'. '+(w.numberMode==='both'?w.plural:''));
+    const w=current.word, voice=new SpeechSynthesisUtterance(w.de+'. '+(!w.task && w.numberMode==='both'?w.plural:''));
     voice.lang='de-DE'; voice.rate=.85;
     const voices=window.speechSynthesis.getVoices();
     const german=voices.find(v=>v.lang.toLowerCase().startsWith('de'));
@@ -197,14 +220,20 @@
     $('ipa').textContent=w.ipa ? 'IPA '+w.ipa : '';
     $('english').textContent=w.en||'—';
     $('chinese').textContent=(w.zh||'—') + (w.pinyin?' · '+w.pinyin:'');
+    const alternatives=w.task?.answers || (w.answerVariants||[]).map(variant=>expected({...w,...variant}));
+    $('accepted').hidden=!alternatives.length;
+    $('accepted').textContent=alternatives.length?t('alternatives')+alternatives.join(' · '):'';
     $('declension').hidden=!w.nDeclension;
     $('declension').textContent=w.nDeclension?t('n'):'';
     $('repeat-note').textContent=t('repeat')+new Date(r.due).toLocaleString(lang==='zh'?'zh-CN':lang==='de'?'de-DE':'en-GB');
   }
   function resolve(ok,firstTry){
     const w=current.word,now=Date.now();
+    // Another tab may have answered since this question was opened. Read inside
+    // the origin-wide Web Lock before adding this attempt to the shared record.
+    readLatestProgress();
     const old=progress.items[w.id]||{seen:0,streak:0,due:0,last:0};
-    const early=current.extra && old.due>now;
+    const early=old.due>now;
     const streak=ok&&firstTry?(early?old.streak:old.streak+1):0;
     const intervals=[1,3,7,14,30,60,120];
     let due=ok&&firstTry ? now+intervals[Math.min(streak-1,intervals.length-1)]*DAY :
@@ -236,7 +265,19 @@
   $('typed').addEventListener('compositionstart',()=>composing=true);
   $('typed').addEventListener('compositionend',()=>composing=false);
   $('typed').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.isComposing||composing||e.keyCode===229))e.preventDefault();});
-  $('entry').addEventListener('submit',e=>{e.preventDefault();if(!composing)submit($('typed').value);});
+  let submitting=false;
+  $('entry').addEventListener('submit',e=>{
+    e.preventDefault();if(composing||submitting)return;
+    const value=$('typed').value;
+    const locks=window.navigator?.locks;
+    if(!locks?.request){submit(value);return;}
+    submitting=true;
+    return locks.request(STORAGE,()=>{if(!composing)submit(value);})
+      .catch(()=>warn(t('savefail'))).finally(()=>{submitting=false;});
+  });
+  window.addEventListener?.('storage',e=>{
+    if(e.key===STORAGE){readLatestProgress();stats();}
+  });
   $('listen').addEventListener('click',speak);
   document.querySelectorAll('[data-char]').forEach(btn=>btn.addEventListener('click',()=>{
     const inp=$('typed'),start=inp.selectionStart,end=inp.selectionEnd;

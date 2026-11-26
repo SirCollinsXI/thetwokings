@@ -1,3 +1,5 @@
+'use strict';
+// Shared word/image manifest. Alternatives never add active words.
 const WILSON_IMAGE_CANDIDATES=[
   {
     "id": "v2",
@@ -19,7 +21,322 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈapdɛkˌbant/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "76651abc9db1a05118b278e579fc9914938720975fabce80d0b73fa10f322d9b",
+    "upstreamBlob": "c77edffcda83918082346b44d71d43e492137d19"
+  },
+  {
+    "id": "v5",
+    "de": "der Absatz",
+    "en": "heel of a shoe",
+    "zh": "鞋跟",
+    "plural": "die Absätze",
+    "path": "wilson/mulberry/v5-r2.svg",
+    "sourcePath": "EN/heel_of_shoe.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/heel_of_shoe.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil zeigt gezielt auf den Absatz eines Schuhs; nicht Textabsatz.",
+      "ipa": "/ˈapzat͡s/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "356f49e6f7f25cf836d9adfe8b005b3f6bb63870571bef1f09e1d0468d542150",
+    "upstreamBlob": "42b28020ca480e5e9876c54314bd6b79603e8e9d"
+  },
+  {
+    "id": "v8",
+    "de": "acht",
+    "en": "eight",
+    "zh": "八",
+    "plural": "—",
+    "sourcePath": "EN/eight.svg",
+    "path": "wilson/mulberry/v8-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eight.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/axt/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "6f50785b933d986b1263fe9db3f8e7bfd1b02767980c333eee4161d3af31df4e",
+    "upstreamBlob": "60d9cf2f739a6d8fceac1f9e57274f878d1c604b"
+  },
+  {
+    "id": "v11",
+    "de": "ein Achtel",
+    "en": "one eighth",
+    "zh": "八分之一",
+    "plural": "—",
+    "sourcePath": "EN/eighth.svg",
+    "path": "wilson/mulberry/v11-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eighth.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Bruchdarstellung und Bruchbeschriftung einzeln angesehen; die Aufgabe fragt ausdrücklich nach der notierten Bruchzahl, nicht nach einer möglicherweise missverständlichen Flächenfarbe.",
+      "ipa": "/aɪ̯n ˈaxtl̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Lies den Bruch im Kreis als deutschen Ausdruck.",
+          "en": "Write the fraction shown in the circle in German.",
+          "zh": "请用德语写出圆中标出的分数。"
+        },
+        "hint": {
+          "de": "Mit ein oder der passenden Anzahl, zum Beispiel: zwei Drittel.",
+          "en": "Include ein or the quantity, for example: zwei Drittel.",
+          "zh": "请输入完整表达，如 zwei Drittel。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "9927503d9a88b6e0175984ac215d458901d0f920ed365cc8db7ae6f93a44db4c",
+    "upstreamBlob": "8250649aeffa92110f4b07563604a038bf63b14f"
+  },
+  {
+    "id": "v12",
+    "de": "achtzehn",
+    "en": "eighteen",
+    "zh": "十八",
+    "plural": "—",
+    "sourcePath": "EN/eighteen.svg",
+    "path": "wilson/mulberry/v12-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eighteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈaxtseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "38a257aac176911f12423ba7052df6ea55f9336dbf363afccdc475218760a681",
+    "upstreamBlob": "bef26426a99e3223714ffe22442afb58f0f509ac"
+  },
+  {
+    "id": "v14",
+    "de": "achtzig",
+    "en": "eighty",
+    "zh": "八十",
+    "plural": "—",
+    "sourcePath": "EN/eighty.svg",
+    "path": "wilson/mulberry/v14-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eighty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈaxtsɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "1edf7585a616631629368aad8274e466e272303743bae39d22236b1b9047a2b6",
+    "upstreamBlob": "a1e9f0a7c01327af0a02a805ece45ed70c20f064"
+  },
+  {
+    "id": "v24",
+    "de": "die Ampel",
+    "en": "traffic light",
+    "zh": "交通信号灯",
+    "plural": "die Ampeln",
+    "path": "wilson/mulberry/v24-r2.svg",
+    "sourcePath": "EN/traffic_lights.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/traffic_lights.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Drei farbige Lichtsignale am Mast zeigen eine Straßenampel.",
+      "ipa": "/ˈampəl/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v24",
+        "de": "die Ampel",
+        "plural": "die Ampeln",
+        "en": "traffic light",
+        "zh": "交通信号灯",
+        "path": "wilson/original-next/v24.svg",
+        "ipa": "/ˈampl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈampl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v24.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "076bddd16f9f2ebef7ba21259ed4aa058ec04871486ec0229c57c51aeaf4f58a",
+    "upstreamBlob": "793f990d1fc00bdacc1969f4797b98e3545c67b7"
+  },
+  {
+    "id": "v27",
+    "de": "der Anhang",
+    "en": "attachment",
+    "zh": "附件",
+    "plural": "die Anhänge",
+    "path": "wilson/mulberry/v27-r2.svg",
+    "sourcePath": "EN/email_attachment.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/email_attachment.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Computertransfer mit angehängtem Dokument und Büroklammer; digitale Bedeutung von Anhang.",
+      "ipa": "/ˈanhaŋ/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b6dcf3dbe4b395172375c251b2c701a0a99cb5bf0c21f0355a70e5ea56d1dee7",
+    "upstreamBlob": "f202db8fd84b1b074a8d1fdfaf3ed7cff4ce99a8"
+  },
+  {
+    "id": "v30",
+    "de": "der Anzug",
+    "en": "suit",
+    "zh": "西装",
+    "plural": "die Anzüge",
+    "path": "wilson/mulberry/v30-r2.svg",
+    "sourcePath": "EN/suit_-_mans.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/suit_-_mans.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Zusammengehörige Anzugjacke und Hose mit Hemd/Krawatte.",
+      "ipa": "/ˈant͡suːk/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v30",
+        "de": "der Anzug",
+        "plural": "die Anzüge",
+        "en": "suit",
+        "zh": "西装",
+        "path": "wilson/original-next/v30.svg",
+        "ipa": "/ˈantsuːk/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈantsuːk/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v30.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "8df99585aa166ceb522b456a8ba92abdee83a85dc5f16e4da965d6b3b91b5d4c",
+    "upstreamBlob": "cf484b65272f39bdafb7b81a45efa4b03232b493"
   },
   {
     "id": "v31",
@@ -60,7 +377,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Aprikose ohne Schnitt oder weiteres Merkmal schwer von Pfirsich zu unterscheiden."
+      "reason": "Aprikose ohne Schnitt oder weiteres Merkmal schwer von Pfirsich zu unterscheiden.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -83,7 +401,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/aʁm/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0725394133f289b1f6da4059be7abf00e84515a3a672f270e4e430478ca18a24",
+    "upstreamBlob": "77488a0d61ec1eebfe1dc41ab7b11dacfc6ec6ec"
+  },
+  {
+    "id": "v42",
+    "de": "die Ärztin",
+    "en": "female doctor",
+    "zh": "女医生",
+    "plural": "die Ärztinnen",
+    "path": "wilson/mulberry/v42-r2.svg",
+    "sourcePath": "EN/doctor_2a.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/doctor_2a.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Ärztin mit weißem Kittel und Stethoskop; weibliche Personenvariante ausgewählt.",
+      "ipa": "/ˈɛːɐ̯t͡stɪn/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "77c484a9d3022e0e83ecbf56397d6c63614dd7c4fc1415cbeb36570cbaf66fb5",
+    "upstreamBlob": "c7d6fb49bfa2647a9d83f43802c48ddd96d0641b"
   },
   {
     "id": "v45",
@@ -105,7 +452,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/obɛʁˈʒiːnə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "4deae21ce44f23dc703f31719335c7a3f9a50f7938a7b4c2ee159c39e494b1f8",
+    "upstreamBlob": "d69f532767208a31f2afb446c18616853c3fad96"
   },
   {
     "id": "v47",
@@ -127,7 +477,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈaʊ̯fˌtsuːk/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "460f57688f183abb722a7669b8a576caa2bbe543b0da13b40b7fb98a70ad4964",
+    "upstreamBlob": "906bad7c9b0664d8454276aba731563f52ec4c3a"
   },
   {
     "id": "v48",
@@ -149,7 +502,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈaʊ̯ɡə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "65c44e8155cdc106513ac2912320621f5067656738b1c3e6ae29babd51742b3f",
+    "upstreamBlob": "42ddb777274df467eff2de7df22bc0ce56cea365"
   },
   {
     "id": "v49",
@@ -171,7 +527,53 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈaʊ̯ɡn̩ˌbʁaʊ̯ə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "daf6aff45e0b90f3bd95e3769b171a9efb3581feabaf218cd241c7afdc1baf36",
+    "upstreamBlob": "17b2874124c22ed9297fbb6d88a4de15f5142847"
+  },
+  {
+    "id": "v55",
+    "de": "aussteigen",
+    "en": "to get off a vehicle",
+    "zh": "下车",
+    "plural": "—",
+    "sourcePath": "EN/get_off_bus_,_to.svg",
+    "path": "wilson/mulberry/v55-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/get_off_bus_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil führt vom Bus zur Person außerhalb; Handlung aussteigen. Der Buskontext steht in der Aufgabe.",
+      "ipa": "/ˈaʊ̯sˌʃtaɪ̯ɡn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt der Pfeil am Bus? Schreibe den Infinitiv.",
+          "en": "What action does the arrow at the bus show? Write the German infinitive.",
+          "zh": "公交车旁的箭头表示什么动作？写德语动词原形。"
+        },
+        "answers": [
+          "aus dem Bus aussteigen",
+          "den Bus verlassen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "9f82d69a1d693adf5ba0e20d709b5ebf1bc624bc86c642b69a909cdd71d06c28",
+    "upstreamBlob": "b2739dfde632c6ea4d26943f52c66833a1e61528"
   },
   {
     "id": "v58",
@@ -193,7 +595,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbeːbi/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "dc5b44c65909c6c05f40e76125fa9f6ba31c6bdec10f1896a2a8ed58fcb39883",
+    "upstreamBlob": "6cc807253b8fb234bffbf4524e92fbeee1b34ffc"
+  },
+  {
+    "id": "v64",
+    "de": "das Babyschühchen",
+    "en": "baby bootie",
+    "zh": "婴儿鞋",
+    "plural": "die Babyschühchen",
+    "path": "wilson/mulberry/v64-r2.svg",
+    "sourcePath": "EN/bootees.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bootees.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Weiche kleine Babyschühchen; Pluralabbildung unterstützt das Formenpaar.",
+      "ipa": "/ˈbeːbiˌʃyːçən/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8e6dd5f8de89e3fcaa2009ef547ad7d358b869ae379f0f9a2b69ee7b298fb261",
+    "upstreamBlob": "2233a05a05b3845e2d91f864d499bd02997921ba"
   },
   {
     "id": "v66",
@@ -215,7 +646,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbakˌblɛç/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "8fbd5de7971ec0da61a47fda9df940c6e7977da64681106edde9b8845fdd099b",
+    "upstreamBlob": "4801d68a2186f387e1737563a438b9f193da2847"
+  },
+  {
+    "id": "v69",
+    "de": "der Badeanzug",
+    "en": "swimsuit",
+    "zh": "泳衣",
+    "plural": "die Badeanzüge",
+    "path": "wilson/mulberry/v69-r2.svg",
+    "sourcePath": "EN/swimming_costume.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/swimming_costume.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Einteiliger Badeanzug ohne Verwechslung mit Bikini oder Badehose.",
+      "ipa": "/ˈbaːdəˌant͡suːk/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8be9c910fbd3e8ca2ec9a1fd7d8b622ec0d5f3fd83c3c0b3f974dabe01edf84e",
+    "upstreamBlob": "a88c600b08bb703b08e815103924c5f176d6f16b"
   },
   {
     "id": "v70",
@@ -237,27 +697,99 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbaːdəˌhoːzə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a6ac2efc56960edffe647722c8b4187201f46362b7ad9de44b8e3ae284380053",
+    "upstreamBlob": "f9556e413a9972285d5dcaa8bfa12d546d011a55"
+  },
+  {
+    "id": "v71",
+    "de": "die Badewanne",
+    "en": "bathtub",
+    "zh": "浴缸",
+    "plural": "die Badewannen",
+    "path": "wilson/mulberry/v71-r2.svg",
+    "sourcePath": "EN/bath.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bath.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Badewanne mit Armaturen; Badewanne statt Bad als Raum.",
+      "ipa": "/ˈbaːdəˌvanə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v71",
+        "de": "die Badewanne",
+        "plural": "die Badewannen",
+        "en": "bathtub",
+        "zh": "浴缸",
+        "path": "wilson/original-next/v71.svg",
+        "ipa": "/ˈbaːdəˌvanə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈbaːdəˌvanə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v71.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "4fbba77f1f9e052d4d46a76590354513ea6b08451c27f8ef0bbcac02763206ef",
+    "upstreamBlob": "98d7fe7bdc7955bd0b5e2f55134c85479f89b4fb"
   },
   {
     "id": "v72",
     "de": "der Bagel",
     "en": "bagel",
-    "plural": "die Bagels",
     "zh": "贝果",
-    "sourcePath": "EN/bagel.svg",
-    "path": "wilson/mulberry/v72.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
+    "plural": "die Bagels",
+    "path": "wilson/mulberry/v72-r2.svg",
+    "sourcePath": "EN/bagel_2.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bagel_2.svg",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bagel.svg",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Flacher Ring ohne erkennbare Brotstruktur; Bagel nicht hinreichend eindeutig."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Aufgeschnittener, belegter ringförmiger Bagel; bessere Brotstruktur als beim gesperrten einfachen Ringmotiv.",
+      "ipa": "/ˈbeːɡl̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/bagel.svg",
+        "path": "wilson/mulberry/v72.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Flacher Ring ohne erkennbare Brotstruktur; Bagel nicht hinreichend eindeutig."
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "eaab0fafec4711f6bdf1aaa04c86962906c78cf348cbd3a4e719de79be0e64e4",
+    "upstreamBlob": "18b8892ae6075b33cc727847851b02f5ad1d3e5c"
   },
   {
     "id": "v76",
@@ -279,7 +811,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/bal/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "3e0c4f9de93e9a117cb8834bf0c6bb3ba34b05b66f387ff374afe989690ad1a2",
+    "upstreamBlob": "4f44d131eca2f318e28453650b071efbd2ea5bbe"
   },
   {
     "id": "v77",
@@ -304,6 +839,97 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v80",
+    "de": "die Batterie",
+    "en": "battery",
+    "zh": "电池",
+    "plural": "die Batterien",
+    "path": "wilson/mulberry/v80-r2.svg",
+    "sourcePath": "EN/battery_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/battery_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Rechteckige Batterie mit zwei erkennbaren Polklemmen; keine unbelegte Akku-Zuordnung.",
+      "ipa": "/batəˈʁiː/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "94fe2516687a3078089476ac7e71dea67b0c20ec2047a3a6b0694aa2405f9d40",
+    "upstreamBlob": "2d994ce3ee31c86850dd8c9eea0b0b16806f0b8e"
+  },
+  {
+    "id": "v81",
+    "de": "der Bauch",
+    "en": "belly",
+    "zh": "腹部",
+    "plural": "die Bäuche",
+    "path": "wilson/mulberry/v81-r2.svg",
+    "sourcePath": "EN/stomach_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/stomach_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil zeigt von außen auf die Bauchregion; kein isolierter Magen als Organ.",
+      "ipa": "/baʊ̯x/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "0a3957549a63ea52711139d46e60d88b5c469f23d990847960fbf631f3bb571e",
+    "upstreamBlob": "123af9a8900c551951d68c962f60a97c1ff53dc8"
+  },
+  {
+    "id": "v88",
+    "de": "beide",
+    "en": "both",
+    "zh": "两者都",
+    "plural": "—",
+    "sourcePath": "EN/both.svg",
+    "path": "wilson/mulberry/v88-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/both.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Zwei getrennte Pfeile markieren jeweils eines von genau zwei Quadraten; beide werden angesprochen.",
+      "ipa": "/ˈbaɪ̯də/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Welches Mengenwort bezeichnet die zwei markierten Quadrate zusammen?",
+          "en": "Which German quantity word refers to the two marked squares together?",
+          "zh": "哪个德语数量词同时指这两个标记的正方形？"
+        },
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "fb57aedb5e2b85096b0bc236e240ce49f26a6220d65f41cc120862b07c5aa887",
+    "upstreamBlob": "0227f5ade7b76567cbcc8e24faa038598669d551"
+  },
+  {
     "id": "v91",
     "de": "das Bein",
     "en": "leg",
@@ -323,7 +949,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/baɪ̯n/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a21828208fb060896f7ab6f0dbadf79c4365f8d84e910bc6e60d40c3621e7978",
+    "upstreamBlob": "d808a0272359199e20672c123fa009269b5e8a24"
+  },
+  {
+    "id": "v96",
+    "de": "das belegte Brötchen",
+    "en": "filled bread roll",
+    "zh": "夹馅小面包",
+    "plural": "die belegten Brötchen",
+    "path": "wilson/mulberry/v96-r2.svg",
+    "sourcePath": "EN/bread_roll_filled.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bread_roll_filled.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Aufgeschnittenes längliches Brötchen mit sichtbarem Belag.",
+      "ipa": "/bəˌleːktə ˈbʁøːtçən/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "da5872e200111b3bcfe5d0b13a08c6b03382c847b1fdf5ae0807854f7362b760",
+    "upstreamBlob": "3bde816bfc2f862b08ea93b8f402bca915360c08"
   },
   {
     "id": "v102",
@@ -345,7 +1000,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbeːzn̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "3babe39f355c4c6f972663ffbabb9e30dc482d663b8da130869997960f9232fa",
+    "upstreamBlob": "c7f41e5666602c47288b900f1b46618ef16967f5"
   },
   {
     "id": "v111",
@@ -367,7 +1025,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/beːˈhaː/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "2a67fb4e2a12aae468ecb7f9351ff5602304b835aac564e15c5398cce406d726",
+    "upstreamBlob": "0a9641d7af5f8a591b5ef9805904ff3203678c1d"
   },
   {
     "id": "v112",
@@ -389,7 +1050,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/biːɐ̯/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "4068cf9595c87e45913a03a76c60f907dfe278a7c707064d60bdc0ceb7075a49",
+    "upstreamBlob": "6ef7498b7b04349f438d2a3749583346da8d01df"
+  },
+  {
+    "id": "v113",
+    "de": "der Bildschirm",
+    "en": "screen",
+    "zh": "屏幕",
+    "plural": "die Bildschirme",
+    "path": "wilson/mulberry/v113-r2.svg",
+    "sourcePath": "EN/computer_monitor.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_monitor.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Einzelner Bildschirm mit Standfuß; vom kompletten Computer getrennt.",
+      "ipa": "/ˈbɪltˌʃɪʁm/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v113",
+        "de": "der Bildschirm",
+        "plural": "die Bildschirme",
+        "en": "screen",
+        "zh": "屏幕",
+        "path": "wilson/original-next/v113.svg",
+        "ipa": "/ˈbɪltˌʃɪʁm/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈbɪltˌʃɪʁm/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v113.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "9b241b4028bfc0dfb4805394d09fb524a38cb273803439f5fc7bbff023bb242c",
+    "upstreamBlob": "386f221eb20e9400441c6ce5e94d396c9eae4414"
   },
   {
     "id": "v115",
@@ -411,7 +1127,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbɪʁnə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "2f9afa3532f16e4d35a452f825ae4f3000e3577809197b3aff92204cd27452a3",
+    "upstreamBlob": "9f4cd658345316cf53a40ba9078fbf8e48482d5a"
   },
   {
     "id": "v121",
@@ -433,7 +1152,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈblaɪ̯ˌʃtɪft/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0bc6f6003ddf22aee6633e7a4fe8ca01f0a81bd05dfa5e76b68db280de25fb79",
+    "upstreamBlob": "c3e61ab042c33adbca5c9ad08a213c07cc2eb3b8"
   },
   {
     "id": "v122",
@@ -455,7 +1177,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈblaɪ̯ʃtɪftˌʃpɪtsɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "ed9ad7407d9e2e4b46233fadf98515078afb2b2cacea40268bc99e1158f5e512",
+    "upstreamBlob": "376ae68e87179de5de73418a49e97b00c703234a"
   },
   {
     "id": "v128",
@@ -477,7 +1202,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbluːmənˌkoːl/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b8635f7bb88096d3fee1189bd24d3f023e153b78d3f6173f83f4ee0dfb0a0971",
+    "upstreamBlob": "e165ffd2fb74b3ab486a664b6873522c77b8aab5"
+  },
+  {
+    "id": "v129",
+    "de": "die Blumenvase",
+    "en": "flower vase",
+    "zh": "花瓶",
+    "plural": "die Blumenvasen",
+    "path": "wilson/mulberry/v129-r2.svg",
+    "sourcePath": "EN/vase.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/vase.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Vase mit enger Öffnung zur Aufnahme von Blumen; keine Trinkgefäßform.",
+      "ipa": "/ˈbluːmənˌvaːzə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v129",
+        "de": "die Blumenvase",
+        "plural": "die Blumenvasen",
+        "en": "flower vase",
+        "zh": "花瓶",
+        "path": "wilson/original-next/v129.svg",
+        "ipa": "/ˈbluːmənˌvaːzə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈbluːmənˌvaːzə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v129.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "df4496693f4de54973c6fc80862840c5e46dd0f6013bdaad0a00e00ab5adae04",
+    "upstreamBlob": "966491152a0d1fa7484be432dc6adc826f801f39"
   },
   {
     "id": "v130",
@@ -499,7 +1279,93 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbluːzə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "50816ae1649a4bc30499f43311559f0afee52ad6d6f9cf2bb8efc012abd236ad",
+    "upstreamBlob": "d474ea353a993b5b42812ad2e51675612076b6e5"
+  },
+  {
+    "id": "v132",
+    "de": "den Blutdruck messen",
+    "en": "to measure blood pressure",
+    "zh": "测量血压",
+    "plural": "—",
+    "sourcePath": "EN/blood_pressure.svg",
+    "path": "wilson/mulberry/v132-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/blood_pressure.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Oberarmmanschette und digitales Blutdruckmessgerät zeigen die Messhandlung; keine Diagnose aus Werten.",
+      "ipa": "/deːn ˈbluːtˌdʁʊk ˈmɛsn̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "phrase",
+        "prompt": {
+          "de": "Beschreibe die dargestellte Messung mit einem Infinitiv-Ausdruck.",
+          "en": "Describe the measurement with a German infinitive phrase.",
+          "zh": "请用德语动词原形短语描述图中的测量。"
+        },
+        "answers": [
+          "Blutdruck messen",
+          "Blutdruck messen lassen",
+          "sich den Blutdruck messen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "aef45914c1005c10d6333c06f624d57c5e828d4554f7e84621b1aa294ce6d9f2",
+    "upstreamBlob": "ce02cbebb3be35f3a5cb2ae3e75d26b3253fd978"
+  },
+  {
+    "id": "v133",
+    "de": "bluten",
+    "en": "to bleed",
+    "zh": "流血",
+    "plural": "—",
+    "sourcePath": "EN/cut.svg",
+    "path": "wilson/mulberry/v133-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cut.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Aus einer sichtbaren kleinen Handwunde fallen rote Blutstropfen; Zustand bluten erkennbar.",
+      "ipa": "/ˈbluːtn̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Was geschieht an der Wunde? Schreibe das Verb im Infinitiv.",
+          "en": "What is happening at the wound? Write the German infinitive.",
+          "zh": "伤口发生了什么？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b25346a83ae5c68169ff2d6e96bec27cee2fc9fedf7170d7d1fb17cbab327301",
+    "upstreamBlob": "ae19f8ae733f4d570f1ad1d3abb1c674377b4b52"
   },
   {
     "id": "v136",
@@ -521,7 +1387,52 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈboːʁɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "3a1a8f2be59f66cf62727157a92b00a1c142144efb4dceaefe0fe0f2545ae83d",
+    "upstreamBlob": "c20c58d54e9e9396f846f532fb1a4e67f12398e7"
+  },
+  {
+    "id": "v137",
+    "de": "braten",
+    "en": "to fry",
+    "zh": "煎",
+    "plural": "—",
+    "sourcePath": "EN/fry_,_to.svg",
+    "path": "wilson/mulberry/v137-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fry_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Ei wird in einer Pfanne mit Pfannenwender gebraten; deutliches Handlungsmotiv.",
+      "ipa": "/ˈbʁaːtn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe das Verb im Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图片中是什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "ein Ei braten"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "e82cab3322f162036cbf294d45a50e5b0750c6aafa663292f63bc9a04ec32646",
+    "upstreamBlob": "77dd489df5b8ee878ba4c9c242361bff5a30043b"
   },
   {
     "id": "v138",
@@ -543,7 +1454,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbʁaːtˌpfanə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "6da0a80a500f1c4b914fb771971c5ee7fa24385b32f53536cf79ad22917047b6",
+    "upstreamBlob": "096f0ddfbd483316768b0ce6a25fb56fb7499fa1"
   },
   {
     "id": "v144",
@@ -562,7 +1476,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt einen adressierten Umschlag, nicht den Briefinhalt; Konflikt mit Briefumschlag."
+      "reason": "Zeigt einen adressierten Umschlag, nicht den Briefinhalt; Konflikt mit Briefumschlag.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -585,7 +1500,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbʁiːfˌʊmʃlaːk/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "3176c9eb91650df4f35c107d054671ee5356d0c9927f080ec4135768affbb4fe",
+    "upstreamBlob": "275bc562813cff71fb6f1a11ca2f7b5718cd0f70"
   },
   {
     "id": "v150",
@@ -607,7 +1525,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbʁɪlə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9be8d1f71ddb8a721bffebe9a59977a1b7a8dca4179f790a11764018223f1528",
+    "upstreamBlob": "b9090a89472d24f1e49a54b7b95785d84abf6732"
   },
   {
     "id": "v151",
@@ -629,7 +1550,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbʁɔkoli/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "032dfc8348091f8e0fed3d8c46224a7c9ba13011a562ffe38b0ae05520b3652d",
+    "upstreamBlob": "45d5418a6820f9d8e23f1895415d231f43a74c6d"
   },
   {
     "id": "v152",
@@ -648,7 +1572,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Beerenmotiv wirkt wie eine Traube; Brombeere nicht eindeutig."
+      "reason": "Beerenmotiv wirkt wie eine Traube; Brombeere nicht eindeutig.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -671,7 +1596,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbʁøːtçən/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a9526a5b505bf802f17c112757f642f99b0511923ff3153cd09a268a0b2db8d0",
+    "upstreamBlob": "a222888220b949cb95189d10687cade015afc395"
   },
   {
     "id": "v157",
@@ -690,8 +1618,87 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson."
+      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v158",
+    "de": "die Brust",
+    "en": "breast",
+    "zh": "乳房",
+    "plural": "die Brüste",
+    "path": "wilson/mulberry/v158-r2.svg",
+    "sourcePath": "EN/chest_female.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chest_female.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Anatomisches Oberkörpermotiv zeigt weibliche Brüste; Zuordnung zur anatomischen Bedeutung Brust.",
+      "ipa": "/bʁʊst/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "ce36db25de4d76b06d4759eb1d30e8afded0aa66e7e14d0e7a1c99ab3c1e9daa",
+    "upstreamBlob": "384a0c3470efe99d97b5fc953f5dc812561af2e0"
+  },
+  {
+    "id": "v160",
+    "de": "das Bücherregal",
+    "en": "bookshelf",
+    "zh": "书架",
+    "plural": "die Bücherregale",
+    "path": "wilson/mulberry/v160-r2.svg",
+    "sourcePath": "EN/book_shelf.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/book_shelf.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Regalbrett mit aufgestellten Büchern; Bücherregal statt einzelnes Buch.",
+      "ipa": "/ˈbyːçɐʁeˌɡaːl/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v160",
+        "de": "das Bücherregal",
+        "plural": "die Bücherregale",
+        "en": "bookshelf",
+        "zh": "书架",
+        "path": "wilson/original-next/v160.svg",
+        "ipa": "/ˈbyːçɐʁeˌɡaːl/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈbyːçɐʁeˌɡaːl/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v160.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "659bfaf57d1816562fb14345ae45f424029ff9b77799d773e277f886fc175152",
+    "upstreamBlob": "16c4af8858514eedb1ffb91954a67d19e88f6ed2"
   },
   {
     "id": "v161",
@@ -713,7 +1720,183 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbyːɡl̩ˌbʁɛt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "c0658c394c8b1566f15952d984190bf687bd7f9352987422275dcbe9fcb572a3",
+    "upstreamBlob": "7459d6d47fc0e9caa6abbd72b8b6c5ff008a379e"
+  },
+  {
+    "id": "v162",
+    "de": "das Bügeleisen",
+    "en": "iron for clothes",
+    "zh": "熨斗",
+    "plural": "die Bügeleisen",
+    "path": "wilson/mulberry/v162-r2.svg",
+    "sourcePath": "EN/iron.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/iron.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Elektrisches Bügeleisen mit Griff und Kabel.",
+      "ipa": "/ˈbyːɡəlˌaɪ̯zən/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v162",
+        "de": "das Bügeleisen",
+        "plural": "die Bügeleisen",
+        "en": "iron for clothes",
+        "zh": "熨斗",
+        "path": "wilson/original-next/v162.svg",
+        "ipa": "/ˈbyːɡl̩ˌʔaɪ̯zn̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈbyːɡl̩ˌʔaɪ̯zn̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v162.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "7d355c6f95f637dadaa9c3760fc4bde855c21bb90c118f565a9d52f1f7927096",
+    "upstreamBlob": "b8330fd2f143045ef5fc33efacacfbdc324052d3"
+  },
+  {
+    "id": "v163",
+    "de": "bügeln",
+    "en": "to iron",
+    "zh": "熨衣服",
+    "plural": "—",
+    "sourcePath": "EN/iron_,_to.svg",
+    "path": "wilson/mulberry/v163-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/iron_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Person führt Bügeleisen auf Bügelbrett über Kleidung.",
+      "ipa": "/ˈbyːɡl̩n/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe das Verb im Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图片中是什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "Kleidung bügeln",
+          "die Wäsche bügeln"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "2989017aa37f3efa95c3abc10e6cf7942029e659b2f3d446d0ac3ca252c26241",
+    "upstreamBlob": "51ab8f82967eec6b1a466f5af35018eb5903817a"
+  },
+  {
+    "id": "v165",
+    "de": "die Büroklammer",
+    "en": "paper clip",
+    "zh": "回形针",
+    "plural": "die Büroklammern",
+    "path": "wilson/mulberry/v165-r2.svg",
+    "sourcePath": "EN/paperclip.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/paperclip.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Einzelne gebogene Draht-Büroklammer; keine Aktenklammer.",
+      "ipa": "/byˈʁoːˌklamɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v165",
+        "de": "die Büroklammer",
+        "plural": "die Büroklammern",
+        "en": "paper clip",
+        "zh": "回形针",
+        "path": "wilson/original-next/v165.svg",
+        "ipa": "/ˈbyːʁoˌklamɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈbyːʁoˌklamɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v165.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "107b35dd92f74a76c7ab1d76c3839e076c8401f17fcb48f857efe567a306ea8f",
+    "upstreamBlob": "a4fba95994b37487148640d5f7e520596e0f3b2d"
+  },
+  {
+    "id": "v166",
+    "de": "die Bürste",
+    "en": "brush",
+    "zh": "刷子",
+    "plural": "die Bürsten",
+    "path": "wilson/mulberry/v166-r2.svg",
+    "sourcePath": "EN/scrubbing_brush.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/scrubbing_brush.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Handbürste mit dichtem Borstenfeld; allgemeine Bürstenbedeutung.",
+      "ipa": "/ˈbʏʁstə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "9858a10d5ed5a3116109293b497064eb74f587fb7aceefb737e761bc5ed98c97",
+    "upstreamBlob": "dd9949e94f95e160a1a51bf607d8a925e5646d4a"
   },
   {
     "id": "v169",
@@ -735,7 +1918,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈbʊtɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "1e164e9a3298568dab2683163e714b67c6be593ef0baad4282407619797871df",
+    "upstreamBlob": "848c82eb0c8130d0a34f3740b2a274878b18fa44"
   },
   {
     "id": "v175",
@@ -757,7 +1943,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtʃiːliˌʃoːtə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0da848296fa8a9d3b4c3ef496323d2e12e9c219f821e890f3b83a12e2cb04f7d",
+    "upstreamBlob": "7752a76005e82db9a457ee5842d8c92b16f4d90c"
+  },
+  {
+    "id": "v176",
+    "de": "das Chipkartenterminal",
+    "en": "chip-card terminal",
+    "zh": "芯片卡终端",
+    "plural": "die Chipkartenterminals",
+    "path": "wilson/mulberry/v176-r2.svg",
+    "sourcePath": "EN/chip_and_pin_device.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chip_and_pin_device.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Kartenzahlungsterminal mit eingesteckter Karte, Display und PIN-Tastatur.",
+      "ipa": "/ˈtʃɪpkaʁtənˌtɛʁminaːl/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "3f771bbb2d149d2d6b167700e937bc562cd3545102ebd6a6abbd5615d9d9890b",
+    "upstreamBlob": "bbe4c12639bb9f6de0ddb6165b4d758685592c5a"
   },
   {
     "id": "v180",
@@ -779,7 +1994,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈkaʊ̯tʃˌtɪʃ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a574bbe8910048ec6c527830589e14162cc2daedde3380ba52ed89bd1f1434b7",
+    "upstreamBlob": "bed94ae7d48cd1aed26ae4a7696b3164753bc6ff"
   },
   {
     "id": "v182",
@@ -801,7 +2019,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kʁo̯aˈsɑ̃ː/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "13bdf1cab22a2efd161c57a5499a38babf8bd6a55eb555bae499d8c17f7e1512",
+    "upstreamBlob": "5a2e67a6e32eaa568c7680c928427e5f1fc3f02a"
   },
   {
     "id": "v191",
@@ -820,8 +2041,55 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Englisches file ist hier eine Metallfeile, keine Computerdatei."
+      "reason": "Englisches file ist hier eine Metallfeile, keine Computerdatei.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v192",
+    "de": "eine Datei ausdrucken",
+    "en": "to print a file",
+    "zh": "打印文件",
+    "plural": "—",
+    "sourcePath": "EN/print.svg",
+    "path": "wilson/mulberry/v192-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/print.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Drucker gibt bedruckte Seite aus. Verb und gängige Infinitiv-Ausdrücke werden akzeptiert.",
+      "ipa": "/ˈaɪ̯nə daˈtaɪ̯ ˈaʊ̯sˌdʁʊkn̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "phrase",
+        "prompt": {
+          "de": "Computer: Beschreibe diese Funktion mit einem Infinitiv-Ausdruck.",
+          "en": "Computer: Describe this function with a German infinitive phrase.",
+          "zh": "电脑：请用德语动词原形短语描述这个功能。"
+        },
+        "answers": [
+          "ausdrucken",
+          "drucken",
+          "eine Datei drucken",
+          "ein Dokument drucken",
+          "ein Dokument ausdrucken"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "cd4afed63af1b9423868a9a645898b1129068917a1460e28ce893ff65640d634",
+    "upstreamBlob": "c14502b16c8c8d5f03b55fd490b0262a0d82344a"
   },
   {
     "id": "v196",
@@ -840,7 +2108,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Tag/Sonne, kein bestimmtes Kalenderdatum."
+      "reason": "Zeigt Tag/Sonne, kein bestimmtes Kalenderdatum.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -863,7 +2132,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈdaʊ̯mən/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "6468b77ad6de1240314deb9b6f60b482802ce50d0af5a64401721b6a61fb746f",
+    "upstreamBlob": "bc24ae80b4c37094218e76ea7f8c4c31a2210147"
   },
   {
     "id": "v198",
@@ -885,7 +2157,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈdɛkə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9638c076a6e4c38ce1abfd7c6820600606b3a65d433c11e17c2b24ac3da5f7d0",
+    "upstreamBlob": "1d4193056e829deb6841d9f6f1de14f15850305a"
   },
   {
     "id": "v199",
@@ -907,7 +2182,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈdɛkl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "4047c9f5ae4411e7a535adb6bddf5a09c8476072c6039379f9d3be1a5fb17fab",
+    "upstreamBlob": "eb236b902fb02cf78efe43758d80c8c698eb20de"
   },
   {
     "id": "v201",
@@ -929,7 +2207,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/deodoˈʁant/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "7987dd6b0ce2095aa14f4e910a358fd67b69ab50cc42705f2a55d12bda408e30",
+    "upstreamBlob": "1bc16b982b7a7326b86eb4be2dc53ecd5760cd07"
+  },
+  {
+    "id": "v204",
+    "de": "der Desktop-Computer",
+    "en": "desktop computer",
+    "zh": "台式电脑",
+    "plural": "die Desktop-Computer",
+    "path": "wilson/mulberry/v204-r2.svg",
+    "sourcePath": "EN/computer_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Stationärer Computer mit Monitor, Rechnergehäuse und separater Tastatur.",
+      "ipa": "/ˈdɛsktɔp kɔmˌpjuːtɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v204",
+        "de": "der Desktop-Computer",
+        "plural": "die Desktop-Computer",
+        "en": "desktop computer",
+        "zh": "台式电脑",
+        "path": "wilson/original-next/v204.svg",
+        "ipa": "/ˈdɛsktɔp kɔmˈpjuːtɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈdɛsktɔp kɔmˈpjuːtɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v204.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "fb211419930f4c3234ce1c0fb09bb6dd5d92767b64dc3cc6f8dfe801bd2c529a",
+    "upstreamBlob": "d5d6cd091cffdeb182c4c611517b47f875dfc862"
   },
   {
     "id": "v217",
@@ -951,7 +2284,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈdɔpl̩ˌbɛt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "8230fe5cda9bf94e295d2ba2a7138e65f05b068b4f32aeab343d1b8ad32034a2",
+    "upstreamBlob": "f2e6f4316fc10d1fa4b01537ff494c864f1460ed"
+  },
+  {
+    "id": "v219",
+    "de": "der Dosenöffner",
+    "en": "tin opener",
+    "zh": "开罐器",
+    "plural": "die Dosenöffner",
+    "path": "wilson/mulberry/v219-r2.svg",
+    "sourcePath": "EN/can_opener.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/can_opener.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Manueller Dosenöffner mit zwei Griffen und Schneidrad.",
+      "ipa": "/ˈdoːzənˌœfnɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "65fb217a28cb091b4da317abf4300413296b13d5302cdbe0b66775eaa20fc768",
+    "upstreamBlob": "a3f3b990e33943058dde93411de36f699fc2d0ad"
   },
   {
     "id": "v221",
@@ -973,7 +2335,205 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈdaʊ̯nloʊ̯d/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "42e8d295af4fed1040e086ad1282d99753dfc25bfd840d597d9d5ba2a214ed36",
+    "upstreamBlob": "4389be25f7ff2dc5d3fb70e212bd54dce69def6b"
+  },
+  {
+    "id": "v222",
+    "de": "drei",
+    "en": "three",
+    "zh": "三",
+    "plural": "—",
+    "sourcePath": "EN/three.svg",
+    "path": "wilson/mulberry/v222-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/three.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/dʁaɪ̯/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b8a63eec15dad9fc66c5a48df199473d7af69644e715f76324a958aec7e969cd",
+    "upstreamBlob": "6758b90e67a1dd60415bfd5e99a25eefc5b2a376"
+  },
+  {
+    "id": "v224",
+    "de": "drei Viertel",
+    "en": "three quarters",
+    "zh": "四分之三",
+    "plural": "—",
+    "sourcePath": "EN/three_quarters.svg",
+    "path": "wilson/mulberry/v224-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/three_quarters.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Bruchdarstellung und Bruchbeschriftung einzeln angesehen; die Aufgabe fragt ausdrücklich nach der notierten Bruchzahl, nicht nach einer möglicherweise missverständlichen Flächenfarbe.",
+      "ipa": "/dʁaɪ̯ ˈfɪʁtl̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Lies den Bruch im Kreis als deutschen Ausdruck.",
+          "en": "Write the fraction shown in the circle in German.",
+          "zh": "请用德语写出圆中标出的分数。"
+        },
+        "hint": {
+          "de": "Mit ein oder der passenden Anzahl, zum Beispiel: zwei Drittel.",
+          "en": "Include ein or the quantity, for example: zwei Drittel.",
+          "zh": "请输入完整表达，如 zwei Drittel。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "78e035c1c300690f3cf9642b5607366007c677335b4690bfe726e0d6ffb530ff",
+    "upstreamBlob": "94f32972199379b9eeab837e46ef8e49f73b4cfd"
+  },
+  {
+    "id": "v228",
+    "de": "dreißig",
+    "en": "thirty",
+    "zh": "三十",
+    "plural": "—",
+    "sourcePath": "EN/thirty.svg",
+    "path": "wilson/mulberry/v228-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/thirty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈdʁaɪ̯sɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "19f825d42bdcaa013b138e629b8e33974ae2330703348d57926d0db7f303ad8b",
+    "upstreamBlob": "213f1d6cff7a51daf4eb9e3faed4d3d628df6c59"
+  },
+  {
+    "id": "v232",
+    "de": "dreizehn",
+    "en": "thirteen",
+    "zh": "十三",
+    "plural": "—",
+    "sourcePath": "EN/thirteen.svg",
+    "path": "wilson/mulberry/v232-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/thirteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈdʁaɪ̯tseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "f0dce045bda1be69da88ef3e43bc3b7248b71b64fc9702206bc169182c7a8c5b",
+    "upstreamBlob": "1b9f5ec1b71ee87c303a6014cc05028dc8adf3eb"
+  },
+  {
+    "id": "v236",
+    "de": "ein Drittel",
+    "en": "one third",
+    "zh": "三分之一",
+    "plural": "—",
+    "sourcePath": "EN/one_third.svg",
+    "path": "wilson/mulberry/v236-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/one_third.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Bruchdarstellung und Bruchbeschriftung einzeln angesehen; die Aufgabe fragt ausdrücklich nach der notierten Bruchzahl, nicht nach einer möglicherweise missverständlichen Flächenfarbe.",
+      "ipa": "/aɪ̯n ˈdʁɪtl̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Lies den Bruch im Kreis als deutschen Ausdruck.",
+          "en": "Write the fraction shown in the circle in German.",
+          "zh": "请用德语写出圆中标出的分数。"
+        },
+        "hint": {
+          "de": "Mit ein oder der passenden Anzahl, zum Beispiel: zwei Drittel.",
+          "en": "Include ein or the quantity, for example: zwei Drittel.",
+          "zh": "请输入完整表达，如 zwei Drittel。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "7335a982e9950411e178b5ae4c7567a0ecf1f6752b76302e270fc7366bf23caf",
+    "upstreamBlob": "12c1baa121cdf4c56a07955e0667b53eb4292da2"
   },
   {
     "id": "v242",
@@ -995,7 +2555,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈduːʃə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a3f5aa5536c5de36a41751989122013042be2e4eba60421b9414ec7c4a7c6d6c",
+    "upstreamBlob": "709ca20ddd2c88a0252b654bf20bc1d46884c50e"
   },
   {
     "id": "v243",
@@ -1014,7 +2577,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Unbeschriftete Flasche; Duschgel nicht vom übrigen Körperpflegeprodukt unterscheidbar."
+      "reason": "Unbeschriftete Flasche; Duschgel nicht vom übrigen Körperpflegeprodukt unterscheidbar.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -1034,7 +2598,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Ehebeziehung aus der isolierten Person und Hand nicht sicher erschließbar."
+      "reason": "Ehebeziehung aus der isolierten Person und Hand nicht sicher erschließbar.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -1054,8 +2619,40 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Ehebeziehung aus der isolierten Person und Hand nicht sicher erschließbar."
+      "reason": "Ehebeziehung aus der isolierten Person und Hand nicht sicher erschließbar.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v248",
+    "de": "das Ehepaar",
+    "en": "married couple",
+    "zh": "夫妻",
+    "plural": "die Ehepaare",
+    "path": "wilson/mulberry/v248-r2.svg",
+    "sourcePath": "EN/married.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/married.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Erwachsenes Paar plus deutlich hervorgehobener Ehering stellt die Ehebeziehung dar.",
+      "ipa": "/ˈeːəˌpaːɐ̯/",
+      "childSuitable": false,
+      "context": {
+        "de": "Die Beziehung wird mit zwei Personen und dem Ring-Symbol dargestellt.",
+        "en": "The two people and ring symbol show a relationship.",
+        "zh": "请结合两个人和戒指符号判断他们的关系。"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "1b3c2fd052718d6aa521142e74cc3357e839f28dcd5d7b7d454dfd88b23bab99",
+    "upstreamBlob": "ec2eda11f3a6c0ade82e34d4e66c70658c0df82f"
   },
   {
     "id": "v249",
@@ -1077,7 +2674,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈaɪ̯ˌɡɛlp/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d800bf28e65098bd9fca73e856caa0cdd3dfdb9700d959dbb19b430d1ced9560",
+    "upstreamBlob": "27ac64dc4fc4542a44b26f140ef3f0e8b5ecd56b"
   },
   {
     "id": "v253",
@@ -1099,7 +2699,171 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈaɪ̯mɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "f560e97d585997abfc681c39ef99a36857a22d102d666eeca8e5a5b9a4939ad5",
+    "upstreamBlob": "27191a3d03dc3a047cce892dc33d82e804f3641f"
+  },
+  {
+    "id": "v255",
+    "de": "der Ein/Aus-Schalter",
+    "en": "on/off switch",
+    "zh": "电源开关",
+    "plural": "die Ein/Aus-Schalter",
+    "path": "wilson/mulberry/v255-r2.svg",
+    "sourcePath": "EN/power_switch.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/power_switch.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Eindeutiges Ein-/Aus-Symbol auf einem runden Schaltelement; Schreibweise der Wortform vereinheitlicht.",
+      "ipa": "/ˈaɪ̯nʔaʊ̯sˌʃaltɐ/",
+      "childSuitable": false,
+      "corrections": {
+        "de": "der Ein-Aus-Schalter",
+        "plural": "die Ein-Aus-Schalter"
+      },
+      "answerVariants": [
+        {
+          "de": "der Ein/Aus-Schalter",
+          "plural": "die Ein/Aus-Schalter"
+        },
+        {
+          "de": "der Ein-/Aus-Schalter",
+          "plural": "die Ein-/Aus-Schalter"
+        },
+        {
+          "de": "der Ein- und Ausschalter",
+          "plural": "die Ein- und Ausschalter"
+        }
+      ],
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v255",
+        "de": "der Ein/Aus-Schalter",
+        "plural": "die Ein/Aus-Schalter",
+        "en": "on/off switch",
+        "zh": "电源开关",
+        "path": "wilson/original-next/v255.svg",
+        "ipa": "/ˈaɪ̯n ʔaʊ̯s ˌʃaltɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈaɪ̯n ʔaʊ̯s ˌʃaltɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v255.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "6530a2f4d6c47747812c68726bd81b8254886f867a9ffd2963081d0905b7b6da",
+    "upstreamBlob": "342b106a4d472680c1c0ae3babfeef1c523f4804"
+  },
+  {
+    "id": "v269",
+    "de": "der Einkaufskorb",
+    "en": "shopping basket",
+    "zh": "购物篮",
+    "plural": "die Einkaufskörbe",
+    "path": "wilson/mulberry/v269-r2.svg",
+    "sourcePath": "EN/basket_2.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/basket_2.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Tragbarer geflochtener Einkaufskorb mit Bügelgriff.",
+      "ipa": "/ˈaɪ̯nkaʊ̯fsˌkɔʁp/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v269",
+        "de": "der Einkaufskorb",
+        "plural": "die Einkaufskörbe",
+        "en": "shopping basket",
+        "zh": "购物篮",
+        "path": "wilson/original-next/v269.svg",
+        "ipa": "/ˈaɪ̯nkaʊ̯fsˌkɔʁp/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈaɪ̯nkaʊ̯fsˌkɔʁp/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v269.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "cebcc0ab7e863ce89d0ef28a847957d91da4a9afb005ff23103a29e42fbc228e",
+    "upstreamBlob": "06fbeec8514a1e113b2aa8205e70bffc6cd29e74"
+  },
+  {
+    "id": "v273",
+    "de": "eins",
+    "en": "one",
+    "zh": "一",
+    "plural": "—",
+    "sourcePath": "EN/one.svg",
+    "path": "wilson/mulberry/v273-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/one.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/aɪ̯ns/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "973d0f83a8d5c6823f98727684608302c4f0ac14f2d73fff98fb2e5c8d9160da",
+    "upstreamBlob": "3bd7add93a3fea569b1c8299355b056d959fb2e1"
   },
   {
     "id": "v281",
@@ -1126,7 +2890,101 @@ const WILSON_IMAGE_CANDIDATES=[
         "en": "egg white (ingredient)",
         "zh": "蛋清"
       }
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9e9bd4adb78a113ed1bcf3c0f23d40de4d185fee8243b1b13e07ceb5713854dc",
+    "upstreamBlob": "7ee22428617f620992a339682e62e16bf97ae5f0"
+  },
+  {
+    "id": "v282",
+    "de": "der Elektrobohrer",
+    "en": "electric drill",
+    "zh": "电钻",
+    "plural": "die Elektrobohrer",
+    "path": "wilson/mulberry/v282-r2.svg",
+    "sourcePath": "EN/drill_electric.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/drill_electric.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Elektrische Bohrmaschine mit Kabel; bewusst Elektrobohrer, nicht Akkubohrer.",
+      "ipa": "/eˈlɛktʁoˌboːʁɐ/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v282",
+        "de": "der Elektrobohrer",
+        "plural": "die Elektrobohrer",
+        "en": "electric drill",
+        "zh": "电钻",
+        "path": "wilson/original-next/v282.svg",
+        "ipa": "/eˈlɛktʁoˌboːʁɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/eˈlɛktʁoˌboːʁɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v282.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "624669e422932c0a1c3b8b8514a5a7709bf092d45faa158288daab69057f5b42",
+    "upstreamBlob": "e5e61f752b17ef510a318bec3ba74d95c4eb5e03"
+  },
+  {
+    "id": "v283",
+    "de": "elf",
+    "en": "eleven",
+    "zh": "十一",
+    "plural": "—",
+    "sourcePath": "EN/eleven.svg",
+    "path": "wilson/mulberry/v283-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/eleven.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ɛlf/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "7b4faf08eacca9e52471e8f97609e1146861e132f109caff0788f36892453c1a",
+    "upstreamBlob": "94d7a34f3624cf95c130a74c799a54f539741e76"
   },
   {
     "id": "v285",
@@ -1148,7 +3006,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈɛlˌboːɡn̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "fa6bd10885a95b598a3a8d0e789f20f443890a6c7119696fe7f378583ad017d5",
+    "upstreamBlob": "4f51d9144d2ffb937955e7bede24baf93be46ad4"
   },
   {
     "id": "v296",
@@ -1170,7 +3031,101 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈeːɐ̯tˌbeːʁə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "7bc53c5fd4d61ca8eee89b0f1f43ce0fd61da1782dc09db1373ed871f28375ec",
+    "upstreamBlob": "0d2170b71eb0299a3cd8cc4e74a7ba86457bfffd"
+  },
+  {
+    "id": "v303",
+    "de": "erste",
+    "en": "first",
+    "zh": "第一",
+    "plural": "—",
+    "sourcePath": "EN/first.svg",
+    "path": "wilson/mulberry/v303-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/first.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Pfeil markiert das erste von drei Kästchen; echte Ordnungswortaufgabe, keine Mengenangabe.",
+      "ipa": "/ˈeːɐ̯stə/",
+      "childSuitable": false,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Welches Ordnungswort beschreibt die markierte Position?",
+          "en": "Which German ordinal describes the marked position?",
+          "zh": "标记的位置用哪个德语序数词表示？"
+        },
+        "hint": {
+          "de": "Ohne Artikel, mit der Endung -e.",
+          "en": "Without an article; use the form ending in -e.",
+          "zh": "不加冠词，使用以 -e 结尾的形式。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "819d7c9423189f04047e3988d4b45614cde118bd22871fb9d8039d77e4f34d0f",
+    "upstreamBlob": "cb58a6abe24e02d86b2d02d6f8c5db9d4414b0c4"
+  },
+  {
+    "id": "v304",
+    "de": "der Erste-Hilfe-Kasten",
+    "en": "first-aid kit",
+    "zh": "急救箱",
+    "plural": "die Erste-Hilfe-Kästen",
+    "path": "wilson/mulberry/v304-r2.svg",
+    "sourcePath": "EN/first_aid_box.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/first_aid_box.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Erste-Hilfe-Koffer mit weißem Kreuz auf grünem Grund.",
+      "ipa": "/ˈeːɐ̯stə ˈhɪlfə ˌkastən/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v304",
+        "de": "der Erste-Hilfe-Kasten",
+        "plural": "die Erste-Hilfe-Kästen",
+        "en": "first-aid kit",
+        "zh": "急救箱",
+        "path": "wilson/original-next/v304.svg",
+        "ipa": "/ˈeːɐ̯stə ˈhɪlfəˌkastn̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈeːɐ̯stə ˈhɪlfəˌkastn̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v304.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "e18d49b24824d07aec02597c89a51aafe8016227ce2a7575849baf1dbf76d1ab",
+    "upstreamBlob": "aeca52be533882364fd072b2c3fb8e58cb0e8832"
   },
   {
     "id": "v308",
@@ -1189,8 +3144,35 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Unbeschriftete Flasche; Essig nicht eindeutig erkennbar."
+      "reason": "Unbeschriftete Flasche; Essig nicht eindeutig erkennbar.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v309",
+    "de": "der Essteller",
+    "en": "dinner plate",
+    "zh": "餐盘",
+    "plural": "die Essteller",
+    "path": "wilson/mulberry/v309-r2.svg",
+    "sourcePath": "EN/plate.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/plate.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Flacher Teller mit zusätzlichem Essplatzpiktogramm; Essteller statt tiefer Schüssel.",
+      "ipa": "/ˈɛsˌtɛlɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8a30d88c040c6a16488e99b741c8263dc6780324c6ed051e7c4802d7ff79f4ee",
+    "upstreamBlob": "23e8bf2b9f5325aad5a4a68e391da66741c1dd38"
   },
   {
     "id": "v310",
@@ -1212,7 +3194,93 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈɛsˌtɪʃ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0a52f7fec45df2c2c812a745e0a4529b7451cdefe04d075abc786a6ae30a120e",
+    "upstreamBlob": "0fec9bfb8e59efbdcfbe9d3b750c996d82b0efd5"
+  },
+  {
+    "id": "v317",
+    "de": "der Fahrradhelm",
+    "en": "bicycle helmet",
+    "zh": "自行车头盔",
+    "plural": "die Fahrradhelme",
+    "path": "wilson/mulberry/v317-r2.svg",
+    "sourcePath": "EN/cycle_helmet.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cycle_helmet.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Leichter Fahrradhelm mit Lüftungsöffnungen und Kinnriemen.",
+      "ipa": "/ˈfaːɐ̯ʁaːtˌhɛlm/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v317",
+        "de": "der Fahrradhelm",
+        "plural": "die Fahrradhelme",
+        "en": "bicycle helmet",
+        "zh": "自行车头盔",
+        "path": "wilson/original-next/v317.svg",
+        "ipa": "/ˈfaːɐ̯ʁaːtˌhɛlm/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈfaːɐ̯ʁaːtˌhɛlm/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v317.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "39b65aca068f3ddaa09cfe0998852c82f15b83f33d4cfac8777e5c69555008bd",
+    "upstreamBlob": "4e36053bd46bfe411fa45a262e82be7912dd7809"
+  },
+  {
+    "id": "v321",
+    "de": "die Farbe",
+    "en": "paint; color",
+    "zh": "油漆；颜色",
+    "plural": "die Farben",
+    "path": "wilson/mulberry/v321-r2.svg",
+    "sourcePath": "EN/paint.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/paint.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Geöffneter Farbeimer; Übersetzungen auf die hier abgebildete Bedeutung Anstrichfarbe eingegrenzt.",
+      "ipa": "/ˈfaʁbə/",
+      "childSuitable": true,
+      "corrections": {
+        "en": "paint",
+        "zh": "油漆",
+        "pinyin": "yóuqī"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "5d678dbb7d24df2f258ce0b5a511938ad71de8906345a593f8e9c62eff8bb3a9",
+    "upstreamBlob": "a90acb5501ae2d753c4eb1952d12b2c839265d29"
   },
   {
     "id": "v324",
@@ -1234,7 +3302,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈfaksɡəˌʁɛːt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "387393c26c7904eecdec69542dd090464f3f6f6de099efa5d9ebbaa0a88cd468",
+    "upstreamBlob": "10bae3a63de855bb04e99d3fdca45f0024196e74"
   },
   {
     "id": "v328",
@@ -1256,7 +3327,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈfɛnstɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "7deaae127ec178a3bf50d72b4fcba972d7796608d2c35934938066b9fe905c1e",
+    "upstreamBlob": "598c3d3e2eb43c6c265c7b86865836ea632fedcf"
   },
   {
     "id": "v331",
@@ -1278,7 +3352,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈfɛʁzə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "33bf801ae9ca26dc69e02d4ae6c2b31ca623772dc765ee78ef53e33ee0e57019",
+    "upstreamBlob": "9a8744ee1c008319e412718be1e1fb0febc7ce96"
   },
   {
     "id": "v332",
@@ -1297,8 +3374,61 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Körperfülle statt den Stoff Fett; ungeeignete Bedeutungszuordnung."
+      "reason": "Zeigt Körperfülle statt den Stoff Fett; ungeeignete Bedeutungszuordnung.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v337",
+    "de": "das Fieberthermometer",
+    "en": "clinical thermometer",
+    "zh": "体温计",
+    "plural": "die Fieberthermometer",
+    "path": "wilson/mulberry/v337-r2.svg",
+    "sourcePath": "EN/thermometer.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/thermometer.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Kompaktes Thermometer mit zusätzlichem Erste-Hilfe-Symbol; klinischer Messkontext statt Wandthermometer.",
+      "ipa": "/ˈfiːbɐtɛʁmoˌmeːtɐ/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v337",
+        "de": "das Fieberthermometer",
+        "plural": "die Fieberthermometer",
+        "en": "clinical thermometer",
+        "zh": "体温计",
+        "path": "wilson/original-next/v337.svg",
+        "ipa": "/ˈfiːbɐtɛʁmoˌmeːtɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "reason": "Thermometer motif does not distinguish clinical from general temperature measurement.",
+          "ipa": "/ˈfiːbɐtɛʁmoˌmeːtɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": false,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v337.svg",
+        "status": "needs-replacement-or-context"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "d5f7a4ef046da84f73911bad9f08ac8114572893edc80f599c870bd7ea366451",
+    "upstreamBlob": "f806820245fa0534370688a14ab8bad0c91f6f23"
   },
   {
     "id": "v338",
@@ -1320,7 +3450,269 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈfɪŋɐˌnaːɡl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "1c730d185a27bf8d1ebe0f388b2832ce071bede4d41bf1da32f4f9772480c31b",
+    "upstreamBlob": "3b4e4379ce84ff62e3fc75bdff49e6900537f157"
+  },
+  {
+    "id": "v341",
+    "de": "der Flachpinsel",
+    "en": "flat paintbrush",
+    "zh": "扁平漆刷",
+    "plural": "die Flachpinsel",
+    "path": "wilson/mulberry/v341-r2.svg",
+    "sourcePath": "EN/paint_brush_2.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/paint_brush_2.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Flacher breiter Pinsel mit rechteckigem Borstenfeld; runde Pinselvariante verworfen.",
+      "ipa": "/ˈflaxˌpɪnzəl/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v341",
+        "de": "der Flachpinsel",
+        "plural": "die Flachpinsel",
+        "en": "flat paintbrush",
+        "zh": "扁平漆刷",
+        "path": "wilson/original-next/v341.svg",
+        "ipa": "/ˈflaxˌpɪnzl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈflaxˌpɪnzl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v341.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "403d2acc74df51543cf6039bfb67562646e57beb967428a2273d219d792ad66f",
+    "upstreamBlob": "031a5d7ff57a234aec40c570542c19be8c540b08"
+  },
+  {
+    "id": "v361",
+    "de": "der Frühling",
+    "en": "spring (season)",
+    "zh": "春天",
+    "plural": "die Frühlinge",
+    "path": "wilson/mulberry/v361-r2.svg",
+    "sourcePath": "EN/spring.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spring.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Jahreszeitenszene mit austreibenden Knospen und frischem Gras.",
+      "ipa": "/ˈfʁyːlɪŋ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "e7e0a7c9a6e02b1f25b5714afa6de2dec5b93554cddd1ad8baa9f71ba8734b6f",
+    "upstreamBlob": "747b980c4417342308029948a331655e98c28e72"
+  },
+  {
+    "id": "v362",
+    "de": "die Frühlingszwiebel",
+    "en": "spring onion",
+    "zh": "小葱",
+    "plural": "die Frühlingszwiebeln",
+    "path": "wilson/mulberry/v362-r2.svg",
+    "sourcePath": "EN/spring_onions.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spring_onions.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Frühlingszwiebeln mit schmaler weißer Basis, Wurzeln und langen grünen Blättern.",
+      "ipa": "/ˈfʁyːlɪŋsˌt͡sviːbəl/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v362",
+        "de": "die Frühlingszwiebel",
+        "plural": "die Frühlingszwiebeln",
+        "pos": "noun",
+        "en": "spring onion",
+        "zh": "小葱",
+        "pinyin": "xiǎocōng",
+        "cat": "food",
+        "articleVariants": [],
+        "sourcePath": "EN/spring_onions.svg",
+        "path": "wilson/mulberry/v362.svg",
+        "active": true,
+        "status": "approved",
+        "creator": "Steve Lee",
+        "license": "CC-BY-SA-4.0",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spring_onions.svg",
+        "provider": "mulberry",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+          "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+          "ipa": "/ˈfʁyːlɪŋsˌtsviːbl̩/",
+          "childSuitable": true,
+          "corrections": {
+            "de": "die Frühlingszwiebel",
+            "plural": "die Frühlingszwiebeln",
+            "en": "spring onion",
+            "zh": "小葱",
+            "cat": "food",
+            "pos": "noun"
+          },
+          "recheckedOn": "2026-11-19"
+        }
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "f14132f12afbddaf3f89a2a9d9beb225502157ec202ed00d72819791ef403f2d",
+    "upstreamBlob": "e0f9ebdbaf58983ead3d330d227c7af6416b55af"
+  },
+  {
+    "id": "v365",
+    "de": "fünf",
+    "en": "five",
+    "zh": "五",
+    "plural": "—",
+    "sourcePath": "EN/five.svg",
+    "path": "wilson/mulberry/v365-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/five.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/fʏnf/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "9afda94f17d56a5f0c3f7c3c88f93a70dbcce6369074d5329f4a1018d25c15fd",
+    "upstreamBlob": "169884162c273c6b3b450173333f145870760560"
+  },
+  {
+    "id": "v373",
+    "de": "fünfzehn",
+    "en": "fifteen",
+    "zh": "十五",
+    "plural": "—",
+    "sourcePath": "EN/fifteen.svg",
+    "path": "wilson/mulberry/v373-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fifteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈfʏnftseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "4e3977d522dcf1392df953991627cc4aaf383bca48c047677eb301b55bf69629",
+    "upstreamBlob": "91edde643ed49a44e207e7f1ea1f6f236efab1c1"
+  },
+  {
+    "id": "v376",
+    "de": "fünfzig",
+    "en": "fifty",
+    "zh": "五十",
+    "plural": "—",
+    "sourcePath": "EN/fifty.svg",
+    "path": "wilson/mulberry/v376-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fifty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈfʏnftsɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "3698fa991ae709bfb5468810dc874483acf0812b308153e122a6572c9889b8a0",
+    "upstreamBlob": "a6d42540b5e09bcd0d017ca7a953fc441d4139e1"
   },
   {
     "id": "v380",
@@ -1342,7 +3734,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/fuːs/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "7404a41763888b61b9771513eb4a28c404bf64dd2d0cfdf7a35d844d36e0a179",
+    "upstreamBlob": "143b1818ae48253dac2a94fb7c41309f022d6bd8"
   },
   {
     "id": "v386",
@@ -1364,7 +3759,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈɡaːbl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "eb4a94dea80d5d60af7414f4b5772acd9703ab622355bfef8e32e8d8ea694604",
+    "upstreamBlob": "3dd1197fb8c5cfbd51faa2c8142af5e44b3c7d13"
   },
   {
     "id": "v387",
@@ -1386,7 +3784,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ɡaˈʁaːʒə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "1a7e80b725dc7634e853d1e82363b27635ef32be24452885fcd89ac586af3827",
+    "upstreamBlob": "74b31edd7c5228e6657c7c3a3034509e34fea2c5"
   },
   {
     "id": "v388",
@@ -1408,7 +3809,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ɡaʁˈneːlə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "f34ce928b51c40020324df9c0e2f019236fc3b2c1023271d3f9833857ce70692",
+    "upstreamBlob": "55c8f12af83a8c18927428ba06399f32171e6ed6"
+  },
+  {
+    "id": "v389",
+    "de": "der Gartenschlauch",
+    "en": "garden hose",
+    "zh": "花园水管",
+    "plural": "die Gartenschläuche",
+    "path": "wilson/mulberry/v389-r2.svg",
+    "sourcePath": "EN/hose.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hose.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Aufgerollter Gartenschlauch mit Spritzdüse.",
+      "ipa": "/ˈɡaʁtənˌʃlaʊ̯x/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v389",
+        "de": "der Gartenschlauch",
+        "plural": "die Gartenschläuche",
+        "en": "garden hose",
+        "zh": "花园水管",
+        "path": "wilson/original-next/v389.svg",
+        "ipa": "/ˈɡaʁtn̩ˌʃlaʊ̯x/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈɡaʁtn̩ˌʃlaʊ̯x/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v389.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "62fe522c4f023c5525d0494ee77614bfa3fe45a56d1fcc16eca6ea90eea8a1b6",
+    "upstreamBlob": "51a30b8c24ab6021015f3246edbccdc4a3577516"
   },
   {
     "id": "v398",
@@ -1430,7 +3886,135 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ɡəˈfʁiːɐ̯ˌʃʁaŋk/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b4cf5296f20e6f061a89d63b2be2c591dff22a32da38b7110e5a696049540be7",
+    "upstreamBlob": "6e1b2f4f214daab17cd205ff9a2ef799664fd8c0"
+  },
+  {
+    "id": "v407",
+    "de": "der Geldautomat",
+    "en": "ATM",
+    "zh": "自动取款机",
+    "plural": "die Geldautomaten",
+    "path": "wilson/mulberry/v407-r2.svg",
+    "sourcePath": "EN/cash_point.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cash_point.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Geldautomat mit Display, Tastenfeld und Kartenschlitz; schwaches maskulines Nomen ergänzt.",
+      "ipa": "/ˈɡɛltʔaʊ̯toˌmaːt/",
+      "childSuitable": false,
+      "corrections": {
+        "nDeclension": true
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b42507ccb459b99fdf0bccadb6ac74e5057d828716dc4524e4362e32736d8517",
+    "upstreamBlob": "0683810777feae08de46147a3ba80a64dcd822d9"
+  },
+  {
+    "id": "v424",
+    "de": "gießen",
+    "en": "to water (plants)",
+    "zh": "浇水",
+    "plural": "—",
+    "sourcePath": "EN/water_plants_,_to.svg",
+    "path": "wilson/mulberry/v424-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/water_plants_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Person hält eine Gießkanne über eine Topfpflanze; Pflanzenpflege eindeutig.",
+      "ipa": "/ˈɡiːsn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe das Verb im Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图片中是什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "Pflanzen gießen",
+          "eine Pflanze gießen",
+          "die Pflanze gießen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "eba000afbee8d034af68ac50f2d7251fe3beee7fc0c9be98d5b54a74b12059f1",
+    "upstreamBlob": "e201458afe36ea91ea0b5345f82aebb0ab00cded"
+  },
+  {
+    "id": "v427",
+    "de": "die Glühbirne",
+    "en": "light bulb",
+    "zh": "灯泡",
+    "plural": "die Glühbirnen",
+    "path": "wilson/mulberry/v427-r2.svg",
+    "sourcePath": "EN/lightbulb.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lightbulb.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Klassische birnenförmige Glühlampe mit Schraubsockel.",
+      "ipa": "/ˈɡlyːˌbɪʁnə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v427",
+        "de": "die Glühbirne",
+        "plural": "die Glühbirnen",
+        "en": "light bulb",
+        "zh": "灯泡",
+        "path": "wilson/original-next/v427.svg",
+        "ipa": "/ˈɡlyːˌbɪʁnə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈɡlyːˌbɪʁnə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v427.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "38fbc4c4e891542d691480a04ccd4e6ec584d88a539de76b49d0e6f260ac9edf",
+    "upstreamBlob": "e759f0cf54477cc3ccd75cd5796e7a8d6824516e"
   },
   {
     "id": "v431",
@@ -1452,7 +4036,49 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈɡʁeːpˌfʁuːt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "aeac98d0bf7c42a9ff21190d264f12ea0a152848a80f0b98f8af5b206f148253",
+    "upstreamBlob": "51ea7150c07151c2c2df8999071c8f3ae4af18a2"
+  },
+  {
+    "id": "v434",
+    "de": "groß",
+    "en": "large",
+    "zh": "大的",
+    "plural": "—",
+    "sourcePath": "EN/large.svg",
+    "path": "wilson/mulberry/v434-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/large.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil markiert größtes Quadrat neben zwei kleineren. Grundform des Größenadjektivs abgefragt.",
+      "ipa": "/ɡʁoːs/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Wie ist die Größe des markierten Quadrats? Schreibe das Adjektiv in der Grundform.",
+          "en": "Describe the marked square’s size. Write the German adjective in its base form.",
+          "zh": "标记的正方形大小如何？请写德语形容词原形。"
+        },
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "041430aa2f97d4b2ff78a4dff2eaee87c3621459f44f74383495a697a85a972c",
+    "upstreamBlob": "528ce03fb5c27f87a0d749230e51f77cd0549591"
   },
   {
     "id": "v437",
@@ -1471,7 +4097,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson."
+      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -1491,8 +4118,87 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson."
+      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v440",
+    "de": "die grüne Bohne",
+    "en": "green bean",
+    "zh": "四季豆",
+    "plural": "die grünen Bohnen",
+    "path": "wilson/mulberry/v440-r2.svg",
+    "sourcePath": "EN/green_beans.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/green_beans.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Lange grüne Bohnenschoten; Pluralabbildung unterstützt das Formenpaar.",
+      "ipa": "/ˌɡʁyːnə ˈboːnə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "1cfe5e50a593cfd69acbc0716ba0ad09f4a8d3742165f9be4a9fdd84b708c4f5",
+    "upstreamBlob": "577b6b21066d8f06eb0957e57f4d00635227508f"
+  },
+  {
+    "id": "v442",
+    "de": "der Gummistiefel",
+    "en": "rubber boot",
+    "zh": "雨靴",
+    "plural": "die Gummistiefel",
+    "path": "wilson/mulberry/v442-r2.svg",
+    "sourcePath": "EN/wellington_boots.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wellington_boots.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Wasserdichte hohe Gummistiefel mit Profilsohle.",
+      "ipa": "/ˈɡʊmiˌʃtiːfəl/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v442",
+        "de": "der Gummistiefel",
+        "plural": "die Gummistiefel",
+        "en": "rubber boot",
+        "zh": "雨靴",
+        "path": "wilson/original-next/v442.svg",
+        "ipa": "/ˈɡʊmiˌʃtiːfl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈɡʊmiˌʃtiːfl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v442.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "af1d2e48278ba70a9fd4c2899dd323915100035ab041260c24caef51bddcdc1d",
+    "upstreamBlob": "8ec4cc9ee767ea9f024b55f20101180ee5a5a3ab"
   },
   {
     "id": "v444",
@@ -1514,7 +4220,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈɡʏʁtl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "4878f50d160a77bb49284928266a05624b2aa6b7de7933f6ae44c0858a4f90b2",
+    "upstreamBlob": "467f5b98f03098e528451fb8ee79a2f46f603736"
   },
   {
     "id": "v451",
@@ -1536,7 +4245,92 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhaːɐ̯ˌbʏʁstə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "bd84f21f830356be4cb49bd4e5793809f18ac13e7011d9d4f35fec7e57e5e14a",
+    "upstreamBlob": "531049ddfaed96b39285803953449ca0913d6d0b"
+  },
+  {
+    "id": "v453",
+    "de": "die Haftnotiz",
+    "en": "sticky note",
+    "zh": "便利贴",
+    "plural": "die Haftnotizen",
+    "path": "wilson/mulberry/v453-r2.svg",
+    "sourcePath": "EN/post-it.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/post-it.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Block kleiner Haftnotizzettel mit abgehobener Ecke.",
+      "ipa": "/ˈhaftnoˌtiːt͡s/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v453",
+        "de": "die Haftnotiz",
+        "plural": "die Haftnotizen",
+        "en": "sticky note",
+        "zh": "便利贴",
+        "path": "wilson/original-next/v453.svg",
+        "ipa": "/ˈhaftnoˌtiːts/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈhaftnoˌtiːts/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v453.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "9b2a36ac9caeae177cf5970093d77f30bbb74d7a9d4cc76668a8adc587da5c40",
+    "upstreamBlob": "bef9fbd66e114b2cb27e6860e84490a977ddb55c"
+  },
+  {
+    "id": "v454",
+    "de": "das Hähnchen",
+    "en": "chicken (meat bird)",
+    "zh": "鸡",
+    "plural": "die Hähnchen",
+    "path": "wilson/mulberry/v454-r2.svg",
+    "sourcePath": "EN/chicken.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chicken.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Ganzes zubereitetes Hähnchen; zusätzliches Hühnerpiktogramm bestimmt die Tierart.",
+      "ipa": "/ˈhɛːnçən/",
+      "childSuitable": true,
+      "corrections": {
+        "zh": "鸡肉（整鸡）",
+        "pinyin": "jīròu (zhěng jī)"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "42f9519f3356db30b8ad2aa9fa8090b11c95b2f7535b67bdbc1820cd607247ba",
+    "upstreamBlob": "9f89fca806db9c19383e2c1ff873d8178721b947"
   },
   {
     "id": "v459",
@@ -1558,7 +4352,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/hals/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a827b1b53729e55cd887dd7be06150d47b3aed8a8d3394aa10ac50a201e65d03",
+    "upstreamBlob": "aa70acc0415ad7d5d85c29e1c54f64d6e1834b9b"
   },
   {
     "id": "v464",
@@ -1580,7 +4377,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhɛmbœːɐ̯ɡɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "106955ead507a19b6049d5438ba9c3b907d800f34380a6009a8d069a156a29d7",
+    "upstreamBlob": "d495a420714cbf8b1b01efb1951cd6be52f2a342"
   },
   {
     "id": "v465",
@@ -1602,7 +4402,81 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhamɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "db8ce0ff293e42d927b606dbc0cd367af8fdd8257c10487fdca38c1b48fd94fa",
+    "upstreamBlob": "0df6d6a0cac4e11335af41c5ea409d3c678b0d1e"
+  },
+  {
+    "id": "v466",
+    "de": "die Hand",
+    "en": "hand",
+    "zh": "手",
+    "plural": "die Hände",
+    "path": "wilson/mulberry/v466-r2.svg",
+    "sourcePath": "EN/right_hand.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/right_hand.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Zwei Handflächen, eine per Pfeil hervorgehoben; allgemeine anatomische Bedeutung Hand.",
+      "ipa": "/hant/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "3568d10606d7e3d4c0b06d03a3d86047ffa6fa3a698b497ed499cb7ae30fa459",
+    "upstreamBlob": "b9567b028e2f6b14d49ab5040103cae518781897"
+  },
+  {
+    "id": "v469",
+    "de": "sich die Hand geben",
+    "en": "shake hands",
+    "zh": "握手",
+    "plural": "—",
+    "sourcePath": "EN/shake_hands_,_to.svg",
+    "path": "wilson/mulberry/v469-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/shake_hands_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Hände fassen sich mit Bewegungszeichen zum Handschlag. Übliche gleichbedeutende Wendungen zugelassen.",
+      "ipa": "/zɪç diː hant ˈɡeːbn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "phrase",
+        "prompt": {
+          "de": "Beschreibe die Begrüßung mit einem Infinitiv-Ausdruck.",
+          "en": "Describe this greeting with a German infinitive phrase.",
+          "zh": "请用德语动词原形短语描述这种问候动作。"
+        },
+        "answers": [
+          "die Hand geben",
+          "Hände schütteln",
+          "sich die Hände schütteln",
+          "die Hände schütteln"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "9e6c6c78c617acb6889b82603826ec488c3b7eee21db639e22d6605b55473074",
+    "upstreamBlob": "1088fd3625860919dc828cdeff56d05442c5e65c"
   },
   {
     "id": "v470",
@@ -1624,7 +4498,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhantɡəˌlɛŋk/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "51bf51d93901dbd20b1c42badeac3bf13f515086f28187c1d6c9565992dd776f",
+    "upstreamBlob": "933a0b437d00c37f26e04d744a6fc6000b70cde2"
   },
   {
     "id": "v471",
@@ -1643,8 +4520,61 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Stabmixer, kein Handrührgerät mit Rührbesen."
+      "reason": "Zeigt Stabmixer, kein Handrührgerät mit Rührbesen.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v472",
+    "de": "die Handsäge",
+    "en": "handsaw",
+    "zh": "手锯",
+    "plural": "die Handsägen",
+    "path": "wilson/mulberry/v472-r2.svg",
+    "sourcePath": "EN/saw.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saw.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Handbetriebene Säge mit Griff und gezahntem Blatt.",
+      "ipa": "/ˈhantˌzɛːɡə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v472",
+        "de": "die Handsäge",
+        "plural": "die Handsägen",
+        "en": "handsaw",
+        "zh": "手锯",
+        "path": "wilson/original-next/v472.svg",
+        "ipa": "/ˈhantˌzɛːɡə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈhantˌzɛːɡə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v472.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "afa4c7e7025c5949d46bf5f3d23297a2fc8e7ed493cdc758b8070c9b725cd303",
+    "upstreamBlob": "92835ab48466f4e4f2ad25976abe1d01945049cb"
   },
   {
     "id": "v474",
@@ -1666,7 +4596,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhantˌtuːx/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "dba37b6c4513844f0f8adc2b1e2050165961df441446932c3398e59b749e94a5",
+    "upstreamBlob": "396d79b2a443b1dc5e0531cefd527ee90001c502"
   },
   {
     "id": "v475",
@@ -1710,7 +4643,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhaʊ̯sˌtyːɐ̯/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "5509e2cd3339ba4994f1c35f3d6c5a4ed7bd405b73f53e56fa6513984ceb2009",
+    "upstreamBlob": "5b10917a2c21b5871fdf6135a54114353a77f35e"
+  },
+  {
+    "id": "v482",
+    "de": "der Hautausschlag",
+    "en": "skin rash",
+    "zh": "皮疹",
+    "plural": "die Hautausschläge",
+    "path": "wilson/mulberry/v482-r2.svg",
+    "sourcePath": "EN/rash.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rash.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "SVG rendered with Inkscape and visually inspected individually in labeled contact sheets; DE article/plural, EN/ZH, pinyin and broad IPA editorially checked. AI-assisted first review; not independent native-speaker or phonetics validation.",
+      "reason": "Sichtbarer fleckiger Hautausschlag an einem Arm mit Kratzgeste; kein spezifischer medizinischer Befund behauptet.",
+      "ipa": "/ˈhaʊ̯tʔaʊ̯sˌʃlaːk/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "40db8150db562f36d61eeae2652b053167dec47d2dffe63ffc3975add5f6ed06",
+    "upstreamBlob": "182ee21ac6838ac0b7113e5a7910e1b73efab747"
   },
   {
     "id": "v488",
@@ -1732,7 +4694,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/hɛmt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "dfef2817079f1f5e02431c97aa2b4bc853eaa0ef553b763fa100796d61d75656",
+    "upstreamBlob": "7ddcff849b6f9c4951a935925ecd3f47a155c8cf"
   },
   {
     "id": "v489",
@@ -1754,7 +4719,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/hɛʁpst/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "304563b458b301ca459bea28c4e50105edb6e9f9619a50e67230b9823f4fcdb4",
+    "upstreamBlob": "e05a257881b0076d5011ae543f1fc5f3f0e67cac"
   },
   {
     "id": "v490",
@@ -1776,7 +4744,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/heːɐ̯t/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "47721472b25d8cbbce3b49eddb63e95d2d3a70ce41d39ab9546b6a16d194ca7f",
+    "upstreamBlob": "df972d63e2d31b28e90d9d42998a8a5c000989c5"
   },
   {
     "id": "v492",
@@ -1798,7 +4769,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/hɛʁts/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "92ede0091e9d89f73c2ec8fa2343d278347ccf18e43a70526f6f6098878dad95",
+    "upstreamBlob": "514d29d9c711879aa2639022fb5ad19f8402e169"
   },
   {
     "id": "v500",
@@ -1820,7 +4794,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhoːxˌʃtuːl/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "ae9538f3ba2eae6b37053b95e83a940716cacb30d4747a11a58b41b5f92969fd",
+    "upstreamBlob": "0bf417b1aed2f61acb3b21408175a03263e4a7e6"
   },
   {
     "id": "v502",
@@ -1842,7 +4819,88 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhɔkɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "3dfee0c613461e76e0841f0e1b3be14a047115675cce7940fcf36225c763883a",
+    "upstreamBlob": "df0918611db4469d5a3134bfd5a3dd57cac55faa"
+  },
+  {
+    "id": "v508",
+    "de": "das Hörgerät",
+    "en": "hearing aid",
+    "zh": "助听器",
+    "plural": "die Hörgeräte",
+    "path": "wilson/mulberry/v508-r2.svg",
+    "sourcePath": "EN/hearing_aid_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hearing_aid_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Hinter-dem-Ohr-Gerät mit Ohrpassstück am Ohr eindeutig dargestellt.",
+      "ipa": "/ˈhøːɐ̯ɡəˌʁɛːt/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "4a069b257a695d084ccb7fd78a3c3a0d7644e09506191083a9cdc54d90479f7d",
+    "upstreamBlob": "953cc7384661bfb261b4620faf20cb79c31ab655"
+  },
+  {
+    "id": "v509",
+    "de": "die Hose",
+    "en": "pair of trousers",
+    "zh": "裤子",
+    "plural": "die Hosen",
+    "path": "wilson/mulberry/v509-r2.svg",
+    "sourcePath": "EN/trousers.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/trousers.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Lange Hose mit zwei Hosenbeinen; Singular und Plural der deutschen Bezeichnung geprüft.",
+      "ipa": "/ˈhoːzə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v509",
+        "de": "die Hose",
+        "plural": "die Hosen",
+        "en": "pair of trousers",
+        "zh": "裤子",
+        "path": "wilson/original-next/v509.svg",
+        "ipa": "/ˈhoːzə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈhoːzə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v509.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "3c4a28f606263a7594b01be9433e961cb2379e919038780186c5174b242d270c",
+    "upstreamBlob": "59985eda3d4e5b5647d0d96a21173be906116a5d"
   },
   {
     "id": "v510",
@@ -1864,7 +4922,122 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈhʏftə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "8e2e3368fc478740fb542f8e2bc1a6587a379762c0a655bc92604cb6de608130",
+    "upstreamBlob": "9bfac65fc2a261e8d8cf54cdc1a7fbad8fdb47f7"
+  },
+  {
+    "id": "v513",
+    "de": "hundert",
+    "en": "one hundred",
+    "zh": "一百",
+    "plural": "—",
+    "sourcePath": "EN/hundred.svg",
+    "path": "wilson/mulberry/v513-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hundred.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈhʊndɐt/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        },
+        "answers": [
+          "einhundert"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "f9c1caf6d2a21cf4aa319fb2d7cd85cc6cf7ba327609403a232ad3afb83a1d49",
+    "upstreamBlob": "79b121df82532dfe205fdb4dc6e2579de49fda30"
+  },
+  {
+    "id": "v538",
+    "de": "die Jeans",
+    "en": "pair of jeans",
+    "zh": "牛仔裤",
+    "plural": "die Jeans",
+    "path": "wilson/mulberry/v538-r2.svg",
+    "sourcePath": "EN/jeans.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/jeans.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Blaue Jeans mit Nähten, Taschen und Gürtelschlaufen; deutsche Singular-/Pluralform Jeans.",
+      "ipa": "/dʒiːns/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "6015ee0d3ab37a127fd50d410bc38ca7146d80380847d91d36c2d500dfb64e99",
+    "upstreamBlob": "1fd3b233554c837204f7661275a0b11fce4d63a5"
+  },
+  {
+    "id": "v545",
+    "de": "jemanden anrufen",
+    "en": "phone someone",
+    "zh": "给某人打电话",
+    "plural": "—",
+    "sourcePath": "EN/telephone_2_,_to.svg",
+    "path": "wilson/mulberry/v545-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/telephone_2_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Person hält Telefonhörer ans Ohr. Anrufen und telefonieren als plausible Bildbeschreibungen zugelassen.",
+      "ipa": "/ˈjeːmandn̩ ˈanˌʁuːfn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "phrase",
+        "prompt": {
+          "de": "Beschreibe die Handlung am Telefon mit einem Infinitiv-Ausdruck.",
+          "en": "Describe the telephone action with a German infinitive phrase.",
+          "zh": "请用德语动词原形短语描述打电话的动作。"
+        },
+        "answers": [
+          "anrufen",
+          "telefonieren",
+          "mit jemandem telefonieren"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "2994fd528e9e809145c2663bda5d49dbe0284c55ea05451eabe51973e7596dda",
+    "upstreamBlob": "1be02d2649ceefa2abf24438b08aed90b3b14611"
   },
   {
     "id": "v548",
@@ -1883,8 +5056,35 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Milchproduktbecher mit Kuh; Joghurt nicht von anderer Milchcreme unterscheidbar."
+      "reason": "Milchproduktbecher mit Kuh; Joghurt nicht von anderer Milchcreme unterscheidbar.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v551",
+    "de": "das Kabel",
+    "en": "cable",
+    "zh": "电缆",
+    "plural": "die Kabel",
+    "path": "wilson/mulberry/v551-r2.svg",
+    "sourcePath": "EN/computer_cable.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_cable.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Aufgerolltes Anschlusskabel mit Steckverbindern; allgemeiner deutscher Oberbegriff Kabel passt.",
+      "ipa": "/ˈkaːbl̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "da0a44b27ebd620aa94eb0353220445f300658fe4f41d988ae9caae89af39de3",
+    "upstreamBlob": "8cc0f6abab56866ee1f57c2b1395f7af5b2464cc"
   },
   {
     "id": "v553",
@@ -1906,7 +5106,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈkafe/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "ed201c0c58e8c9bc6c95d4ac2ca1ddcd89a3ead2fad4051cfe00be8119a23648",
+    "upstreamBlob": "5adf38c2dab645e75d4241e5c1e1107a83b154a9"
+  },
+  {
+    "id": "v555",
+    "de": "die Kaffeemaschine",
+    "en": "coffee machine",
+    "zh": "咖啡机",
+    "plural": "die Kaffeemaschinen",
+    "path": "wilson/mulberry/v555-r2.svg",
+    "sourcePath": "EN/coffee_maker.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/coffee_maker.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Elektrische Filterkaffeemaschine mit Kaffeekanne dargestellt.",
+      "ipa": "/ˈkafeˌmaʃiːnə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v555",
+        "de": "die Kaffeemaschine",
+        "plural": "die Kaffeemaschinen",
+        "en": "coffee machine",
+        "zh": "咖啡机",
+        "path": "wilson/original-next/v555.svg",
+        "ipa": "/ˈkafeːmaˌʃiːnə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkafeːmaˌʃiːnə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v555.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "c7f56a28044f1b3fed7425150601b71b1d480ca04489179176254d976cff1be8",
+    "upstreamBlob": "e33b9376bc87bbf771a2983c1b894de2d6061d84"
   },
   {
     "id": "v557",
@@ -1928,7 +5183,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kaˈmiːn/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b7f57805e7afefd7aa12074c8b77cb6eab7f9eadfd2d86b980851ccc74a52d4f",
+    "upstreamBlob": "0f741365ae19381ef05545f774ba47f611acf19a"
   },
   {
     "id": "v558",
@@ -1950,7 +5208,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kam/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "52cc27d20b08a8bf082e7c788a7e6719ceaad756c6d50da67505dbe59f43bffc",
+    "upstreamBlob": "ed1fe3eb3869aa386568fcd56c012750f10ed1f6"
   },
   {
     "id": "v560",
@@ -1972,7 +5233,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kaˈʁɔtə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d7616b859b133792eb97537dd9f30c4a61df0de453c1fe3d3d3c36c297c39162",
+    "upstreamBlob": "5ff00775e1cc14ef70871bb5f3a9d46b158bdbc3"
   },
   {
     "id": "v561",
@@ -1994,7 +5258,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kaʁˈtɔfl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "c52db04d81de9058f8392f26e0daa62c7a20846b80951e7a638832828347020c",
+    "upstreamBlob": "633abe2dd73512c6f86a782d5c74a632b14d3201"
   },
   {
     "id": "v562",
@@ -2016,7 +5283,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈkɛːzə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "77f97dcf6b21e33f75b7615fa7a4b2ca2f6f0134975319403b7a2f578d65ca6f",
+    "upstreamBlob": "f718aad716348bffd6fc691e843f73b283a34f1f"
+  },
+  {
+    "id": "v571",
+    "de": "die Kerze",
+    "en": "candle",
+    "zh": "蜡烛",
+    "plural": "die Kerzen",
+    "path": "wilson/mulberry/v571-r2.svg",
+    "sourcePath": "EN/candle_2.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/candle_2.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Wachskerze mit sichtbarer Flamme.",
+      "ipa": "/ˈkɛʁtsə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v571",
+        "de": "die Kerze",
+        "plural": "die Kerzen",
+        "en": "candle",
+        "zh": "蜡烛",
+        "path": "wilson/original-next/v571.svg",
+        "ipa": "/ˈkɛʁtsə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkɛʁtsə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v571.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "0e7365782826c0144dbfb75a2de10c59a5d4cb44a4d406664774afdb6c4bef9d",
+    "upstreamBlob": "8f7bdd5ae25176eb9e6e26e13a8a0980e69c0aba"
   },
   {
     "id": "v578",
@@ -2038,7 +5360,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kɪn/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "577fa98d922277eacfc1068eff78d97df8823357a2380a1274c03d0072c9ee9a",
+    "upstreamBlob": "579ab6a64c81628fb66f6f4b830007277e468cec"
   },
   {
     "id": "v579",
@@ -2060,7 +5385,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈkɪʁʃə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b04a3d116cce4e25fb3d0dbb309ef257326537dbcb464a9bf518fa225348685d",
+    "upstreamBlob": "4006d29b48262ffaead7fc71677c115d23691f7d"
   },
   {
     "id": "v581",
@@ -2082,7 +5410,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/klaɪ̯t/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "5598c63a0b676d9df2bc3f376032d5b6e10b3ed62041ae2f2b10a38200489a13",
+    "upstreamBlob": "2eda61c10d3043061bc417a86d594904b8320b17"
   },
   {
     "id": "v582",
@@ -2104,7 +5435,145 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈklaɪ̯dɐˌbyːɡl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "c5b31480299725ec0a56335fbf4c158dd0ec21be3a3d4e033550effa702992b6",
+    "upstreamBlob": "29b3ec918509bd031ae0161965e4e07b9985f803"
+  },
+  {
+    "id": "v584",
+    "de": "klein",
+    "en": "small",
+    "zh": "小的",
+    "plural": "—",
+    "sourcePath": "EN/drink_small.svg",
+    "path": "wilson/mulberry/v584-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/drink_small.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil markiert kleinstes von drei unterschiedlich großen Gläsern. Es wird die Größe abgefragt.",
+      "ipa": "/klaɪ̯n/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Wie ist der linke Becher im Vergleich zu den anderen? Schreibe das Größenadjektiv in der Grundform.",
+          "en": "Compared with the others, what size is the left cup? Write the German adjective.",
+          "zh": "与其他杯子相比，左边的杯子大小如何？请写德语形容词原形。"
+        },
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8ed8ebda3ef14beb4b1e867a45f7ae92def6b0b8b8a78c7df6840a46a039297d",
+    "upstreamBlob": "e815584976316342a095b33c7ba0f06bc2718fa0"
+  },
+  {
+    "id": "v585",
+    "de": "der Kleinbus",
+    "en": "minibus",
+    "zh": "小型客车",
+    "plural": "die Kleinbusse",
+    "path": "wilson/mulberry/v585-r2.svg",
+    "sourcePath": "EN/mini_bus.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mini_bus.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Kleiner Bus mit mehreren Fahrgastfenstern; kein Reisebus oder großer Linienbus.",
+      "ipa": "/ˈklaɪ̯nˌbʊs/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "33b5ee3c201ce3c51e93ff30177c629987b569cac3533d96372ebad0db43718a",
+    "upstreamBlob": "8bc5629dba8a25757f182f1a1268eba1c0f81d43"
+  },
+  {
+    "id": "v590",
+    "de": "klicken",
+    "en": "click",
+    "zh": "点击",
+    "plural": "—",
+    "sourcePath": "EN/left_click.svg",
+    "path": "wilson/mulberry/v590-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/left_click.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Finger drückt linke Maustaste; task specifies computer-mouse action.",
+      "ipa": "/ˈklɪkn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Was macht der Finger mit der Maustaste? Schreibe den Infinitiv.",
+          "en": "What is the finger doing with the mouse button? Write the German infinitive.",
+          "zh": "手指在鼠标按键上做什么？请写德语动词原形。"
+        },
+        "answers": [
+          "linksklicken",
+          "links klicken",
+          "anklicken"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "01cf7db86e87a0fac7f1a0d48b74192128ef33d1dfac0a88bb2abf352ee5ea6b",
+    "upstreamBlob": "c54acfa9ecb16611b0267453c5aa8aea9e47c650"
+  },
+  {
+    "id": "v592",
+    "de": "der Klingelton",
+    "en": "ringtone",
+    "zh": "铃声",
+    "plural": "die Klingeltöne",
+    "path": "wilson/mulberry/v592-r2.svg",
+    "sourcePath": "EN/mobile_phone_ring_tone.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mobile_phone_ring_tone.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Handy mit Musiknoten stellt den Telefon-Klingelton als Klangfunktion dar.",
+      "ipa": "/ˈklɪŋl̩ˌtoːn/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "0467c7edece2b621f957c0395cba61a33b2f16d0205ac1e9c9ddc9f744ce70b8",
+    "upstreamBlob": "2fcbdf26cd81c9378364da21d3273af9874587a1"
   },
   {
     "id": "v595",
@@ -2126,7 +5595,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kniː/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "1171e4d31888398f4bac56bc93c2a82dfb55ee02885c4f68a46571df18095749",
+    "upstreamBlob": "bfe529f7f311ae2d25e1ad71d5b1d48235577c15"
   },
   {
     "id": "v597",
@@ -2148,7 +5620,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈknoːpˌlaʊ̯x/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "16b58832a8a776637dba86f744db910961c351570c3645bd0ba32ba4471fb500",
+    "upstreamBlob": "7bccb79db7fb9956df1293d8253d460e19818f51"
   },
   {
     "id": "v598",
@@ -2170,7 +5645,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈknœçl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "bf6acf2f207369220abe08f6701bc36b3a243f4135939fe8d8e1318c0a9c4fd4",
+    "upstreamBlob": "afa974bad6183f43487a5c304aeed4ccf0b3b3f0"
   },
   {
     "id": "v600",
@@ -2192,7 +5670,140 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/knɔpf/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "59e69b1194ec64f63e4861371f1399baca962ce48d257538bf4a89add5fa7a4a",
+    "upstreamBlob": "47ddc6946384c5cfe460bb7ca227ddbd77d863a4"
+  },
+  {
+    "id": "v601",
+    "de": "der Kochlöffel",
+    "en": "cooking spoon",
+    "zh": "烹饪勺",
+    "plural": "die Kochlöffel",
+    "path": "wilson/mulberry/v601-r2.svg",
+    "sourcePath": "EN/wooden_spoon.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wooden_spoon.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Hölzerner Kochlöffel mit langem Stiel; metallener Esslöffel als falsches Alternativmotiv verworfen.",
+      "ipa": "/ˈkɔxˌlœfl̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v601",
+        "de": "der Kochlöffel",
+        "plural": "die Kochlöffel",
+        "en": "cooking spoon",
+        "zh": "烹饪勺",
+        "path": "wilson/original-next/v601.svg",
+        "ipa": "/ˈkɔxˌlœfl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkɔxˌlœfl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v601.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "fa54b2e7f8fcf9977e2b46b80e33564701700794e128bded41798b1b5e0b7c7a",
+    "upstreamBlob": "61f3cc2b62d03b8867f1eab23ff5f45d3b4fb98d"
+  },
+  {
+    "id": "v602",
+    "de": "der Kochtopf",
+    "en": "cooking pot",
+    "zh": "锅",
+    "plural": "die Kochtöpfe",
+    "path": "wilson/mulberry/v602-r2.svg",
+    "sourcePath": "EN/saucepan.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saucepan.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Topf mit Deckel und langem Stiel zum Kochen; Blumentopf-Motiv verworfen.",
+      "ipa": "/ˈkɔxˌtɔpf/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v602",
+        "de": "der Kochtopf",
+        "plural": "die Kochtöpfe",
+        "en": "cooking pot",
+        "zh": "锅",
+        "path": "wilson/original-next/v602.svg",
+        "ipa": "/ˈkɔxˌtɔpf/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkɔxˌtɔpf/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v602.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "2b05b642a0782670c40d7bfb2d0363e0aea305d31d6fcfb9b5c8a08a12dde4f0",
+    "upstreamBlob": "0a56f88a190020967e4b41fc2ac677a53141ffd1"
+  },
+  {
+    "id": "v603",
+    "de": "der Koffer",
+    "en": "suitcase",
+    "zh": "行李箱",
+    "plural": "die Koffer",
+    "path": "wilson/mulberry/v603-r2.svg",
+    "sourcePath": "EN/suitcase_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/suitcase_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Reisekoffer mit Griff und Rollen.",
+      "ipa": "/ˈkɔfɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "536a770d23f785473a603cb8c9262675f06a3cdc5352bb525ea0ec8c376777e5",
+    "upstreamBlob": "7ca9885d0db8ac922796e327e1b8862898e21274"
   },
   {
     "id": "v604",
@@ -2214,7 +5825,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈkɔfɐˌʁaʊ̯m/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "dfe047f89277d8faeaa223ad44ad28789a98a1f6ce8c5068add94118e75c4a7d",
+    "upstreamBlob": "ab5db88251bd3aef56c42bc1168d069578d7cf0b"
   },
   {
     "id": "v608",
@@ -2236,7 +5850,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/koˈmoːdə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b1143ecccb3fe14e1e61f819fc5c80c6494cdcb005b0ff6d05c3a989134d061f",
+    "upstreamBlob": "202e2d4d384fa048fa53ea2f89b6f4b11986d1bb"
   },
   {
     "id": "v618",
@@ -2258,7 +5875,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kɔpf/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "30578ec5450dd36263b8f6d3d36bf71338e7f5f2ea15918639cd849672586bc2",
+    "upstreamBlob": "80dee009de0d8a785a6fbacabcebccbb9dd43698"
   },
   {
     "id": "v619",
@@ -2277,8 +5897,78 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Headset mit Mikrofon; für Kopfhörer passendere Abbildung nötig."
+      "reason": "Zeigt Headset mit Mikrofon; für Kopfhörer passendere Abbildung nötig.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v624",
+    "de": "kopieren",
+    "en": "copy",
+    "zh": "复制",
+    "plural": "—",
+    "sourcePath": "EN/copy.svg",
+    "path": "wilson/mulberry/v624-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/copy.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Zwei gleiche überlagerte Dokumente zeigen das übliche Kopiersymbol. Computerbezug im Prompt.",
+      "ipa": "/koˈpiːʁən/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Computer: Welche Funktion zeigt das Symbol? Schreibe den Infinitiv.",
+          "en": "Computer: What function does this icon show? Write the German infinitive.",
+          "zh": "电脑：这个图标表示什么功能？写德语动词原形。"
+        },
+        "answers": [
+          "duplizieren",
+          "eine Datei kopieren"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "36d8b5855e7eea0a15f1f5cfe2bcdd62df4da1350b156d80236dc2286801a6c7",
+    "upstreamBlob": "ac2db58630588051f5101dca6dcde5629ee2dbc9"
+  },
+  {
+    "id": "v626",
+    "de": "der Kragen",
+    "en": "collar",
+    "zh": "衣领",
+    "plural": "die Kragen",
+    "path": "wilson/mulberry/v626-r2.svg",
+    "sourcePath": "EN/collar_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/collar_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Hemdausschnitt mit farbig hervorgehobenem Kragen; kein Haustierhalsband.",
+      "ipa": "/ˈkʁaːɡn̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "01c82b92412df749844f6e2490a25142fd7c505ad3da0bb2c7bc161838a5494b",
+    "upstreamBlob": "0a540a27b40633e00b04c8584cd0822ffc1ede71"
   },
   {
     "id": "v630",
@@ -2300,7 +5990,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kʁaˈvatə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "e5c22c1511769d6a293da9197b39dfc3f6486e77a87c376ff6552aca4e246f1e",
+    "upstreamBlob": "b162f85b368f970b1c21b25ea87747cc86fa7538"
   },
   {
     "id": "v631",
@@ -2322,7 +6015,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/kʁeːps/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "f13bcd19f87f5283febc3072714b68309a528944ae82095b449b441ebe046f48",
+    "upstreamBlob": "1b5e1560c460ab143322ee129d0431c1307655c9"
   },
   {
     "id": "v635",
@@ -2344,7 +6040,312 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈkʁoːnˌlɔʏ̯çtɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d7a662d41cf431e84a31c0ed2d4400dc79d5ce1f6a28cffbb0dbd55349c0087e",
+    "upstreamBlob": "cc16f09fcd76e9d0b6c2f4034066c007c4a0c294"
+  },
+  {
+    "id": "v636",
+    "de": "die Krücke",
+    "en": "crutch",
+    "zh": "拐杖",
+    "plural": "die Krücken",
+    "path": "wilson/mulberry/v636-r2.svg",
+    "sourcePath": "EN/crutches_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/crutches_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Zwei Gehhilfen mit Achselauflagen; Formen die Krücke/die Krücken passen.",
+      "ipa": "/ˈkʁʏkə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "d09f224d5b839005d41ef1e91806d054b00608c937ace8d6c85bf9c4f9bf9169",
+    "upstreamBlob": "b5a21c9665b651517c932de49e7dd909f973bf74"
+  },
+  {
+    "id": "v638",
+    "de": "die Küchenmaschine",
+    "en": "food processor",
+    "zh": "食物料理机",
+    "plural": "die Küchenmaschinen",
+    "path": "wilson/mulberry/v638-r2.svg",
+    "sourcePath": "EN/food_blender.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/food_blender.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Küchenmaschine mit Motoraufsatz, Schüssel und Schneidmesser; deutlich vom Standmixer unterscheidbar.",
+      "ipa": "/ˈkʏçn̩maˌʃiːnə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v638",
+        "de": "die Küchenmaschine",
+        "plural": "die Küchenmaschinen",
+        "en": "food processor",
+        "zh": "食物料理机",
+        "path": "wilson/original-next/v638.svg",
+        "ipa": "/ˈkʏçn̩maˌʃiːnə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkʏçn̩maˌʃiːnə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v638.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "ffdf308e5b2dc9e84f4366a3db33fa052b541a8ddc557bd6b3fcce805b03c49d",
+    "upstreamBlob": "8512297f5be56d09e5221cdb39b51efd300cda45"
+  },
+  {
+    "id": "v641",
+    "de": "das Küchensieb",
+    "en": "kitchen sieve",
+    "zh": "厨房滤网",
+    "plural": "die Küchensiebe",
+    "path": "wilson/mulberry/v641-r2.svg",
+    "sourcePath": "EN/sieve.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sieve.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Sieb mit Netz und Küchenhandgriff; kein freies Platzhaltergitter.",
+      "ipa": "/ˈkʏçn̩ˌziːp/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v641",
+        "de": "das Küchensieb",
+        "plural": "die Küchensiebe",
+        "en": "kitchen sieve",
+        "zh": "厨房滤网",
+        "path": "wilson/original-next/v641.svg",
+        "ipa": "/ˈkʏçn̩ˌziːp/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkʏçn̩ˌziːp/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v641.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "5c3a88fa32061527c4946d42e528737f7294ac53129d45191ccbbffcd1983e3f",
+    "upstreamBlob": "3ea7d8e72d3072a2b1eb19cb25fee7516eec01ba"
+  },
+  {
+    "id": "v643",
+    "de": "der Kugelschreiber",
+    "en": "ballpoint pen",
+    "zh": "圆珠笔",
+    "plural": "die Kugelschreiber",
+    "path": "wilson/mulberry/v643-r2.svg",
+    "sourcePath": "EN/pen.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pen.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Blauer Schreibstift mit Kugelschreiberspitze und Clip.",
+      "ipa": "/ˈkuːɡl̩ˌʃʁaɪ̯bɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v643",
+        "de": "der Kugelschreiber",
+        "plural": "die Kugelschreiber",
+        "en": "ballpoint pen",
+        "zh": "圆珠笔",
+        "path": "wilson/original-next/v643.svg",
+        "ipa": "/ˈkuːɡl̩ˌʃʁaɪ̯bɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkuːɡl̩ˌʃʁaɪ̯bɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v643.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "abea206e4653e7a9f3a1a687f6b12c40a1b857a854d1abcd3fc9cfd5a8f3903b",
+    "upstreamBlob": "b8efc1b2f05f2fcb89c1ef50f1465ed66aaad5c8"
+  },
+  {
+    "id": "v647",
+    "de": "der Kühlschrank",
+    "en": "refrigerator",
+    "zh": "冰箱",
+    "plural": "die Kühlschränke",
+    "path": "wilson/mulberry/v647-r2.svg",
+    "sourcePath": "EN/fridge.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fridge.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Geöffneter Kühlschrank mit Regalen und Türfächern.",
+      "ipa": "/ˈkyːlˌʃʁaŋk/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v647",
+        "de": "der Kühlschrank",
+        "plural": "die Kühlschränke",
+        "en": "refrigerator",
+        "zh": "冰箱",
+        "path": "wilson/original-next/v647.svg",
+        "ipa": "/ˈkyːlˌʃʁaŋk/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈkyːlˌʃʁaŋk/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v647.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "e0e6e75a6daeeb4c9a6af01f2343546034e5e4336b6e4fcb33e30b2142201c49",
+    "upstreamBlob": "b270cbd02efe15e2109b5514aa3f7a1338df746a"
+  },
+  {
+    "id": "v651",
+    "de": "die kurze Hose",
+    "en": "pair of shorts",
+    "zh": "短裤",
+    "plural": "die kurzen Hosen",
+    "path": "wilson/mulberry/v651-r2.svg",
+    "sourcePath": "EN/shorts.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/shorts.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Kurze Hose mit kurzem Bein; deutscher Singular und flektierter Plural geprüft.",
+      "ipa": "/ˈkʊʁtsə ˈhoːzə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8c64537de54fdbbb686c27d33f96288fb498d27c29dd48715b17af76075ee10b",
+    "upstreamBlob": "01b4e4f115325669d88477f80f8372479faddb23"
+  },
+  {
+    "id": "v652",
+    "de": "lachen",
+    "en": "laugh",
+    "zh": "笑",
+    "plural": "—",
+    "sourcePath": "EN/laughing_lady.svg",
+    "path": "wilson/mulberry/v652-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/laughing_lady.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Breit geöffneter lachender Mund; lächeln wird als bildlich plausible Alternative akzeptiert.",
+      "ipa": "/ˈlaxn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe das Verb im Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图片中是什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "lächeln"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "13c44822bfc3d0cc45b24500f473f3631125ecb7ca3852f3e63ab06d63dcacdd",
+    "upstreamBlob": "f80022b57701ff7f89d6c8643cab342d4e9ab27f"
   },
   {
     "id": "v657",
@@ -2366,7 +6367,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈlampə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9f76f65389efcaa605f99063dead86560680cbc50a971ec5329a7de8e3d83dd9",
+    "upstreamBlob": "ee3fe640eec9e6b764c28a7f5c2368a803802077"
   },
   {
     "id": "v658",
@@ -2388,7 +6392,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈlɛpˌtɔp/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d9f23efb55bc3867ce468fb52f5a24bd35524267762dd524d5f272cad6c44c6e",
+    "upstreamBlob": "9a7a075f8f84279cd8174edbba72aa847666b5f6"
   },
   {
     "id": "v660",
@@ -2410,7 +6417,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈlɛtsçən/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "8a63bb0bc89716357e6bda84d154906d7653ab94efa9475cb2e52178f4112c44",
+    "upstreamBlob": "c56205b7414965b4e4c4e9f6d871288a18746f16"
   },
   {
     "id": "v661",
@@ -2432,7 +6442,132 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/laʊ̯x/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "eb5c465b28204870c04d4765e925217918201bae4a107ebc7d4d4c3c4b26095c",
+    "upstreamBlob": "803b6d24232fa2e252b4d579ad4f7182ff51d4f5"
+  },
+  {
+    "id": "v663",
+    "de": "der Lautsprecher",
+    "en": "loudspeaker",
+    "zh": "扬声器",
+    "plural": "die Lautsprecher",
+    "path": "wilson/mulberry/v663-r2.svg",
+    "sourcePath": "EN/computer_speaker.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_speaker.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Paar Lautsprecherboxen mit sichtbarer Schallöffnung; der deutsche Gegenstandsbegriff passt.",
+      "ipa": "/ˈlaʊ̯tˌʃpʁɛçɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v663",
+        "de": "der Lautsprecher",
+        "plural": "die Lautsprecher",
+        "en": "loudspeaker",
+        "zh": "扬声器",
+        "path": "wilson/original-next/v663.svg",
+        "ipa": "/ˈlaʊ̯tˌʃpʁɛçɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈlaʊ̯tˌʃpʁɛçɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v663.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "0370b727b4a3ecf539c4715ba5b3f704b784bf46f0483bf1d49cd76cff5a1206",
+    "upstreamBlob": "bd65064bb0fac7d33a34be9e4d8293f7fcee7ae5"
+  },
+  {
+    "id": "v672",
+    "de": "der Lenker",
+    "en": "handlebars",
+    "zh": "车把",
+    "plural": "die Lenker",
+    "path": "wilson/mulberry/v672-r2.svg",
+    "sourcePath": "EN/handle_bars.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/handle_bars.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Fahrradlenker mit Handgriffen und Bremshebeln.",
+      "ipa": "/ˈlɛŋkɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "3a5675b43dc21a7eac41d1ea71a396365c7c216f30b1e54a9917aeb3289fde0b",
+    "upstreamBlob": "cf5a99673ac281f36fa8eede27444088ecb18165"
+  },
+  {
+    "id": "v676",
+    "de": "liefern",
+    "en": "deliver",
+    "zh": "送货",
+    "plural": "—",
+    "sourcePath": "EN/deliver_,_to.svg",
+    "path": "wilson/mulberry/v676-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/deliver_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Paket wird zur Haustür gebracht; zustellen als gleichwertige Handlungsbeschreibung zugelassen.",
+      "ipa": "/ˈliːfɐn/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe das Verb im Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图片中是什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "zustellen",
+          "ein Paket liefern",
+          "ein Paket zustellen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b73f89aede5a5d2adc8c24482d8b39e52da8aeaeaf6b6630d64eb49f54145565",
+    "upstreamBlob": "bca661bff4017f206bd985075ebdc24b0a0524fa"
   },
   {
     "id": "v678",
@@ -2454,7 +6589,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/liˈmɛtə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "84fc4cda7e97df905b0f46bc6358d5ec6352ccdc48a75ed351d853338d17115f",
+    "upstreamBlob": "3b1bf062ab1d10291828f30a099cb370fa96e6c1"
+  },
+  {
+    "id": "v680",
+    "de": "die Lippe",
+    "en": "lip",
+    "zh": "嘴唇",
+    "plural": "die Lippen",
+    "path": "wilson/mulberry/v680-r2.svg",
+    "sourcePath": "EN/lip_top.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lip_top.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Pfeil zeigt gezielt auf die Oberlippe; allgemeiner Begriff Lippe passt.",
+      "ipa": "/ˈlɪpə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "1e2204d739cfb3140bb50ff73be13bcaa5d6f042b8cec2e846488bf775857746",
+    "upstreamBlob": "70c5542625aaf4366cd976a8d47aaa00953f7931"
   },
   {
     "id": "v683",
@@ -2476,7 +6640,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈlɔxɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "284792ed77248b0e35e4e90cb6bb9d85f1d35a646dbd52912d289acbedbdcc53",
+    "upstreamBlob": "4692858c5881d8f77b2174ab5c9bee4caf64df3c"
   },
   {
     "id": "v687",
@@ -2498,7 +6665,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈlʊftˌʁøːʁə/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "022fcf7bdcab5e25bcd1c2b306f304f9cc8b7b2a3c9d00739b0bb88694b265bd",
+    "upstreamBlob": "0ec069c52603240dea420a20a2f35de959a4b797"
+  },
+  {
+    "id": "v688",
+    "de": "die Lunge",
+    "en": "lung",
+    "zh": "肺",
+    "plural": "die Lungen",
+    "path": "wilson/mulberry/v688-r2.svg",
+    "sourcePath": "EN/lungs.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lungs.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Anatomische Darstellung des Lungenorgans mit beiden Lungenflügeln im Brustraum.",
+      "ipa": "/ˈlʊŋə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b375ed9c0387b74009b992f3cfc7082c9b458b9012999c5004a6ccfab425b7e4",
+    "upstreamBlob": "cc97f0926436477a5e853c3a23307bb8b76aa358"
   },
   {
     "id": "v690",
@@ -2520,7 +6716,117 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈmaːɡn̩/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "084ebbaadd0ce383d35011c60bfd2b96cb958b9730e37edbdd8b62dca82463ab",
+    "upstreamBlob": "16b9088ce2b8ddbe4099e5683f863d32019ac41a"
+  },
+  {
+    "id": "v693",
+    "de": "der Mais",
+    "en": "maize",
+    "zh": "玉米",
+    "plural": "—",
+    "path": "wilson/mulberry/v693-r2.svg",
+    "sourcePath": "EN/sweetcorn.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sweetcorn.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Maiskolben mit gelben Körnerreihen und Hüllblättern.",
+      "ipa": "/maɪ̯s/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v693",
+        "de": "der Mais",
+        "plural": "—",
+        "pos": "noun",
+        "en": "sweetcorn",
+        "zh": "玉米",
+        "pinyin": "yùmǐ",
+        "cat": "food",
+        "articleVariants": [],
+        "sourcePath": "EN/sweetcorn.svg",
+        "path": "wilson/mulberry/v693.svg",
+        "active": true,
+        "status": "approved",
+        "creator": "Steve Lee",
+        "license": "CC-BY-SA-4.0",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sweetcorn.svg",
+        "provider": "mulberry",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+          "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+          "ipa": "/maɪ̯s/",
+          "childSuitable": true,
+          "corrections": {
+            "de": "der Mais",
+            "plural": "—",
+            "en": "sweetcorn",
+            "zh": "玉米",
+            "cat": "food",
+            "pos": "noun"
+          },
+          "recheckedOn": "2026-11-19"
+        }
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "65d7af187313d84281bf211a372fcab4cf6daf01eac6e733cf1621ef82edaa4e",
+    "upstreamBlob": "a37a3784e0cdd97a20cc9af0f43e87c870f2d158"
+  },
+  {
+    "id": "v695",
+    "de": "manche",
+    "en": "some",
+    "zh": "有些",
+    "plural": "—",
+    "sourcePath": "EN/some.svg",
+    "path": "wilson/mulberry/v695-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/some.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Teilmenge von zwei aus mehreren Quadraten ist markiert. Einige als gebräuchliches Synonym zulässig.",
+      "ipa": "/ˈmançə/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Welches Mengenwort passt zu der markierten Teilmenge?",
+          "en": "Which German quantity word describes the marked subset?",
+          "zh": "哪个德语数量词适合这个标记出来的部分？"
+        },
+        "answers": [
+          "einige",
+          "ein paar"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "849f51d0397dc0d281f9eb9edbb3719a9bbe4ad00d996d77755f8e64cedb4a7a",
+    "upstreamBlob": "2e150d7bf9ba4d9121ce562962f7a4e49bce8019"
   },
   {
     "id": "v699",
@@ -2542,7 +6848,114 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈmaːsˌbant/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b0b323e587395a96b83fdf48b3fde6900e29dc8957bb137f91b8daf624b23e1e",
+    "upstreamBlob": "f4818f041ba10e409bdfc16a08e2e3454a9d844d"
+  },
+  {
+    "id": "v701",
+    "de": "die Maus",
+    "en": "computer mouse",
+    "zh": "鼠标",
+    "plural": "die Mäuse",
+    "path": "wilson/mulberry/v701-r2.svg",
+    "sourcePath": "EN/computer_mouse_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_mouse_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Computermaus mit Kabel und Tasten; keine Tiermaus.",
+      "ipa": "/maʊ̯s/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v701",
+        "de": "die Maus",
+        "plural": "die Mäuse",
+        "en": "computer mouse",
+        "zh": "鼠标",
+        "path": "wilson/original-next/v701.svg",
+        "ipa": "/maʊ̯s/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/maʊ̯s/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v701.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "b96be53bfd02f95ba4e4d9b15d641e59b920a778230fcfc2c9be44182a85a167",
+    "upstreamBlob": "ed3e78c7af06562b12c99397168f768b757c2ee5"
+  },
+  {
+    "id": "v702",
+    "de": "das Mauspad",
+    "en": "mouse pad",
+    "zh": "鼠标垫",
+    "plural": "die Mauspads",
+    "path": "wilson/mulberry/v702-r2.svg",
+    "sourcePath": "EN/mouse_mat.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mouse_mat.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Maus auf einer großflächig dargestellten rechteckigen Mausunterlage.",
+      "ipa": "/ˈmaʊ̯sˌpɛt/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v702",
+        "de": "das Mauspad",
+        "plural": "die Mauspads",
+        "en": "mouse pad",
+        "zh": "鼠标垫",
+        "path": "wilson/original-next/v702.svg",
+        "ipa": "/ˈmaʊ̯sˌpɛt/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈmaʊ̯sˌpɛt/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v702.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "c781d2333f21c4871fbf263797d6f99fee9b90e13bfcca8d3ac7343373ed2f3c",
+    "upstreamBlob": "22e1281726649447e74d5ddf542eece915f60dd1"
   },
   {
     "id": "v704",
@@ -2561,8 +6974,61 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Unbeschriftetes Glas; Mayonnaise nicht eindeutig erkennbar."
+      "reason": "Unbeschriftetes Glas; Mayonnaise nicht eindeutig erkennbar.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v705",
+    "de": "das Medikament",
+    "en": "medication",
+    "zh": "药物",
+    "plural": "die Medikamente",
+    "path": "wilson/mulberry/v705-r2.svg",
+    "sourcePath": "EN/medicine.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/medicine.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Medizinflasche mit Dosierlöffel und medizinischem Kreuz; keine Markenarznei oder Dosieranweisung.",
+      "ipa": "/medikaˈmɛnt/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "7e19df27ba83bb14d610408a2a9f24bbde958eff0d661220a5be6418771ea966",
+    "upstreamBlob": "6a97ffcffc5e432a8978c6842685f47d0df5e6d3"
+  },
+  {
+    "id": "v711",
+    "de": "der Messbecher",
+    "en": "measuring cup",
+    "zh": "量杯",
+    "plural": "die Messbecher",
+    "path": "wilson/mulberry/v711-r2.svg",
+    "sourcePath": "EN/measuring_jug.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/measuring_jug.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Messbecher mit deutlich sichtbaren Maßstrichen.",
+      "ipa": "/ˈmɛsˌbɛçɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "be8013bba93d669d5a4c69e28bc56840ca8efa07ac1c6d7767955eab323369ff",
+    "upstreamBlob": "ffc659e3e7ce8b71045be1d71d973b805e2b2157"
   },
   {
     "id": "v712",
@@ -2584,7 +7050,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈmɛsɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "459ffd835c3ee7efaeb38953b771a706da038e4a4f0b017b6ff58b8309162276",
+    "upstreamBlob": "fd9f61bdc8551f5a94df9477b6942233736d1578"
   },
   {
     "id": "v714",
@@ -2606,7 +7075,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈmiːsˌmʊʃl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0754972573f0b3bc1cfcc27b42ac4128b74659aebcc639887ab98b18731a986e",
+    "upstreamBlob": "a754495a0159eb0c5119067522eed3722b2e1757"
   },
   {
     "id": "v721",
@@ -2628,7 +7100,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/mikʁoˈfoːn/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "37fd57e58ddca0b4386f3fccbe19ad33caf9149965f6f737cad822f61cfb55cf",
+    "upstreamBlob": "29c7a42a06621c18041418989417beaa66274b61"
+  },
+  {
+    "id": "v722",
+    "de": "die Mikrowelle",
+    "en": "microwave oven",
+    "zh": "微波炉",
+    "plural": "die Mikrowellen",
+    "path": "wilson/mulberry/v722-r2.svg",
+    "sourcePath": "EN/microwave.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/microwave.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Mikrowellengerät mit Tür und seitlichem Bedienfeld.",
+      "ipa": "/ˈmiːkʁoˌvɛlə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v722",
+        "de": "die Mikrowelle",
+        "plural": "die Mikrowellen",
+        "en": "microwave oven",
+        "zh": "微波炉",
+        "path": "wilson/original-next/v722.svg",
+        "ipa": "/ˈmiːkʁoˌvɛlə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈmiːkʁoˌvɛlə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v722.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "14939fdd4b78246ba2abdf8ed8c76bc404312411ed51632380141193032e8c20",
+    "upstreamBlob": "d7b85b5f376ced040c42e7c3e3e83eec5eb2ac27"
   },
   {
     "id": "v723",
@@ -2650,7 +7177,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/mɪlç/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "81767309981039167609a75707bd1a9ff101fa2b7d0b4920a300c6e46de784af",
+    "upstreamBlob": "dea363c58b157e4e20031e3b927d9ae19b61d5ff"
   },
   {
     "id": "v732",
@@ -2672,7 +7202,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/miˈnuːtə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "890d4ca8a3323f39cf7d5210833c36ef6bee0f5e89b543550208131f3b79b718",
+    "upstreamBlob": "0c75a2cbf5a4262c41a54ee4657ea92b2f045c1a"
+  },
+  {
+    "id": "v739",
+    "de": "der Mixer",
+    "en": "blender",
+    "zh": "搅拌机",
+    "plural": "die Mixer",
+    "path": "wilson/mulberry/v739-r2.svg",
+    "sourcePath": "EN/blender_drinks.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/blender_drinks.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Standmixer mit Mixbehälter auf Motorfuß; nicht Küchenmaschine oder Handrührgerät.",
+      "ipa": "/ˈmɪksɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v739",
+        "de": "der Mixer",
+        "plural": "die Mixer",
+        "en": "blender",
+        "zh": "搅拌机",
+        "path": "wilson/original-next/v739.svg",
+        "ipa": "/ˈmɪksɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈmɪksɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v739.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "d94b40542add5da2c2c766aa16ae9a97e16f005a5b5ff0ddf308b804490b3ca3",
+    "upstreamBlob": "3c824b25439032d5329d3a029a53a1f7647f5fe5"
   },
   {
     "id": "v744",
@@ -2694,7 +7279,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈmɔʁɡn̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0ce3da5b60e53651aec28b76b77ff619d89a8985ce720377b1869364a901896c",
+    "upstreamBlob": "212779cb7a2ee0e22dd896b613e1b569e8d02ac7"
   },
   {
     "id": "v746",
@@ -2716,7 +7304,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈmoːtoːɐ̯/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "fa886179405e235b81a9fc62ab9c48900acb99a44a1042c996afc059850645dc",
+    "upstreamBlob": "d78bc3d0ef45a7a92df3735581607906e0b14325"
+  },
+  {
+    "id": "v748",
+    "de": "der Müllbeutel",
+    "en": "rubbish bag",
+    "zh": "垃圾袋",
+    "plural": "die Müllbeutel",
+    "path": "wilson/mulberry/v748-r2.svg",
+    "sourcePath": "EN/bin_bag.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bin_bag.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Zugeknoteter gefüllter Müllbeutel.",
+      "ipa": "/ˈmʏlˌbɔʏ̯tl̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v748",
+        "de": "der Müllbeutel",
+        "plural": "die Müllbeutel",
+        "en": "rubbish bag",
+        "zh": "垃圾袋",
+        "path": "wilson/original-next/v748.svg",
+        "ipa": "/ˈmʏlˌbɔʏ̯tl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈmʏlˌbɔʏ̯tl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v748.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "9ad0b9a7a953a2a0225d9c8020913dfdd870a32a261ddb7e63e5678a7a50f93d",
+    "upstreamBlob": "000e19aff3339a859e5dc6c1c4376f5c394bb874"
   },
   {
     "id": "v751",
@@ -2738,27 +7381,47 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/mʊnt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "057d3dc63f1c902a8ebebe4e6a6fb631c22f4659f54e83cf8469e9ec7a4a7a83",
+    "upstreamBlob": "7e2ed637358df6debdbe59e24c8460e18f4c119d"
   },
   {
     "id": "v755",
     "de": "die Mütze",
     "en": "cap",
-    "plural": "die Mützen",
     "zh": "帽子",
-    "sourcePath": "EN/cap.svg",
-    "path": "wilson/mulberry/v755.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
+    "plural": "die Mützen",
+    "path": "wilson/mulberry/v755-r2.svg",
+    "sourcePath": "EN/bobble_hat.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bobble_hat.svg",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cap.svg",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Schirmkappe; gezielteres Motiv oder akzeptierte Synonyme für Mütze nötig."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Gestrickte Wintermütze mit Umschlag und Bommel ersetzt die zuvor gesperrte Schirmkappe.",
+      "ipa": "/ˈmʏtsə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/cap.svg",
+        "path": "wilson/mulberry/v755.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Zeigt Schirmkappe; gezielteres Motiv oder akzeptierte Synonyme für Mütze nötig."
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "50b94a9531df2c407a99a275b7fabf6c07b649ce395e5241ef0bc024930c3928",
+    "upstreamBlob": "6a96c16e9fe17397d558980a6a62a2225a6e8a23"
   },
   {
     "id": "v759",
@@ -2777,8 +7440,84 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Sonne am Horizont unterscheidet Nachmittag nicht von Sonnenuntergang."
+      "reason": "Sonne am Horizont unterscheidet Nachmittag nicht von Sonnenuntergang.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v760",
+    "de": "die Nachricht",
+    "en": "message",
+    "zh": "消息",
+    "plural": "die Nachrichten",
+    "path": "wilson/mulberry/v760-r2.svg",
+    "sourcePath": "EN/mobile_phone_text_message.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mobile_phone_text_message.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Dasselbe Motiv ist für SMS präziser zugeordnet; keine zweite aktive Wortkarte mit demselben Bild.",
+      "ipa": "/ˈnaːxˌʁɪçt/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "v764",
+    "de": "der Nagel",
+    "en": "nail (fastener)",
+    "zh": "钉子",
+    "plural": "die Nägel",
+    "path": "wilson/mulberry/v764-r2.svg",
+    "sourcePath": "EN/nail.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nail.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Metallnagel mit breitem Kopf und Spitze; kein Fingernagel.",
+      "ipa": "/ˈnaːɡl̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v764",
+        "de": "der Nagel",
+        "plural": "die Nägel",
+        "en": "nail (fastener)",
+        "zh": "钉子",
+        "path": "wilson/original-next/v764.svg",
+        "ipa": "/ˈnaːɡl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈnaːɡl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v764.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "36267c711adfba1f8c58e74fc9986b4d568d2fc9743a1eccf1fa91873bac5111",
+    "upstreamBlob": "965962a30d5f03ae621dc6df1f65a25825b6143e"
   },
   {
     "id": "v765",
@@ -2800,7 +7539,127 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈnaːɡl̩ˌfaɪ̯lə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "3db2e1958f698df9cf8329501bd52889c0436953a2b96316668d3114e3039645",
+    "upstreamBlob": "05ed0352547fa19d32742c61e2ba3e11aa6f7f74"
+  },
+  {
+    "id": "v773",
+    "de": "neun",
+    "en": "nine",
+    "zh": "九",
+    "plural": "—",
+    "sourcePath": "EN/nine.svg",
+    "path": "wilson/mulberry/v773-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nine.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/nɔʏ̯n/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "835d4f64958fec50f102be3f417ff6fd04897df5db0f4557840e26a867861e3c",
+    "upstreamBlob": "7aa1ca88bfb962adc76db57f1e6d078e7b159a96"
+  },
+  {
+    "id": "v775",
+    "de": "neunzehn",
+    "en": "nineteen",
+    "zh": "十九",
+    "plural": "—",
+    "sourcePath": "EN/nineteen.svg",
+    "path": "wilson/mulberry/v775-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nineteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈnɔʏ̯ntseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "629b23f87474fae526c278f01c4a7810e3ab53cbcba93d472bcc7e6ae31e370d",
+    "upstreamBlob": "2c01aa439294e6abf56c56c06ec89361a23e024d"
+  },
+  {
+    "id": "v777",
+    "de": "neunzig",
+    "en": "ninety",
+    "zh": "九十",
+    "plural": "—",
+    "sourcePath": "EN/ninety.svg",
+    "path": "wilson/mulberry/v777-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ninety.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈnɔʏ̯ntsɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8752507e011bd7f1e41b9231aa3e78cd57f8a58ffb217bf030a8640debb86f40",
+    "upstreamBlob": "05b0249e67bee34b94e3ccf18bd940e282fd31d1"
   },
   {
     "id": "v787",
@@ -2822,7 +7681,119 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/noˈtiːtsˌbuːx/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "7545e7b78b5400f106f867560e4985bd2ce6ab50d0ca955f5ae99fc59d1f2af0",
+    "upstreamBlob": "f50edd612b8d17dbea35b6695992130c14e8226c"
+  },
+  {
+    "id": "v789",
+    "de": "das Nugget",
+    "en": "chicken nugget",
+    "zh": "鸡块",
+    "plural": "die Nuggets",
+    "path": "wilson/mulberry/v789-r2.svg",
+    "sourcePath": "EN/chicken_nuggets.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chicken_nuggets.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Panierte Nuggets mit Huhnsymbol; die beabsichtigte Hühnchenbedeutung sichtbar.",
+      "ipa": "/ˈnaɡɪt/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "0b6aff89567a6b6148de4a1cb1c12832c82b1c8c345d39ab3498ce32acc5970c",
+    "upstreamBlob": "f71d3cceb8f4c167118e4495d3d1acf699c15f65"
+  },
+  {
+    "id": "v790",
+    "de": "null",
+    "en": "zero",
+    "zh": "零",
+    "plural": "—",
+    "sourcePath": "EN/Zero.svg",
+    "path": "wilson/mulberry/v790-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/Zero.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈnʊl/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "0142ee3784ef4058a2056f3f00bf6afc09d91b2c445922d1898198b9d9d2b04e",
+    "upstreamBlob": "d32fee086e128d1d0cc16fee5973e1b2f0926715"
+  },
+  {
+    "id": "v792",
+    "de": "oben",
+    "en": "at the top",
+    "zh": "在上面",
+    "plural": "—",
+    "sourcePath": "EN/above.svg",
+    "path": "wilson/mulberry/v792-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/above.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Blaues Quadrat befindet sich oberhalb des großen schwarzen Quadrats; Ortsangaben oben/darüber zugelassen.",
+      "ipa": "/ˈoːbn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Wo liegt das blaue Quadrat im Verhältnis zum schwarzen?",
+          "en": "Where is the blue square relative to the black one?",
+          "zh": "蓝色正方形相对于黑色正方形在哪里？"
+        },
+        "answers": [
+          "darüber",
+          "oberhalb",
+          "oben drüber"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8cf574841cb17b53719069b725e7ce7e0c52cb44d24c58265406914808e290ce",
+    "upstreamBlob": "d7670993b0d8960329011990f6658fbd6e9e51f5"
   },
   {
     "id": "v793",
@@ -2844,7 +7815,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈoːbɐˌʃɛŋkl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "1ad23f928b3e58037aa1d4d43239284412155e5b653123ad9a37cfac5bf49e7e",
+    "upstreamBlob": "33a0ba52f5b946c9e725c54f13464eab6f684af5"
   },
   {
     "id": "v797",
@@ -2866,7 +7840,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/oːɐ̯/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0f755c822160c9cf57e237e405d851a5a3f34e9d51cc93de4609f004625d4128",
+    "upstreamBlob": "4f02f49f899f5b7e2f4d15eb4acfd1d3fcf90688"
   },
   {
     "id": "v800",
@@ -2888,7 +7865,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/oˈliːvn̩ˌʔøːl/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "05a3d217a54b801f2145fd5f37edee4460698edfa12b6d8d7a020efa6c962dc4",
+    "upstreamBlob": "ae8187f9f174cd416fb661c8e3c1d917be73fba8"
+  },
+  {
+    "id": "v803",
+    "de": "die Orange",
+    "en": "orange (fruit)",
+    "zh": "橙子",
+    "plural": "die Orangen",
+    "path": "wilson/mulberry/v803-r2.svg",
+    "sourcePath": "EN/orange.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/orange.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Orangefarbene Zitrusfrucht mit Fruchtansatz; gleichnamiges Farbfleck-Symbol ausdrücklich verworfen.",
+      "ipa": "/oˈʁaŋʒə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "6c800b08b66a9ca51cf0d05110f3da9ac9e757d5645f40c7c29824fe7edbb70a",
+    "upstreamBlob": "f4bac6216d42ef6d34f40bb152c1b3bc2ebff693"
   },
   {
     "id": "v804",
@@ -2910,7 +7916,88 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/oˈʁaŋʒn̩ˌzaft/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "25653ff56dd9139679110a24925761ed856fbd3d075af59222c20c5e8477c844",
+    "upstreamBlob": "2f3b0b2616babaac7febb79fa184d3a27cc68bfd"
+  },
+  {
+    "id": "v805",
+    "de": "der Ordner",
+    "en": "folder",
+    "zh": "文件夹",
+    "plural": "die Ordner",
+    "path": "wilson/mulberry/v805-r2.svg",
+    "sourcePath": "EN/computer_folder.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_folder.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Computerordner mit kleiner Computerreferenz; digitales Ordnersymbol, kein Aktenordner.",
+      "ipa": "/ˈɔʁdnɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v805",
+        "de": "der Ordner",
+        "plural": "die Ordner",
+        "en": "folder",
+        "zh": "文件夹",
+        "path": "wilson/original-next/v805.svg",
+        "ipa": "/ˈɔʁdnɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈɔʁdnɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v805.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "8a8476507ae515335e98cba670543c06b5ed3b87564248e6fe4945006bcb11c3",
+    "upstreamBlob": "bec47ac7203f8ca284a2659bed9a6023867dfe63"
+  },
+  {
+    "id": "v811",
+    "de": "der Paprika",
+    "en": "bell pepper",
+    "zh": "甜椒",
+    "plural": "die Paprikas",
+    "path": "wilson/mulberry/v811-r2.svg",
+    "sourcePath": "EN/pepper.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pepper.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Grüne Gemüsepaprika mit Stiel und typischer gelappter Fruchtform; kein Pfeffergewürz.",
+      "ipa": "/ˈpapʁika/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "e0150b3c70bbbb513b982935070bf044e0ee1c49ffff298b078746a6e5f0d730",
+    "upstreamBlob": "f8860f6991c8a0ed45470b4b3b0cec814928d0d3"
   },
   {
     "id": "v812",
@@ -2932,7 +8019,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/paʁˈfœ̃ː/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "8e53217183f5dc30fe575cae6b9471d916f387c4cca0a9cfd1901e83ee0c1625",
+    "upstreamBlob": "50c0e5ee38be4659e5deaa457926ef4ccc93dbe4"
   },
   {
     "id": "v813",
@@ -2954,7 +8044,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/pasˈtiːnaːkə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "46e578aa927cf3126bd0464e25ff0e1b3c726b007623fb21b7dac2216c358b09",
+    "upstreamBlob": "401fa6a74f5d6049931e414c2c3cf618a6b6aec6"
   },
   {
     "id": "v821",
@@ -2976,7 +8069,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈpfɛfɐˌmyːlə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d89310b09681a8946b80305a7e560d8a11d3b0b7fdb405fa3919bded8b915805",
+    "upstreamBlob": "b9373eb7370c029e6bdcbe5b5d5d2c395dbcf699"
   },
   {
     "id": "v822",
@@ -2995,8 +8091,35 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Pfirsich ohne Schnitt oder weiteres Merkmal schwer von Aprikose zu unterscheiden."
+      "reason": "Pfirsich ohne Schnitt oder weiteres Merkmal schwer von Aprikose zu unterscheiden.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v823",
+    "de": "das Pflaster",
+    "en": "adhesive bandage",
+    "zh": "创可贴",
+    "plural": "die Pflaster",
+    "path": "wilson/mulberry/v823-r2.svg",
+    "sourcePath": "EN/plaster.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/plaster.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Heftpflaster mit Wundauflage und Haftstreifen; medizinisches Symbol verdeutlicht die Bedeutung.",
+      "ipa": "/ˈpflastɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "7a8c51321566da20bb29b386ac15916f759940ea1c2ece76e1a934f6b2ea89b4",
+    "upstreamBlob": "7b5ed2a078c843574e64991252c4c3b00ae7203a"
   },
   {
     "id": "v824",
@@ -3018,7 +8141,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/pflaʊ̯mə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "7619aea342d2414e095f3ac813b73b4d365ba764c003f8e385ff8eff6a7cbc12",
+    "upstreamBlob": "a7165448a7c7c3a50c983f6af3e75dd6854fec57"
   },
   {
     "id": "v826",
@@ -3037,7 +8163,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Glasgröße beweist kein Volumen von einem Pint."
+      "reason": "Glasgröße beweist kein Volumen von einem Pint.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -3060,7 +8187,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈpɪtsa/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d2d5d4010808e887b211ba87400b999f5737bf463ddcad8089d226afb19c2f50",
+    "upstreamBlob": "6fb6f3995b1bd3a5bf89b72a3fcb5901eff5ddaa"
   },
   {
     "id": "v830",
@@ -3082,7 +8212,39 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/poliˈtsaɪ̯ˌʔaʊ̯to/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0e9d1dc62bf9cfb366cdbcbebea558a509879705ec057085218211ba154c867c",
+    "upstreamBlob": "b21420f6a8e469e7516cc10e83f9de4345d936b3"
+  },
+  {
+    "id": "v831",
+    "de": "der Polizist",
+    "en": "male police officer",
+    "zh": "男警察",
+    "plural": "die Polizisten",
+    "path": "wilson/mulberry/v831-r2.svg",
+    "sourcePath": "EN/police_1a.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/police_1a.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Polizeibeamter in Uniform mit Polizeiabzeichen; weibliche Polizistin nicht mit anderem Hautton gleichgesetzt.",
+      "ipa": "/poliˈtsɪst/",
+      "childSuitable": true,
+      "corrections": {
+        "nDeclension": true
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b139bbd34024b6d5a47977875c3bf5179c3e2b26b4f96a364746749559934307",
+    "upstreamBlob": "1b708f219bb6bffef94775e9b11f26acd47d27b2"
   },
   {
     "id": "v838",
@@ -3104,7 +8266,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈpɔstˌʔaʊ̯sɡaŋ/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "babe970cf60fb7c4a0283e1270bb19732a341a651a40fbcddf3b47acbf7daf30",
+    "upstreamBlob": "a1edcd9da235aafd54d39334b38793347649496e"
   },
   {
     "id": "v839",
@@ -3126,7 +8291,54 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈpɔstˌʔaɪ̯nɡaŋ/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "92370cef8db29eecb2f386ecfd3a28205bc553f71662bd1b26cf90b6b16846da",
+    "upstreamBlob": "29006908f5988479d04e08f1d7d99cfd490ea9b1"
+  },
+  {
+    "id": "v848",
+    "de": "ein Programm installieren",
+    "en": "install a program",
+    "zh": "安装程序",
+    "plural": "—",
+    "sourcePath": "EN/install_software.svg",
+    "path": "wilson/mulberry/v848-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/install_software.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Datenträger zeigt per Pfeil in den Computer. Softwareinstallation im Prompt von bloßem Einlegen getrennt.",
+      "ipa": "/aɪ̯n pʁoˈɡʁam ɪnstaˈliːʁən/",
+      "childSuitable": false,
+      "task": {
+        "type": "phrase",
+        "prompt": {
+          "de": "Software: Welche Funktion wird dargestellt? Schreibe einen Infinitiv-Ausdruck.",
+          "en": "Software: What function is represented? Write a German infinitive phrase.",
+          "zh": "软件：图中表示什么功能？请写德语动词原形短语。"
+        },
+        "answers": [
+          "installieren",
+          "Software installieren",
+          "ein Programm aufspielen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "e24e8ebfb55d1e3e6e01558f90d3a269f144949f663ff07dbd6598175ecf2da2",
+    "upstreamBlob": "11e456d618d06f81adb53fdb171809c288bf87e2"
   },
   {
     "id": "v851",
@@ -3148,7 +8360,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/pʁoˈtsɛnt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "fbe6327ab8200ea7f08459a52252847d635af138adf49984d083a6223d57f85f",
+    "upstreamBlob": "6d7d9f1212cd0078826ed8ab4b0dbe4cc2ef9ecf"
   },
   {
     "id": "v854",
@@ -3170,7 +8385,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈpʊpə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9586fbcc2168071d099f0bcf0f878d7b14bb53c0bd5d2410c59a061331ed7205",
+    "upstreamBlob": "3aec7f298af4ca36f06a5c752fd1c9747dafdce4"
   },
   {
     "id": "v862",
@@ -3192,7 +8410,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ʁaˈdiːsçən/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "575e48da45cf539e066d27ebec98c3e701fdc15d57ab2ba5074577e055dc7da0",
+    "upstreamBlob": "a9fe743dc3e77901e49479b82fff4be6e95b3065"
   },
   {
     "id": "v866",
@@ -3214,7 +8435,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁaːzn̩ˌmɛːɐ̯/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "92793c0d5af5882159dde46d64a565f94901acf2134bc324c54ecd65277683a2",
+    "upstreamBlob": "2a887bb0acc4b26aab36a9d7b8bfbb16cf2a9760"
   },
   {
     "id": "v871",
@@ -3236,7 +8460,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁɛçn̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a89bd89e0b00880aca1d1ec755b1bd384c34d26f2e6784f7dba80335612be76b",
+    "upstreamBlob": "22f7d5037f0117120cba450af629a6b62f0584c2"
   },
   {
     "id": "v875",
@@ -3258,7 +8485,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁaɪ̯bə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "42a6f3ac367af4c3c6d950ceb9a63b86559f27f71bcf032f824f55b8ff8fc531",
+    "upstreamBlob": "70e577016e29f9614a2aa7d0bdfea05614e97d1c"
   },
   {
     "id": "v878",
@@ -3280,6 +8510,32 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁaɪ̯fn̩ˌpanə/",
       "childSuitable": false
+    },
+    "provider": "mulberry",
+    "svgSha256": "280c08a2c2007c02ae7b9cffcfcf4bf6675754cb23d6c8141938ab6bad878560",
+    "upstreamBlob": "d0c5bdba801df84d9d1f8e93396ff709ed144246"
+  },
+  {
+    "id": "v880",
+    "de": "das Reinigungsmittel",
+    "en": "cleaning product",
+    "zh": "清洁剂",
+    "plural": "die Reinigungsmittel",
+    "path": "wilson/mulberry/v880-r2.svg",
+    "sourcePath": "EN/cleaner_spray.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cleaner_spray.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Unbeschriftete Flasche zeigt verlässlich die Sprühflasche, nicht die enthaltene Substanz. Keine doppelte aktive Bildzuordnung.",
+      "ipa": "/ˈʁaɪ̯nɪɡʊŋsˌmɪtl̩/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -3302,7 +8558,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁaɪ̯zəˌbʊs/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "de4bcb1d224ab9a678e783138dcd3b634087448cbb6112b969af3c68d469367b",
+    "upstreamBlob": "5da428c04bda8e717d9f078580fb2ad09c8236f0"
   },
   {
     "id": "v884",
@@ -3324,7 +8583,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁaɪ̯sˌfɛɐ̯ʃlʊs/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "f52b8424a246830f96959b0f292f7f7a981fec07d90338792e705678d68936ec",
+    "upstreamBlob": "409b3d792f06ff60ae509aabafc5791ab4403481"
   },
   {
     "id": "v885",
@@ -3346,7 +8608,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁaɪ̯sˌtsvɛkə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "c71f729677fedbea4e388aedc9660aecd08b0c7ccaa681e471a31ef8bea63bac",
+    "upstreamBlob": "22e84e811b29a53892fb3aacfa2a27b921c0ba28"
   },
   {
     "id": "v888",
@@ -3368,7 +8633,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁɛtʊŋsˌvaːɡn̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "20856340f8192b170d71fb6818e81cee1411f099109278f79910ccca1274c7ba",
+    "upstreamBlob": "71f92621a800b6df3c53abc4caa67ebd32f4b09c"
   },
   {
     "id": "v891",
@@ -3390,7 +8658,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁɪntˌflaɪ̯ʃ/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "ba9ce4a1aba27674ee37214c6bd1c645413b5e4274b2e110df6651df8ad4f229",
+    "upstreamBlob": "aafea10675c719d5225115a44ced25c07ffb6459"
   },
   {
     "id": "v893",
@@ -3412,7 +8683,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ʁɔk/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "71483518946d72a22de784dd19688ef70b835d564362edb427d22e82aa0686a7",
+    "upstreamBlob": "9ef737e34fe9938cace212afadc16d8e4a87f199"
   },
   {
     "id": "v897",
@@ -3434,7 +8708,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁɔlo/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "871c53fc805c347ee4e39a1c7637f16cd4c041a83b31b07b5373244e85be746e",
+    "upstreamBlob": "b7f16f1f122bd7648c61dff54e82bab46c6fbe61"
   },
   {
     "id": "v898",
@@ -3456,7 +8733,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁɔlˌʃtuːl/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "5a76eb1b17c148d2ac5065e6ddea069a3b579aa131ffc0ef609892ccaf1513ad",
+    "upstreamBlob": "1b912382e655780fb546ef42ac77038488a8e080"
   },
   {
     "id": "v899",
@@ -3478,7 +8758,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁɔlˌtʁɛpə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "8033bc87a0415613e0172b33821eddb2ced646f1544e7fffe4fcfa169568c044",
+    "upstreamBlob": "a24960e25c26741afbb766bb778fa6a0d9e2375d"
   },
   {
     "id": "v902",
@@ -3500,7 +8783,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁoːtə ˈbeːtə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "4c7e80082fce7aa8e4e9c6e91ef2be9dd7cd74ded11f4fb033807b9c16ecca9d",
+    "upstreamBlob": "e118c409f0d949de0f631e2fe690a0b67942161b"
   },
   {
     "id": "v907",
@@ -3522,7 +8808,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʁyːbə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "5646b15af237301756a3e6a00cbe6fbc75ea88c9372f74044e2aba9607d9c1bf",
+    "upstreamBlob": "af3c6398da9d70b38aa4c9b38ccd981c805dda2f"
+  },
+  {
+    "id": "v908",
+    "de": "der Rücken",
+    "en": "back (body)",
+    "zh": "背部",
+    "plural": "die Rücken",
+    "path": "wilson/mulberry/v908-r2.svg",
+    "sourcePath": "EN/back.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/back.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Menschlicher Oberkörper von hinten mit erkennbarer Wirbelsäulen-/Schulterkontur.",
+      "ipa": "/ˈʁʏkn̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b7fd0cfe4a735afa79cf742e394568af95990f0c09d22ec0d1625c0cc27a572f",
+    "upstreamBlob": "69f78abe5503ac11025dc9899d590a50a14881ae"
   },
   {
     "id": "v918",
@@ -3541,8 +8856,35 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Motiv nutzt nur winzigen Teil der Zeichenfläche; Sahne außerdem nicht eindeutig."
+      "reason": "Motiv nutzt nur winzigen Teil der Zeichenfläche; Sahne außerdem nicht eindeutig.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v919",
+    "de": "das Sakko",
+    "en": "suit jacket",
+    "zh": "西装外套",
+    "plural": "die Sakkos",
+    "path": "wilson/mulberry/v919-r2.svg",
+    "sourcePath": "EN/jacket_-_mans.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/jacket_-_mans.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Einreihige Herrenjacke mit Revers und Knöpfen, passend zum Sakko.",
+      "ipa": "/ˈzako/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "dc1e1c1a81839c41ad772dd524e0b1725c3d973375ad603ffd018a305c2d81e2",
+    "upstreamBlob": "4a92af2b49cd9b28c45371e90ebaa781c6a5d6b2"
   },
   {
     "id": "v920",
@@ -3564,7 +8906,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/zaˈlaːt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "fef11a8366f8e400c6620c4fb2dfe2558377e647d8bcad2d0d971c8af56d5483",
+    "upstreamBlob": "59f78d0327c65673d548208208419a834a185a6c"
+  },
+  {
+    "id": "v921",
+    "de": "die Salbe",
+    "en": "ointment",
+    "zh": "药膏",
+    "plural": "die Salben",
+    "path": "wilson/mulberry/v921-r2.svg",
+    "sourcePath": "EN/cream_ointment.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cream_ointment.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Salbentube mit medizinischem Kreuz; kein bloßer Farbfleck oder Nahrungsmittel.",
+      "ipa": "/ˈzalbə/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "d2193514e0b3fea29ad39188aba88467ac614332169e8a1f80030c3b671d14b8",
+    "upstreamBlob": "21c7488e18fb7e671a4ebab4890022af25ef20a5"
   },
   {
     "id": "v922",
@@ -3586,7 +8957,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/zalts/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "fc4d869bb43efa78b76f45a0e8565323a07f33984dd212ce2c577f67cdea13cd",
+    "upstreamBlob": "a0ca1bdd5869dc2b4bc6c5b235c7f5025dfd6b34"
   },
   {
     "id": "v924",
@@ -3608,7 +8982,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzɛːmlɪŋ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "92e6d3861d8c39edde2674c944a40c5ced18ee5e6c2d854a0bf4174db265f6a0",
+    "upstreamBlob": "0906f448373c897ed1bc91482c1cdb39a59a21dc"
+  },
+  {
+    "id": "v927",
+    "de": "die Sandale",
+    "en": "sandal",
+    "zh": "凉鞋",
+    "plural": "die Sandalen",
+    "path": "wilson/mulberry/v927-r2.svg",
+    "sourcePath": "EN/sandals.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sandals.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Offene Sandalen mit Fußriemen und sichtbarer Sohle.",
+      "ipa": "/zanˈdaːlə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "a9aeaadc89b09874e76c4b7bacc1def91da0fe442cca8a107873afc7cc508df2",
+    "upstreamBlob": "74a3a88efe280f0f7aa14d5ea8768d50a4b49791"
   },
   {
     "id": "v929",
@@ -3630,27 +9033,120 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzɛntvɪtʃ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "f4abdbcaf757994cfc37e4eabd8afaeda7be5d7c458e749735bd8475f49c9b14",
+    "upstreamBlob": "dd9f070ececcd04ac91df0c0fd0b580a31d7688e"
+  },
+  {
+    "id": "v930",
+    "de": "der Sanitäter",
+    "en": "paramedic",
+    "zh": "急救员",
+    "plural": "die Sanitäter",
+    "path": "wilson/mulberry/v930-r2.svg",
+    "sourcePath": "EN/paramedic_1a.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/paramedic_1a.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Rettungsdienstmitarbeiter in Uniform mit Sanitätskoffer und Abzeichen.",
+      "ipa": "/zaniˈtɛːtɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "59b85e829917de63bc092a6839737f3d56c1b49a9ed2c731d90633ef5e223faf",
+    "upstreamBlob": "47d8cfbb9756ccfb844c9ab577448423babeec99"
   },
   {
     "id": "v931",
     "de": "der Sattel",
-    "en": "saddle",
+    "en": "horse saddle",
+    "zh": "马鞍",
     "plural": "die Sättel",
-    "zh": "车座",
+    "path": "wilson/mulberry/v931-r2.svg",
     "sourcePath": "EN/saddle.svg",
-    "path": "wilson/mulberry/v931.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saddle.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Reitsattel klar erkennbar; chinesische Bedeutung ausdrücklich zu 马鞍 korrigiert, bisheriger Fahrradsitzfehler behoben.",
+      "ipa": "/ˈzatl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "en": "horse saddle",
+        "zh": "马鞍",
+        "pinyin": "mǎ'ān"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/saddle.svg",
+        "path": "wilson/mulberry/v931.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Reitsattel abgebildet; chinesische Übersetzung bezeichnet aktuell Fahrradsitz."
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "8aa52f3b860e6e77bd79c47f5cf022972a5e9b2b6a3a3970668c838b7798aadc",
+    "upstreamBlob": "6a69b9a3371897eda6c8d1cdbdf005047ab2d7cf"
+  },
+  {
+    "id": "v934",
+    "de": "schälen",
+    "en": "to peel",
+    "zh": "削皮",
+    "plural": "—",
+    "sourcePath": "EN/peel_,_to.svg",
+    "path": "wilson/mulberry/v934-r2.svg",
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/saddle.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/peel_,_to.svg",
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Reitsattel abgebildet; chinesische Übersetzung bezeichnet aktuell Fahrradsitz."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Sparschäler entfernt eine sichtbare Schale von einem Gemüse.",
+      "ipa": "/ˈʃɛːlən/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe das Verb im Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图片中是什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "Gemüse schälen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "2510ab22af53d01079cae465e2d530f8ca466a798f7a4344cde3d8a2da712145",
+    "upstreamBlob": "af8928f844e33b691e96b7145120222f256ad23d"
   },
   {
     "id": "v935",
@@ -3672,27 +9168,57 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃɛːlɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a1c7bd15ba91cc139abd62880ae3951939df304c43535d3a438605c52ff5a6ca",
+    "upstreamBlob": "be0c97dae85a47f2f45334a2ff838a38ef9214bb"
   },
   {
     "id": "v940",
     "de": "die Scheibe",
-    "en": "slice",
+    "en": "slice (here: of cheese)",
+    "zh": "薄片（这里指奶酪片）",
     "plural": "die Scheiben",
-    "zh": "薄片",
-    "sourcePath": "EN/slice.svg",
-    "path": "wilson/mulberry/v940.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
+    "path": "wilson/mulberry/v940-r2.svg",
+    "sourcePath": "EN/cheese_slices.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cheese_slices.svg",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/slice.svg",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt herausgeschnittenes Käsestück; Scheibe als flaches Stück nicht klar."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Mehrere flache dünne Käsescheiben neben Käsekeil; die Form Scheibe ist sichtbar, früherer Käsekeil als alleiniges Motiv ersetzt.",
+      "ipa": "/ˈʃaɪ̯bə/",
+      "childSuitable": true,
+      "corrections": {
+        "en": "slice (here: of cheese)",
+        "zh": "薄片（这里指奶酪片）",
+        "pinyin": "báopiàn (zhèlǐ zhǐ nǎilào piàn)"
+      },
+      "context": {
+        "de": "Achte auf die dünnen, flachen Stücke.",
+        "en": "Focus on the thin, flat pieces.",
+        "zh": "请注意这些薄薄的片状物。"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/slice.svg",
+        "path": "wilson/mulberry/v940.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Zeigt herausgeschnittenes Käsestück; Scheibe als flaches Stück nicht klar."
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "37c7d4da3e2386541649eea88f6a8bf875a25313aefdef2a98a44eb8230eeb50",
+    "upstreamBlob": "3fcf15731fb0078e7ab74bbcf7ba047fb8e5c2eb"
   },
   {
     "id": "v943",
@@ -3714,7 +9240,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃeːʁə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "4566e2211efe1bf763ca3556fdfcaa45fa00281ee89797086cf2dcf042412a30",
+    "upstreamBlob": "07d890cb145d712aac128c3d117885e1bdd9513c"
   },
   {
     "id": "v946",
@@ -3736,7 +9265,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃiːnˌbaɪ̯n/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "fff5f8012bb7f2fd6dc41d93fa6cb1363fa3c03d58089a4945aa504cac868ff1",
+    "upstreamBlob": "3e8f1a6d9c5869183667b5d4a6ea1048fe259284"
   },
   {
     "id": "v950",
@@ -3758,7 +9290,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃlaɪ̯fpaˌpiːɐ̯/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "39ad76f2cbdffbf272dfbe612fae7e472cc3a0f63a4739d514e41ed71b1771d5",
+    "upstreamBlob": "205ea84a19bf53483c40b9abec20ae188822e0e1"
   },
   {
     "id": "v954",
@@ -3780,7 +9315,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃmʊtsvɛʃəˌkɔʁp/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "62cb953d3bfb49cecc189e0d845d36c5316dd025281419f934e79b69ec3a54f0",
+    "upstreamBlob": "57107b83c044052f823d2b8890102f56a2810b82"
   },
   {
     "id": "v955",
@@ -3802,7 +9340,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃnalə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "2f0d0eaca49652b16680749590a189cc92ad9ec819d2c8d6fadd317add054d95",
+    "upstreamBlob": "3184980c45eb7265bcabee226be534dcd4ce5601"
   },
   {
     "id": "v958",
@@ -3824,7 +9365,52 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃnaɪ̯dəˌbʁɛt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d48c57cf315d29f20aad35eadcd39e6b98ce7db9f7bced6ab8e5a634f7f8bc71",
+    "upstreamBlob": "6d1fe5bb7ffa90419f1775eeaf03b0e02ca01512"
+  },
+  {
+    "id": "v959",
+    "de": "schneiden",
+    "en": "to cut",
+    "zh": "切",
+    "plural": "—",
+    "sourcePath": "EN/cut_with_scissors_,_to.svg",
+    "path": "wilson/mulberry/v959-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cut_with_scissors_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Hand bedient eine Schere; task asks for the general cutting action, not computer cut.",
+      "ipa": "/ˈʃnaɪ̯dn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung macht man mit der Schere? Schreibe den Infinitiv.",
+          "en": "What action do you do with scissors? Write the German infinitive.",
+          "zh": "用剪刀做什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "mit der Schere schneiden"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "da23821dc91d6e0cd11e1d75aed68a12b17a2f3d4f957482052a85cd0f69db8e",
+    "upstreamBlob": "4baeb74cc8797ef41752d9a8c7154bae9b7960cf"
   },
   {
     "id": "v966",
@@ -3846,7 +9432,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃoːkoˌʁiːɡl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "eccf38d54965106bb62daa92135de8e792904dddd4b7a147cb99e4c8cc15a163",
+    "upstreamBlob": "7b4c9a062142d5aace36dd3af77e8898bdb373c3"
   },
   {
     "id": "v967",
@@ -3868,7 +9457,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃɔʁnˌʃtaɪ̯n/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "0a6637d61845a3ccb9d99de710372ae4fe78f21407687cf68121ba296a4d262a",
+    "upstreamBlob": "c7c6095ac6838027371b456b53bc45a9f727ab17"
   },
   {
     "id": "v968",
@@ -3890,7 +9482,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃʁaʊ̯bə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9f29aa3b368ced92c5c5b28d359f90377ba754c4abba39886f14dfd2f221f6bc",
+    "upstreamBlob": "601e9de88e195874f9be80434fd4f772f7f2c43e"
   },
   {
     "id": "v970",
@@ -3912,7 +9507,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃʁaʊ̯bn̩ˌtsiːɐ̯/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "908695290582938bf2c74fa82b0b2b0578712f486df7c7792a60eb6d467e9b45",
+    "upstreamBlob": "44289773bfe198969e95682a1407926bbd0e6c59"
   },
   {
     "id": "v972",
@@ -3934,7 +9532,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃuːpˌkaʁə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "37a84fe54c3cdfa778d6ac1b7286adaf1f377817f7d2b497b928f50b19e36763",
+    "upstreamBlob": "9f93fac22007a4e7dc8a44120c70312aaddecb4e"
   },
   {
     "id": "v973",
@@ -3956,7 +9557,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃuːpˌlaːdə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "900ae458ec8cd7612cb18fd20b7822004040fc3bec6375dd5f3e0194cd6e50ab",
+    "upstreamBlob": "c27f9384af52675afabd872595332530be704379"
+  },
+  {
+    "id": "v977",
+    "de": "der Schulranzen",
+    "en": "school satchel",
+    "zh": "书包",
+    "plural": "die Schulranzen",
+    "path": "wilson/mulberry/v977-r2.svg",
+    "sourcePath": "EN/school_bag.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/school_bag.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Kastenförmiger Schulranzen mit Deckel, Seitenteilen und Schultergurten.",
+      "ipa": "/ˈʃuːlˌʁantsn̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v977",
+        "de": "der Schulranzen",
+        "plural": "die Schulranzen",
+        "en": "school satchel",
+        "zh": "书包",
+        "path": "wilson/original-next/v977.svg",
+        "ipa": "/ˈʃuːlˌʁantsn̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈʃuːlˌʁantsn̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v977.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "ac82b61d64011ea12d76e1e95724836804336d8ae610d0e4f66747468f418210",
+    "upstreamBlob": "9c208f48712f9a9402201ef39bcc9fde3bf99432"
   },
   {
     "id": "v978",
@@ -3978,7 +9634,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃʊltɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "da01ab0caff97b36eaf265ae8ff6fcf8d6694de2caaef2d117ba0541a0a67179",
+    "upstreamBlob": "fe446cdd5a134df411bb84e7fb59caadb9eadf6f"
   },
   {
     "id": "v981",
@@ -4000,7 +9659,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃʏʁtsə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "06cd0c5cf1f5e47bd676200e11fb4189a4984ee40bdb826cf506334fed395651",
+    "upstreamBlob": "a12eb0efeb2e93e3acdc1fd3bdfadc585f5b1207"
   },
   {
     "id": "v984",
@@ -4022,7 +9684,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ʃvam/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "55acacc0f8e9691ce8304af1aebdbd326d42adcfe10a10362932482708c3e70a",
+    "upstreamBlob": "eb8a4756af1171f05fc02bceea81bcbd9e76c0b4"
+  },
+  {
+    "id": "v987",
+    "de": "das Schweinefleisch",
+    "en": "pork",
+    "zh": "猪肉",
+    "plural": "—",
+    "path": "wilson/mulberry/v987-r2.svg",
+    "sourcePath": "EN/pork_chop.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pork_chop.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Individually inspected rendered Mulberry SVG in labeled contact sheet; DE article/number forms, EN/ZH and editorial broad IPA reviewed. AI editorial first review, not independent native-speaker/phonetics validation.",
+      "reason": "Fleischstück mit zusätzlichem Schweinekopf als Tierartreferenz; nicht nur generisches Fleisch.",
+      "ipa": "/ˈʃvaɪ̯nəˌflaɪ̯ʃ/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "505903ba998726b578d6939a054b20acd6398c1509d1d9da88903c48848c72b0",
+    "upstreamBlob": "1c61dca05dcc6d242b231b32cb4987977371c975"
   },
   {
     "id": "v988",
@@ -4041,8 +9732,126 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson."
+      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v997",
+    "de": "sechs",
+    "en": "six",
+    "zh": "六",
+    "plural": "—",
+    "sourcePath": "EN/six.svg",
+    "path": "wilson/mulberry/v997-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/six.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/zɛks/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "05d8b3a17c5769c8d0b51d49c61bc590f67ad1f862c31e927da006fff7c7e4dd",
+    "upstreamBlob": "f1f0f19bfdac9a067775aa2f01a0920d2cafa280"
+  },
+  {
+    "id": "v1001",
+    "de": "sechzehn",
+    "en": "sixteen",
+    "zh": "十六",
+    "plural": "—",
+    "sourcePath": "EN/sixteen.svg",
+    "path": "wilson/mulberry/v1001-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sixteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈzɛçtseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "a9a170accde2052265b89eff0c0279534ac063009cf937d7ddd569a8204a8c7c",
+    "upstreamBlob": "240890fee741617d3546b3101fbcc10f00c70717"
+  },
+  {
+    "id": "v1004",
+    "de": "sechzig",
+    "en": "sixty",
+    "zh": "六十",
+    "plural": "—",
+    "sourcePath": "EN/sixty.svg",
+    "path": "wilson/mulberry/v1004-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sixty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈzɛçtsɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "c937e734d54b36073ce5998479fb5b277863cec2a74ada60f0367446cbca20fa",
+    "upstreamBlob": "83e63661cc11c3b2f5a106254a009666ab980937"
   },
   {
     "id": "v1006",
@@ -4064,7 +9873,134 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzaɪ̯fə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "f8b52eca86e395a658c39c789f849681c341f0697c712ee4120df45ff56ba459",
+    "upstreamBlob": "b4f905f87aba678c783058e172a0caaf2e47b18e"
+  },
+  {
+    "id": "v1014",
+    "de": "senden",
+    "en": "to send",
+    "zh": "发送",
+    "plural": "—",
+    "sourcePath": "EN/email_send_,_to.svg",
+    "path": "wilson/mulberry/v1014-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/email_send_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil führt vom Bildschirm zum E-Mail-Zeichen. Senden samt gebräuchlicher Alternativen.",
+      "ipa": "/ˈzɛndn̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "E-Mail: Welche Handlung zeigt der Pfeil? Schreibe den Infinitiv.",
+          "en": "Email: What action does the arrow show? Write the German infinitive.",
+          "zh": "电子邮件：箭头表示什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "versenden",
+          "abschicken",
+          "schicken",
+          "eine E-Mail senden",
+          "eine Mail senden"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "300f2b20a275ea6ee24480487870a9a4281bf90410a038d12654e2a7fe24f98c",
+    "upstreamBlob": "66066f9d576069559dd7982728a36ddc6005ad37"
+  },
+  {
+    "id": "v1016",
+    "de": "die Serviette",
+    "en": "napkin",
+    "zh": "餐巾",
+    "plural": "die Servietten",
+    "path": "wilson/mulberry/v1016-r2.svg",
+    "sourcePath": "EN/serviette.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/serviette.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Pfeil zeigt auf die dreieckig gefaltete Serviette neben dem Gedeck; kein bloßes Tellerbild.",
+      "ipa": "/zɛʁˈvi̯ɛtə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "5f840f25c9e51940e6d65d6727942f28b45b45823297532d1b1522b80b86507d",
+    "upstreamBlob": "242fce4e762e6c611e0bb31719538d17c249ab2a"
+  },
+  {
+    "id": "v1017",
+    "de": "der Sessel",
+    "en": "armchair",
+    "zh": "扶手椅",
+    "plural": "die Sessel",
+    "path": "wilson/mulberry/v1017-r2.svg",
+    "sourcePath": "EN/arm_chair.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/arm_chair.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Gepolsterter Einzelsitz mit Armlehnen unterscheidet den Sessel vom einfachen Stuhl und vom Sofa.",
+      "ipa": "/ˈzɛsl̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1017",
+        "de": "der Sessel",
+        "plural": "die Sessel",
+        "en": "armchair",
+        "zh": "扶手椅",
+        "path": "wilson/original-next/v1017.svg",
+        "ipa": "/ˈzɛsl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈzɛsl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1017.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "72a6ef6276dd9aa62288a48289291e64a62e7a5ab4d4fde34c2e4ccc06192bd5",
+    "upstreamBlob": "7df44c553d98ee751fa547023d19b1e44015c6d8"
   },
   {
     "id": "v1018",
@@ -4086,7 +10022,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃampuː/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "1f75f8926929a0338985c5662fa32dbf0f84abcbef067f6934b7095d74b3c71c",
+    "upstreamBlob": "729f95bc057422ac110305aa94c8e4d3693e74e1"
   },
   {
     "id": "v1020",
@@ -4108,7 +10047,293 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzɪçɐhaɪ̯tsˌɡʊʁt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "532c52822f0241893e6d3bc151cdcc024781e11cf37e6fec74f13c2845aa795d",
+    "upstreamBlob": "8617da9d4cd76f6af2cc88baf6596828e8b15ad0"
+  },
+  {
+    "id": "v1024",
+    "de": "die Sichtverpackung",
+    "en": "blister pack",
+    "zh": "透明泡罩包装",
+    "plural": "die Sichtverpackungen",
+    "path": "wilson/mulberry/v1024-r2.svg",
+    "sourcePath": "EN/tablet_blister_pack.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tablet_blister_pack.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Tabletten sind einzeln in einer Blisterverpackung sichtbar; die gemeinte Sichtverpackung ist als Hauptobjekt dargestellt.",
+      "ipa": "/ˈzɪçtfɛɐ̯ˌpakʊŋ/",
+      "childSuitable": false,
+      "answerVariants": [
+        {
+          "de": "die Blisterpackung",
+          "plural": "die Blisterpackungen"
+        },
+        {
+          "de": "die Blisterverpackung",
+          "plural": "die Blisterverpackungen"
+        }
+      ],
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "a3b42831b0dbe7ac2d9cb3787e767ad89b54ae826d0708f4147c8a84224140b4",
+    "upstreamBlob": "d728ee962af4ea876f08744483e85b24f9a0bb2e"
+  },
+  {
+    "id": "v1025",
+    "de": "sieben",
+    "en": "seven",
+    "zh": "七",
+    "plural": "—",
+    "sourcePath": "EN/seven.svg",
+    "path": "wilson/mulberry/v1025-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seven.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈziːbn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "527f2c94bbc65133f7d7ba8e55f0a74c1079ab2724e27b7923cc0b633d306f68",
+    "upstreamBlob": "e69a56b2cc7e6e906cd267f8c9268415a478e778"
+  },
+  {
+    "id": "v1029",
+    "de": "siebzehn",
+    "en": "seventeen",
+    "zh": "十七",
+    "plural": "—",
+    "sourcePath": "EN/seventeen.svg",
+    "path": "wilson/mulberry/v1029-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seventeen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈziːptseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "e6d4441814101539a7d3b49f8d8d0c135bcd933fcaea5c2695a2699c9d3dfe06",
+    "upstreamBlob": "58f8abd11289326508132381ad847e36efda58c6"
+  },
+  {
+    "id": "v1032",
+    "de": "siebzig",
+    "en": "seventy",
+    "zh": "七十",
+    "plural": "—",
+    "sourcePath": "EN/seventy.svg",
+    "path": "wilson/mulberry/v1032-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seventy.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈziːptsɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "fdc086e160094b20af1a6da4b17dbb9114cdf5185bcee774267376c8a7dad07d",
+    "upstreamBlob": "71a2257ec6be35d798bd7a5f27d829619dadb33c"
+  },
+  {
+    "id": "v1040",
+    "de": "die SMS",
+    "en": "text message",
+    "zh": "短信",
+    "plural": "die SMS",
+    "path": "wilson/mulberry/v1040-r2.svg",
+    "sourcePath": "EN/mobile_phone_text_message.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mobile_phone_text_message.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Mobiltelefon mit Textzeilen und Nachrichtenumschlag stellt eine Textnachricht dar; keine reine Telefonkarte.",
+      "ipa": "/ɛsʔɛmˈʔɛs/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "f05e1f8f565e1b1064b3954b65e31db6fbbcfc7a579fa9067c09aa425e49d63e",
+    "upstreamBlob": "d00bd0be70b678208afa47d3c5371b7280d6eb7f"
+  },
+  {
+    "id": "v1043",
+    "de": "die Socke",
+    "en": "sock",
+    "zh": "袜子",
+    "plural": "die Socken",
+    "path": "wilson/mulberry/v1043-r2.svg",
+    "sourcePath": "EN/socks.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/socks.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Zwei knöchellange Socken mit Bündchen, Fersen- und Zehenform; die Aufgabe fragt die Wortformen, nicht die abgebildete Stückzahl.",
+      "ipa": "/ˈzɔkə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1043",
+        "de": "die Socke",
+        "plural": "die Socken",
+        "en": "sock",
+        "zh": "袜子",
+        "path": "wilson/original-next/v1043.svg",
+        "ipa": "/ˈzɔkə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈzɔkə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1043.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "f59d69813a294e1d8719f45593bc68b43a8c9ca0d280454af9cea8ab04d87cc5",
+    "upstreamBlob": "b7b497420a93c9a27d0f6d578af5a733e4e93f14"
+  },
+  {
+    "id": "v1044",
+    "de": "das Sofa",
+    "en": "sofa",
+    "zh": "沙发",
+    "plural": "die Sofas",
+    "path": "wilson/mulberry/v1044-r2.svg",
+    "sourcePath": "EN/settee_1.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/settee_1.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Gepolsterte zweisitzige Couch mit Armlehnen und zwei Sitzflächen; deutlich vom Einzelsessel unterschieden.",
+      "ipa": "/ˈzoːfa/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1044",
+        "de": "das Sofa",
+        "plural": "die Sofas",
+        "en": "sofa",
+        "zh": "沙发",
+        "path": "wilson/original-next/v1044.svg",
+        "ipa": "/ˈzoːfa/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈzoːfa/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1044.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "fcd0a0ecca95c9c3b3cb51d7336e7ba5de88c851d5e87b1fdc1b651f7a6425f9",
+    "upstreamBlob": "031c84cbe646ee218585d14bd6e86b21fb2e28f7"
   },
   {
     "id": "v1047",
@@ -4127,7 +10352,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson."
+      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -4150,7 +10376,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzɔmɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "871a206eb1b5745f4e542031092ee46743bf0e7ada6077fbdf896e2337b07101",
+    "upstreamBlob": "b267b66f2f22e3f072c5893718afb5674477435b"
   },
   {
     "id": "v1053",
@@ -4172,7 +10401,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzɔnənˌbʁɪlə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "3d63d3b8ac8d902f53b0556a2a15a43264546e2fa608793d51ee135af0c83887",
+    "upstreamBlob": "1e3db950a0012456555366e9138de4ea462f94f1"
   },
   {
     "id": "v1055",
@@ -4194,7 +10426,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzɔnənʃʊtsˌmɪtl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "2d3bd4718ea73af84f9a0dbf0142390c97c8b84bfb0b0278f630ec6a98ce0a60",
+    "upstreamBlob": "7bca1a3125c1cfc9d172e79a6d27836977aa8324"
   },
   {
     "id": "v1062",
@@ -4216,7 +10451,53 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃpaːtn̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "37908e0070a5ca45bc3e87132b8a1f90db5eae4e20010601cb17dbf30fef164e",
+    "upstreamBlob": "689fbda49472c3ade88150158f9b90ff7cade484"
+  },
+  {
+    "id": "v1064",
+    "de": "speichern",
+    "en": "to save (data)",
+    "zh": "保存",
+    "plural": "—",
+    "sourcePath": "EN/save.svg",
+    "path": "wilson/mulberry/v1064-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/save.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Diskettensymbol als etablierte Computerspeicher-Funktion; Kontext verhindert Hardware-Nomenaufgabe.",
+      "ipa": "/ˈʃpaɪ̯çɐn/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Computer: Welche Funktion zeigt dieses Symbol? Schreibe den Infinitiv.",
+          "en": "Computer: What function does this icon represent? Write the German infinitive.",
+          "zh": "电脑：这个图标代表什么功能？请写德语动词原形。"
+        },
+        "answers": [
+          "sichern",
+          "eine Datei speichern"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "2fb1f848746e38a4e56c306fca616215cdd1dc062383313ba0528b73c1f338a9",
+    "upstreamBlob": "b2f1c76a663ed32db6fcd3d9725230cd7a6853be"
   },
   {
     "id": "v1065",
@@ -4238,7 +10519,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃpiːɡl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "5e1b6791177ae85f64dffcc04a6d65205bb314455a10d15ee80f478071e1937f",
+    "upstreamBlob": "e794daaf41931673e6e34e341f10fe5fe2303f76"
   },
   {
     "id": "v1066",
@@ -4257,7 +10541,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zwei generische Blätter; Spinatart nicht erkennbar."
+      "reason": "Zwei generische Blätter; Spinatart nicht erkennbar.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -4280,7 +10565,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃpʁɪtsə/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "94b79b58eae4117b079f2032735d0c1abe4d71cf7b5c33850f36a860c881d752",
+    "upstreamBlob": "c4d96a843c32ff0c8aceca235ad7bd4cffd463c4"
+  },
+  {
+    "id": "v1071",
+    "de": "die Sprühflasche",
+    "en": "spray bottle",
+    "zh": "喷雾瓶",
+    "plural": "die Sprühflaschen",
+    "path": "wilson/mulberry/v1071-r2.svg",
+    "sourcePath": "EN/cleaner_spray.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cleaner_spray.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Flasche mit sichtbarem Sprühkopf und Abzug; gefragt ist die Behälterform, nicht eine unbelegte Flüssigkeit.",
+      "ipa": "/ˈʃpʁyːˌflaʃə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1071",
+        "de": "die Sprühflasche",
+        "plural": "die Sprühflaschen",
+        "en": "spray bottle",
+        "zh": "喷雾瓶",
+        "path": "wilson/original-next/v1071.svg",
+        "ipa": "/ˈʃpʁyːˌflaʃə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈʃpʁyːˌflaʃə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1071.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "0a9ae7a049e6c0c47a7ac9224b29e508fa16f20c8b6591ce6334a96d1e93100f",
+    "upstreamBlob": "1f0fea554d7f293feb72df16dc3fd12bbdfc530a"
   },
   {
     "id": "v1072",
@@ -4288,19 +10628,45 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "sink",
     "plural": "die Spülbecken",
     "zh": "洗涤槽",
-    "sourcePath": "EN/sink.svg",
+    "sourcePath": "EN/sink_2.svg",
     "path": "wilson/mulberry/v1072.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sink.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sink_2.svg",
+    "reviewHistory": [
+      {
+        "path": "wilson/mulberry/v1072.svg",
+        "sourcePath": "EN/sink.svg",
+        "status": "needs-replacement-or-context",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt Badezimmerwaschbecken, nicht das vorgesehene Küchenspülbecken."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Badezimmerwaschbecken, nicht das vorgesehene Küchenspülbecken."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv zeigt Küchenspülbecken mit Rand und Küchenarmatur statt Badezimmerwaschbecken.",
+      "ipa": "/ˈʃpyːlˌbɛkŋ̍/",
+      "childSuitable": true,
+      "answerVariants": [
+        {
+          "de": "die Spüle",
+          "plural": "die Spülen"
+        }
+      ],
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "c21726163a6e9fbc82b7ad208473596ee917ccdf11902ebb78f89248048a0e66",
+    "upstreamBlobSha": "031b4e3677455389000cd96799074c96696a8bb2",
+    "provider": "mulberry",
+    "upstreamBlob": "031b4e3677455389000cd96799074c96696a8bb2"
   },
   {
     "id": "v1073",
@@ -4322,7 +10688,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃpyːlmaˌʃiːnə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "051824b4fb97a83dcaba050db7eba8515ccc89a532e0a18662a0fac5043557c9",
+    "upstreamBlob": "2260b671d86761988d9bd2b4d97183baa5bfb890"
   },
   {
     "id": "v1074",
@@ -4344,7 +10713,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃpyːlˌmɪtl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "690f7fb82ea29f9922b0024795293b1e79520e454b6391236d6ae07f3025548c",
+    "upstreamBlob": "ff0cc722f15cace040e78ce5723ad91485144cef"
   },
   {
     "id": "v1075",
@@ -4363,8 +10735,113 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Haarpflegeflasche ist nicht eindeutig als Spülung erkennbar."
+      "reason": "Haarpflegeflasche ist nicht eindeutig als Spülung erkennbar.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v1081",
+    "de": "die Steckdose",
+    "en": "electrical socket",
+    "zh": "插座",
+    "plural": "die Steckdosen",
+    "path": "wilson/mulberry/v1081-r2.svg",
+    "sourcePath": "EN/mains_socket.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mains_socket.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Wandsteckdosenleiste mit Schaltern und eingestecktem Stecker; zeigt eine britische Bauform, die Bedeutung Steckdose bleibt korrekt.",
+      "ipa": "/ˈʃtɛkˌdoːzə/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1081",
+        "de": "die Steckdose",
+        "plural": "die Steckdosen",
+        "en": "electrical socket",
+        "zh": "插座",
+        "path": "wilson/original-next/v1081.svg",
+        "ipa": "/ˈʃtɛkdoːzə/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈʃtɛkdoːzə/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1081.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "b6c50ca8aceb9b979b809fe620ade77f9bda7eaabfaddecc770089cf59cdabce",
+    "upstreamBlob": "0d1fc604ea4b197007155753a10b238edfc122e9"
+  },
+  {
+    "id": "v1082",
+    "de": "der Stecker",
+    "en": "electrical plug",
+    "zh": "插头",
+    "plural": "die Stecker",
+    "path": "wilson/mulberry/v1082-r2.svg",
+    "sourcePath": "EN/plug_2.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/plug_2.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Elektrischer Stecker mit zwei Kontakten und Kabelanschluss; nicht mit einem Wasserablaufstopfen verwechselt.",
+      "ipa": "/ˈʃtɛkɐ/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1082",
+        "de": "der Stecker",
+        "plural": "die Stecker",
+        "en": "electrical plug",
+        "zh": "插头",
+        "path": "wilson/original-next/v1082.svg",
+        "ipa": "/ˈʃtɛkɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈʃtɛkɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1082.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "053723663addcdec1178ca8e972ad3dc00e52095738515fc50612923e57af558",
+    "upstreamBlob": "9543c5e6803325f90058ecdd4c5fae6d7a4ebd8c"
   },
   {
     "id": "v1084",
@@ -4386,7 +10863,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ʃtetoˈskoːp/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "291212a9ef7f504671410591ce67c4df79d825e4cd9b23264ddcb1fa78165212",
+    "upstreamBlob": "fbea1b59faf7988bc40cebf0948305fc89e84a1d"
+  },
+  {
+    "id": "v1094",
+    "de": "die Stoßstange",
+    "en": "bumper",
+    "zh": "保险杠",
+    "plural": "die Stoßstangen",
+    "path": "wilson/mulberry/v1094-r2.svg",
+    "sourcePath": "EN/car_bumper.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/car_bumper.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Pfeil markiert die hintere Stoßstange am Auto; Fahrzeug dient als Größen- und Lagekontext.",
+      "ipa": "/ˈʃtoːsˌʃtaŋə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b8f96bd4b41fafb872c24f8a082b1e34d545095496c3c517edf81e7e056f6d84",
+    "upstreamBlob": "6758fddbd27d34918fdff2906385b1ce749071f0"
+  },
+  {
+    "id": "v1096",
+    "de": "der Strampler",
+    "en": "baby romper",
+    "zh": "婴儿连体衣",
+    "plural": "die Strampler",
+    "path": "wilson/mulberry/v1096-r2.svg",
+    "sourcePath": "EN/sleep_suit_baby.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sleep_suit_baby.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Einteiliger Babyanzug mit geschlossenen Füßchen und langen Ärmeln; passend zu Strampler.",
+      "ipa": "/ˈʃtʁamplɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "f02a4af56b7344b513631533f7f77336b7b753dcc71b8fdee674e92800e9fbad",
+    "upstreamBlob": "7d503cf8f2e6c7fa47f625a1cce3d607b441c133"
   },
   {
     "id": "v1103",
@@ -4408,7 +10940,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈʃtʁʊmpfˌhoːzə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "f7c5b5b4c997df332170cb2f71f7a8672368ba1fb1acbc56b82dcd8384853e75",
+    "upstreamBlob": "02b9c83a54c01c5cfebd1956a8696dbac5e899ef"
   },
   {
     "id": "v1104",
@@ -4452,7 +10987,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzʊpə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "46c6bd0b65f6f3dbfe3fe1f78402c9a8af0963edc2f8b7532b89cde32a06e90b",
+    "upstreamBlob": "f88a0a885a32d95b4023e5cf6aac370d383042ec"
   },
   {
     "id": "v1114",
@@ -4474,7 +11012,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈzyːsˌkaʁtɔfl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b2f8e9d3a5a50ef9a8e8c8da51ecd3450e69bfc20017532bbd991d79cf02ee28",
+    "upstreamBlob": "a7f56a60e036972c35ab331577c51e5cec363d44"
   },
   {
     "id": "v1117",
@@ -4496,7 +11037,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/taˈblɛt/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a75e3c9c8688388b875a88e5b688c7bac49277fd6dfe0b3a18668503ce870302",
+    "upstreamBlob": "8f9f2c2ea01b39c5a5bc3e340931e41ba1bc4a3c"
   },
   {
     "id": "v1119",
@@ -4518,7 +11062,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtakɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "682babfbf4ddf7a7528e9759ea40aca0649d770bfce80b2437ca85e0f68fe00c",
+    "upstreamBlob": "30018e4bf46bd067c37fb40bd5265642dcdaeb62"
   },
   {
     "id": "v1121",
@@ -4537,7 +11084,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Tag-Motiv überschneidet sich mit Datum und braucht Zeitkontext."
+      "reason": "Tag-Motiv überschneidet sich mit Datum und braucht Zeitkontext.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -4560,7 +11108,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtampɔn/",
       "childSuitable": false
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9c8ff5c73fcfefd4bfe36e3e3e88081f6685d3d2e2df73aa8f0c89487172eb31",
+    "upstreamBlob": "815b2b12184be18cfe28a6f50a53bdcf25368aa3"
   },
   {
     "id": "v1133",
@@ -4582,7 +11133,104 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtaʃn̩ˌʁɛçnɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d5051e89e67a781e63002aa0f844dc9b4c5b7e31f47930436df05edba4eb7c1a",
+    "upstreamBlob": "1402b526d3c8806a0a9c5fff160c5f95e1171ae3"
+  },
+  {
+    "id": "v1135",
+    "de": "die Tastatur",
+    "en": "keyboard",
+    "zh": "键盘",
+    "plural": "die Tastaturen",
+    "path": "wilson/mulberry/v1135-r2.svg",
+    "sourcePath": "EN/computer_keyboard.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/computer_keyboard.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Eigenständige Computertastatur mit Tastenreihen; klar von einem Musikinstrument unterschieden.",
+      "ipa": "/tastaˈtuːɐ̯/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1135",
+        "de": "die Tastatur",
+        "plural": "die Tastaturen",
+        "en": "keyboard",
+        "zh": "键盘",
+        "path": "wilson/original-next/v1135.svg",
+        "ipa": "/tasˈtaˌtuːɐ̯/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/tasˈtaˌtuːɐ̯/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1135.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "6dedc79954b51abe38c4c46c3f446c09611204e10372b021786bd6ac760d8162",
+    "upstreamBlob": "8f468555f7a2398481ed90a0050f4ace708ef186"
+  },
+  {
+    "id": "v1137",
+    "de": "tausend",
+    "en": "one thousand",
+    "zh": "一千",
+    "plural": "—",
+    "sourcePath": "EN/thousand.svg",
+    "path": "wilson/mulberry/v1137-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/thousand.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈtaʊ̯zn̩t/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        },
+        "answers": [
+          "eintausend"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "5453e2a9bcd93a64d3a8ed8b2e250dfd5278d6b8a818a995b4e829923fe2d64e",
+    "upstreamBlob": "93a47eda3d45a2a99bcdafd45b9602d6a404a3df"
   },
   {
     "id": "v1140",
@@ -4604,7 +11252,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈteːˌbɔʏ̯tl̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "36124799c061fee7b17e7726cd9912d01a7fd200312dd4c1c8d35ca08548b556",
+    "upstreamBlob": "7462193eba61ac008ce11aa7fd30abd0d9ecb7bd"
   },
   {
     "id": "v1146",
@@ -4626,7 +11277,54 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtɛpɪç/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "ca99abeabd13a6e3c6308280304be635e0bfc95852abe3bf99a2694041f9f9fb",
+    "upstreamBlob": "8d3190f94121b4002f68a7ab3f3d10954191e26d"
+  },
+  {
+    "id": "v1156",
+    "de": "tippen",
+    "en": "to type",
+    "zh": "打字",
+    "plural": "—",
+    "sourcePath": "EN/type_,_to.svg",
+    "path": "wilson/mulberry/v1156-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/type_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Beide Hände bedienen die Computertastatur. Schreiben ist passende alternative Handlungsbeschreibung.",
+      "ipa": "/ˈtɪpn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Tätigkeit führen die Hände auf der Tastatur aus? Schreibe den Infinitiv.",
+          "en": "What are the hands doing on the keyboard? Write the German infinitive.",
+          "zh": "双手在键盘上做什么？请写德语动词原形。"
+        },
+        "answers": [
+          "schreiben",
+          "auf der Tastatur schreiben",
+          "auf der Tastatur tippen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "6833207c9a01dd34187b5080ccf34f9e7dc37566b3bbc4afe7f90b5a431c83f4",
+    "upstreamBlob": "2eca277fd6886f5814047e14a52c66e801c0a55a"
   },
   {
     "id": "v1157",
@@ -4648,7 +11346,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtɪʃˌdɛkə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "7b70993f5c93940e7c2aa9a3989dca2a9ba2c69dbf4b50fe7a20fe2be7126ddb",
+    "upstreamBlob": "62f6f0d7a871e2ebc3342de60ffd932b6852c57a"
   },
   {
     "id": "v1160",
@@ -4670,7 +11371,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtoːstɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "a0d3b02c4f71ffcc36474aaecd3683d9ff85c7bea3ab76148eca1da0f60654a6",
+    "upstreamBlob": "99ab7d279db11ba3db0647b217d0eab63084d713"
   },
   {
     "id": "v1161",
@@ -4689,7 +11393,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson."
+      "reason": "Verwandtschaftsrelation braucht erklärten Stammbaum bzw. Bezugsperson.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -4712,7 +11417,62 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/to̯aˈlɛtə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "c986367e3ee348cce567106ea0acd7ea9dd336d123e128b386a297c8b3640945",
+    "upstreamBlob": "c66c681406e173ed24892252a5f5335a31c26563"
+  },
+  {
+    "id": "v1163",
+    "de": "das Toilettenpapier",
+    "en": "toilet paper",
+    "zh": "卫生纸",
+    "plural": "—",
+    "path": "wilson/mulberry/v1163-r2.svg",
+    "sourcePath": "EN/toilet_roll.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/toilet_roll.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Papierrolle mit perforiertem abrollendem Blatt; Toilettenpapier als Stoffwort wird nur im Singular abgefragt.",
+      "ipa": "/to̯aˈlɛtn̩paˌpiːɐ̯/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1163",
+        "de": "das Toilettenpapier",
+        "plural": "—",
+        "en": "toilet paper",
+        "zh": "卫生纸",
+        "path": "wilson/original-next/v1163.svg",
+        "ipa": "/to̯aˈlɛtn̩paˌpiːɐ̯/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/to̯aˈlɛtn̩paˌpiːɐ̯/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1163.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "4435c5187ba15f911b9c7db65c5ab57fa53b5ed936a803c2b949a1ecd2509c76",
+    "upstreamBlob": "6c3ea8fe25fa7fc614601ed6e3ee9bc290d7b0e0"
   },
   {
     "id": "v1164",
@@ -4734,7 +11494,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/toˈmaːtə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "71145e175ee45ba5cb937555f3b0b6a0bc2fbdbacc8df01cf7377b96cd5dde34",
+    "upstreamBlob": "1c8224d4a93f175b2b5f5a754cf302864d4d42cc"
   },
   {
     "id": "v1168",
@@ -4756,7 +11519,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtɔʁtn̩diaˌɡʁam/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "dac04a54cfe2cfe8ba213c172cfba78efabf8dd9ae7193a6a35796c72e6ac740",
+    "upstreamBlob": "e4ff61987eaa6e77866e94ce9feabb3bd8f29c5f"
   },
   {
     "id": "v1177",
@@ -4778,7 +11544,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtiːˌʃœːɐ̯t/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "ce3f1585b5c1b609743c9081bc5a6f7ceefcbdf72c115298a366159efc861c36",
+    "upstreamBlob": "c800d1d4a0e61a0c2cb2d6aa8ba81298e965ac27"
   },
   {
     "id": "v1178",
@@ -4797,8 +11566,388 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Dose mit generischem Fisch; Tunfischart nicht eindeutig."
+      "reason": "Dose mit generischem Fisch; Tunfischart nicht eindeutig.",
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v1182",
+    "de": "der Turnschuh",
+    "en": "trainer; sneaker",
+    "zh": "运动鞋",
+    "plural": "die Turnschuhe",
+    "path": "wilson/mulberry/v1182-r2.svg",
+    "sourcePath": "EN/trainers.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/trainers.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Paar geschnürter Sportschuhe mit flachen Sohlen; passend zu Turnschuh, nicht zu Wanderschuh oder Stiefel.",
+      "ipa": "/ˈtʊʁnˌʃuː/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "7194b20c35dddaad5cc2304da9fd012db96007cefc1655721b8913b97d150242",
+    "upstreamBlob": "af2244f6e29da69459f656fd5c87a03266e065a7"
+  },
+  {
+    "id": "v1185",
+    "de": "die U-Bahn",
+    "en": "underground train; metro",
+    "zh": "地铁",
+    "plural": "die U-Bahnen",
+    "path": "wilson/mulberry/v1185-r2.svg",
+    "sourcePath": "EN/underground_train.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/underground_train.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "U-Bahn-Zug ohne Tunnel, Stationsschild oder eindeutigen Stadtbahnkontext; gegenüber Zug zu mehrdeutig für eine freie Bildeingabe.",
+      "ipa": "/ˈuːˌbaːn/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "v1198",
+    "de": "sich umarmen",
+    "en": "to hug each other",
+    "zh": "互相拥抱",
+    "plural": "—",
+    "sourcePath": "EN/hug_,_to.svg",
+    "path": "wilson/mulberry/v1198-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hug_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Zwei Personen legen Arme umeinander; reflexive und kurze Infinitivform zugelassen.",
+      "ipa": "/zɪç ʊmˈaʁmən/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe das Verb im Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图片中是什么动作？请写德语动词原形。"
+        },
+        "answers": [
+          "umarmen",
+          "sich gegenseitig umarmen",
+          "einander umarmen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "15a9cbb8b248cceefd934ef295870bf66e9e6781435e7f3eb8acd3a48cc1d959",
+    "upstreamBlob": "7c9976d584a62c126448504dd61b216700d8028d"
+  },
+  {
+    "id": "v1205",
+    "de": "die Unterhose",
+    "en": "underpants",
+    "zh": "内裤",
+    "plural": "die Unterhosen",
+    "path": "wilson/mulberry/v1205-r2.svg",
+    "sourcePath": "EN/pants.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pants.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Unterhose mit Bund und Beinausschnitten; Darstellung ist geschlechtsneutral gehalten und zeigt kein Oberbekleidungsstück.",
+      "ipa": "/ˈʊntɐˌhoːzə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "76cf58cc67a307fd9dcb4263f131699f4ae1b8517372448e7f94ce7d6955084b",
+    "upstreamBlob": "9f4ff6fb306ea4a984ee44a8b30a32761da16941"
+  },
+  {
+    "id": "v1226",
+    "de": "das Verlängerungskabel",
+    "en": "extension cable",
+    "zh": "延长线",
+    "plural": "die Verlängerungskabel",
+    "path": "wilson/mulberry/v1226-r2.svg",
+    "sourcePath": "EN/extension_lead.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/extension_lead.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Kabel mit Netzstecker und Mehrfachsteckdose; das Verlängern des Stromanschlusses ist sichtbar.",
+      "ipa": "/fɛɐ̯ˈlɛŋɐʁʊŋsˌkaːbl̩/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1226",
+        "de": "das Verlängerungskabel",
+        "plural": "die Verlängerungskabel",
+        "en": "extension cable",
+        "zh": "延长线",
+        "path": "wilson/original-next/v1226.svg",
+        "ipa": "/fɛɐ̯ˈlɛŋəʁʊŋsˌkaːbl̩/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/fɛɐ̯ˈlɛŋəʁʊŋsˌkaːbl̩/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1226.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "6033e13e20b00f97b7444a7d05f88a7475720fd0b1cd9e62a48410d0dc720e0a",
+    "upstreamBlob": "c37a7822a23f7184d1a6a1eeb2f692c11aa78081"
+  },
+  {
+    "id": "v1243",
+    "de": "vier",
+    "en": "four",
+    "zh": "四",
+    "plural": "—",
+    "sourcePath": "EN/four.svg",
+    "path": "wilson/mulberry/v1243-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/four.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/fiːɐ̯/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "2754b5277787f42934eaf9d602b37a2056e5bc5873c8936eb1dec0050b438f91",
+    "upstreamBlob": "99b10618f7a4d0b194c365c82a6f3ce2bbc0b506"
+  },
+  {
+    "id": "v1248",
+    "de": "ein Viertel",
+    "en": "one quarter",
+    "zh": "四分之一",
+    "plural": "—",
+    "sourcePath": "EN/quarter.svg",
+    "path": "wilson/mulberry/v1248-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/quarter.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Bruchdarstellung und Bruchbeschriftung einzeln angesehen; die Aufgabe fragt ausdrücklich nach der notierten Bruchzahl, nicht nach einer möglicherweise missverständlichen Flächenfarbe.",
+      "ipa": "/aɪ̯n ˈfɪʁtl̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Lies den Bruch im Kreis als deutschen Ausdruck.",
+          "en": "Write the fraction shown in the circle in German.",
+          "zh": "请用德语写出圆中标出的分数。"
+        },
+        "hint": {
+          "de": "Mit ein oder der passenden Anzahl, zum Beispiel: zwei Drittel.",
+          "en": "Include ein or the quantity, for example: zwei Drittel.",
+          "zh": "请输入完整表达，如 zwei Drittel。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "873a1d99759997e41acdc2fd6fe05a87db6271c13159a1921352e3cfc96c9cf9",
+    "upstreamBlob": "2ce547a582459dc4cf775064d346fd23e5d4f73d"
+  },
+  {
+    "id": "v1251",
+    "de": "vierzehn",
+    "en": "fourteen",
+    "zh": "十四",
+    "plural": "—",
+    "sourcePath": "EN/fourteen.svg",
+    "path": "wilson/mulberry/v1251-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fourteen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈfɪʁtseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "62518f608aea2f3300eb32ca00033f2925bbf42d83f53274ae7a21a9d2f21821",
+    "upstreamBlob": "2eb673e4256e091aa542de6b04a79f1d43b81e8a"
+  },
+  {
+    "id": "v1254",
+    "de": "vierzig",
+    "en": "forty",
+    "zh": "四十",
+    "plural": "—",
+    "sourcePath": "EN/forty.svg",
+    "path": "wilson/mulberry/v1254-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/forty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈfɪʁtsɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "df2df912346e98cafffb323b25290eaa572ed02770e23e4838d7a8cb220e0458",
+    "upstreamBlob": "b54cd9d232b306e2b90aa5197f762daff7e6aca0"
+  },
+  {
+    "id": "v1266",
+    "de": "der Vorhang",
+    "en": "curtain",
+    "zh": "窗帘",
+    "plural": "die Vorhänge",
+    "path": "wilson/mulberry/v1266-r2.svg",
+    "sourcePath": "EN/curtains.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/curtains.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Zwei Stoffvorhänge seitlich an einem Fenster; keine bloße Stoffprobe.",
+      "ipa": "/ˈfoːɐ̯ˌhaŋ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1266",
+        "de": "der Vorhang",
+        "plural": "die Vorhänge",
+        "en": "curtain",
+        "zh": "窗帘",
+        "path": "wilson/original-next/v1266.svg",
+        "ipa": "/ˈfoːɐ̯haŋ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈfoːɐ̯haŋ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1266.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "8810525f52900ff40c31e3e8a4df6f560299de650b83984ad9fad894d8667430",
+    "upstreamBlob": "4399010d41edc89920adcfc14b4fc0d0877b1a6b"
   },
   {
     "id": "v1268",
@@ -4820,7 +11969,36 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvaːɡə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "39642d12308ee6bf5cf52f2e9e217a4ee7ef46dfca015048f383d66c40ca189d",
+    "upstreamBlob": "00927cd4768abb29681cad9077be60cf58e95b6e"
+  },
+  {
+    "id": "v1269",
+    "de": "die Wade",
+    "en": "calf (leg)",
+    "zh": "小腿肚",
+    "plural": "die Waden",
+    "path": "wilson/mulberry/v1269-r2.svg",
+    "sourcePath": "EN/calf.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/calf.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Pfeil zeigt auf die Rückseite des Unterschenkels; calf wird hier körperbezogen verwendet, nicht als Tiername.",
+      "ipa": "/ˈvaːdə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "d6de6bafdbce52a8adcb13e681ac40da91a2526b791cc8d525b98ccbfce8500a",
+    "upstreamBlob": "946e8d9171e009b412ace364ffe6ec3b754ca277"
   },
   {
     "id": "v1274",
@@ -4842,7 +12020,56 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvaŋə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "5d3a67495237095956246e379136bc97ec144fa171718f44f33b38d1436df2db",
+    "upstreamBlob": "6e7987b0137b50fc7328e3a078d91143401febe5"
+  },
+  {
+    "id": "v1283",
+    "de": "die Wäsche waschen",
+    "en": "to wash the laundry",
+    "zh": "洗衣服",
+    "plural": "—",
+    "sourcePath": "EN/wash_clothes_,_to.svg",
+    "path": "wilson/mulberry/v1283-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wash_clothes_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Person lädt Kleidung an der Waschmaschine. Beschreibungen des Wäschewaschens und konkreten Beladens zugelassen.",
+      "ipa": "/diː ˈvɛʃə ˈvaʃn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Haushaltstätigkeit ist dargestellt? Schreibe den Infinitiv; mehrere Wörter sind möglich.",
+          "en": "Which household activity is shown? Write the German infinitive; several words are possible.",
+          "zh": "图中是什么家务？请用德语动词原形作答，可以写多个词。"
+        },
+        "answers": [
+          "Wäsche waschen",
+          "Kleidung waschen",
+          "waschen",
+          "die Waschmaschine füllen",
+          "die Waschmaschine beladen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "24e1bbdca17524b8d5c78826e784dc0bb9f055a7cde687b100421c0b9063da40",
+    "upstreamBlob": "c76ad7fd6cc0e126408bc419300fb948783e73de"
   },
   {
     "id": "v1285",
@@ -4864,7 +12091,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvɛʃəˌklamɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "40d3ffef436fd4c861446ca74d4dfc9ac05ccdb305bb432bde979ad476228143",
+    "upstreamBlob": "1a6d90026683d9325b12421d62c0bcac6ce77df6"
   },
   {
     "id": "v1289",
@@ -4886,7 +12116,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvaʃmaˌʃiːnə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "bdee865f8467d44bfe7c046aee09362769009cd1ed955ec9fcb13edb2ba5513f",
+    "upstreamBlob": "52aed9d9ee6b973d7510959b15c55e9b7a689dbf"
   },
   {
     "id": "v1291",
@@ -4908,7 +12141,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvaʃˌpʊlvɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "9fd54992c22f0c97070324a79faa7032c4465dcd6aa418e773c6bac7912cfaae",
+    "upstreamBlob": "f3c5e84d34e9376ac3368223e9bcfcfeb4c177fa"
   },
   {
     "id": "v1292",
@@ -4933,6 +12169,146 @@ const WILSON_IMAGE_CANDIDATES=[
     }
   },
   {
+    "id": "v1293",
+    "de": "das Wasserglas",
+    "en": "water glass",
+    "zh": "玻璃水杯",
+    "plural": "die Wassergläser",
+    "path": "wilson/mulberry/v1293-r2.svg",
+    "sourcePath": "EN/glass_,_drinking.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/glass_,_drinking.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Unbestieltes Trinkglas, wie es für Wasser verwendet wird; vom Weinglas mit Stiel unterschieden.",
+      "ipa": "/ˈvasɐˌɡlaːs/",
+      "childSuitable": true,
+      "answerVariants": [
+        {
+          "de": "das Trinkglas",
+          "plural": "die Trinkgläser"
+        },
+        {
+          "de": "das Glas",
+          "plural": "die Gläser"
+        }
+      ],
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "b394bd01e95e15b3ceec7312eee7054ea1cc973df5c0ca7bc9be38b24db91a43",
+    "upstreamBlob": "0c492ef4c464b90ad0198f09a2f968dc7a674d9e"
+  },
+  {
+    "id": "v1294",
+    "de": "der Wasserhahn",
+    "en": "tap; faucet",
+    "zh": "水龙头",
+    "plural": "die Wasserhähne",
+    "path": "wilson/mulberry/v1294-r2.svg",
+    "sourcePath": "EN/tap.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tap.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Wasserhahn mit Bedienhebel und austretendem Wasser; keine generische Flasche oder Dusche.",
+      "ipa": "/ˈvasɐˌhaːn/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1294",
+        "de": "der Wasserhahn",
+        "plural": "die Wasserhähne",
+        "en": "tap; faucet",
+        "zh": "水龙头",
+        "path": "wilson/original-next/v1294.svg",
+        "ipa": "/ˈvasɐˌhaːn/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈvasɐˌhaːn/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1294.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "f8d454b7533621fbe96f4b77d778467e14cc2d0e94e0e36a0f416f0080c63e64",
+    "upstreamBlob": "f1ddf09eaee1de5940ba6eb81eb57d0b1e540ace"
+  },
+  {
+    "id": "v1295",
+    "de": "der Wasserkocher",
+    "en": "electric kettle",
+    "zh": "电热水壶",
+    "plural": "die Wasserkocher",
+    "path": "wilson/mulberry/v1295-r2.svg",
+    "sourcePath": "EN/kettle.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/kettle.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Wasserkocher mit Ausguss, Henkel, elektrischer Basis und Kabel; kein Herdkessel.",
+      "ipa": "/ˈvasɐˌkɔxɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1295",
+        "de": "der Wasserkocher",
+        "plural": "die Wasserkocher",
+        "en": "electric kettle",
+        "zh": "电热水壶",
+        "path": "wilson/original-next/v1295.svg",
+        "ipa": "/ˈvasɐˌkɔxɐ/",
+        "childSuitable": true,
+        "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+        "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+          "ipa": "/ˈvasɐˌkɔxɐ/",
+          "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+          "recheckedOn": "2026-11-19"
+        },
+        "active": true,
+        "provider": "project",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1295.svg",
+        "status": "approved"
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "fa14dc8c1a44bc807b2912a38a3c7099ecad353ae137f62730f0cabb2ab0cddb",
+    "upstreamBlob": "36352280f85243ff52b36358fd4a1678c070cbc3"
+  },
+  {
     "id": "v1296",
     "de": "die Wassermelone",
     "en": "watermelon",
@@ -4952,7 +12328,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvasɐmeˌloːnə/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "73ba6164f15833f237315a402c92e84202e0d671f91accf77fdc0aeacbb88b2e",
+    "upstreamBlob": "208857e88e34c63c621d0fda789885420927e618"
   },
   {
     "id": "v1299",
@@ -4974,7 +12353,178 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈwɛpˌkɛm/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "d39d26dd1e9fb890a5f0af1df5ad881c16bcbbad52b36fe33080b7463dcaf6c9",
+    "upstreamBlob": "f0ac07bc4d362523c09c270ef652591e52336e50"
+  },
+  {
+    "id": "v1301",
+    "de": "die Wegwerfwindel",
+    "en": "disposable nappy",
+    "zh": "一次性尿布",
+    "plural": "die Wegwerfwindeln",
+    "path": "wilson/mulberry/v1301-r2.svg",
+    "sourcePath": "EN/nappy.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nappy.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Aufgeklappte Windel mit seitlichen Klebeverschlüssen; passend zur Wegwerfwindel statt Stoffwindel.",
+      "ipa": "/ˈvɛkˌvɛʁfˌvɪndl̩/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "961c02ec9af941d2c379c6d37716e08e57d2ebf0189db835bbbd1a0e6a8b3301",
+    "upstreamBlob": "58868dafe8f5e64207648732a51612c534a135ad"
+  },
+  {
+    "id": "v1306",
+    "de": "die Weintraube",
+    "en": "grape",
+    "zh": "葡萄",
+    "plural": "die Weintrauben",
+    "path": "wilson/mulberry/v1306-r2.svg",
+    "sourcePath": "EN/grapes.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/grapes.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Bündel grüner Weintrauben mit erkennbarem Stiel; kein Beerenmotiv anderer Art.",
+      "ipa": "/ˈvaɪ̯nˌtʁaʊ̯bə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "alternativeMotifs": [
+      {
+        "id": "v1306",
+        "de": "die Weintraube",
+        "plural": "die Weintrauben",
+        "pos": "noun",
+        "en": "grape",
+        "zh": "葡萄",
+        "pinyin": "pútao",
+        "cat": "food",
+        "articleVariants": [],
+        "sourcePath": "EN/grapes.svg",
+        "path": "wilson/mulberry/v1306.svg",
+        "active": true,
+        "status": "approved",
+        "creator": "Steve Lee",
+        "license": "CC-BY-SA-4.0",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/grapes.svg",
+        "provider": "mulberry",
+        "review": {
+          "decision": "approved",
+          "date": "2026-11-17",
+          "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+          "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+          "ipa": "/ˈvaɪ̯nˌtʁaʊ̯bə/",
+          "childSuitable": true,
+          "corrections": {
+            "de": "die Weintraube",
+            "plural": "die Weintrauben",
+            "en": "grape",
+            "zh": "葡萄",
+            "cat": "food",
+            "pos": "noun"
+          },
+          "recheckedOn": "2026-11-19"
+        }
+      }
+    ],
+    "provider": "mulberry",
+    "svgSha256": "fbe0327cb108a7ae6aab1415c027f869b47b1815126a2c0dbfcf6b2533a363de",
+    "upstreamBlob": "cbb9e7936a7c0793b0274acd47cc9185eb6b2c4f"
+  },
+  {
+    "id": "v1307",
+    "de": "das Weißbrot",
+    "en": "white bread",
+    "zh": "白面包",
+    "plural": "die Weißbrote",
+    "path": "wilson/mulberry/v1307-r2.svg",
+    "sourcePath": "EN/bread_sliced.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bread_sliced.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Geschnittenes Kastenbrot mit heller Krume und brauner Kruste; spezifisches Weißbrotmotiv.",
+      "ipa": "/ˈvaɪ̯sˌbʁoːt/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "dc971c25d34cd9e7b5d0d81429d500de7ad9b10658c38d7809cf08a05b56c0b6",
+    "upstreamBlob": "a481a7963b76dccbfa6f7fb82a61fc18a9f9d99c"
+  },
+  {
+    "id": "v1308",
+    "de": "der Weißkohl",
+    "en": "white cabbage",
+    "zh": "白甘蓝",
+    "plural": "—",
+    "path": "wilson/mulberry/v1308-r2.svg",
+    "sourcePath": "EN/cabbage.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cabbage.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Runder geschlossener Kohlkopf mit hellgrünen äußeren Blättern; keine stark gekräuselten Wirsingblätter und kein länglicher Chinakohl.",
+      "ipa": "/ˈvaɪ̯sˌkoːl/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "c07a4b1660c3075499abc663bf536e8faebcb419be3336c5d7cef2cc9bf4e29d",
+    "upstreamBlob": "59053b4017d94303b75803ff3bfc5b68c4105034"
+  },
+  {
+    "id": "v1310",
+    "de": "das Weizenmehl",
+    "en": "wheat flour",
+    "zh": "小麦面粉",
+    "plural": "—",
+    "path": "wilson/mulberry/v1310-r2.svg",
+    "sourcePath": "EN/flour_plain.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/flour_plain.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Mehltüte mit deutlich abgebildeter Weizenähre; die Getreideart wird nicht allein aus weißem Pulver abgeleitet.",
+      "ipa": "/ˈvaɪ̯tsn̩ˌmeːl/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "8e54bd2d163e00f06cb1d79f4dbd122d89e62bdad3fff618c06339f4c504ee5a",
+    "upstreamBlob": "ea9da223ed8afc7865bee7a1257c75b24a5ae1b2"
   },
   {
     "id": "v1321",
@@ -4996,7 +12546,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvɪmpɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "292682ed8aada6a2da60d9e14f0853d36aa5416db56403b40f19491ce3d7f1da",
+    "upstreamBlob": "1c17a21083f58c00e6b5711320254f8a76b57506"
   },
   {
     "id": "v1324",
@@ -5018,7 +12571,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvɪntɐ/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "ff19d4f2a42bf990218c119555aab049515ac0fbdcb658ed8062822a153ba725",
+    "upstreamBlob": "c2e1fa5716b82ecb382858fdac61b3c532785a46"
   },
   {
     "id": "v1326",
@@ -5040,7 +12596,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈvɪʃˌmɔp/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "88d0bb91dd55ee345962248ee70e609ed7f968e5cb0ba3f3a80c00eb3af9bfad",
+    "upstreamBlob": "72b40ec17df8a052a4fcd38f6d94641383ba369d"
   },
   {
     "id": "v1328",
@@ -5048,19 +12607,39 @@ const WILSON_IMAGE_CANDIDATES=[
     "en": "week",
     "plural": "die Wochen",
     "zh": "星期",
-    "sourcePath": "EN/week.svg",
+    "sourcePath": "EN/week_1.svg",
     "path": "wilson/mulberry/v1328.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
+    "status": "approved",
+    "active": true,
     "license": "CC-BY-SA-4.0",
     "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/week.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/week_1.svg",
+    "reviewHistory": [
+      {
+        "path": "wilson/mulberry/v1328.svg",
+        "sourcePath": "EN/week.svg",
+        "status": "needs-replacement-or-context",
+        "review": {
+          "decision": "blocked",
+          "date": "2026-11-17",
+          "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+          "reason": "Zeigt nur Montag bis Freitag; ganze Woche nicht korrekt dargestellt."
+        }
+      }
+    ],
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt nur Montag bis Freitag; ganze Woche nicht korrekt dargestellt."
-    }
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Ersatzmotiv enthält alle sieben Wochentage (Mo–So), nicht nur Arbeitstage.",
+      "ipa": "/ˈvɔxə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "9eedf7dcc675e1fc1a1884f3004a1b2b2ca5095af9824b8957286bcfb53e2221",
+    "upstreamBlobSha": "ae4d38f6384f1ddc8388b7e5997210b8a47717e2",
+    "provider": "mulberry",
+    "upstreamBlob": "ae4d38f6384f1ddc8388b7e5997210b8a47717e2"
   },
   {
     "id": "v1329",
@@ -5079,7 +12658,8 @@ const WILSON_IMAGE_CANDIDATES=[
       "decision": "blocked",
       "date": "2026-11-17",
       "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Nur englische Tageskürzel; vollständige Kalenderwoche mit markiertem Wochenende wäre eindeutiger."
+      "reason": "Nur englische Tageskürzel; vollständige Kalenderwoche mit markiertem Wochenende wäre eindeutiger.",
+      "recheckedOn": "2026-11-26"
     }
   },
   {
@@ -5102,7 +12682,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/tsaːn/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "be80656955b26be65702083a61a1999ac740a4e0f770a0f4e108b4080530826a",
+    "upstreamBlob": "7bd9c290479947b76c4b9f25fe1b94e6e575b3a7"
   },
   {
     "id": "v1335",
@@ -5124,7 +12707,10 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtsaːnˌpasta/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "c8598fccf00c89b5fba9fc3c13d49dd3336e32f5b4c2230f3bde2f9391860f6b",
+    "upstreamBlob": "61e0b04d71cd1750ae67f0e05e0eb6fb69ba6a49"
   },
   {
     "id": "v1338",
@@ -5146,7 +12732,101 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtseːbʁaˌʃtʁaɪ̯fn̩/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "c5f7bb3d2fb1985460a60e552e37dd21234df76d68c8db38845460d6fa77bfde",
+    "upstreamBlob": "8f6bfeb7ecb2198b09da5c1987233fbb087189f1"
+  },
+  {
+    "id": "v1339",
+    "de": "zehn",
+    "en": "ten",
+    "zh": "十",
+    "plural": "—",
+    "sourcePath": "EN/ten.svg",
+    "path": "wilson/mulberry/v1339-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ten.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/tseːn/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "38cb9bcc8c1eb9489fa8f229533c098d1d8126dc78fc2a0534f0795c6bc27f00",
+    "upstreamBlob": "d6d215b2264f0dc946807651f94a837f8f494010"
+  },
+  {
+    "id": "v1344",
+    "de": "der Zeigefinger",
+    "en": "index finger",
+    "zh": "食指",
+    "plural": "die Zeigefinger",
+    "path": "wilson/mulberry/v1344-r2.svg",
+    "sourcePath": "EN/finger.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/finger.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Pfeil zeigt auf den ausgestreckten Zeigefinger einer Hand, die übrigen Finger sind angewinkelt.",
+      "ipa": "/ˈtsaɪ̯ɡəˌfɪŋɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "03bf6eeba12fc9af68cc02987933bc8250ab84913a4e239ca4f1312b8f08cdd1",
+    "upstreamBlob": "264bd1f9599938b041257c333c96460b001076de"
+  },
+  {
+    "id": "v1348",
+    "de": "die Zimmerpflanze",
+    "en": "houseplant",
+    "zh": "室内植物",
+    "plural": "die Zimmerpflanzen",
+    "path": "wilson/mulberry/v1348-r2.svg",
+    "sourcePath": "EN/potted_plant.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/potted_plant.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Grüne Blattpflanze in einem Blumentopf; passt zur Zimmerpflanze und nicht zum Baum.",
+      "ipa": "/ˈtsɪmɐˌpflantsə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "7b7e0a8f313b14e5c725a8fe5297fb5a39b6985a9cbdecb384d3648e520e83a0",
+    "upstreamBlob": "cb751447c9e8edae19fe1eaf15ff8e4a0e7ef911"
   },
   {
     "id": "v1350",
@@ -5168,7 +12848,85 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/tsiˈtʁoːnə/",
       "childSuitable": true
+    },
+    "provider": "mulberry",
+    "svgSha256": "a0f80f46aafb039cdc5f5c48578b36dbf65c7567e52453015f952961de1e8ec3",
+    "upstreamBlob": "cc967eca1ff1d9b3d70473ea39631f3217cbec68"
+  },
+  {
+    "id": "v1353",
+    "de": "die Zucchini",
+    "en": "courgette; zucchini",
+    "zh": "西葫芦",
+    "plural": "die Zucchini",
+    "path": "wilson/mulberry/v1353-r2.svg",
+    "sourcePath": "EN/courgette.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/courgette.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Längliche dunkelgrüne Zucchini mit kräftigem geripptem Fruchtstiel; nicht als Gurke mit kleinen Warzen gezeichnet.",
+      "ipa": "/tsʊˈkiːni/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "06c798ba9eaa5e92ecff10e9917e1fde56bcda81799a65be2b4572cbfc210e78",
+    "upstreamBlob": "5829418b8532b4ea467c99e1c293962b866fdcd2"
+  },
+  {
+    "id": "v1355",
+    "de": "der Zucker",
+    "en": "sugar",
+    "zh": "糖",
+    "plural": "—",
+    "path": "wilson/mulberry/v1355-r2.svg",
+    "sourcePath": "EN/sugar_white.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sugar_white.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "needs-replacement-or-context",
+    "active": false,
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Weiße Schale ohne Packung oder eindeutigen Kontext; Zucker nicht von Salz oder anderem weißem Pulver unterscheidbar.",
+      "ipa": "/ˈtsʊkɐ/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "v1357",
+    "de": "die Zuckermelone",
+    "en": "sweet melon",
+    "zh": "甜瓜",
+    "plural": "die Zuckermelonen",
+    "path": "wilson/mulberry/v1357-r2.svg",
+    "sourcePath": "EN/melon.svg",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/melon.svg",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "status": "approved",
+    "active": true,
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unverändertes SVG mit Inkscape gerendert und einzeln auf beschriftetem Kontaktbogen angesehen; deutsche Grundform/Plural, englische und chinesische Bedeutung sowie Pinyin redaktionell abgeglichen. Redaktionelles IPA ohne Artikel; keine unabhängige muttersprachliche oder phonetische Validierung.",
+      "reason": "Melone mit orangefarbenem Anschnitt und zentralen Kernen; unterscheidet sich von der vorhandenen roten Wassermelone.",
+      "ipa": "/ˈtsʊkɐmeˌloːnə/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "bceae0b791bf90cca5efe6a458f595efdabcaa725d7467dfb54d9d73cd40d87a",
+    "upstreamBlob": "2d106089464d1fb38c26c977bd1f2af97b198052"
   },
   {
     "id": "v1358",
@@ -5190,7 +12948,88 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/tsuːk/",
       "childSuitable": true
-    }
+    },
+    "provider": "mulberry",
+    "svgSha256": "b6bc59a72e06e1e57fd70512d821194a3a1fa2cf28c08a647d65faf44477f218",
+    "upstreamBlob": "e5f7fb52998b4b1152213e6b0df62950880a61c2"
+  },
+  {
+    "id": "v1360",
+    "de": "zwanzig",
+    "en": "twenty",
+    "zh": "二十",
+    "plural": "—",
+    "sourcePath": "EN/twenty.svg",
+    "path": "wilson/mulberry/v1360-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/twenty.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/ˈtsvantsɪç/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "4146041c2403d2305a3288637c8cb85a1a388c156005bb4f8d7aab99abf19170",
+    "upstreamBlob": "3aa35fec183e3ffc74562ab115bd7f370563a4fc"
+  },
+  {
+    "id": "v1364",
+    "de": "zwei",
+    "en": "two",
+    "zh": "二",
+    "plural": "—",
+    "sourcePath": "EN/two.svg",
+    "path": "wilson/mulberry/v1364-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/two.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/tsvaɪ̯/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "c464864dccae26f2c04753abaecb8449597873001705fd1b39066d206f630ec2",
+    "upstreamBlob": "18089a66d9bb8609dd380d6e0eacaea194865266"
   },
   {
     "id": "v1376",
@@ -5212,6 +13051,10422 @@ const WILSON_IMAGE_CANDIDATES=[
       "reason": "Motiv, deutsche Wortform und EN/ZH-Bedeutung redaktionell abgeglichen.",
       "ipa": "/ˈtsviːbl̩/",
       "childSuitable": true
+    },
+    "provider": "mulberry",
+    "svgSha256": "d6a5434e91a1a3c59537473071da29a737e5bd914200d6e23771a72dd3157f4a",
+    "upstreamBlob": "ae6e5467cc4c74ddc14d8863a12f00c84928f0e2"
+  },
+  {
+    "id": "v1378",
+    "de": "zwölf",
+    "en": "twelve",
+    "zh": "十二",
+    "plural": "—",
+    "sourcePath": "EN/twelve.svg",
+    "path": "wilson/mulberry/v1378-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/twelve.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Pinned original SVG rendered with Inkscape and individually inspected in labeled contact sheet; DE/EN/ZH, task and editorial broad IPA checked. Not independent native-speaker validation.",
+      "reason": "Gerenderte Ziffer einzeln geprüft; Zahlenwert und DE/EN/ZH-Schreibweise stimmen überein. Eigenständige Zahlwortaufgabe, keine Nomenabfrage.",
+      "ipa": "/tsvœlf/",
+      "childSuitable": true,
+      "task": {
+        "type": "number",
+        "prompt": {
+          "de": "Schreibe die Zahl als deutsches Wort.",
+          "en": "Write this number as a German word.",
+          "zh": "请用德语单词写出图中的数字。"
+        },
+        "hint": {
+          "de": "Keine Ziffern und kein Artikel.",
+          "en": "Use a word, without digits or an article.",
+          "zh": "请输入单词，不用阿拉伯数字，也不用冠词。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "5133d32243d07defddf7563e6f2fa403c14c72d3fb5f6d104680a9b102d1a1c9",
+    "upstreamBlob": "367c52756072baafa4dd0e9d0f2a09150fc522cc"
+  },
+  {
+    "id": "vg109",
+    "de": "hinter",
+    "en": "behind",
+    "zh": "在后面",
+    "plural": "—",
+    "sourcePath": "EN/behind.svg",
+    "path": "wilson/mulberry/vg109-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/behind.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Gepunktetes Quadrat wird von schwarzem Quadrat verdeckt; hinter ist räumlich gemeint.",
+      "ipa": "/ˈhɪntɐ/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Welches Verhältniswort beschreibt die Lage des gepunkteten Quadrats zum schwarzen?",
+          "en": "Which German preposition describes the dotted square’s position relative to the black one?",
+          "zh": "哪个德语介词描述虚线正方形相对于黑色正方形的位置？"
+        },
+        "answers": [
+          "dahinter"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "c11441ed3fc97ba00563acfc9dd9a42eaf9649e33664113571dced801716b4c0",
+    "upstreamBlob": "88a6caea0380081361af6fc100e65bf03540739a"
+  },
+  {
+    "id": "vg112",
+    "de": "links",
+    "en": "left",
+    "zh": "左边",
+    "plural": "—",
+    "sourcePath": "EN/left.svg",
+    "path": "wilson/mulberry/vg112-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/left.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil weist eindeutig nach links; Richtungswort abgefragt.",
+      "ipa": "/lɪŋks/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "In welche Richtung zeigt der Pfeil?",
+          "en": "In which direction does the arrow point?",
+          "zh": "箭头指向哪个方向？"
+        },
+        "answers": [
+          "nach links"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "2195fba63b2d0c75cb31ceb94a184c86e12632b37c13c248fab9e4fe2efaf581",
+    "upstreamBlob": "bea523452c9c28ba80b4ef977d6a4f5d481e450d"
+  },
+  {
+    "id": "vg114",
+    "de": "neben",
+    "en": "next to",
+    "zh": "在旁边",
+    "plural": "—",
+    "sourcePath": "EN/beside_next_to.svg",
+    "path": "wilson/mulberry/vg114-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/beside_next_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Gepunktetes Quadrat liegt direkt neben schwarzem Quadrat; relationale Wortaufgabe.",
+      "ipa": "/ˈneːbn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Welches Verhältniswort beschreibt die Lage des gepunkteten Quadrats zum schwarzen?",
+          "en": "Which German preposition describes the dotted square’s position relative to the black one?",
+          "zh": "哪个德语介词描述虚线正方形相对于黑色正方形的位置？"
+        },
+        "answers": [
+          "daneben"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "09c412b7ce4f81f434183ed03e980a9f2637d79798f59c55b4f995fc80d4dbe3",
+    "upstreamBlob": "74cd09ec7e45564bc8edeb5d9d0046b828388593"
+  },
+  {
+    "id": "vg115",
+    "de": "rechts",
+    "en": "right",
+    "zh": "右边",
+    "plural": "—",
+    "sourcePath": "EN/right.svg",
+    "path": "wilson/mulberry/vg115-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/right.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Pfeil weist eindeutig nach rechts; Richtungswort abgefragt.",
+      "ipa": "/ʁɛçts/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "In welche Richtung zeigt der Pfeil?",
+          "en": "In which direction does the arrow point?",
+          "zh": "箭头指向哪个方向？"
+        },
+        "answers": [
+          "nach rechts"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "f4cdd477621818e70c63988522a856f957cb66687fc0f8028eccbea3a2411fd7",
+    "upstreamBlob": "fff382de2f7097129a7abea60a64f035b0f9a0f6"
+  },
+  {
+    "id": "vg116",
+    "de": "vor",
+    "en": "in front of",
+    "zh": "在前面",
+    "plural": "—",
+    "sourcePath": "EN/in_front.svg",
+    "path": "wilson/mulberry/vg116-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/in_front.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Gepunktetes Quadrat liegt sichtbar vor schwarzem Quadrat; räumlicher Prompt verhindert Zeitbedeutung.",
+      "ipa": "/foːɐ̯/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Welches Verhältniswort beschreibt die Lage des gepunkteten Quadrats zum schwarzen?",
+          "en": "Which German preposition describes the dotted square’s position relative to the black one?",
+          "zh": "哪个德语介词描述虚线正方形相对于黑色正方形的位置？"
+        },
+        "answers": [
+          "davor"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "38118b47816f7ac74251f6e10da53a5347d8350313da17f9731ce88757121c97",
+    "upstreamBlob": "24300e60b13c4faef0baa64c8db6bdd4df08d838"
+  },
+  {
+    "id": "vg118",
+    "de": "zwischen",
+    "en": "between",
+    "zh": "在……之间",
+    "plural": "—",
+    "sourcePath": "EN/between.svg",
+    "path": "wilson/mulberry/vg118-r2.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/between.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Unmodified SVG rendered with Inkscape and individually inspected in labeled contact sheet. German forms, EN/ZH meanings, pinyin, broad IPA and task reviewed editorially; not independent native-speaker or phonetics validation.",
+      "reason": "Gepunktetes Quadrat liegt zwischen zwei schwarzen Quadraten; Verhältniswort abgefragt.",
+      "ipa": "/ˈtsvɪʃn̩/",
+      "childSuitable": true,
+      "task": {
+        "type": "word",
+        "prompt": {
+          "de": "Welches Verhältniswort beschreibt die Lage des gepunkteten Quadrats zu den schwarzen?",
+          "en": "Which German preposition describes the dotted square’s position relative to the black ones?",
+          "zh": "哪个德语介词描述虚线正方形相对于两个黑色正方形的位置？"
+        },
+        "answers": [
+          "dazwischen"
+        ],
+        "hint": {
+          "de": "Schreibe die passende deutsche Grundform oder Wendung.",
+          "en": "Write the matching German base form or expression.",
+          "zh": "请写出对应的德语原形或表达。"
+        }
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "provider": "mulberry",
+    "svgSha256": "e704eae72356b425cb8a10a8db161fbc0732c9a31836f3d404625764dc348592",
+    "upstreamBlob": "56d4a9574ce9166d388b29dd50f223f1a7c2c390"
+  },
+  {
+    "id": "wx-ant",
+    "de": "die Ameise",
+    "plural": "die Ameisen",
+    "pos": "noun",
+    "en": "ant",
+    "zh": "蚂蚁",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/ant.svg",
+    "path": "wilson/mulberry/wx-ant.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ant.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈaːmaɪ̯zə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Ameise",
+        "plural": "die Ameisen",
+        "en": "ant",
+        "zh": "蚂蚁",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "38e49d2d659a74c6d09b0384a9cab0e8016c0a50d9bd1c3c156c16938d3b7d00",
+    "upstreamBlob": "7028bdfba2f32073fd5b8829e87b360a6a882ac5"
+  },
+  {
+    "id": "wx-ant-eater",
+    "de": "der Ameisenbär",
+    "plural": "die Ameisenbären",
+    "pos": "noun",
+    "en": "anteater",
+    "zh": "食蚁兽",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/ant_eater.svg",
+    "path": "wilson/mulberry/wx-ant-eater.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ant_eater.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈaːmaɪ̯zn̩ˌbɛːɐ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Ameisenbär",
+        "plural": "die Ameisenbären",
+        "en": "anteater",
+        "zh": "食蚁兽",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a7761f98655b48d849b25965f62979aca2487dfd11b95c5fca94327e5ff2a983",
+    "upstreamBlob": "107813dc3ecc517f0f386f17bbc328c2e2decd70"
+  },
+  {
+    "id": "wx-antelope",
+    "de": "die Antilope",
+    "plural": "die Antilopen",
+    "pos": "noun",
+    "en": "antelope",
+    "zh": "羚羊",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/antelope.svg",
+    "path": "wilson/mulberry/wx-antelope.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/antelope.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/antiˈloːpə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Antilope",
+        "plural": "die Antilopen",
+        "en": "antelope",
+        "zh": "羚羊",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3c67d5119e1a18466b79f7ca7efb69b884a7e69d6c200d86251532018faed840",
+    "upstreamBlob": "f74b0b06897b769cfdca075df9a53a29e9414747"
+  },
+  {
+    "id": "wx-bear",
+    "de": "der Bär",
+    "plural": "die Bären",
+    "pos": "noun",
+    "en": "bear",
+    "zh": "熊",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/bear.svg",
+    "path": "wilson/mulberry/wx-bear.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bear.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/bɛːɐ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Bär",
+        "plural": "die Bären",
+        "en": "bear",
+        "zh": "熊",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "eb03b2310c583527185681b33d26436b355e0664a749ed927d15f4b8d5cc6140",
+    "upstreamBlob": "abbccdcfe3c08a2762097ad596485fc0397c53a6"
+  },
+  {
+    "id": "wx-bee-bumble",
+    "de": "die Hummel",
+    "plural": "die Hummeln",
+    "pos": "noun",
+    "en": "bumblebee",
+    "zh": "熊蜂",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/bee_bumble.svg",
+    "path": "wilson/mulberry/wx-bee-bumble.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bee_bumble.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Hummel nicht hinreichend von Biene/Wespe unterscheidbar.",
+      "ipa": "/ˈhʊml̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Hummel",
+        "plural": "die Hummeln",
+        "en": "bumblebee",
+        "zh": "熊蜂",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
     }
+  },
+  {
+    "id": "wx-bee-honey",
+    "de": "die Biene",
+    "plural": "die Bienen",
+    "pos": "noun",
+    "en": "honeybee",
+    "zh": "蜜蜂",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/bee_honey.svg",
+    "path": "wilson/mulberry/wx-bee-honey.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bee_honey.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈbiːnə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Biene",
+        "plural": "die Bienen",
+        "en": "honeybee",
+        "zh": "蜜蜂",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "eacec5279ec82f43708e0a7388a001f2a406af578c464ed35bb3940f6c74fe88",
+    "upstreamBlob": "30b4cadd2c7964e92f9c98460a8f83f66ca98517"
+  },
+  {
+    "id": "wx-beetle",
+    "de": "der Käfer",
+    "plural": "die Käfer",
+    "pos": "noun",
+    "en": "beetle",
+    "zh": "甲虫",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/beetle.svg",
+    "path": "wilson/mulberry/wx-beetle.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/beetle.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkɛːfɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Käfer",
+        "plural": "die Käfer",
+        "en": "beetle",
+        "zh": "甲虫",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "484781188051453eda89a787108540711abb75c81c31e6921886256e96c52123",
+    "upstreamBlob": "a268ae3b093cd38d9eee1eb7bb132046ac3ea0f0"
+  },
+  {
+    "id": "wx-bird",
+    "de": "der Vogel",
+    "plural": "die Vögel",
+    "pos": "noun",
+    "en": "bird",
+    "zh": "鸟",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/bird.svg",
+    "path": "wilson/mulberry/wx-bird.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bird.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈfoːɡl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Vogel",
+        "plural": "die Vögel",
+        "en": "bird",
+        "zh": "鸟",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "27cb6ddc78ffc3a6a7b338c169a6d5a180a3d7e8c557f2dec9be61aece4028a4",
+    "upstreamBlob": "a73827c4ba00010796e6a56221fdeb3919d161cc"
+  },
+  {
+    "id": "wx-buffalo",
+    "de": "der Büffel",
+    "plural": "die Büffel",
+    "pos": "noun",
+    "en": "buffalo",
+    "zh": "水牛",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/buffalo.svg",
+    "path": "wilson/mulberry/wx-buffalo.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/buffalo.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈbʏfl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Büffel",
+        "plural": "die Büffel",
+        "en": "buffalo",
+        "zh": "水牛",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0d1425251459c61ab8bede5ea393721917ed50cb48a01d4c2ad5eff88b502c4a",
+    "upstreamBlob": "451fda3a2a3615bdc7440666a96c2f067ec34d9d"
+  },
+  {
+    "id": "wx-butterfly",
+    "de": "der Schmetterling",
+    "plural": "die Schmetterlinge",
+    "pos": "noun",
+    "en": "butterfly",
+    "zh": "蝴蝶",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/butterfly.svg",
+    "path": "wilson/mulberry/wx-butterfly.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/butterfly.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃmɛtɐlɪŋ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Schmetterling",
+        "plural": "die Schmetterlinge",
+        "en": "butterfly",
+        "zh": "蝴蝶",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "beb32753f44007c4b2de5f8b6096b08d5abe64027dc981cab27abf2406159c0d",
+    "upstreamBlob": "2d8c7e4c85602646071cc38c24d0e9edc6887352"
+  },
+  {
+    "id": "wx-camel",
+    "de": "das Kamel",
+    "plural": "die Kamele",
+    "pos": "noun",
+    "en": "camel",
+    "zh": "骆驼",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/camel.svg",
+    "path": "wilson/mulberry/wx-camel.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/camel.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/kaˈmeːl/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Kamel",
+        "plural": "die Kamele",
+        "en": "camel",
+        "zh": "骆驼",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "869837ae03d72d3b2d6ea7b52f39892195d63b2e67a04b449c004f37543d7faa",
+    "upstreamBlob": "d10d1c53e4520aa214a0e5f535a3acefe7289e57"
+  },
+  {
+    "id": "wx-cat",
+    "de": "die Katze",
+    "plural": "die Katzen",
+    "pos": "noun",
+    "en": "cat",
+    "zh": "猫",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/cat.svg",
+    "path": "wilson/mulberry/wx-cat.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cat.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkatsə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Katze",
+        "plural": "die Katzen",
+        "en": "cat",
+        "zh": "猫",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "4c21efa84772d321d13730322665444af53bffe768425516c29c42ecbb67409f",
+    "upstreamBlob": "41ce70f25dcda85a8f52fedba61d196f5c624351"
+  },
+  {
+    "id": "wx-caterpillar",
+    "de": "die Raupe",
+    "plural": "die Raupen",
+    "pos": "noun",
+    "en": "caterpillar",
+    "zh": "毛毛虫",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/caterpillar.svg",
+    "path": "wilson/mulberry/wx-caterpillar.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/caterpillar.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʁaʊ̯pə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Raupe",
+        "plural": "die Raupen",
+        "en": "caterpillar",
+        "zh": "毛毛虫",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ef13b93b8d6f2ffa80691640deed64b81e8d6f124932889aff561949c18f800a",
+    "upstreamBlob": "cb7f986273c40e8452b9e1979ddf9b8c7149def6"
+  },
+  {
+    "id": "wx-chameleon",
+    "de": "das Chamäleon",
+    "plural": "die Chamäleons",
+    "pos": "noun",
+    "en": "chameleon",
+    "zh": "变色龙",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/chameleon.svg",
+    "path": "wilson/mulberry/wx-chameleon.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chameleon.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/kaˈmɛːleɔn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Chamäleon",
+        "plural": "die Chamäleons",
+        "en": "chameleon",
+        "zh": "变色龙",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "50d470714917af504bc7d7ed091c694c2578ba5434abcdeca30abc684e80ba4d",
+    "upstreamBlob": "b79a5640b0341f89ade890d78e5fc599d4b7702e"
+  },
+  {
+    "id": "wx-cheetah",
+    "de": "der Gepard",
+    "plural": "die Geparde",
+    "pos": "noun",
+    "en": "cheetah",
+    "zh": "猎豹",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/cheetah.svg",
+    "path": "wilson/mulberry/wx-cheetah.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cheetah.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ɡeˈpaʁt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Gepard",
+        "plural": "die Geparde",
+        "en": "cheetah",
+        "zh": "猎豹",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "d6fbcaf5ef7742eac1829f34d871af46751fa2915060f989fcd5e7cd6997076d",
+    "upstreamBlob": "ee84801a0278382fff9a583cce348cde3d24c030"
+  },
+  {
+    "id": "wx-chick",
+    "de": "das Küken",
+    "plural": "die Küken",
+    "pos": "noun",
+    "en": "chick",
+    "zh": "小鸡",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/chick.svg",
+    "path": "wilson/mulberry/wx-chick.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chick.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkyːkən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Küken",
+        "plural": "die Küken",
+        "en": "chick",
+        "zh": "小鸡",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "8cb0fe528cbaae5933f67382c9cffd27db03f84fc2d43ee0b5f83a290b3aeec6",
+    "upstreamBlob": "980e4b7601af90eaeaea6fd1d543a045218048ba"
+  },
+  {
+    "id": "wx-chicken-live",
+    "de": "das Huhn",
+    "plural": "die Hühner",
+    "pos": "noun",
+    "en": "hen",
+    "zh": "鸡",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/chicken_live.svg",
+    "path": "wilson/mulberry/wx-chicken-live.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chicken_live.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/huːn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Huhn",
+        "plural": "die Hühner",
+        "en": "hen",
+        "zh": "鸡",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "4e2792c3a03ce644c88be23a633d7346faa5b548028525364d8ac7ce0059fd0a",
+    "upstreamBlob": "35d384af6b373ff061293d1262e6cf815df8a381"
+  },
+  {
+    "id": "wx-chimpanzee",
+    "de": "der Schimpanse",
+    "plural": "die Schimpansen",
+    "pos": "noun",
+    "en": "chimpanzee",
+    "zh": "黑猩猩",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/chimpanzee.svg",
+    "path": "wilson/mulberry/wx-chimpanzee.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chimpanzee.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃɪmˈpanzə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Schimpanse",
+        "plural": "die Schimpansen",
+        "en": "chimpanzee",
+        "zh": "黑猩猩",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a7f2334097a5a2fe36391d2eb7f04adaf4c8e3a141745152fe171522a3c90045",
+    "upstreamBlob": "57bc75ba8cffa152b9602d657a659eb3918fd9ed"
+  },
+  {
+    "id": "wx-cockatiel",
+    "de": "der Nymphensittich",
+    "plural": "die Nymphensittiche",
+    "pos": "noun",
+    "en": "cockatiel",
+    "zh": "玄凤鹦鹉",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/cockatiel.svg",
+    "path": "wilson/mulberry/wx-cockatiel.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cockatiel.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈnʏmfn̩ˌzɪtɪç/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Nymphensittich",
+        "plural": "die Nymphensittiche",
+        "en": "cockatiel",
+        "zh": "玄凤鹦鹉",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e2f7c9fcb56e8d318cbdd379e85fb5041158bf9091f070276e71c88d535eba49",
+    "upstreamBlob": "6a906896f31e815f0ccbef96d554ec850e034993"
+  },
+  {
+    "id": "wx-cockerel",
+    "de": "der Hahn",
+    "plural": "die Hähne",
+    "pos": "noun",
+    "en": "rooster",
+    "zh": "公鸡",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/cockerel.svg",
+    "path": "wilson/mulberry/wx-cockerel.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cockerel.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/haːn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Hahn",
+        "plural": "die Hähne",
+        "en": "rooster",
+        "zh": "公鸡",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "136d199ac365641fb3b719b197ee7a1176a7e854f3b07a8759ca2ea05c2fb315",
+    "upstreamBlob": "212ec13b0fef75c3bb3a4ae159101af6005e9ab4"
+  },
+  {
+    "id": "wx-cow",
+    "de": "die Kuh",
+    "plural": "die Kühe",
+    "pos": "noun",
+    "en": "cow",
+    "zh": "奶牛",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/cow.svg",
+    "path": "wilson/mulberry/wx-cow.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cow.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/kuː/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Kuh",
+        "plural": "die Kühe",
+        "en": "cow",
+        "zh": "奶牛",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f0db368a15a65abac541a85f86613dbec318e96d0681b9794bb229c43d2900df",
+    "upstreamBlob": "5f475378cc7bb2d9b87c493e57711a04fac771f9"
+  },
+  {
+    "id": "wx-crocodile",
+    "de": "das Krokodil",
+    "plural": "die Krokodile",
+    "pos": "noun",
+    "en": "crocodile",
+    "zh": "鳄鱼",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/crocodile.svg",
+    "path": "wilson/mulberry/wx-crocodile.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/crocodile.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/kʁokoˈdiːl/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Krokodil",
+        "plural": "die Krokodile",
+        "en": "crocodile",
+        "zh": "鳄鱼",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1a436f8bb80a3952ed5ac58e845efbfc70c759ea17b57d11b155c6cd15089e83",
+    "upstreamBlob": "5efd959ccda72b0a635efb8d829961e5ee124d6e"
+  },
+  {
+    "id": "wx-deer",
+    "de": "das Reh",
+    "plural": "die Rehe",
+    "pos": "noun",
+    "en": "deer",
+    "zh": "狍子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/deer.svg",
+    "path": "wilson/mulberry/wx-deer.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/deer.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʁeː/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Reh",
+        "plural": "die Rehe",
+        "en": "deer",
+        "zh": "狍子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26",
+      "context": {
+        "de": "Gesucht ist die kleinere heimische Hirschart, nicht der Rothirsch.",
+        "en": "Name the smaller native European deer species, rather than red deer.",
+        "zh": "请写出欧洲本土较小鹿种的德语名称，不是马鹿。"
+      }
+    },
+    "svgSha256": "f728c75c2f96f96077f0b7b04517b439104b849e2c71f47fa5617fb439471632",
+    "upstreamBlob": "4736ecb3b292b3f889c58985c823a682e7c82518"
+  },
+  {
+    "id": "wx-dinosaur",
+    "de": "der Dinosaurier",
+    "plural": "die Dinosaurier",
+    "pos": "noun",
+    "en": "dinosaur",
+    "zh": "恐龙",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/dinosaur.svg",
+    "path": "wilson/mulberry/wx-dinosaur.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dinosaur.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/dinoˈzaʊ̯ʁi̯ɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Dinosaurier",
+        "plural": "die Dinosaurier",
+        "en": "dinosaur",
+        "zh": "恐龙",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b3e9e93eef6412253848efe952bec76f2e86af2dc7c07e91bc501d130eac7658",
+    "upstreamBlob": "9eb5912fb2b556b5537821cbcba1268dbe88fbd4"
+  },
+  {
+    "id": "wx-dog",
+    "de": "der Hund",
+    "plural": "die Hunde",
+    "pos": "noun",
+    "en": "dog",
+    "zh": "狗",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/dog.svg",
+    "path": "wilson/mulberry/wx-dog.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dog.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/hʊnt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Hund",
+        "plural": "die Hunde",
+        "en": "dog",
+        "zh": "狗",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3d0b2539ddb3905aab75a573cf7442e06d8e9d3d28b262bbcbc11d335c396121",
+    "upstreamBlob": "323ac956ae6f1ddadf7b5107872ea1fa944919bd"
+  },
+  {
+    "id": "wx-dolphin",
+    "de": "der Delfin",
+    "plural": "die Delfine",
+    "pos": "noun",
+    "en": "dolphin",
+    "zh": "海豚",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/dolphin.svg",
+    "path": "wilson/mulberry/wx-dolphin.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dolphin.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/dɛlˈfiːn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Delfin",
+        "plural": "die Delfine",
+        "en": "dolphin",
+        "zh": "海豚",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "53c370ec2a85710774d890414b63f5fb384458723e32973dd11fc9743995cc5e",
+    "upstreamBlob": "c6815e8f4e9eb82028e20d29fb4f4a2c4be09ed7"
+  },
+  {
+    "id": "wx-donkey",
+    "de": "der Esel",
+    "plural": "die Esel",
+    "pos": "noun",
+    "en": "donkey",
+    "zh": "驴",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/donkey.svg",
+    "path": "wilson/mulberry/wx-donkey.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/donkey.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈeːzl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Esel",
+        "plural": "die Esel",
+        "en": "donkey",
+        "zh": "驴",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "bbd22766de205ebc98cb320d05838d0b0aacba8c3f18bf1b3ac4b58924eb151c",
+    "upstreamBlob": "b942f5e8541a796fecca37dce4e24514b8bd7383"
+  },
+  {
+    "id": "wx-dove",
+    "de": "die Taube",
+    "plural": "die Tauben",
+    "pos": "noun",
+    "en": "dove",
+    "zh": "鸽子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/dove.svg",
+    "path": "wilson/mulberry/wx-dove.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dove.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈtaʊ̯bə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Taube",
+        "plural": "die Tauben",
+        "en": "dove",
+        "zh": "鸽子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5b411033b6f426c74b5e35ac7d9896ee2fedbf140be71c3f42b185ea9b04f178",
+    "upstreamBlob": "fa411698f6109c87f66529a2bf39816db9e9d960"
+  },
+  {
+    "id": "wx-dragonfly",
+    "de": "die Libelle",
+    "plural": "die Libellen",
+    "pos": "noun",
+    "en": "dragonfly",
+    "zh": "蜻蜓",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/dragonfly.svg",
+    "path": "wilson/mulberry/wx-dragonfly.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dragonfly.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/liˈbɛlə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Libelle",
+        "plural": "die Libellen",
+        "en": "dragonfly",
+        "zh": "蜻蜓",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "9c0da2b073b1330a80cc695ad8190dfe3ae23349473c60375b61107a1ce95d3a",
+    "upstreamBlob": "5c2bfb5ad1bf29a96938129485aedf12a26809fc"
+  },
+  {
+    "id": "wx-duck",
+    "de": "die Ente",
+    "plural": "die Enten",
+    "pos": "noun",
+    "en": "duck",
+    "zh": "鸭子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/duck.svg",
+    "path": "wilson/mulberry/wx-duck.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/duck.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈɛntə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Ente",
+        "plural": "die Enten",
+        "en": "duck",
+        "zh": "鸭子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3f7a34e23f86f3b92e5486d03c35fa8126f77488db41cd5726445ace28664eb4",
+    "upstreamBlob": "42b377ed09f8de6b2607db9802235ef9f4500366"
+  },
+  {
+    "id": "wx-earthworm",
+    "de": "der Regenwurm",
+    "plural": "die Regenwürmer",
+    "pos": "noun",
+    "en": "earthworm",
+    "zh": "蚯蚓",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/earthworm.svg",
+    "path": "wilson/mulberry/wx-earthworm.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/earthworm.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʁeːɡn̩ˌvʊʁm/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Regenwurm",
+        "plural": "die Regenwürmer",
+        "en": "earthworm",
+        "zh": "蚯蚓",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ead2d5790e04fa09e5c41dea0caa871c1fab21b4996d88f296b40806af3745bc",
+    "upstreamBlob": "834063add4b7dbe2209c14e2c80bf30353fcc9b0"
+  },
+  {
+    "id": "wx-earwig",
+    "de": "der Ohrwurm",
+    "plural": "die Ohrwürmer",
+    "pos": "noun",
+    "en": "earwig",
+    "zh": "蠼螋",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/earwig.svg",
+    "path": "wilson/mulberry/wx-earwig.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/earwig.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈoːɐ̯ˌvʊʁm/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Ohrwurm",
+        "plural": "die Ohrwürmer",
+        "en": "earwig",
+        "zh": "蠼螋",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "262e4b81306d77096ea5d0211cf592d43c76a1b115ece945388707d6b3f637f0",
+    "upstreamBlob": "24f687bbe2b19dcd513efc30b0042095d484b0d6"
+  },
+  {
+    "id": "wx-elephant",
+    "de": "der Elefant",
+    "plural": "die Elefanten",
+    "pos": "noun",
+    "en": "elephant",
+    "zh": "大象",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/elephant.svg",
+    "path": "wilson/mulberry/wx-elephant.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/elephant.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/eleˈfant/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Elefant",
+        "plural": "die Elefanten",
+        "en": "elephant",
+        "zh": "大象",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "76f813ceed5f912c08d9d212baf203482ff63e54e99ade082fe43c317cf6aefa",
+    "upstreamBlob": "431c5c609961d4a2bed691f8cfa105a250ea031b"
+  },
+  {
+    "id": "wx-ferret",
+    "de": "das Frettchen",
+    "plural": "die Frettchen",
+    "pos": "noun",
+    "en": "ferret",
+    "zh": "雪貂",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/ferret.svg",
+    "path": "wilson/mulberry/wx-ferret.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ferret.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Fellzeichnung und Körperform grenzen das Frettchen nicht hinreichend von anderen kleinen Mardern ab.",
+      "ipa": "/ˈfʁɛtçən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Frettchen",
+        "plural": "die Frettchen",
+        "en": "ferret",
+        "zh": "雪貂",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-fish",
+    "de": "der Fisch",
+    "plural": "die Fische",
+    "pos": "noun",
+    "en": "fish",
+    "zh": "鱼",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/fish.svg",
+    "path": "wilson/mulberry/wx-fish.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fish.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/fɪʃ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Fisch",
+        "plural": "die Fische",
+        "en": "fish",
+        "zh": "鱼",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "d453074f048b609042bd71df77fffbeb85423cb7faaea0bee22a9d0df5246cb5",
+    "upstreamBlob": "536876587dbde9b9d884eaaf0463956515a4fb0e"
+  },
+  {
+    "id": "wx-fox",
+    "de": "der Fuchs",
+    "plural": "die Füchse",
+    "pos": "noun",
+    "en": "fox",
+    "zh": "狐狸",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/fox.svg",
+    "path": "wilson/mulberry/wx-fox.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fox.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/fʊks/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Fuchs",
+        "plural": "die Füchse",
+        "en": "fox",
+        "zh": "狐狸",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3d619d46ce76ddb12696e24d82a30ca7f251117d4abf30157948fca64b0a27a9",
+    "upstreamBlob": "7ad06679ec39f89dea062788e73bebe7dbb7a7d4"
+  },
+  {
+    "id": "wx-frog",
+    "de": "der Frosch",
+    "plural": "die Frösche",
+    "pos": "noun",
+    "en": "frog",
+    "zh": "青蛙",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/frog.svg",
+    "path": "wilson/mulberry/wx-frog.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/frog.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/fʁɔʃ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Frosch",
+        "plural": "die Frösche",
+        "en": "frog",
+        "zh": "青蛙",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "96bb6dd2c63984ca04d0818493c32c5a0a6e9e846d38441acaef3e3c6c5cb96c",
+    "upstreamBlob": "de60287aa29f28d227f607834c7046d59492a59b"
+  },
+  {
+    "id": "wx-giraffe",
+    "de": "die Giraffe",
+    "plural": "die Giraffen",
+    "pos": "noun",
+    "en": "giraffe",
+    "zh": "长颈鹿",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/giraffe.svg",
+    "path": "wilson/mulberry/wx-giraffe.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/giraffe.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ɡiˈʁafə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Giraffe",
+        "plural": "die Giraffen",
+        "en": "giraffe",
+        "zh": "长颈鹿",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "28b1cbfe26c92cccc318e10de1e954c5793b409fc2d62f783da1dd5762504c55",
+    "upstreamBlob": "e5cf915670b0f2d4d835c1c0ba8808b9ee670b74"
+  },
+  {
+    "id": "wx-goose",
+    "de": "die Gans",
+    "plural": "die Gänse",
+    "pos": "noun",
+    "en": "goose",
+    "zh": "鹅",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/goose.svg",
+    "path": "wilson/mulberry/wx-goose.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/goose.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ɡans/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Gans",
+        "plural": "die Gänse",
+        "en": "goose",
+        "zh": "鹅",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "2e0021114b0552cba47636650e6737f9f4490e0653346fd3a82739acdeb7450f",
+    "upstreamBlob": "073f2deff06b04d4512e286d5a5d492c55384652"
+  },
+  {
+    "id": "wx-gorilla",
+    "de": "der Gorilla",
+    "plural": "die Gorillas",
+    "pos": "noun",
+    "en": "gorilla",
+    "zh": "大猩猩",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/gorilla.svg",
+    "path": "wilson/mulberry/wx-gorilla.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/gorilla.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ɡoˈʁɪla/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Gorilla",
+        "plural": "die Gorillas",
+        "en": "gorilla",
+        "zh": "大猩猩",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b6597c0bbbb3677f186d7a91e6577869a13fd05191fa808969b00c6c24e99a16",
+    "upstreamBlob": "7fab9a454ff71c669ecf711025a7ae70fb3c438f"
+  },
+  {
+    "id": "wx-guinea-pig",
+    "de": "das Meerschweinchen",
+    "plural": "die Meerschweinchen",
+    "pos": "noun",
+    "en": "guinea pig",
+    "zh": "豚鼠",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/guinea_pig.svg",
+    "path": "wilson/mulberry/wx-guinea-pig.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/guinea_pig.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈmeːɐ̯ˌʃvaɪ̯nçən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Meerschweinchen",
+        "plural": "die Meerschweinchen",
+        "en": "guinea pig",
+        "zh": "豚鼠",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "20facbd5391aeab5391f671a000a7df9865dd61ea05c871d38252f13083f36e8",
+    "upstreamBlob": "79d6cfd52ff2030aa4d3d9c11e928e10d4c9be2a"
+  },
+  {
+    "id": "wx-hamster",
+    "de": "der Hamster",
+    "plural": "die Hamster",
+    "pos": "noun",
+    "en": "hamster",
+    "zh": "仓鼠",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/hamster.svg",
+    "path": "wilson/mulberry/wx-hamster.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hamster.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈhamstɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Hamster",
+        "plural": "die Hamster",
+        "en": "hamster",
+        "zh": "仓鼠",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e28e964d737a3e8824a2812bb7f54c2a9a75d3a86b6c568eec064a3a8fea197a",
+    "upstreamBlob": "9cb0119afbf8fb431aea8e9e8e492bc89564d4ef"
+  },
+  {
+    "id": "wx-hare",
+    "de": "der Hase",
+    "plural": "die Hasen",
+    "pos": "noun",
+    "en": "hare",
+    "zh": "野兔",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/hare.svg",
+    "path": "wilson/mulberry/wx-hare.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hare.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈhaːzə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Hase",
+        "plural": "die Hasen",
+        "en": "hare",
+        "zh": "野兔",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "32698712ac7cfd9613fdeefac8c6e26db4b612c96cf0f4d7ddd41815b663bc67",
+    "upstreamBlob": "0bd2ded90e6afdb9e715e8f46f2e83846e57d86e"
+  },
+  {
+    "id": "wx-hedgehog",
+    "de": "der Igel",
+    "plural": "die Igel",
+    "pos": "noun",
+    "en": "hedgehog",
+    "zh": "刺猬",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/hedgehog.svg",
+    "path": "wilson/mulberry/wx-hedgehog.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hedgehog.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈiːɡl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Igel",
+        "plural": "die Igel",
+        "en": "hedgehog",
+        "zh": "刺猬",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "397a15a959d0796b1eb706a4a45889e4583b6998b9f3e86f7a72596222674ef5",
+    "upstreamBlob": "f75b88713c72a66b8295a221488c2bcc43678c84"
+  },
+  {
+    "id": "wx-horse",
+    "de": "das Pferd",
+    "plural": "die Pferde",
+    "pos": "noun",
+    "en": "horse",
+    "zh": "马",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/horse.svg",
+    "path": "wilson/mulberry/wx-horse.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/horse.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/pfeːɐ̯t/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Pferd",
+        "plural": "die Pferde",
+        "en": "horse",
+        "zh": "马",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0c128095157a5927686145d46a6c4b1c0cb3844d307e4cb8a1aca3095e24e235",
+    "upstreamBlob": "5082439eba5cad62cd9b1fcd1631e4e1d807c89f"
+  },
+  {
+    "id": "wx-jellyfish",
+    "de": "die Qualle",
+    "plural": "die Quallen",
+    "pos": "noun",
+    "en": "jellyfish",
+    "zh": "水母",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/jellyfish.svg",
+    "path": "wilson/mulberry/wx-jellyfish.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/jellyfish.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkvalə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Qualle",
+        "plural": "die Quallen",
+        "en": "jellyfish",
+        "zh": "水母",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "9991de3b7f511c2be357d2d92d5abce515cda7ff4bb6f8324701f343b4633e84",
+    "upstreamBlob": "714445bf0bb472261edb46ce0913f3687e87bd45"
+  },
+  {
+    "id": "wx-kangaroo",
+    "de": "das Känguru",
+    "plural": "die Kängurus",
+    "pos": "noun",
+    "en": "kangaroo",
+    "zh": "袋鼠",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/kangaroo.svg",
+    "path": "wilson/mulberry/wx-kangaroo.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/kangaroo.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkɛŋɡuʁu/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Känguru",
+        "plural": "die Kängurus",
+        "en": "kangaroo",
+        "zh": "袋鼠",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a036d4ddc32ee02b5479e97b920f2d24090f46e425080b3fb73d03d2f16b43a2",
+    "upstreamBlob": "eb4b3be05a5d47d7eb7f6dbf94b79d6ab4d3e4e1"
+  },
+  {
+    "id": "wx-koala",
+    "de": "der Koala",
+    "plural": "die Koalas",
+    "pos": "noun",
+    "en": "koala",
+    "zh": "考拉",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/koala.svg",
+    "path": "wilson/mulberry/wx-koala.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/koala.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/koˈaːla/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Koala",
+        "plural": "die Koalas",
+        "en": "koala",
+        "zh": "考拉",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "9a147e7f324c479ec578c5d35b5e3d740a288c7880aff13cb506f61ccf03e873",
+    "upstreamBlob": "b47f5cefb34ac9670f4eb1a1220ca7e6f097ab74"
+  },
+  {
+    "id": "wx-leopard",
+    "de": "der Leopard",
+    "plural": "die Leoparden",
+    "pos": "noun",
+    "en": "leopard",
+    "zh": "豹",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/leopard.svg",
+    "path": "wilson/mulberry/wx-leopard.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/leopard.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/leoˈpaʁt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Leopard",
+        "plural": "die Leoparden",
+        "en": "leopard",
+        "zh": "豹",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1b9309e574548c20a2aa66a0e6319ecfbef1a6896c0e218ba885bb5d4e9af6d4",
+    "upstreamBlob": "9488df0a6d4ac83530e5d46d883df8aa8ab54111"
+  },
+  {
+    "id": "wx-lion",
+    "de": "der Löwe",
+    "plural": "die Löwen",
+    "pos": "noun",
+    "en": "lion",
+    "zh": "狮子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/lion.svg",
+    "path": "wilson/mulberry/wx-lion.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lion.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈløːvə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Löwe",
+        "plural": "die Löwen",
+        "en": "lion",
+        "zh": "狮子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "cef27daee4d47b4ac2d5b0b65daf360015e4079a44684160dffaf64c603c3702",
+    "upstreamBlob": "630b8c1c5967d9e139941190ab482fcd1a26b024"
+  },
+  {
+    "id": "wx-lizard",
+    "de": "die Eidechse",
+    "plural": "die Eidechsen",
+    "pos": "noun",
+    "en": "lizard",
+    "zh": "蜥蜴",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/lizard.svg",
+    "path": "wilson/mulberry/wx-lizard.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lizard.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈaɪ̯dɛksə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Eidechse",
+        "plural": "die Eidechsen",
+        "en": "lizard",
+        "zh": "蜥蜴",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "249a6060c487fc86b0c70fea24af5490a07bb9400d6343475a460b647ca9e5e1",
+    "upstreamBlob": "b98da4c0795a76df9788e33d95a9cd96c04ff156"
+  },
+  {
+    "id": "wx-mole",
+    "de": "der Maulwurf",
+    "plural": "die Maulwürfe",
+    "pos": "noun",
+    "en": "mole",
+    "zh": "鼹鼠",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/mole.svg",
+    "path": "wilson/mulberry/wx-mole.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mole.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Englisches mole bezeichnet hier ein Muttermal, keinen Maulwurf.",
+      "ipa": "/ˈmaʊ̯lˌvʊʁf/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Maulwurf",
+        "plural": "die Maulwürfe",
+        "en": "mole",
+        "zh": "鼹鼠",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-moth",
+    "de": "die Motte",
+    "plural": "die Motten",
+    "pos": "noun",
+    "en": "moth",
+    "zh": "蛾子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/moth.svg",
+    "path": "wilson/mulberry/wx-moth.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/moth.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈmɔtə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Motte",
+        "plural": "die Motten",
+        "en": "moth",
+        "zh": "蛾子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1c128aef53f012af3f47f59a747d446adf32e42290e36cc122d573f5c039670d",
+    "upstreamBlob": "86d2106582fa3159d114219c7c1a8dfc0c8e0b98"
+  },
+  {
+    "id": "wx-ostrich",
+    "de": "der Strauß",
+    "plural": "die Strauße",
+    "pos": "noun",
+    "en": "ostrich",
+    "zh": "鸵鸟",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/ostrich.svg",
+    "path": "wilson/mulberry/wx-ostrich.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ostrich.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃtʁaʊ̯s/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Strauß",
+        "plural": "die Strauße",
+        "en": "ostrich",
+        "zh": "鸵鸟",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3a044195e707c933c0c02d8f974826fc383a369116ecfd0423950714b5095809",
+    "upstreamBlob": "b3945ffb9437b74d0cd57a2f82b9caf58c90dc92"
+  },
+  {
+    "id": "wx-owl",
+    "de": "die Eule",
+    "plural": "die Eulen",
+    "pos": "noun",
+    "en": "owl",
+    "zh": "猫头鹰",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/owl.svg",
+    "path": "wilson/mulberry/wx-owl.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/owl.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈɔʏ̯lə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Eule",
+        "plural": "die Eulen",
+        "en": "owl",
+        "zh": "猫头鹰",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "98d61069cbcf1acc305169c48b630435402f04c7ee565d7b1550053a487d9785",
+    "upstreamBlob": "f0547fefd5fb0f5ec336c2f4d00b6975dc57ebea"
+  },
+  {
+    "id": "wx-panda",
+    "de": "der Panda",
+    "plural": "die Pandas",
+    "pos": "noun",
+    "en": "panda",
+    "zh": "大熊猫",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/panda.svg",
+    "path": "wilson/mulberry/wx-panda.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/panda.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈpanda/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Panda",
+        "plural": "die Pandas",
+        "en": "panda",
+        "zh": "大熊猫",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "422d76900647f1befa3d040a3fbb346ae0b8dfb7821ad44d6f7a0d374dfa9aa5",
+    "upstreamBlob": "4ce1f584e0c6564577dcfd23f013a55363e8a675"
+  },
+  {
+    "id": "wx-parrot",
+    "de": "der Papagei",
+    "plural": "die Papageien",
+    "pos": "noun",
+    "en": "parrot",
+    "zh": "鹦鹉",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/parrot.svg",
+    "path": "wilson/mulberry/wx-parrot.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/parrot.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/papaˈɡaɪ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Papagei",
+        "plural": "die Papageien",
+        "en": "parrot",
+        "zh": "鹦鹉",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "d2d7a95e9855ec5fdf669954e229cffb4e55e16db53199febe746dd5d4ba8319",
+    "upstreamBlob": "c2b471bc5410e10191e115d9f7ce1f562d7dc512"
+  },
+  {
+    "id": "wx-peacock",
+    "de": "der Pfau",
+    "plural": "die Pfauen",
+    "pos": "noun",
+    "en": "peacock",
+    "zh": "孔雀",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/peacock.svg",
+    "path": "wilson/mulberry/wx-peacock.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/peacock.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/pfaʊ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Pfau",
+        "plural": "die Pfauen",
+        "en": "peacock",
+        "zh": "孔雀",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "821bef8dc962ac16462e7d38806751bcdf00756cdbe3f79d83e10ae55a483dc9",
+    "upstreamBlob": "834a3dac157bf3562e6c5eb70bfd4341006f0bf9"
+  },
+  {
+    "id": "wx-pelican",
+    "de": "der Pelikan",
+    "plural": "die Pelikane",
+    "pos": "noun",
+    "en": "pelican",
+    "zh": "鹈鹕",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/pelican.svg",
+    "path": "wilson/mulberry/wx-pelican.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pelican.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈpeːlikaːn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Pelikan",
+        "plural": "die Pelikane",
+        "en": "pelican",
+        "zh": "鹈鹕",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b5b9ab9619cc7c97f8b3ec0890cb11f2984fcf009e7710420e6f2fd5d4e258b4",
+    "upstreamBlob": "b48f314175a56e1a0a6ab0eed98fe9f5ce6c9248"
+  },
+  {
+    "id": "wx-penguin",
+    "de": "der Pinguin",
+    "plural": "die Pinguine",
+    "pos": "noun",
+    "en": "penguin",
+    "zh": "企鹅",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/penguin.svg",
+    "path": "wilson/mulberry/wx-penguin.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/penguin.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈpɪŋɡuiːn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Pinguin",
+        "plural": "die Pinguine",
+        "en": "penguin",
+        "zh": "企鹅",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e585c9e7d7027d90e9707d1c0fc75248edc0f10cb2c823546d211153cfa58b21",
+    "upstreamBlob": "2adf58b6cdc7c0b125749bd913dc8876bed0cd55"
+  },
+  {
+    "id": "wx-piglet",
+    "de": "das Ferkel",
+    "plural": "die Ferkel",
+    "pos": "noun",
+    "en": "piglet",
+    "zh": "小猪",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/piglet.svg",
+    "path": "wilson/mulberry/wx-piglet.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/piglet.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈfɛʁkl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Ferkel",
+        "plural": "die Ferkel",
+        "en": "piglet",
+        "zh": "小猪",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26",
+      "context": {
+        "de": "Gesucht ist der Name für das Jungtier des Schweins.",
+        "en": "Name the young animal of a pig in German.",
+        "zh": "请写出猪的幼崽的德语名称。"
+      }
+    },
+    "svgSha256": "0b8ef49460ffefc40c412a947ec6ca91b552399be1c77a194cc64b6b9c03f836",
+    "upstreamBlob": "267ac5025e25e6b11c7eba227c6c4f90c19b42d5"
+  },
+  {
+    "id": "wx-porcupine",
+    "de": "das Stachelschwein",
+    "plural": "die Stachelschweine",
+    "pos": "noun",
+    "en": "porcupine",
+    "zh": "豪猪",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/porcupine.svg",
+    "path": "wilson/mulberry/wx-porcupine.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/porcupine.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃtaxl̩ˌʃvaɪ̯n/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Stachelschwein",
+        "plural": "die Stachelschweine",
+        "en": "porcupine",
+        "zh": "豪猪",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5dca0c78d51a898780d6c79fa4db1963178cd299cf6c5aacf024853923ce3c19",
+    "upstreamBlob": "d75cae04767312a852354754039db8b76d937025"
+  },
+  {
+    "id": "wx-puffin",
+    "de": "der Papageitaucher",
+    "plural": "die Papageitaucher",
+    "pos": "noun",
+    "en": "puffin",
+    "zh": "海鹦",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/puffin.svg",
+    "path": "wilson/mulberry/wx-puffin.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/puffin.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/papaˈɡaɪ̯ˌtaʊ̯xɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Papageitaucher",
+        "plural": "die Papageitaucher",
+        "en": "puffin",
+        "zh": "海鹦",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "7dbbb7d9a1895f654ea3e5aaeaf3b48ff6bc81b19b1dfa850d0135ad578b2011",
+    "upstreamBlob": "f8d8c56bee13c3d0a19cfd033ce4a7e2ad62073a"
+  },
+  {
+    "id": "wx-quail",
+    "de": "die Wachtel",
+    "plural": "die Wachteln",
+    "pos": "noun",
+    "en": "quail",
+    "zh": "鹌鹑",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/quail.svg",
+    "path": "wilson/mulberry/wx-quail.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/quail.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈvaxtl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Wachtel",
+        "plural": "die Wachteln",
+        "en": "quail",
+        "zh": "鹌鹑",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1bb70acb2707f7bc1af47a6acd034961e780bcd8eefcedf03df8d73b5e537c43",
+    "upstreamBlob": "d9854318beb3d2dab8a0b93f54b09c043123580c"
+  },
+  {
+    "id": "wx-rabbit",
+    "de": "das Kaninchen",
+    "plural": "die Kaninchen",
+    "pos": "noun",
+    "en": "rabbit",
+    "zh": "兔子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/rabbit.svg",
+    "path": "wilson/mulberry/wx-rabbit.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rabbit.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/kaˈniːnçən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Kaninchen",
+        "plural": "die Kaninchen",
+        "en": "rabbit",
+        "zh": "兔子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "da26d87a2aacb4a2105aeb859bdd785434f3f5e5144da1135cd437e6d543a709",
+    "upstreamBlob": "9f899bfa3b45068c535bdb7d33dfabfe5ae67e53"
+  },
+  {
+    "id": "wx-ram",
+    "de": "der Widder",
+    "plural": "die Widder",
+    "pos": "noun",
+    "en": "ram",
+    "zh": "公羊",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/ram.svg",
+    "path": "wilson/mulberry/wx-ram.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ram.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈvɪdɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Widder",
+        "plural": "die Widder",
+        "en": "ram",
+        "zh": "公羊",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a8caebfedfa120501426f295cb2509a8f3b4cb3de907a5f028ff724fc79bc5d6",
+    "upstreamBlob": "5305aac60151e93b0a6d16f84133da5ac911079f"
+  },
+  {
+    "id": "wx-rat",
+    "de": "die Ratte",
+    "plural": "die Ratten",
+    "pos": "noun",
+    "en": "rat",
+    "zh": "老鼠",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/rat.svg",
+    "path": "wilson/mulberry/wx-rat.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rat.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʁatə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Ratte",
+        "plural": "die Ratten",
+        "en": "rat",
+        "zh": "老鼠",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a7b0493c7d00af8be89ccbee5821db59b0f9487ae1bf69be862547685ebc9f57",
+    "upstreamBlob": "519b6fbc5a3545ebe48cc132c1e1ec6f65ad6e24"
+  },
+  {
+    "id": "wx-reindeer",
+    "de": "das Rentier",
+    "plural": "die Rentiere",
+    "pos": "noun",
+    "en": "reindeer",
+    "zh": "驯鹿",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/reindeer.svg",
+    "path": "wilson/mulberry/wx-reindeer.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/reindeer.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Geweih und Gestalt nicht hinreichend vom Hirsch unterschieden.",
+      "ipa": "/ˈʁeːnˌtiːɐ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Rentier",
+        "plural": "die Rentiere",
+        "en": "reindeer",
+        "zh": "驯鹿",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-rhinoceros",
+    "de": "das Nashorn",
+    "plural": "die Nashörner",
+    "pos": "noun",
+    "en": "rhinoceros",
+    "zh": "犀牛",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/rhinoceros.svg",
+    "path": "wilson/mulberry/wx-rhinoceros.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rhinoceros.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈnaːsˌhɔʁn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Nashorn",
+        "plural": "die Nashörner",
+        "en": "rhinoceros",
+        "zh": "犀牛",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a4714d7e3b7808704e9399997476b273ad734628588e2e0be9121ed37c61a7ad",
+    "upstreamBlob": "dcc57482e454b7668329083e8bc5f0f6e952f722"
+  },
+  {
+    "id": "wx-robin",
+    "de": "das Rotkehlchen",
+    "plural": "die Rotkehlchen",
+    "pos": "noun",
+    "en": "robin",
+    "zh": "知更鸟",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/robin.svg",
+    "path": "wilson/mulberry/wx-robin.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/robin.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʁoːtˌkeːlçən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Rotkehlchen",
+        "plural": "die Rotkehlchen",
+        "en": "robin",
+        "zh": "知更鸟",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0f023ba0e966efaccec1c9cf5de92ca5e90157044bb57300c0f4de19e17032b6",
+    "upstreamBlob": "cf329527b8a71967ff3d727a66ef013e12e0a254"
+  },
+  {
+    "id": "wx-seagull",
+    "de": "die Möwe",
+    "plural": "die Möwen",
+    "pos": "noun",
+    "en": "seagull",
+    "zh": "海鸥",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/seagull.svg",
+    "path": "wilson/mulberry/wx-seagull.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seagull.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈmøːvə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Möwe",
+        "plural": "die Möwen",
+        "en": "seagull",
+        "zh": "海鸥",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3c53abafc76d1d28393b1b86fdd7f4111715e4c7f800013b99b7b524a2d14352",
+    "upstreamBlob": "8a2e4d50d4b84e23b329f5129c8502c8690be931"
+  },
+  {
+    "id": "wx-seahorse",
+    "de": "das Seepferdchen",
+    "plural": "die Seepferdchen",
+    "pos": "noun",
+    "en": "seahorse",
+    "zh": "海马",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/seahorse.svg",
+    "path": "wilson/mulberry/wx-seahorse.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seahorse.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈzeːˌpfeːɐ̯tçən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Seepferdchen",
+        "plural": "die Seepferdchen",
+        "en": "seahorse",
+        "zh": "海马",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3a82d8e82cfe78ea7ddd8d3750ade7f680dc4cab77b177644440eb85f42489f4",
+    "upstreamBlob": "eac005babfdeed499e390e16b626729883816774"
+  },
+  {
+    "id": "wx-seal",
+    "de": "die Robbe",
+    "plural": "die Robben",
+    "pos": "noun",
+    "en": "seal",
+    "zh": "海豹",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/seal.svg",
+    "path": "wilson/mulberry/wx-seal.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seal.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʁɔbə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Robbe",
+        "plural": "die Robben",
+        "en": "seal",
+        "zh": "海豹",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "bec5c9246c46033d1a0e297b94052fbe23a1f9bd22d4e9a76d758bf83419e1ba",
+    "upstreamBlob": "f3c25e7cd9ae186e2441da0e0be9e5244d03bc02"
+  },
+  {
+    "id": "wx-sheep",
+    "de": "das Schaf",
+    "plural": "die Schafe",
+    "pos": "noun",
+    "en": "sheep",
+    "zh": "绵羊",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/sheep.svg",
+    "path": "wilson/mulberry/wx-sheep.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sheep.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃaːf/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Schaf",
+        "plural": "die Schafe",
+        "en": "sheep",
+        "zh": "绵羊",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "7b01c0961058e522b6d3b8b1d0be918ddbdcace2a76770f7fae1b31f321c8545",
+    "upstreamBlob": "024e2b6c65f8a373b6a41cf6d1690497889a8d14"
+  },
+  {
+    "id": "wx-shrew",
+    "de": "die Spitzmaus",
+    "plural": "die Spitzmäuse",
+    "pos": "noun",
+    "en": "shrew",
+    "zh": "鼩鼱",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/shrew.svg",
+    "path": "wilson/mulberry/wx-shrew.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/shrew.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃpɪtsˌmaʊ̯s/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Spitzmaus",
+        "plural": "die Spitzmäuse",
+        "en": "shrew",
+        "zh": "鼩鼱",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ac4a0cab329145d9ab7522684cef1ab207f13987d03cad06f6d4c6ab80cc6552",
+    "upstreamBlob": "4f6b3786ea35035de98b9316dce7d8b97341ffc3"
+  },
+  {
+    "id": "wx-skunk",
+    "de": "das Stinktier",
+    "plural": "die Stinktiere",
+    "pos": "noun",
+    "en": "skunk",
+    "zh": "臭鼬",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/skunk.svg",
+    "path": "wilson/mulberry/wx-skunk.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/skunk.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃtɪŋkˌtiːɐ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Stinktier",
+        "plural": "die Stinktiere",
+        "en": "skunk",
+        "zh": "臭鼬",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "c736526e85c6030961ae78abf005e60744671b41d6b03292268cc67a6f479a6e",
+    "upstreamBlob": "24709323d0acdf4b0e34fcc28eb1409cf468fe6c"
+  },
+  {
+    "id": "wx-slug",
+    "de": "die Nacktschnecke",
+    "plural": "die Nacktschnecken",
+    "pos": "noun",
+    "en": "slug",
+    "zh": "蛞蝓",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/slug.svg",
+    "path": "wilson/mulberry/wx-slug.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/slug.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈnaktˌʃnɛkə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Nacktschnecke",
+        "plural": "die Nacktschnecken",
+        "en": "slug",
+        "zh": "蛞蝓",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "d702b407496da6ee590c4156e7ea0f76eb8f166ea6c4b81bd8a1ccae87cfbf32",
+    "upstreamBlob": "6eea709b6a6abca6b6f84e272d927c0edc98c827"
+  },
+  {
+    "id": "wx-snail",
+    "de": "die Schnecke",
+    "plural": "die Schnecken",
+    "pos": "noun",
+    "en": "snail",
+    "zh": "蜗牛",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/snail.svg",
+    "path": "wilson/mulberry/wx-snail.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/snail.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃnɛkə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Schnecke",
+        "plural": "die Schnecken",
+        "en": "snail",
+        "zh": "蜗牛",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "47b3a8fa18b428f02a88afd7abbba7cfcd4dd9728dbf7a826c64b64aa3b73650",
+    "upstreamBlob": "c4b0739bf206d5a2f59670ee12dbc2e2cc9f9564"
+  },
+  {
+    "id": "wx-snake",
+    "de": "die Schlange",
+    "plural": "die Schlangen",
+    "pos": "noun",
+    "en": "snake",
+    "zh": "蛇",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/snake.svg",
+    "path": "wilson/mulberry/wx-snake.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/snake.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃlaŋə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Schlange",
+        "plural": "die Schlangen",
+        "en": "snake",
+        "zh": "蛇",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f072d6b1df8b77c2726de6865ae10b51cfa9d07d281e127067dc7e9a38338ab9",
+    "upstreamBlob": "e9bcee065540a747883db2736fa1e0fea3282419"
+  },
+  {
+    "id": "wx-spider",
+    "de": "die Spinne",
+    "plural": "die Spinnen",
+    "pos": "noun",
+    "en": "spider",
+    "zh": "蜘蛛",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/spider.svg",
+    "path": "wilson/mulberry/wx-spider.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spider.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃpɪnə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Spinne",
+        "plural": "die Spinnen",
+        "en": "spider",
+        "zh": "蜘蛛",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b10f5b681cd79a6318648a15637054f6a51c424f5ea45f306c749cc89a37b071",
+    "upstreamBlob": "778303cf5d4f786ca28ba75ebb9e53d96f39c9a1"
+  },
+  {
+    "id": "wx-squirrel-1a",
+    "de": "das Eichhörnchen",
+    "plural": "die Eichhörnchen",
+    "pos": "noun",
+    "en": "squirrel",
+    "zh": "松鼠",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/squirrel_1a.svg",
+    "path": "wilson/mulberry/wx-squirrel-1a.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/squirrel_1a.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈaɪ̯çˌhœʁnçən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Eichhörnchen",
+        "plural": "die Eichhörnchen",
+        "en": "squirrel",
+        "zh": "松鼠",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b7c4f2481aa50ceacaf848ce895bf31e15235aa7a8b5e3c57c3e98070f295535",
+    "upstreamBlob": "0d53560344609323fb5da211032517e80fcae426"
+  },
+  {
+    "id": "wx-stag",
+    "de": "der Hirsch",
+    "plural": "die Hirsche",
+    "pos": "noun",
+    "en": "stag",
+    "zh": "雄鹿",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/stag.svg",
+    "path": "wilson/mulberry/wx-stag.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/stag.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/hɪʁʃ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Hirsch",
+        "plural": "die Hirsche",
+        "en": "stag",
+        "zh": "雄鹿",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e24fdd66c057b9ff238e3bb1470c95fa22a010baa560847db6d3f636bae5579a",
+    "upstreamBlob": "8d8cf0b3b754ecabbc9e25d33dee6569dcf7bb9e"
+  },
+  {
+    "id": "wx-starfish",
+    "de": "der Seestern",
+    "plural": "die Seesterne",
+    "pos": "noun",
+    "en": "starfish",
+    "zh": "海星",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/starfish.svg",
+    "path": "wilson/mulberry/wx-starfish.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/starfish.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈzeːˌʃtɛʁn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Seestern",
+        "plural": "die Seesterne",
+        "en": "starfish",
+        "zh": "海星",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f9c9ef6b820e01fb2afbde93c469db7314c5227ca42bba0a27858118056d21c2",
+    "upstreamBlob": "f1ea2ef2a358d27243b6aa2fff5999aa69036492"
+  },
+  {
+    "id": "wx-stoat",
+    "de": "das Hermelin",
+    "plural": "die Hermeline",
+    "pos": "noun",
+    "en": "stoat",
+    "zh": "白鼬",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/stoat.svg",
+    "path": "wilson/mulberry/wx-stoat.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/stoat.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈhɛʁməliːn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Hermelin",
+        "plural": "die Hermeline",
+        "en": "stoat",
+        "zh": "白鼬",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ecbe5504d9a5c525037a2b001e3638674396c56984502385d2e30589ff8cefae",
+    "upstreamBlob": "20f431fe440d2ced1d3521fc829da9e6a9696c9e"
+  },
+  {
+    "id": "wx-swan",
+    "de": "der Schwan",
+    "plural": "die Schwäne",
+    "pos": "noun",
+    "en": "swan",
+    "zh": "天鹅",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/swan.svg",
+    "path": "wilson/mulberry/wx-swan.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/swan.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃvaːn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Schwan",
+        "plural": "die Schwäne",
+        "en": "swan",
+        "zh": "天鹅",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "2613269f8fb60126e839f5569c7e155d307b23356e9811d7479e6b679e6082a5",
+    "upstreamBlob": "0e2052411070cca02148391ad462c0893b2e5b0c"
+  },
+  {
+    "id": "wx-tiger",
+    "de": "der Tiger",
+    "plural": "die Tiger",
+    "pos": "noun",
+    "en": "tiger",
+    "zh": "老虎",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/tiger.svg",
+    "path": "wilson/mulberry/wx-tiger.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tiger.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈtiːɡɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Tiger",
+        "plural": "die Tiger",
+        "en": "tiger",
+        "zh": "老虎",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1e6c094b21749de42a10d91f6f56ba3797fdb76adcc3ff9ae0cfd6689e67a997",
+    "upstreamBlob": "c61d71d8b70166efbc32279c4eb09f4ae0bc581f"
+  },
+  {
+    "id": "wx-toad",
+    "de": "die Kröte",
+    "plural": "die Kröten",
+    "pos": "noun",
+    "en": "toad",
+    "zh": "蟾蜍",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/toad.svg",
+    "path": "wilson/mulberry/wx-toad.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/toad.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkʁøːtə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Kröte",
+        "plural": "die Kröten",
+        "en": "toad",
+        "zh": "蟾蜍",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "fd333c285ce943d0ce536d70ecf40b71eb67ae5a70ebb6c83bee786cdae91a08",
+    "upstreamBlob": "3ab3b22065ab7e3b38f42d4410151da29e007469"
+  },
+  {
+    "id": "wx-tortoise",
+    "de": "die Landschildkröte",
+    "plural": "die Landschildkröten",
+    "pos": "noun",
+    "en": "tortoise",
+    "zh": "陆龟",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/tortoise.svg",
+    "path": "wilson/mulberry/wx-tortoise.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tortoise.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈlantʃɪltˌkʁøːtə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Landschildkröte",
+        "plural": "die Landschildkröten",
+        "en": "tortoise",
+        "zh": "陆龟",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "fe1d8fed386f9a5aff466ef398911e348054c435312259accb29c5f3892bbe2f",
+    "upstreamBlob": "42dc36546a3054487a1cacb3d4455270d99624db"
+  },
+  {
+    "id": "wx-turtle",
+    "de": "die Meeresschildkröte",
+    "plural": "die Meeresschildkröten",
+    "pos": "noun",
+    "en": "turtle",
+    "zh": "海龟",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/turtle.svg",
+    "path": "wilson/mulberry/wx-turtle.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/turtle.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈmeːʁəsʃɪltˌkʁøːtə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Meeresschildkröte",
+        "plural": "die Meeresschildkröten",
+        "en": "turtle",
+        "zh": "海龟",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "faad1a6f76d3a18e21de59590fdb5b5ada651c6568af6088c11b3627d6e0534e",
+    "upstreamBlob": "578d0c880d3a42650303d277b861efb1ef8912d0"
+  },
+  {
+    "id": "wx-vulture",
+    "de": "der Geier",
+    "plural": "die Geier",
+    "pos": "noun",
+    "en": "vulture",
+    "zh": "秃鹫",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/vulture.svg",
+    "path": "wilson/mulberry/wx-vulture.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/vulture.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈɡaɪ̯ɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Geier",
+        "plural": "die Geier",
+        "en": "vulture",
+        "zh": "秃鹫",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "02e0b63730229692f9518b3926a272d9b5e2bbdb974fb3c5a3b2ac5beb9066b2",
+    "upstreamBlob": "e8540490ee052298214a2d2f03dfa1fa0dbceeca"
+  },
+  {
+    "id": "wx-walrus",
+    "de": "das Walross",
+    "plural": "die Walrosse",
+    "pos": "noun",
+    "en": "walrus",
+    "zh": "海象",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/walrus.svg",
+    "path": "wilson/mulberry/wx-walrus.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/walrus.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈvalˌʁɔs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Walross",
+        "plural": "die Walrosse",
+        "en": "walrus",
+        "zh": "海象",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e2ab7b45b5c03a1d4eba071a1b7d2c5f958165a8e9c4b60213ed05268a1bd885",
+    "upstreamBlob": "0f3beed8b42d57960d7553b733a5a60a7a7d03d3"
+  },
+  {
+    "id": "wx-wasp",
+    "de": "die Wespe",
+    "plural": "die Wespen",
+    "pos": "noun",
+    "en": "wasp",
+    "zh": "黄蜂",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/wasp.svg",
+    "path": "wilson/mulberry/wx-wasp.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wasp.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈvɛspə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Wespe",
+        "plural": "die Wespen",
+        "en": "wasp",
+        "zh": "黄蜂",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "13f3b1db6017928e288ea61c0e665711836fc34ca03e143a4074112c46bff8d4",
+    "upstreamBlob": "872faddadc17633aaa56d42fcc4787c0ed3541c9"
+  },
+  {
+    "id": "wx-wolf",
+    "de": "der Wolf",
+    "plural": "die Wölfe",
+    "pos": "noun",
+    "en": "wolf",
+    "zh": "狼",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/wolf.svg",
+    "path": "wilson/mulberry/wx-wolf.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wolf.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/vɔlf/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Wolf",
+        "plural": "die Wölfe",
+        "en": "wolf",
+        "zh": "狼",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "eda9d762c9058464479dd98ac7937c208a2195eefc0fb3a4bedcec461e7e0816",
+    "upstreamBlob": "70c8ba71d89ffa79bf2eb4f8d82f42a9b1321151"
+  },
+  {
+    "id": "wx-zebra",
+    "de": "das Zebra",
+    "plural": "die Zebras",
+    "pos": "noun",
+    "en": "zebra",
+    "zh": "斑马",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/zebra.svg",
+    "path": "wilson/mulberry/wx-zebra.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/zebra.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈtseːbʁa/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Zebra",
+        "plural": "die Zebras",
+        "en": "zebra",
+        "zh": "斑马",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "540b68ac65a57a60691abeec5dee5fb13ce8411c4934caa7a216185f909af3e9",
+    "upstreamBlob": "0f87b8970024de8cf146bbee38058937a8fc26af"
+  },
+  {
+    "id": "wx-almond",
+    "de": "die Mandel",
+    "plural": "die Mandeln",
+    "pos": "noun",
+    "en": "almond",
+    "zh": "杏仁",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/almond.svg",
+    "path": "wilson/mulberry/wx-almond.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/almond.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈmandl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Mandel",
+        "plural": "die Mandeln",
+        "en": "almond",
+        "zh": "杏仁",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "59a437fad31113c31cde1041c7a2fb1abe09e55255dd41c095148d1209dc507e",
+    "upstreamBlob": "8224f67948a069fbbf29b16a51a37ee2e8416ee2"
+  },
+  {
+    "id": "wx-artichoke",
+    "de": "die Artischocke",
+    "plural": "die Artischocken",
+    "pos": "noun",
+    "en": "artichoke",
+    "zh": "洋蓟",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/artichoke.svg",
+    "path": "wilson/mulberry/wx-artichoke.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/artichoke.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/aʁtiˈʃɔkə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Artischocke",
+        "plural": "die Artischocken",
+        "en": "artichoke",
+        "zh": "洋蓟",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "6d9b4faaea9904ebb8b3d4469f3c021d6ebc05e98281e2595ea1554082390eab",
+    "upstreamBlob": "a8376eb407f42be71d27d2a33999dccdce052665"
+  },
+  {
+    "id": "wx-asparagus",
+    "de": "der Spargel",
+    "plural": "—",
+    "pos": "noun",
+    "en": "asparagus",
+    "zh": "芦笋",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/asparagus.svg",
+    "path": "wilson/mulberry/wx-asparagus.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/asparagus.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃpaʁɡl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Spargel",
+        "plural": "—",
+        "en": "asparagus",
+        "zh": "芦笋",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b28a8e50cb20b857cb9fab21b2094cdb970363cd3e0c2dfa394fc4eb1efbb0e7",
+    "upstreamBlob": "6589a677d97df22da90a58665493ae9cfd480b4a"
+  },
+  {
+    "id": "wx-avocado",
+    "de": "die Avocado",
+    "plural": "die Avocados",
+    "pos": "noun",
+    "en": "avocado",
+    "zh": "牛油果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/avocado.svg",
+    "path": "wilson/mulberry/wx-avocado.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/avocado.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/avoˈkaːdo/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Avocado",
+        "plural": "die Avocados",
+        "en": "avocado",
+        "zh": "牛油果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1782f4c2c90b9774ff97ed2ac75fa5f0a7d29eb16fc139a9a3962d3ac96cb0e0",
+    "upstreamBlob": "a986ed4449d61b81f17de331f79cd2558d63573a"
+  },
+  {
+    "id": "wx-bacon",
+    "de": "der Speck",
+    "plural": "—",
+    "pos": "noun",
+    "en": "bacon",
+    "zh": "培根",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/bacon.svg",
+    "path": "wilson/mulberry/wx-bacon.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bacon.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃpɛk/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Speck",
+        "plural": "—",
+        "en": "bacon",
+        "zh": "培根",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "cf509120a82ee503fcfdb59e3920a69a786769bb8adcd5464adf8e5f42f8e1fd",
+    "upstreamBlob": "b581c973df7d2825fbff87470a44e00e2ed3c828"
+  },
+  {
+    "id": "wx-baked-beans",
+    "de": "die Baked Beans",
+    "plural": "die Baked Beans",
+    "pos": "plural",
+    "en": "baked beans",
+    "zh": "茄汁焗豆",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/baked_beans.svg",
+    "path": "wilson/mulberry/wx-baked-beans.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/baked_beans.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Dose mit Bohnen zeigt keine eindeutige Tomatensauce; spezifisches Gericht nicht sicher erkennbar.",
+      "ipa": "/ˈbeɪ̯kt ˈbiːnz/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Baked Beans",
+        "plural": "die Baked Beans",
+        "en": "baked beans",
+        "zh": "茄汁焗豆",
+        "cat": "food",
+        "pos": "plural"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-beansprouts",
+    "de": "die Bohnensprosse",
+    "plural": "die Bohnensprossen",
+    "pos": "noun",
+    "en": "bean sprout",
+    "zh": "豆芽",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/beansprouts.svg",
+    "path": "wilson/mulberry/wx-beansprouts.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/beansprouts.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈboːnənˌʃpʁɔsə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Bohnensprosse",
+        "plural": "die Bohnensprossen",
+        "en": "bean sprout",
+        "zh": "豆芽",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "4d623dba6b36247ddf6ae9a1b5fcf480a0ecf77a8e525738334033e465062979",
+    "upstreamBlob": "64d371cca129eeedf6e292eac50f3398fd9d749e"
+  },
+  {
+    "id": "wx-biscuit-chocolate-chip",
+    "de": "der Schokokeks",
+    "plural": "die Schokokekse",
+    "pos": "noun",
+    "en": "chocolate chip cookie",
+    "zh": "巧克力曲奇",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/biscuit_chocolate_chip.svg",
+    "path": "wilson/mulberry/wx-biscuit-chocolate-chip.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/biscuit_chocolate_chip.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃoːkoˌkeːks/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Schokokeks",
+        "plural": "die Schokokekse",
+        "en": "chocolate chip cookie",
+        "zh": "巧克力曲奇",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "dca7c28201c074a95f7b1237f2a976feb872ce42f16717ad512552d691429859",
+    "upstreamBlob": "7bd553756c3279e9ee71fd8517ae509b496cab27"
+  },
+  {
+    "id": "wx-blackcurrants",
+    "de": "die schwarze Johannisbeere",
+    "plural": "die schwarzen Johannisbeeren",
+    "pos": "noun",
+    "en": "blackcurrant",
+    "zh": "黑加仑",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/blackcurrants.svg",
+    "path": "wilson/mulberry/wx-blackcurrants.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/blackcurrants.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃvaʁtsə joˈhanɪsˌbeːʁə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die schwarze Johannisbeere",
+        "plural": "die schwarzen Johannisbeeren",
+        "en": "blackcurrant",
+        "zh": "黑加仑",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "8a90338ee13f3fc57fd967e87982479609ebf166a1f8874d4385389d33aa7a79",
+    "upstreamBlob": "ecc913af4a0cfa2b92ba5934cdf04152efbf5884"
+  },
+  {
+    "id": "wx-brazil-nut",
+    "de": "die Paranuss",
+    "plural": "die Paranüsse",
+    "pos": "noun",
+    "en": "Brazil nut",
+    "zh": "巴西坚果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/brazil_nut.svg",
+    "path": "wilson/mulberry/wx-brazil-nut.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/brazil_nut.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Rundliche Nusszeichnung ist als Paranuss nicht ausreichend charakteristisch; Ersatzmotiv nötig.",
+      "ipa": "/ˈpaːʁaˌnʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Paranuss",
+        "plural": "die Paranüsse",
+        "en": "Brazil nut",
+        "zh": "巴西坚果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-bread-crumbs",
+    "de": "die Semmelbrösel",
+    "plural": "die Semmelbrösel",
+    "pos": "plural",
+    "en": "breadcrumbs",
+    "zh": "面包屑",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/bread_crumbs.svg",
+    "path": "wilson/mulberry/wx-bread-crumbs.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bread_crumbs.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Brot mit einzelnen Krümeln statt der feinen Semmelbrösel.",
+      "ipa": "/ˈzɛml̩ˌbʁøːzl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Semmelbrösel",
+        "plural": "die Semmelbrösel",
+        "en": "breadcrumbs",
+        "zh": "面包屑",
+        "cat": "food",
+        "pos": "plural"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-broad-beans",
+    "de": "die dicke Bohne",
+    "plural": "die dicken Bohnen",
+    "pos": "noun",
+    "en": "broad bean",
+    "zh": "蚕豆",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/broad_beans.svg",
+    "path": "wilson/mulberry/wx-broad-beans.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/broad_beans.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈdɪkə ˈboːnə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die dicke Bohne",
+        "plural": "die dicken Bohnen",
+        "en": "broad bean",
+        "zh": "蚕豆",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "9d746331dc8e189fe18b5e2a0b3d26c8ac3c2287e81c4b8675b3a2095e4262b6",
+    "upstreamBlob": "67e3eb6f358b1754c335111666d93c91b5b123d6"
+  },
+  {
+    "id": "v900",
+    "de": "der Rosenkohl",
+    "plural": "—",
+    "pos": "noun",
+    "en": "Brussels sprouts",
+    "zh": "球芽甘蓝",
+    "pinyin": "bàozǐ gānlán",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/brussel_sprouts.svg",
+    "path": "wilson/mulberry/v900.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/brussel_sprouts.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʁoːzn̩ˌkoːl/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Rosenkohl",
+        "plural": "—",
+        "en": "Brussels sprouts",
+        "zh": "球芽甘蓝",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a71439e0b2510d9450bbe39edcebe531c0ed4fc403ff459ba1352ed2b907a605",
+    "upstreamBlob": "9ee571e9364a0f506291e01ae1edeb3ae63c4ce5"
+  },
+  {
+    "id": "wx-butternut-squash",
+    "de": "der Butternusskürbis",
+    "plural": "die Butternusskürbisse",
+    "pos": "noun",
+    "en": "butternut squash",
+    "zh": "奶油南瓜",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/butternut_squash.svg",
+    "path": "wilson/mulberry/wx-butternut-squash.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/butternut_squash.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈbʊtɐnʊsˌkʏʁbɪs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Butternusskürbis",
+        "plural": "die Butternusskürbisse",
+        "en": "butternut squash",
+        "zh": "奶油南瓜",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f193f2c6d1ed1d46cedd89811d63f853fa05e1ada18fe02c83048160fa96e948",
+    "upstreamBlob": "21368a1c3ca5f21295d513af431e5a441bc0a795"
+  },
+  {
+    "id": "wx-cabbage",
+    "de": "der Kohl",
+    "plural": "—",
+    "pos": "noun",
+    "en": "cabbage",
+    "zh": "卷心菜",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/cabbage.svg",
+    "path": "wilson/mulberry/wx-cabbage.svg",
+    "active": false,
+    "status": "approved-alternative",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cabbage.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Nicht zusätzlich gezählt: gleicher Begriff oder identisches Bild wie v1308. Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/koːl/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Kohl",
+        "plural": "—",
+        "en": "cabbage",
+        "zh": "卷心菜",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "duplicateOf": "v1308"
+  },
+  {
+    "id": "wx-cake",
+    "de": "der Kuchen",
+    "plural": "die Kuchen",
+    "pos": "noun",
+    "en": "cake",
+    "zh": "蛋糕",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/cake.svg",
+    "path": "wilson/mulberry/wx-cake.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cake.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkuːxn̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Kuchen",
+        "plural": "die Kuchen",
+        "en": "cake",
+        "zh": "蛋糕",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1323db3a71c24f055a8d448018c568adc370abb813ee5ef2aecb654284277708",
+    "upstreamBlob": "c64ff415b198dacf7590012230ba9e665afb8fc1"
+  },
+  {
+    "id": "wx-candy-floss",
+    "de": "die Zuckerwatte",
+    "plural": "—",
+    "pos": "noun",
+    "en": "candy floss",
+    "zh": "棉花糖",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/candy_floss.svg",
+    "path": "wilson/mulberry/wx-candy-floss.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/candy_floss.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈtsʊkɐˌvatə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Zuckerwatte",
+        "plural": "—",
+        "en": "candy floss",
+        "zh": "棉花糖",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b55daab23f9061b615ceb5877369edaadb31501d938fb6a39324d704147d3dac",
+    "upstreamBlob": "afe84580a73411f6697252f787bbe82acac94ae5"
+  },
+  {
+    "id": "wx-cashew",
+    "de": "die Cashewnuss",
+    "plural": "die Cashewnüsse",
+    "pos": "noun",
+    "en": "cashew",
+    "zh": "腰果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/cashew.svg",
+    "path": "wilson/mulberry/wx-cashew.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cashew.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkɛʃuˌnʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Cashewnuss",
+        "plural": "die Cashewnüsse",
+        "en": "cashew",
+        "zh": "腰果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e983c42e37c8f533bbf03958bf72043db8db23834da0c5b91a211fe77c7240b3",
+    "upstreamBlob": "7405b8b81e393f748d73f2915b28556193249fea"
+  },
+  {
+    "id": "wx-celeriac",
+    "de": "der Knollensellerie",
+    "plural": "—",
+    "pos": "noun",
+    "en": "celeriac",
+    "zh": "根芹菜",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/celeriac.svg",
+    "path": "wilson/mulberry/wx-celeriac.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/celeriac.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈknɔln̩zɛləˌʁiː/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Knollensellerie",
+        "plural": "—",
+        "en": "celeriac",
+        "zh": "根芹菜",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "4595b86421f04ce995fab3a90bc49c9ae5e8427f99caf8e86f41dd30a5bb18bf",
+    "upstreamBlob": "016a59d42e4a25fb7f9780e24fa6c506af79e13b"
+  },
+  {
+    "id": "wx-celery",
+    "de": "der Staudensellerie",
+    "plural": "—",
+    "pos": "noun",
+    "en": "celery",
+    "zh": "西芹",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/celery.svg",
+    "path": "wilson/mulberry/wx-celery.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/celery.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃtaʊ̯dn̩zɛləˌʁiː/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Staudensellerie",
+        "plural": "—",
+        "en": "celery",
+        "zh": "西芹",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "525f36ec64b05890a1de537717ecc6061265bb621aaff688fb2730702ec6baf2",
+    "upstreamBlob": "c34542e0f470474b992a8db1dd6813aa694cf9f1"
+  },
+  {
+    "id": "wx-chestnuts",
+    "de": "die Esskastanie",
+    "plural": "die Esskastanien",
+    "pos": "noun",
+    "en": "sweet chestnut",
+    "zh": "栗子",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/chestnuts.svg",
+    "path": "wilson/mulberry/wx-chestnuts.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chestnuts.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈɛsˌkastaːni̯ə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Esskastanie",
+        "plural": "die Esskastanien",
+        "en": "sweet chestnut",
+        "zh": "栗子",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "62f19b3497b9f72853470dad51755883ac930a834288bbc6ccee6090f434c745",
+    "upstreamBlob": "67a89e2a396f1c868bb24add9388ac53f42fbca8"
+  },
+  {
+    "id": "wx-chicken-breast",
+    "de": "die Hähnchenbrust",
+    "plural": "die Hähnchenbrüste",
+    "pos": "noun",
+    "en": "chicken breast",
+    "zh": "鸡胸肉",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/chicken_breast.svg",
+    "path": "wilson/mulberry/wx-chicken-breast.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chicken_breast.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈhɛːnçənˌbʁʊst/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Hähnchenbrust",
+        "plural": "die Hähnchenbrüste",
+        "en": "chicken breast",
+        "zh": "鸡胸肉",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "84f2e2bd1c43b425b965535315fff2f7f209ccd8d9875ea7726dcfad074171e4",
+    "upstreamBlob": "d60c03b5321daa34a1f83d35fcc51656c41a033d"
+  },
+  {
+    "id": "wx-chicken-leg",
+    "de": "die Hähnchenkeule",
+    "plural": "die Hähnchenkeulen",
+    "pos": "noun",
+    "en": "chicken leg",
+    "zh": "鸡腿",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/chicken_leg.svg",
+    "path": "wilson/mulberry/wx-chicken-leg.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chicken_leg.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈhɛːnçənˌkɔʏ̯lə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Hähnchenkeule",
+        "plural": "die Hähnchenkeulen",
+        "en": "chicken leg",
+        "zh": "鸡腿",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "4fd555ea258a79b728fc441a26fac5e09652fa78bb7029f71a978aad05d904ea",
+    "upstreamBlob": "150f055c41b2fc16ad317aafce3e1f889761984b"
+  },
+  {
+    "id": "wx-chicken-nuggets",
+    "de": "das Chicken-Nugget",
+    "plural": "die Chicken-Nuggets",
+    "pos": "noun",
+    "en": "chicken nugget",
+    "zh": "鸡块",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/chicken_nuggets.svg",
+    "path": "wilson/mulberry/wx-chicken-nuggets.svg",
+    "active": false,
+    "status": "approved-alternative",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chicken_nuggets.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Nicht zusätzlich gezählt: gleicher Begriff oder identisches Bild wie v789. Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈtʃɪkn̩ ˈnaɡɪt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Chicken-Nugget",
+        "plural": "die Chicken-Nuggets",
+        "en": "chicken nugget",
+        "zh": "鸡块",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "duplicateOf": "v789"
+  },
+  {
+    "id": "wx-chinese-cabbage",
+    "de": "der Pak Choi",
+    "plural": "—",
+    "pos": "noun",
+    "en": "pak choi; bok choy",
+    "zh": "小白菜",
+    "pinyin": "xiǎobáicài",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/chinese_cabbage.svg",
+    "path": "wilson/mulberry/wx-chinese-cabbage.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chinese_cabbage.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Weiße Blattstiele mit dunkelgrünen Blättern passen zu Pak Choi, nicht zum länglichen geschlossenen Chinakohl; DE/EN/ZH korrigiert.",
+      "ipa": "/pak ˈtʃɔɪ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Pak Choi",
+        "plural": "—",
+        "en": "pak choi; bok choy",
+        "zh": "小白菜",
+        "cat": "food",
+        "pos": "noun",
+        "pinyin": "xiǎobáicài"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "800ae8210a0ac6082db767120c1b481e5714de463565906724470b656e8de091",
+    "upstreamBlob": "d5a6a5cc4efd0c2e2eacd29a19320faaf8473e10"
+  },
+  {
+    "id": "wx-chocolate",
+    "de": "die Schokolade",
+    "plural": "die Schokoladen",
+    "pos": "noun",
+    "en": "chocolate",
+    "zh": "巧克力",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/chocolate.svg",
+    "path": "wilson/mulberry/wx-chocolate.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chocolate.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃokoˈlaːdə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Schokolade",
+        "plural": "die Schokoladen",
+        "en": "chocolate",
+        "zh": "巧克力",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0d1e4fb355fd82ecd12054b59df383f047e3e7c117d3e88178a8495ea04a447a",
+    "upstreamBlob": "4c56524f5d463846b0d2fafe1cbbefc8bba38478"
+  },
+  {
+    "id": "wx-coconut",
+    "de": "die Kokosnuss",
+    "plural": "die Kokosnüsse",
+    "pos": "noun",
+    "en": "coconut",
+    "zh": "椰子",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/coconut.svg",
+    "path": "wilson/mulberry/wx-coconut.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/coconut.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkoːkɔsˌnʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Kokosnuss",
+        "plural": "die Kokosnüsse",
+        "en": "coconut",
+        "zh": "椰子",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e35951f534de014ab4ffc651f1672a7db26d664194ec415f0e3fe820a1a0b81b",
+    "upstreamBlob": "571dc8b57dd20303800a551b3be465581e543aaa"
+  },
+  {
+    "id": "wx-cornflakes",
+    "de": "die Cornflakes",
+    "plural": "die Cornflakes",
+    "pos": "plural",
+    "en": "cornflakes",
+    "zh": "玉米片",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/cornflakes.svg",
+    "path": "wilson/mulberry/wx-cornflakes.svg",
+    "active": false,
+    "status": "approved-alternative",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cornflakes.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Gleiches Motiv wird unter bestehender Wort-ID v363 verwendet; nicht als zusätzliche Karte gezählt.",
+      "ipa": "/ˈkɔːɐ̯nfleɪ̯ks/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Cornflakes",
+        "plural": "die Cornflakes",
+        "en": "cornflakes",
+        "zh": "玉米片",
+        "cat": "food",
+        "pos": "plural"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "duplicateOf": "v363"
+  },
+  {
+    "id": "wx-cranberries",
+    "de": "die Cranberry",
+    "plural": "die Cranberrys",
+    "pos": "noun",
+    "en": "cranberries",
+    "zh": "蔓越莓",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/cranberries.svg",
+    "path": "wilson/mulberry/wx-cranberries.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cranberries.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Rote Beeren ohne weitere Merkmale sind als Cranberry nicht eindeutig.",
+      "ipa": "/ˈkʁɛnbɛʁi/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Cranberry",
+        "plural": "die Cranberrys",
+        "en": "cranberries",
+        "zh": "蔓越莓",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-crisp-bread",
+    "de": "das Knäckebrot",
+    "plural": "die Knäckebrote",
+    "pos": "noun",
+    "en": "crisp bread",
+    "zh": "脆面包",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/crisp_bread.svg",
+    "path": "wilson/mulberry/wx-crisp-bread.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/crisp_bread.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈknɛkəˌbʁoːt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Knäckebrot",
+        "plural": "die Knäckebrote",
+        "en": "crisp bread",
+        "zh": "脆面包",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "58a6f6c81e9f6cf73483cb0089950d82588f0dfc010cccfdd38565680b2c52b8",
+    "upstreamBlob": "ce58eeed91efbff68339d065e20334e39f41c73d"
+  },
+  {
+    "id": "wx-crisps",
+    "de": "der Kartoffelchip",
+    "plural": "die Kartoffelchips",
+    "pos": "noun",
+    "en": "potato chip",
+    "zh": "薯片",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/crisps.svg",
+    "path": "wilson/mulberry/wx-crisps.svg",
+    "active": false,
+    "status": "approved-alternative",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/crisps.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Gleiches Motiv wird unter bestehender Wort-ID v177 verwendet; nicht als zusätzliche Karte gezählt.",
+      "ipa": "/kaʁˈtɔfl̩ˌtʃɪp/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Kartoffelchip",
+        "plural": "die Kartoffelchips",
+        "en": "potato chip",
+        "zh": "薯片",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "duplicateOf": "v177"
+  },
+  {
+    "id": "wx-cucumber",
+    "de": "die Gurke",
+    "plural": "die Gurken",
+    "pos": "noun",
+    "en": "cucumber",
+    "zh": "黄瓜",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/cucumber.svg",
+    "path": "wilson/mulberry/wx-cucumber.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cucumber.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈɡʊʁkə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Gurke",
+        "plural": "die Gurken",
+        "en": "cucumber",
+        "zh": "黄瓜",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f3d85f50ed89542839e8f5b44e8adcae6e9a3e3e32ce4a8267f72259de067606",
+    "upstreamBlob": "b19850e26bbe0854e2d7c1f90b70eec497d5ff93"
+  },
+  {
+    "id": "wx-currants",
+    "de": "die Korinthe",
+    "plural": "die Korinthen",
+    "pos": "noun",
+    "en": "dried currant",
+    "zh": "小葡萄干",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/currants.svg",
+    "path": "wilson/mulberry/wx-currants.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/currants.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Korinthen nicht sicher von den separat gezeigten Rosinen unterscheidbar.",
+      "ipa": "/koˈʁɪntə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Korinthe",
+        "plural": "die Korinthen",
+        "en": "dried currant",
+        "zh": "小葡萄干",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-dates",
+    "de": "die Dattel",
+    "plural": "die Datteln",
+    "pos": "noun",
+    "en": "date (fruit)",
+    "zh": "椰枣",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/dates.svg",
+    "path": "wilson/mulberry/wx-dates.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dates.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈdatl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Dattel",
+        "plural": "die Datteln",
+        "en": "date (fruit)",
+        "zh": "椰枣",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "51ec9b830c827c0bf3160d67a280161113a2792f204f04854a895c0e6b7b42cd",
+    "upstreamBlob": "e678ceac309c4dcc64c2237aa1c65c24bba59232"
+  },
+  {
+    "id": "wx-doughnut",
+    "de": "der Donut",
+    "plural": "die Donuts",
+    "pos": "noun",
+    "en": "doughnut",
+    "zh": "甜甜圈",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/doughnut.svg",
+    "path": "wilson/mulberry/wx-doughnut.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/doughnut.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈdoʊ̯nat/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Donut",
+        "plural": "die Donuts",
+        "en": "doughnut",
+        "zh": "甜甜圈",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1b5fda222538fe57f6c648ae295bc62a8efe006e2b6c72511ef60f968c19d0f1",
+    "upstreamBlob": "fd406cf4b3ba98189b279be6631829d7529e6328"
+  },
+  {
+    "id": "wx-fig",
+    "de": "die Feige",
+    "plural": "die Feigen",
+    "pos": "noun",
+    "en": "fig",
+    "zh": "无花果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/fig.svg",
+    "path": "wilson/mulberry/wx-fig.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fig.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈfaɪ̯ɡə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Feige",
+        "plural": "die Feigen",
+        "en": "fig",
+        "zh": "无花果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3c6e16c831351d697f00f069c4c4931e59944f73e3d80702b76494091afdcab1",
+    "upstreamBlob": "a6511f1cc57d8d5324fb64bbe3ffddb7072a590b"
+  },
+  {
+    "id": "wx-fennel",
+    "de": "der Fenchel",
+    "plural": "—",
+    "pos": "noun",
+    "en": "fennel",
+    "zh": "茴香",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/fennel.svg",
+    "path": "wilson/mulberry/wx-fennel.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fennel.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈfɛnçl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Fenchel",
+        "plural": "—",
+        "en": "fennel",
+        "zh": "茴香",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ffb5eee3948882410c3ff141afe2f57348bc5e1c5bc21b449c3b481befe28761",
+    "upstreamBlob": "b2e580a99952c8181744168c9f2c811f6737acc5"
+  },
+  {
+    "id": "wx-fish-and-chips",
+    "de": "die Fish and Chips",
+    "plural": "—",
+    "pos": "noun",
+    "en": "fish and chips",
+    "zh": "炸鱼薯条",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/fish_and_chips.svg",
+    "path": "wilson/mulberry/wx-fish-and-chips.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fish_and_chips.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Gericht erkennbar, aber deutsche Lemmaform und Aufgabenformat müssen gesondert geklärt werden.",
+      "ipa": "/ˈfɪʃ ən ˈtʃɪps/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Fish and Chips",
+        "plural": "—",
+        "en": "fish and chips",
+        "zh": "炸鱼薯条",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-fish-burger",
+    "de": "der Fischburger",
+    "plural": "die Fischburger",
+    "pos": "noun",
+    "en": "fish burger",
+    "zh": "鱼肉汉堡",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/fish_burger.svg",
+    "path": "wilson/mulberry/wx-fish-burger.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fish_burger.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈfɪʃˌbœːɐ̯ɡɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Fischburger",
+        "plural": "die Fischburger",
+        "en": "fish burger",
+        "zh": "鱼肉汉堡",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b93f87690aac34cb5fe772b63ffa3f5e657a3dc2fe376d352192c7d16bc42b2d",
+    "upstreamBlob": "dd1149d455d5d39b3b88b6dc1b2e6eda67fe3121"
+  },
+  {
+    "id": "wx-ice-cream",
+    "de": "das Eis",
+    "plural": "—",
+    "pos": "noun",
+    "en": "ice cream",
+    "zh": "冰淇淋",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/ice_cream.svg",
+    "path": "wilson/mulberry/wx-ice-cream.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ice_cream.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/aɪ̯s/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Eis",
+        "plural": "—",
+        "en": "ice cream",
+        "zh": "冰淇淋",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "07c864279b45b813419717dd047067aa89a4e0b142e3950473eed4f04e39e276",
+    "upstreamBlob": "871f53cc2532c58bcbf73f7749719eff4b990ad3"
+  },
+  {
+    "id": "wx-jam",
+    "de": "die Marmelade",
+    "plural": "die Marmeladen",
+    "pos": "noun",
+    "en": "jam",
+    "zh": "果酱",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/jam.svg",
+    "path": "wilson/mulberry/wx-jam.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/jam.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/maʁməˈlaːdə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Marmelade",
+        "plural": "die Marmeladen",
+        "en": "jam",
+        "zh": "果酱",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f7bdb2a5b816cfc1aa5b03a04a6e038ccea59465bd93a86ce0f50794cf862282",
+    "upstreamBlob": "3b14944e5ac4ca991233e448b7788169981ac7b9"
+  },
+  {
+    "id": "wx-kiwi",
+    "de": "die Kiwi",
+    "plural": "die Kiwis",
+    "pos": "noun",
+    "en": "kiwi",
+    "zh": "猕猴桃",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/kiwi.svg",
+    "path": "wilson/mulberry/wx-kiwi.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/kiwi.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkiːvi/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Kiwi",
+        "plural": "die Kiwis",
+        "en": "kiwi",
+        "zh": "猕猴桃",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5f7d6c35ca13879a1720f3490c1bb5b6fd6843f6a46413218fc971a848470998",
+    "upstreamBlob": "4e02f7fad6d824ff86738b8dbf1ff719c90ceb69"
+  },
+  {
+    "id": "wx-lentils",
+    "de": "die Linse",
+    "plural": "die Linsen",
+    "pos": "noun",
+    "en": "lentil",
+    "zh": "扁豆",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/lentils.svg",
+    "path": "wilson/mulberry/wx-lentils.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lentils.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈlɪnzə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Linse",
+        "plural": "die Linsen",
+        "en": "lentil",
+        "zh": "扁豆",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "dcef75b921e1008d129eed3552e5b914c1d78cc826ef63d64cd0ba1dc3e3e5f9",
+    "upstreamBlob": "64142cad0f33357060d7e6f8e7c3296b08d4978c"
+  },
+  {
+    "id": "v621",
+    "de": "der Kopfsalat",
+    "plural": "die Kopfsalate",
+    "pos": "noun",
+    "en": "lettuce",
+    "zh": "生菜",
+    "pinyin": "jiéqiú shēngcài",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/lettuce.svg",
+    "path": "wilson/mulberry/v621.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lettuce.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkɔpfzaˌlaːt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Kopfsalat",
+        "plural": "die Kopfsalate",
+        "en": "lettuce",
+        "zh": "生菜",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "2a79aa342203f0653c50a38367075dc79590ccd13bf1edfab7ff4498bf3654a9",
+    "upstreamBlob": "299a6af5271e59f809298c2954d66c23b7d17a4b"
+  },
+  {
+    "id": "wx-macadamias",
+    "de": "die Macadamianuss",
+    "plural": "die Macadamianüsse",
+    "pos": "noun",
+    "en": "macadamia nut",
+    "zh": "夏威夷果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/macadamias.svg",
+    "path": "wilson/mulberry/wx-macadamias.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/macadamias.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/makaˈdaːmi̯aˌnʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Macadamianuss",
+        "plural": "die Macadamianüsse",
+        "en": "macadamia nut",
+        "zh": "夏威夷果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "424cea9644f38a91e78b36db6e2ba8942640ff588f125784720765ad3d3fa0dd",
+    "upstreamBlob": "1d1113b9da9168b86c02f5b10be168f99510cf0c"
+  },
+  {
+    "id": "wx-macaroni",
+    "de": "die Makkaroni",
+    "plural": "die Makkaroni",
+    "pos": "plural",
+    "en": "macaroni",
+    "zh": "通心粉",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/macaroni.svg",
+    "path": "wilson/mulberry/wx-macaroni.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/macaroni.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/makaˈʁoːni/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Makkaroni",
+        "plural": "die Makkaroni",
+        "en": "macaroni",
+        "zh": "通心粉",
+        "cat": "food",
+        "pos": "plural"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b0b2bc40208e983121cdf0a82181fb9b9d474efed8cb9e8794142d3c50074001",
+    "upstreamBlob": "9369caf9d67deceedf541e0d6c75affe372b3eef"
+  },
+  {
+    "id": "wx-mango",
+    "de": "die Mango",
+    "plural": "die Mangos",
+    "pos": "noun",
+    "en": "mango",
+    "zh": "芒果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/mango.svg",
+    "path": "wilson/mulberry/wx-mango.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mango.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈmaŋɡo/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Mango",
+        "plural": "die Mangos",
+        "en": "mango",
+        "zh": "芒果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "906b605d05d49df81a4e4c927ef344b36b18b775b198f4983a72a1ec6a0f2cd0",
+    "upstreamBlob": "e34eeb39a502d389c92b12cab942965bc9111927"
+  },
+  {
+    "id": "wx-marshmallows",
+    "de": "der Marshmallow",
+    "plural": "die Marshmallows",
+    "pos": "noun",
+    "en": "marshmallow",
+    "zh": "棉花软糖",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/marshmallows.svg",
+    "path": "wilson/mulberry/wx-marshmallows.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/marshmallows.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈmaːɐ̯ʃmɛloʊ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Marshmallow",
+        "plural": "die Marshmallows",
+        "en": "marshmallow",
+        "zh": "棉花软糖",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5a82e45b7432daef49bb47f2238038037551460cb1c03ea9b8bcb3f1587ca183",
+    "upstreamBlob": "18281b60977338d091ff419f8d5b1a3b9e81eeb9"
+  },
+  {
+    "id": "wx-melon",
+    "de": "die Melone",
+    "plural": "die Melonen",
+    "pos": "noun",
+    "en": "melon",
+    "zh": "甜瓜",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/melon.svg",
+    "path": "wilson/mulberry/wx-melon.svg",
+    "active": false,
+    "status": "approved-alternative",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/melon.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Nicht zusätzlich gezählt: gleicher Begriff oder identisches Bild wie v1357. Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/meˈloːnə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Melone",
+        "plural": "die Melonen",
+        "en": "melon",
+        "zh": "甜瓜",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "duplicateOf": "v1357"
+  },
+  {
+    "id": "wx-mushroom",
+    "de": "der Pilz",
+    "plural": "die Pilze",
+    "pos": "noun",
+    "en": "mushroom",
+    "zh": "蘑菇",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/mushroom.svg",
+    "path": "wilson/mulberry/wx-mushroom.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mushroom.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/pɪlts/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Pilz",
+        "plural": "die Pilze",
+        "en": "mushroom",
+        "zh": "蘑菇",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "97defe600c3eee38e15b93257b007c9c237ac8ae2b8b867ef13047ad1ae81199",
+    "upstreamBlob": "696a658285d2a16eb19ef72c6da62c08abbed2b1"
+  },
+  {
+    "id": "wx-noodles",
+    "de": "die Nudel",
+    "plural": "die Nudeln",
+    "pos": "noun",
+    "en": "noodle",
+    "zh": "面条",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/noodles.svg",
+    "path": "wilson/mulberry/wx-noodles.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/noodles.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈnuːdl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Nudel",
+        "plural": "die Nudeln",
+        "en": "noodle",
+        "zh": "面条",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "165e4241f4bafd411c35ec0d80e62314d43a7e2f2774e0b22778006994081f3c",
+    "upstreamBlob": "f2172d127ac148e2c7710ecb415e966625e87387"
+  },
+  {
+    "id": "wx-olives",
+    "de": "die Olive",
+    "plural": "die Oliven",
+    "pos": "noun",
+    "en": "olive",
+    "zh": "橄榄",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/olives.svg",
+    "path": "wilson/mulberry/wx-olives.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/olives.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/oˈliːvə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Olive",
+        "plural": "die Oliven",
+        "en": "olive",
+        "zh": "橄榄",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "95ba03dbe3828e2ce031be2089151b0cdc65afde2bacc9f2d2f7ea7d2043cbe5",
+    "upstreamBlob": "19ca05ea00efd15a429dfa851084c5f5862f9a31"
+  },
+  {
+    "id": "wx-omelette",
+    "de": "das Omelett",
+    "plural": "die Omeletts",
+    "pos": "noun",
+    "en": "omelette",
+    "zh": "煎蛋卷",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/omelette.svg",
+    "path": "wilson/mulberry/wx-omelette.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/omelette.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ɔmɛˈlɛt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Omelett",
+        "plural": "die Omeletts",
+        "en": "omelette",
+        "zh": "煎蛋卷",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "cb2ae99295bf39604b6e8fcbda40c4e2bf9b36dbddaabe12d418ef0d0fd3e337",
+    "upstreamBlob": "05746f06e9ed4ed8d9096269b4ba5e849685ae1e"
+  },
+  {
+    "id": "wx-pancakes",
+    "de": "der Pfannkuchen",
+    "plural": "die Pfannkuchen",
+    "pos": "noun",
+    "en": "pancake",
+    "zh": "煎饼",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pancakes.svg",
+    "path": "wilson/mulberry/wx-pancakes.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pancakes.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈpfanˌkuːxn̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Pfannkuchen",
+        "plural": "die Pfannkuchen",
+        "en": "pancake",
+        "zh": "煎饼",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "b7061139441792a554e026d50616c921427f0a1e75d8f87668b35f6ea4424eea",
+    "upstreamBlob": "1663051d0a7c44010c868031d27e62ebd9b7376a"
+  },
+  {
+    "id": "wx-passion-fruit",
+    "de": "die Passionsfrucht",
+    "plural": "die Passionsfrüchte",
+    "pos": "noun",
+    "en": "passion fruit",
+    "zh": "百香果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/passion_fruit.svg",
+    "path": "wilson/mulberry/wx-passion-fruit.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/passion_fruit.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/paˈsi̯oːnsˌfʁʊxt/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Passionsfrucht",
+        "plural": "die Passionsfrüchte",
+        "en": "passion fruit",
+        "zh": "百香果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "761b5db6ce9f914bf4c2fb691917d377ae603866cb98a82002b72adbd22eb6e0",
+    "upstreamBlob": "973d8e1988c61e95c8ca8217486feaf1b9b02b0d"
+  },
+  {
+    "id": "wx-pasta",
+    "de": "die Pasta",
+    "plural": "—",
+    "pos": "noun",
+    "en": "pasta",
+    "zh": "意大利面",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pasta.svg",
+    "path": "wilson/mulberry/wx-pasta.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pasta.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Oberbegriff Pasta überschneidet sich mit Nudel-Karte; kein zusätzliches Lernwort für dieselbe Bedeutung zählen.",
+      "ipa": "/ˈpasta/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Pasta",
+        "plural": "—",
+        "en": "pasta",
+        "zh": "意大利面",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-peanut",
+    "de": "die Erdnuss",
+    "plural": "die Erdnüsse",
+    "pos": "noun",
+    "en": "peanut",
+    "zh": "花生",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/peanut.svg",
+    "path": "wilson/mulberry/wx-peanut.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/peanut.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈeːɐ̯tˌnʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Erdnuss",
+        "plural": "die Erdnüsse",
+        "en": "peanut",
+        "zh": "花生",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ce077469aa52c10ba7664e7df41cec42ee178247bd4cd6025f3dffb9225eed1c",
+    "upstreamBlob": "9b7c925b0fb293db0ebb8f2eb37419487a767fc2"
+  },
+  {
+    "id": "wx-peas",
+    "de": "die Erbse",
+    "plural": "die Erbsen",
+    "pos": "noun",
+    "en": "pea",
+    "zh": "豌豆",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/peas.svg",
+    "path": "wilson/mulberry/wx-peas.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/peas.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈɛʁpzə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Erbse",
+        "plural": "die Erbsen",
+        "en": "pea",
+        "zh": "豌豆",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "2dd80013f92f7e53215f04454e812d3fb019a9a49cdc6eb4eec2f058187ec960",
+    "upstreamBlob": "3f936da792a9d3e67fbaf3f3229da40095159697"
+  },
+  {
+    "id": "wx-pecan",
+    "de": "die Pekannuss",
+    "plural": "die Pekannüsse",
+    "pos": "noun",
+    "en": "pecan",
+    "zh": "碧根果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pecan.svg",
+    "path": "wilson/mulberry/wx-pecan.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pecan.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈpeːkanˌnʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Pekannuss",
+        "plural": "die Pekannüsse",
+        "en": "pecan",
+        "zh": "碧根果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "12d7e976112e9d2b7b52bb9c97896f8250e445751009ea81e59a4ccdba4e52f8",
+    "upstreamBlob": "189e80d4038f2f72fbf7721135a43cdd67eab8e7"
+  },
+  {
+    "id": "wx-pine-nut",
+    "de": "der Pinienkern",
+    "plural": "die Pinienkerne",
+    "pos": "noun",
+    "en": "pine nut",
+    "zh": "松子",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pine_nut.svg",
+    "path": "wilson/mulberry/wx-pine-nut.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pine_nut.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Generische Nussdarstellung unterscheidet Pinienkern nicht eindeutig.",
+      "ipa": "/ˈpiːni̯ənˌkɛʁn/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Pinienkern",
+        "plural": "die Pinienkerne",
+        "en": "pine nut",
+        "zh": "松子",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-pineapple",
+    "de": "die Ananas",
+    "plural": "die Ananas",
+    "pos": "noun",
+    "en": "pineapple",
+    "zh": "菠萝",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pineapple.svg",
+    "path": "wilson/mulberry/wx-pineapple.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pineapple.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈananas/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Ananas",
+        "plural": "die Ananas",
+        "en": "pineapple",
+        "zh": "菠萝",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e63d6d880e3cba5adfdfb2883619606641502314938ffe1b5d6065c4c6c038c5",
+    "upstreamBlob": "201317011bc56653d08801d144738e9a614ee14f"
+  },
+  {
+    "id": "wx-pistachios",
+    "de": "die Pistazie",
+    "plural": "die Pistazien",
+    "pos": "noun",
+    "en": "pistachio",
+    "zh": "开心果",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pistachios.svg",
+    "path": "wilson/mulberry/wx-pistachios.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pistachios.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/pɪsˈtaːtsi̯ə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Pistazie",
+        "plural": "die Pistazien",
+        "en": "pistachio",
+        "zh": "开心果",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "325dd45be1302e8540123814381b086b7033649437e44df298de2c67427d2877",
+    "upstreamBlob": "75af4528d9b49ee80842975e4ee20dbd9073daba"
+  },
+  {
+    "id": "wx-porridge",
+    "de": "der Haferbrei",
+    "plural": "—",
+    "pos": "noun",
+    "en": "porridge",
+    "zh": "燕麦粥",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/porridge.svg",
+    "path": "wilson/mulberry/wx-porridge.svg",
+    "active": false,
+    "status": "needs-replacement-or-context",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/porridge.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Unspezifische Breischale; Haferzutat nicht erkennbar.",
+      "ipa": "/ˈhaːfɐˌbʁaɪ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Haferbrei",
+        "plural": "—",
+        "en": "porridge",
+        "zh": "燕麦粥",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    }
+  },
+  {
+    "id": "wx-pretzel",
+    "de": "die Brezel",
+    "plural": "die Brezeln",
+    "pos": "noun",
+    "en": "pretzel",
+    "zh": "椒盐卷饼",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pretzel.svg",
+    "path": "wilson/mulberry/wx-pretzel.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pretzel.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈbʁeːtsl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Brezel",
+        "plural": "die Brezeln",
+        "en": "pretzel",
+        "zh": "椒盐卷饼",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "9ba3a3019581abefed914979ceb8a90e20ce04a4e0b2048c76b11dd9bf83b458",
+    "upstreamBlob": "0508fa347ebc5a0100b96b2984ad1108690fcf40"
+  },
+  {
+    "id": "wx-pumpkin",
+    "de": "der Kürbis",
+    "plural": "die Kürbisse",
+    "pos": "noun",
+    "en": "pumpkin",
+    "zh": "南瓜",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/pumpkin.svg",
+    "path": "wilson/mulberry/wx-pumpkin.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pumpkin.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkʏʁbɪs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Kürbis",
+        "plural": "die Kürbisse",
+        "en": "pumpkin",
+        "zh": "南瓜",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "a393264763915467889a9a74bfdd7fd28c22ade68536601add7952f076089c8b",
+    "upstreamBlob": "a6416482a9421f35bfb4cda9f0cb6434bd994254"
+  },
+  {
+    "id": "wx-raisin",
+    "de": "die Rosine",
+    "plural": "die Rosinen",
+    "pos": "noun",
+    "en": "raisin",
+    "zh": "葡萄干",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/raisin.svg",
+    "path": "wilson/mulberry/wx-raisin.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/raisin.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʁoˈziːnə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Rosine",
+        "plural": "die Rosinen",
+        "en": "raisin",
+        "zh": "葡萄干",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "dfbfac45f3e1c80d178fee926bd6fd07c44407d0da10b442fc5afe43f6b486f1",
+    "upstreamBlob": "c601558ba6d19b8d357e752a60c202899ea1be10"
+  },
+  {
+    "id": "wx-ravioli",
+    "de": "die Ravioli",
+    "plural": "die Ravioli",
+    "pos": "plural",
+    "en": "ravioli",
+    "zh": "意大利饺子",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/ravioli.svg",
+    "path": "wilson/mulberry/wx-ravioli.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ravioli.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʁaˈvi̯oːli/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Ravioli",
+        "plural": "die Ravioli",
+        "en": "ravioli",
+        "zh": "意大利饺子",
+        "cat": "food",
+        "pos": "plural"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "30241ed9472a7b6aef131229ae72665a1a226977d59d7989379424f2a631b543",
+    "upstreamBlob": "97ecdc8b38d31a79044a8aaa09b24628a0711399"
+  },
+  {
+    "id": "wx-rhubarb",
+    "de": "der Rhabarber",
+    "plural": "—",
+    "pos": "noun",
+    "en": "rhubarb",
+    "zh": "食用大黄",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/rhubarb.svg",
+    "path": "wilson/mulberry/wx-rhubarb.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rhubarb.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʁaˈbaʁbɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Rhabarber",
+        "plural": "—",
+        "en": "rhubarb",
+        "zh": "食用大黄",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "fbf801c3969342c9305bd0d5eee4696371faeef9a35fe2edd7689b979fdb6ffb",
+    "upstreamBlob": "d55bd5dfe7869554b50647077523aca9d8932d71"
+  },
+  {
+    "id": "wx-rice",
+    "de": "der Reis",
+    "plural": "—",
+    "pos": "noun",
+    "en": "rice",
+    "zh": "大米",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/rice.svg",
+    "path": "wilson/mulberry/wx-rice.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rice.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʁaɪ̯s/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Reis",
+        "plural": "—",
+        "en": "rice",
+        "zh": "大米",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "85634d0d14bebd21325fcf7cc2c39af82577943dca21be50eaa93a051dc3b744",
+    "upstreamBlob": "d25ff29037e3f101d2a43ecaba4e558c0f138544"
+  },
+  {
+    "id": "wx-salami-sausage",
+    "de": "die Salami",
+    "plural": "die Salamis",
+    "pos": "noun",
+    "en": "salami",
+    "zh": "萨拉米香肠",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/salami_sausage.svg",
+    "path": "wilson/mulberry/wx-salami-sausage.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/salami_sausage.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/zaˈlaːmi/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Salami",
+        "plural": "die Salamis",
+        "en": "salami",
+        "zh": "萨拉米香肠",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "79dbb078543895b84c1d5f3c817a9735367ab400c36196bbb85f57f0a91f72d5",
+    "upstreamBlob": "aee4bfc11edb0dd1dbd7838691db89e1feee2897"
+  },
+  {
+    "id": "wx-sausages",
+    "de": "die Wurst",
+    "plural": "die Würste",
+    "pos": "noun",
+    "en": "sausage",
+    "zh": "香肠",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/sausages.svg",
+    "path": "wilson/mulberry/wx-sausages.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sausages.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/vʊʁst/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Wurst",
+        "plural": "die Würste",
+        "en": "sausage",
+        "zh": "香肠",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "4964fac69b8847ea045d12d14ad46ec3f527f45855035bed0c344344c9e31d12",
+    "upstreamBlob": "e2f84cab3c6b84a6eb7be8cedaf3e8e3bb101bb9"
+  },
+  {
+    "id": "wx-spaghetti",
+    "de": "die Spaghetti",
+    "plural": "die Spaghetti",
+    "pos": "plural",
+    "en": "spaghetti",
+    "zh": "意大利细面条",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/spaghetti.svg",
+    "path": "wilson/mulberry/wx-spaghetti.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spaghetti.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃpaˈɡɛti/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Spaghetti",
+        "plural": "die Spaghetti",
+        "en": "spaghetti",
+        "zh": "意大利细面条",
+        "cat": "food",
+        "pos": "plural"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "900267707e8ac214c8bbb69fa229bdda35f9a984f15634cae1cc0bb713b6321d",
+    "upstreamBlob": "3be1ce4fb5f36ec0680e94a9d3650d46a8f77394"
+  },
+  {
+    "id": "wx-steak",
+    "de": "das Steak",
+    "plural": "die Steaks",
+    "pos": "noun",
+    "en": "steak",
+    "zh": "牛排",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/steak.svg",
+    "path": "wilson/mulberry/wx-steak.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/steak.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/steːk/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Steak",
+        "plural": "die Steaks",
+        "en": "steak",
+        "zh": "牛排",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0320370a7a4e449cfdaefd08a07d0c87794edabd86a1074d46d319350bd432ec",
+    "upstreamBlob": "7075817211d4c4b340999c15ea53515b905a4f23"
+  },
+  {
+    "id": "wx-walnut",
+    "de": "die Walnuss",
+    "plural": "die Walnüsse",
+    "pos": "noun",
+    "en": "walnut",
+    "zh": "核桃",
+    "pinyin": "",
+    "cat": "food",
+    "articleVariants": [],
+    "sourcePath": "EN/walnut.svg",
+    "path": "wilson/mulberry/wx-walnut.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/walnut.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈvalˌnʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Walnuss",
+        "plural": "die Walnüsse",
+        "en": "walnut",
+        "zh": "核桃",
+        "cat": "food",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "47e06efdf04aab24b9974c1ee6813e4593f5526bff0ecc868cf6ac60b3cf38cb",
+    "upstreamBlob": "0381270d5b502ad7317b0f52542c86a2e43de45c"
+  },
+  {
+    "id": "wx-acorn",
+    "de": "die Eichel",
+    "plural": "die Eicheln",
+    "pos": "noun",
+    "en": "acorn",
+    "zh": "橡子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/acorn.svg",
+    "path": "wilson/mulberry/wx-acorn.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/acorn.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈaɪ̯çl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Eichel",
+        "plural": "die Eicheln",
+        "en": "acorn",
+        "zh": "橡子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "439f2e0f56d3ecd698d0f404fb1b65ef0d642fee1867f63c6126985f81f8ee40",
+    "upstreamBlob": "c24c49e3ceb2194d6a0483f31fda4e353f59ffdc"
+  },
+  {
+    "id": "wx-beak",
+    "de": "der Schnabel",
+    "plural": "die Schnäbel",
+    "pos": "noun",
+    "en": "beak",
+    "zh": "鸟喙",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/beak.svg",
+    "path": "wilson/mulberry/wx-beak.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/beak.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃnaːbl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Schnabel",
+        "plural": "die Schnäbel",
+        "en": "beak",
+        "zh": "鸟喙",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "9f4f0e9930ed29464b1a2307d587ca66d07547ba4f57874a9a36f202a4c006d8",
+    "upstreamBlob": "1c9c8b8c0a6ef24d7fcf8d24a4fb10f7df8e3a77"
+  },
+  {
+    "id": "wx-beehive",
+    "de": "der Bienenstock",
+    "plural": "die Bienenstöcke",
+    "pos": "noun",
+    "en": "beehive",
+    "zh": "蜂箱",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/beehive.svg",
+    "path": "wilson/mulberry/wx-beehive.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/beehive.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈbiːnənˌʃtɔk/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Bienenstock",
+        "plural": "die Bienenstöcke",
+        "en": "beehive",
+        "zh": "蜂箱",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "d2f25a58eaa3c1d1276a3871aa58a791955cdd6f04e1881376b372b1fbdc9c14",
+    "upstreamBlob": "433a85edf8ae6b36b44cf1543ec083ae6570547d"
+  },
+  {
+    "id": "wx-bone",
+    "de": "der Knochen",
+    "plural": "die Knochen",
+    "pos": "noun",
+    "en": "bone",
+    "zh": "骨头",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/bone.svg",
+    "path": "wilson/mulberry/wx-bone.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bone.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈknɔxn̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Knochen",
+        "plural": "die Knochen",
+        "en": "bone",
+        "zh": "骨头",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "2b4d18e781ab0a69dbf198a3bf9d7a41aab3d8d589f619075daf00a0485334ff",
+    "upstreamBlob": "bb86bda4b1e320302346d7620e804f7dce63c6de"
+  },
+  {
+    "id": "wx-branch",
+    "de": "der Ast",
+    "plural": "die Äste",
+    "pos": "noun",
+    "en": "branch",
+    "zh": "树枝",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/branch.svg",
+    "path": "wilson/mulberry/wx-branch.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/branch.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ast/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Ast",
+        "plural": "die Äste",
+        "en": "branch",
+        "zh": "树枝",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "2477ceccbdc8ca487b20c64ee81b06565ca2ffbbb861699b17366f7cafb20248",
+    "upstreamBlob": "ed0de90cafd283136b41e608a5b1f6ebead649bc"
+  },
+  {
+    "id": "wx-bud",
+    "de": "die Knospe",
+    "plural": "die Knospen",
+    "pos": "noun",
+    "en": "bud",
+    "zh": "花蕾",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/bud.svg",
+    "path": "wilson/mulberry/wx-bud.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bud.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈknɔspə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Knospe",
+        "plural": "die Knospen",
+        "en": "bud",
+        "zh": "花蕾",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3dfd42ed088643288f3d18f0b76894b02985f2eea2c2fa6c2989e06c30f64372",
+    "upstreamBlob": "28ece406a188d3770418aa324d02768c4d4c1593"
+  },
+  {
+    "id": "wx-bush",
+    "de": "der Busch",
+    "plural": "die Büsche",
+    "pos": "noun",
+    "en": "bush",
+    "zh": "灌木",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/bush.svg",
+    "path": "wilson/mulberry/wx-bush.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/bush.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/bʊʃ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Busch",
+        "plural": "die Büsche",
+        "en": "bush",
+        "zh": "灌木",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "79f3f94c992f7d625226fb146a4ccb8ea2e60bbbe91a16168849be8e8799f92b",
+    "upstreamBlob": "de420c64c729f4a33e2a2dc1319dff884095bc7c"
+  },
+  {
+    "id": "wx-cactus",
+    "de": "der Kaktus",
+    "plural": "die Kakteen",
+    "pos": "noun",
+    "en": "cactus",
+    "zh": "仙人掌",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/cactus.svg",
+    "path": "wilson/mulberry/wx-cactus.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cactus.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkaktʊs/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Kaktus",
+        "plural": "die Kakteen",
+        "en": "cactus",
+        "zh": "仙人掌",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "77d95e2c691628e55f5c6c76bddb8f6e455596a661063e463236b3e382974534",
+    "upstreamBlob": "3006857f5cc639395191182a3c6373aed4956aec"
+  },
+  {
+    "id": "wx-claw",
+    "de": "die Kralle",
+    "plural": "die Krallen",
+    "pos": "noun",
+    "en": "claw",
+    "zh": "爪子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/claw.svg",
+    "path": "wilson/mulberry/wx-claw.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/claw.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkʁalə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Kralle",
+        "plural": "die Krallen",
+        "en": "claw",
+        "zh": "爪子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "6916b4533612b6efda025b4f393b07d0551e6aed63c96e26b42a94ee40e048f5",
+    "upstreamBlob": "9f88cbbcd9fc43a4539b4d0c91ed1bf74db64d0b"
+  },
+  {
+    "id": "wx-clover",
+    "de": "der Klee",
+    "plural": "—",
+    "pos": "noun",
+    "en": "clover",
+    "zh": "三叶草",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/clover.svg",
+    "path": "wilson/mulberry/wx-clover.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/clover.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/kleː/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Klee",
+        "plural": "—",
+        "en": "clover",
+        "zh": "三叶草",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0f0a90e8d7f9d5e28274453858303242aa208020e1b89181ded15645444b4d7d",
+    "upstreamBlob": "47c113437a12ba4a67a2f464bf1134470acc2e5b"
+  },
+  {
+    "id": "wx-daffodil",
+    "de": "die Narzisse",
+    "plural": "die Narzissen",
+    "pos": "noun",
+    "en": "daffodil",
+    "zh": "水仙花",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/daffodil.svg",
+    "path": "wilson/mulberry/wx-daffodil.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/daffodil.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/naʁˈtsɪsə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Narzisse",
+        "plural": "die Narzissen",
+        "en": "daffodil",
+        "zh": "水仙花",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "666a2a00b88e42d61d55e46aa80475d8b1ffc85a07ec663e259b76d8590eed60",
+    "upstreamBlob": "6136e7fab222ea53b425691cdc4bd98563b68b1f"
+  },
+  {
+    "id": "wx-daisy",
+    "de": "das Gänseblümchen",
+    "plural": "die Gänseblümchen",
+    "pos": "noun",
+    "en": "daisy",
+    "zh": "雏菊",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/daisy.svg",
+    "path": "wilson/mulberry/wx-daisy.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/daisy.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈɡɛnzəˌblyːmçən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Gänseblümchen",
+        "plural": "die Gänseblümchen",
+        "en": "daisy",
+        "zh": "雏菊",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "64d4d174f15a718179c17971a4ff8c4c07fbcf0ee0329f6e941c5959a07512d4",
+    "upstreamBlob": "2a07b603d1a130c2f14df8a24e694dd250e8621e"
+  },
+  {
+    "id": "wx-feather",
+    "de": "die Feder",
+    "plural": "die Federn",
+    "pos": "noun",
+    "en": "feather",
+    "zh": "羽毛",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/feather.svg",
+    "path": "wilson/mulberry/wx-feather.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/feather.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈfeːdɐ/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Feder",
+        "plural": "die Federn",
+        "en": "feather",
+        "zh": "羽毛",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "7a5e4a718abdbb828ac887d8fa413a3415552af1b3190e888b45ef33beaaeb88",
+    "upstreamBlob": "28a1d2a6d4a303000fa87f8305e0720d5ca62a49"
+  },
+  {
+    "id": "wx-fir-tree",
+    "de": "der Nadelbaum",
+    "plural": "die Nadelbäume",
+    "pos": "noun",
+    "en": "conifer",
+    "zh": "针叶树",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/fir_tree.svg",
+    "path": "wilson/mulberry/wx-fir-tree.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/fir_tree.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈnaːdl̩ˌbaʊ̯m/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Nadelbaum",
+        "plural": "die Nadelbäume",
+        "en": "conifer",
+        "zh": "针叶树",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e1d81d3b64f852df6b21cdb406b12c62c0e9c9696dc6ecdbe5a83df68ab01327",
+    "upstreamBlob": "e6e6bbd734e98c3dc3ec96075850f8b875083b35"
+  },
+  {
+    "id": "wx-ivy",
+    "de": "der Efeu",
+    "plural": "—",
+    "pos": "noun",
+    "en": "ivy",
+    "zh": "常春藤",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/ivy.svg",
+    "path": "wilson/mulberry/wx-ivy.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ivy.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈeːfɔʏ̯/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Efeu",
+        "plural": "—",
+        "en": "ivy",
+        "zh": "常春藤",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f1b1f6b75bb6636cf067e5acb3dbd6a35c30d5efb51f5e6a790daba3b8b9aa4d",
+    "upstreamBlob": "f89aa5eb36636686aa42be858f98530dcb67dc97"
+  },
+  {
+    "id": "wx-leaf",
+    "de": "das Blatt",
+    "plural": "die Blätter",
+    "pos": "noun",
+    "en": "leaf",
+    "zh": "树叶",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/leaf.svg",
+    "path": "wilson/mulberry/wx-leaf.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/leaf.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/blat/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Blatt",
+        "plural": "die Blätter",
+        "en": "leaf",
+        "zh": "树叶",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "582e3175f832edebbc735aea284338ae0c8e19260a2a37836e5ff378fd86acf2",
+    "upstreamBlob": "ec8c54d4150ddac32dab6af9b4f442c72b56aa56"
+  },
+  {
+    "id": "wx-lily",
+    "de": "die Lilie",
+    "plural": "die Lilien",
+    "pos": "noun",
+    "en": "lily",
+    "zh": "百合花",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/lily.svg",
+    "path": "wilson/mulberry/wx-lily.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lily.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈliːli̯ə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Lilie",
+        "plural": "die Lilien",
+        "en": "lily",
+        "zh": "百合花",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1b9b315501d6f69a79ad639894479e1f8230ae34feb7d0362a65a41418b90759",
+    "upstreamBlob": "bbcd91b7cc0d6b05304be21a2012e5e37a63f49b"
+  },
+  {
+    "id": "wx-nest",
+    "de": "das Nest",
+    "plural": "die Nester",
+    "pos": "noun",
+    "en": "nest",
+    "zh": "鸟巢",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/nest.svg",
+    "path": "wilson/mulberry/wx-nest.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/nest.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/nɛst/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Nest",
+        "plural": "die Nester",
+        "en": "nest",
+        "zh": "鸟巢",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5d2b9fbde2f5da4901ad620e33b2b9547bc3f62c934c4ab4db5f9de37d438bad",
+    "upstreamBlob": "fd69962e468cd6996518aab7d62f67d350406380"
+  },
+  {
+    "id": "wx-oak-leaf",
+    "de": "das Eichenblatt",
+    "plural": "die Eichenblätter",
+    "pos": "noun",
+    "en": "oak leaf",
+    "zh": "橡树叶",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/oak_leaf.svg",
+    "path": "wilson/mulberry/wx-oak-leaf.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/oak_leaf.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈaɪ̯çn̩ˌblat/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Eichenblatt",
+        "plural": "die Eichenblätter",
+        "en": "oak leaf",
+        "zh": "橡树叶",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "206b6b6401220e24ee0feab2a324f20792480cb4a0eac9584c2e2bcc3e078bc3",
+    "upstreamBlob": "71088c52ceb90004f055d34f845842eb13780ab5"
+  },
+  {
+    "id": "wx-palm-tree",
+    "de": "die Palme",
+    "plural": "die Palmen",
+    "pos": "noun",
+    "en": "palm tree",
+    "zh": "棕榈树",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/palm_tree.svg",
+    "path": "wilson/mulberry/wx-palm-tree.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/palm_tree.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈpalmə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Palme",
+        "plural": "die Palmen",
+        "en": "palm tree",
+        "zh": "棕榈树",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "47fc02aa17994dc6c87ec1d48cab30a2eda2a8ffd100f1f9e0bc0078214e69b4",
+    "upstreamBlob": "53ab42fd9b00cb55ae36a5fbdc1745784f8fa634"
+  },
+  {
+    "id": "wx-paw",
+    "de": "die Pfote",
+    "plural": "die Pfoten",
+    "pos": "noun",
+    "en": "paw",
+    "zh": "动物的脚掌",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/paw.svg",
+    "path": "wilson/mulberry/wx-paw.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/paw.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈpfoːtə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Pfote",
+        "plural": "die Pfoten",
+        "en": "paw",
+        "zh": "动物的脚掌",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "d5db00a9ddd52cdb3eb5fe0d15a11ff803acd0d9f6659a8db3ecb24633ad87f3",
+    "upstreamBlob": "e02cd22583a393e322cead89f1ff64ac428eec40"
+  },
+  {
+    "id": "wx-petal",
+    "de": "das Blütenblatt",
+    "plural": "die Blütenblätter",
+    "pos": "noun",
+    "en": "petal",
+    "zh": "花瓣",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/petal.svg",
+    "path": "wilson/mulberry/wx-petal.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/petal.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈblyːtn̩ˌblat/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Blütenblatt",
+        "plural": "die Blütenblätter",
+        "en": "petal",
+        "zh": "花瓣",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "f527c6cbc4bd783bab98e4a13343792a4f0eeb409153cf2065145abe9ef04eaf",
+    "upstreamBlob": "48032cfa6fd8b5ac6c09d3f62a0e64548b124c17"
+  },
+  {
+    "id": "wx-pine-cone",
+    "de": "der Kiefernzapfen",
+    "plural": "die Kiefernzapfen",
+    "pos": "noun",
+    "en": "pine cone",
+    "zh": "松果",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/pine_cone.svg",
+    "path": "wilson/mulberry/wx-pine-cone.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/pine_cone.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈkiːfɐnˌtsapfn̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Kiefernzapfen",
+        "plural": "die Kiefernzapfen",
+        "en": "pine cone",
+        "zh": "松果",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "cf194b28dac33089a9eaf15ab25d457c414292808ba36fa2e35014d176474d2c",
+    "upstreamBlob": "77e9f60b8600e95374b38f2db2627cf7f74608db"
+  },
+  {
+    "id": "wx-roots",
+    "de": "die Wurzel",
+    "plural": "die Wurzeln",
+    "pos": "noun",
+    "en": "root",
+    "zh": "树根",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/roots.svg",
+    "path": "wilson/mulberry/wx-roots.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/roots.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈvʊʁtsl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Wurzel",
+        "plural": "die Wurzeln",
+        "en": "root",
+        "zh": "树根",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "cb021dfc00fd38e14512206da2b6554d22027bfb4e64693db636f125a0266609",
+    "upstreamBlob": "0560951f855322f2f1795aa01052587491b9d239"
+  },
+  {
+    "id": "wx-rose",
+    "de": "die Rose",
+    "plural": "die Rosen",
+    "pos": "noun",
+    "en": "rose",
+    "zh": "玫瑰",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/rose.svg",
+    "path": "wilson/mulberry/wx-rose.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/rose.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʁoːzə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Rose",
+        "plural": "die Rosen",
+        "en": "rose",
+        "zh": "玫瑰",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "04ddacd5090202493968a91269990ab56646ba5e3fbd3d83df4bfe4cc4949c63",
+    "upstreamBlob": "77e5e982ad9670d94267609bdbd1454dde15c3bd"
+  },
+  {
+    "id": "wx-seeds",
+    "de": "der Samen",
+    "plural": "die Samen",
+    "pos": "noun",
+    "en": "seed",
+    "zh": "种子",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/seeds.svg",
+    "path": "wilson/mulberry/wx-seeds.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/seeds.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈzaːmən/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Samen",
+        "plural": "die Samen",
+        "en": "seed",
+        "zh": "种子",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "05cb18c4bb89938a9a0536552b9c216b9d1a80cd6e7ac8988079c6d87a12acfd",
+    "upstreamBlob": "482588e7c88746f9bf2776395716c9ca1f0a6b25"
+  },
+  {
+    "id": "wx-spiders-web",
+    "de": "das Spinnennetz",
+    "plural": "die Spinnennetze",
+    "pos": "noun",
+    "en": "spider web",
+    "zh": "蜘蛛网",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/spiders_web.svg",
+    "path": "wilson/mulberry/wx-spiders-web.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spiders_web.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈʃpɪnənˌnɛts/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "das Spinnennetz",
+        "plural": "die Spinnennetze",
+        "en": "spider web",
+        "zh": "蜘蛛网",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "318f752b02b4e11ebee342857c4fe8f3d6267bca00c045e9524c25a8ccf51307",
+    "upstreamBlob": "75f40d45a512a6716a4c9d8c857537210bf790dc"
+  },
+  {
+    "id": "wx-stone",
+    "de": "der Stein",
+    "plural": "die Steine",
+    "pos": "noun",
+    "en": "stone",
+    "zh": "石头",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/stone.svg",
+    "path": "wilson/mulberry/wx-stone.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/stone.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ʃtaɪ̯n/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Stein",
+        "plural": "die Steine",
+        "en": "stone",
+        "zh": "石头",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "bb76b980700cb1d6984f2aaef9304bbc4612574a736019dbf58f5ff46dc16d40",
+    "upstreamBlob": "592f266fc726b0af7bb9a595ef151234ff93baae"
+  },
+  {
+    "id": "wx-sun",
+    "de": "die Sonne",
+    "plural": "die Sonnen",
+    "pos": "noun",
+    "en": "sun",
+    "zh": "太阳",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/sun.svg",
+    "path": "wilson/mulberry/wx-sun.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/sun.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈzɔnə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Sonne",
+        "plural": "die Sonnen",
+        "en": "sun",
+        "zh": "太阳",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5ec2e02735b9351f8e749c257fab43050fc15689d3986566fe3857bb06608e38",
+    "upstreamBlob": "4c2b36ead495e4c5c2e597ece3fc5f74aa01b89b"
+  },
+  {
+    "id": "wx-tree-trunk",
+    "de": "der Baumstamm",
+    "plural": "die Baumstämme",
+    "pos": "noun",
+    "en": "tree trunk",
+    "zh": "树干",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/tree_trunk.svg",
+    "path": "wilson/mulberry/wx-tree-trunk.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tree_trunk.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈbaʊ̯mˌʃtam/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Baumstamm",
+        "plural": "die Baumstämme",
+        "en": "tree trunk",
+        "zh": "树干",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "74f41c2e15f24abc567d71b09c3752de40b17b5eed5366d06c7c5c45223086ad",
+    "upstreamBlob": "c21a3755e4c0a509d2239e2115ff25710ee731cf"
+  },
+  {
+    "id": "wx-tulip",
+    "de": "die Tulpe",
+    "plural": "die Tulpen",
+    "pos": "noun",
+    "en": "tulip",
+    "zh": "郁金香",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/tulip.svg",
+    "path": "wilson/mulberry/wx-tulip.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tulip.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈtʊlpə/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "die Tulpe",
+        "plural": "die Tulpen",
+        "en": "tulip",
+        "zh": "郁金香",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "dde0f427e20c25ae73d249ce236925255512de9bb0b6e8dabf96efd7566ca252",
+    "upstreamBlob": "5dd026f24de01301e3aaf8195a7801a67c4964d4"
+  },
+  {
+    "id": "wx-wing",
+    "de": "der Flügel",
+    "plural": "die Flügel",
+    "pos": "noun",
+    "en": "wing",
+    "zh": "翅膀",
+    "pinyin": "",
+    "cat": "nature",
+    "articleVariants": [],
+    "sourcePath": "EN/wing.svg",
+    "path": "wilson/mulberry/wx-wing.svg",
+    "active": true,
+    "status": "approved",
+    "creator": "Steve Lee",
+    "license": "CC-BY-SA-4.0",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/wing.svg",
+    "provider": "mulberry",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "method": "SVG gerendert und einzeln in beschrifteten Kontaktbögen visuell geprüft; DE/EN/ZH und Formen redaktionell abgeglichen. KI-Prüfung, keine unabhängige Fachprüfung.",
+      "reason": "Motiv und DE/EN/ZH-Bedeutung passen; deutsche Grund- und Pluralform sowie IPA redaktionell geprüft.",
+      "ipa": "/ˈflyːɡl̩/",
+      "childSuitable": true,
+      "corrections": {
+        "de": "der Flügel",
+        "plural": "die Flügel",
+        "en": "wing",
+        "zh": "翅膀",
+        "cat": "nature",
+        "pos": "noun"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0fe4fe2912985f4ab7663678d3bfc134aeea3c0728941d108d2c9ee11269ad48",
+    "upstreamBlob": "7a0b71a5869838caf604218a62101c513a0a0605"
+  },
+  {
+    "id": "v67",
+    "de": "der Backofen",
+    "plural": "die Backöfen",
+    "en": "oven",
+    "zh": "烤箱",
+    "path": "wilson/original-next/v67.svg",
+    "ipa": "/ˈbakˌʔoːfn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈbakˌʔoːfn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v67.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v82",
+    "de": "das Bauklötzchen",
+    "plural": "die Bauklötzchen",
+    "en": "building block",
+    "zh": "积木块",
+    "path": "wilson/original-next/v82.svg",
+    "ipa": "/ˈbaʊ̯ˌklœtsçən/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈbaʊ̯ˌklœtsçən/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v82.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v84",
+    "de": "der Beamer",
+    "plural": "die Beamer",
+    "en": "projector",
+    "zh": "投影仪",
+    "path": "wilson/original-next/v84.svg",
+    "ipa": "/ˈbiːmɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈbiːmɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v84.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v147",
+    "de": "der Briefkasten",
+    "plural": "die Briefkästen",
+    "en": "letter box",
+    "zh": "信箱",
+    "path": "wilson/original-next/v147.svg",
+    "ipa": "/ˈbʁiːfˌkastn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈbʁiːfˌkastn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v147.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v148",
+    "de": "die Briefmarke",
+    "plural": "die Briefmarken",
+    "en": "postage stamp",
+    "zh": "邮票",
+    "path": "wilson/original-next/v148.svg",
+    "ipa": "/ˈbʁiːfˌmaʁkə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈbʁiːfˌmaʁkə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v148.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v156",
+    "de": "die Brücke",
+    "plural": "die Brücken",
+    "en": "bridge",
+    "zh": "桥",
+    "path": "wilson/original-next/v156.svg",
+    "ipa": "/bʁʏkə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/bʁʏkə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v156.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v183",
+    "de": "das Dach",
+    "plural": "die Dächer",
+    "en": "roof",
+    "zh": "屋顶",
+    "path": "wilson/original-next/v183.svg",
+    "ipa": "/dax/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/dax/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v183.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v185",
+    "de": "das Dachfenster",
+    "plural": "die Dachfenster",
+    "en": "roof window",
+    "zh": "屋顶窗",
+    "path": "wilson/original-next/v185.svg",
+    "ipa": "/ˈdaxˌfɛnstɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈdaxˌfɛnstɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v185.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v188",
+    "de": "der Dachziegel",
+    "plural": "die Dachziegel",
+    "en": "roof tile",
+    "zh": "屋瓦",
+    "path": "wilson/original-next/v188.svg",
+    "ipa": "/ˈdaxˌtsiːɡl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈdaxˌtsiːɡl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v188.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v270",
+    "de": "der Einkaufswagen",
+    "plural": "die Einkaufswagen",
+    "en": "shopping cart",
+    "zh": "购物车",
+    "path": "wilson/original-next/v270.svg",
+    "ipa": "/ˈaɪ̯nkaʊ̯fsˌvaːɡn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈaɪ̯nkaʊ̯fsˌvaːɡn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v270.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v290",
+    "de": "die Energiesparlampe",
+    "plural": "die Energiesparlampen",
+    "en": "energy-saving lamp",
+    "zh": "节能灯",
+    "path": "wilson/original-next/v290.svg",
+    "ipa": "/ɛnɛʁˈɡiːʃpaːɐ̯ˌlampə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ɛnɛʁˈɡiːʃpaːɐ̯ˌlampə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v290.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v319",
+    "de": "das Fahrradschloss",
+    "plural": "die Fahrradschlösser",
+    "en": "bicycle lock",
+    "zh": "自行车锁",
+    "path": "wilson/original-next/v319.svg",
+    "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "reason": "Generic padlock lacks enough bicycle-specific context; replace or add a bicycle scene.",
+      "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": false,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v319.svg",
+    "status": "needs-replacement-or-context"
+  },
+  {
+    "id": "v322",
+    "de": "die Farbwanne",
+    "plural": "die Farbwannen",
+    "en": "paint tray",
+    "zh": "油漆托盘",
+    "path": "wilson/original-next/v322.svg",
+    "ipa": "/ˈfaʁpˌvanə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈfaʁpˌvanə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v322.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v334",
+    "de": "der Feuerlöscher",
+    "plural": "die Feuerlöscher",
+    "en": "fire extinguisher",
+    "zh": "灭火器",
+    "path": "wilson/original-next/v334.svg",
+    "ipa": "/ˈfɔʏ̯ɐˌlœʃɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈfɔʏ̯ɐˌlœʃɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v334.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v343",
+    "de": "das Fläschchen",
+    "plural": "die Fläschchen",
+    "en": "baby bottle",
+    "zh": "奶瓶",
+    "path": "wilson/original-next/v343.svg",
+    "ipa": "/ˈflɛʃçən/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈflɛʃçən/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v343.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v348",
+    "de": "der Flip-Flop",
+    "plural": "die Flip-Flops",
+    "en": "flip-flop sandal",
+    "zh": "人字拖",
+    "path": "wilson/original-next/v348.svg",
+    "ipa": "/ˈflɪpˌflɔp/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈflɪpˌflɔp/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v348.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v381",
+    "de": "der Fußabtreter",
+    "plural": "die Fußabtreter",
+    "en": "doormat",
+    "zh": "擦鞋垫",
+    "path": "wilson/original-next/v381.svg",
+    "ipa": "/ˈfuːsˌʔaptʁeːtɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈfuːsˌʔaptʁeːtɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v381.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v441",
+    "de": "der Gummihandschuh",
+    "plural": "die Gummihandschuhe",
+    "en": "rubber glove",
+    "zh": "橡胶手套",
+    "path": "wilson/original-next/v441.svg",
+    "ipa": "/ˈɡʊmiˌhantʃuː/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈɡʊmiˌhantʃuː/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v441.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v468",
+    "de": "der Handfeger",
+    "plural": "die Handfeger",
+    "en": "hand brush",
+    "zh": "小扫帚",
+    "path": "wilson/original-next/v468.svg",
+    "ipa": "/ˈhantˌfeːɡɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈhantˌfeːɡɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v468.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v486",
+    "de": "der Heizkörper",
+    "plural": "die Heizkörper",
+    "en": "radiator",
+    "zh": "暖气片",
+    "path": "wilson/original-next/v486.svg",
+    "ipa": "/ˈhaɪ̯tsˌkœʁpɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈhaɪ̯tsˌkœʁpɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v486.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v520",
+    "de": "der Hydrant",
+    "plural": "die Hydranten",
+    "en": "fire hydrant",
+    "zh": "消防栓",
+    "path": "wilson/original-next/v520.svg",
+    "ipa": "/hyˈdʁant/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/hyˈdʁant/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v520.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v531",
+    "de": "der Inbusschlüssel",
+    "plural": "die Inbusschlüssel",
+    "en": "Allen key",
+    "zh": "内六角扳手",
+    "path": "wilson/original-next/v531.svg",
+    "ipa": "/ˈɪnbʊsˌʃlʏsl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "reason": "L-Form allein macht den Inbusschlüssel gegenüber Winkel oder Vierkant nicht eindeutig; sechskantige Endfläche fehlt.",
+      "ipa": "/ˈɪnbʊsˌʃlʏsl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": false,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v531.svg",
+    "status": "needs-replacement-or-context"
+  },
+  {
+    "id": "v568",
+    "de": "die Kehrschaufel",
+    "plural": "die Kehrschaufeln",
+    "en": "dustpan",
+    "zh": "簸箕",
+    "path": "wilson/original-next/v568.svg",
+    "ipa": "/ˈkeːɐ̯ˌʃaʊ̯fl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈkeːɐ̯ˌʃaʊ̯fl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v568.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v577",
+    "de": "der Kinderwagen",
+    "plural": "die Kinderwagen",
+    "en": "pram",
+    "zh": "婴儿车",
+    "path": "wilson/original-next/v577.svg",
+    "ipa": "/ˈkɪndɐˌvaːɡn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈkɪndɐˌvaːɡn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v577.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v583",
+    "de": "der Kleiderhaken",
+    "plural": "die Kleiderhaken",
+    "en": "coat hook",
+    "zh": "衣钩",
+    "path": "wilson/original-next/v583.svg",
+    "ipa": "/ˈklaɪ̯dɐˌhaːkn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈklaɪ̯dɐˌhaːkn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v583.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v593",
+    "de": "die Klobürste",
+    "plural": "die Klobürsten",
+    "en": "toilet brush",
+    "zh": "马桶刷",
+    "path": "wilson/original-next/v593.svg",
+    "ipa": "/ˈkloːˌbʏʁstə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈkloːˌbʏʁstə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v593.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v607",
+    "de": "die Kombizange",
+    "plural": "die Kombizangen",
+    "en": "combination pliers",
+    "zh": "钢丝钳",
+    "path": "wilson/original-next/v607.svg",
+    "ipa": "/kɔmˈbiːˌtsaŋə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "reason": "Greif- und Schneidflächen der Kombizange sind im kleinen Motiv nicht eindeutig genug dargestellt.",
+      "ipa": "/kɔmˈbiːˌtsaŋə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": false,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v607.svg",
+    "status": "needs-replacement-or-context"
+  },
+  {
+    "id": "v620",
+    "de": "das Kopfkissen",
+    "plural": "die Kopfkissen",
+    "en": "pillow",
+    "zh": "枕头",
+    "path": "wilson/original-next/v620.svg",
+    "ipa": "/ˈkɔpfˌkɪsn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈkɔpfˌkɪsn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v620.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v640",
+    "de": "das Küchenpapier",
+    "plural": "—",
+    "en": "kitchen paper",
+    "zh": "厨房纸",
+    "path": "wilson/original-next/v640.svg",
+    "ipa": "/ˈkʏçn̩paˌpiːɐ̯/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈkʏçn̩paˌpiːɐ̯/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v640.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v700",
+    "de": "die Matratze",
+    "plural": "die Matratzen",
+    "en": "mattress",
+    "zh": "床垫",
+    "path": "wilson/original-next/v700.svg",
+    "ipa": "/maˈtʁatsə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/maˈtʁatsə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v700.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v707",
+    "de": "die Mehrfachsteckdose",
+    "plural": "die Mehrfachsteckdosen",
+    "en": "power strip",
+    "zh": "插线板",
+    "path": "wilson/original-next/v707.svg",
+    "ipa": "/ˈmeːɐ̯faxˌʃtɛkdoːzə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈmeːɐ̯faxˌʃtɛkdoːzə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v707.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v761",
+    "de": "der Nachttisch",
+    "plural": "die Nachttische",
+    "en": "bedside table",
+    "zh": "床头柜",
+    "path": "wilson/original-next/v761.svg",
+    "ipa": "/ˈnaxtˌtɪʃ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈnaxtˌtɪʃ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v761.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v809",
+    "de": "das Paket",
+    "plural": "die Pakete",
+    "en": "parcel",
+    "zh": "包裹",
+    "path": "wilson/original-next/v809.svg",
+    "ipa": "/paˈkeːt/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/paˈkeːt/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v809.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v810",
+    "de": "der Papierkorb",
+    "plural": "die Papierkörbe",
+    "en": "recycle bin (computer)",
+    "zh": "回收站",
+    "path": "wilson/original-next/v810.svg",
+    "ipa": "/paˈpiːɐ̯ˌkɔʁp/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "reason": "Source lexicon meaning is the computer recycle bin; this drawing is a physical wastebasket.",
+      "ipa": "/paˈpiːɐ̯ˌkɔʁp/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": false,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v810.svg",
+    "status": "needs-replacement-or-context"
+  },
+  {
+    "id": "v861",
+    "de": "der Radiergummi",
+    "plural": "die Radiergummis",
+    "en": "eraser",
+    "zh": "橡皮擦",
+    "path": "wilson/original-next/v861.svg",
+    "ipa": "/ʁaˈdiːɐ̯ˌɡʊmi/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ʁaˈdiːɐ̯ˌɡʊmi/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v861.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v867",
+    "de": "die Rassel",
+    "plural": "die Rasseln",
+    "en": "baby rattle",
+    "zh": "婴儿摇铃",
+    "path": "wilson/original-next/v867.svg",
+    "ipa": "/ˈʁasl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʁasl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v867.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v870",
+    "de": "der Rauchmelder",
+    "plural": "die Rauchmelder",
+    "en": "smoke detector",
+    "zh": "烟雾报警器",
+    "path": "wilson/original-next/v870.svg",
+    "ipa": "/ˈʁaʊ̯xˌmɛldɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʁaʊ̯xˌmɛldɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v870.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v883",
+    "de": "der Reiskocher",
+    "plural": "die Reiskocher",
+    "en": "rice cooker",
+    "zh": "电饭煲",
+    "path": "wilson/original-next/v883.svg",
+    "ipa": "/ˈʁaɪ̯sˌkɔxɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʁaɪ̯sˌkɔxɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v883.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v887",
+    "de": "der Rettungsring",
+    "plural": "die Rettungsringe",
+    "en": "lifebuoy",
+    "zh": "救生圈",
+    "path": "wilson/original-next/v887.svg",
+    "ipa": "/ˈʁɛtʊŋsˌʁɪŋ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʁɛtʊŋsˌʁɪŋ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v887.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v901",
+    "de": "die Rosenschere",
+    "plural": "die Rosenscheren",
+    "en": "pruning shears",
+    "zh": "修枝剪",
+    "path": "wilson/original-next/v901.svg",
+    "ipa": "/ˈʁoːzn̩ˌʃeːʁə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʁoːzn̩ˌʃeːʁə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v901.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v906",
+    "de": "der Router",
+    "plural": "die Router",
+    "en": "router",
+    "zh": "路由器",
+    "path": "wilson/original-next/v906.svg",
+    "ipa": "/ˈʁuːtɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʁuːtɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v906.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v912",
+    "de": "der Rucksack",
+    "plural": "die Rucksäcke",
+    "en": "backpack",
+    "zh": "背包",
+    "path": "wilson/original-next/v912.svg",
+    "ipa": "/ˈʁʊkˌzak/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʁʊkˌzak/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v912.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v928",
+    "de": "die Sanduhr",
+    "plural": "die Sanduhren",
+    "en": "hourglass",
+    "zh": "沙漏",
+    "path": "wilson/original-next/v928.svg",
+    "ipa": "/ˈzantˌʔuːɐ̯/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈzantˌʔuːɐ̯/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v928.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v969",
+    "de": "der Schraubenschlüssel",
+    "plural": "die Schraubenschlüssel",
+    "en": "spanner",
+    "zh": "扳手",
+    "path": "wilson/original-next/v969.svg",
+    "ipa": "/ˈʃʁaʊ̯bn̩ˌʃlʏsl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʃʁaʊ̯bn̩ˌʃlʏsl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v969.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v974",
+    "de": "der Schuhlöffel",
+    "plural": "die Schuhlöffel",
+    "en": "shoehorn",
+    "zh": "鞋拔",
+    "path": "wilson/original-next/v974.svg",
+    "ipa": "/ˈʃuːˌlœfl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "blocked",
+      "date": "2026-11-17",
+      "reason": "Drawing resembles a spoon too closely to distinguish a shoehorn without context.",
+      "ipa": "/ˈʃuːˌlœfl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": false,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v974.svg",
+    "status": "needs-replacement-or-context"
+  },
+  {
+    "id": "v992",
+    "de": "die Schwimmweste",
+    "plural": "die Schwimmwesten",
+    "en": "life jacket",
+    "zh": "救生衣",
+    "path": "wilson/original-next/v992.svg",
+    "ipa": "/ˈʃvɪmˌvɛstə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʃvɪmˌvɛstə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v992.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1054",
+    "de": "der Sonnenhut",
+    "plural": "die Sonnenhüte",
+    "en": "sun hat",
+    "zh": "遮阳帽",
+    "path": "wilson/original-next/v1054.svg",
+    "ipa": "/ˈzɔnənˌhuːt/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈzɔnənˌhuːt/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1054.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1057",
+    "de": "der Spachtel",
+    "plural": "die Spachtel",
+    "en": "filling knife",
+    "zh": "刮刀",
+    "path": "wilson/original-next/v1057.svg",
+    "ipa": "/ˈʃpaxtl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʃpaxtl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1057.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1090",
+    "de": "der Stiftehalter",
+    "plural": "die Stiftehalter",
+    "en": "pen holder",
+    "zh": "笔筒",
+    "path": "wilson/original-next/v1090.svg",
+    "ipa": "/ˈʃtɪftəˌhaltɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʃtɪftəˌhaltɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1090.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1097",
+    "de": "die Straßenbahn",
+    "plural": "die Straßenbahnen",
+    "en": "tram",
+    "zh": "有轨电车",
+    "path": "wilson/original-next/v1097.svg",
+    "ipa": "/ˈʃtʁaːsn̩ˌbaːn/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʃtʁaːsn̩ˌbaːn/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1097.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1098",
+    "de": "die Straßenlaterne",
+    "plural": "die Straßenlaternen",
+    "en": "street lamp",
+    "zh": "路灯",
+    "path": "wilson/original-next/v1098.svg",
+    "ipa": "/ˈʃtʁaːsn̩laˌtɛʁnə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʃtʁaːsn̩laˌtɛʁnə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1098.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1099",
+    "de": "der Strichcode",
+    "plural": "die Strichcodes",
+    "en": "barcode",
+    "zh": "条形码",
+    "path": "wilson/original-next/v1099.svg",
+    "ipa": "/ˈʃtʁɪçˌkoːt/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈʃtʁɪçˌkoːt/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1099.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1116",
+    "de": "der Tablet-Computer",
+    "plural": "die Tablet-Computer",
+    "en": "tablet computer",
+    "zh": "平板电脑",
+    "path": "wilson/original-next/v1116.svg",
+    "ipa": "/ˈtɛblət kɔmˈpjuːtɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtɛblət kɔmˈpjuːtɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1116.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1132",
+    "de": "das Taschenmesser",
+    "plural": "die Taschenmesser",
+    "en": "pocketknife",
+    "zh": "折叠小刀",
+    "path": "wilson/original-next/v1132.svg",
+    "ipa": "/ˈtaʃn̩ˌmɛsɐ/",
+    "childSuitable": false,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtaʃn̩ˌmɛsɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1132.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1144",
+    "de": "der Telefonhörer",
+    "plural": "die Telefonhörer",
+    "en": "telephone receiver",
+    "zh": "电话听筒",
+    "path": "wilson/original-next/v1144.svg",
+    "ipa": "/teˈleːfoːnˌhøːʁɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/teˈleːfoːnˌhøːʁɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1144.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1148",
+    "de": "das Teppichmesser",
+    "plural": "die Teppichmesser",
+    "en": "utility knife",
+    "zh": "美工刀",
+    "path": "wilson/original-next/v1148.svg",
+    "ipa": "/ˈtɛpɪçˌmɛsɐ/",
+    "childSuitable": false,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtɛpɪçˌmɛsɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1148.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1152",
+    "de": "der Textmarker",
+    "plural": "die Textmarker",
+    "en": "highlighter",
+    "zh": "荧光笔",
+    "path": "wilson/original-next/v1152.svg",
+    "ipa": "/ˈtɛkstˌmaʁkɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtɛkstˌmaʁkɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1152.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1166",
+    "de": "das Töpfchen",
+    "plural": "die Töpfchen",
+    "en": "potty",
+    "zh": "儿童便盆",
+    "path": "wilson/original-next/v1166.svg",
+    "ipa": "/ˈtœpfçən/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtœpfçən/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1166.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1167",
+    "de": "der Topfhandschuh",
+    "plural": "die Topfhandschuhe",
+    "en": "oven glove",
+    "zh": "隔热手套",
+    "path": "wilson/original-next/v1167.svg",
+    "ipa": "/ˈtɔpfˌhantʃuː/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtɔpfˌhantʃuː/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1167.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1180",
+    "de": "der Türgriff",
+    "plural": "die Türgriffe",
+    "en": "door handle",
+    "zh": "门把手",
+    "path": "wilson/original-next/v1180.svg",
+    "ipa": "/ˈtyːɐ̯ˌɡʁɪf/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtyːɐ̯ˌɡʁɪf/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1180.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1181",
+    "de": "die Türklingel",
+    "plural": "die Türklingeln",
+    "en": "doorbell",
+    "zh": "门铃",
+    "path": "wilson/original-next/v1181.svg",
+    "ipa": "/ˈtyːɐ̯ˌklɪŋl̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtyːɐ̯ˌklɪŋl̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1181.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1183",
+    "de": "das Türschloss",
+    "plural": "die Türschlösser",
+    "en": "door lock",
+    "zh": "门锁",
+    "path": "wilson/original-next/v1183.svg",
+    "ipa": "/ˈtyːɐ̯ˌʃlɔs/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈtyːɐ̯ˌʃlɔs/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1183.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1208",
+    "de": "der USB-Stick",
+    "plural": "die USB-Sticks",
+    "en": "USB flash drive",
+    "zh": "U盘",
+    "path": "wilson/original-next/v1208.svg",
+    "ipa": "/ˈuː ʔɛs beː ˌʃtɪk/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈuː ʔɛs beː ˌʃtɪk/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1208.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1212",
+    "de": "der Ventilator",
+    "plural": "die Ventilatoren",
+    "en": "fan",
+    "zh": "电风扇",
+    "path": "wilson/original-next/v1212.svg",
+    "ipa": "/vɛntiˈlaːtoːɐ̯/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/vɛntiˈlaːtoːɐ̯/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1212.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1257",
+    "de": "die Vitrine",
+    "plural": "die Vitrinen",
+    "en": "display cabinet",
+    "zh": "玻璃展示柜",
+    "path": "wilson/original-next/v1257.svg",
+    "ipa": "/viˈtʁiːnə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/viˈtʁiːnə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1257.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1281",
+    "de": "das Waschbecken",
+    "plural": "die Waschbecken",
+    "en": "washbasin",
+    "zh": "洗手池",
+    "path": "wilson/original-next/v1281.svg",
+    "ipa": "/ˈvaʃˌbɛkn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈvaʃˌbɛkn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1281.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1286",
+    "de": "die Wäscheleine",
+    "plural": "die Wäscheleinen",
+    "en": "clothesline",
+    "zh": "晾衣绳",
+    "path": "wilson/original-next/v1286.svg",
+    "ipa": "/ˈvɛʃəˌlaɪ̯nə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈvɛʃəˌlaɪ̯nə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1286.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1287",
+    "de": "der Wäscheständer",
+    "plural": "die Wäscheständer",
+    "en": "drying rack",
+    "zh": "晾衣架",
+    "path": "wilson/original-next/v1287.svg",
+    "ipa": "/ˈvɛʃəˌʃtɛndɐ/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈvɛʃəˌʃtɛndɐ/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1287.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1297",
+    "de": "die Wasserwaage",
+    "plural": "die Wasserwaagen",
+    "en": "spirit level",
+    "zh": "水平尺",
+    "path": "wilson/original-next/v1297.svg",
+    "ipa": "/ˈvasɐˌvaːɡə/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈvasɐˌvaːɡə/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1297.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1314",
+    "de": "der Werkzeugkasten",
+    "plural": "die Werkzeugkästen",
+    "en": "toolbox",
+    "zh": "工具箱",
+    "path": "wilson/original-next/v1314.svg",
+    "ipa": "/ˈvɛʁktsɔʏ̯kˌkastn̩/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/ˈvɛʁktsɔʏ̯kˌkastn̩/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1314.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v1331",
+    "de": "der Wok",
+    "plural": "die Woks",
+    "en": "wok",
+    "zh": "炒锅",
+    "path": "wilson/original-next/v1331.svg",
+    "ipa": "/vɔk/",
+    "childSuitable": true,
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-17",
+      "reason": "Subject-specific vector composition reviewed as a rendered SVG against DE/EN/ZH; editorial first review, no independent native-speaker validation.",
+      "ipa": "/vɔk/",
+      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+      "recheckedOn": "2026-11-26"
+    },
+    "active": true,
+    "provider": "project",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v1331.svg",
+    "status": "approved"
+  },
+  {
+    "id": "v17",
+    "de": "addieren",
+    "en": "to add numbers",
+    "plural": "—",
+    "zh": "相加",
+    "sourcePath": "EN/add.svg",
+    "path": "wilson/mulberry/v17.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/add.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/aˈdiːʁən/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Rechenoperation gehört zu diesem Zeichen? Schreibe das Verb im Infinitiv.",
+          "en": "Which operation matches this sign? Write the German infinitive.",
+          "zh": "这个符号表示哪种运算？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "zusammenzählen"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "357acb7928a742deae60d7d90cb2c31c736a8e3c0ba5c9c5395537e0df555935",
+    "upstreamBlobSha": "edfaf2f1afaad6de67040217528e672c012682ef",
+    "provider": "mulberry",
+    "upstreamBlob": "edfaf2f1afaad6de67040217528e672c012682ef"
+  },
+  {
+    "id": "v177",
+    "de": "die Chips",
+    "en": "crisps",
+    "plural": "—",
+    "zh": "薯片",
+    "sourcePath": "EN/crisps.svg",
+    "path": "wilson/mulberry/v177.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/crisps.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/tʃɪps/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Chips"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "c04c8f77882270f95451631a5732895c3146bd5f5b8e279dc8dfd4e09172d88f",
+    "upstreamBlobSha": "0a4a842a57aab8a7c9a04884065a55408756e2f6",
+    "provider": "mulberry",
+    "upstreamBlob": "0a4a842a57aab8a7c9a04884065a55408756e2f6"
+  },
+  {
+    "id": "v215",
+    "de": "dividieren",
+    "en": "to divide numbers",
+    "plural": "—",
+    "zh": "相除",
+    "sourcePath": "EN/divide.svg",
+    "path": "wilson/mulberry/v215.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/divide.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/diviˈdiːʁən/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Rechenoperation gehört zu diesem Zeichen? Schreibe das Verb im Infinitiv.",
+          "en": "Which operation matches this sign? Write the German infinitive.",
+          "zh": "这个符号表示哪种运算？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "teilen"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ff182418e8ebaf7e921aed709e5d3f80f8bab5c76c281a57692d9b39b2d8a244",
+    "upstreamBlobSha": "33e065e765b22e61ffdc50922120497c9e068b3d",
+    "provider": "mulberry",
+    "upstreamBlob": "33e065e765b22e61ffdc50922120497c9e068b3d"
+  },
+  {
+    "id": "v275",
+    "de": "einsteigen",
+    "en": "to get on (a vehicle)",
+    "plural": "—",
+    "zh": "上车",
+    "sourcePath": "EN/get_on_bus_,_to.svg",
+    "path": "wilson/mulberry/v275.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/get_on_bus_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈaɪ̯nˌʃtaɪ̯ɡn̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe den deutschen Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图中是什么动作？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "in den Bus einsteigen"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "82d25a40f43487c22ff02c331a5b1566339a33c974568ebe76b13853c34eadb0",
+    "upstreamBlobSha": "90553666107570c5b982d91246f2ea618412b762",
+    "provider": "mulberry",
+    "upstreamBlob": "90553666107570c5b982d91246f2ea618412b762"
+  },
+  {
+    "id": "v288",
+    "de": "empfangen",
+    "en": "to receive",
+    "plural": "—",
+    "zh": "接收",
+    "sourcePath": "EN/receive_,_to.svg",
+    "path": "wilson/mulberry/v288.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/receive_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ɛmˈpfaŋən/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe den deutschen Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图中是什么动作？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "erhalten",
+          "entgegennehmen"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3b9a395dbcda9ff819d2a78ba91d0be71f9d3c47fc1a096c3aabc9c2bea02c58",
+    "upstreamBlobSha": "eec6d21ed7de7bc55109c0b29222f46d487b202f",
+    "provider": "mulberry",
+    "upstreamBlob": "eec6d21ed7de7bc55109c0b29222f46d487b202f"
+  },
+  {
+    "id": "v353",
+    "de": "die Frau",
+    "en": "woman",
+    "plural": "die Frauen",
+    "zh": "女人",
+    "sourcePath": "EN/lady_-_face.svg",
+    "path": "wilson/mulberry/v353.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/lady_-_face.svg",
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/female_body.svg",
+        "date": "2026-11-26",
+        "decision": "replaced",
+        "reason": "Erstmotiv im selben Prüflauf visuell verworfen; Ersatzmotiv erneut gerendert und geprüft."
+      }
+    ],
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Porträt einer erwachsenen Frau statt isolierter Körper-/Anatomiedarstellung.",
+      "ipa": "/fʁaʊ̯/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "25e6a8fcd150d4a1cd49d22565b981b1091f02fcd887152d4e2f8d14ab514ffe",
+    "upstreamBlobSha": "cdaa76918637ad60ecbc170048074ce05e08fbd5",
+    "provider": "mulberry",
+    "upstreamBlob": "cdaa76918637ad60ecbc170048074ce05e08fbd5"
+  },
+  {
+    "id": "v363",
+    "de": "die Frühstücksflocken",
+    "en": "breakfast cereal",
+    "plural": "—",
+    "zh": "早餐谷物",
+    "sourcePath": "EN/cornflakes.svg",
+    "path": "wilson/mulberry/v363.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/cornflakes.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈfʁyːʃtʏksˌflɔkn̩/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Frühstücksflocken"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5253ad91671c99ed572db99c705bc962a70d85897f0b23f724aacc0e4a9df190",
+    "upstreamBlobSha": "565839a2e07f12eeb63f92fc777e56435859ff29",
+    "provider": "mulberry",
+    "upstreamBlob": "565839a2e07f12eeb63f92fc777e56435859ff29"
+  },
+  {
+    "id": "v591",
+    "de": "klingeln",
+    "en": "ring",
+    "plural": "—",
+    "zh": "响铃",
+    "sourcePath": "EN/ring_doorbell_,_to.svg",
+    "path": "wilson/mulberry/v591.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ring_doorbell_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈklɪŋl̩n/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe den deutschen Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图中是什么动作？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "an der Tür klingeln"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "4cb9f93b2852e8d4a1d7cc636b1d58ad734bc63ac1322f8c44cd1bfa765aa53c",
+    "upstreamBlobSha": "19e520743266bc69ac6b6c463c2cb48390a46db3",
+    "provider": "mulberry",
+    "upstreamBlob": "19e520743266bc69ac6b6c463c2cb48390a46db3"
+  },
+  {
+    "id": "v622",
+    "de": "die Kopfschmerzen",
+    "en": "headache",
+    "plural": "—",
+    "zh": "头痛",
+    "sourcePath": "EN/headache.svg",
+    "path": "wilson/mulberry/v622.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/headache.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɔpfˌʃmɛʁtsn̩/",
+      "childSuitable": false,
+      "corrections": {
+        "plural": "die Kopfschmerzen"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0da00771e96ebf3acb29b815813cb316afe55fe9afc23bab17412b29bd2fd0fe",
+    "upstreamBlobSha": "42881556bcccb279debfbef073f0734b2a8273a4",
+    "provider": "mulberry",
+    "upstreamBlob": "42881556bcccb279debfbef073f0734b2a8273a4"
+  },
+  {
+    "id": "v642",
+    "de": "die Küchenwaage",
+    "en": "kitchen scales",
+    "plural": "die Küchenwaagen",
+    "zh": "厨房秤",
+    "sourcePath": "EN/scales_2.svg",
+    "path": "wilson/mulberry/v642.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/scales_2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʏçn̩ˌvaːɡə/",
+      "childSuitable": true,
+      "answerVariants": [
+        {
+          "de": "die Waage",
+          "plural": "die Waagen"
+        }
+      ],
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "fe607c1ec29b287df0bdc9cb16e26250a1bb49a549e90bd4d3717d797c75e166",
+    "upstreamBlobSha": "816a0612b53a979fca14756faed771d77b55943e",
+    "provider": "mulberry",
+    "upstreamBlob": "816a0612b53a979fca14756faed771d77b55943e"
+  },
+  {
+    "id": "v697",
+    "de": "der Mann",
+    "en": "man",
+    "plural": "die Männer",
+    "zh": "男人",
+    "sourcePath": "EN/man_-_face.svg",
+    "path": "wilson/mulberry/v697.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/man_-_face.svg",
+    "reviewHistory": [
+      {
+        "sourcePath": "EN/male_body.svg",
+        "date": "2026-11-26",
+        "decision": "replaced",
+        "reason": "Erstmotiv im selben Prüflauf visuell verworfen; Ersatzmotiv erneut gerendert und geprüft."
+      }
+    ],
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Porträt eines erwachsenen Mannes statt isolierter Körper-/Anatomiedarstellung.",
+      "ipa": "/man/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "d57a97363dc907e1d6a25a02044dc808f36cff3fe0383c3684ea482e997a55f1",
+    "upstreamBlobSha": "a2ffdf9ca1f77a1436ee6169d667dde53eb5dcc3",
+    "provider": "mulberry",
+    "upstreamBlob": "a2ffdf9ca1f77a1436ee6169d667dde53eb5dcc3"
+  },
+  {
+    "id": "v724",
+    "de": "die Milchprodukte",
+    "en": "dairy products",
+    "plural": "—",
+    "zh": "乳制品",
+    "sourcePath": "EN/dairy_products.svg",
+    "path": "wilson/mulberry/v724.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dairy_products.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈmɪlçpʁoˌdʊktə/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Milchprodukte"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "dfe2d6d8ba10298507a42918ab117d5947c2dbf0ed6d0ddb44670a31109b5932",
+    "upstreamBlobSha": "09ed17a4c7c38af9d6d1235cc178928c727b6229",
+    "provider": "mulberry",
+    "upstreamBlob": "09ed17a4c7c38af9d6d1235cc178928c727b6229"
+  },
+  {
+    "id": "v750",
+    "de": "multiplizieren",
+    "en": "multiply",
+    "plural": "—",
+    "zh": "相乘",
+    "sourcePath": "EN/multiply.svg",
+    "path": "wilson/mulberry/v750.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/multiply.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/mʊltipliˈtsiːʁən/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Rechenoperation gehört zu diesem Zeichen? Schreibe das Verb im Infinitiv.",
+          "en": "Which operation matches this sign? Write the German infinitive.",
+          "zh": "这个符号表示哪种运算？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "malnehmen"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3fd0d3fe40421933bacc59bcbb5860652383d027f4f9f6e0f7895a11d52e8e60",
+    "upstreamBlobSha": "b8e3f24ada9b1b824227ab9de4f9780f6514b957",
+    "provider": "mulberry",
+    "upstreamBlob": "b8e3f24ada9b1b824227ab9de4f9780f6514b957"
+  },
+  {
+    "id": "v834",
+    "de": "die Pommes frites",
+    "en": "French fries",
+    "plural": "—",
+    "zh": "炸薯条",
+    "sourcePath": "EN/chips.svg",
+    "path": "wilson/mulberry/v834.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/chips.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/pɔm ˈfʁɪt/",
+      "childSuitable": true,
+      "corrections": {
+        "plural": "die Pommes frites"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "0b2ba4b0d7a063fc131f56ab801e221a1e5cf77844e1b9ac5357fc8589f54ea5",
+    "upstreamBlobSha": "f0deb177a082a35cb07eed21d5abcf2d9d4f0c7c",
+    "provider": "mulberry",
+    "upstreamBlob": "f0deb177a082a35cb07eed21d5abcf2d9d4f0c7c"
+  },
+  {
+    "id": "v855",
+    "de": "das Püree",
+    "en": "purée",
+    "plural": "die Pürees",
+    "zh": "泥状食物",
+    "sourcePath": "EN/mash_potato_1.svg",
+    "path": "wilson/mulberry/v855.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mash_potato_1.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/pyˈʁeː/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "5a05903a0b2d384cc55b16aec59fd66163c2a02624abea24afbdb7779d1657e0",
+    "upstreamBlobSha": "9384e63ba17f56ca7dd5012877117bb66028d12a",
+    "provider": "mulberry",
+    "upstreamBlob": "9384e63ba17f56ca7dd5012877117bb66028d12a"
+  },
+  {
+    "id": "v964",
+    "de": "der Schnürschuh",
+    "en": "lace-up shoe",
+    "plural": "die Schnürschuhe",
+    "zh": "系带鞋",
+    "sourcePath": "EN/shoe_-_mans.svg",
+    "path": "wilson/mulberry/v964.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/shoe_-_mans.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃnyːɐ̯ˌʃuː/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "ae64045b6e93a9ff9ac65d635f5095d688fc3306be7d47251830475151a49228",
+    "upstreamBlobSha": "275143037c40eaeac03a7f6b9632bb1e92c2f6f6",
+    "provider": "mulberry",
+    "upstreamBlob": "275143037c40eaeac03a7f6b9632bb1e92c2f6f6"
+  },
+  {
+    "id": "v1037",
+    "de": "der Slip",
+    "en": "briefs",
+    "plural": "die Slips",
+    "zh": "内裤",
+    "sourcePath": "EN/knickers.svg",
+    "path": "wilson/mulberry/v1037.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/knickers.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/slɪp/",
+      "childSuitable": true,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "721286f103b79c13d55a708c8fec705e9603b6121433b39f4fd109e7815920ee",
+    "upstreamBlobSha": "95bc6cb459a08dc8ceea8a6f91b493b41a7820c7",
+    "provider": "mulberry",
+    "upstreamBlob": "95bc6cb459a08dc8ceea8a6f91b493b41a7820c7"
+  },
+  {
+    "id": "v1106",
+    "de": "subtrahieren",
+    "en": "to subtract",
+    "plural": "—",
+    "zh": "减去",
+    "sourcePath": "EN/subtract.svg",
+    "path": "wilson/mulberry/v1106.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/subtract.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/zʊptʁaˈhiːʁən/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Rechenoperation gehört zu diesem Zeichen? Schreibe das Verb im Infinitiv.",
+          "en": "Which operation matches this sign? Write the German infinitive.",
+          "zh": "这个符号表示哪种运算？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "abziehen"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "50c841f2910b3f951526a159affe42fef252dc5ddb108770d472e870d7866895",
+    "upstreamBlobSha": "48161d94cdae41853029c29eea3164ee48eb7c81",
+    "provider": "mulberry",
+    "upstreamBlob": "48161d94cdae41853029c29eea3164ee48eb7c81"
+  },
+  {
+    "id": "v1118",
+    "de": "die Tablette",
+    "en": "tablet; pill",
+    "plural": "die Tabletten",
+    "zh": "药片",
+    "sourcePath": "EN/tablets.svg",
+    "path": "wilson/mulberry/v1118.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/tablets.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/taˈblɛtə/",
+      "childSuitable": false,
+      "context": {
+        "de": "Gesucht ist die feste Arzneiform vor dem Fläschchen.",
+        "en": "Name the solid form of medicine in front of the bottle.",
+        "zh": "请写出瓶子前面的固体药物剂型名称。"
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "1b176efc705e0259303c8439149b74cb000625cb062ca8b22613b1b314a7f318",
+    "upstreamBlobSha": "717465b2622b4d72132388e38b1f9a93a75ad701",
+    "provider": "mulberry",
+    "upstreamBlob": "717465b2622b4d72132388e38b1f9a93a75ad701"
+  },
+  {
+    "id": "v1170",
+    "de": "der Touchscreen",
+    "en": "touchscreen",
+    "plural": "die Touchscreens",
+    "zh": "触摸屏",
+    "sourcePath": "EN/touch_screen.svg",
+    "path": "wilson/mulberry/v1170.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/touch_screen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈtatʃskʁiːn/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "19c124872d42b2bec3021e14731180c31625d7d08060ebc454e3781e8a313815",
+    "upstreamBlobSha": "396492f11054e0b447fd279d641f910fc651b60c",
+    "provider": "mulberry",
+    "upstreamBlob": "396492f11054e0b447fd279d641f910fc651b60c"
+  },
+  {
+    "id": "v1270",
+    "de": "wählen",
+    "en": "to dial",
+    "plural": "—",
+    "zh": "拨号",
+    "sourcePath": "EN/dial_,_to.svg",
+    "path": "wilson/mulberry/v1270.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/dial_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/ˈvɛːlən/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe den deutschen Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图中是什么动作？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "eine Telefonnummer wählen"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3a6ec0814ec0168228579c6701080f5f94a4ca0b5525dc14453fd4246f1bb71c",
+    "upstreamBlobSha": "057013d4197160802104561ab72f722b9c297963",
+    "provider": "mulberry",
+    "upstreamBlob": "057013d4197160802104561ab72f722b9c297963"
+  },
+  {
+    "id": "v1359",
+    "de": "zurückschneiden",
+    "en": "to prune",
+    "plural": "—",
+    "zh": "修剪",
+    "sourcePath": "EN/trim_hedge_,_to.svg",
+    "path": "wilson/mulberry/v1359.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/trim_hedge_,_to.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Dargestellte Tätigkeit bzw. Rechenoperation passt zum deutschen Infinitiv; ohne Artikel-/Pluralaufgabe.",
+      "ipa": "/tsuˈʁʏkˌʃnaɪ̯dn̩/",
+      "childSuitable": false,
+      "task": {
+        "type": "infinitive",
+        "prompt": {
+          "de": "Welche Handlung zeigt das Bild? Schreibe den deutschen Infinitiv.",
+          "en": "What action is shown? Write the German infinitive.",
+          "zh": "图中是什么动作？请写德语动词原形。"
+        },
+        "hint": {
+          "de": "Ohne Artikel oder Plural.",
+          "en": "No article or plural.",
+          "zh": "不加冠词或复数。"
+        },
+        "answers": [
+          "stutzen",
+          "eine Hecke schneiden",
+          "die Hecke schneiden",
+          "eine Hecke zurückschneiden"
+        ]
+      },
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "cce4ca1e5967677f26a63832053370224f424f56e0f6057daee1d41aa6a2ea9f",
+    "upstreamBlobSha": "71bdd0ae8257d6ff5767f0635219490d60d89124",
+    "provider": "mulberry",
+    "upstreamBlob": "71bdd0ae8257d6ff5767f0635219490d60d89124"
+  },
+  {
+    "id": "vg16",
+    "de": "die Damentoilette",
+    "en": "women's toilet",
+    "plural": "die Damentoiletten",
+    "zh": "女洗手间",
+    "sourcePath": "EN/ladies_toilet.svg",
+    "path": "wilson/mulberry/vg16.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/ladies_toilet.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈdaːmənto̯aˌlɛtə/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "e8ea8419f8caaa5f73f7124be21919d693ef02135a0115c53271d7112f5f4916",
+    "upstreamBlobSha": "f6ec6293ed66ecf94434a5b5a3b061c298cd99ac",
+    "provider": "mulberry",
+    "upstreamBlob": "f6ec6293ed66ecf94434a5b5a3b061c298cd99ac"
+  },
+  {
+    "id": "vg17",
+    "de": "die Herrentoilette",
+    "en": "men's toilet",
+    "plural": "die Herrentoiletten",
+    "zh": "男洗手间",
+    "sourcePath": "EN/mens_toilet.svg",
+    "path": "wilson/mulberry/vg17.svg",
+    "status": "approved",
+    "active": true,
+    "license": "CC-BY-SA-4.0",
+    "creator": "Steve Lee",
+    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/mens_toilet.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "method": "Rendered SVG inspected individually in labeled contact sheet and, where needed, enlarged. DE article/lemma/plural, EN/ZH meaning and broad German IPA assessed editorially by AI; independent native-speaker and phonetics validation outstanding.",
+      "reason": "Motiv, deutsche Wortformen und EN/ZH-Bedeutungen redaktionell abgeglichen.",
+      "ipa": "/ˈhɛʁənto̯aˌlɛtə/",
+      "childSuitable": false,
+      "recheckedOn": "2026-11-26"
+    },
+    "svgSha256": "3204699f81087ebd624b40d32e9f37c97cad7c7f5a6ce86a7e199e2b9badad62",
+    "upstreamBlobSha": "d14aaa91b0c521efe4c2ce634633bd7d6d3f906b",
+    "provider": "mulberry",
+    "upstreamBlob": "d14aaa91b0c521efe4c2ce634633bd7d6d3f906b"
   }
 ];

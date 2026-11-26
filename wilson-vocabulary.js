@@ -26,16 +26,23 @@ const WILSON_VOCABULARY = (() => {
   const originalIPA = {"die Tasse": "/ˈtasə/", "der Apfel": "/ˈapfəl/", "das Brot": "/bʁoːt/", "das Wasser": "/ˈvasɐ/", "das Ei": "/aɪ̯/", "die Banane": "/baˈnaːnə/", "der Stuhl": "/ʃtuːl/", "das Buch": "/buːx/", "der Schlüssel": "/ˈʃlʏsl̩/", "das Handy": "/ˈhɛndi/", "das Bett": "/bɛt/", "die Uhr": "/uːɐ̯/", "das Auto": "/ˈaʊ̯to/", "das Fahrrad": "/ˈfaːɐ̯ʁaːt/", "der Junge": "/ˈjʊŋə/", "der Kollege": "/kɔˈleːɡə/", "die Eltern": "/ˈɛltɐn/", "die Ferien": "/ˈfeːʁi̯ən/", "der Bus": "/bʊs/", "das Flugzeug": "/ˈfluːktsɔʏ̯k/", "das Haus": "/haʊ̯s/", "der Baum": "/baʊ̯m/"};
   const reviewed = new Map(WILSON_IMAGE_CANDIDATES.filter(w => w.active && w.review?.decision === 'approved').map(w => [w.id, w]));
   const originals = new Map(originalInput.map(row => [row[1], row]));
-  const words = LEXICON.map(w => {
+  const lexiconIDs = new Set(LEXICON.map(w=>w.id));
+  const base = [...LEXICON,...WILSON_IMAGE_CANDIDATES.filter(w=>!lexiconIDs.has(w.id) && w.de && w.en)];
+  const words = base.map(w => {
     const candidate = reviewed.get(w.id), row = originals.get(w.de);
-    const patch = candidate?.review?.corrections || {};
-    return {...w, ...patch, ...(row ? {de:row[1],plural:row[6]==='plural'?row[1]:row[2],en:row[3],zh:row[4],pinyin:row[5]} : {}),
-      numberMode: row?.[6] || (w.pos==='plural'?'plural':(patch.plural ?? w.plural)==='—'?'singular':'both'),
+    const patch = candidate ? {...Object.fromEntries(['de','plural','en','zh','pinyin','pos','cat','articleVariants'].filter(k=>candidate[k]!==undefined).map(k=>[k,candidate[k]])),...candidate.review.corrections} : {};
+    const task = candidate?.review?.task || null;
+    const plural = (patch.pos || w.pos)==='plural' && (patch.plural ?? w.plural)==='—' ? (patch.de || w.de) : (patch.plural ?? w.plural);
+    return {...w, ...patch, plural, ...(row ? {de:row[1],plural:row[6]==='plural'?row[1]:row[2],en:row[3],zh:row[4],pinyin:row[5]} : {}),
+      task,
+      context: candidate?.review?.context || null,
+      answerVariants: candidate?.review?.answerVariants || [],
+      numberMode: row?.[6] || ((patch.pos || w.pos)==='plural'?'plural':plural==='—'?'singular':'both'),
       imagePath: row ? 'wilson/'+row[0]+'.svg' : candidate?.path || '',
       imageCredit: row ? null : candidate || null,
       ipa: originalIPA[w.de] || candidate?.review?.ipa || '',
-      nDeclension: ['der Junge','der Kollege','der Kunde','der Student','der Mensch','der Herr'].includes(w.de),
-      childSuitable: row ? !['der Kollege','die Ferien','die Eltern'].includes(w.de) : candidate?.review?.childSuitable === true,
+      nDeclension: patch.nDeclension ?? ['der Junge','der Kollege','der Kunde','der Student','der Mensch','der Herr','der Nachbar','der Polizist','der Geldautomat','der Bär','der Ameisenbär','der Elefant','der Hase','der Löwe','der Leopard','der Schimpanse'].includes(w.de),
+      childSuitable: row ? !['der Kollege','die Ferien','die Eltern'].includes(w.de) : (candidate?.review?.childSuitable ?? candidate?.childSuitable) === true,
       picture: !!(row || candidate)
     };
   });
