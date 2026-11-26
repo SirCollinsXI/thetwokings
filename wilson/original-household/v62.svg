@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="120" cy="157" rx="94" ry="10" fill="#e6eeea" stroke="none"/>
+  <rect x="116" y="101" width="103" height="44" rx="3" fill="#efbc80" stroke="#ce8b55" stroke-width="2.4"/>
+  <polyline points="125,102 125,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <polyline points="137,102 137,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <polyline points="149,102 149,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <polyline points="161,102 161,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <polyline points="173,102 173,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <polyline points="185,102 185,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <polyline points="197,102 197,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <polyline points="209,102 209,143" fill="none" stroke="#ce8b55" stroke-width="3"/>
+  <rect x="112" y="97" width="111" height="7" rx="3" fill="#efbc80" stroke="#ce8b55" stroke-width="2.4"/>
+  <rect x="125" y="143" width="7" height="12" rx="3" fill="#ce8b55" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="203" y="143" width="7" height="12" rx="3" fill="#ce8b55" stroke="#263a40" stroke-width="2.4"/>
+  <ellipse cx="147" cy="111" rx="12" ry="6" fill="#f6e3b7" stroke="#ce8b55" stroke-width="2.4"/>
+  <polygon points="152,108 183,107 199,120 152,121" fill="#79b8d4" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="164" y="64" width="27" height="27" rx="6" fill="#a5d9c8" stroke="#2d8d85" stroke-width="2.4"/>
+  <ellipse cx="175" cy="75" rx="6" ry="6" fill="#263a40" stroke="#263a40" stroke-width="2.4"/>
+  <ellipse cx="176" cy="74" rx="2" ry="2" fill="#fffdf5" stroke="none"/>
+  <rect x="160" y="88" width="36" height="5" rx="3" fill="#2d8d85" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="36" y="71" width="44" height="72" rx="8" fill="#a5d9c8" stroke="#2d8d85" stroke-width="2.4"/>
+  <rect x="67" y="49" width="8" height="24" rx="3" fill="#2d8d85" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="43" y="81" width="30" height="28" rx="3" fill="#bbcdd1" stroke="#2d8d85" stroke-width="2.4"/>
+  <ellipse cx="49" cy="94" rx="3" ry="3" fill="#263a40" stroke="none"/>
+  <polyline points="54,97 61,92 67,96" fill="none" stroke="#263a40" stroke-width="2"/>
+  <ellipse cx="48" cy="120" rx="2" ry="2" fill="#2d8d85" stroke="none"/>
+  <ellipse cx="56" cy="120" rx="2" ry="2" fill="#2d8d85" stroke="none"/>
+  <ellipse cx="64" cy="120" rx="2" ry="2" fill="#2d8d85" stroke="none"/>
+  <ellipse cx="58" cy="132" rx="4" ry="4" fill="#fffdf5" stroke="#2d8d85" stroke-width="2.4"/>
+  <polyline points="128.7,66 129.2,66.5 129.5,67.1 129.9,67.6 130.2,68.2 130.4,68.8 130.6,69.4 130.8,70 130.9,70.7 131,71.3 131,72 131,72.6 130.9,73.3 130.8,73.9 130.6,74.5 130.4,75.1 130.2,75.7 129.9,76.3 129.6,76.9 129.2,77.4 128.8,77.9" fill="none" stroke="#2d8d85" stroke-width="1.8"/>
+  <polyline points="134.7,60.7 135.5,61.7 136.2,62.7 136.9,63.7 137.4,64.8 137.9,66 138.3,67.1 138.6,68.3 138.8,69.5 139,70.7 139,71.9 139,73.2 138.8,74.4 138.6,75.6 138.3,76.8 137.9,77.9 137.5,79.1 136.9,80.2 136.3,81.2 135.6,82.2 134.8,83.2" fill="none" stroke="#2d8d85" stroke-width="1.8"/>
+  <polyline points="140.7,55.5 141.9,56.8 142.9,58.3 143.9,59.9 144.7,61.5 145.4,63.1 145.9,64.8 146.4,66.6 146.7,68.3 146.9,70.1 147,71.9 146.9,73.7 146.8,75.5 146.4,77.3 146,79 145.4,80.7 144.7,82.4 143.9,84 143,85.5 142,87 140.8,88.4" fill="none" stroke="#2d8d85" stroke-width="1.8"/>
+</svg>

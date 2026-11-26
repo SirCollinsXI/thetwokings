@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="45" y="24" width="150" height="126" rx="5" fill="#e0eef0" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="49" y="28" width="142" height="118" rx="2" fill="#edf7f8" stroke="none"/>
+  <polygon points="52,31 187,31 187,90 148,94 117,84 84,93 52,87" fill="#bde1ec" stroke="none"/>
+  <polyline points="60,56 83,34" fill="none" stroke="#fffdf5" stroke-width="3"/>
+  <polyline points="159,65 181,44" fill="none" stroke="#fffdf5" stroke-width="3"/>
+  <polygon points="69,40 66,45 65,49 67,52 71,52 73,49 72,45" fill="#58bad6" stroke="#42849f" stroke-width="2.4"/>
+  <polygon points="91,58 88,63 87,67 89,70 93,70 95,67 94,63" fill="#58bad6" stroke="#42849f" stroke-width="2.4"/>
+  <polygon points="112,44 109,49 108,53 110,56 114,56 116,53 115,49" fill="#58bad6" stroke="#42849f" stroke-width="2.4"/>
+  <polygon points="142,49 139,54 138,58 140,61 144,61 146,58 145,54" fill="#58bad6" stroke="#42849f" stroke-width="2.4"/>
+  <polygon points="163,71 160,76 159,80 161,83 165,83 167,80 166,76" fill="#58bad6" stroke="#42849f" stroke-width="2.4"/>
+  <polygon points="177,37 174,42 173,46 175,49 179,49 181,46 180,42" fill="#58bad6" stroke="#42849f" stroke-width="2.4"/>
+  <polygon points="58,68 55,73 54,77 56,80 60,80 62,77 61,73" fill="#58bad6" stroke="#42849f" stroke-width="2.4"/>
+  <polygon points="99,78 109,80 119,131 106,135" fill="#236661" stroke="#263a40" stroke-width="2.4"/>
+  <polygon points="61,75 146,65 151,74 65,86" fill="#bbcdd1" stroke="#79939b" stroke-width="2.4"/>
+  <polygon points="62,82 150,72 151,78 65,89" fill="#263a40" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="103,92 111,127" fill="none" stroke="#a5d9c8" stroke-width="2.3"/>
+</svg>

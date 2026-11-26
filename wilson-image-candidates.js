@@ -4504,27 +4504,6 @@ const WILSON_IMAGE_CANDIDATES=[
     "upstreamBlob": "933a0b437d00c37f26e04d744a6fc6000b70cde2"
   },
   {
-    "id": "v471",
-    "de": "das Handrührgerät",
-    "en": "hand mixer",
-    "plural": "die Handrührgeräte",
-    "zh": "手持搅拌器",
-    "sourcePath": "EN/hand_mixer.svg",
-    "path": "wilson/mulberry/v471.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
-    "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hand_mixer.svg",
-    "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zeigt Stabmixer, kein Handrührgerät mit Rührbesen.",
-      "recheckedOn": "2026-11-26"
-    }
-  },
-  {
     "id": "v472",
     "de": "die Handsäge",
     "en": "handsaw",
@@ -21984,30 +21963,6 @@ const WILSON_IMAGE_CANDIDATES=[
     "status": "approved"
   },
   {
-    "id": "v974",
-    "de": "der Schuhlöffel",
-    "plural": "die Schuhlöffel",
-    "en": "shoehorn",
-    "zh": "鞋拔",
-    "path": "wilson/original-next/v974.svg",
-    "ipa": "/ˈʃuːˌlœfl̩/",
-    "childSuitable": true,
-    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
-    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
-    "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "reason": "Drawing resembles a spoon too closely to distinguish a shoehorn without context.",
-      "ipa": "/ˈʃuːˌlœfl̩/",
-      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
-      "recheckedOn": "2026-11-26"
-    },
-    "active": false,
-    "provider": "project",
-    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v974.svg",
-    "status": "needs-replacement-or-context"
-  },
-  {
     "id": "v992",
     "de": "die Schwimmweste",
     "plural": "die Schwimmwesten",
@@ -23468,5 +23423,727 @@ const WILSON_IMAGE_CANDIDATES=[
     "upstreamBlobSha": "d14aaa91b0c521efe4c2ce634633bd7d6d3f906b",
     "provider": "mulberry",
     "upstreamBlob": "d14aaa91b0c521efe4c2ce634633bd7d6d3f906b"
+  },
+  {
+    "id": "v28",
+    "de": "die Anrichte",
+    "plural": "die Anrichten",
+    "en": "sideboard",
+    "zh": "餐边柜",
+    "pinyin": "cānbiānguì",
+    "path": "wilson/original-household/v28.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v28.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Offene niedrige Anrichte mit gestapeltem Geschirr und Servierplatte.",
+      "ipa": "/ˈanˌʁɪçtə/",
+      "answerVariants": [
+        {
+          "de": "das Sideboard",
+          "plural": "die Sideboards"
+        }
+      ]
+    }
+  },
+  {
+    "id": "v37",
+    "de": "die Arbeitsplatte",
+    "plural": "die Arbeitsplatten",
+    "en": "kitchen worktop / countertop",
+    "zh": "厨房台面",
+    "pinyin": "chúfáng táimiàn",
+    "path": "wilson/original-household/v37.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v37.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Durchgehende Arbeitsfläche über den Küchenunterschränken farbig hervorgehoben.",
+      "ipa": "/ˈaʁbaɪ̯t͡sˌplatə/",
+      "context": {
+        "de": "Gesucht ist die farbig markierte Fläche zum Zubereiten von Essen.",
+        "en": "Name the highlighted surface used to prepare food.",
+        "zh": "请写出图中标出的备餐台面的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v62",
+    "de": "das Babyfon",
+    "plural": "die Babyfone",
+    "en": "baby monitor",
+    "zh": "婴儿监护器",
+    "pinyin": "yīng'ér jiānhùqì",
+    "path": "wilson/original-household/v62.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v62.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Zweiteiliges Babyfon mit Empfänger und Sender am Babybett.",
+      "ipa": "/ˈbeːbifoːn/"
+    }
+  },
+  {
+    "id": "v107",
+    "de": "die Bettdecke",
+    "plural": "die Bettdecken",
+    "en": "duvet",
+    "zh": "被子",
+    "pinyin": "bèizi",
+    "path": "wilson/original-household/v107.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v107.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Dicke gesteppte Bettdecke mit umgeschlagener Kante auf einem Bett.",
+      "ipa": "/ˈbɛtˌdɛkə/"
+    }
+  },
+  {
+    "id": "v187",
+    "de": "die Dachrinne",
+    "plural": "die Dachrinnen",
+    "en": "roof gutter",
+    "zh": "屋檐排水槽",
+    "pinyin": "wūyán páishuǐcáo",
+    "path": "wilson/original-household/v187.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v187.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Halbrunde Rinne an der Dachkante mit abgewinkeltem Fallrohr.",
+      "ipa": "/ˈdaxˌʁɪnə/",
+      "context": {
+        "de": "Gesucht ist die waagerechte Rinne an der Dachkante.",
+        "en": "Name the horizontal channel that catches rain at the roof edge.",
+        "zh": "请写出屋檐边横向接雨水的槽的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v240",
+    "de": "die Dunstabzugshaube",
+    "plural": "die Dunstabzugshauben",
+    "en": "extractor hood / range hood",
+    "zh": "抽油烟机",
+    "pinyin": "chōu yóuyān jī",
+    "path": "wilson/original-household/v240.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v240.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Abzugshaube mit Metallfiltern und Schacht über einem dampfenden Kochfeld.",
+      "ipa": "/ˈdʊnstʔapt͡suːksˌhaʊ̯bə/"
+    }
+  },
+  {
+    "id": "v257",
+    "de": "die Einbauküche",
+    "plural": "die Einbauküchen",
+    "en": "fitted kitchen",
+    "zh": "整体厨房",
+    "pinyin": "zhěngtǐ chúfáng",
+    "path": "wilson/original-household/v257.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v257.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Durchgehende Einbaumöbel mit integrierten Geräten in einer Küchenecke.",
+      "ipa": "/ˈaɪ̯nbaʊ̯ˌkʏçə/",
+      "context": {
+        "de": "Gesucht ist die ganze Küche mit fest eingebauten Schränken und Geräten.",
+        "en": "Name the whole kitchen with built-in cabinets and appliances.",
+        "zh": "请写出这套带嵌入式橱柜和电器的厨房的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v329",
+    "de": "das Fensterbrett",
+    "plural": "die Fensterbretter",
+    "en": "windowsill",
+    "zh": "窗台",
+    "pinyin": "chuāngtái",
+    "path": "wilson/original-household/v329.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v329.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Vorspringendes Fensterbrett mit Blumentopf unter einem Fenster.",
+      "ipa": "/ˈfɛnstɐˌbʁɛt/",
+      "answerVariants": [
+        {
+          "de": "die Fensterbank",
+          "plural": "die Fensterbänke"
+        }
+      ]
+    }
+  },
+  {
+    "id": "v330",
+    "de": "die Fernsehbank",
+    "plural": "die Fernsehbänke",
+    "en": "TV stand",
+    "zh": "电视柜",
+    "pinyin": "diànshìguì",
+    "path": "wilson/original-household/v330.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v330.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Niedrige Fernsehbank mit offenen Fächern unter dem Fernseher.",
+      "ipa": "/ˈfɛʁnzeːˌbaŋk/"
+    }
+  },
+  {
+    "id": "v443",
+    "de": "der Gummiwischer",
+    "plural": "die Gummiwischer",
+    "en": "rubber squeegee",
+    "zh": "刮水器",
+    "pinyin": "guāshuǐqì",
+    "path": "wilson/original-household/v443.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v443.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Breite Gummilippe am Handgriff zieht Wasser von einer Scheibe ab.",
+      "ipa": "/ˈɡʊmiˌvɪʃɐ/",
+      "answerVariants": [
+        {
+          "de": "der Fensterabzieher",
+          "plural": "die Fensterabzieher"
+        }
+      ]
+    }
+  },
+  {
+    "id": "v471",
+    "de": "das Handrührgerät",
+    "plural": "die Handrührgeräte",
+    "en": "electric hand mixer",
+    "zh": "手持打蛋器",
+    "pinyin": "shǒuchí dǎdànqì",
+    "path": "wilson/original-household/v471.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v471.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Handgehäuse über einer Rührschüssel mit zwei Draht-Rührbesen.",
+      "ipa": "/ˈhantʁyːɐ̯ɡəˌʁɛːt/",
+      "answerVariants": [
+        {
+          "de": "der Handmixer",
+          "plural": "die Handmixer"
+        }
+      ]
+    },
+    "reviewHistory": [
+      {
+        "path": "wilson/mulberry/v471.svg",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/hand_mixer.svg",
+        "sourcePath": "EN/hand_mixer.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Zeigt Stabmixer, kein Handrührgerät mit Rührbesen.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "v476",
+    "de": "der Hängeschrank",
+    "plural": "die Hängeschränke",
+    "en": "wall-mounted kitchen cabinet",
+    "zh": "厨房吊柜",
+    "pinyin": "chúfáng diàoguì",
+    "path": "wilson/original-household/v476.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v476.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Hängeschrank mit geöffneter Tür oberhalb der Küchentheke.",
+      "ipa": "/ˈhɛŋəˌʃʁaŋk/"
+    }
+  },
+  {
+    "id": "v580",
+    "de": "der Kissenbezug",
+    "plural": "die Kissenbezüge",
+    "en": "pillowcase",
+    "zh": "枕套",
+    "pinyin": "zhěntào",
+    "path": "wilson/original-household/v580.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v580.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Offener leerer Stoffbezug und sichtbar hineingleitendes Kopfkissen.",
+      "ipa": "/ˈkɪsn̩bəˌt͡suːk/",
+      "context": {
+        "de": "Gesucht ist die Stoffhülle für das Kopfkissen.",
+        "en": "Name the fabric cover that the pillow slips into.",
+        "zh": "请写出套在枕头外面的布套的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v594",
+    "de": "der Klostein",
+    "plural": "die Klosteine",
+    "en": "toilet rim block",
+    "zh": "挂式洁厕块",
+    "pinyin": "guàshì jiécèkuài",
+    "path": "wilson/original-household/v594.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": false,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v594.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Eingehängter Halter mit farbigen Reinigungsblöcken am WC-Rand.",
+      "ipa": "/ˈkloːˌʃtaɪ̯n/",
+      "context": {
+        "de": "Gesucht ist der kleine Reinigungsblock am Beckenrand.",
+        "en": "Name the small cleaning block hanging from the rim.",
+        "zh": "请写出挂在马桶边缘的小清洁块的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v654",
+    "de": "das Laken",
+    "plural": "die Laken",
+    "en": "bed sheet",
+    "zh": "床单",
+    "pinyin": "chuángdān",
+    "path": "wilson/original-household/v654.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v654.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Dünnes glattes Laken mit herabhängender Ecke auf einer Matratze.",
+      "ipa": "/ˈlaːkn̩/",
+      "context": {
+        "de": "Gesucht ist das dünne Tuch direkt auf der Matratze.",
+        "en": "Name the thin cloth laid directly on the mattress.",
+        "zh": "请写出直接铺在床垫上的薄布的德语名称。"
+      },
+      "answerVariants": [
+        {
+          "de": "das Bettlaken",
+          "plural": "die Bettlaken"
+        }
+      ]
+    }
+  },
+  {
+    "id": "v662",
+    "de": "der Laufstall",
+    "plural": "die Laufställe",
+    "en": "playpen",
+    "zh": "婴儿围栏",
+    "pinyin": "yīng'ér wéilán",
+    "path": "wilson/original-household/v662.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v662.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Bodennaher Spielbereich mit vier Gitterwänden und Spielzeug.",
+      "ipa": "/ˈlaʊ̯fˌʃtal/"
+    }
+  },
+  {
+    "id": "v762",
+    "de": "die Nachttischlampe",
+    "plural": "die Nachttischlampen",
+    "en": "bedside lamp",
+    "zh": "床头灯",
+    "pinyin": "chuángtóudēng",
+    "path": "wilson/original-household/v762.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v762.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Leuchtender Lampenschirm auf einem Nachttisch neben einem Kissen.",
+      "ipa": "/ˈnaxttɪʃˌlampə/"
+    }
+  },
+  {
+    "id": "v948",
+    "de": "die Schlafcouch",
+    "plural": "die Schlafcouchs",
+    "en": "sofa bed",
+    "zh": "沙发床",
+    "pinyin": "shāfāchuáng",
+    "path": "wilson/original-household/v948.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v948.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Zwei Bildhälften zeigen dieselbe Couch vor und nach dem Ausklappen.",
+      "ipa": "/ˈʃlaːfˌkaʊ̯t͡ʃ/",
+      "answerVariants": [
+        {
+          "de": "die Schlafcouch",
+          "plural": "die Schlafcouchen"
+        },
+        {
+          "de": "das Schlafsofa",
+          "plural": "die Schlafsofas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "v952",
+    "de": "das Schlüsselbrett",
+    "plural": "die Schlüsselbretter",
+    "en": "wall-mounted key rack",
+    "zh": "钥匙挂架",
+    "pinyin": "yàoshi guàjià",
+    "path": "wilson/original-household/v952.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v952.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Wandleiste mit Haken und drei herabhängenden Schlüsseln.",
+      "ipa": "/ˈʃlʏsl̩ˌbʁɛt/"
+    }
+  },
+  {
+    "id": "v974",
+    "de": "der Schuhlöffel",
+    "plural": "die Schuhlöffel",
+    "en": "shoehorn",
+    "zh": "鞋拔子",
+    "pinyin": "xiébázi",
+    "path": "wilson/original-household/v974.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v974.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Gebogener Schuhlöffel greift zwischen Ferse und Schuh.",
+      "ipa": "/ˈʃuːˌlœfl̩/",
+      "context": {
+        "de": "Gesucht ist das gebogene Hilfsmittel an der Ferse.",
+        "en": "Name the curved tool at the heel.",
+        "zh": "请写出脚后跟旁边这个弯曲的穿鞋工具的德语名称。"
+      }
+    },
+    "reviewHistory": [
+      {
+        "path": "wilson/original-next/v974.svg",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v974.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "reason": "Drawing resembles a spoon too closely to distinguish a shoehorn without context.",
+        "ipa": "/ˈʃuːˌlœfl̩/",
+        "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "v1022",
+    "de": "der Sicherungskasten",
+    "plural": "die Sicherungskästen",
+    "en": "fuse box / breaker panel",
+    "zh": "配电箱",
+    "pinyin": "pèidiànxiāng",
+    "path": "wilson/original-household/v1022.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": false,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1022.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Wandkasten mit geöffneter Klappe und zwei Reihen Leitungsschutzschalter.",
+      "ipa": "/ˈzɪçəʁʊŋsˌkastn̩/"
+    }
+  },
+  {
+    "id": "v1128",
+    "de": "die Tapetenrolle",
+    "plural": "die Tapetenrollen",
+    "en": "roll of wallpaper",
+    "zh": "一卷墙纸",
+    "pinyin": "yì juǎn qiángzhǐ",
+    "path": "wilson/original-household/v1128.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1128.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Angerollte Tapetenbahn mit wiederholtem Wandmuster und sichtbarem Rollenkern.",
+      "ipa": "/taˈpeːtn̩ˌʁɔlə/"
+    }
+  },
+  {
+    "id": "v1159",
+    "de": "der Tischläufer",
+    "plural": "die Tischläufer",
+    "en": "table runner",
+    "zh": "桌旗",
+    "pinyin": "zhuōqí",
+    "path": "wilson/original-household/v1159.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1159.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Schmale Stoffbahn mittig über dem Tisch, beide seitlichen Tischflächen sichtbar.",
+      "ipa": "/ˈtɪʃˌlɔɪ̯fɐ/",
+      "context": {
+        "de": "Gesucht ist die schmale Stoffbahn in der Tischmitte.",
+        "en": "Name the narrow strip of fabric down the middle of the table.",
+        "zh": "请写出桌面中央那条窄长布的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v1288",
+    "de": "der Wäschetrockner",
+    "plural": "die Wäschetrockner",
+    "en": "tumble dryer",
+    "zh": "干衣机",
+    "pinyin": "gānyījī",
+    "path": "wilson/original-household/v1288.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1288.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Trockner mit geöffneter Trommel, trockenem Handtuch und herausgezogenem Flusenfilter.",
+      "ipa": "/ˈvɛʃəˌtʁɔknɐ/",
+      "context": {
+        "de": "Gesucht ist das Gerät, das nasse Wäsche mit warmer Luft trocknet.",
+        "en": "Name the appliance that uses warm air to dry wet laundry.",
+        "zh": "请写出用热风烘干衣物的机器的德语名称。"
+      },
+      "answerVariants": [
+        {
+          "de": "der Trockner",
+          "plural": "die Trockner"
+        }
+      ]
+    }
+  },
+  {
+    "id": "v1315",
+    "de": "die Wickeltasche",
+    "plural": "die Wickeltaschen",
+    "en": "changing bag / diaper bag",
+    "zh": "妈咪包",
+    "pinyin": "māmībāo",
+    "path": "wilson/original-household/v1315.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1315.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-26",
+      "batch": "kueche-haushalt-01",
+      "method": "Eigenes Motiv auf einem Kontaktbogen einzeln angesehen; Artikel, Wortformen, IPA sowie EN/ZH redaktionell geprüft.",
+      "reason": "Schultertasche mit sichtbaren Windeln, Feuchttüchern und Wickelunterlage.",
+      "ipa": "/ˈvɪkl̩ˌtaʃə/",
+      "context": {
+        "de": "Gesucht ist die Tasche für Windeln und Feuchttücher unterwegs.",
+        "en": "Name the bag used for nappies and wipes when going out.",
+        "zh": "请写出出门时用来装纸尿裤和湿巾的包的德语名称。"
+      }
+    }
   }
 ];

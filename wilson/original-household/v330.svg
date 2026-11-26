@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="120" cy="157" rx="94" ry="10" fill="#e6eeea" stroke="none"/>
+  <rect x="81" y="29" width="81" height="54" rx="3" fill="#263a40" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="86" y="34" width="71" height="42" rx="3" fill="#42758c" stroke="none"/>
+  <polyline points="91,58 112,39" fill="none" stroke="#bbcdd1" stroke-width="2"/>
+  <polyline points="115,84 110,92 131,92 126,84" fill="none" stroke="#263a40" stroke-width="4"/>
+  <rect x="37" y="133" width="11" height="18" rx="3" fill="#875735" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="190" y="133" width="11" height="18" rx="3" fill="#875735" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="27" y="100" width="186" height="39" rx="3" fill="#ce8b55" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="34" y="94" width="174" height="9" rx="3" fill="#efbc80" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="40" y="108" width="66" height="22" rx="3" fill="#875735" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="113" y="108" width="85" height="22" rx="3" fill="#efbc80" stroke="#263a40" stroke-width="2.4"/>
+  <rect x="49" y="115" width="49" height="10" rx="3" fill="#79939b" stroke="#263a40" stroke-width="2.4"/>
+  <ellipse cx="88" cy="120" rx="2" ry="2" fill="#e0eef0" stroke="none"/>
+  <polyline points="149,117 163,117" fill="none" stroke="#263a40" stroke-width="3"/>
+  <polyline points="158,107 158,130" fill="none" stroke="#875735" stroke-width="1.8"/>
+</svg>

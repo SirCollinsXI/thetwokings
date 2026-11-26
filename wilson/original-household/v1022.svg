@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="38" y="29" width="159" height="121" rx="3" fill="#edf2ee" stroke="none"/>
+  <rect x="54" y="39" width="107" height="108" rx="5" fill="#bbcdd1" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="62" y="48" width="90" height="88" rx="3" fill="#f1f4ee" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="70" y="60" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="73" y="68" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="76,77 80,77" fill="none" stroke="#263a40" stroke-width="1"/>
+  <rect x="90" y="60" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="93" y="68" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="96,77 100,77" fill="none" stroke="#263a40" stroke-width="1"/>
+  <rect x="110" y="60" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="113" y="68" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="116,77 120,77" fill="none" stroke="#263a40" stroke-width="1"/>
+  <rect x="130" y="60" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="133" y="68" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="136,77 140,77" fill="none" stroke="#263a40" stroke-width="1"/>
+  <rect x="70" y="96" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="73" y="104" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="76,113 80,113" fill="none" stroke="#263a40" stroke-width="1"/>
+  <rect x="90" y="96" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="93" y="104" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="96,113 100,113" fill="none" stroke="#263a40" stroke-width="1"/>
+  <rect x="110" y="96" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="113" y="104" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="116,113 120,113" fill="none" stroke="#263a40" stroke-width="1"/>
+  <rect x="130" y="96" width="16" height="25" rx="1" fill="#fffdf5" stroke="#79939b" stroke-width="2.4"/>
+  <rect x="133" y="104" width="10" height="8" rx="1" fill="#42758c" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="136,113 140,113" fill="none" stroke="#263a40" stroke-width="1"/>
+  <polygon points="157,46 194,55 194,141 157,145" fill="#bbcdd1" stroke="#79939b" stroke-width="2.4"/>
+  <polygon points="164,57 186,63 186,131 164,135" fill="#d9e5e6" stroke="#79939b" stroke-width="2.4"/>
+  <polygon points="174,76 168,92 174,92 171,106 182,89 176,89 180,76" fill="#ffc95c" stroke="#263a40" stroke-width="2.4"/>
+</svg>

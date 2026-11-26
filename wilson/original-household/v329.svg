@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="38" y="24" width="169" height="125" rx="3" fill="#edf1e9" stroke="none"/>
+  <rect x="68" y="35" width="96" height="84" rx="3" fill="#efbc80" stroke="#ce8b55" stroke-width="2.4"/>
+  <rect x="75" y="42" width="82" height="70" rx="3" fill="#79b8d4" stroke="#79939b" stroke-width="2.4"/>
+  <polyline points="116,43 116,111" fill="none" stroke="#efbc80" stroke-width="6"/>
+  <polyline points="76,77 156,77" fill="none" stroke="#efbc80" stroke-width="6"/>
+  <polyline points="82,64 101,48" fill="none" stroke="#fffdf5" stroke-width="2"/>
+  <polyline points="136,68 151,53" fill="none" stroke="#fffdf5" stroke-width="2"/>
+  <polygon points="60,117 168,117 180,125 48,125" fill="#efbc80" stroke="#ce8b55" stroke-width="2.4"/>
+  <rect x="48" y="125" width="132" height="11" rx="1" fill="#ce8b55" stroke="#ce8b55" stroke-width="2.4"/>
+  <polygon points="77,98 101,98 98,119 81,119" fill="#f39972" stroke="#c45e3f" stroke-width="2.4"/>
+  <ellipse cx="89" cy="98" rx="12" ry="3" fill="#c45e3f" stroke="#263a40" stroke-width="2.4"/>
+  <polyline points="89,96 89,80" fill="none" stroke="#2d8d85" stroke-width="2.4"/>
+  <polygon points="89,89 78,87 74,79 84,81" fill="#a5d9c8" stroke="#2d8d85" stroke-width="2.4"/>
+  <polygon points="89,85 94,77 103,75 101,83" fill="#a5d9c8" stroke="#2d8d85" stroke-width="2.4"/>
+  <polyline points="211,132 185,132" fill="none" stroke="#d56732" stroke-width="4"/>
+  <polygon points="185,132 194,126 194,138" fill="#d56732" stroke="none"/>
+</svg>
