@@ -3,18 +3,25 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root=path.resolve(__dirname,'..');
 const bundle=['wilson-lexicon.js','wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const {v,c,lex}=vm.runInNewContext(bundle+';({v:WILSON_VOCABULARY,c:WILSON_IMAGE_CANDIDATES,lex:LEXICON})');
-assert.equal(v.inputWords.length,222);
-assert.equal(c.filter(w=>w.active).length,200);
-assert.equal(c.filter(w=>w.review?.decision==='blocked').length,35);
-assert.equal(c.filter(w=>w.status==='approved-alternative').length,5);
+assert.equal(v.inputWords.length,684);
+assert.equal(c.filter(w=>w.active&&w.provider!=='project').length,596);
+assert.equal(c.filter(w=>w.review?.decision==='blocked').length,51);
+assert.equal(c.filter(w=>w.status==='approved-alternative').length,10);
 assert.equal(c.filter(w=>!w.review).length,0);
+assert.equal(new Set(c.map(w=>w.id)).size,c.length,'candidate IDs must be unique; replaced decisions belong in reviewHistory');
+assert.equal(c.filter(w=>w.reviewHistory?.length).length,8,'replacement decisions must retain their earlier review');
 assert.equal(new Set(v.inputWords.map(w=>w.id)).size,v.activeCount,'duplicate input ID');
 assert.equal(new Set(v.inputWords.map(w=>w.de)).size,v.activeCount,'alternative motifs must not add words');
 assert.equal(new Set(v.mainWords.map(w=>w.id)).size,v.mainWords.length,'duplicate main ID');
-const hashes=new Set();
+const hashes=new Set(),sources=new Set();
 for(const w of v.inputWords){
  assert.ok(w.en&&w.zh&&w.de&&w.plural&&w.ipa,w.id+' incomplete language fields');
  assert.ok(['singular','plural','both'].includes(w.numberMode),w.id+' missing number task');
+ if(w.task){
+  assert.ok(['number','infinitive','word','phrase'].includes(w.task.type));
+  for(const l of ['de','en','zh'])assert.ok(w.task.prompt[l]&&w.task.hint[l],w.id+' incomplete task language');
+  assert.ok(!w.task.answers?.includes(w.de),w.id+' canonical answer duplicated as synonym');
+ }else assert.ok(['noun','plural'].includes(w.pos),w.id+' nonnoun has no appropriate task');
  const svg=fs.readFileSync(path.join(root,w.imagePath),'utf8');
  assert.match(svg,/<svg\b/);
  assert.doesNotMatch(svg,/<script\b|<foreignObject\b|\bon\w+\s*=|(?:href|src)\s*=\s*["'](?:https?:|\/\/|data:)/i,w.id+' risky SVG');
@@ -24,9 +31,14 @@ for(const w of v.inputWords){
   const credit=w.imageCredit;
   assert.equal(credit.active,true);
   assert.equal(credit.review.decision,'approved');
+  if(credit.provider==='project'){assert.ok(credit.creator.includes('TheTwoKings'));continue;}
+  assert.equal(hash,credit.svgSha256,w.id+' source content changed');
+  const blob=crypto.createHash('sha1').update(Buffer.from('blob '+Buffer.byteLength(svg)+'\0')).update(svg).digest('hex');
+  assert.equal(blob,credit.upstreamBlob,w.id+' differs from pinned original');
   assert.equal(credit.creator,'Steve Lee');
   assert.equal(credit.license,'CC-BY-SA-4.0');
   assert.match(credit.source,/\/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf\/EN\//);
+  assert.ok(!sources.has(credit.sourcePath),w.id+' shares an active source motif');sources.add(credit.sourcePath);
  }
 }
 for(const w of c.filter(w=>w.review.decision==='blocked'))assert.ok(!v.inputWords.some(x=>x.imagePath===w.path),'blocked image used');
@@ -39,4 +51,22 @@ assert.equal(v.inputWords.find(w=>w.de==='der Kollege').id,'v605');
 const originals=new Map(v.mainWords.filter(w=>['cup','apple','bread','water','egg','banana','chair','book','key','phone','bed','clock','car','bike','bus','plane','house','tree'].includes(w.id)).map(w=>[w.de,w.id]));
 for(const w of lex)assert.ok(v.mainWords.some(x=>x.id===(originals.get(w.de)||w.id)),'lost main ID '+w.id);
 assert.equal(v.mainWords.find(w=>w.de==='das Bier').childSuitable,false);
-console.log('Vocabulary verified: 222 unique active IDs/images, complete IPA and DE/EN/ZH, 200 source credits, 35 exclusions, 5 alternatives, legacy IDs.');
+assert.equal(v.inputWords.find(w=>w.id==='v407').nDeclension,true,'Geldautomat is a weak noun');
+assert.equal(v.inputWords.find(w=>w.id==='v831').nDeclension,true,'Polizist is a weak noun');
+assert.equal(v.inputWords.find(w=>w.id==='v585').ipa,'/ˈklaɪ̯nˌbʊs/','IPA must describe the German word');
+assert.equal(v.inputWords.find(w=>w.id==='v11').imageCredit.sourcePath,'EN/eighth.svg','fraction must not be misassigned to ordinal achte');
+assert.ok(!v.inputWords.some(w=>w.id==='v10'),'fraction image must not count as an ordinal card');
+
+for(const old of JSON.parse(fs.readFileSync(path.join(root,'scripts/fixtures/wilson-active-20261117.json'),'utf8'))){
+ const now=v.inputWords.find(w=>w.id===old.id);
+ assert.ok(now,'lost previous active ID '+old.id);
+ assert.equal(now.de,old.de,'previous ID reassigned');
+ assert.equal(now.imagePath,old.imagePath,'previous image path changed');
+ assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,now.imagePath))).digest('hex'),old.sha256,'previous image changed');
+}
+for(const id of ['v1355','v531','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-crisps','v1185'])assert.ok(!v.inputWords.some(w=>w.id===id),id+' ambiguous/duplicate image enabled');
+assert.equal(v.inputWords.find(w=>w.id==='wx-chinese-cabbage').de,'der Pak Choi');
+assert.equal(v.inputWords.find(w=>w.id==='v724').numberMode,'plural');
+assert.equal(v.inputWords.find(w=>w.id==='v363').plural,'die Frühstücksflocken');
+assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,66);
+console.log('Vocabulary verified: 684 unique active IDs/images, 596 pinned Mulberry files, 66 recovered project drawings, 22 originals; all 222 legacy IDs and image hashes preserved.');

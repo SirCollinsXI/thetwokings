@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "cup",
+    "de": "die Tasse",
+    "imagePath": "wilson/cup.svg"
+  },
+  {
+    "id": "v31",
+    "de": "der Apfel",
+    "imagePath": "wilson/apple.svg"
+  },
+  {
+    "id": "bread",
+    "de": "das Brot",
+    "imagePath": "wilson/bread.svg"
+  },
+  {
+    "id": "v1292",
+    "de": "das Wasser",
+    "imagePath": "wilson/water.svg"
+  },
+  {
+    "id": "egg",
+    "de": "das Ei",
+    "imagePath": "wilson/egg.svg"
+  },
+  {
+    "id": "v77",
+    "de": "die Banane",
+    "imagePath": "wilson/banana.svg"
+  },
+  {
+    "id": "v1104",
+    "de": "der Stuhl",
+    "imagePath": "wilson/chair.svg"
+  },
+  {
+    "id": "book",
+    "de": "das Buch",
+    "imagePath": "wilson/book.svg"
+  },
+  {
+    "id": "key",
+    "de": "der Schlüssel",
+    "imagePath": "wilson/key.svg"
+  },
+  {
+    "id": "v475",
+    "de": "das Handy",
+    "imagePath": "wilson/phone.svg"
+  },
+  {
+    "id": "bed",
+    "de": "das Bett",
+    "imagePath": "wilson/bed.svg"
+  },
+  {
+    "id": "clock",
+    "de": "die Uhr",
+    "imagePath": "wilson/clock.svg"
+  },
+  {
+    "id": "car",
+    "de": "das Auto",
+    "imagePath": "wilson/car.svg"
+  },
+  {
+    "id": "bike",
+    "de": "das Fahrrad",
+    "imagePath": "wilson/bike.svg"
+  },
+  {
+    "id": "bus",
+    "de": "der Bus",
+    "imagePath": "wilson/bus.svg"
+  },
+  {
+    "id": "plane",
+    "de": "das Flugzeug",
+    "imagePath": "wilson/plane.svg"
+  },
+  {
+    "id": "house",
+    "de": "das Haus",
+    "imagePath": "wilson/house.svg"
+  },
+  {
+    "id": "tree",
+    "de": "der Baum",
+    "imagePath": "wilson/tree.svg"
+  },
+  {
+    "id": "v550",
+    "de": "der Junge",
+    "imagePath": "wilson/junge.svg"
+  },
+  {
+    "id": "v605",
+    "de": "der Kollege",
+    "imagePath": "wilson/kollege.svg"
+  },
+  {
+    "id": "eltern",
+    "de": "die Eltern",
+    "imagePath": "wilson/eltern.svg"
+  },
+  {
+    "id": "ferien",
+    "de": "die Ferien",
+    "imagePath": "wilson/ferien.svg"
+  },
+  {
+    "id": "v2",
+    "de": "das Abdeckband",
+    "imagePath": "wilson/mulberry/v2.svg"
+  },
+  {
+    "id": "v38",
+    "de": "der Arm",
+    "imagePath": "wilson/mulberry/v38.svg"
+  },
+  {
+    "id": "v45",
+    "de": "die Aubergine",
+    "imagePath": "wilson/mulberry/v45.svg"
+  },
+  {
+    "id": "v47",
+    "de": "der Aufzug",
+    "imagePath": "wilson/mulberry/v47.svg"
+  },
+  {
+    "id": "v48",
+    "de": "das Auge",
+    "imagePath": "wilson/mulberry/v48.svg"
+  },
+  {
+    "id": "v49",
+    "de": "die Augenbraue",
+    "imagePath": "wilson/mulberry/v49.svg"
+  },
+  {
+    "id": "v58",
+    "de": "das Baby",
+    "imagePath": "wilson/mulberry/v58.svg"
+  },
+  {
+    "id": "v66",
+    "de": "das Backblech",
+    "imagePath": "wilson/mulberry/v66.svg"
+  },
+  {
+    "id": "v70",
+    "de": "die Badehose",
+    "imagePath": "wilson/mulberry/v70.svg"
+  },
+  {
+    "id": "v76",
+    "de": "der Ball",
+    "imagePath": "wilson/mulberry/v76.svg"
+  },
+  {
+    "id": "v91",
+    "de": "das Bein",
+    "imagePath": "wilson/mulberry/v91.svg"
+  },
+  {
+    "id": "v102",
+    "de": "der Besen",
+    "imagePath": "wilson/mulberry/v102.svg"
+  },
+  {
+    "id": "v111",
+    "de": "der BH",
+    "imagePath": "wilson/mulberry/v111.svg"
+  },
+  {
+    "id": "v112",
+    "de": "das Bier",
+    "imagePath": "wilson/mulberry/v112.svg"
+  },
+  {
+    "id": "v115",
+    "de": "die Birne",
+    "imagePath": "wilson/mulberry/v115.svg"
+  },
+  {
+    "id": "v121",
+    "de": "der Bleistift",
+    "imagePath": "wilson/mulberry/v121.svg"
+  },
+  {
+    "id": "v122",
+    "de": "der Bleistiftspitzer",
+    "imagePath": "wilson/mulberry/v122.svg"
+  },
+  {
+    "id": "v128",
+    "de": "der Blumenkohl",
+    "imagePath": "wilson/mulberry/v128.svg"
+  },
+  {
+    "id": "v130",
+    "de": "die Bluse",
+    "imagePath": "wilson/mulberry/v130.svg"
+  },
+  {
+    "id": "v136",
+    "de": "der Bohrer",
+    "imagePath": "wilson/mulberry/v136.svg"
+  },
+  {
+    "id": "v138",
+    "de": "die Bratpfanne",
+    "imagePath": "wilson/mulberry/v138.svg"
+  },
+  {
+    "id": "v149",
+    "de": "der Briefumschlag",
+    "imagePath": "wilson/mulberry/v149.svg"
+  },
+  {
+    "id": "v150",
+    "de": "die Brille",
+    "imagePath": "wilson/mulberry/v150.svg"
+  },
+  {
+    "id": "v151",
+    "de": "der Brokkoli",
+    "imagePath": "wilson/mulberry/v151.svg"
+  },
+  {
+    "id": "v154",
+    "de": "das Brötchen",
+    "imagePath": "wilson/mulberry/v154.svg"
+  },
+  {
+    "id": "v161",
+    "de": "das Bügelbrett",
+    "imagePath": "wilson/mulberry/v161.svg"
+  },
+  {
+    "id": "v169",
+    "de": "die Butter",
+    "imagePath": "wilson/mulberry/v169.svg"
+  },
+  {
+    "id": "v175",
+    "de": "die Chilischote",
+    "imagePath": "wilson/mulberry/v175.svg"
+  },
+  {
+    "id": "v180",
+    "de": "der Couchtisch",
+    "imagePath": "wilson/mulberry/v180.svg"
+  },
+  {
+    "id": "v182",
+    "de": "das Croissant",
+    "imagePath": "wilson/mulberry/v182.svg"
+  },
+  {
+    "id": "v197",
+    "de": "der Daumen",
+    "imagePath": "wilson/mulberry/v197.svg"
+  },
+  {
+    "id": "v198",
+    "de": "die Decke",
+    "imagePath": "wilson/mulberry/v198.svg"
+  },
+  {
+    "id": "v199",
+    "de": "der Deckel",
+    "imagePath": "wilson/mulberry/v199.svg"
+  },
+  {
+    "id": "v201",
+    "de": "das Deodorant",
+    "imagePath": "wilson/mulberry/v201.svg"
+  },
+  {
+    "id": "v217",
+    "de": "das Doppelbett",
+    "imagePath": "wilson/mulberry/v217.svg"
+  },
+  {
+    "id": "v221",
+    "de": "der Download",
+    "imagePath": "wilson/mulberry/v221.svg"
+  },
+  {
+    "id": "v242",
+    "de": "die Dusche",
+    "imagePath": "wilson/mulberry/v242.svg"
+  },
+  {
+    "id": "v249",
+    "de": "das Eigelb",
+    "imagePath": "wilson/mulberry/v249.svg"
+  },
+  {
+    "id": "v253",
+    "de": "der Eimer",
+    "imagePath": "wilson/mulberry/v253.svg"
+  },
+  {
+    "id": "v281",
+    "de": "das Eiweiß",
+    "imagePath": "wilson/mulberry/v281.svg"
+  },
+  {
+    "id": "v285",
+    "de": "der Ellbogen",
+    "imagePath": "wilson/mulberry/v285.svg"
+  },
+  {
+    "id": "v296",
+    "de": "die Erdbeere",
+    "imagePath": "wilson/mulberry/v296.svg"
+  },
+  {
+    "id": "v310",
+    "de": "der Esstisch",
+    "imagePath": "wilson/mulberry/v310.svg"
+  },
+  {
+    "id": "v324",
+    "de": "das Faxgerät",
+    "imagePath": "wilson/mulberry/v324.svg"
+  },
+  {
+    "id": "v328",
+    "de": "das Fenster",
+    "imagePath": "wilson/mulberry/v328.svg"
+  },
+  {
+    "id": "v331",
+    "de": "die Ferse",
+    "imagePath": "wilson/mulberry/v331.svg"
+  },
+  {
+    "id": "v338",
+    "de": "der Fingernagel",
+    "imagePath": "wilson/mulberry/v338.svg"
+  },
+  {
+    "id": "v380",
+    "de": "der Fuß",
+    "imagePath": "wilson/mulberry/v380.svg"
+  },
+  {
+    "id": "v386",
+    "de": "die Gabel",
+    "imagePath": "wilson/mulberry/v386.svg"
+  },
+  {
+    "id": "v387",
+    "de": "die Garage",
+    "imagePath": "wilson/mulberry/v387.svg"
+  },
+  {
+    "id": "v388",
+    "de": "die Garnele",
+    "imagePath": "wilson/mulberry/v388.svg"
+  },
+  {
+    "id": "v398",
+    "de": "der Gefrierschrank",
+    "imagePath": "wilson/mulberry/v398.svg"
+  },
+  {
+    "id": "v431",
+    "de": "die Grapefruit",
+    "imagePath": "wilson/mulberry/v431.svg"
+  },
+  {
+    "id": "v444",
+    "de": "der Gürtel",
+    "imagePath": "wilson/mulberry/v444.svg"
+  },
+  {
+    "id": "v451",
+    "de": "die Haarbürste",
+    "imagePath": "wilson/mulberry/v451.svg"
+  },
+  {
+    "id": "v459",
+    "de": "der Hals",
+    "imagePath": "wilson/mulberry/v459.svg"
+  },
+  {
+    "id": "v464",
+    "de": "der Hamburger",
+    "imagePath": "wilson/mulberry/v464.svg"
+  },
+  {
+    "id": "v465",
+    "de": "der Hammer",
+    "imagePath": "wilson/mulberry/v465.svg"
+  },
+  {
+    "id": "v470",
+    "de": "das Handgelenk",
+    "imagePath": "wilson/mulberry/v470.svg"
+  },
+  {
+    "id": "v474",
+    "de": "das Handtuch",
+    "imagePath": "wilson/mulberry/v474.svg"
+  },
+  {
+    "id": "v481",
+    "de": "die Haustür",
+    "imagePath": "wilson/mulberry/v481.svg"
+  },
+  {
+    "id": "v488",
+    "de": "das Hemd",
+    "imagePath": "wilson/mulberry/v488.svg"
+  },
+  {
+    "id": "v489",
+    "de": "der Herbst",
+    "imagePath": "wilson/mulberry/v489.svg"
+  },
+  {
+    "id": "v490",
+    "de": "der Herd",
+    "imagePath": "wilson/mulberry/v490.svg"
+  },
+  {
+    "id": "v492",
+    "de": "das Herz",
+    "imagePath": "wilson/mulberry/v492.svg"
+  },
+  {
+    "id": "v500",
+    "de": "der Hochstuhl",
+    "imagePath": "wilson/mulberry/v500.svg"
+  },
+  {
+    "id": "v502",
+    "de": "der Hocker",
+    "imagePath": "wilson/mulberry/v502.svg"
+  },
+  {
+    "id": "v510",
+    "de": "die Hüfte",
+    "imagePath": "wilson/mulberry/v510.svg"
+  },
+  {
+    "id": "v553",
+    "de": "der Kaffee",
+    "imagePath": "wilson/mulberry/v553.svg"
+  },
+  {
+    "id": "v557",
+    "de": "der Kamin",
+    "imagePath": "wilson/mulberry/v557.svg"
+  },
+  {
+    "id": "v558",
+    "de": "der Kamm",
+    "imagePath": "wilson/mulberry/v558.svg"
+  },
+  {
+    "id": "v560",
+    "de": "die Karotte",
+    "imagePath": "wilson/mulberry/v560.svg"
+  },
+  {
+    "id": "v561",
+    "de": "die Kartoffel",
+    "imagePath": "wilson/mulberry/v561.svg"
+  },
+  {
+    "id": "v562",
+    "de": "der Käse",
+    "imagePath": "wilson/mulberry/v562.svg"
+  },
+  {
+    "id": "v578",
+    "de": "das Kinn",
+    "imagePath": "wilson/mulberry/v578.svg"
+  },
+  {
+    "id": "v579",
+    "de": "die Kirsche",
+    "imagePath": "wilson/mulberry/v579.svg"
+  },
+  {
+    "id": "v581",
+    "de": "das Kleid",
+    "imagePath": "wilson/mulberry/v581.svg"
+  },
+  {
+    "id": "v582",
+    "de": "der Kleiderbügel",
+    "imagePath": "wilson/mulberry/v582.svg"
+  },
+  {
+    "id": "v595",
+    "de": "das Knie",
+    "imagePath": "wilson/mulberry/v595.svg"
+  },
+  {
+    "id": "v597",
+    "de": "der Knoblauch",
+    "imagePath": "wilson/mulberry/v597.svg"
+  },
+  {
+    "id": "v598",
+    "de": "der Knöchel",
+    "imagePath": "wilson/mulberry/v598.svg"
+  },
+  {
+    "id": "v600",
+    "de": "der Knopf",
+    "imagePath": "wilson/mulberry/v600.svg"
+  },
+  {
+    "id": "v604",
+    "de": "der Kofferraum",
+    "imagePath": "wilson/mulberry/v604.svg"
+  },
+  {
+    "id": "v608",
+    "de": "die Kommode",
+    "imagePath": "wilson/mulberry/v608.svg"
+  },
+  {
+    "id": "v618",
+    "de": "der Kopf",
+    "imagePath": "wilson/mulberry/v618.svg"
+  },
+  {
+    "id": "v630",
+    "de": "die Krawatte",
+    "imagePath": "wilson/mulberry/v630.svg"
+  },
+  {
+    "id": "v631",
+    "de": "der Krebs",
+    "imagePath": "wilson/mulberry/v631.svg"
+  },
+  {
+    "id": "v635",
+    "de": "der Kronleuchter",
+    "imagePath": "wilson/mulberry/v635.svg"
+  },
+  {
+    "id": "v657",
+    "de": "die Lampe",
+    "imagePath": "wilson/mulberry/v657.svg"
+  },
+  {
+    "id": "v658",
+    "de": "der Laptop",
+    "imagePath": "wilson/mulberry/v658.svg"
+  },
+  {
+    "id": "v660",
+    "de": "das Lätzchen",
+    "imagePath": "wilson/mulberry/v660.svg"
+  },
+  {
+    "id": "v661",
+    "de": "der Lauch",
+    "imagePath": "wilson/mulberry/v661.svg"
+  },
+  {
+    "id": "v678",
+    "de": "die Limette",
+    "imagePath": "wilson/mulberry/v678.svg"
+  },
+  {
+    "id": "v683",
+    "de": "der Locher",
+    "imagePath": "wilson/mulberry/v683.svg"
+  },
+  {
+    "id": "v687",
+    "de": "die Luftröhre",
+    "imagePath": "wilson/mulberry/v687.svg"
+  },
+  {
+    "id": "v690",
+    "de": "der Magen",
+    "imagePath": "wilson/mulberry/v690.svg"
+  },
+  {
+    "id": "v699",
+    "de": "das Maßband",
+    "imagePath": "wilson/mulberry/v699.svg"
+  },
+  {
+    "id": "v712",
+    "de": "das Messer",
+    "imagePath": "wilson/mulberry/v712.svg"
+  },
+  {
+    "id": "v714",
+    "de": "die Miesmuschel",
+    "imagePath": "wilson/mulberry/v714.svg"
+  },
+  {
+    "id": "v721",
+    "de": "das Mikrofon",
+    "imagePath": "wilson/mulberry/v721.svg"
+  },
+  {
+    "id": "v723",
+    "de": "die Milch",
+    "imagePath": "wilson/mulberry/v723.svg"
+  },
+  {
+    "id": "v732",
+    "de": "die Minute",
+    "imagePath": "wilson/mulberry/v732.svg"
+  },
+  {
+    "id": "v744",
+    "de": "der Morgen",
+    "imagePath": "wilson/mulberry/v744.svg"
+  },
+  {
+    "id": "v746",
+    "de": "der Motor",
+    "imagePath": "wilson/mulberry/v746.svg"
+  },
+  {
+    "id": "v751",
+    "de": "der Mund",
+    "imagePath": "wilson/mulberry/v751.svg"
+  },
+  {
+    "id": "v765",
+    "de": "die Nagelfeile",
+    "imagePath": "wilson/mulberry/v765.svg"
+  },
+  {
+    "id": "v787",
+    "de": "das Notizbuch",
+    "imagePath": "wilson/mulberry/v787.svg"
+  },
+  {
+    "id": "v793",
+    "de": "der Oberschenkel",
+    "imagePath": "wilson/mulberry/v793.svg"
+  },
+  {
+    "id": "v797",
+    "de": "das Ohr",
+    "imagePath": "wilson/mulberry/v797.svg"
+  },
+  {
+    "id": "v800",
+    "de": "das Olivenöl",
+    "imagePath": "wilson/mulberry/v800.svg"
+  },
+  {
+    "id": "v804",
+    "de": "der Orangensaft",
+    "imagePath": "wilson/mulberry/v804.svg"
+  },
+  {
+    "id": "v812",
+    "de": "das Parfüm",
+    "imagePath": "wilson/mulberry/v812.svg"
+  },
+  {
+    "id": "v813",
+    "de": "die Pastinake",
+    "imagePath": "wilson/mulberry/v813.svg"
+  },
+  {
+    "id": "v821",
+    "de": "die Pfeffermühle",
+    "imagePath": "wilson/mulberry/v821.svg"
+  },
+  {
+    "id": "v824",
+    "de": "die Pflaume",
+    "imagePath": "wilson/mulberry/v824.svg"
+  },
+  {
+    "id": "v828",
+    "de": "die Pizza",
+    "imagePath": "wilson/mulberry/v828.svg"
+  },
+  {
+    "id": "v830",
+    "de": "das Polizeiauto",
+    "imagePath": "wilson/mulberry/v830.svg"
+  },
+  {
+    "id": "v838",
+    "de": "der Postausgang",
+    "imagePath": "wilson/mulberry/v838.svg"
+  },
+  {
+    "id": "v839",
+    "de": "der Posteingang",
+    "imagePath": "wilson/mulberry/v839.svg"
+  },
+  {
+    "id": "v851",
+    "de": "das Prozent",
+    "imagePath": "wilson/mulberry/v851.svg"
+  },
+  {
+    "id": "v854",
+    "de": "die Puppe",
+    "imagePath": "wilson/mulberry/v854.svg"
+  },
+  {
+    "id": "v862",
+    "de": "das Radieschen",
+    "imagePath": "wilson/mulberry/v862.svg"
+  },
+  {
+    "id": "v866",
+    "de": "der Rasenmäher",
+    "imagePath": "wilson/mulberry/v866.svg"
+  },
+  {
+    "id": "v871",
+    "de": "der Rechen",
+    "imagePath": "wilson/mulberry/v871.svg"
+  },
+  {
+    "id": "v875",
+    "de": "die Reibe",
+    "imagePath": "wilson/mulberry/v875.svg"
+  },
+  {
+    "id": "v878",
+    "de": "die Reifenpanne",
+    "imagePath": "wilson/mulberry/v878.svg"
+  },
+  {
+    "id": "v881",
+    "de": "der Reisebus",
+    "imagePath": "wilson/mulberry/v881.svg"
+  },
+  {
+    "id": "v884",
+    "de": "der Reißverschluss",
+    "imagePath": "wilson/mulberry/v884.svg"
+  },
+  {
+    "id": "v885",
+    "de": "die Reißzwecke",
+    "imagePath": "wilson/mulberry/v885.svg"
+  },
+  {
+    "id": "v888",
+    "de": "der Rettungswagen",
+    "imagePath": "wilson/mulberry/v888.svg"
+  },
+  {
+    "id": "v891",
+    "de": "das Rindfleisch",
+    "imagePath": "wilson/mulberry/v891.svg"
+  },
+  {
+    "id": "v893",
+    "de": "der Rock",
+    "imagePath": "wilson/mulberry/v893.svg"
+  },
+  {
+    "id": "v897",
+    "de": "das Rollo",
+    "imagePath": "wilson/mulberry/v897.svg"
+  },
+  {
+    "id": "v898",
+    "de": "der Rollstuhl",
+    "imagePath": "wilson/mulberry/v898.svg"
+  },
+  {
+    "id": "v899",
+    "de": "die Rolltreppe",
+    "imagePath": "wilson/mulberry/v899.svg"
+  },
+  {
+    "id": "v902",
+    "de": "die Rote Bete",
+    "imagePath": "wilson/mulberry/v902.svg"
+  },
+  {
+    "id": "v907",
+    "de": "die Rübe",
+    "imagePath": "wilson/mulberry/v907.svg"
+  },
+  {
+    "id": "v920",
+    "de": "der Salat",
+    "imagePath": "wilson/mulberry/v920.svg"
+  },
+  {
+    "id": "v922",
+    "de": "das Salz",
+    "imagePath": "wilson/mulberry/v922.svg"
+  },
+  {
+    "id": "v924",
+    "de": "der Sämling",
+    "imagePath": "wilson/mulberry/v924.svg"
+  },
+  {
+    "id": "v929",
+    "de": "das Sandwich",
+    "imagePath": "wilson/mulberry/v929.svg"
+  },
+  {
+    "id": "v935",
+    "de": "der Schäler",
+    "imagePath": "wilson/mulberry/v935.svg"
+  },
+  {
+    "id": "v943",
+    "de": "die Schere",
+    "imagePath": "wilson/mulberry/v943.svg"
+  },
+  {
+    "id": "v946",
+    "de": "das Schienbein",
+    "imagePath": "wilson/mulberry/v946.svg"
+  },
+  {
+    "id": "v950",
+    "de": "das Schleifpapier",
+    "imagePath": "wilson/mulberry/v950.svg"
+  },
+  {
+    "id": "v954",
+    "de": "der Schmutzwäschekorb",
+    "imagePath": "wilson/mulberry/v954.svg"
+  },
+  {
+    "id": "v955",
+    "de": "die Schnalle",
+    "imagePath": "wilson/mulberry/v955.svg"
+  },
+  {
+    "id": "v958",
+    "de": "das Schneidebrett",
+    "imagePath": "wilson/mulberry/v958.svg"
+  },
+  {
+    "id": "v966",
+    "de": "der Schokoriegel",
+    "imagePath": "wilson/mulberry/v966.svg"
+  },
+  {
+    "id": "v967",
+    "de": "der Schornstein",
+    "imagePath": "wilson/mulberry/v967.svg"
+  },
+  {
+    "id": "v968",
+    "de": "die Schraube",
+    "imagePath": "wilson/mulberry/v968.svg"
+  },
+  {
+    "id": "v970",
+    "de": "der Schraubenzieher",
+    "imagePath": "wilson/mulberry/v970.svg"
+  },
+  {
+    "id": "v972",
+    "de": "die Schubkarre",
+    "imagePath": "wilson/mulberry/v972.svg"
+  },
+  {
+    "id": "v973",
+    "de": "die Schublade",
+    "imagePath": "wilson/mulberry/v973.svg"
+  },
+  {
+    "id": "v978",
+    "de": "die Schulter",
+    "imagePath": "wilson/mulberry/v978.svg"
+  },
+  {
+    "id": "v981",
+    "de": "die Schürze",
+    "imagePath": "wilson/mulberry/v981.svg"
+  },
+  {
+    "id": "v984",
+    "de": "der Schwamm",
+    "imagePath": "wilson/mulberry/v984.svg"
+  },
+  {
+    "id": "v1006",
+    "de": "die Seife",
+    "imagePath": "wilson/mulberry/v1006.svg"
+  },
+  {
+    "id": "v1018",
+    "de": "das Shampoo",
+    "imagePath": "wilson/mulberry/v1018.svg"
+  },
+  {
+    "id": "v1020",
+    "de": "der Sicherheitsgurt",
+    "imagePath": "wilson/mulberry/v1020.svg"
+  },
+  {
+    "id": "v1050",
+    "de": "der Sommer",
+    "imagePath": "wilson/mulberry/v1050.svg"
+  },
+  {
+    "id": "v1053",
+    "de": "die Sonnenbrille",
+    "imagePath": "wilson/mulberry/v1053.svg"
+  },
+  {
+    "id": "v1055",
+    "de": "das Sonnenschutzmittel",
+    "imagePath": "wilson/mulberry/v1055.svg"
+  },
+  {
+    "id": "v1062",
+    "de": "der Spaten",
+    "imagePath": "wilson/mulberry/v1062.svg"
+  },
+  {
+    "id": "v1065",
+    "de": "der Spiegel",
+    "imagePath": "wilson/mulberry/v1065.svg"
+  },
+  {
+    "id": "v1069",
+    "de": "die Spritze",
+    "imagePath": "wilson/mulberry/v1069.svg"
+  },
+  {
+    "id": "v1073",
+    "de": "die Spülmaschine",
+    "imagePath": "wilson/mulberry/v1073.svg"
+  },
+  {
+    "id": "v1074",
+    "de": "das Spülmittel",
+    "imagePath": "wilson/mulberry/v1074.svg"
+  },
+  {
+    "id": "v1084",
+    "de": "das Stethoskop",
+    "imagePath": "wilson/mulberry/v1084.svg"
+  },
+  {
+    "id": "v1103",
+    "de": "die Strumpfhose",
+    "imagePath": "wilson/mulberry/v1103.svg"
+  },
+  {
+    "id": "v1109",
+    "de": "die Suppe",
+    "imagePath": "wilson/mulberry/v1109.svg"
+  },
+  {
+    "id": "v1114",
+    "de": "die Süßkartoffel",
+    "imagePath": "wilson/mulberry/v1114.svg"
+  },
+  {
+    "id": "v1117",
+    "de": "das Tablett",
+    "imagePath": "wilson/mulberry/v1117.svg"
+  },
+  {
+    "id": "v1119",
+    "de": "der Tacker",
+    "imagePath": "wilson/mulberry/v1119.svg"
+  },
+  {
+    "id": "v1124",
+    "de": "der Tampon",
+    "imagePath": "wilson/mulberry/v1124.svg"
+  },
+  {
+    "id": "v1133",
+    "de": "der Taschenrechner",
+    "imagePath": "wilson/mulberry/v1133.svg"
+  },
+  {
+    "id": "v1140",
+    "de": "der Teebeutel",
+    "imagePath": "wilson/mulberry/v1140.svg"
+  },
+  {
+    "id": "v1146",
+    "de": "der Teppich",
+    "imagePath": "wilson/mulberry/v1146.svg"
+  },
+  {
+    "id": "v1157",
+    "de": "die Tischdecke",
+    "imagePath": "wilson/mulberry/v1157.svg"
+  },
+  {
+    "id": "v1160",
+    "de": "der Toaster",
+    "imagePath": "wilson/mulberry/v1160.svg"
+  },
+  {
+    "id": "v1162",
+    "de": "die Toilette",
+    "imagePath": "wilson/mulberry/v1162.svg"
+  },
+  {
+    "id": "v1164",
+    "de": "die Tomate",
+    "imagePath": "wilson/mulberry/v1164.svg"
+  },
+  {
+    "id": "v1168",
+    "de": "das Tortendiagramm",
+    "imagePath": "wilson/mulberry/v1168.svg"
+  },
+  {
+    "id": "v1177",
+    "de": "das T-Shirt",
+    "imagePath": "wilson/mulberry/v1177.svg"
+  },
+  {
+    "id": "v1268",
+    "de": "die Waage",
+    "imagePath": "wilson/mulberry/v1268.svg"
+  },
+  {
+    "id": "v1274",
+    "de": "die Wange",
+    "imagePath": "wilson/mulberry/v1274.svg"
+  },
+  {
+    "id": "v1285",
+    "de": "die Wäscheklammer",
+    "imagePath": "wilson/mulberry/v1285.svg"
+  },
+  {
+    "id": "v1289",
+    "de": "die Waschmaschine",
+    "imagePath": "wilson/mulberry/v1289.svg"
+  },
+  {
+    "id": "v1291",
+    "de": "das Waschpulver",
+    "imagePath": "wilson/mulberry/v1291.svg"
+  },
+  {
+    "id": "v1296",
+    "de": "die Wassermelone",
+    "imagePath": "wilson/mulberry/v1296.svg"
+  },
+  {
+    "id": "v1299",
+    "de": "die Webcam",
+    "imagePath": "wilson/mulberry/v1299.svg"
+  },
+  {
+    "id": "v1321",
+    "de": "die Wimper",
+    "imagePath": "wilson/mulberry/v1321.svg"
+  },
+  {
+    "id": "v1324",
+    "de": "der Winter",
+    "imagePath": "wilson/mulberry/v1324.svg"
+  },
+  {
+    "id": "v1326",
+    "de": "der Wischmopp",
+    "imagePath": "wilson/mulberry/v1326.svg"
+  },
+  {
+    "id": "v1334",
+    "de": "der Zahn",
+    "imagePath": "wilson/mulberry/v1334.svg"
+  },
+  {
+    "id": "v1335",
+    "de": "die Zahnpasta",
+    "imagePath": "wilson/mulberry/v1335.svg"
+  },
+  {
+    "id": "v1338",
+    "de": "der Zebrastreifen",
+    "imagePath": "wilson/mulberry/v1338.svg"
+  },
+  {
+    "id": "v1350",
+    "de": "die Zitrone",
+    "imagePath": "wilson/mulberry/v1350.svg"
+  },
+  {
+    "id": "v1358",
+    "de": "der Zug",
+    "imagePath": "wilson/mulberry/v1358.svg"
+  },
+  {
+    "id": "v1376",
+    "de": "die Zwiebel",
+    "imagePath": "wilson/mulberry/v1376.svg"
+  }
+]

@@ -24,7 +24,7 @@ const shared=vm.runInNewContext(['wilson-image-candidates.js','wilson-vocabulary
 const STORE='ttk-wilson-picture-input-v1';
 const stored={};
 const storage={getItem:k=>stored[k]??null,setItem:(k,v)=>{stored[k]=v}};
-function boot({audio=true}={}){
+function boot({audio=true,word='',locks}={}){
  const elements=new Map(),events={},plays=[];
  const makeElement=id=>({
     id, value:'', textContent:'', placeholder:'', hidden:false, className:'', dataset:{},
@@ -36,15 +36,19 @@ function boot({audio=true}={}){
  const doc={createElement:makeElement,getElementById:get,documentElement:{lang:'zh-Hans'},querySelectorAll:()=>[]};
  const speech=audio?{getVoices(){return [{lang:'de-DE',name:'German Voice'}]},cancel(){},speak(u){plays.push(u.text)}}:undefined;
  const win=audio?{speechSynthesis:speech}:{};
+ win.location={search:word?'?word='+encodeURIComponent(word):''};
+ if(locks)win.navigator={locks};
+ win.addEventListener=(name,fn)=>events['window:'+name]=fn;
  const ctx={document:doc,window:win,localStorage:storage,LEXICON:code,WILSON_VOCABULARY:shared,
    SpeechSynthesisUtterance:function(text){this.text=text;},
-   Date,JSON,Math,Number,String,Object,Array,Intl,encodeURIComponent,setTimeout(){}};
+   Date,JSON,Math,Number,String,Object,Array,Intl,URLSearchParams,encodeURIComponent,setTimeout(){}};
  vm.runInNewContext(app,ctx,{filename:'wilson-input.js'});
  return {get,plays,events,
-    submit(value){get('typed').value=value;events['entry:submit']({preventDefault(){}});},
+    submit(value){get('typed').value=value;return events['entry:submit']({preventDefault(){}});},
     dump(){return JSON.parse(stored[STORE])}
  };
 }
+function answer(w){return w.task||w.numberMode==='singular'?w.de:w.numberMode==='plural'?w.plural:w.de+', '+w.plural.replace(/^die /,'');}
 function format(de,plural){
  return plural==='—'?de:plural===de?de:de+', '+plural.replace(/^die /,'');
 }
@@ -82,7 +86,7 @@ for(const [id,de,plural] of pictures.slice(2)){
 for (const w of shared.inputWords.slice(22)) {
  assert.ok(fs.existsSync(path.join(ROOT,w.imagePath)),w.id+' missing approved asset');
  assert.equal(test.get('word-image').src,w.imagePath,w.id+' image');
- test.submit(w.numberMode==='singular'?w.de:w.numberMode==='plural'?w.plural:format(w.de,w.plural));
+ test.submit(answer(w));
  assert.equal(test.get('solution').hidden,false,w.id+' did not resolve');
  assert.ok(test.get('ipa').textContent.startsWith('IPA /'),w.id+' missing IPA');
  test.submit('');
@@ -133,7 +137,7 @@ assert.equal(test.dump().firstCorrect,1);
 assert.match(test.get('status').textContent,/大小写/);
 const originalDue=test.dump().items[shared.inputWords[0].id].due;
 // Score all remaining words, then take an early review and preserve its due date and streak.
-for (const w of shared.inputWords.slice(1)) {test.submit('');test.submit(w.numberMode==='singular'?w.de:w.numberMode==='plural'?w.plural:format(w.de,w.plural));}
+for (const w of shared.inputWords.slice(1)) {test.submit('');test.submit(answer(w));}
 test.submit('');
 const firstID=shared.inputWords[0].id;
 const oldStreak=test.dump().items[firstID].streak;
@@ -146,3 +150,64 @@ stored[STORE]=JSON.stringify(backup);
 test=boot();
 assert.equal(test.get('attempts').textContent,backup.tested,'temporarily absent IDs must not discard the whole backup');
 console.log('Compatibility passed: original IDs, future/retired records, Chinese comma, capitalisation, IME, early reviews.');
+
+// Different word classes must get suitable tasks, accept reviewed alternatives and
+// reject the noun format; gallery links must not postpone a future review.
+for(const w of shared.inputWords.filter(w=>w.task)){
+ delete stored[STORE];
+ const drill=boot({word:w.id});
+ assert.equal(drill.get('word-image').src,w.imagePath,w.id+' gallery link opened wrong card');
+ assert.equal(drill.get('question').textContent,w.task.prompt.zh,w.id+' unsuitable task');
+ assert.equal(drill.get('typed').placeholder,'…',w.id+' noun format leaked into action/number task');
+ drill.submit(w.de+', —');
+ assert.equal(stored[STORE],undefined,w.id+' accepted inappropriate noun format');
+ const answer=w.task.answers?.[0] || w.de;
+ drill.submit(answer);
+ assert.equal(drill.dump().tested,1,w.id+' second-try answer not saved');
+ assert.equal(drill.dump().firstCorrect,0);
+ assert.equal(drill.get('correct-answer').textContent,w.de);
+ assert.equal(drill.plays[0],w.de+'. ',w.id+' audio read a fictitious plural');
+ const oldDue=drill.dump().items[w.id].due,oldStreak=drill.dump().items[w.id].streak;
+ const early=boot({word:w.id});early.submit(w.de);
+ assert.equal(early.dump().items[w.id].due,oldDue,w.id+' selected early practice delayed review');
+ assert.equal(early.dump().items[w.id].streak,oldStreak,w.id+' selected early practice increased streak');
+}
+for(const w of shared.inputWords.filter(w=>w.answerVariants?.length)){
+ for(const variant of w.answerVariants){
+  delete stored[STORE];const drill=boot({word:w.id});
+  drill.submit(answer({...w,...variant}));
+  assert.equal(drill.dump().firstCorrect,1,w.id+' rejected reviewed noun synonym');
+  assert.equal(drill.get('correct-answer').textContent,answer(w));
+  assert.doesNotMatch(drill.get('status').textContent,/大小写/,'correct synonym misreported as capitalisation error');
+ }
+}
+delete stored[STORE];
+test=boot({word:'missing-or-retired'});
+assert.equal(test.get('word-image').src,'wilson/cup.svg','unknown gallery ID must fall back to normal queue');
+console.log('Expansion passed: '+shared.inputWords.filter(w=>w.task).length+' typed action/number/location tasks, reviewed synonyms, gallery links and early-review protection.');
+
+// Two open views used to overwrite each other's attempts. Also cover browsers
+// without Web Locks: each write must at least start from the latest saved state.
+delete stored[STORE];
+const tabA=boot({word:'v424'}),tabB=boot({word:'v72'});
+tabA.submit('gießen');tabB.submit('der Bagel, Bagels');
+assert.equal(tabB.dump().tested,2,'second tab lost the first tab’s attempt');
+assert.ok(tabB.dump().items.v424&&tabB.dump().items.v72,'second tab lost a learned word');
+tabA.events['window:storage']({key:STORE});
+assert.equal(tabA.get('attempts').textContent,2,'other tab did not refresh visible statistics');
+const stale=boot({word:'v424'}),other=boot({word:'v424'});
+other.submit('gießen');
+const prior=other.dump().items.v424;
+stale.submit('gießen');
+assert.equal(stale.dump().items.v424.due,prior.due,'stale view postponed a future review');
+assert.equal(stale.dump().items.v424.streak,prior.streak,'stale view increased a future review streak');
+(async()=>{
+ delete stored[STORE];let calls=0,queue=Promise.resolve();
+ const locks={request(name,fn){assert.equal(name,STORE);calls++;const result=queue.then(fn);queue=result.catch(()=>{});return result;}};
+ const first=boot({word:'v424',locks}),second=boot({word:'v72',locks});
+ await Promise.all([first.submit('gießen'),second.submit('der Bagel, Bagels')]);
+ assert.equal(calls,2,'origin-wide lock not requested');
+ assert.equal(second.dump().tested,2,'serialized views lost an attempt');
+ assert.equal(Object.keys(second.dump().items).length,2);
+ console.log('Multiple views passed: latest-state writes, storage events, stale-review protection and origin-wide locking.');
+})().catch(err=>{console.error(err);process.exitCode=1});

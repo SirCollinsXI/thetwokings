@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "cup",
+    "de": "die Tasse",
+    "imagePath": "wilson/cup.svg",
+    "sha256": "a897481651e31432a5b9e89ca09e6cf593b9d78c30da2ea04251ed0092b68483"
+  },
+  {
+    "id": "v31",
+    "de": "der Apfel",
+    "imagePath": "wilson/apple.svg",
+    "sha256": "b7bc4722a3e591c27504d6d77410faa84d4d488b91a047d2ad899e13aceea6d5"
+  },
+  {
+    "id": "bread",
+    "de": "das Brot",
+    "imagePath": "wilson/bread.svg",
+    "sha256": "eaa074bd3fff3ff5117f533a75d76b24a104cb54cf243ec32396a85a1c250e4e"
+  },
+  {
+    "id": "v1292",
+    "de": "das Wasser",
+    "imagePath": "wilson/water.svg",
+    "sha256": "a912a386dbb32b28a7c34e236e9786a48aacdf4df814efd895e5ecff89a536f0"
+  },
+  {
+    "id": "egg",
+    "de": "das Ei",
+    "imagePath": "wilson/egg.svg",
+    "sha256": "9c3b93a2d43e69ef90e12fe1344de5c5ea30a739c6e95410582fc61a478bb744"
+  },
+  {
+    "id": "v77",
+    "de": "die Banane",
+    "imagePath": "wilson/banana.svg",
+    "sha256": "2a1b5a488baa756d12be125ea7746018962fc1b36006bc32d9bb3b3139859cdb"
+  },
+  {
+    "id": "v1104",
+    "de": "der Stuhl",
+    "imagePath": "wilson/chair.svg",
+    "sha256": "a931c376e1d70dea92b74d7b1321fe3cbcaa992c1406ae31d64cc538656cafcb"
+  },
+  {
+    "id": "book",
+    "de": "das Buch",
+    "imagePath": "wilson/book.svg",
+    "sha256": "136ca29b8aa06c2605ff9aae5b8e379e08eb45464562199dc88fc81042b24815"
+  },
+  {
+    "id": "key",
+    "de": "der Schlüssel",
+    "imagePath": "wilson/key.svg",
+    "sha256": "7c4545cff1cbcee3bb0b22095a7d5fadac05278af1ce13b49276cade967d1f77"
+  },
+  {
+    "id": "v475",
+    "de": "das Handy",
+    "imagePath": "wilson/phone.svg",
+    "sha256": "9748ef00ef64f64c3d720e86119259b5374b1b738f7c5ff0955e1e2d18519e25"
+  },
+  {
+    "id": "bed",
+    "de": "das Bett",
+    "imagePath": "wilson/bed.svg",
+    "sha256": "02e8d0aef4c43ebf9be285634cb9f2f7ae9c50324d24952b760d756f45d66e87"
+  },
+  {
+    "id": "clock",
+    "de": "die Uhr",
+    "imagePath": "wilson/clock.svg",
+    "sha256": "c91999cae37080069e702abeeede6c2869b83239f2ddfff70e5a87ca77273a4d"
+  },
+  {
+    "id": "car",
+    "de": "das Auto",
+    "imagePath": "wilson/car.svg",
+    "sha256": "6294319920533935603aa982ab70aac5df73f817cd82cad2d14d77744aed4a2b"
+  },
+  {
+    "id": "bike",
+    "de": "das Fahrrad",
+    "imagePath": "wilson/bike.svg",
+    "sha256": "92de23850bf9cce5029307c1dfa20611c02b8aeb6f36f9880d85b3d3ae370b73"
+  },
+  {
+    "id": "bus",
+    "de": "der Bus",
+    "imagePath": "wilson/bus.svg",
+    "sha256": "5c8797982d1cefc5b0db2b561134b1e7c3d51ba2eed9f79f15709483dad6fc47"
+  },
+  {
+    "id": "plane",
+    "de": "das Flugzeug",
+    "imagePath": "wilson/plane.svg",
+    "sha256": "b815b5e8c1e97f2b4cdf1ab135b14ca74ccaef3f78f24446e4b462511c2381f0"
+  },
+  {
+    "id": "house",
+    "de": "das Haus",
+    "imagePath": "wilson/house.svg",
+    "sha256": "c8799dcd8692da37276d08d18fbd9db82bf18bd5e505f3444f98bae71a2023e7"
+  },
+  {
+    "id": "tree",
+    "de": "der Baum",
+    "imagePath": "wilson/tree.svg",
+    "sha256": "965036683021b32c00f241a249d185eab5db66928575d62414237c1fa9d34202"
+  },
+  {
+    "id": "v550",
+    "de": "der Junge",
+    "imagePath": "wilson/junge.svg",
+    "sha256": "cf71e9659d9ae083cae51e7dd723f1adb6b09f3a1170d2f646adf6208d6af87e"
+  },
+  {
+    "id": "v605",
+    "de": "der Kollege",
+    "imagePath": "wilson/kollege.svg",
+    "sha256": "e6588c37097e2a49aaf75e0954418d7f86a1c02506e77c6271af9b6cb6d60533"
+  },
+  {
+    "id": "eltern",
+    "de": "die Eltern",
+    "imagePath": "wilson/eltern.svg",
+    "sha256": "f3ae847dcf8e14d41368c95ba402c206ced1638d3c0b1af4e72ffd384e16fe75"
+  },
+  {
+    "id": "ferien",
+    "de": "die Ferien",
+    "imagePath": "wilson/ferien.svg",
+    "sha256": "1a2de7cb8492b57487cc2b8feed0d65ba00d4e30deac8c9ff880b3eaa7a3667c"
+  },
+  {
+    "id": "v2",
+    "de": "das Abdeckband",
+    "imagePath": "wilson/mulberry/v2.svg",
+    "sha256": "76651abc9db1a05118b278e579fc9914938720975fabce80d0b73fa10f322d9b"
+  },
+  {
+    "id": "v38",
+    "de": "der Arm",
+    "imagePath": "wilson/mulberry/v38.svg",
+    "sha256": "0725394133f289b1f6da4059be7abf00e84515a3a672f270e4e430478ca18a24"
+  },
+  {
+    "id": "v45",
+    "de": "die Aubergine",
+    "imagePath": "wilson/mulberry/v45.svg",
+    "sha256": "4deae21ce44f23dc703f31719335c7a3f9a50f7938a7b4c2ee159c39e494b1f8"
+  },
+  {
+    "id": "v47",
+    "de": "der Aufzug",
+    "imagePath": "wilson/mulberry/v47.svg",
+    "sha256": "460f57688f183abb722a7669b8a576caa2bbe543b0da13b40b7fb98a70ad4964"
+  },
+  {
+    "id": "v48",
+    "de": "das Auge",
+    "imagePath": "wilson/mulberry/v48.svg",
+    "sha256": "65c44e8155cdc106513ac2912320621f5067656738b1c3e6ae29babd51742b3f"
+  },
+  {
+    "id": "v49",
+    "de": "die Augenbraue",
+    "imagePath": "wilson/mulberry/v49.svg",
+    "sha256": "daf6aff45e0b90f3bd95e3769b171a9efb3581feabaf218cd241c7afdc1baf36"
+  },
+  {
+    "id": "v58",
+    "de": "das Baby",
+    "imagePath": "wilson/mulberry/v58.svg",
+    "sha256": "dc5b44c65909c6c05f40e76125fa9f6ba31c6bdec10f1896a2a8ed58fcb39883"
+  },
+  {
+    "id": "v66",
+    "de": "das Backblech",
+    "imagePath": "wilson/mulberry/v66.svg",
+    "sha256": "8fbd5de7971ec0da61a47fda9df940c6e7977da64681106edde9b8845fdd099b"
+  },
+  {
+    "id": "v70",
+    "de": "die Badehose",
+    "imagePath": "wilson/mulberry/v70.svg",
+    "sha256": "a6ac2efc56960edffe647722c8b4187201f46362b7ad9de44b8e3ae284380053"
+  },
+  {
+    "id": "v76",
+    "de": "der Ball",
+    "imagePath": "wilson/mulberry/v76.svg",
+    "sha256": "3e0c4f9de93e9a117cb8834bf0c6bb3ba34b05b66f387ff374afe989690ad1a2"
+  },
+  {
+    "id": "v91",
+    "de": "das Bein",
+    "imagePath": "wilson/mulberry/v91.svg",
+    "sha256": "a21828208fb060896f7ab6f0dbadf79c4365f8d84e910bc6e60d40c3621e7978"
+  },
+  {
+    "id": "v102",
+    "de": "der Besen",
+    "imagePath": "wilson/mulberry/v102.svg",
+    "sha256": "3babe39f355c4c6f972663ffbabb9e30dc482d663b8da130869997960f9232fa"
+  },
+  {
+    "id": "v111",
+    "de": "der BH",
+    "imagePath": "wilson/mulberry/v111.svg",
+    "sha256": "2a67fb4e2a12aae468ecb7f9351ff5602304b835aac564e15c5398cce406d726"
+  },
+  {
+    "id": "v112",
+    "de": "das Bier",
+    "imagePath": "wilson/mulberry/v112.svg",
+    "sha256": "4068cf9595c87e45913a03a76c60f907dfe278a7c707064d60bdc0ceb7075a49"
+  },
+  {
+    "id": "v115",
+    "de": "die Birne",
+    "imagePath": "wilson/mulberry/v115.svg",
+    "sha256": "2f9afa3532f16e4d35a452f825ae4f3000e3577809197b3aff92204cd27452a3"
+  },
+  {
+    "id": "v121",
+    "de": "der Bleistift",
+    "imagePath": "wilson/mulberry/v121.svg",
+    "sha256": "0bc6f6003ddf22aee6633e7a4fe8ca01f0a81bd05dfa5e76b68db280de25fb79"
+  },
+  {
+    "id": "v122",
+    "de": "der Bleistiftspitzer",
+    "imagePath": "wilson/mulberry/v122.svg",
+    "sha256": "ed9ad7407d9e2e4b46233fadf98515078afb2b2cacea40268bc99e1158f5e512"
+  },
+  {
+    "id": "v128",
+    "de": "der Blumenkohl",
+    "imagePath": "wilson/mulberry/v128.svg",
+    "sha256": "b8635f7bb88096d3fee1189bd24d3f023e153b78d3f6173f83f4ee0dfb0a0971"
+  },
+  {
+    "id": "v130",
+    "de": "die Bluse",
+    "imagePath": "wilson/mulberry/v130.svg",
+    "sha256": "50816ae1649a4bc30499f43311559f0afee52ad6d6f9cf2bb8efc012abd236ad"
+  },
+  {
+    "id": "v136",
+    "de": "der Bohrer",
+    "imagePath": "wilson/mulberry/v136.svg",
+    "sha256": "3a1a8f2be59f66cf62727157a92b00a1c142144efb4dceaefe0fe0f2545ae83d"
+  },
+  {
+    "id": "v138",
+    "de": "die Bratpfanne",
+    "imagePath": "wilson/mulberry/v138.svg",
+    "sha256": "6da0a80a500f1c4b914fb771971c5ee7fa24385b32f53536cf79ad22917047b6"
+  },
+  {
+    "id": "v149",
+    "de": "der Briefumschlag",
+    "imagePath": "wilson/mulberry/v149.svg",
+    "sha256": "3176c9eb91650df4f35c107d054671ee5356d0c9927f080ec4135768affbb4fe"
+  },
+  {
+    "id": "v150",
+    "de": "die Brille",
+    "imagePath": "wilson/mulberry/v150.svg",
+    "sha256": "9be8d1f71ddb8a721bffebe9a59977a1b7a8dca4179f790a11764018223f1528"
+  },
+  {
+    "id": "v151",
+    "de": "der Brokkoli",
+    "imagePath": "wilson/mulberry/v151.svg",
+    "sha256": "032dfc8348091f8e0fed3d8c46224a7c9ba13011a562ffe38b0ae05520b3652d"
+  },
+  {
+    "id": "v154",
+    "de": "das Brötchen",
+    "imagePath": "wilson/mulberry/v154.svg",
+    "sha256": "a9526a5b505bf802f17c112757f642f99b0511923ff3153cd09a268a0b2db8d0"
+  },
+  {
+    "id": "v161",
+    "de": "das Bügelbrett",
+    "imagePath": "wilson/mulberry/v161.svg",
+    "sha256": "c0658c394c8b1566f15952d984190bf687bd7f9352987422275dcbe9fcb572a3"
+  },
+  {
+    "id": "v169",
+    "de": "die Butter",
+    "imagePath": "wilson/mulberry/v169.svg",
+    "sha256": "1e164e9a3298568dab2683163e714b67c6be593ef0baad4282407619797871df"
+  },
+  {
+    "id": "v175",
+    "de": "die Chilischote",
+    "imagePath": "wilson/mulberry/v175.svg",
+    "sha256": "0da848296fa8a9d3b4c3ef496323d2e12e9c219f821e890f3b83a12e2cb04f7d"
+  },
+  {
+    "id": "v180",
+    "de": "der Couchtisch",
+    "imagePath": "wilson/mulberry/v180.svg",
+    "sha256": "a574bbe8910048ec6c527830589e14162cc2daedde3380ba52ed89bd1f1434b7"
+  },
+  {
+    "id": "v182",
+    "de": "das Croissant",
+    "imagePath": "wilson/mulberry/v182.svg",
+    "sha256": "13bdf1cab22a2efd161c57a5499a38babf8bd6a55eb555bae499d8c17f7e1512"
+  },
+  {
+    "id": "v197",
+    "de": "der Daumen",
+    "imagePath": "wilson/mulberry/v197.svg",
+    "sha256": "6468b77ad6de1240314deb9b6f60b482802ce50d0af5a64401721b6a61fb746f"
+  },
+  {
+    "id": "v198",
+    "de": "die Decke",
+    "imagePath": "wilson/mulberry/v198.svg",
+    "sha256": "9638c076a6e4c38ce1abfd7c6820600606b3a65d433c11e17c2b24ac3da5f7d0"
+  },
+  {
+    "id": "v199",
+    "de": "der Deckel",
+    "imagePath": "wilson/mulberry/v199.svg",
+    "sha256": "4047c9f5ae4411e7a535adb6bddf5a09c8476072c6039379f9d3be1a5fb17fab"
+  },
+  {
+    "id": "v201",
+    "de": "das Deodorant",
+    "imagePath": "wilson/mulberry/v201.svg",
+    "sha256": "7987dd6b0ce2095aa14f4e910a358fd67b69ab50cc42705f2a55d12bda408e30"
+  },
+  {
+    "id": "v217",
+    "de": "das Doppelbett",
+    "imagePath": "wilson/mulberry/v217.svg",
+    "sha256": "8230fe5cda9bf94e295d2ba2a7138e65f05b068b4f32aeab343d1b8ad32034a2"
+  },
+  {
+    "id": "v221",
+    "de": "der Download",
+    "imagePath": "wilson/mulberry/v221.svg",
+    "sha256": "42e8d295af4fed1040e086ad1282d99753dfc25bfd840d597d9d5ba2a214ed36"
+  },
+  {
+    "id": "v242",
+    "de": "die Dusche",
+    "imagePath": "wilson/mulberry/v242.svg",
+    "sha256": "a3f5aa5536c5de36a41751989122013042be2e4eba60421b9414ec7c4a7c6d6c"
+  },
+  {
+    "id": "v249",
+    "de": "das Eigelb",
+    "imagePath": "wilson/mulberry/v249.svg",
+    "sha256": "d800bf28e65098bd9fca73e856caa0cdd3dfdb9700d959dbb19b430d1ced9560"
+  },
+  {
+    "id": "v253",
+    "de": "der Eimer",
+    "imagePath": "wilson/mulberry/v253.svg",
+    "sha256": "f560e97d585997abfc681c39ef99a36857a22d102d666eeca8e5a5b9a4939ad5"
+  },
+  {
+    "id": "v281",
+    "de": "das Eiweiß",
+    "imagePath": "wilson/mulberry/v281.svg",
+    "sha256": "9e9bd4adb78a113ed1bcf3c0f23d40de4d185fee8243b1b13e07ceb5713854dc"
+  },
+  {
+    "id": "v285",
+    "de": "der Ellbogen",
+    "imagePath": "wilson/mulberry/v285.svg",
+    "sha256": "fa6bd10885a95b598a3a8d0e789f20f443890a6c7119696fe7f378583ad017d5"
+  },
+  {
+    "id": "v296",
+    "de": "die Erdbeere",
+    "imagePath": "wilson/mulberry/v296.svg",
+    "sha256": "7bc53c5fd4d61ca8eee89b0f1f43ce0fd61da1782dc09db1373ed871f28375ec"
+  },
+  {
+    "id": "v310",
+    "de": "der Esstisch",
+    "imagePath": "wilson/mulberry/v310.svg",
+    "sha256": "0a52f7fec45df2c2c812a745e0a4529b7451cdefe04d075abc786a6ae30a120e"
+  },
+  {
+    "id": "v324",
+    "de": "das Faxgerät",
+    "imagePath": "wilson/mulberry/v324.svg",
+    "sha256": "387393c26c7904eecdec69542dd090464f3f6f6de099efa5d9ebbaa0a88cd468"
+  },
+  {
+    "id": "v328",
+    "de": "das Fenster",
+    "imagePath": "wilson/mulberry/v328.svg",
+    "sha256": "7deaae127ec178a3bf50d72b4fcba972d7796608d2c35934938066b9fe905c1e"
+  },
+  {
+    "id": "v331",
+    "de": "die Ferse",
+    "imagePath": "wilson/mulberry/v331.svg",
+    "sha256": "33bf801ae9ca26dc69e02d4ae6c2b31ca623772dc765ee78ef53e33ee0e57019"
+  },
+  {
+    "id": "v338",
+    "de": "der Fingernagel",
+    "imagePath": "wilson/mulberry/v338.svg",
+    "sha256": "1c730d185a27bf8d1ebe0f388b2832ce071bede4d41bf1da32f4f9772480c31b"
+  },
+  {
+    "id": "v380",
+    "de": "der Fuß",
+    "imagePath": "wilson/mulberry/v380.svg",
+    "sha256": "7404a41763888b61b9771513eb4a28c404bf64dd2d0cfdf7a35d844d36e0a179"
+  },
+  {
+    "id": "v386",
+    "de": "die Gabel",
+    "imagePath": "wilson/mulberry/v386.svg",
+    "sha256": "eb4a94dea80d5d60af7414f4b5772acd9703ab622355bfef8e32e8d8ea694604"
+  },
+  {
+    "id": "v387",
+    "de": "die Garage",
+    "imagePath": "wilson/mulberry/v387.svg",
+    "sha256": "1a7e80b725dc7634e853d1e82363b27635ef32be24452885fcd89ac586af3827"
+  },
+  {
+    "id": "v388",
+    "de": "die Garnele",
+    "imagePath": "wilson/mulberry/v388.svg",
+    "sha256": "f34ce928b51c40020324df9c0e2f019236fc3b2c1023271d3f9833857ce70692"
+  },
+  {
+    "id": "v398",
+    "de": "der Gefrierschrank",
+    "imagePath": "wilson/mulberry/v398.svg",
+    "sha256": "b4cf5296f20e6f061a89d63b2be2c591dff22a32da38b7110e5a696049540be7"
+  },
+  {
+    "id": "v431",
+    "de": "die Grapefruit",
+    "imagePath": "wilson/mulberry/v431.svg",
+    "sha256": "aeac98d0bf7c42a9ff21190d264f12ea0a152848a80f0b98f8af5b206f148253"
+  },
+  {
+    "id": "v444",
+    "de": "der Gürtel",
+    "imagePath": "wilson/mulberry/v444.svg",
+    "sha256": "4878f50d160a77bb49284928266a05624b2aa6b7de7933f6ae44c0858a4f90b2"
+  },
+  {
+    "id": "v451",
+    "de": "die Haarbürste",
+    "imagePath": "wilson/mulberry/v451.svg",
+    "sha256": "bd84f21f830356be4cb49bd4e5793809f18ac13e7011d9d4f35fec7e57e5e14a"
+  },
+  {
+    "id": "v459",
+    "de": "der Hals",
+    "imagePath": "wilson/mulberry/v459.svg",
+    "sha256": "a827b1b53729e55cd887dd7be06150d47b3aed8a8d3394aa10ac50a201e65d03"
+  },
+  {
+    "id": "v464",
+    "de": "der Hamburger",
+    "imagePath": "wilson/mulberry/v464.svg",
+    "sha256": "106955ead507a19b6049d5438ba9c3b907d800f34380a6009a8d069a156a29d7"
+  },
+  {
+    "id": "v465",
+    "de": "der Hammer",
+    "imagePath": "wilson/mulberry/v465.svg",
+    "sha256": "db8ce0ff293e42d927b606dbc0cd367af8fdd8257c10487fdca38c1b48fd94fa"
+  },
+  {
+    "id": "v470",
+    "de": "das Handgelenk",
+    "imagePath": "wilson/mulberry/v470.svg",
+    "sha256": "51bf51d93901dbd20b1c42badeac3bf13f515086f28187c1d6c9565992dd776f"
+  },
+  {
+    "id": "v474",
+    "de": "das Handtuch",
+    "imagePath": "wilson/mulberry/v474.svg",
+    "sha256": "dba37b6c4513844f0f8adc2b1e2050165961df441446932c3398e59b749e94a5"
+  },
+  {
+    "id": "v481",
+    "de": "die Haustür",
+    "imagePath": "wilson/mulberry/v481.svg",
+    "sha256": "5509e2cd3339ba4994f1c35f3d6c5a4ed7bd405b73f53e56fa6513984ceb2009"
+  },
+  {
+    "id": "v488",
+    "de": "das Hemd",
+    "imagePath": "wilson/mulberry/v488.svg",
+    "sha256": "dfef2817079f1f5e02431c97aa2b4bc853eaa0ef553b763fa100796d61d75656"
+  },
+  {
+    "id": "v489",
+    "de": "der Herbst",
+    "imagePath": "wilson/mulberry/v489.svg",
+    "sha256": "304563b458b301ca459bea28c4e50105edb6e9f9619a50e67230b9823f4fcdb4"
+  },
+  {
+    "id": "v490",
+    "de": "der Herd",
+    "imagePath": "wilson/mulberry/v490.svg",
+    "sha256": "47721472b25d8cbbce3b49eddb63e95d2d3a70ce41d39ab9546b6a16d194ca7f"
+  },
+  {
+    "id": "v492",
+    "de": "das Herz",
+    "imagePath": "wilson/mulberry/v492.svg",
+    "sha256": "92ede0091e9d89f73c2ec8fa2343d278347ccf18e43a70526f6f6098878dad95"
+  },
+  {
+    "id": "v500",
+    "de": "der Hochstuhl",
+    "imagePath": "wilson/mulberry/v500.svg",
+    "sha256": "ae9538f3ba2eae6b37053b95e83a940716cacb30d4747a11a58b41b5f92969fd"
+  },
+  {
+    "id": "v502",
+    "de": "der Hocker",
+    "imagePath": "wilson/mulberry/v502.svg",
+    "sha256": "3dfee0c613461e76e0841f0e1b3be14a047115675cce7940fcf36225c763883a"
+  },
+  {
+    "id": "v510",
+    "de": "die Hüfte",
+    "imagePath": "wilson/mulberry/v510.svg",
+    "sha256": "8e2e3368fc478740fb542f8e2bc1a6587a379762c0a655bc92604cb6de608130"
+  },
+  {
+    "id": "v553",
+    "de": "der Kaffee",
+    "imagePath": "wilson/mulberry/v553.svg",
+    "sha256": "ed201c0c58e8c9bc6c95d4ac2ca1ddcd89a3ead2fad4051cfe00be8119a23648"
+  },
+  {
+    "id": "v557",
+    "de": "der Kamin",
+    "imagePath": "wilson/mulberry/v557.svg",
+    "sha256": "b7f57805e7afefd7aa12074c8b77cb6eab7f9eadfd2d86b980851ccc74a52d4f"
+  },
+  {
+    "id": "v558",
+    "de": "der Kamm",
+    "imagePath": "wilson/mulberry/v558.svg",
+    "sha256": "52cc27d20b08a8bf082e7c788a7e6719ceaad756c6d50da67505dbe59f43bffc"
+  },
+  {
+    "id": "v560",
+    "de": "die Karotte",
+    "imagePath": "wilson/mulberry/v560.svg",
+    "sha256": "d7616b859b133792eb97537dd9f30c4a61df0de453c1fe3d3d3c36c297c39162"
+  },
+  {
+    "id": "v561",
+    "de": "die Kartoffel",
+    "imagePath": "wilson/mulberry/v561.svg",
+    "sha256": "c52db04d81de9058f8392f26e0daa62c7a20846b80951e7a638832828347020c"
+  },
+  {
+    "id": "v562",
+    "de": "der Käse",
+    "imagePath": "wilson/mulberry/v562.svg",
+    "sha256": "77f97dcf6b21e33f75b7615fa7a4b2ca2f6f0134975319403b7a2f578d65ca6f"
+  },
+  {
+    "id": "v578",
+    "de": "das Kinn",
+    "imagePath": "wilson/mulberry/v578.svg",
+    "sha256": "577fa98d922277eacfc1068eff78d97df8823357a2380a1274c03d0072c9ee9a"
+  },
+  {
+    "id": "v579",
+    "de": "die Kirsche",
+    "imagePath": "wilson/mulberry/v579.svg",
+    "sha256": "b04a3d116cce4e25fb3d0dbb309ef257326537dbcb464a9bf518fa225348685d"
+  },
+  {
+    "id": "v581",
+    "de": "das Kleid",
+    "imagePath": "wilson/mulberry/v581.svg",
+    "sha256": "5598c63a0b676d9df2bc3f376032d5b6e10b3ed62041ae2f2b10a38200489a13"
+  },
+  {
+    "id": "v582",
+    "de": "der Kleiderbügel",
+    "imagePath": "wilson/mulberry/v582.svg",
+    "sha256": "c5b31480299725ec0a56335fbf4c158dd0ec21be3a3d4e033550effa702992b6"
+  },
+  {
+    "id": "v595",
+    "de": "das Knie",
+    "imagePath": "wilson/mulberry/v595.svg",
+    "sha256": "1171e4d31888398f4bac56bc93c2a82dfb55ee02885c4f68a46571df18095749"
+  },
+  {
+    "id": "v597",
+    "de": "der Knoblauch",
+    "imagePath": "wilson/mulberry/v597.svg",
+    "sha256": "16b58832a8a776637dba86f744db910961c351570c3645bd0ba32ba4471fb500"
+  },
+  {
+    "id": "v598",
+    "de": "der Knöchel",
+    "imagePath": "wilson/mulberry/v598.svg",
+    "sha256": "bf6acf2f207369220abe08f6701bc36b3a243f4135939fe8d8e1318c0a9c4fd4"
+  },
+  {
+    "id": "v600",
+    "de": "der Knopf",
+    "imagePath": "wilson/mulberry/v600.svg",
+    "sha256": "59e69b1194ec64f63e4861371f1399baca962ce48d257538bf4a89add5fa7a4a"
+  },
+  {
+    "id": "v604",
+    "de": "der Kofferraum",
+    "imagePath": "wilson/mulberry/v604.svg",
+    "sha256": "dfe047f89277d8faeaa223ad44ad28789a98a1f6ce8c5068add94118e75c4a7d"
+  },
+  {
+    "id": "v608",
+    "de": "die Kommode",
+    "imagePath": "wilson/mulberry/v608.svg",
+    "sha256": "b1143ecccb3fe14e1e61f819fc5c80c6494cdcb005b0ff6d05c3a989134d061f"
+  },
+  {
+    "id": "v618",
+    "de": "der Kopf",
+    "imagePath": "wilson/mulberry/v618.svg",
+    "sha256": "30578ec5450dd36263b8f6d3d36bf71338e7f5f2ea15918639cd849672586bc2"
+  },
+  {
+    "id": "v630",
+    "de": "die Krawatte",
+    "imagePath": "wilson/mulberry/v630.svg",
+    "sha256": "e5c22c1511769d6a293da9197b39dfc3f6486e77a87c376ff6552aca4e246f1e"
+  },
+  {
+    "id": "v631",
+    "de": "der Krebs",
+    "imagePath": "wilson/mulberry/v631.svg",
+    "sha256": "f13bcd19f87f5283febc3072714b68309a528944ae82095b449b441ebe046f48"
+  },
+  {
+    "id": "v635",
+    "de": "der Kronleuchter",
+    "imagePath": "wilson/mulberry/v635.svg",
+    "sha256": "d7a662d41cf431e84a31c0ed2d4400dc79d5ce1f6a28cffbb0dbd55349c0087e"
+  },
+  {
+    "id": "v657",
+    "de": "die Lampe",
+    "imagePath": "wilson/mulberry/v657.svg",
+    "sha256": "9f76f65389efcaa605f99063dead86560680cbc50a971ec5329a7de8e3d83dd9"
+  },
+  {
+    "id": "v658",
+    "de": "der Laptop",
+    "imagePath": "wilson/mulberry/v658.svg",
+    "sha256": "d9f23efb55bc3867ce468fb52f5a24bd35524267762dd524d5f272cad6c44c6e"
+  },
+  {
+    "id": "v660",
+    "de": "das Lätzchen",
+    "imagePath": "wilson/mulberry/v660.svg",
+    "sha256": "8a63bb0bc89716357e6bda84d154906d7653ab94efa9475cb2e52178f4112c44"
+  },
+  {
+    "id": "v661",
+    "de": "der Lauch",
+    "imagePath": "wilson/mulberry/v661.svg",
+    "sha256": "eb5c465b28204870c04d4765e925217918201bae4a107ebc7d4d4c3c4b26095c"
+  },
+  {
+    "id": "v678",
+    "de": "die Limette",
+    "imagePath": "wilson/mulberry/v678.svg",
+    "sha256": "84fc4cda7e97df905b0f46bc6358d5ec6352ccdc48a75ed351d853338d17115f"
+  },
+  {
+    "id": "v683",
+    "de": "der Locher",
+    "imagePath": "wilson/mulberry/v683.svg",
+    "sha256": "284792ed77248b0e35e4e90cb6bb9d85f1d35a646dbd52912d289acbedbdcc53"
+  },
+  {
+    "id": "v687",
+    "de": "die Luftröhre",
+    "imagePath": "wilson/mulberry/v687.svg",
+    "sha256": "022fcf7bdcab5e25bcd1c2b306f304f9cc8b7b2a3c9d00739b0bb88694b265bd"
+  },
+  {
+    "id": "v690",
+    "de": "der Magen",
+    "imagePath": "wilson/mulberry/v690.svg",
+    "sha256": "084ebbaadd0ce383d35011c60bfd2b96cb958b9730e37edbdd8b62dca82463ab"
+  },
+  {
+    "id": "v699",
+    "de": "das Maßband",
+    "imagePath": "wilson/mulberry/v699.svg",
+    "sha256": "b0b323e587395a96b83fdf48b3fde6900e29dc8957bb137f91b8daf624b23e1e"
+  },
+  {
+    "id": "v712",
+    "de": "das Messer",
+    "imagePath": "wilson/mulberry/v712.svg",
+    "sha256": "459ffd835c3ee7efaeb38953b771a706da038e4a4f0b017b6ff58b8309162276"
+  },
+  {
+    "id": "v714",
+    "de": "die Miesmuschel",
+    "imagePath": "wilson/mulberry/v714.svg",
+    "sha256": "0754972573f0b3bc1cfcc27b42ac4128b74659aebcc639887ab98b18731a986e"
+  },
+  {
+    "id": "v721",
+    "de": "das Mikrofon",
+    "imagePath": "wilson/mulberry/v721.svg",
+    "sha256": "37fd57e58ddca0b4386f3fccbe19ad33caf9149965f6f737cad822f61cfb55cf"
+  },
+  {
+    "id": "v723",
+    "de": "die Milch",
+    "imagePath": "wilson/mulberry/v723.svg",
+    "sha256": "81767309981039167609a75707bd1a9ff101fa2b7d0b4920a300c6e46de784af"
+  },
+  {
+    "id": "v732",
+    "de": "die Minute",
+    "imagePath": "wilson/mulberry/v732.svg",
+    "sha256": "890d4ca8a3323f39cf7d5210833c36ef6bee0f5e89b543550208131f3b79b718"
+  },
+  {
+    "id": "v744",
+    "de": "der Morgen",
+    "imagePath": "wilson/mulberry/v744.svg",
+    "sha256": "0ce3da5b60e53651aec28b76b77ff619d89a8985ce720377b1869364a901896c"
+  },
+  {
+    "id": "v746",
+    "de": "der Motor",
+    "imagePath": "wilson/mulberry/v746.svg",
+    "sha256": "fa886179405e235b81a9fc62ab9c48900acb99a44a1042c996afc059850645dc"
+  },
+  {
+    "id": "v751",
+    "de": "der Mund",
+    "imagePath": "wilson/mulberry/v751.svg",
+    "sha256": "057d3dc63f1c902a8ebebe4e6a6fb631c22f4659f54e83cf8469e9ec7a4a7a83"
+  },
+  {
+    "id": "v765",
+    "de": "die Nagelfeile",
+    "imagePath": "wilson/mulberry/v765.svg",
+    "sha256": "3db2e1958f698df9cf8329501bd52889c0436953a2b96316668d3114e3039645"
+  },
+  {
+    "id": "v787",
+    "de": "das Notizbuch",
+    "imagePath": "wilson/mulberry/v787.svg",
+    "sha256": "7545e7b78b5400f106f867560e4985bd2ce6ab50d0ca955f5ae99fc59d1f2af0"
+  },
+  {
+    "id": "v793",
+    "de": "der Oberschenkel",
+    "imagePath": "wilson/mulberry/v793.svg",
+    "sha256": "1ad23f928b3e58037aa1d4d43239284412155e5b653123ad9a37cfac5bf49e7e"
+  },
+  {
+    "id": "v797",
+    "de": "das Ohr",
+    "imagePath": "wilson/mulberry/v797.svg",
+    "sha256": "0f755c822160c9cf57e237e405d851a5a3f34e9d51cc93de4609f004625d4128"
+  },
+  {
+    "id": "v800",
+    "de": "das Olivenöl",
+    "imagePath": "wilson/mulberry/v800.svg",
+    "sha256": "05a3d217a54b801f2145fd5f37edee4460698edfa12b6d8d7a020efa6c962dc4"
+  },
+  {
+    "id": "v804",
+    "de": "der Orangensaft",
+    "imagePath": "wilson/mulberry/v804.svg",
+    "sha256": "25653ff56dd9139679110a24925761ed856fbd3d075af59222c20c5e8477c844"
+  },
+  {
+    "id": "v812",
+    "de": "das Parfüm",
+    "imagePath": "wilson/mulberry/v812.svg",
+    "sha256": "8e53217183f5dc30fe575cae6b9471d916f387c4cca0a9cfd1901e83ee0c1625"
+  },
+  {
+    "id": "v813",
+    "de": "die Pastinake",
+    "imagePath": "wilson/mulberry/v813.svg",
+    "sha256": "46e578aa927cf3126bd0464e25ff0e1b3c726b007623fb21b7dac2216c358b09"
+  },
+  {
+    "id": "v821",
+    "de": "die Pfeffermühle",
+    "imagePath": "wilson/mulberry/v821.svg",
+    "sha256": "d89310b09681a8946b80305a7e560d8a11d3b0b7fdb405fa3919bded8b915805"
+  },
+  {
+    "id": "v824",
+    "de": "die Pflaume",
+    "imagePath": "wilson/mulberry/v824.svg",
+    "sha256": "7619aea342d2414e095f3ac813b73b4d365ba764c003f8e385ff8eff6a7cbc12"
+  },
+  {
+    "id": "v828",
+    "de": "die Pizza",
+    "imagePath": "wilson/mulberry/v828.svg",
+    "sha256": "d2d5d4010808e887b211ba87400b999f5737bf463ddcad8089d226afb19c2f50"
+  },
+  {
+    "id": "v830",
+    "de": "das Polizeiauto",
+    "imagePath": "wilson/mulberry/v830.svg",
+    "sha256": "0e9d1dc62bf9cfb366cdbcbebea558a509879705ec057085218211ba154c867c"
+  },
+  {
+    "id": "v838",
+    "de": "der Postausgang",
+    "imagePath": "wilson/mulberry/v838.svg",
+    "sha256": "babe970cf60fb7c4a0283e1270bb19732a341a651a40fbcddf3b47acbf7daf30"
+  },
+  {
+    "id": "v839",
+    "de": "der Posteingang",
+    "imagePath": "wilson/mulberry/v839.svg",
+    "sha256": "92370cef8db29eecb2f386ecfd3a28205bc553f71662bd1b26cf90b6b16846da"
+  },
+  {
+    "id": "v851",
+    "de": "das Prozent",
+    "imagePath": "wilson/mulberry/v851.svg",
+    "sha256": "fbe6327ab8200ea7f08459a52252847d635af138adf49984d083a6223d57f85f"
+  },
+  {
+    "id": "v854",
+    "de": "die Puppe",
+    "imagePath": "wilson/mulberry/v854.svg",
+    "sha256": "9586fbcc2168071d099f0bcf0f878d7b14bb53c0bd5d2410c59a061331ed7205"
+  },
+  {
+    "id": "v862",
+    "de": "das Radieschen",
+    "imagePath": "wilson/mulberry/v862.svg",
+    "sha256": "575e48da45cf539e066d27ebec98c3e701fdc15d57ab2ba5074577e055dc7da0"
+  },
+  {
+    "id": "v866",
+    "de": "der Rasenmäher",
+    "imagePath": "wilson/mulberry/v866.svg",
+    "sha256": "92793c0d5af5882159dde46d64a565f94901acf2134bc324c54ecd65277683a2"
+  },
+  {
+    "id": "v871",
+    "de": "der Rechen",
+    "imagePath": "wilson/mulberry/v871.svg",
+    "sha256": "a89bd89e0b00880aca1d1ec755b1bd384c34d26f2e6784f7dba80335612be76b"
+  },
+  {
+    "id": "v875",
+    "de": "die Reibe",
+    "imagePath": "wilson/mulberry/v875.svg",
+    "sha256": "42a6f3ac367af4c3c6d950ceb9a63b86559f27f71bcf032f824f55b8ff8fc531"
+  },
+  {
+    "id": "v878",
+    "de": "die Reifenpanne",
+    "imagePath": "wilson/mulberry/v878.svg",
+    "sha256": "280c08a2c2007c02ae7b9cffcfcf4bf6675754cb23d6c8141938ab6bad878560"
+  },
+  {
+    "id": "v881",
+    "de": "der Reisebus",
+    "imagePath": "wilson/mulberry/v881.svg",
+    "sha256": "de4bcb1d224ab9a678e783138dcd3b634087448cbb6112b969af3c68d469367b"
+  },
+  {
+    "id": "v884",
+    "de": "der Reißverschluss",
+    "imagePath": "wilson/mulberry/v884.svg",
+    "sha256": "f52b8424a246830f96959b0f292f7f7a981fec07d90338792e705678d68936ec"
+  },
+  {
+    "id": "v885",
+    "de": "die Reißzwecke",
+    "imagePath": "wilson/mulberry/v885.svg",
+    "sha256": "c71f729677fedbea4e388aedc9660aecd08b0c7ccaa681e471a31ef8bea63bac"
+  },
+  {
+    "id": "v888",
+    "de": "der Rettungswagen",
+    "imagePath": "wilson/mulberry/v888.svg",
+    "sha256": "20856340f8192b170d71fb6818e81cee1411f099109278f79910ccca1274c7ba"
+  },
+  {
+    "id": "v891",
+    "de": "das Rindfleisch",
+    "imagePath": "wilson/mulberry/v891.svg",
+    "sha256": "ba9ce4a1aba27674ee37214c6bd1c645413b5e4274b2e110df6651df8ad4f229"
+  },
+  {
+    "id": "v893",
+    "de": "der Rock",
+    "imagePath": "wilson/mulberry/v893.svg",
+    "sha256": "71483518946d72a22de784dd19688ef70b835d564362edb427d22e82aa0686a7"
+  },
+  {
+    "id": "v897",
+    "de": "das Rollo",
+    "imagePath": "wilson/mulberry/v897.svg",
+    "sha256": "871c53fc805c347ee4e39a1c7637f16cd4c041a83b31b07b5373244e85be746e"
+  },
+  {
+    "id": "v898",
+    "de": "der Rollstuhl",
+    "imagePath": "wilson/mulberry/v898.svg",
+    "sha256": "5a76eb1b17c148d2ac5065e6ddea069a3b579aa131ffc0ef609892ccaf1513ad"
+  },
+  {
+    "id": "v899",
+    "de": "die Rolltreppe",
+    "imagePath": "wilson/mulberry/v899.svg",
+    "sha256": "8033bc87a0415613e0172b33821eddb2ced646f1544e7fffe4fcfa169568c044"
+  },
+  {
+    "id": "v902",
+    "de": "die Rote Bete",
+    "imagePath": "wilson/mulberry/v902.svg",
+    "sha256": "4c7e80082fce7aa8e4e9c6e91ef2be9dd7cd74ded11f4fb033807b9c16ecca9d"
+  },
+  {
+    "id": "v907",
+    "de": "die Rübe",
+    "imagePath": "wilson/mulberry/v907.svg",
+    "sha256": "5646b15af237301756a3e6a00cbe6fbc75ea88c9372f74044e2aba9607d9c1bf"
+  },
+  {
+    "id": "v920",
+    "de": "der Salat",
+    "imagePath": "wilson/mulberry/v920.svg",
+    "sha256": "fef11a8366f8e400c6620c4fb2dfe2558377e647d8bcad2d0d971c8af56d5483"
+  },
+  {
+    "id": "v922",
+    "de": "das Salz",
+    "imagePath": "wilson/mulberry/v922.svg",
+    "sha256": "fc4d869bb43efa78b76f45a0e8565323a07f33984dd212ce2c577f67cdea13cd"
+  },
+  {
+    "id": "v924",
+    "de": "der Sämling",
+    "imagePath": "wilson/mulberry/v924.svg",
+    "sha256": "92e6d3861d8c39edde2674c944a40c5ced18ee5e6c2d854a0bf4174db265f6a0"
+  },
+  {
+    "id": "v929",
+    "de": "das Sandwich",
+    "imagePath": "wilson/mulberry/v929.svg",
+    "sha256": "f4abdbcaf757994cfc37e4eabd8afaeda7be5d7c458e749735bd8475f49c9b14"
+  },
+  {
+    "id": "v935",
+    "de": "der Schäler",
+    "imagePath": "wilson/mulberry/v935.svg",
+    "sha256": "a1c7bd15ba91cc139abd62880ae3951939df304c43535d3a438605c52ff5a6ca"
+  },
+  {
+    "id": "v943",
+    "de": "die Schere",
+    "imagePath": "wilson/mulberry/v943.svg",
+    "sha256": "4566e2211efe1bf763ca3556fdfcaa45fa00281ee89797086cf2dcf042412a30"
+  },
+  {
+    "id": "v946",
+    "de": "das Schienbein",
+    "imagePath": "wilson/mulberry/v946.svg",
+    "sha256": "fff5f8012bb7f2fd6dc41d93fa6cb1363fa3c03d58089a4945aa504cac868ff1"
+  },
+  {
+    "id": "v950",
+    "de": "das Schleifpapier",
+    "imagePath": "wilson/mulberry/v950.svg",
+    "sha256": "39ad76f2cbdffbf272dfbe612fae7e472cc3a0f63a4739d514e41ed71b1771d5"
+  },
+  {
+    "id": "v954",
+    "de": "der Schmutzwäschekorb",
+    "imagePath": "wilson/mulberry/v954.svg",
+    "sha256": "62cb953d3bfb49cecc189e0d845d36c5316dd025281419f934e79b69ec3a54f0"
+  },
+  {
+    "id": "v955",
+    "de": "die Schnalle",
+    "imagePath": "wilson/mulberry/v955.svg",
+    "sha256": "2f0d0eaca49652b16680749590a189cc92ad9ec819d2c8d6fadd317add054d95"
+  },
+  {
+    "id": "v958",
+    "de": "das Schneidebrett",
+    "imagePath": "wilson/mulberry/v958.svg",
+    "sha256": "d48c57cf315d29f20aad35eadcd39e6b98ce7db9f7bced6ab8e5a634f7f8bc71"
+  },
+  {
+    "id": "v966",
+    "de": "der Schokoriegel",
+    "imagePath": "wilson/mulberry/v966.svg",
+    "sha256": "eccf38d54965106bb62daa92135de8e792904dddd4b7a147cb99e4c8cc15a163"
+  },
+  {
+    "id": "v967",
+    "de": "der Schornstein",
+    "imagePath": "wilson/mulberry/v967.svg",
+    "sha256": "0a6637d61845a3ccb9d99de710372ae4fe78f21407687cf68121ba296a4d262a"
+  },
+  {
+    "id": "v968",
+    "de": "die Schraube",
+    "imagePath": "wilson/mulberry/v968.svg",
+    "sha256": "9f29aa3b368ced92c5c5b28d359f90377ba754c4abba39886f14dfd2f221f6bc"
+  },
+  {
+    "id": "v970",
+    "de": "der Schraubenzieher",
+    "imagePath": "wilson/mulberry/v970.svg",
+    "sha256": "908695290582938bf2c74fa82b0b2b0578712f486df7c7792a60eb6d467e9b45"
+  },
+  {
+    "id": "v972",
+    "de": "die Schubkarre",
+    "imagePath": "wilson/mulberry/v972.svg",
+    "sha256": "37a84fe54c3cdfa778d6ac1b7286adaf1f377817f7d2b497b928f50b19e36763"
+  },
+  {
+    "id": "v973",
+    "de": "die Schublade",
+    "imagePath": "wilson/mulberry/v973.svg",
+    "sha256": "900ae458ec8cd7612cb18fd20b7822004040fc3bec6375dd5f3e0194cd6e50ab"
+  },
+  {
+    "id": "v978",
+    "de": "die Schulter",
+    "imagePath": "wilson/mulberry/v978.svg",
+    "sha256": "da01ab0caff97b36eaf265ae8ff6fcf8d6694de2caaef2d117ba0541a0a67179"
+  },
+  {
+    "id": "v981",
+    "de": "die Schürze",
+    "imagePath": "wilson/mulberry/v981.svg",
+    "sha256": "06cd0c5cf1f5e47bd676200e11fb4189a4984ee40bdb826cf506334fed395651"
+  },
+  {
+    "id": "v984",
+    "de": "der Schwamm",
+    "imagePath": "wilson/mulberry/v984.svg",
+    "sha256": "55acacc0f8e9691ce8304af1aebdbd326d42adcfe10a10362932482708c3e70a"
+  },
+  {
+    "id": "v1006",
+    "de": "die Seife",
+    "imagePath": "wilson/mulberry/v1006.svg",
+    "sha256": "f8b52eca86e395a658c39c789f849681c341f0697c712ee4120df45ff56ba459"
+  },
+  {
+    "id": "v1018",
+    "de": "das Shampoo",
+    "imagePath": "wilson/mulberry/v1018.svg",
+    "sha256": "1f75f8926929a0338985c5662fa32dbf0f84abcbef067f6934b7095d74b3c71c"
+  },
+  {
+    "id": "v1020",
+    "de": "der Sicherheitsgurt",
+    "imagePath": "wilson/mulberry/v1020.svg",
+    "sha256": "532c52822f0241893e6d3bc151cdcc024781e11cf37e6fec74f13c2845aa795d"
+  },
+  {
+    "id": "v1050",
+    "de": "der Sommer",
+    "imagePath": "wilson/mulberry/v1050.svg",
+    "sha256": "871a206eb1b5745f4e542031092ee46743bf0e7ada6077fbdf896e2337b07101"
+  },
+  {
+    "id": "v1053",
+    "de": "die Sonnenbrille",
+    "imagePath": "wilson/mulberry/v1053.svg",
+    "sha256": "3d63d3b8ac8d902f53b0556a2a15a43264546e2fa608793d51ee135af0c83887"
+  },
+  {
+    "id": "v1055",
+    "de": "das Sonnenschutzmittel",
+    "imagePath": "wilson/mulberry/v1055.svg",
+    "sha256": "2d3bd4718ea73af84f9a0dbf0142390c97c8b84bfb0b0278f630ec6a98ce0a60"
+  },
+  {
+    "id": "v1062",
+    "de": "der Spaten",
+    "imagePath": "wilson/mulberry/v1062.svg",
+    "sha256": "37908e0070a5ca45bc3e87132b8a1f90db5eae4e20010601cb17dbf30fef164e"
+  },
+  {
+    "id": "v1065",
+    "de": "der Spiegel",
+    "imagePath": "wilson/mulberry/v1065.svg",
+    "sha256": "5e1b6791177ae85f64dffcc04a6d65205bb314455a10d15ee80f478071e1937f"
+  },
+  {
+    "id": "v1069",
+    "de": "die Spritze",
+    "imagePath": "wilson/mulberry/v1069.svg",
+    "sha256": "94b79b58eae4117b079f2032735d0c1abe4d71cf7b5c33850f36a860c881d752"
+  },
+  {
+    "id": "v1073",
+    "de": "die Spülmaschine",
+    "imagePath": "wilson/mulberry/v1073.svg",
+    "sha256": "051824b4fb97a83dcaba050db7eba8515ccc89a532e0a18662a0fac5043557c9"
+  },
+  {
+    "id": "v1074",
+    "de": "das Spülmittel",
+    "imagePath": "wilson/mulberry/v1074.svg",
+    "sha256": "690f7fb82ea29f9922b0024795293b1e79520e454b6391236d6ae07f3025548c"
+  },
+  {
+    "id": "v1084",
+    "de": "das Stethoskop",
+    "imagePath": "wilson/mulberry/v1084.svg",
+    "sha256": "291212a9ef7f504671410591ce67c4df79d825e4cd9b23264ddcb1fa78165212"
+  },
+  {
+    "id": "v1103",
+    "de": "die Strumpfhose",
+    "imagePath": "wilson/mulberry/v1103.svg",
+    "sha256": "f7c5b5b4c997df332170cb2f71f7a8672368ba1fb1acbc56b82dcd8384853e75"
+  },
+  {
+    "id": "v1109",
+    "de": "die Suppe",
+    "imagePath": "wilson/mulberry/v1109.svg",
+    "sha256": "46c6bd0b65f6f3dbfe3fe1f78402c9a8af0963edc2f8b7532b89cde32a06e90b"
+  },
+  {
+    "id": "v1114",
+    "de": "die Süßkartoffel",
+    "imagePath": "wilson/mulberry/v1114.svg",
+    "sha256": "b2f8e9d3a5a50ef9a8e8c8da51ecd3450e69bfc20017532bbd991d79cf02ee28"
+  },
+  {
+    "id": "v1117",
+    "de": "das Tablett",
+    "imagePath": "wilson/mulberry/v1117.svg",
+    "sha256": "a75e3c9c8688388b875a88e5b688c7bac49277fd6dfe0b3a18668503ce870302"
+  },
+  {
+    "id": "v1119",
+    "de": "der Tacker",
+    "imagePath": "wilson/mulberry/v1119.svg",
+    "sha256": "682babfbf4ddf7a7528e9759ea40aca0649d770bfce80b2437ca85e0f68fe00c"
+  },
+  {
+    "id": "v1124",
+    "de": "der Tampon",
+    "imagePath": "wilson/mulberry/v1124.svg",
+    "sha256": "9c8ff5c73fcfefd4bfe36e3e3e88081f6685d3d2e2df73aa8f0c89487172eb31"
+  },
+  {
+    "id": "v1133",
+    "de": "der Taschenrechner",
+    "imagePath": "wilson/mulberry/v1133.svg",
+    "sha256": "d5051e89e67a781e63002aa0f844dc9b4c5b7e31f47930436df05edba4eb7c1a"
+  },
+  {
+    "id": "v1140",
+    "de": "der Teebeutel",
+    "imagePath": "wilson/mulberry/v1140.svg",
+    "sha256": "36124799c061fee7b17e7726cd9912d01a7fd200312dd4c1c8d35ca08548b556"
+  },
+  {
+    "id": "v1146",
+    "de": "der Teppich",
+    "imagePath": "wilson/mulberry/v1146.svg",
+    "sha256": "ca99abeabd13a6e3c6308280304be635e0bfc95852abe3bf99a2694041f9f9fb"
+  },
+  {
+    "id": "v1157",
+    "de": "die Tischdecke",
+    "imagePath": "wilson/mulberry/v1157.svg",
+    "sha256": "7b70993f5c93940e7c2aa9a3989dca2a9ba2c69dbf4b50fe7a20fe2be7126ddb"
+  },
+  {
+    "id": "v1160",
+    "de": "der Toaster",
+    "imagePath": "wilson/mulberry/v1160.svg",
+    "sha256": "a0d3b02c4f71ffcc36474aaecd3683d9ff85c7bea3ab76148eca1da0f60654a6"
+  },
+  {
+    "id": "v1162",
+    "de": "die Toilette",
+    "imagePath": "wilson/mulberry/v1162.svg",
+    "sha256": "c986367e3ee348cce567106ea0acd7ea9dd336d123e128b386a297c8b3640945"
+  },
+  {
+    "id": "v1164",
+    "de": "die Tomate",
+    "imagePath": "wilson/mulberry/v1164.svg",
+    "sha256": "71145e175ee45ba5cb937555f3b0b6a0bc2fbdbacc8df01cf7377b96cd5dde34"
+  },
+  {
+    "id": "v1168",
+    "de": "das Tortendiagramm",
+    "imagePath": "wilson/mulberry/v1168.svg",
+    "sha256": "dac04a54cfe2cfe8ba213c172cfba78efabf8dd9ae7193a6a35796c72e6ac740"
+  },
+  {
+    "id": "v1177",
+    "de": "das T-Shirt",
+    "imagePath": "wilson/mulberry/v1177.svg",
+    "sha256": "ce3f1585b5c1b609743c9081bc5a6f7ceefcbdf72c115298a366159efc861c36"
+  },
+  {
+    "id": "v1268",
+    "de": "die Waage",
+    "imagePath": "wilson/mulberry/v1268.svg",
+    "sha256": "39642d12308ee6bf5cf52f2e9e217a4ee7ef46dfca015048f383d66c40ca189d"
+  },
+  {
+    "id": "v1274",
+    "de": "die Wange",
+    "imagePath": "wilson/mulberry/v1274.svg",
+    "sha256": "5d3a67495237095956246e379136bc97ec144fa171718f44f33b38d1436df2db"
+  },
+  {
+    "id": "v1285",
+    "de": "die Wäscheklammer",
+    "imagePath": "wilson/mulberry/v1285.svg",
+    "sha256": "40d3ffef436fd4c861446ca74d4dfc9ac05ccdb305bb432bde979ad476228143"
+  },
+  {
+    "id": "v1289",
+    "de": "die Waschmaschine",
+    "imagePath": "wilson/mulberry/v1289.svg",
+    "sha256": "bdee865f8467d44bfe7c046aee09362769009cd1ed955ec9fcb13edb2ba5513f"
+  },
+  {
+    "id": "v1291",
+    "de": "das Waschpulver",
+    "imagePath": "wilson/mulberry/v1291.svg",
+    "sha256": "9fd54992c22f0c97070324a79faa7032c4465dcd6aa418e773c6bac7912cfaae"
+  },
+  {
+    "id": "v1296",
+    "de": "die Wassermelone",
+    "imagePath": "wilson/mulberry/v1296.svg",
+    "sha256": "73ba6164f15833f237315a402c92e84202e0d671f91accf77fdc0aeacbb88b2e"
+  },
+  {
+    "id": "v1299",
+    "de": "die Webcam",
+    "imagePath": "wilson/mulberry/v1299.svg",
+    "sha256": "d39d26dd1e9fb890a5f0af1df5ad881c16bcbbad52b36fe33080b7463dcaf6c9"
+  },
+  {
+    "id": "v1321",
+    "de": "die Wimper",
+    "imagePath": "wilson/mulberry/v1321.svg",
+    "sha256": "292682ed8aada6a2da60d9e14f0853d36aa5416db56403b40f19491ce3d7f1da"
+  },
+  {
+    "id": "v1324",
+    "de": "der Winter",
+    "imagePath": "wilson/mulberry/v1324.svg",
+    "sha256": "ff19d4f2a42bf990218c119555aab049515ac0fbdcb658ed8062822a153ba725"
+  },
+  {
+    "id": "v1326",
+    "de": "der Wischmopp",
+    "imagePath": "wilson/mulberry/v1326.svg",
+    "sha256": "88d0bb91dd55ee345962248ee70e609ed7f968e5cb0ba3f3a80c00eb3af9bfad"
+  },
+  {
+    "id": "v1334",
+    "de": "der Zahn",
+    "imagePath": "wilson/mulberry/v1334.svg",
+    "sha256": "be80656955b26be65702083a61a1999ac740a4e0f770a0f4e108b4080530826a"
+  },
+  {
+    "id": "v1335",
+    "de": "die Zahnpasta",
+    "imagePath": "wilson/mulberry/v1335.svg",
+    "sha256": "c8598fccf00c89b5fba9fc3c13d49dd3336e32f5b4c2230f3bde2f9391860f6b"
+  },
+  {
+    "id": "v1338",
+    "de": "der Zebrastreifen",
+    "imagePath": "wilson/mulberry/v1338.svg",
+    "sha256": "c5f7bb3d2fb1985460a60e552e37dd21234df76d68c8db38845460d6fa77bfde"
+  },
+  {
+    "id": "v1350",
+    "de": "die Zitrone",
+    "imagePath": "wilson/mulberry/v1350.svg",
+    "sha256": "a0f80f46aafb039cdc5f5c48578b36dbf65c7567e52453015f952961de1e8ec3"
+  },
+  {
+    "id": "v1358",
+    "de": "der Zug",
+    "imagePath": "wilson/mulberry/v1358.svg",
+    "sha256": "b6bc59a72e06e1e57fd70512d821194a3a1fa2cf28c08a647d65faf44477f218"
+  },
+  {
+    "id": "v1376",
+    "de": "die Zwiebel",
+    "imagePath": "wilson/mulberry/v1376.svg",
+    "sha256": "d6a5434e91a1a3c59537473071da29a737e5bd914200d6e23771a72dd3157f4a"
+  }
+]

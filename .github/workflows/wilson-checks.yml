@@ -19,6 +19,7 @@ on:
     branches:
       - main
       - feature/wilson-picture-input-srs
+      - feature/wilson-recovered-*
     paths:
       - 'wilson*'
       - 'wilson/**'
