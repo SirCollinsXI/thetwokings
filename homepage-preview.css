@@ -64,6 +64,7 @@ h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .project-link { width: fit-content; padding-block: .3rem; font-weight: 750; color: var(--accent); text-underline-offset: .16em; }
 
 .more { margin-block-start: 2rem; }
+.more > .more-links { margin-block-start: 1rem; }
 .game-hub > h3 { margin-block-end: .35rem; }
 .game-hub > p { color: var(--muted); }
 .more-links { display: flex; flex-wrap: wrap; gap: .55rem; list-style: none; margin: 0; padding: 0; }

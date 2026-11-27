@@ -12,10 +12,10 @@
 <body>
   <a class="skip" href="#inhalt" data-copy="skip">Zum Inhalt</a>
   <header class="bar shell">
-    <a class="brand" href="index.html"><img src="crown.svg" alt="" width="32" height="32">TheTwoKings</a>
+    <a class="brand" href="index.html" data-link-language><img src="crown.svg" alt="" width="32" height="32">TheTwoKings</a>
     <nav id="navigation" aria-label="Hauptnavigation" data-label="nav">
       <a href="#spiele" data-copy="games">Sams Spielecke</a>
-      <a href="comic.html" data-copy="comics">Sams Comics</a>
+      <a href="comic.html" data-link-language data-copy="comics">Sams Comics</a>
       <a href="wilson.html" data-copy="wilson">Wilsons Trainingsecke</a>
       <a href="#werkstatt" data-copy="pc">PC-Werkstatt</a>
     </nav>
@@ -39,9 +39,9 @@
           <h3 id="games-title" data-copy="games">Sams Spielecke</h3>
           <p data-copy="browserGames">Diese Spiele kannst du direkt im Browser öffnen.</p>
           <ul class="more-links" role="list">
-            <li><a href="wuestenbogen.html" data-copy="archery">Wüstenbogen</a></li>
-            <li><a href="piratenjagd.html" data-copy="pirates">Piratenjagd (Testszene)</a></li>
-            <li><a href="klassischer-game-hub.html" data-copy="classics">Klassische Spiele</a></li>
+            <li><a href="wuestenbogen.html" data-link-language data-copy="archery">Wüstenbogen</a></li>
+            <li><a href="piratenjagd.html" data-link-language data-copy="pirates">Piratenjagd (Testszene)</a></li>
+            <li><a href="klassischer-game-hub.html" data-link-language data-copy="classics">Klassische Spiele</a></li>
           </ul>
           <article id="wehr" class="project game" tabindex="-1" aria-labelledby="wehr-title">
             <div class="terrain" aria-hidden="true"><span></span></div>
@@ -60,7 +60,7 @@
               <h3 data-copy="comics">Sams Comics</h3>
               <p data-copy="comicText">Lies die veröffentlichte Leseprobe von Sam &amp; Piet.</p>
               <p class="next" data-copy="comicNext">Als Nächstes: weitere Werke sichten und zur Veröffentlichung freigeben.</p>
-              <a class="project-link" href="comic.html" data-copy="read">Leseprobe öffnen</a>
+              <a class="project-link" href="comic.html" data-link-language data-copy="read">Leseprobe öffnen</a>
             </div>
           </article>
           <article class="project">
@@ -75,8 +75,20 @@
       </section>
       <section id="werkstatt" class="more" tabindex="-1" aria-labelledby="workshop-title">
         <h2 id="workshop-title" data-copy="workshop">Werkstatt &amp; Experimente</h2>
+        <article class="project" aria-labelledby="pc-title">
+          <div class="card">
+            <p class="status" data-copy="prototype">Prototyp</p>
+            <h3 id="pc-title" data-copy="pc">PC-Werkstatt</h3>
+            <p data-copy="pcNow">Importiere dein Hardwareprofil lokal und prüfe, welcher Upgrade-Schritt sich für dich lohnt.</p>
+            <p data-copy="pcData">Der Preisradar zeigt historische Preise aus Deutschland und den USA.</p>
+            <p class="next" data-copy="pcNext">Als Nächstes: zwei Aufrüstpläne vergleichen und eigene Angebote in Euro oder Yuan mit Datum und Quelle erfassen.</p>
+            <ul class="more-links" role="list">
+              <li><a href="werkstatt.html" data-link-language data-copy="pcOpen">Prototyp öffnen</a></li>
+              <li><a href="preisradar.html" data-link-language data-copy="pcRadar">Historische Preise</a></li>
+            </ul>
+          </div>
+        </article>
         <ul class="more-links" role="list">
-          <li><a href="werkstatt.html" data-copy="pc">PC-Werkstatt</a></li>
           <li><a href="kinglab/caffeine-clash.html">KingLab</a></li>
         </ul>
       </section>
@@ -97,7 +109,7 @@
     </aside>
   </div>
   <footer class="shell foot">
-    <a href="index.html" data-copy="existing">Aktuelle Website</a>
+    <a href="index.html" data-link-language data-copy="existing">Aktuelle Website</a>
     <a href="impressum.html" data-copy="imprint">Impressum</a>
     <a href="datenschutz.html" data-copy="privacy">Datenschutz</a>
   </footer>

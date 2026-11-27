@@ -54,6 +54,23 @@ const copy = {
   pirates: ['Piratenjagd (Testszene)', 'Pirate Hunt (demo)', '海盗冒险（试玩）'],
   classics: ['Klassische Spiele', 'Classic games', '经典游戏'],
   pc: ['PC-Werkstatt', 'PC Workshop', '电脑工作室'],
+  pcNow: [
+    'Importiere dein Hardwareprofil lokal und prüfe, welcher Upgrade-Schritt sich für dich lohnt.',
+    'Import your hardware profile locally and see which upgrade to prioritise.',
+    '在浏览器本地导入电脑配置，评估应优先升级哪些配件。',
+  ],
+  pcData: [
+    'Der Preisradar zeigt historische Preise aus Deutschland und den USA.',
+    'The Price Radar shows historical prices from Germany and the US.',
+    '价格雷达展示德国和美国市场的历史价格。',
+  ],
+  pcNext: [
+    'Als Nächstes: zwei Aufrüstpläne vergleichen und eigene Angebote in Euro oder Yuan mit Datum und Quelle erfassen.',
+    'Next: compare two upgrade plans and record your own offers in euros or yuan, with dates and sources.',
+    '下一步：对比两套升级方案，并用欧元或人民币记录自己找到的报价、日期和来源。',
+  ],
+  pcOpen: ['Prototyp öffnen', 'Open prototype', '体验原型'],
+  pcRadar: ['Historische Preise', 'Historical prices', '历史价格'],
   comments: ['Kommentare', 'Comments', '评论'],
   commentsEmpty: ['Die Kommentarfunktion ist in Vorbereitung.', 'Comments are in development.', '评论功能正在准备中。'],
   commentsNext: [
@@ -78,6 +95,7 @@ const storageKey = 'ttk-language';
 const textNodes = document.querySelectorAll('[data-copy]');
 const labelledNodes = document.querySelectorAll('[data-label]');
 const buttons = document.querySelectorAll('[data-lang]');
+const languageLinks = document.querySelectorAll('[data-link-language]');
 
 function showLanguage(language) {
   const index = languages.indexOf(language);
@@ -86,6 +104,11 @@ function showLanguage(language) {
   for (const node of textNodes) node.textContent = copy[node.dataset.copy][index];
   for (const node of labelledNodes) node.setAttribute('aria-label', copy[node.dataset.label][index]);
   for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.lang === language));
+  for (const link of languageLinks) {
+    const target = new URL(link.href);
+    target.searchParams.set('lang', language);
+    link.href = target.href;
+  }
 }
 
 function initialLanguage() {
@@ -108,10 +131,8 @@ for (const button of buttons) {
     const language = button.dataset.lang;
     showLanguage(language);
     const url = new URL(window.location.href);
-    if (url.searchParams.has('lang')) {
-      url.searchParams.set('lang', language);
-      history.replaceState(history.state, '', url);
-    }
+    url.searchParams.set('lang', language);
+    history.replaceState(history.state, '', url);
     try {
       sessionStorage.setItem(storageKey, language);
     } catch {
