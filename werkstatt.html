@@ -1,4 +1,53 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PC-Werkstatt — System, Upgrades & Markt | TheTwoKings</title><link rel="icon" href="crown.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="werkstatt.css"><style>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PC-Werkstatt — System, Upgrades & Markt | TheTwoKings</title><link rel="icon" href="crown.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="werkstatt.css"><link rel="stylesheet" href="werkstatt-vergleich.css"><script src="werkstatt-vergleich.js" defer></script><template id="compare-workshop-template">
+<section id="upgrade-vergleich" class="work-section" aria-labelledby="compare-title">
+  <div class="compare-intro">
+    <h2 id="compare-title" data-compare-text="title">A/B-Aufrüstvergleich</h2>
+    <p data-compare-text="intro">Vergleiche zwei Aufrüstpläne aus eigenen Angeboten. EUR und CNY werden getrennt gerechnet.</p>
+  </div>
+  <div class="compare-toolbar">
+    <button type="button" class="button outline" data-compare-demo data-compare-text="openDemo">Beispiel ausprobieren</button>
+    <p class="small" data-compare-mode>Deine Pläne werden in diesem Browser gespeichert.</p>
+  </div>
+  <div class="compare-plans"></div>
+  <p class="compare-result" role="status"></p>
+  <noscript><p>Aktiviere JavaScript, um Aufrüstpläne einzugeben und zu vergleichen.</p></noscript>
+  <template id="compare-plan-template">
+    <article class="compare-plan work-card">
+      <h3></h3>
+      <div class="compare-budget">
+        <label><span data-compare-text="budgetEUR">Budget in EUR</span><input type="text" inputmode="decimal" maxlength="14" data-budget="EUR"></label>
+        <label><span data-compare-text="budgetCNY">Budget in CNY</span><input type="text" inputmode="decimal" maxlength="14" data-budget="CNY"></label>
+      </div>
+      <dl class="compare-totals">
+        <div><dt data-compare-text="totalEUR">Summe inkl. Versand (EUR)</dt><dd data-total="EUR">—</dd><dd data-remaining="EUR"></dd></div>
+        <div><dt data-compare-text="totalCNY">Summe inkl. Versand (CNY)</dt><dd data-total="CNY">—</dd><dd data-remaining="CNY"></dd></div>
+      </dl>
+      <p class="small" data-compare-completeness></p>
+      <div class="compare-offers"></div>
+      <button type="button" class="button outline" data-compare-add data-compare-text="addOffer">Angebot hinzufügen</button>
+    </article>
+  </template>
+  <template id="compare-offer-template">
+    <fieldset class="compare-offer">
+      <legend data-compare-text="offer">Angebot</legend>
+      <div class="compare-fields">
+        <label class="compare-wide"><span data-compare-text="model">Bauteil und Modell</span><input type="text" name="model" maxlength="120" required></label>
+        <label><span data-compare-text="price">Angebotspreis</span><input type="text" name="price" inputmode="decimal" maxlength="14" required></label>
+        <label><span data-compare-text="shipping">Versand (optional)</span><input type="text" name="shipping" inputmode="decimal" maxlength="14"></label>
+        <label><span data-compare-text="currency">Währung</span>
+          <select name="currency"><option value="EUR">EUR</option><option value="CNY">CNY</option></select>
+        </label>
+        <label><span data-compare-text="market">Markt</span>
+          <select name="market" required><option value="" data-compare-text="chooseMarket">Bitte wählen</option><option value="DE" data-compare-text="germany">Deutschland</option><option value="CN" data-compare-text="china">China</option><option value="other" data-compare-text="otherMarket">Anderer Markt</option></select>
+        </label>
+        <label><span data-compare-text="date">Angebotsdatum</span><input type="date" name="date" required></label>
+        <label><span data-compare-text="source">Quelle (Händler oder Link)</span><input type="text" name="source" maxlength="240" required></label>
+      </div>
+      <button type="button" class="small-button" data-compare-remove data-compare-text="removeOffer">Angebot entfernen</button>
+    </fieldset>
+  </template>
+</section>
+</template><style>
 /* Language navigation for desktop and mobile */
 .language-picker{display:flex;align-items:center;gap:3px;background:#242831;border:1px solid #566473;border-radius:28px;padding:3px;flex-shrink:0}
 .language-picker button{background:transparent;color:#d7e4ee;border:0;border-radius:22px;padding:8px 11px;font:700 11px/1.2 system-ui,sans-serif;white-space:nowrap;cursor:pointer}

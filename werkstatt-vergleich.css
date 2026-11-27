@@ -1,0 +1,86 @@
+#upgrade-vergleich .compare-intro { max-width: 52rem; }
+#upgrade-vergleich .compare-intro p { color: var(--muted); }
+#upgrade-vergleich .compare-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem 1.125rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.375rem;
+}
+#upgrade-vergleich .compare-toolbar p { margin: 0; }
+#upgrade-vergleich .compare-plans {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.375rem;
+  align-items: start;
+}
+#upgrade-vergleich .compare-plan { min-width: 0; }
+#upgrade-vergleich .compare-plan h3 { margin-top: 0; color: var(--lime); }
+#upgrade-vergleich .compare-budget,
+#upgrade-vergleich .compare-fields,
+#upgrade-vergleich .compare-totals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+#upgrade-vergleich .compare-wide { grid-column: 1 / -1; }
+#upgrade-vergleich .compare-plan label {
+  display: grid;
+  align-content: start;
+  gap: 0.375rem;
+  min-width: 0;
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.875rem;
+}
+#upgrade-vergleich .compare-plan input,
+#upgrade-vergleich .compare-plan select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  padding: 0.5rem;
+  color: var(--ink);
+  background: #17171b;
+  border: 1px solid #797685;
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+  color-scheme: dark;
+}
+#upgrade-vergleich .compare-plan input[aria-invalid="true"] { border-color: #ffad94; }
+#upgrade-vergleich input[type="date"] { text-align: start; }
+#upgrade-vergleich .compare-totals { margin: 1rem 0 0; }
+#upgrade-vergleich .compare-totals div {
+  min-width: 0;
+  padding: 0.625rem;
+  border: 1px solid var(--line);
+  border-radius: 0.3125rem;
+}
+#upgrade-vergleich dt { color: var(--muted); font-size: 0.8125rem; }
+#upgrade-vergleich dd { margin: 0.375rem 0 0; overflow-wrap: anywhere; }
+#upgrade-vergleich dd[data-total] { color: var(--lime); font-weight: 700; }
+#upgrade-vergleich dd[data-remaining] { font-size: 0.8125rem; }
+#upgrade-vergleich [data-compare-completeness] { min-height: 1.1em; }
+#upgrade-vergleich .compare-offer {
+  min-width: 0;
+  margin: 0 0 1rem;
+  padding: 0.75rem;
+  border: 1px solid #555360;
+  border-radius: 0.375rem;
+}
+#upgrade-vergleich .compare-offer legend { padding-inline: 0.25rem; }
+#upgrade-vergleich :is(.button, .small-button) { min-height: 44px; }
+#upgrade-vergleich .compare-offer .small-button { margin: 0.625rem 0 0; color: var(--ink); }
+#upgrade-vergleich .compare-result:not(:empty) {
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--lime);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 56rem) {
+  #upgrade-vergleich .compare-plans { grid-template-columns: 1fr; }
+}
+@media (max-width: 27rem) {
+  #upgrade-vergleich .compare-fields { grid-template-columns: 1fr; }
+}
