@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root=path.resolve(__dirname,'..');
 const bundle=['wilson-lexicon.js','wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const {v,c,lex}=vm.runInNewContext(bundle+';({v:WILSON_VOCABULARY,c:WILSON_IMAGE_CANDIDATES,lex:LEXICON})');
-assert.equal(v.inputWords.length,714);
+assert.equal(v.inputWords.length,719);
 assert.equal(c.filter(w=>w.active&&w.provider!=='project').length,596);
 assert.equal(c.filter(w=>w.review?.decision==='blocked').length,47);
 assert.equal(c.filter(w=>w.status==='approved-alternative').length,10);
@@ -68,7 +68,7 @@ for(const id of ['v1355','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-
 assert.equal(v.inputWords.find(w=>w.id==='wx-chinese-cabbage').de,'der Pak Choi');
 assert.equal(v.inputWords.find(w=>w.id==='v724').numberMode,'plural');
 assert.equal(v.inputWords.find(w=>w.id==='v363').plural,'die Frühstücksflocken');
-assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,96);
+assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,101);
 const household=v.inputWords.filter(w=>w.imageCredit?.review.batch==='kueche-haushalt-01');
 assert.equal(household.length,25);
 for (const w of household) {
@@ -93,4 +93,19 @@ for(const id of ['v531','v810']){
  assert.equal(w.imageCredit.reviewHistory.at(-1).decision,'blocked');
  assert.notEqual(w.imageCredit.reviewHistory.at(-1).path,w.imagePath);
 }
-console.log('Vocabulary verified: 714 active cards, including 30 household cards; all 222 legacy IDs and image hashes preserved.');
+const mobility=v.inputWords.filter(w=>w.imageCredit?.review.batch==='mobilitaet-01');
+assert.deepEqual(Array.from(mobility,w=>w.id).sort(),['v164','v314','v473','v633','v74']);
+for(const w of mobility){
+ const original=lex.find(entry=>entry.id===w.id);
+ for(const field of ['de','plural','en','zh','pinyin'])assert.equal(w[field],original[field],w.id+' changed the source word');
+ assert.equal(w.imagePath,'wilson/original-mobility/'+w.id+'.svg');
+ assert.equal(w.imageCredit.provider,'project');
+ assert.ok(w.imageCredit.source.endsWith(w.imagePath));
+ for(const l of ['de','en','zh'])assert.ok(w.context[l],w.id+' missing image context');
+ const main=v.mainWords.find(entry=>entry.id===w.id);
+ assert.equal(main.imagePath,w.imagePath);
+ assert.equal(main.picture,true,w.id+' missing from main trainer');
+ assert.equal(main.childSuitable,true,w.id+' missing from Kinderwelt');
+}
+assert.equal(mobility.find(w=>w.id==='v314').nDeclension,true,'Fahrkartenautomat is a weak noun');
+console.log('Vocabulary verified: 719 active cards, including 30 household cards and five mobility cards; all 222 legacy IDs and image hashes preserved.');
