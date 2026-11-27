@@ -4,10 +4,15 @@
 (() => {
   const $ = id => document.getElementById(id);
   const STORAGE = 'ttk-wilson-picture-input-v1';
+  const FEEDBACK_STORAGE = 'ttk-wilson-card-feedback-v1';
+  const FEEDBACK_REASONS = ['image', 'word', 'audio'];
   const DAY = 86400000;
   const words = WILSON_VOCABULARY.inputWords;
   const COPY = {
     zh:{
+      feedbackTitle:'反馈这张卡', feedbackNote:'反馈保存在当前浏览器中，可导出后自行分享。', feedbackExport:'导出卡片反馈',
+      image:'图片不清楚', word:'词语或翻译不清楚', audio:'没有声音',
+      feedbackSaved:'反馈已保存在此浏览器。', feedbackTemporary:'反馈仅保存在当前页面。离开前请先导出。',
       back:'← 学习角',heading:'看图，<span>写德语。</span>',subtitle:'没有每日上限。名词练习冠词和单复数；动作和数字有对应的题目。按 Enter 检查，再按 Enter 看下一张。',
       selectedWord:'指定图片练习',alternatives:'也接受：',
       tested:'已练习的不同词汇',attempts:'完成的练习次数',caseNote:'词语正确，请注意大小写：',due:'待复习',first:'首次正确率',picture:'观察图片，然后输入德语',
@@ -21,6 +26,9 @@
       invalid:'无效的备份文件。',loaded:'学习记录已导入。',savefail:'无法保存。请检查隐私浏览设置，并及时导出备份。',speechfail:'此设备目前无法播放德语语音。',empty:'没有可用的图片词汇。'
     },
     de:{
+      feedbackTitle:'Feedback zu dieser Karte', feedbackNote:'Dein Feedback bleibt in diesem Browser. Du kannst es exportieren und selbst teilen.', feedbackExport:'Kartenfeedback exportieren',
+      image:'Bild unklar', word:'Wort oder Übersetzung unklar', audio:'Ton fehlt',
+      feedbackSaved:'Feedback in diesem Browser gespeichert.', feedbackTemporary:'Feedback für diese Seite erfasst. Bitte exportiere es, bevor du die Seite verlässt.',
       back:'← Trainingsecke',heading:'Bild sehen. <span>Wort schreiben.</span>',subtitle:'Kein Tageslimit. Nomen mit Artikel und Zahlform üben; Tätigkeiten und Zahlen haben passende Aufgaben. Enter prüft, das nächste Enter zeigt das nächste Bild.',
       selectedWord:'Gezielte Bildübung',alternatives:'Ebenfalls passend: ',
       tested:'Verschiedene Wörter',attempts:'Übungen insgesamt',caseNote:'Wort erkannt. Achte auf die Groß-/Kleinschreibung: ',due:'Wiederholung fällig',first:'Im ersten Versuch richtig',picture:'Bild ansehen und deutsches Wort eingeben',
@@ -34,6 +42,9 @@
       invalid:'Ungültige Sicherungsdatei.',loaded:'Lernstand importiert.',savefail:'Fortschritt konnte nicht gespeichert werden. Bitte Sicherung exportieren.',speechfail:'Keine deutsche Sprachausgabe verfügbar.',empty:'Keine Bildwörter verfügbar.'
     },
     en:{
+      feedbackTitle:'Feedback on this card', feedbackNote:'Your feedback stays in this browser. You can export it and share it yourself.', feedbackExport:'Export card feedback',
+      image:'Unclear image', word:'Unclear word or translation', audio:'Missing audio',
+      feedbackSaved:'Feedback saved in this browser.', feedbackTemporary:'Feedback kept for this page. Export it before leaving.',
       back:'← Learning corner',heading:'See the picture. <span>Type the word.</span>',subtitle:'No daily limit. Practise nouns with articles and number forms; actions and numbers have matching tasks. Enter checks; press Enter again for the next picture.',
       selectedWord:'Selected picture practice',alternatives:'Also accepted: ',
       tested:'Different words practised',attempts:'Exercises completed',caseNote:'Word recognised. Check capitalisation: ',due:'Due for review',first:'Correct on first try',picture:'Look at the picture and type the German word',
@@ -50,6 +61,8 @@
   let lang = 'zh';
   let progress = {version:1,tested:0,firstCorrect:0,items:{}};
   let current = null, stage = 0, wasFirstWrong = false;
+  const feedback = new Map();
+  let feedbackMessage = '';
   // A gallery link can open one chosen card; subsequent cards use the due-first queue.
   let requestedID = new URLSearchParams(window.location?.search || '').get('word');
   const normal = s => String(s||'').normalize('NFC').trim().replace(/\s+/g,' ').toLocaleLowerCase('de-DE');
@@ -77,6 +90,34 @@
     try { localStorage.setItem(STORAGE,JSON.stringify(progress)); }
     catch(e){ warn(t('savefail')); }
   }
+  function readFeedback() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(FEEDBACK_STORAGE));
+      if (saved?.version !== 1 || !Array.isArray(saved.reports)) return;
+      for (const report of saved.reports) {
+        if (typeof report?.cardId !== 'string' || !/^[a-zA-Z0-9_-]{1,80}$/.test(report.cardId)
+            || !FEEDBACK_REASONS.includes(report.reason)) continue;
+        const {cardId, reason} = report;
+        feedback.set(cardId + ':' + reason, {cardId, reason});
+      }
+    } catch {}
+  }
+  function renderFeedback() {
+    $('feedback-status').textContent = feedbackMessage ? t(feedbackMessage) : '';
+    $('feedback-export').disabled = feedback.size === 0;
+  }
+  function saveFeedback(cardId, reason) {
+    readFeedback();
+    feedback.set(cardId + ':' + reason, {cardId, reason});
+    let message = 'feedbackSaved';
+    try {
+      localStorage.setItem(FEEDBACK_STORAGE, JSON.stringify({version:1, reports:[...feedback.values()]}));
+    } catch {
+      message = 'feedbackTemporary';
+    }
+    if (current?.word.id === cardId) feedbackMessage = message;
+    renderFeedback();
+  }
   function dueCount(){return words.filter(w=>progress.items[w.id] && progress.items[w.id].due<=Date.now()).length;}
   function stats(){
     $('tested').textContent=words.filter(w=>progress.items[w.id]?.seen>0).length;
@@ -100,6 +141,11 @@
     $('storage-note').textContent=t('storage');
     $('export').textContent=t('export');
     $('import-label').textContent=t('import');
+    $('feedback-title').textContent=t('feedbackTitle');
+    $('feedback-note').textContent=t('feedbackNote');
+    $('feedback-export').textContent=t('feedbackExport');
+    for (const reason of FEEDBACK_REASONS) $('feedback-'+reason).textContent=t(reason);
+    renderFeedback();
     $('footnote').textContent=t('foot').replace('{count}',words.length);
     if(current) renderQuestion(false);
     stats();
@@ -172,7 +218,12 @@
     $('typed').readOnly=stage===2;
     $('listen').hidden=stage!==2;
     $('solution').hidden=stage!==2;
-    if(reset){$('typed').value='';$('status').textContent='';$('status').className='status';}
+    if(reset){
+      $('typed').value='';$('status').textContent='';$('status').className='status';
+      $('card-feedback').open=false;
+      feedbackMessage='';
+      renderFeedback();
+    }
     if(stage===2)fillSolution();
     // On a phone the next picture should remain visible before the keyboard opens.
     if(reset && window.matchMedia?.('(max-width:720px)').matches){
@@ -199,6 +250,7 @@
     if('speechSynthesis' in window) window.speechSynthesis.cancel();
     readLatestProgress();
     current=findNext();
+    $('card-feedback').hidden=!current;
     if(!current){$('question').textContent=t('empty');$('typed').disabled=true;return;}
     renderQuestion(true);
   }
@@ -277,6 +329,7 @@
   });
   window.addEventListener?.('storage',e=>{
     if(e.key===STORAGE){readLatestProgress();stats();}
+    if(e.key===FEEDBACK_STORAGE){readFeedback();renderFeedback();}
   });
   $('listen').addEventListener('click',speak);
   document.querySelectorAll('[data-char]').forEach(btn=>btn.addEventListener('click',()=>{
@@ -289,11 +342,26 @@
     try{localStorage.setItem(STORAGE+'-lang',lang);}catch(err){}
     renderLang();
   });
-  $('export').addEventListener('click',()=>{
-    const blob=new Blob([JSON.stringify(progress,null,2)],{type:'application/json'});
+  function downloadJson(data, name) {
+    const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
     const url=URL.createObjectURL(blob),a=document.createElement('a');
-    a.href=url;a.download='wilson-picture-progress-'+new Date().toISOString().slice(0,10)+'.json';a.click();
+    a.href=url;a.download=name+'-'+new Date().toISOString().slice(0,10)+'.json';a.click();
     setTimeout(()=>URL.revokeObjectURL(url),30000);
+  }
+  $('export').addEventListener('click',()=>downloadJson(progress,'wilson-picture-progress'));
+  for (const reason of FEEDBACK_REASONS) {
+    $('feedback-'+reason).addEventListener('click',()=>{
+      const cardId=current?.word.id;
+      if (!cardId) return;
+      const locks=window.navigator?.locks;
+      if (!locks?.request) return saveFeedback(cardId, reason);
+      return locks.request(FEEDBACK_STORAGE,()=>saveFeedback(cardId, reason))
+        .catch(()=>saveFeedback(cardId, reason));
+    });
+  }
+  $('feedback-export').addEventListener('click',()=>{
+    readFeedback();
+    if (feedback.size) downloadJson({version:1, reports:[...feedback.values()]},'wilson-card-feedback');
   });
   $('import').addEventListener('change',async e=>{
     const file=e.target.files&&e.target.files[0];if(!file)return;
@@ -305,6 +373,7 @@
     } catch(err){warn(t('invalid'));}
     e.target.value='';
   });
+  readFeedback();
   renderLang();
   nextWord();
 })();

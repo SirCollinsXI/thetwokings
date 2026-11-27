@@ -22,15 +22,18 @@ const pictures=[
 ];
 const shared=vm.runInNewContext(['wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(ROOT,f),'utf8')).join('\n')+';WILSON_VOCABULARY',{LEXICON:code});
 const STORE='ttk-wilson-picture-input-v1';
+const FEEDBACK_STORE='ttk-wilson-card-feedback-v1';
 const stored={};
 const storage={getItem:k=>stored[k]??null,setItem:(k,v)=>{stored[k]=v}};
-function boot({audio=true,word='',locks}={}){
- const elements=new Map(),events={},plays=[];
+function boot({audio=true,word='',locks,storageAvailable=true}={}){
+ const elements=new Map(),events={},plays=[],downloads=[];
+ let downloadData;
  const makeElement=id=>({
     id, value:'', textContent:'', placeholder:'', hidden:false, className:'', dataset:{},
     addEventListener:(n,fn)=>events[id+':'+n]=fn,
     focus(){},select(){},setSelectionRange(){},
-    removeAttribute(){},setAttribute(){},click(){},append(){},replaceChildren(){}
+    removeAttribute(){},setAttribute(){},append(){},replaceChildren(){},
+    click(){if(this.download)downloads.push({name:this.download,data:downloadData});}
  });
  const get=id=>{if(!elements.has(id))elements.set(id,makeElement(id));return elements.get(id);};
  const doc={createElement:makeElement,getElementById:get,documentElement:{lang:'zh-Hans'},querySelectorAll:()=>[]};
@@ -39,11 +42,14 @@ function boot({audio=true,word='',locks}={}){
  win.location={search:word?'?word='+encodeURIComponent(word):''};
  if(locks)win.navigator={locks};
  win.addEventListener=(name,fn)=>events['window:'+name]=fn;
- const ctx={document:doc,window:win,localStorage:storage,LEXICON:code,WILSON_VOCABULARY:shared,
+ const localStorage=storageAvailable?storage:{getItem:storage.getItem,setItem(){throw Error('Storage unavailable');}};
+ const ctx={document:doc,window:win,localStorage,LEXICON:code,WILSON_VOCABULARY:shared,
+   Blob:class {constructor(parts){this.text=parts.join('');}},
+   URL:{createObjectURL(blob){downloadData=JSON.parse(blob.text);return 'blob:fixture';},revokeObjectURL(){}},
    SpeechSynthesisUtterance:function(text){this.text=text;},
    Date,JSON,Math,Number,String,Object,Array,Intl,URLSearchParams,encodeURIComponent,setTimeout(){}};
  vm.runInNewContext(app,ctx,{filename:'wilson-input.js'});
- return {get,plays,events,
+ return {get,plays,events,downloads,
     submit(value){get('typed').value=value;return events['entry:submit']({preventDefault(){}});},
     dump(){return JSON.parse(stored[STORE])}
  };
@@ -240,4 +246,45 @@ assert.equal(stale.dump().items.v424.streak,prior.streak,'stale view increased a
  assert.equal(second.dump().tested,2,'serialized views lost an attempt');
  assert.equal(Object.keys(second.dump().items).length,2);
  console.log('Multiple views passed: latest-state writes, storage events, stale-review protection and origin-wide locking.');
+
+ delete stored[FEEDBACK_STORE];
+ const reporter=boot({word:'v74'});
+ const priorProgress=stored[STORE];
+ assert.equal(reporter.get('feedback-export').disabled,true);
+ assert.equal(reporter.get('feedback-title').textContent,'反馈这张卡');
+ reporter.get('typed').value='private exercise input';
+ for(const reason of ['image','word','audio','image']) reporter.events['feedback-'+reason+':click']();
+ const expected={version:1,reports:['image','word','audio'].map(reason=>({cardId:'v74',reason}))};
+ assert.deepEqual(JSON.parse(stored[FEEDBACK_STORE]),expected,'one entry per card and reason');
+ assert.equal(stored[STORE],priorProgress,'feedback must not mark the card as answered');
+ assert.equal(reporter.get('typed').value,'private exercise input');
+ reporter.events['feedback-export:click']();
+ assert.match(reporter.downloads[0].name,/^wilson-card-feedback-\d{4}-\d{2}-\d{2}\.json$/);
+ assert.deepEqual(reporter.downloads[0].data,expected,'download should contain only card IDs and reasons');
+ const reopened=boot({word:'v74'});
+ assert.equal(reopened.get('feedback-export').disabled,false,'reload should retain feedback');
+ for(const [lang,title] of [['de','Feedback zu dieser Karte'],['en','Feedback on this card'],['zh','反馈这张卡']]){
+  reopened.events['lang:change']({target:{value:lang}});
+  assert.equal(reopened.get('feedback-title').textContent,title);
+ }
+ reopened.get('card-feedback').open=true;
+ reopened.events['feedback-image:click']();
+ assert.ok(reopened.get('feedback-status').textContent);
+ reopened.submit('der Bahnsteig, Bahnsteige');
+ reopened.submit('');
+ assert.equal(reopened.get('card-feedback').open,false,'advance should close feedback');
+ assert.equal(reopened.get('feedback-status').textContent,'');
+
+ const feedbackLocks={request(name,fn){assert.equal(name,FEEDBACK_STORE);const result=queue.then(fn);queue=result.catch(()=>{});return result;}};
+ const reportA=boot({word:'v633',locks:feedbackLocks}),reportB=boot({word:'v164',locks:feedbackLocks});
+ await Promise.all([reportA.events['feedback-word:click'](),reportB.events['feedback-audio:click']()]);
+ assert.deepEqual(JSON.parse(stored[FEEDBACK_STORE]).reports.slice(-2),[
+  {cardId:'v633',reason:'word'},{cardId:'v164',reason:'audio'}
+ ]);
+ const temporary=boot({word:'v473',storageAvailable:false});
+ temporary.events['feedback-audio:click']();
+ assert.match(temporary.get('feedback-status').textContent,/离开前请先导出/,'storage failure should offer immediate export');
+ temporary.events['feedback-export:click']();
+ assert.deepEqual(temporary.downloads[0].data.reports.at(-1),{cardId:'v473',reason:'audio'});
+ console.log('Card feedback passed: categories, duplicate suppression, reload, translations, isolated export, next card, concurrent writers and temporary storage fallback.');
 })().catch(err=>{console.error(err);process.exitCode=1});
