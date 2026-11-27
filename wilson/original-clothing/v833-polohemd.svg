@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Kurzärmeliges Polohemd mit Kragen und kurzer Knopfleiste</title>
+  <rect width="240" height="170" rx="15" fill="#f2f7f6"/>
+  <ellipse cx="120" cy="151" rx="61" ry="7" fill="#dce9e8"/>
+  <g stroke="#304b5c" stroke-width="3" stroke-linejoin="round">
+    <path d="m92 27-23 7-30 26 20 30 20-10-3 62q44 6 88 0l-3-62 20 10 20-30-30-26-23-7z" fill="#508da0"/>
+    <path d="m40 61 8-6 20 31-9 4zm160 0-8-6-20 31 9 4z" fill="#79aeba"/>
+    <path d="M109 36h22l-1 50h-20z" fill="#e7e9d6"/>
+    <path d="m92 25 8-8q20 11 40 0l8 8-10 37-18-18-18 18z" fill="#dce3b6"/>
+    <path d="M100 17q20 11 40 0l-4 15-16 12-16-12z" fill="#759870"/>
+    <path d="M77 137q43 5 86 0" fill="none" stroke="#91bac4" stroke-width="2"/>
+  </g>
+  <g fill="#354b5a"><circle cx="121" cy="62" r="2.6"/><circle cx="121" cy="74" r="2.6"/></g>
+  <path d="M78 78V62m84 16V62" fill="none" stroke="#304b5c" stroke-width="2" stroke-linecap="round"/>
+</svg>

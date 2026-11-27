@@ -202,7 +202,12 @@ for(const [id,confusable] of [
  ['v313','der Fahrkartenautomat, Fahrkartenautomaten'],
  ['v315','die Fahrkarte, Fahrkarten'],
  ['v461','der Knopf, Knöpfe'],
- ['v462','die Haltestange, Haltestangen']
+ ['v462','die Haltestange, Haltestangen'],
+ ['v60','der Kinderwagen, Kinderwagen'],
+ ['v61','die Babysocke, Babysocken'],
+ ['v63','die Weste, Westen'],
+ ['v962','die Babyflasche, Babyflaschen'],
+ ['v1093','die Einwegwindel, Einwegwindeln']
 ]){
  delete stored[STORE];
  const w=shared.inputWords.find(entry=>entry.id===id);
@@ -219,7 +224,7 @@ for(const [id,confusable] of [
  drill.submit('');
  assert.notEqual(drill.get('word-image').src,w.imagePath);
 }
-console.log('Pakete 2-4: 15 targeted images, confusable answers, Mandarin, declension hint and advance verified.');
+console.log('Pakete 2–4 und 6: 20 gezielte Kartenaufrufe, Verwechslungen, Mandarin, Deklination und Kartenwechsel geprüft.');
 
 // Two open views used to overwrite each other's attempts. Also cover browsers
 // without Web Locks: each write must at least start from the latest saved state.

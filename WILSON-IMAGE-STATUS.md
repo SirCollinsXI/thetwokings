@@ -1,16 +1,144 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 05 live, als Nächstes Paket 06
+## Hier fortsetzen · 50 neue Bildkarten ab 729
 
 | Stand | Nachweis |
 | --- | --- |
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Nächste einzelne Aufgabe | Für Paket 06 bis zu fünf konkrete unbebilderte Begriffe zu Babyausstattung oder Kleidung mit dem bestehenden Lexikon und dem Bildbestand abgleichen. |
+| Paket 06 | 779 aktive Karten. 10 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Nächste einzelne Aufgabe | Vorschau und Hauptdomain anhand des aktuellen PR-Status abgleichen. Nach Veröffentlichung die nächste Fünfergruppe auswählen. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
-**Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
+## Ziel und Wortliste
+
+Die Etappe umfasst 50 zusätzliche aktive Karten von 729 auf 779. Der erste Block enthält die fünf Babykarten aus Paket 06. Das übergeordnete Etappenziel bleibt 924. Nach je fünf einzeln geprüften Karten einen Zwischenstand mit IDs und Testergebnis sichern. Im selben Chat und Entwurf weiterarbeiten, solange das sinnvoll ist. Als veröffentlicht zählen Karten erst nach dem Abgleich auf der Hauptdomain.
+
+Alle 50 Wörter haben verschiedene Lexikon-IDs. Bei der Auswahl fehlten sie in den 729 aktiven Eingabekarten und im vollständigen Bildmanifest auf `main`. In den ersten beiden Blöcken stehen bereits Zeichnungen zur Verfügung. Die Reihenfolge innerhalb der weiteren Blöcke kann sich bei der Bildprüfung ändern.
+
+| Block | Thema | Lexikon-Einträge |
+| --- | --- | --- |
+| 1 | Babyausstattung | die Babydecke (`v60`), der Babyfäustling (`v61`), der Babyschlafsack (`v63`), der Schnuller (`v962`), die Stoffwindel (`v1093`) |
+| 2 | Kleidung | das Polohemd (`v833`), der Rollkragenpullover (`v896`), der Schneeanzug (`v957`), die Strickjacke (`v1100`), das Trägertop (`v1172`) |
+| 3 | Obst und Gemüse | die Heidelbeere (`v485`), die Himbeere (`v497`), die Honigmelone (`v507`), die rote Zwiebel (`v903`), der Rotkohl (`v904`) |
+| 4 | Lebensmittel | das Baguette (`v73`), das Fladenbrot (`v342`), der Taco (`v1120`), das Sushi (`v1112`), der Eisbergsalat (`v280`) |
+| 5 | Fahrrad | die Speiche (`v1063`), die Luftpumpe (`v686`), der Bremshebel (`v141`), das Vorderrad (`v1262`), das Hinterrad (`v499`) |
+| 6 | Auto | die Motorhaube (`v747`), das Nummernschild (`v791`), die Windschutzscheibe (`v1322`), die Kopfstütze (`v623`), der Seitenspiegel (`v1011`) |
+| 7 | Rund ums Haus | der Hausbriefkasten (`v477`), die Hausnummer (`v479`), der Hausschlüssel (`v480`), der Balkon (`v75`), die Dachgaube (`v186`) |
+| 8 | Im Supermarkt | der Kassenzettel (`v564`), die Münze (`v753`), der Geldschein (`v408`), das Warentransportband (`v1278`), das Kühlregal (`v646`) |
+| 9 | Computer und Handy | der Mauszeiger (`v703`), das Scrollrad (`v996`), der Fortschrittsbalken (`v352`), die SIM-Karte (`v1034`), die USB-Schnittstelle (`v1207`) |
+| 10 | Im Straßenverkehr | der Tunnel (`v1179`), die Fußgängerampel (`v383`), die Einbahnstraße (`v256`), die Kreuzung (`v634`), die Zapfsäule (`v1336`) |
+
+## Block 1 · Babyausstattung
+
+Vorschau `664f3e7` am 27.11.2026 geprüft. Alle fünf Trainerlinks zeigen das richtige SVG. Die Eingaben für Artikel, Singular und Plural lösen die jeweilige chinesische Lösung aus.
+
+**Auswahl Paket 06.** Mit Lexikon, aktiven Eingabekarten und allen Einträgen des Bildmanifests abgeglichen. Die Zeichnungen wurden bei 120 × 85 und 220 × 156 Pixeln gesichtet. Die fünf Karten sind im Entwurf aktiv. Der Eingabehinweis zum Babyfäustling nennt die Babygröße und fragt nach dem Einzelstück.
+
+| ID | Wort und Plural | Englisch · 简体中文 laut Lexikon | Erkennungsmerkmal für den Bildhinweis |
+| --- | --- | --- | --- |
+| `v60` | die Babydecke · die Babydecken | baby blanket · 婴儿毯 | Die umgeschlagene Ecke und der Saum zeigen die Decke. Der Kinderwagen erklärt die Größe. |
+| `v61` | der Babyfäustling · die Babyfäustlinge | baby mitten · 婴儿连指手套 | Bündchen und eigener Daumen, die übrigen Finger liegen zusammen. Das Paar braucht einen Hinweis auf Babygröße. |
+| `v63` | der Babyschlafsack · die Babyschlafsäcke | baby sleeping bag · 婴儿睡袋 | Zwei Armöffnungen, ein Reißverschluss vorn und ein unten geschlossener Sack. |
+| `v962` | der Schnuller · die Schnuller | pacifier · 安抚奶嘴 | Sauger, Schild und Greifring sind zusammen zu sehen. |
+| `v1093` | die Stoffwindel · die Stoffwindeln | cloth nappy · 布尿布 | Druckknöpfe und eingenähte Saugeinlage zeigen die Stoffwindel. Das Waschsymbol erklärt ihre Wiederverwendbarkeit. |
+
+## Block 2 · Kleidung
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v833` | das Polohemd · die Polohemden | polo shirt | 翻领短袖衫 |
+| `v896` | der Rollkragenpullover · die Rollkragenpullover | turtleneck jumper | 高领毛衣 |
+| `v957` | der Schneeanzug · die Schneeanzüge | snowsuit | 防雪连体服 |
+| `v1100` | die Strickjacke · die Strickjacken | cardigan | 开衫 |
+| `v1172` | das Trägertop · die Trägertops | strappy top | 吊带上衣 |
+
+## Block 3 · Obst & Gemüse
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v485` | die Heidelbeere · die Heidelbeeren | blueberry | 蓝莓 |
+| `v497` | die Himbeere · die Himbeeren | raspberry | 覆盆子 |
+| `v507` | die Honigmelone · die Honigmelonen | honeydew melon | 蜜瓜 |
+| `v903` | die rote Zwiebel · die roten Zwiebeln | red onion | 红洋葱 |
+| `v904` | der Rotkohl · — | red cabbage | 紫甘蓝 |
+
+## Block 4 · Lebensmittel
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v73` | das Baguette · die Baguettes | baguette | 法式长棍面包 |
+| `v342` | das Fladenbrot · die Fladenbrote | flatbread | 扁面包 |
+| `v1120` | der Taco · die Tacos | taco | 墨西哥玉米卷 |
+| `v1112` | das Sushi · — | sushi | 寿司 |
+| `v280` | der Eisbergsalat · die Eisbergsalate | iceberg lettuce | 球生菜 |
+
+Rotkohl und Sushi werden im Trainer wie im bestehenden Lexikon in der Einzahl geübt.
+
+## Block 5 · Fahrrad
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v1063` | die Speiche · die Speichen | spoke | 辐条 |
+| `v686` | die Luftpumpe · die Luftpumpen | air pump | 打气筒 |
+| `v141` | der Bremshebel · die Bremshebel | brake lever | 刹车手柄 |
+| `v1262` | das Vorderrad · die Vorderräder | front wheel | 前轮 |
+| `v499` | das Hinterrad · die Hinterräder | rear wheel | 后轮 |
+
+## Block 6 · Auto
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v747` | die Motorhaube · die Motorhauben | bonnet | 发动机盖 |
+| `v791` | das Nummernschild · die Nummernschilder | number plate | 车牌 |
+| `v1322` | die Windschutzscheibe · die Windschutzscheiben | windscreen | 挡风玻璃 |
+| `v623` | die Kopfstütze · die Kopfstützen | headrest | 头枕 |
+| `v1011` | der Seitenspiegel · die Seitenspiegel | side mirror | 侧后视镜 |
+
+## Block 7 · Rund ums Haus
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v477` | der Hausbriefkasten · die Hausbriefkästen | home mailbox | 住宅信箱 |
+| `v479` | die Hausnummer · die Hausnummern | house number | 门牌号 |
+| `v480` | der Hausschlüssel · die Hausschlüssel | house key | 家门钥匙 |
+| `v75` | der Balkon · die Balkone | balcony | 阳台 |
+| `v186` | die Dachgaube · die Dachgauben | dormer | 老虎窗 |
+
+## Block 8 · Supermarkt
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v564` | der Kassenzettel · die Kassenzettel | receipt | 购物小票 |
+| `v753` | die Münze · die Münzen | coin | 硬币 |
+| `v408` | der Geldschein · die Geldscheine | banknote | 纸币 |
+| `v1278` | das Warentransportband · die Warentransportbänder | checkout conveyor belt | 收银传送带 |
+| `v646` | das Kühlregal · die Kühlregale | refrigerated display cabinet | 冷藏货柜 |
+
+## Block 9 · Computer & Handy
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v703` | der Mauszeiger · die Mauszeiger | mouse pointer | 鼠标指针 |
+| `v996` | das Scrollrad · die Scrollräder | scroll wheel | 滚轮 |
+| `v352` | der Fortschrittsbalken · die Fortschrittsbalken | progress bar | 进度条 |
+| `v1034` | die SIM-Karte · die SIM-Karten | SIM card | 手机卡 |
+| `v1207` | die USB-Schnittstelle · die USB-Schnittstellen | USB port | USB接口 |
+
+## Block 10 · Straßenverkehr
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v1179` | der Tunnel · die Tunnel | tunnel | 隧道 |
+| `v383` | die Fußgängerampel · die Fußgängerampeln | pedestrian traffic light | 行人信号灯 |
+| `v256` | die Einbahnstraße · die Einbahnstraßen | one-way street | 单行道 |
+| `v634` | die Kreuzung · die Kreuzungen | intersection | 交叉路口 |
+| `v1336` | die Zapfsäule · die Zapfsäulen | petrol pump | 加油机 |
+
+**Wiedereinstieg am 27.11.2026.** Der Screenshot zu Paket 06 zeigt nach 3:19 Minuten die Meldung zur maximalen Gesprächslänge. PR #18 enthielt bereits alle 50 Wort-IDs und zehn Zeichnungen. Die Integration der fünf Babykarten war lokal vollständig auffindbar. Es mussten keine Karten neu erstellt werden. Als Erstes wurden die bestehenden Tests und der reproduzierbare Offline-Build geprüft.
+
+**Früherer Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
 
 Ziel sind **1.500 einzeln geprüfte Bildkarten**. Von der Etappe mit 200 zusätzlichen Karten ab 724 sind fünf veröffentlicht. Bis 924 fehlen **195 Karten**, bis zum Gesamtziel **771**.
 
@@ -22,6 +150,8 @@ Ziel sind **1.500 einzeln geprüfte Bildkarten**. Von der Etappe mit 200 zusätz
 | 05 · Autoteile | [PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) | +5 → 729 | Wortformen, SVG, Galerie, Eingabe, Offline-Build, Browserprüfung und Live-Abgleich | Hörbare Geräteausgabe |
 
 ## Bestand
+
+Die folgenden Zahlen dokumentieren Paket 05 als Ausgangsstand. Paket 06 ergänzt 50 Nomen und erhöht den Gesamtbestand auf 779. Bis 924 fehlen 145 Karten, bis 1.500 fehlen 721.
 
 | Gruppe | Anzahl | Im Trainer |
 | --- | ---: | --- |
@@ -140,3 +270,4 @@ Inhaltstests prüfen alle 729 Karten und 222 historische Bild-Hashes, eindeutige
 2. Die 47 gesperrten Zuordnungen ersetzen oder mit belastbarem Kontext korrigieren; alternative Motive niemals als weitere Wörter zählen.
 3. Deutsche Wortformen/IPA und Mandarin unabhängig prüfen lassen; bisherige Sichtung transparent als redaktionellen Erststand behandeln.
 4. Den jeweils aktuellen `main` erneut lesen, diese Datei und das Manifest verwenden und kleinere getestete Ausbaustände tatsächlich sichern. Keine ungesicherten lokalen Arbeitsschritte als veröffentlicht ausgeben.
+

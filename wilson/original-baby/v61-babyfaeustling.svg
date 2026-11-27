@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Babyfäustling</title>
+  <rect width="240" height="170" rx="16" fill="#f8f6f0"/>
+  <ellipse cx="120" cy="143" rx="81" ry="8" fill="#eae3db"/>
+  <g stroke="#644b70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M133 118c-13-4-21-17-22-29l-1-13c-1-6 3-10 8-10 4 0 8 3 10 9l4-26c3-18 18-25 33-21 18 4 26 18 23 36l-7 39c-2 12-12 21-23 21Z" fill="#dccde8"/>
+    <path d="M129 110l48 9-4 17c-1 4-4 5-8 4l-38-7c-4-1-6-4-5-7Z" fill="#f1e4f4"/>
+    <path d="M139 115l-3 18m14-16-3 18m14-16-3 18" fill="none" stroke="#957ba4" stroke-width="2.5"/>
+    <path d="M106 115c13-4 22-16 23-30l1-12c0-5-3-10-9-10-5 0-9 4-11 10l-5-25c-4-18-18-26-34-22-17 4-26 18-22 35l8 40c2 12 12 21 23 21Z" fill="#e5a39b" stroke="#7a4846"/>
+    <path d="M64 115l48-9 5 16c1 5-1 8-6 9l-38 7c-4 1-7-1-8-5Z" fill="#f5c7bd" stroke="#7a4846"/>
+    <path d="M76 117l3 17m8-19 3 17m8-19 4 17" fill="none" stroke="#a86a66" stroke-width="2.5"/>
+  </g>
+  <path d="M72 69l5 5 5-6m-7 17 5 5 5-6m11-20 5 5 4-6m-6 17 4 5 4-6m45-15 5 4 4-5m-10 17 5 4 5-5m10-17 5 4 4-5" fill="none" stroke="#f9efe7" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

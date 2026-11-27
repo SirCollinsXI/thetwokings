@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Gefütterter Schneeanzug aus einem Stück mit Kapuze und langen Beinen</title>
+  <rect width="240" height="170" rx="15" fill="#eef7fb"/>
+  <path d="M0 145q41-15 79-5t76 0q42-10 85 8v22H0z" fill="#dcebf2"/>
+  <g stroke="#9ebfce" stroke-width="2.6" stroke-linecap="round">
+    <path d="m27 48 20 0M37 38v20m-7-17 14 14m0-14-14 14m167 18h21m-10-11v22m-8-19 16 16m0-16-16 16m-13-53v14m-7-7h14"/>
+  </g>
+  <g stroke="#34435c" stroke-width="3" stroke-linejoin="round">
+    <path d="M102 52Q94 43 97 26q3-16 23-16t23 16q3 17-5 26z" fill="#766695"/>
+    <path d="M105 37q1-17 15-17t15 17l-5 11h-20z" fill="#d5caec"/>
+    <path d="m102 43-19 9-12 11-13 38 18 5 12-24-3 73h27l8-35 8 35h27l-3-73 12 24 18-5-13-38-12-11-19-9q-18 9-36 0z" fill="#8d77b1"/>
+    <path d="m63 88 18 5-5 13-18-5zm114 0-18 5 5 13 18-5zM85 142h30l-3 13H85zm40 0h30v13h-27z" fill="#6b5c8f"/>
+    <path d="m112 48 9 2v61h-9z" fill="#d6c9e7" stroke-width="2"/>
+    <path d="M87 107h66m-66-6h66" fill="none" stroke="#6a598b" stroke-width="2"/>
+  </g>
+  <path d="m93 86 13-6m29 0 13 6m-57 39h21m18 0h21" stroke="#c5b5dc" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="114" y="51" width="5" height="11" rx="2" fill="#493f63"/>
+</svg>
