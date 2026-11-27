@@ -21416,23 +21416,40 @@ const WILSON_IMAGE_CANDIDATES=[
     "plural": "die Inbusschlüssel",
     "en": "Allen key",
     "zh": "内六角扳手",
-    "path": "wilson/original-next/v531.svg",
-    "ipa": "/ˈɪnbʊsˌʃlʏsl̩/",
+    "pinyin": "nèi liùjiǎo bānshǒu",
+    "path": "wilson/original-household/v531-p2.svg",
+    "status": "approved",
+    "active": true,
     "childSuitable": true,
-    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
-    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
-    "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "reason": "L-Form allein macht den Inbusschlüssel gegenüber Winkel oder Vierkant nicht eindeutig; sechskantige Endfläche fehlt.",
-      "ipa": "/ˈɪnbʊsˌʃlʏsl̩/",
-      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
-      "recheckedOn": "2026-11-26"
-    },
-    "active": false,
     "provider": "project",
-    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v531.svg",
-    "status": "needs-replacement-or-context"
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v531-p2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kueche-haushalt-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Artikel, Plural, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈɪnbʊsʃlʏsl̩/",
+      "context": {
+        "de": "Gesucht ist das L-förmige Werkzeug für diese Schraube mit sechseckiger Vertiefung.",
+        "en": "Name the L-shaped tool for this screw with a hexagonal recess.",
+        "zh": "请写出图中用来拧这种内六角螺丝的 L 形工具的德语名称。"
+      }
+    },
+    "reviewHistory": [
+      {
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "reason": "L-Form allein macht den Inbusschlüssel gegenüber Winkel oder Vierkant nicht eindeutig; sechskantige Endfläche fehlt.",
+        "ipa": "/ˈɪnbʊsˌʃlʏsl̩/",
+        "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+        "recheckedOn": "2026-11-26",
+        "path": "wilson/original-next/v531.svg",
+        "en": "Allen key",
+        "zh": "内六角扳手"
+      }
+    ]
   },
   {
     "id": "v568",
@@ -21702,25 +21719,42 @@ const WILSON_IMAGE_CANDIDATES=[
     "id": "v810",
     "de": "der Papierkorb",
     "plural": "die Papierkörbe",
-    "en": "recycle bin (computer)",
-    "zh": "回收站",
-    "path": "wilson/original-next/v810.svg",
-    "ipa": "/paˈpiːɐ̯ˌkɔʁp/",
+    "en": "wastepaper basket",
+    "zh": "废纸篓",
+    "pinyin": "fèizhǐlǒu",
+    "path": "wilson/original-household/v810-p2.svg",
+    "status": "approved",
+    "active": true,
     "childSuitable": true,
-    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
-    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
-    "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "reason": "Source lexicon meaning is the computer recycle bin; this drawing is a physical wastebasket.",
-      "ipa": "/paˈpiːɐ̯ˌkɔʁp/",
-      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
-      "recheckedOn": "2026-11-26"
-    },
-    "active": false,
     "provider": "project",
-    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v810.svg",
-    "status": "needs-replacement-or-context"
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v810-p2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kueche-haushalt-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Artikel, Plural, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/paˈpiːɐ̯ˌkɔʁp/",
+      "context": {
+        "de": "Gesucht ist der offene Korb für weggeworfenes Papier.",
+        "en": "Name the open basket for discarded paper.",
+        "zh": "请写出图中用来装废纸的敞口篮子的德语名称。"
+      }
+    },
+    "reviewHistory": [
+      {
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "reason": "Source lexicon meaning is the computer recycle bin; this drawing is a physical wastebasket.",
+        "ipa": "/paˈpiːɐ̯ˌkɔʁp/",
+        "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+        "recheckedOn": "2026-11-26",
+        "path": "wilson/original-next/v810.svg",
+        "en": "recycle bin (computer)",
+        "zh": "回收站"
+      }
+    ]
   },
   {
     "id": "v861",
@@ -24143,6 +24177,90 @@ const WILSON_IMAGE_CANDIDATES=[
         "de": "Gesucht ist die Tasche für Windeln und Feuchttücher unterwegs.",
         "en": "Name the bag used for nappies and wipes when going out.",
         "zh": "请写出出门时用来装纸尿裤和湿巾的包的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v1101",
+    "de": "das Stromkabel",
+    "plural": "die Stromkabel",
+    "en": "power cable",
+    "zh": "电源线",
+    "pinyin": "diànyuánxiàn",
+    "path": "wilson/original-household/v1101-p2.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1101-p2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kueche-haushalt-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Artikel, Plural, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈʃtʁoːmkaːbl̩/",
+      "context": {
+        "de": "Gesucht ist die Leitung zwischen Steckdose und Elektrogerät.",
+        "en": "Name the lead connecting a wall socket to an electrical appliance.",
+        "zh": "请写出连接电源插座与电器的这根线的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v1079",
+    "de": "das Starthilfekabel",
+    "plural": "die Starthilfekabel",
+    "en": "jumper cables",
+    "zh": "搭电线",
+    "pinyin": "dādiànxiàn",
+    "path": "wilson/original-household/v1079-p2.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1079-p2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kueche-haushalt-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Artikel, Plural, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈʃtaʁtˌhɪlfəkaːbl̩/",
+      "context": {
+        "de": "Gesucht sind die Leitungen mit Klemmen zum Überbrücken einer leeren Autobatterie.",
+        "en": "Name the leads with clamps used to jump-start a car.",
+        "zh": "请写出图中给汽车搭电用的带夹子的线的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v1102",
+    "de": "der Stromzähler",
+    "plural": "die Stromzähler",
+    "en": "electricity meter",
+    "zh": "电表",
+    "pinyin": "diànbiǎo",
+    "path": "wilson/original-household/v1102-p2.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-household/v1102-p2.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kueche-haushalt-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Artikel, Plural, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈʃtʁoːmt͡sɛːlɐ/",
+      "context": {
+        "de": "Gesucht ist das Gerät, das den Verbrauch in Kilowattstunden erfasst.",
+        "en": "Name the device that measures consumption in kilowatt-hours.",
+        "zh": "请写出图中以千瓦时计量用电量的仪表的德语名称。"
       }
     }
   }

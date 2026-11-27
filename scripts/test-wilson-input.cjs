@@ -186,6 +186,30 @@ test=boot({word:'missing-or-retired'});
 assert.equal(test.get('word-image').src,'wilson/cup.svg','unknown gallery ID must fall back to normal queue');
 console.log('Expansion passed: '+shared.inputWords.filter(w=>w.task).length+' typed action/number/location tasks, reviewed synonyms, gallery links and early-review protection.');
 
+// Similar objects must remain different answers, even with the correct article.
+for(const [id,confusable] of [
+ ['v810','der Mülleimer, Mülleimer'],
+ ['v1101','das Starthilfekabel, Starthilfekabel'],
+ ['v1079','das Stromkabel, Stromkabel'],
+ ['v531','der Schlüssel, Schlüssel'],
+ ['v1102','der Sicherungskasten, Sicherungskästen']
+]){
+ delete stored[STORE];
+ const w=shared.inputWords.find(entry=>entry.id===id);
+ const drill=boot({word:id});
+ assert.equal(drill.get('word-image').src,w.imagePath);
+ assert.equal(drill.get('picture-note').textContent,w.context.zh);
+ drill.submit(confusable);
+ assert.equal(drill.get('solution').hidden,true,id+' accepted a different object');
+ drill.submit(answer(w));
+ assert.equal(drill.get('solution').hidden,false);
+ assert.equal(drill.get('correct-answer').textContent,answer(w));
+ assert.equal(drill.get('chinese').textContent,w.zh+' · '+w.pinyin);
+ drill.submit('');
+ assert.notEqual(drill.get('word-image').src,w.imagePath);
+}
+console.log('Paket 2: five targeted images, confusable answers, Mandarin and advance verified.');
+
 // Two open views used to overwrite each other's attempts. Also cover browsers
 // without Web Locks: each write must at least start from the latest saved state.
 delete stored[STORE];

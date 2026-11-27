@@ -26,3 +26,11 @@ Drei vorhandene IDs wurden gegen den aktiven Kartenbestand geprüft. Alle sind a
 | v1079 | das Starthilfekabel, die Starthilfekabel | /ˈʃtaʁtˌhɪlfəˌkaːbl̩/ | jumper cables | 搭电线 (dādiànxiàn) | Rotes und schwarzes Kabel mit klar erkennbaren Polzangen. Autobatterie nur als Kontext und keine Anschlussfolge zeigen. |
 
 Vor Aktivierung Bilddateien zeichnen, bei Trainergröße prüfen, Übersetzung und IPA abgleichen sowie Quelle im Manifest eintragen. Danach die vollständige Bild- und Eingaberegression ausführen. Dieser Entwurf erhöht die Kartenzahl um null.
+
+## Fortsetzung am 27.11.2026
+
+Die öffentliche Bildgalerie zeigte 709 aktive Karten. Der Galerie-Link zur neuen Karte Handrührgerät führte zur Illustration und Eingabe. `das Handrührgerät, Handrührgeräte` wurde mit Enter akzeptiert. IPA und Mandarin erschienen. Ein zweites Enter öffnete die nächste Karte. [Live-Prüffall](https://thetwokings.de/wilson-input?word=v471)
+
+Paket 2 aktiviert zusätzlich Inbusschlüssel (`v531`), Papierkorb (`v810`), Starthilfekabel (`v1079`), Stromkabel (`v1101`) und Stromzähler (`v1102`). Die fünf SVGs wurden bei 240 × 170 Pixeln visuell geprüft. Der Bestand wächst auf dem Branch auf 714 Karten. Der Eingabetest umfasst die fünf gezielt aufgerufenen Bilder, verwechselbare Antworten, Mandarin und den Kartenwechsel.
+
+Kimi K3.1 Pro prüfte 23 Einträge aus Paket 1 auf Wortformen, IPA, Mandarin und Pinyin. Der Vorschlag zu `v1315` ändert `māmībāo` zu `māmibāo` mit tonlosem `mi`. Die herangezogenen Wörterbücher führen für 媽咪 bzw. 妈咪 `mā mī`. Die abweichende Aussprache im konkreten Kompositum bleibt offen. Die vorhandene Kartenangabe bleibt im Manifest. [Bildungsministerium Taiwan](https://dict.concised.moe.edu.tw/dictView.jsp?ID=3520&la=0&powerMode=0), [中文网](https://www.zhongwen.cn/cidian/mami/)

@@ -1,6 +1,6 @@
-# Wilson – gesicherter Arbeitsstand, 26.11.2026
+# Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Stand enthält **709 aktive Karten**, davon **25 neue Küchen- und Haushaltswörter**. Bis zum Ziel fehlen **791 Karten**.
+Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **714 aktive Karten**. Paket 2 ergänzt fünf Wörter. Bis zum Ziel fehlen auf diesem Stand **786 Karten**. Auf der Hauptdomain wurden **709 aktive Karten** und der Eingabeablauf für Handrührgerät bestätigt.
 
 ## Bestand
 
@@ -9,20 +9,25 @@ Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Stand
 | Ursprüngliche Projektillustrationen | 22 | Ja |
 | Geprüfte Mulberry-Wortkarten | 596 | Ja |
 | Gerettete eigene SVG-Zeichnungen | 66 | Ja |
-| Eigene SVG-Zeichnungen · Küche und Haushalt | 25 | Ja |
-| Gesperrte Zuordnungen | 49 | Nein |
+| Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 1 | 25 | Ja |
+| Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 2 | 5 | Ja |
+| Gesperrte Zuordnungen | 47 | Nein |
 | Alternative oder doppelte Motive | 10 | Nein |
 | Ungeprüfte Kandidaten im gespeicherten Manifest | 0 | Nein |
 
-Die 709 Karten umfassen **633 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
+Die 714 Karten umfassen **638 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
 
 ## Küche und Haushalt, Paket 1
 
-25 vorhandene Wort-IDs aus dem PONS-basierten Lexikon wurden aktiviert. Die eigenen SVGs unter `wilson/original-household/` wurden einzeln auf einem gerenderten Kontaktbogen geprüft. Artikel, Wortformen, IPA, Englisch, Mandarin und Pinyin wurden redaktionell abgeglichen. Die Galerie bietet den Filter **Neu · Küche & Haushalt**. Die Pfade zu den Zeichnungen stehen im Manifest.
+25 vorhandene Wort-IDs aus dem PONS-basierten Lexikon wurden aktiviert. Die eigenen SVGs unter `wilson/original-household/` wurden einzeln auf einem gerenderten Kontaktbogen geprüft. Artikel, Wortformen, IPA, Englisch, Mandarin und Pinyin wurden redaktionell abgeglichen. Die Pfade zu den Zeichnungen stehen im Manifest.
 
 - `v471` Handrührgerät und `v974` Schuhlöffel ersetzen gesperrte Motive. Die früheren Entscheidungen bleiben in `reviewHistory` auffindbar.
 - Mehrsprachige Hinweise präzisieren unter anderem die Motive für Einbauküche, Kissenbezug, Laken, Tischläufer und Wäschetrockner.
 - Die deutsche Lautschrift und Mandarin wurden redaktionell geprüft. Eine unabhängige Sprachprüfung steht aus.
+
+## Küche und Haushalt, Paket 2
+
+Die fünf vorhandenen IDs `v531` (Inbusschlüssel), `v810` (Papierkorb), `v1079` (Starthilfekabel), `v1101` (Stromkabel) und `v1102` (Stromzähler) sind mit eigenen SVGs im Trainer und in der Galerie aktiviert. Die zwei ersetzten Sperrentscheidungen bleiben in `reviewHistory`. Die Galerie bietet den Filter **Neu · Küche & Haushalt 2**. [Prüfung und Arbeitsstand](WILSON-HOUSEHOLD-02.md)
 
 ## Was gerettet und zusammengeführt wurde
 
@@ -44,7 +49,7 @@ Nomen verlangen passende Singular-/Pluralformen; Tätigkeiten, Zahlen und Wendun
 
 Mulberry Symbols, Steve Lee, CC BY-SA 4.0; Quellrevision `fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf`. Alle **596 aktiven Mulberry-Dateien** wurden bytegenau anhand der Git-Blob-Hashes dieser Revision geprüft. Individuelle feste Quellenlinks, SHA-256 und Upstream-Blob-Hashes stehen im Manifest; Original-Lizenzhinweis unverändert unter `wilson/mulberry/LICENSE.txt`. Trainer und Galerie unterscheiden Mulberry von eigenen, KI-gestützt erstellten SVG-Zeichnungen. Keine pauschale rechtliche Freigabe behauptet.
 
-Keine PONS-Bilder, Buchseiten oder Aufnahmen übernommen. Audio stammt aus Gerätesprachsynthese. Kein kostenpflichtiger Dienst eingesetzt. Kimi wurde für dieses Paket nicht befragt. Der lokale Schlüssel und `MOONSHOT_API_KEY` waren nicht verfügbar. DNS und Hosting unverändert.
+Keine PONS-Bilder, Buchseiten oder Aufnahmen übernommen. Audio stammt aus Gerätesprachsynthese. Kimi K3.1 Pro wurde nachgelagert für eine sprachliche Zweitprüfung zu 23 Karten aus Paket 1 eingesetzt. Die Anmerkung zur Aussprache von 妈咪包 bleibt zur Nachprüfung vermerkt. DNS und Hosting unverändert.
 
 ## Wiederholbare Prüfungen
 
@@ -57,13 +62,13 @@ node scripts/build-wilson-offline.cjs
 python scripts/render-wilson-review.py /tmp/wilson-review
 ```
 
-Inhaltstests prüfen alle 709 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
+Inhaltstests prüfen alle 714 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
 
 `scripts/wilson-browser-preview.html` stellt echte Seiten in 390 und 1280 CSS-Pixeln für die Browserprüfung dar. Das ersetzt keine Tests auf echten iPhone-/Android-Geräten; hörbare Ausgabe und gerätespezifische Tastaturen müssen dort noch geprüft werden.
 
 ## Nächste Arbeit
 
-1. Weitere 791 eindeutige Karten beschaffen oder eigenständig erstellen und einzeln prüfen. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
-2. Die 49 gesperrten Zuordnungen ersetzen oder mit belastbarem Kontext korrigieren; alternative Motive niemals als weitere Wörter zählen.
+1. Weitere 786 eindeutige Karten beschaffen oder eigenständig erstellen und einzeln prüfen. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
+2. Die 47 gesperrten Zuordnungen ersetzen oder mit belastbarem Kontext korrigieren; alternative Motive niemals als weitere Wörter zählen.
 3. Deutsche Wortformen/IPA und Mandarin unabhängig prüfen lassen; bisherige Sichtung transparent als redaktionellen Erststand behandeln.
 4. Den jeweils aktuellen `main` erneut lesen, diese Datei und das Manifest verwenden und kleinere getestete Ausbaustände tatsächlich sichern. Keine ungesicherten lokalen Arbeitsschritte als veröffentlicht ausgeben.
