@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170">
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <g fill="none" stroke-width="6.5" stroke-linecap="round">
+    <path d="M56 61c27 9-3 57 42 62 33 4 30-38 57-54 14-8 22-8 35-8" stroke="#bc303e"/>
+    <path d="M54 110c20-16 16-56 47-59 28-3 34 40 50 54 12 10 25 12 40 9" stroke="#283246"/>
+  </g>
+  <defs><g id="clamp">
+    <path d="M22 4 3-2-14-2l-5 5 15 5L7 7m15-3L5 18l-17 2-7-4 15-8" fill="#e0e8ed" stroke="#2a3545" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M14 7 37 0l4 7-23 8zm3 7 24 7-3 8-24-10z" fill="currentColor" stroke="#263344" stroke-width="2.4" stroke-linejoin="round"/>
+    <circle cx="15" cy="12" r="3" fill="#eef5f7" stroke="#263344" stroke-width="1.5"/>
+  </g></defs>
+  <use href="#clamp" transform="translate(25 44) rotate(5)" color="#e74c56"/>
+  <use href="#clamp" transform="translate(25 121) rotate(-25)" color="#424e65"/>
+  <use href="#clamp" transform="translate(215 47) scale(-1 1)" color="#e74c56"/>
+  <use href="#clamp" transform="translate(215 110) scale(-1 1)" color="#424e65"/>
+</svg>

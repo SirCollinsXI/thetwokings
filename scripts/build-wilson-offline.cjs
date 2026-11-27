@@ -15,6 +15,6 @@ html=html.replace(/src="(wilson\/[^"\n]+\.svg)"/g,(_,file)=>'src="'+images[file]
 // Links remain usable when the downloaded file is opened under file://.
 html=html.replace(/href="(index\.html|wilson\.html|wilson-input\.html|wilson-image-review\.html|wilson\/mulberry\/LICENSE\.txt|wilson-offline\.html)"/g,(_,file)=>'href="https://thetwokings.de/'+file+'"');
 html=html.replace(/<link rel="icon"[^>]*>/g,'');
-html=html.replace('<body>','<body><div role="note" style="padding:10px;background:#d8ede1;text-align:center">Offline · '+words.length+' Bildkarten · 2026-11-26 · Bildquellenlinks benötigen Internet / Source links need internet / 图片来源链接需联网</div>');
+html=html.replace('<body>','<body><div role="note" style="padding:10px;background:#d8ede1;text-align:center">Offline · '+words.length+' Bildkarten · 2026-11-27 · Bildquellenlinks benötigen Internet / Source links need internet / 图片来源链接需联网</div>');
 fs.writeFileSync(path.join(root,'wilson-offline.html'),html);
 console.log('Standalone offline file rebuilt from shared data:',words.length,'embedded picture cards.');

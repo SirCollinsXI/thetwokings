@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170">
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <rect x="67" y="21" width="106" height="130" rx="12" fill="#d5e0e8" stroke="#2a4255" stroke-width="4"/>
+  <rect x="79" y="35" width="82" height="81" rx="9" fill="#f8fbfc" stroke="#7a94a8" stroke-width="3"/>
+  <rect x="89" y="45" width="62" height="26" rx="4" fill="#b6d7a9" stroke="#385448" stroke-width="3"/>
+  <path d="M96 52h7v11h-7zm13 0h7v11h-7zm13 0h7v11h-7zm13 0h7v11h-7z" fill="none" stroke="#385448" stroke-width="1.8"/>
+  <text x="120" y="93" text-anchor="middle" fill="#2a4255" font-family="sans-serif" font-size="15" font-weight="700">kWh</text>
+  <circle cx="146" cy="104" r="3" fill="#bb3d40"/>
+  <path d="M79 125h82" stroke="#7a94a8" stroke-width="3"/>
+  <path d="M94 148v11m17-11v11m18-11v11m17-11v11" stroke="#2a4255" stroke-width="5" stroke-linecap="round"/>
+</svg>

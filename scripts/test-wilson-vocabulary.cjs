@@ -3,13 +3,13 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root=path.resolve(__dirname,'..');
 const bundle=['wilson-lexicon.js','wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const {v,c,lex}=vm.runInNewContext(bundle+';({v:WILSON_VOCABULARY,c:WILSON_IMAGE_CANDIDATES,lex:LEXICON})');
-assert.equal(v.inputWords.length,709);
+assert.equal(v.inputWords.length,714);
 assert.equal(c.filter(w=>w.active&&w.provider!=='project').length,596);
-assert.equal(c.filter(w=>w.review?.decision==='blocked').length,49);
+assert.equal(c.filter(w=>w.review?.decision==='blocked').length,47);
 assert.equal(c.filter(w=>w.status==='approved-alternative').length,10);
 assert.equal(c.filter(w=>!w.review).length,0);
 assert.equal(new Set(c.map(w=>w.id)).size,c.length,'candidate IDs must be unique; replaced decisions belong in reviewHistory');
-assert.equal(c.filter(w=>w.reviewHistory?.length).length,10,'replacement decisions must retain their earlier review');
+assert.equal(c.filter(w=>w.reviewHistory?.length).length,12,'replacement decisions must retain their earlier review');
 assert.equal(new Set(v.inputWords.map(w=>w.id)).size,v.activeCount,'duplicate input ID');
 assert.equal(new Set(v.inputWords.map(w=>w.de)).size,v.activeCount,'alternative motifs must not add words');
 assert.equal(new Set(v.mainWords.map(w=>w.id)).size,v.mainWords.length,'duplicate main ID');
@@ -64,11 +64,11 @@ for(const old of JSON.parse(fs.readFileSync(path.join(root,'scripts/fixtures/wil
  assert.equal(now.imagePath,old.imagePath,'previous image path changed');
  assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,now.imagePath))).digest('hex'),old.sha256,'previous image changed');
 }
-for(const id of ['v1355','v531','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-crisps','v1185'])assert.ok(!v.inputWords.some(w=>w.id===id),id+' ambiguous/duplicate image enabled');
+for(const id of ['v1355','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-crisps','v1185'])assert.ok(!v.inputWords.some(w=>w.id===id),id+' ambiguous/duplicate image enabled');
 assert.equal(v.inputWords.find(w=>w.id==='wx-chinese-cabbage').de,'der Pak Choi');
 assert.equal(v.inputWords.find(w=>w.id==='v724').numberMode,'plural');
 assert.equal(v.inputWords.find(w=>w.id==='v363').plural,'die Frühstücksflocken');
-assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,91);
+assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,96);
 const household=v.inputWords.filter(w=>w.imageCredit?.review.batch==='kueche-haushalt-01');
 assert.equal(household.length,25);
 for (const w of household) {
@@ -80,4 +80,17 @@ for (const id of ['v471','v974']) {
  assert.equal(w.imageCredit.reviewHistory.at(-1).decision,'blocked');
  assert.notEqual(w.imageCredit.reviewHistory.at(-1).path,w.imagePath);
 }
-console.log('Vocabulary verified: 709 active cards, including 25 new household cards; all 222 legacy IDs and image hashes preserved.');
+const household2=v.inputWords.filter(w=>w.imageCredit?.review.batch==='kueche-haushalt-02');
+assert.deepEqual(Array.from(household2,w=>w.id).sort(),['v1079','v1101','v1102','v531','v810']);
+for(const w of household2){
+ assert.equal(w.de,lex.find(entry=>entry.id===w.id)?.de);
+ assert.equal(w.plural,lex.find(entry=>entry.id===w.id)?.plural);
+ assert.ok(w.pinyin&&w.imageCredit.source.endsWith(w.imagePath));
+ for(const l of ['de','en','zh'])assert.ok(w.context[l],w.id+' missing image context');
+}
+for(const id of ['v531','v810']){
+ const w=household2.find(w=>w.id===id);
+ assert.equal(w.imageCredit.reviewHistory.at(-1).decision,'blocked');
+ assert.notEqual(w.imageCredit.reviewHistory.at(-1).path,w.imagePath);
+}
+console.log('Vocabulary verified: 714 active cards, including 30 household cards; all 222 legacy IDs and image hashes preserved.');
