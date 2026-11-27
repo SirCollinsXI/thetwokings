@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Fahrkarte</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <g transform="rotate(-12 120 85)">
+    <path d="M38 46h164v36a8 8 0 0 0 0 16v35H38V98a8 8 0 0 0 0-16z" fill="#d7e3dc"/>
+    <path d="M36 40h166v36a8 8 0 0 0 0 16v36H36V92a8 8 0 0 0 0-16z" fill="#fae8ad" stroke="#765b35" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M154 42h46v32q-10 3-10 10t10 10v32h-46z" fill="#efc478"/>
+    <path d="M154 45v78" fill="none" stroke="#916931" stroke-width="2.5" stroke-dasharray="4 4"/>
+    <rect x="48" y="56" width="89" height="36" rx="6" fill="#456d7a"/>
+    <g fill="#f2f7ec">
+      <rect x="56" y="64" width="63" height="14" rx="4"/>
+      <path d="M107 64h11q5 0 10 6l5 8h-26z"/>
+    </g>
+    <path d="M64 69h9m6 0h9m6 0h9m9 0h9m-62 17h69" stroke="#456d7a" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M60 86h67" stroke="#a7cacb" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M49 103h89m-89 11h55" fill="none" stroke="#8c693f" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M163 59v18m5-18v18m7-18v18m5-18v18m5-18v18m-22 27h20m-20 9h17" fill="none" stroke="#765b35" stroke-width="2.3" stroke-linecap="round"/>
+  </g>
+</svg>

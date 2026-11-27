@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Fahrplan</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <path d="M22 24h196v126H22z" fill="#e5efeb"/>
+  <path d="M24 54h37m123 0h32M24 97h38m122 0h32M24 134h37m123 0h32" fill="none" stroke="#cfdfda" stroke-width="2"/>
+  <rect x="46" y="24" width="151" height="130" rx="6" fill="#cfdfdc"/>
+  <rect x="42" y="19" width="151" height="130" rx="6" fill="#fbfcf7" stroke="#395968" stroke-width="3"/>
+  <path d="M48 21h139q4 0 4 4v32H44V25q0-4 4-4z" fill="#426d7c"/>
+  <circle cx="164" cy="39" r="12" fill="#fff6d8" stroke="#c5b16e" stroke-width="2"/>
+  <path d="M164 31v8l6 4" fill="none" stroke="#395968" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="58" y="30" width="32" height="18" rx="4" fill="#dcebe9"/>
+  <path d="M62 33h24v7H62z" fill="#426d7c"/>
+  <path d="M64 48v2m20-2v2" stroke="#dcebe9" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="64" cy="44" r="1.5" fill="#426d7c"/>
+  <circle cx="84" cy="44" r="1.5" fill="#426d7c"/>
+  <path d="M101 35h34m-34 9h25" fill="none" stroke="#c5dbdc" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M54 69h127v65H54z" fill="#f8fbf6" stroke="#7d9da1" stroke-width="1.7"/>
+  <path d="M55 70h125v12H55zm0 26h125v13H55zm0 26h125v11H55z" fill="#dcebe7"/>
+  <path d="M54 82h127m-127 13h127m-127 13h127m-127 13h127M95 70v64m29-64v64m28-64v64" fill="none" stroke="#a3bfbf" stroke-width="1.4"/>
+  <path d="M61 76h21m-21 13h27m-27 13h23m-23 13h20m-20 13h24" fill="none" stroke="#657f82" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M103 76h12m18 0h11m17 0h11m-69 13h11m19 0h11m17 0h10m-68 13h12m18 0h10m18 0h12m-70 13h11m19 0h10m18 0h11m-69 13h12m18 0h11m17 0h11" fill="none" stroke="#52717b" stroke-width="2.1" stroke-linecap="round"/>
+</svg>

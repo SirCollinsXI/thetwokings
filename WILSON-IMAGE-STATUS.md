@@ -1,11 +1,12 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **719 aktive Karten**. Paket 3 ergänzt fünf Mobilitätsbegriffe. Bis zum Ziel fehlen **781 Karten**. Auf der Hauptdomain wurden zuletzt **714 aktive Karten** bestätigt.
+Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **724 aktive Karten**. Paket 04 ergänzt fünf Begriffe zu Bus und Bahn. Bis zum Ziel fehlen **776 Karten**. Auf der Hauptdomain wurden nach dem Deploy von [Paket 03](https://github.com/SirCollinsXI/thetwokings/pull/12) **719 aktive Karten** bestätigt.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
 | 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build, Live-Galerie und Kartenaufruf | Hörbare Geräteausgabe |
-| 3 · Unterwegs | [Änderungen](https://github.com/SirCollinsXI/thetwokings/compare/main...codex/wilson-mobility-03) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Live-Abgleich nach Deploy und hörbare Geräteausgabe |
+| 03 · Unterwegs | [PR #12](https://github.com/SirCollinsXI/thetwokings/pull/12) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA, Offline-Build und Live-Abgleich | Hörbare Geräteausgabe |
+| 04 · Bus & Bahn | [Änderungen](https://github.com/SirCollinsXI/thetwokings/compare/main...codex/wilson-paket-04) | +5 → 724 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Live-Abgleich nach Veröffentlichung und hörbare Geräteausgabe |
 
 ## Bestand
 
@@ -17,11 +18,12 @@ Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser A
 | Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 1 | 25 | Ja |
 | Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 2 | 5 | Ja |
 | Eigene SVG-Zeichnungen · Unterwegs, Paket 3 | 5 | Ja |
+| Eigene SVG-Zeichnungen · Bus & Bahn, Paket 04 | 5 | Ja |
 | Gesperrte Zuordnungen | 47 | Nein |
 | Alternative oder doppelte Motive | 10 | Nein |
 | Ungeprüfte Kandidaten im gespeicherten Manifest | 0 | Nein |
 
-Die 719 Karten umfassen **643 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
+Die 724 Karten umfassen **648 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
 
 ## Küche und Haushalt, Paket 1
 
@@ -48,6 +50,22 @@ Die Galerie zeigt unter **Neu · Unterwegs** fünf eigene SVGs für bestehende L
 | `v633` | der Kreisverkehr, die Kreisverkehre | roundabout | 环形交叉路口 |
 
 Beim Fahrkartenautomaten zeigt der Trainer den Hinweis zur N-Deklination. Der Plural *Kreisverkehre* bezieht sich auf die Straßenbauform. *环岛* ist eine weitere gebräuchliche Bezeichnung für diesen Begriff. [Duden · Fahrkartenautomat](https://www.duden.de/deklination/substantive/Fahrkartenautomat) · [Cambridge · Kreisverkehr](https://dictionary.cambridge.org/de/worterbuch/deutsch-englisch/kreisverkehr) · [Cambridge · roundabout](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/roundabout)
+
+## Bus & Bahn, Paket 04
+
+Der Galeriefilter **Neu · Bus & Bahn** zeigt fünf vorhandene Lexikon-IDs mit eigenen SVGs. Die Hinweise in Deutsch, Englisch und Mandarin beschreiben den jeweiligen Gegenstand im Verkehrskontext.
+
+| ID | Karte | Englisch | Mandarin |
+| --- | --- | --- | --- |
+| `v168` | die Bushaltestelle, die Bushaltestellen | bus stop | 公交车站 |
+| `v313` | die Fahrkarte, die Fahrkarten | travel ticket | 车票 |
+| `v315` | der Fahrplan, die Fahrpläne | timetable | 时刻表 |
+| `v461` | der Halteknopf, die Halteknöpfe | stop request button | 下车铃按钮 |
+| `v462` | die Halteschlaufe, die Halteschlaufen | grab strap | 扶手吊环 |
+
+Bei `v461` bezeichnet **下车铃按钮** den Knopf im Bus, mit dem Fahrgäste den Ausstiegswunsch melden. Die freigegebene Karte übernimmt diese Form mit Pinyin **xiàchēlíng ànniǔ**. [Shangqiu Busbetrieb · Haltewunsch](https://www.sqjtcy.com/a/gsxw/2023-03-24/5852.html) · [Verkehrsverbund Rhein-Neckar · Tipps zum Busfahren](https://www.vrn.de/service/downloads/mobilitaetstraining/dokumente/tipps_zum_busfahren.pdf) · [Hubei Daily · Halteschlaufen](https://news.cnhubei.com/content/2024/08/17/content_18297471.html)
+
+Die Wortformen für Bushaltestelle, Fahrkarte und Fahrplan wurden im Duden abgeglichen. Die Lautschrift für Halteknopf wurde aus den Wortbestandteilen abgeleitet. [Duden · Bushaltestelle](https://www.duden.de/rechtschreibung/Bushaltestelle) · [Duden · Fahrkarte](https://www.duden.de/rechtschreibung/Fahrkarte) · [Duden · Fahrplan](https://www.duden.de/deklination/substantive/Fahrplan)
 
 ## Was gerettet und zusammengeführt wurde
 

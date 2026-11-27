@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Halteknopf im Bus</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <path d="M23 24h195v121H23z" fill="#dce9e8"/>
+  <path d="M32 33h61v80H32zm109 0h67v80h-67z" fill="#d9ebef" stroke="#a0b9bf" stroke-width="3"/>
+  <path d="M32 85q16-12 61-13m48 7q37-9 67-1" fill="none" stroke="#c1d7d6" stroke-width="5"/>
+  <path d="M24 118h194m-89 26 18-18m37 18 14-18" fill="none" stroke="#adc5c6" stroke-width="3"/>
+  <path d="M40 116h22q9 0 9 10v20H37v-26q0-4 3-4z" fill="#91abb4"/>
+  <path d="M107 20h17v132h-17z" fill="#dca343" stroke="#805d37" stroke-width="2.5"/>
+  <path d="M111 22v128" fill="none" stroke="#fbe0a0" stroke-width="3"/>
+  <rect x="94" y="49" width="53" height="67" rx="15" fill="#456775" stroke="#263f51" stroke-width="3"/>
+  <rect x="88" y="45" width="53" height="67" rx="15" fill="#7896a0" stroke="#263f51" stroke-width="3"/>
+  <circle cx="114" cy="77" r="21" fill="#a33732" stroke="#66302d" stroke-width="3"/>
+  <circle cx="113" cy="75" r="16" fill="#ef6753"/>
+  <path d="M102 71q3-8 13-9" fill="none" stroke="#ffa08b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M201 150l-23-20q-9-3-18-7l-23-11q-6-3-4-8 2-4 8-3l14 5-23-18q-5-4-2-8 3-4 8-1l31 21 6 3q13-2 20 9l17 20z" fill="#efb38f" stroke="#865c51" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="m133 85 8 5m20 20 9 7" fill="none" stroke="#b67864" stroke-width="2" stroke-linecap="round"/>
+  <path d="m197 149 18-16 10 11-18 15z" fill="#557584" stroke="#395561" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
