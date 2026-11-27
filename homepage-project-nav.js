@@ -4,15 +4,16 @@
   const entry = new URLSearchParams(location.search);
   const script = document.currentScript;
   const section = script.dataset.section;
-  const rootEntry = ['lernen', 'spiele'].includes(section) && entry.get('from') === 'homepage';
+  const rootEntry = entry.get('from') === 'homepage';
   if (!rootEntry && entry.get('from') !== 'homepage-preview') return;
   const home = new URL(rootEntry ? 'index.html' : 'homepage-preview.html', script.src);
+  const homeSection = rootEntry && section === 'werkstatt' ? 'pc' : section;
   const root = new URL('.', script.src);
   const homePaths = new Set([root.pathname, new URL('index.html', root).pathname, new URL('/', root).pathname]);
   const returnLinks = [...document.querySelectorAll('a[href]')].filter(link => {
     const url = new URL(link.href);
     const isHome = url.origin === root.origin && homePaths.has(url.pathname);
-    return isHome && (!url.hash || url.hash === '#' + section);
+    return isHome && (!url.hash || (url.hash === '#' + section || url.hash === '#' + homeSection));
   });
   const menuLink = document.querySelector('[data-preview-return]');
   const workshopLinks = document.querySelectorAll('a[href^="werkstatt.html"], a[href^="preisradar.html"]');
@@ -27,7 +28,7 @@
     const requested = (homeLanguage || document.documentElement.lang).toLowerCase().split('-')[0];
     const language = ['de', 'en', 'zh'].includes(requested) ? requested : 'de';
     home.searchParams.set('lang', language);
-    home.hash = section;
+    home.hash = homeSection;
     for (const link of returnLinks) link.href = home.href;
     if (menuLink) {
       const label = labels[section][language];
@@ -37,7 +38,7 @@
     }
     for (const link of workshopLinks) {
       const target = new URL(link.href);
-      target.searchParams.set('from', 'homepage-preview');
+      target.searchParams.set('from', rootEntry ? 'homepage' : 'homepage-preview');
       target.searchParams.set('lang', language);
       link.href = target.href;
     }

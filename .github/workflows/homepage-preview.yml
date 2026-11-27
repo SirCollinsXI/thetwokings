@@ -9,6 +9,8 @@ on:
       - 'spiele-*'
       - 'spuren-store.js'
       - 'public-wall.*'
+      - 'grusskarte.js'
+      - 'scripts/test-share-card.cjs'
       - '_routes.json'
       - 'functions/api/spuren.js'
       - 'migrations/0002_public_trace_day.sql'

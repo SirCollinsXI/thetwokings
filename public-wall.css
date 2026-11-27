@@ -34,3 +34,19 @@
   text-decoration: underline; text-underline-offset: .16em;
 }
 .public-wall .wall-status { color: var(--muted, #cbccd0); }
+
+.share-card { margin-top: 1rem; padding-top: .7rem; border-top: 1px solid var(--line, #55575d); }
+.share-card summary { cursor: pointer; font-weight: 650; }
+.share-card label { display: block; margin-top: .6rem; }
+.share-card input, .share-card select, .share-card button { font: inherit; min-height: 44px; max-width: 100%; }
+.share-card button { cursor: pointer; }
+.share-card input { width: 100%; margin: .2rem 0; }
+.share-card #card-view {
+  display: grid; grid-template-columns: auto minmax(0,1fr); align-items: center; gap: .7rem;
+  margin: 1rem 0; padding: .9rem; border-inline-start: 3px solid var(--accent, #c8fa72);
+  background: var(--panel, #202125);
+}
+.share-card #card-view[hidden] { display: none; }
+.share-card #card-icon { font-size: 2.1rem; line-height: 1; color: var(--accent, #c8fa72); }
+.share-card figcaption { display: grid; gap: .15rem; }
+.share-card #card-description { font-size: .86rem; }

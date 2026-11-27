@@ -18,6 +18,7 @@
   <script src="homepage-spuren.js" defer></script>
   <link rel="stylesheet" href="public-wall.css">
   <script src="public-wall.js" defer></script>
+  <script src="grusskarte.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#inhalt" data-copy="skip">Zum Inhalt</a>
@@ -41,6 +42,7 @@
         <div class="intro-copy">
         <h1 id="home-title" data-copy="headline">Spielen, lesen, lernen.</h1>
         <p data-copy="intro">Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.</p>
+        <a class="wall-invite" href="#grusswand" data-copy="wallInvite">Gruß hinterlassen</a>
         </div>
         <img class="intro-art" src="assets/homepage-koenige.webp" width="800" height="440" alt="" decoding="async">
       </section>
@@ -161,11 +163,11 @@
             <div class="card">
               <p class="status" data-copy="prototype">Prototyp</p>
               <h3 id="pc-title" data-copy="pc">Phils PC-Werkstatt</h3>
-              <p data-copy="pcNow">Importiere dein Hardwareprofil lokal und prüfe, welcher Upgrade-Schritt sich für dich lohnt.</p>
+              <p data-copy="pcNow">Beschreibe, wo dein PC stockt. Der Check zeigt dir, was du als Nächstes prüfen kannst.</p>
               <p data-copy="pcData">Der Preisradar zeigt historische Preise aus Deutschland und den USA.</p>
-              <p class="next" data-copy="pcNext">Als Nächstes: zwei Aufrüstpläne vergleichen und eigene Angebote in Euro oder Yuan mit Datum und Quelle erfassen.</p>
+
               <ul class="more-links" role="list">
-                <li><a href="werkstatt.html" data-link-language="project" data-copy="pcOpen">Prototyp öffnen</a></li>
+                <li><a href="werkstatt.html" data-link-language="project" data-copy="pcOpen">PC-Check starten</a></li>
                 <li><a href="preisradar.html" data-link-language="project" data-copy="pcRadar">Historische Preise</a></li>
               </ul>
             </div>
@@ -230,6 +232,27 @@
           <button type="button" data-wall-refresh data-wall-word="refresh" hidden>Stand neu laden</button>
           <a href="datenschutz.html#spuren" data-wall-word="privacy">Datenschutz zur Grußwand</a>
         </div>
+        <details id="grusskarte" class="share-card">
+          <summary data-card-word="title">Grußkarte per Link teilen</summary>
+          <p data-card-word="intro">Alle mit dem Link können deine Karte öffnen. Das Bildzeichen und das Datum stehen im Link. Die Karte erscheint nur über diesen Link.</p>
+          <label for="card-mark" data-card-word="choose">Dein Bildzeichen</label>
+          <select id="card-mark">
+            <option value="wave" data-card-word="wave">Winken</option>
+            <option value="star" data-card-word="star">Stern</option>
+            <option value="crown" data-card-word="crown">Krone</option>
+          </select>
+          <button type="button" id="card-create" data-card-word="create">Grußlink erstellen</button>
+          <figure id="card-view" hidden tabindex="-1">
+            <span id="card-icon" aria-hidden="true"></span>
+            <figcaption><strong data-card-word="greeting">Ein Gruß für dich</strong><span id="card-description"></span></figcaption>
+          </figure>
+          <div id="card-link-box" hidden>
+            <label for="card-link" data-card-word="link">Link zur Karte</label>
+            <input id="card-link" type="text" readonly dir="ltr" spellcheck="false">
+            <button type="button" id="card-copy" data-card-word="copy">Link kopieren</button>
+          </div>
+          <p class="wall-status" id="card-status" role="status"></p>
+        </details>
         <noscript>JavaScript ist für die Tageswand erforderlich. / The wall requires JavaScript. / 留印记需要启用 JavaScript。</noscript>
       </section>
       <section id="stats-panel" class="rail-panel" aria-labelledby="stats-title" hidden>

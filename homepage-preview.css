@@ -41,6 +41,7 @@ h3, h4 { font-size: clamp(1.2rem, 2vw, 1.55rem); letter-spacing: -.025em; }
 main, .project, .rail { min-width: 0; }
 .intro { display: grid; align-items: center; gap: clamp(.75rem, 2.3vw, 2rem); }
 .intro-copy { min-width: 0; }
+.wall-invite { display: inline-flex; align-items: center; min-height: 44px; font-weight: 650; text-underline-offset: .2em; }
 .intro-copy > p:not(.label) { color: var(--muted); margin-block-start: .8rem; max-width: 51ch; font-size: clamp(1rem, 1.1vw, 1.14rem); }
 .intro .label { margin-bottom: .65rem; color: var(--muted); font-size: .75rem; font-weight: 700; letter-spacing: .085em; text-transform: uppercase; }
 .intro-art { display: block; width: 100%; height: auto; border-radius: .25rem; filter: saturate(.2) brightness(.88); }
@@ -128,7 +129,7 @@ main, .project, .rail { min-width: 0; }
 @media (min-width: 68rem) {
   .layout { grid-template-columns: minmax(0, 1fr) clamp(15rem, 19vw, 18rem); }
   .rail { align-self: start; position: sticky; top: 1.4rem; border-top: 0; border-inline-start: 1px solid var(--line); padding-block-start: 0; padding-inline-start: clamp(1.1rem, 2.5vw, 2rem); }
-  .rail:has(#spuren[open]) { position: static; }
+  .rail:has(details[open]) { position: static; }
 }
 @media (max-width: 37.99rem) {
   .shell { width: calc(100% - 2rem); }

@@ -112,6 +112,7 @@ async function testPublicWall(page) {
   assert.match(response.headers()['content-type'], /application\/json/);
   const state = await response.json();
   assert([200, 503].includes(response.status()));
+  await page.locator('.wall-invite').click();
   const wall = page.locator('#grusswand');
   await wall.locator('[data-wall-refresh]').waitFor();
   const active = response.status() === 200;
@@ -250,6 +251,7 @@ async function run() {
       }
     }
     await testStudy(browser);
+    await require('./test-share-card.cjs')(browser, preview);
   } finally {
     await browser.close();
   }
