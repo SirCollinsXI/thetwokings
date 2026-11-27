@@ -1,7 +1,7 @@
 'use strict';
 
 const copy = {
-  ...homepageGamesCopy,
+  ...(typeof homepageGamesCopy === 'undefined' ? {} : homepageGamesCopy),
   title: ['TheTwoKings | Spielen, lesen, lernen.', 'TheTwoKings | Play, read, learn.', 'TheTwoKings｜玩游戏，读漫画，学德语。'],
   skip: ['Zum Inhalt', 'Skip to content', '跳转到正文'],
   nav: ['Hauptnavigation', 'Main navigation', '主导航'],
@@ -130,8 +130,14 @@ function showLanguage(language) {
   document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
   document.title = copy.title[index];
   document.querySelector('meta[name="description"]').content = copy.intro[index];
-  for (const node of textNodes) node.textContent = copy[node.dataset.copy][index];
-  for (const node of labelledNodes) node.setAttribute('aria-label', copy[node.dataset.label][index]);
+  for (const node of textNodes) {
+    const translation = copy[node.dataset.copy]?.[index];
+    if (translation !== undefined) node.textContent = translation;
+  }
+  for (const node of labelledNodes) {
+    const label = copy[node.dataset.label]?.[index];
+    if (label !== undefined) node.setAttribute('aria-label', label);
+  }
   for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.lang === language));
   showDailyStats(document.documentElement.lang);
   for (const link of languageLinks) {
