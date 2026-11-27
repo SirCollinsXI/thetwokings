@@ -27504,5 +27504,1405 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Mit der markierten Schnur fädelst und bindest du den Schuh zu."
     }
+  },
+  {
+    "id": "v245",
+    "de": "die EC-Karte",
+    "plural": "die EC-Karten",
+    "en": "debit card",
+    "zh": "借记卡",
+    "pinyin": "jièjìkǎ",
+    "path": "wilson/original-paket-08/v245-eckarte.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "banking-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈeːtseːˌkaʁtə/",
+      "context": {
+        "de": "Mit dieser deutschen Bankkarte bezahlst du am Terminal. Der Betrag geht direkt vom Girokonto ab.",
+        "en": "This German payment card debits your current account when you pay at a terminal.",
+        "zh": "用这种德国银行卡在终端付款时，款项会直接从活期账户扣除。"
+      },
+      "reason": "Mit dieser deutschen Bankkarte bezahlst du am Terminal. Der Betrag geht direkt vom Girokonto ab."
+    }
+  },
+  {
+    "id": "v632",
+    "de": "die Kreditkarte",
+    "plural": "die Kreditkarten",
+    "en": "credit card",
+    "zh": "信用卡",
+    "pinyin": "xìnyòngkǎ",
+    "path": "wilson/original-paket-08/v632-kreditkarte.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "banking-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/kʁeˈdiːtˌkaʁtə/",
+      "context": {
+        "de": "Mit dieser Zahlungskarte werden Einkäufe typischerweise später abgerechnet, etwa gesammelt am Monatsende.",
+        "en": "Purchases made with this payment card are typically billed later, for example at the end of the month.",
+        "zh": "用这种卡消费，款项通常会延后结算，例如在月底统一结账。"
+      },
+      "reason": "Mit dieser Zahlungskarte werden Einkäufe typischerweise später abgerechnet, etwa gesammelt am Monatsende."
+    }
+  },
+  {
+    "id": "v825",
+    "de": "die PIN-Nummer",
+    "plural": "die PIN-Nummern",
+    "en": "PIN code",
+    "zh": "个人识别码",
+    "pinyin": "gèrén shíbiémǎ",
+    "path": "wilson/original-paket-08/v825-pinnummer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "banking-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈpɪnˌnʊmɐ/",
+      "context": {
+        "de": "Die geheimen Ziffern tippst du zur Bestätigung ein. Auf dem Display erscheinen nur Punkte.",
+        "en": "Enter the secret digits to confirm. The display shows only dots.",
+        "zh": "输入保密的数字进行确认，屏幕上只显示圆点。"
+      },
+      "reason": "Die geheimen Ziffern tippst du zur Bestätigung ein. Auf dem Display erscheinen nur Punkte."
+    }
+  },
+  {
+    "id": "v874",
+    "de": "die Rechnung",
+    "plural": "die Rechnungen",
+    "en": "invoice",
+    "zh": "账单",
+    "pinyin": "zhàngdān",
+    "path": "wilson/original-paket-08/v874-rechnung.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "banking-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁɛçnʊŋ/",
+      "context": {
+        "de": "Auf dem Blatt stehen die berechneten Posten und der Gesamtbetrag, den du bezahlen sollst.",
+        "en": "The document lists the charges and the total amount you have to pay.",
+        "zh": "这张单据列出了各项费用和应付总金额。"
+      },
+      "reason": "Auf dem Blatt stehen die berechneten Posten und der Gesamtbetrag, den du bezahlen sollst."
+    }
+  },
+  {
+    "id": "v1300",
+    "de": "die Wechselstube",
+    "plural": "die Wechselstuben",
+    "en": "currency exchange office",
+    "zh": "货币兑换处",
+    "pinyin": "huòbì duìhuànchù",
+    "path": "wilson/original-paket-08/v1300-wechselstube.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "banking-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvɛksl̩ˌʃtuːbə/",
+      "context": {
+        "de": "An diesem Schalter tauscht du Bargeld von einer Währung in eine andere.",
+        "en": "At this counter you exchange cash from one currency to another.",
+        "zh": "你可以在这个柜台把一种货币的现金兑换成另一种。"
+      },
+      "reason": "An diesem Schalter tauscht du Bargeld von einer Währung in eine andere."
+    }
+  },
+  {
+    "id": "v16",
+    "de": "der Adapter",
+    "plural": "die Adapter",
+    "en": "adapter",
+    "zh": "转换接头",
+    "pinyin": "zhuǎnhuàn jiētóu",
+    "path": "wilson/original-paket-08/v16-adapter.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "computer-zubehoer-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/aˈdaptɐ/",
+      "context": {
+        "de": "Das kurze Zwischenstück verbindet zwei unterschiedliche Anschlüsse.",
+        "en": "This short connector lets two different types of ports work together.",
+        "zh": "这个短小的转接件把两种不同的接口连接起来。"
+      },
+      "reason": "Das kurze Zwischenstück verbindet zwei unterschiedliche Anschlüsse."
+    }
+  },
+  {
+    "id": "v171",
+    "de": "das CD-Laufwerk",
+    "plural": "die CD-Laufwerke",
+    "en": "CD drive",
+    "zh": "CD 光驱",
+    "pinyin": "CD guāngqū",
+    "path": "wilson/original-paket-08/v171-cdlaufwerk.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "computer-zubehoer-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/tseːˈdeːˌlaʊ̯fvɛʁk/",
+      "context": {
+        "de": "Das markierte Gerät mit Schublade liest die optische Scheibe, wie sie zum Beispiel für Musikalben üblich war.",
+        "en": "The marked drive with a tray reads the optical disc formerly common for music albums.",
+        "zh": "箭头所指的托盘式设备可以读取过去常用于音乐专辑的光盘。"
+      },
+      "reason": "Das markierte Gerät mit Schublade liest die optische Scheibe, wie sie zum Beispiel für Musikalben üblich war."
+    }
+  },
+  {
+    "id": "v244",
+    "de": "das DVD-Laufwerk",
+    "plural": "die DVD-Laufwerke",
+    "en": "DVD drive",
+    "zh": "DVD光驱",
+    "pinyin": "DVD guāngqū",
+    "path": "wilson/original-paket-08/v244-dvdlaufwerk.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "computer-zubehoer-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/deːfaʊ̯ˈdeːˌlaʊ̯fvɛʁk/",
+      "context": {
+        "de": "Das markierte Gerät mit Schublade liest die optische Scheibe im typischen Format für Spielfilme.",
+        "en": "The marked drive with a tray reads the optical disc format widely used for films.",
+        "zh": "箭头所指的托盘式设备可以读取常用于存放电影的光盘。"
+      },
+      "reason": "Das markierte Gerät mit Schublade liest die optische Scheibe im typischen Format für Spielfilme."
+    }
+  },
+  {
+    "id": "v1039",
+    "de": "das Smartphone",
+    "plural": "die Smartphones",
+    "en": "smartphone",
+    "zh": "智能手机",
+    "pinyin": "zhìnéng shǒujī",
+    "path": "wilson/original-paket-08/v1039-smartphone.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "computer-zubehoer-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈsmaʁtfoːn/",
+      "context": {
+        "de": "Auf diesem Mobiltelefon mit Touchscreen nutzt du Apps, das Internet und eine Kamera.",
+        "en": "This touchscreen mobile phone runs apps and has internet access and a camera.",
+        "zh": "这部带触摸屏的手机可以运行应用、上网和拍照。"
+      },
+      "reason": "Auf diesem Mobiltelefon mit Touchscreen nutzt du Apps, das Internet und eine Kamera."
+    }
+  },
+  {
+    "id": "v1136",
+    "de": "das Tastenfeld",
+    "plural": "die Tastenfelder",
+    "en": "keypad",
+    "zh": "按键区",
+    "pinyin": "ànjiànqū",
+    "path": "wilson/original-paket-08/v1136-tastenfeld.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "computer-zubehoer-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtastn̩ˌfɛlt/",
+      "context": {
+        "de": "Der markierte Block hat mehrere Tasten, über die du Ziffern eingibst.",
+        "en": "The marked block has several buttons for entering digits.",
+        "zh": "箭头所指的区域有多个按键，用于输入数字。"
+      },
+      "reason": "Der markierte Block hat mehrere Tasten, über die du Ziffern eingibst."
+    }
+  },
+  {
+    "id": "v93",
+    "de": "der Beistellschrank",
+    "plural": "die Beistellschränke",
+    "en": "side cabinet",
+    "zh": "边柜",
+    "pinyin": "biānguì",
+    "path": "wilson/original-paket-08/v93-beistellschrank.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "zuhause-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈbaɪ̯ʃtɛlˌʃʁaŋk/",
+      "context": {
+        "de": "Der kleine, niedrige Schrank neben dem Sessel bietet zusätzlichen Stauraum.",
+        "en": "The small low cabinet next to the armchair provides extra storage.",
+        "zh": "扶手椅旁的矮柜可以额外存放物品。"
+      },
+      "reason": "Der kleine, niedrige Schrank neben dem Sessel bietet zusätzlichen Stauraum."
+    }
+  },
+  {
+    "id": "v637",
+    "de": "der Küchenhocker",
+    "plural": "die Küchenhocker",
+    "en": "kitchen stool",
+    "zh": "厨房凳子",
+    "pinyin": "chúfáng dèngzi",
+    "path": "wilson/original-paket-08/v637-kuechenhocker.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "zuhause-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʏçn̩ˌhɔkɐ/",
+      "context": {
+        "de": "Der markierte Sitz am Küchentresen hat keine Rückenlehne.",
+        "en": "The marked seat at the kitchen counter has no backrest.",
+        "zh": "厨房台面旁箭头所指的凳子没有靠背。"
+      },
+      "reason": "Der markierte Sitz am Küchentresen hat keine Rückenlehne."
+    }
+  },
+  {
+    "id": "v1067",
+    "de": "die Sprechanlage",
+    "plural": "die Sprechanlagen",
+    "en": "intercom",
+    "zh": "对讲系统",
+    "pinyin": "duìjiǎng xìtǒng",
+    "path": "wilson/original-paket-08/v1067-sprechanlage.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "zuhause-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃpʁɛçʔanlaːɡə/",
+      "context": {
+        "de": "Über das Gerät neben der Haustür kannst du mit Besuchern sprechen, bevor du öffnest.",
+        "en": "Use the device next to the front door to speak to visitors before letting them in.",
+        "zh": "开门前，可以用大门旁的设备与访客对话。"
+      },
+      "reason": "Über das Gerät neben der Haustür kannst du mit Besuchern sprechen, bevor du öffnest."
+    }
+  },
+  {
+    "id": "v1184",
+    "de": "die Türschwelle",
+    "plural": "die Türschwellen",
+    "en": "doorstep; threshold",
+    "zh": "门槛",
+    "pinyin": "ménkǎn",
+    "path": "wilson/original-paket-08/v1184-tuerschwelle.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "zuhause-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtyːɐ̯ˌʃvɛlə/",
+      "context": {
+        "de": "Der markierte Übergang unten im Türrahmen ist die Stelle, über die du beim Hereinkommen steigst.",
+        "en": "The highlighted strip at the bottom of the doorway is what you step over when you enter.",
+        "zh": "箭头所指的是门框底部的一条凸起，进门时要跨过它。"
+      },
+      "reason": "Der markierte Übergang unten im Türrahmen ist die Stelle, über die du beim Hereinkommen steigst."
+    }
+  },
+  {
+    "id": "v1273",
+    "de": "die Wanduhr",
+    "plural": "die Wanduhren",
+    "en": "wall clock",
+    "zh": "挂钟",
+    "pinyin": "guàzhōng",
+    "path": "wilson/original-paket-08/v1273-wanduhr.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "zuhause-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvantˌʔuːɐ̯/",
+      "context": {
+        "de": "Die runde Uhr hängt an der Wand über dem Möbelstück.",
+        "en": "This round clock hangs on the wall above a piece of furniture.",
+        "zh": "这个圆形的钟挂在家具上方的墙上。"
+      },
+      "reason": "Die runde Uhr hängt an der Wand über dem Möbelstück."
+    }
+  },
+  {
+    "id": "v119",
+    "de": "das Bleichmittel",
+    "plural": "die Bleichmittel",
+    "en": "bleach",
+    "zh": "漂白剂",
+    "pinyin": "piǎobáijì",
+    "path": "wilson/original-paket-08/v119-bleichmittel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "waesche-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈblaɪ̯çˌmɪtl̩/",
+      "context": {
+        "de": "Mit dieser Flüssigkeit kann man Stoff aufhellen. Das Bild zeigt den Farbunterschied.",
+        "en": "This liquid can lighten fabric. The image shows the change in color.",
+        "zh": "这种液体能使布料颜色变浅，图中展示了颜色的变化。"
+      },
+      "reason": "Mit dieser Flüssigkeit kann man Stoff aufhellen. Das Bild zeigt den Farbunterschied."
+    }
+  },
+  {
+    "id": "v345",
+    "de": "der Fleckenentferner",
+    "plural": "die Fleckenentferner",
+    "en": "stain remover",
+    "zh": "去渍剂",
+    "pinyin": "qùzìjì",
+    "path": "wilson/original-paket-08/v345-fleckenentferner.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "waesche-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈflɛkn̩ʔɛntˌfɛʁnɐ/",
+      "context": {
+        "de": "Das Mittel aus der Sprühflasche löst gezielt Verunreinigungen wie den braunen Kaffeefleck.",
+        "en": "The product in the spray bottle targets marks such as the brown coffee stain.",
+        "zh": "这种喷雾用于去除污渍，例如布料上的棕色咖啡渍。"
+      },
+      "reason": "Das Mittel aus der Sprühflasche löst gezielt Verunreinigungen wie den braunen Kaffeefleck."
+    }
+  },
+  {
+    "id": "v1147",
+    "de": "der Teppichboden",
+    "plural": "die Teppichböden",
+    "en": "fitted carpet",
+    "zh": "满铺地毯",
+    "pinyin": "mǎnpū dìtǎn",
+    "path": "wilson/original-paket-08/v1147-teppichboden.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "waesche-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtɛpɪçˌboːdn̩/",
+      "context": {
+        "de": "Der markierte textile Belag bedeckt den Boden des Zimmers bis zu den Wänden.",
+        "en": "The highlighted textile covering extends across the room from wall to wall.",
+        "zh": "图中所指的地毯一直铺到房间四周的墙边。"
+      },
+      "reason": "Der markierte textile Belag bedeckt den Boden des Zimmers bis zu den Wänden."
+    }
+  },
+  {
+    "id": "v1298",
+    "de": "der WC-Reiniger",
+    "plural": "die WC-Reiniger",
+    "en": "toilet cleaner",
+    "zh": "洁厕剂",
+    "pinyin": "jiécèjì",
+    "path": "wilson/original-paket-08/v1298-wcreiniger.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "waesche-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/veːˈtseːˌʁaɪ̯nɪɡɐ/",
+      "context": {
+        "de": "Die Flasche mit dem gebogenen Hals bringt das Reinigungsmittel unter den Rand der Toilettenschüssel.",
+        "en": "The angled bottle applies the cleaning liquid underneath the toilet rim.",
+        "zh": "这瓶清洁剂的瓶颈是弯的，便于把清洁剂挤到马桶边缘下方。"
+      },
+      "reason": "Die Flasche mit dem gebogenen Hals bringt das Reinigungsmittel unter den Rand der Toilettenschüssel."
+    }
+  },
+  {
+    "id": "v1303",
+    "de": "der Weichspüler",
+    "plural": "die Weichspüler",
+    "en": "fabric softener",
+    "zh": "衣物柔顺剂",
+    "pinyin": "yīwù róushùnjì",
+    "path": "wilson/original-paket-08/v1303-weichspueler.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "waesche-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvaɪ̯çˌʃpyːlɐ/",
+      "context": {
+        "de": "Dieses flüssige Zusatzmittel kommt ins Spülfach und macht gewaschene Textilien weicher.",
+        "en": "This liquid goes in the rinse compartment to make washed fabrics feel softer.",
+        "zh": "这种液体倒进漂洗剂盒，可以让洗过的衣物变得更柔软。"
+      },
+      "reason": "Dieses flüssige Zusatzmittel kommt ins Spülfach und macht gewaschene Textilien weicher."
+    }
+  },
+  {
+    "id": "v56",
+    "de": "die Autobahn",
+    "plural": "die Autobahnen",
+    "en": "motorway",
+    "zh": "高速公路",
+    "pinyin": "gāosù gōnglù",
+    "path": "wilson/original-paket-08/v56-autobahn.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈaʊ̯tobaːn/",
+      "context": {
+        "de": "Die breite Fernstraße hat mehrere Fahrstreifen pro Richtung und einen Mittelstreifen zwischen den Fahrbahnen.",
+        "en": "This major road has several lanes in each direction and a median separating the two sides.",
+        "zh": "这条连接远距离地点的宽阔公路每个方向都有多条车道，中间有中央隔离带。"
+      },
+      "reason": "Die breite Fernstraße hat mehrere Fahrstreifen pro Richtung und einen Mittelstreifen zwischen den Fahrbahnen."
+    }
+  },
+  {
+    "id": "v83",
+    "de": "die Baustelle",
+    "plural": "die Baustellen",
+    "en": "building site",
+    "zh": "施工现场",
+    "pinyin": "shīgōng xiànchǎng",
+    "path": "wilson/original-paket-08/v83-baustelle.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈbaʊ̯ʃtɛlə/",
+      "context": {
+        "de": "Hinter der rot-weißen Absperrung gräbt ein Bagger direkt an der Straße.",
+        "en": "An excavator digs beside the road behind the red and white barrier.",
+        "zh": "红白相间的围栏后面，一台挖掘机正在路边挖土。"
+      },
+      "reason": "Hinter der rot-weißen Absperrung gräbt ein Bagger direkt an der Straße."
+    }
+  },
+  {
+    "id": "v414",
+    "de": "die Geschwindigkeitsbegrenzung",
+    "plural": "die Geschwindigkeitsbegrenzungen",
+    "en": "speed limit",
+    "zh": "限速",
+    "pinyin": "xiànsù",
+    "path": "wilson/original-paket-08/v414-geschwindigkeitsbegrenzung.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ɡəˈʃvɪndɪçkaɪ̯tsbəɡʁɛntsʊŋ/",
+      "context": {
+        "de": "Das runde Schild mit rotem Rand zeigt, wie schnell du hier höchstens fahren darfst.",
+        "en": "The round sign with a red border tells you the maximum permitted speed here.",
+        "zh": "红边圆形标志告诉你，这里允许的最高车速是多少。"
+      },
+      "reason": "Das runde Schild mit rotem Rand zeigt, wie schnell du hier höchstens fahren darfst."
+    }
+  },
+  {
+    "id": "v975",
+    "de": "der Schulbus",
+    "plural": "die Schulbusse",
+    "en": "school bus",
+    "zh": "校车",
+    "pinyin": "xiàochē",
+    "path": "wilson/original-paket-08/v975-schulbus.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃuːlbʊs/",
+      "context": {
+        "de": "An der Haltestelle vor der Schule steigen Kinder mit Rucksäcken in dieses Fahrzeug ein.",
+        "en": "Children wearing backpacks board this vehicle at the stop outside their school.",
+        "zh": "背着书包的孩子们在学校外的站点登上这辆车。"
+      },
+      "reason": "An der Haltestelle vor der Schule steigen Kinder mit Rucksäcken in dieses Fahrzeug ein."
+    }
+  },
+  {
+    "id": "v1080",
+    "de": "der Stau",
+    "plural": "die Staus",
+    "en": "traffic jam",
+    "zh": "交通堵塞",
+    "pinyin": "jiāotōng dǔsè",
+    "path": "wilson/original-paket-08/v1080-stau.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ʃtaʊ̯/",
+      "context": {
+        "de": "Viele Autos stehen dicht hintereinander. Der Verkehr kommt kaum voran.",
+        "en": "Many cars are queued bumper to bumper. Traffic is barely moving.",
+        "zh": "许多车一辆挨着一辆停着，车流几乎不动。"
+      },
+      "reason": "Viele Autos stehen dicht hintereinander. Der Verkehr kommt kaum voran."
+    }
+  },
+  {
+    "id": "v139",
+    "de": "die Brausetablette",
+    "plural": "die Brausetabletten",
+    "en": "effervescent tablet",
+    "zh": "泡腾片",
+    "pinyin": "pàoténgpiàn",
+    "path": "wilson/original-paket-08/v139-brausetablette.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "erste-hilfe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈbʁaʊ̯zətablɛtə/",
+      "context": {
+        "de": "Aus der runden Tablette steigen Bläschen auf, während sie sich im Wasserglas auflöst.",
+        "en": "Bubbles rise from the round tablet as it dissolves in the glass of water.",
+        "zh": "圆片在水杯中溶解时，不断冒出气泡。"
+      },
+      "reason": "Aus der runden Tablette steigen Bläschen auf, während sie sich im Wasserglas auflöst."
+    }
+  },
+  {
+    "id": "v333",
+    "de": "das Feuchttuch",
+    "plural": "die Feuchttücher",
+    "en": "wet wipe",
+    "zh": "湿巾",
+    "pinyin": "shījīn",
+    "path": "wilson/original-paket-08/v333-feuchttuch.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "erste-hilfe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈfɔʏ̯çttuːx/",
+      "context": {
+        "de": "Das weiche Tuch kommt feucht aus einem wiederverschließbaren Päckchen.",
+        "en": "The soft wipe comes moist from a resealable packet.",
+        "zh": "这种柔软的湿润纸巾通常从可重新封口的小包里抽出来。"
+      },
+      "reason": "Das weiche Tuch kommt feucht aus einem wiederverschließbaren Päckchen."
+    }
+  },
+  {
+    "id": "v749",
+    "de": "die Mullbinde",
+    "plural": "die Mullbinden",
+    "en": "gauze bandage",
+    "zh": "纱布绷带",
+    "pinyin": "shābù bēngdài",
+    "path": "wilson/original-paket-08/v749-mullbinde.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "erste-hilfe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈmʊlbɪndə/",
+      "context": {
+        "de": "Die aufgerollte Binde besteht aus dünnem, locker gewebtem Stoff.",
+        "en": "The rolled bandage is made of thin, loosely woven gauze.",
+        "zh": "这种卷成一卷的绷带由轻薄、织纹疏松的纱布做成。"
+      },
+      "reason": "Die aufgerollte Binde besteht aus dünnem, locker gewebtem Stoff."
+    }
+  },
+  {
+    "id": "v1215",
+    "de": "die Verbandschere",
+    "plural": "die Verbandscheren",
+    "en": "bandage scissors",
+    "zh": "绷带剪",
+    "pinyin": "bēngdàijiǎn",
+    "path": "wilson/original-paket-08/v1215-verbandschere.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "erste-hilfe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/fɛɐ̯ˈbantʃeːʁə/",
+      "context": {
+        "de": "Die abgewinkelte Schere hat unten eine abgerundete Spitze zum Schneiden von Verbandmaterial.",
+        "en": "These angled scissors have a rounded lower tip for cutting dressing material.",
+        "zh": "这种剪刀的刀头带弯，下刀片的圆头适合剪开包扎材料。"
+      },
+      "reason": "Die abgewinkelte Schere hat unten eine abgerundete Spitze zum Schneiden von Verbandmaterial."
+    }
+  },
+  {
+    "id": "v1216",
+    "de": "das Verbandszeug",
+    "plural": "—",
+    "en": "dressing materials",
+    "zh": "包扎用品",
+    "pinyin": "bāozā yòngpǐn",
+    "path": "wilson/original-paket-08/v1216-verbandszeug.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "erste-hilfe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/fɛɐ̯ˈbantstsɔɪ̯k/",
+      "context": {
+        "de": "Mullrollen, Kompressen und Pflaster liegen zusammen bereit, um Wunden zu versorgen.",
+        "en": "Gauze rolls, dressings and sticking plasters are laid out together for treating wounds.",
+        "zh": "纱布卷、敷料和创可贴放在一起，可以用来处理伤口。"
+      },
+      "reason": "Mullrollen, Kompressen und Pflaster liegen zusammen bereit, um Wunden zu versorgen."
+    }
+  },
+  {
+    "id": "v569",
+    "de": "der Keilabsatz",
+    "plural": "die Keilabsätze",
+    "en": "wedge heel",
+    "zh": "坡跟",
+    "pinyin": "pōgēn",
+    "path": "wilson/original-paket-08/v569-keilabsatz.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "schuhe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkaɪ̯lʔapzats/",
+      "context": {
+        "de": "Das markierte Stück unter dem Schuh wird nach hinten dicker und hebt die Ferse an.",
+        "en": "The highlighted wedge under the shoe gets thicker toward the back, raising the heel.",
+        "zh": "鞋底下方标出的楔形部分向后逐渐变厚，从而抬高脚跟。"
+      },
+      "reason": "Das markierte Stück unter dem Schuh wird nach hinten dicker und hebt die Ferse an."
+    }
+  },
+  {
+    "id": "v1046",
+    "de": "die Sohle",
+    "plural": "die Sohlen",
+    "en": "sole (shoe)",
+    "zh": "鞋底",
+    "pinyin": "xiédǐ",
+    "path": "wilson/original-paket-08/v1046-sohle.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "schuhe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈzoːlə/",
+      "context": {
+        "de": "Die markierte Unterseite des Schuhs berührt beim Gehen den Boden. Man erkennt ihr Profil.",
+        "en": "The highlighted underside touches the ground as you walk. Its tread is visible.",
+        "zh": "标出的鞋子底面在走路时接触地面，可以看到上面的防滑纹。"
+      },
+      "reason": "Die markierte Unterseite des Schuhs berührt beim Gehen den Boden. Man erkennt ihr Profil."
+    }
+  },
+  {
+    "id": "v1086",
+    "de": "die Stiefelette",
+    "plural": "die Stiefeletten",
+    "en": "ankle boot",
+    "zh": "短靴",
+    "pinyin": "duǎnxuē",
+    "path": "wilson/original-paket-08/v1086-stiefelette.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "schuhe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ʃtiːfəˈlɛtə/",
+      "context": {
+        "de": "Dieser kurze Stiefel reicht bis knapp über den Knöchel und hat hier einen kleinen Absatz.",
+        "en": "This short boot comes just above the ankle and has a small heel.",
+        "zh": "这种短靴的靴筒刚过脚踝，图中的靴子带有矮跟。"
+      },
+      "reason": "Dieser kurze Stiefel reicht bis knapp über den Knöchel und hat hier einen kleinen Absatz."
+    }
+  },
+  {
+    "id": "v1173",
+    "de": "die Trekkingsandale",
+    "plural": "die Trekkingsandalen",
+    "en": "hiking sandal",
+    "zh": "徒步凉鞋",
+    "pinyin": "túbù liángxié",
+    "path": "wilson/original-paket-08/v1173-trekkingsandale.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "schuhe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtʁɛkɪŋzandaːlə/",
+      "context": {
+        "de": "Die offene Sandale hat feste Riemen und eine griffige Sohle zum Wandern.",
+        "en": "This open sandal has strong straps and a grippy sole for hiking.",
+        "zh": "这种露趾凉鞋有结实的固定带和防滑鞋底，适合徒步。"
+      },
+      "reason": "Die offene Sandale hat feste Riemen und eine griffige Sohle zum Wandern."
+    }
+  },
+  {
+    "id": "v1272",
+    "de": "der Wanderstiefel",
+    "plural": "die Wanderstiefel",
+    "en": "hiking boot",
+    "zh": "登山靴",
+    "pinyin": "dēngshānxuē",
+    "path": "wilson/original-paket-08/v1272-wanderstiefel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "schuhe-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvandɐʃtiːfl̩/",
+      "context": {
+        "de": "Dieser feste Stiefel hat Schnürsenkel, einen hohen Schaft und ein grobes Profil für steinige Wege.",
+        "en": "This sturdy boot has laces, a high ankle and a deep tread for rocky trails.",
+        "zh": "这种结实的靴子有鞋带、高鞋帮和深鞋纹，适合走碎石路。"
+      },
+      "reason": "Dieser feste Stiefel hat Schnürsenkel, einen hohen Schaft und ein grobes Profil für steinige Wege."
+    }
+  },
+  {
+    "id": "v178",
+    "de": "die Clementine",
+    "plural": "die Clementinen",
+    "en": "clementine",
+    "zh": "克莱门氏小柑橘",
+    "pinyin": "kèláiménshì xiǎo gānjú",
+    "path": "wilson/original-paket-08/v178-clementine.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "markt-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/klemɛnˈtiːnə/",
+      "context": {
+        "de": "Die kleine, meist kernlose Zitrusfrucht lässt sich leicht schälen und in Spalten teilen.",
+        "en": "This small, usually seedless citrus fruit peels easily and separates into segments.",
+        "zh": "这种小柑橘通常没有籽，容易剥皮，也容易分成一瓣瓣。"
+      },
+      "reason": "Die kleine, meist kernlose Zitrusfrucht lässt sich leicht schälen und in Spalten teilen."
+    }
+  },
+  {
+    "id": "v351",
+    "de": "die Forelle",
+    "plural": "die Forellen",
+    "en": "trout",
+    "zh": "鳟鱼",
+    "pinyin": "zūnyú",
+    "path": "wilson/original-paket-08/v351-forelle.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "markt-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/foˈʁɛlə/",
+      "context": {
+        "de": "Der Fisch mit kleinen dunklen Punkten und rosa Seitenstreifen lebt in kühlen, sauerstoffreichen Gewässern.",
+        "en": "This fish with small dark spots and a pink stripe lives in cool, oxygen-rich water.",
+        "zh": "这种鱼身上有小黑点和粉红色侧带，生活在凉爽、富含氧气的水里。"
+      },
+      "reason": "Der Fisch mit kleinen dunklen Punkten und rosa Seitenstreifen lebt in kühlen, sauerstoffreichen Gewässern."
+    }
+  },
+  {
+    "id": "v512",
+    "de": "der Hummer",
+    "plural": "die Hummer",
+    "en": "lobster",
+    "zh": "龙虾",
+    "pinyin": "lóngxiā",
+    "path": "wilson/original-paket-08/v512-hummer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "markt-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhʊmɐ/",
+      "context": {
+        "de": "Das Meerestier hat zwei große Scheren, lange Fühler und einen fächerförmigen Schwanz.",
+        "en": "This sea animal has two large claws, long antennae and a fan-shaped tail.",
+        "zh": "这种海洋动物有两只大螯、长触须和扇形的尾巴。"
+      },
+      "reason": "Das Meerestier hat zwei große Scheren, lange Fühler und einen fächerförmigen Schwanz."
+    }
+  },
+  {
+    "id": "v629",
+    "de": "der Kräutertee",
+    "plural": "die Kräutertees",
+    "en": "herbal tea",
+    "zh": "花草茶",
+    "pinyin": "huācǎochá",
+    "path": "wilson/original-paket-08/v629-kraeutertee.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "markt-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʁɔɪ̯tɐˌteː/",
+      "context": {
+        "de": "Das Getränk entsteht, wenn du Kräuter wie Minze oder Kamille mit heißem Wasser aufgießt.",
+        "en": "Pour hot water over herbs such as mint or chamomile to make this drink.",
+        "zh": "用热水冲泡薄荷或洋甘菊等草本植物，就能泡出这种饮品。"
+      },
+      "reason": "Das Getränk entsteht, wenn du Kräuter wie Minze oder Kamille mit heißem Wasser aufgießt."
+    }
+  },
+  {
+    "id": "v511",
+    "de": "das Hühnerei",
+    "plural": "die Hühnereier",
+    "en": "hen's egg",
+    "zh": "鸡蛋",
+    "pinyin": "jīdàn",
+    "path": "wilson/original-paket-08/v511-huehnerei.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "markt-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhyːnɐˌʔaɪ̯/",
+      "context": {
+        "de": "Das markierte Ei stammt von einer Henne.",
+        "en": "The highlighted egg was laid by a hen.",
+        "zh": "标出来的这个蛋是母鸡下的。"
+      },
+      "reason": "Das markierte Ei stammt von einer Henne."
+    }
+  },
+  {
+    "id": "v252",
+    "de": "der Eilbrief",
+    "plural": "die Eilbriefe",
+    "en": "express letter",
+    "zh": "快递信件",
+    "pinyin": "kuàidì xìnjiàn",
+    "path": "wilson/original-paket-08/v252-eilbrief.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "post-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈaɪ̯lˌbʁiːf/",
+      "context": {
+        "de": "Dieser Brief soll möglichst schnell ankommen. Die Uhr steht für die besonders eilige Zustellung.",
+        "en": "This letter is sent for faster delivery. The clock stands for speed.",
+        "zh": "这封信需要尽快送到。时钟表示加急投递。"
+      },
+      "reason": "Dieser Brief soll möglichst schnell ankommen. Die Uhr steht für die besonders eilige Zustellung."
+    }
+  },
+  {
+    "id": "v274",
+    "de": "das Einschreiben",
+    "plural": "die Einschreiben",
+    "en": "registered letter",
+    "zh": "挂号信",
+    "pinyin": "guàhàoxìn",
+    "path": "wilson/original-paket-08/v274-einschreiben.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "post-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈaɪ̯nˌʃʁaɪ̯bn̩/",
+      "context": {
+        "de": "Für diese Briefform bekommst du einen Einlieferungsbeleg und kannst die Zustellung nachverfolgen.",
+        "en": "This type of letter comes with proof of posting and lets you track delivery.",
+        "zh": "寄这种信时会拿到寄件凭证，还能查询投递进度。"
+      },
+      "reason": "Für diese Briefform bekommst du einen Einlieferungsbeleg und kannst die Zustellung nachverfolgen."
+    }
+  },
+  {
+    "id": "v808",
+    "de": "das Päckchen",
+    "plural": "die Päckchen",
+    "en": "small parcel",
+    "zh": "小包裹",
+    "pinyin": "xiǎo bāoguǒ",
+    "path": "wilson/original-paket-08/v808-paeckchen.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "post-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈpɛkçən/",
+      "context": {
+        "de": "Das kleine, zugeklebte Paket ist für den Versand vorbereitet.",
+        "en": "This small sealed parcel is ready to be sent.",
+        "zh": "这个小包裹已经封好，准备寄出。"
+      },
+      "reason": "Das kleine, zugeklebte Paket ist für den Versand vorbereitet."
+    }
+  },
+  {
+    "id": "v840",
+    "de": "das Postfach",
+    "plural": "die Postfächer",
+    "en": "post office box",
+    "zh": "邮政信箱",
+    "pinyin": "yóuzhèng xìnxiāng",
+    "path": "wilson/original-paket-08/v840-postfach.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "post-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈpɔstˌfax/",
+      "context": {
+        "de": "Das nummerierte, abschließbare Fach in der Postfiliale sammelt Briefe für seinen Inhaber.",
+        "en": "The numbered, lockable box at the post office holds mail for its holder.",
+        "zh": "邮局里这个带号码、能上锁的格子用来存放租用者的信件。"
+      },
+      "reason": "Das nummerierte, abschließbare Fach in der Postfiliale sammelt Briefe für seinen Inhaber."
+    }
+  },
+  {
+    "id": "v841",
+    "de": "die Postleitzahl",
+    "plural": "die Postleitzahlen",
+    "en": "postcode",
+    "zh": "邮政编码",
+    "pinyin": "yóuzhèng biānmǎ",
+    "path": "wilson/original-paket-08/v841-postleitzahl.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "post-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈpɔstlaɪ̯tˌt͡saːl/",
+      "context": {
+        "de": "Die markierte fünfstellige Zahl steht in dieser deutschen Adresse direkt vor dem Ortsnamen.",
+        "en": "The highlighted five-digit number comes right before the town name in this German address.",
+        "zh": "在这个德国地址里，标出的五位数字就在地名之前。"
+      },
+      "reason": "Die markierte fünfstellige Zahl steht in dieser deutschen Adresse direkt vor dem Ortsnamen."
+    }
+  },
+  {
+    "id": "v266",
+    "de": "das Einfamilienhaus",
+    "plural": "die Einfamilienhäuser",
+    "en": "single-family house",
+    "zh": "单户住宅",
+    "pinyin": "dānhù zhùzhái",
+    "path": "wilson/original-paket-08/v266-einfamilienhaus.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "wohngebaeude-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈaɪ̯nfamiːli̯ənˌhaʊ̯s/",
+      "context": {
+        "de": "Dieses Haus hat eine einzige Wohneinheit.",
+        "en": "This house contains a single dwelling.",
+        "zh": "这栋房子里只有一个住宅单元。"
+      },
+      "reason": "Dieses Haus hat eine einzige Wohneinheit."
+    }
+  },
+  {
+    "id": "v708",
+    "de": "das Mehrfamilienhaus",
+    "plural": "die Mehrfamilienhäuser",
+    "en": "apartment building",
+    "zh": "多户住宅",
+    "pinyin": "duōhù zhùzhái",
+    "path": "wilson/original-paket-08/v708-mehrfamilienhaus.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "wohngebaeude-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈmeːɐ̯famiːli̯ənˌhaʊ̯s/",
+      "context": {
+        "de": "In diesem Wohnhaus gibt es mehrere getrennte Wohnungen.",
+        "en": "This apartment building contains several separate dwellings.",
+        "zh": "这栋住宅楼里有好几套独立的住房。"
+      },
+      "reason": "In diesem Wohnhaus gibt es mehrere getrennte Wohnungen."
+    }
+  },
+  {
+    "id": "v503",
+    "de": "der Hof",
+    "plural": "die Höfe",
+    "en": "courtyard",
+    "zh": "院子",
+    "pinyin": "yuànzi",
+    "path": "wilson/original-paket-08/v503-hof.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "wohngebaeude-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/hoːf/",
+      "context": {
+        "de": "Der Pfeil zeigt auf die gepflasterte Freifläche zwischen den Gebäuden.",
+        "en": "The arrow points to the paved open area between the buildings.",
+        "zh": "箭头指的是几栋建筑之间铺着石砖的空地。"
+      },
+      "reason": "Der Pfeil zeigt auf die gepflasterte Freifläche zwischen den Gebäuden."
+    }
+  },
+  {
+    "id": "v937",
+    "de": "der Schalter",
+    "plural": "die Schalter",
+    "en": "light switch",
+    "zh": "电灯开关",
+    "pinyin": "diàndēng kāiguān",
+    "path": "wilson/original-paket-08/v937-schalter.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "wohngebaeude-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃaltɐ/",
+      "context": {
+        "de": "Mit der markierten Wippe an der Wand schaltest du das Licht ein oder aus.",
+        "en": "Press the highlighted rocker on the wall to turn the light on or off.",
+        "zh": "按一下墙上标出的翘板，就能开灯或关灯。"
+      },
+      "reason": "Mit der markierten Wippe an der Wand schaltest du das Licht ein oder aus."
+    }
+  },
+  {
+    "id": "v1021",
+    "de": "die Sicherung",
+    "plural": "die Sicherungen",
+    "en": "fuse",
+    "zh": "保险丝",
+    "pinyin": "bǎoxiǎnsī",
+    "path": "wilson/original-paket-08/v1021-sicherung.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "wohngebaeude-08",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈzɪçəʁʊŋ/",
+      "context": {
+        "de": "Der dünne Draht im gezeigten Bauteil schmilzt bei zu viel Strom und unterbricht den Stromkreis.",
+        "en": "The thin wire inside this part melts when the current is too high, breaking the circuit.",
+        "zh": "电流过大时，这个零件里的细金属丝会熔断，切断电路。"
+      },
+      "reason": "Der dünne Draht im gezeigten Bauteil schmilzt bei zu viel Strom und unterbricht den Stromkreis."
+    }
   }
 ];
