@@ -1,0 +1,43 @@
+name: Comic reader on mobile
+on:
+  pull_request:
+    paths:
+      - 'comic*.html'
+      - 'comic*.js'
+      - 'comic*.json'
+      - 'comic*.css'
+      - 'comic/**'
+      - 'play-i18n.*'
+      - 'style.css'
+      - 'scripts/test-comic-mobile.cjs'
+      - '.github/workflows/comic-mobile.yml'
+permissions:
+  contents: read
+jobs:
+  reader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test the comic on a touch viewport
+        run: |
+          npm install --no-save --no-audit --no-fund --ignore-scripts --prefix "$RUNNER_TEMP/comic-test" playwright-core@1.56.1
+          export NODE_PATH="$RUNNER_TEMP/comic-test/node_modules"
+          export COMIC_SCREENSHOTS="$RUNNER_TEMP/comic-screenshots"
+          export CHROME="$(command -v google-chrome)"
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/comic-server.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          curl --retry 8 --retry-connrefused --retry-delay 1 --fail --silent --output /dev/null http://127.0.0.1:8765/comic.html
+          node scripts/test-comic-mobile.cjs
+      - name: Save the mobile screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: comic-mobile
+          path: ${{ runner.temp }}/comic-screenshots/*.png
+          retention-days: 7
+          if-no-files-found: ignore

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Bremsleuchte</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <ellipse cx="120" cy="146" rx="91" ry="7" fill="#dce7e7"/>
+  <path d="M43 86l18-32q7-10 23-10h72q16 0 23 10l18 32 8 12v31H35V98z" fill="#a9c0c9" stroke="#526e7a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M61 78l12-25h94l12 25z" fill="#dceef2" stroke="#678694" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="42" y="124" width="21" height="21" rx="4" fill="#485d68"/>
+  <rect x="177" y="124" width="21" height="21" rx="4" fill="#485d68"/>
+  <path d="M35 119h170m-132-34h94" fill="none" stroke="#6a8791" stroke-width="2"/>
+  <rect x="99" y="99" width="42" height="14" rx="3" fill="#eaf2ed" stroke="#75909a" stroke-width="2"/>
+  <path d="M43 94h34l-7 16H43zm154 0h-34l7 16h27z" fill="#e4584b" stroke="#91372c" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="100" y="71" width="40" height="6" rx="3" fill="#e4584b" stroke="#91372c" stroke-width="2"/>
+  <path d="M21 87l12 6m-12 9h11m-9 14 10-5m186-24-12 6m12 9h-11m9 14-10-5" fill="none" stroke="#d95748" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 25v34m-7-7 7 7 7-7" fill="none" stroke="#b64439" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

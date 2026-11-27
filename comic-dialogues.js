@@ -5,9 +5,9 @@ const deck=document.getElementById('dialogue-deck');
 if(!deck)return;
 const $=id=>document.getElementById(id);
 const locales={
- de:{head:"DIALOG & ÜBERSETZUNG",sub:"Originalgrafik auf Deutsch · mehrsprachige Lesefassung",chapter:"KAPITEL 01 · SEITE",source:"Originalsprache: Deutsch",verified:"Originaltext aus dem Bild übertragen",pilot:"Übersetzungen: redaktionelle Erstfassung",scene:"SZENENKONTEXT",pending:"Diese Seite wird noch übersetzt.",pendingNote:"Die Originalzeichnung ist vollständig lesbar. Sprechblasen werden vor einer Übersetzung sorgfältig aus dem Bild übertragen.",error:"Die Dialogdaten konnten nicht geladen werden.",errorNote:"Bitte die Seite neu laden. Das Originalcomic ist weiterhin verfügbar.",panel:"Panel",thought:"Gedanke",credit:"Die Comicbilder bleiben unverändert. Übersetzungen sind redaktionelle Lesefassungen, keine Bearbeitung der Originalgrafik.",gap:"Brückenseite"},
- en:{head:"DIALOGUE & TRANSLATION",sub:"Original German artwork · international reading edition",chapter:"CHAPTER 01 · PAGE",source:"Original language: German",verified:"Dialogue transcribed from original artwork",pilot:"Translations: initial editorial draft",scene:"SCENE CONTEXT",pending:"Translation for this page is coming.",pendingNote:"You can still read the original artwork. We transcribe every speech bubble before translating it.",error:"Dialogue data could not be loaded.",errorNote:"Please refresh. The original comic is still available.",panel:"Panel",thought:"Thought",credit:"The comic artwork remains unchanged. Translations are editorial reading editions, not modifications of the illustrations.",gap:"Transition page"},
- zh:{head:"对话与翻译",sub:"德语原版漫画 · 国际阅读版",chapter:"第一章 · 第",source:"原作语言：德语",verified:"对话已从原版画面校对转录",pilot:"译文：编辑初稿",scene:"场景简介",pending:"本页翻译正在制作中。",pendingNote:"你仍可阅读原版漫画。我们会先核对每个对话气泡，再进行翻译。",error:"无法加载对话数据。",errorNote:"请刷新页面。原版漫画仍可正常阅读。",panel:"分镜",thought:"心声",credit:"漫画原图保持不变。译文为编辑提供的阅读版本，不修改原作画面。",gap:"过渡页"}
+ de:{head:"DIALOG & ÜBERSETZUNG",sub:"Originalgrafik auf Deutsch · mehrsprachige Lesefassung",chapter:"KAPITEL 01 · SEITE",source:"Originalsprache: Deutsch",verified:"Originaltext aus dem Bild übertragen",pilot:"Übersetzungen: redaktionelle Erstfassung",scene:"SZENENKONTEXT",pending:"Diese Seite wird noch übersetzt.",pendingNote:"Die Originalzeichnung ist vollständig lesbar. Sprechblasen werden vor einer Übersetzung sorgfältig aus dem Bild übertragen.",error:"Die Dialogdaten konnten nicht geladen werden.",errorNote:"Bitte die Seite neu laden. Das Originalcomic ist weiterhin verfügbar.",panel:"Panel",thought:"Gedanke",credit:"Die Comicbilder bleiben unverändert. Übersetzungen sind redaktionelle Lesefassungen, keine Bearbeitung der Originalgrafik.",loading:"Dialogdaten werden geladen …"},
+ en:{head:"DIALOGUE & TRANSLATION",sub:"Original German artwork · international reading edition",chapter:"CHAPTER 01 · PAGE",source:"Original language: German",verified:"Dialogue transcribed from original artwork",pilot:"Translations: initial editorial draft",scene:"SCENE CONTEXT",pending:"Translation for this page is coming.",pendingNote:"You can still read the original artwork. We transcribe every speech bubble before translating it.",error:"Dialogue data could not be loaded.",errorNote:"Please refresh. The original comic is still available.",panel:"Panel",thought:"Thought",credit:"The comic artwork remains unchanged. Translations are editorial reading editions, not modifications of the illustrations.",loading:"Loading dialogue …"},
+ zh:{head:"对话与翻译",sub:"德语原版漫画 · 国际阅读版",chapter:"第一章 · 第",source:"原作语言：德语",verified:"对话已从原版画面校对转录",pilot:"译文：编辑初稿",scene:"场景简介",pending:"本页翻译正在制作中。",pendingNote:"你仍可阅读原版漫画。我们会先核对每个对话气泡，再进行翻译。",error:"无法加载对话数据。",errorNote:"请刷新页面。原版漫画仍可正常阅读。",panel:"分镜",thought:"心声",credit:"漫画原图保持不变。译文为编辑提供的阅读版本，不修改原作画面。",loading:"正在加载对话……"}
 };
 let content=null,page='01',language='de',failed=false;
 const getLang=()=>{const html=document.documentElement.lang.toLowerCase();return html.startsWith('zh')?'zh':html.startsWith('en')?'en':'de';};
@@ -26,7 +26,7 @@ function render(){
  const t=locales[language],id=page,pg=content?.pages?.[id];
  $('dd-head').textContent=t.head;
  $('dd-subtitle').textContent=t.sub;
- $('dd-page').textContent=t.chapter+' '+(id==='Lücke'?t.gap: id+(language==='zh'?'页':''));
+ $('dd-page').textContent=t.chapter+' '+id+(language==='zh'?'页':'');
  $('dd-original').textContent=t.source;
  $('dd-scene-label').textContent=t.scene;
  $('dd-credit').textContent=t.credit;
@@ -40,10 +40,11 @@ function render(){
  $('dd-lines').replaceChildren();
  const status=$('dd-status'),scene=$('dd-summary'),summaryText=$('dd-summary-text'),list=$('dd-lines');
  if(!pg||!pg.dialogues?.length){
-  status.textContent=failed?t.error:t.pending;
-  const message=el('li','dd-pending');
-  message.append(el('strong','',failed?t.error:t.pending),document.createTextNode(failed?t.errorNote:t.pendingNote));
-  list.append(message);
+  status.textContent = failed ? t.error : content ? t.pending : t.loading;
+  if (failed || content) {
+   const note = failed ? t.errorNote : t.pendingNote;
+   list.append(el('li','dd-pending',note));
+  }
   scene.hidden=true;
   return;
  }

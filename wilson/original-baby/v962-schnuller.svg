@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Schnuller</title>
+  <rect width="240" height="170" rx="16" fill="#f8f6ef"/>
+  <ellipse cx="124" cy="144" rx="87" ry="9" fill="#ede5db"/>
+  <path d="M83 72c-14 4-22 16-32 18-14 3-22-4-23-12-2-14 15-22 26-27 13-5 22-2 34 2Z" fill="#f0c178" stroke="#7f5b44" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M43 74c3-5 8-8 15-11" fill="none" stroke="#fff0c8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M103 34c15 3 17 20 31 25 14 5 26 2 32 12 7 12-3 27-16 29-12 2-18 2-25 13-7 10-22 20-36 12-13-8-8-21-7-31 2-12-10-26-7-40 2-12 14-22 28-20Z" fill="#91c7b5" stroke="#345f54" stroke-width="4.5"/>
+  <path d="M98 44c8 1 11 9 13 13m21 14c10 4 16 2 22 5" fill="none" stroke="#d9eee1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="96" cy="102" r="5" fill="#f8f6ef" stroke="#426f61" stroke-width="2.5"/>
+  <circle cx="151" cy="82" r="5" fill="#f8f6ef" stroke="#426f61" stroke-width="2.5"/>
+  <path d="M124 93c18-1 29-9 42-9 11 0 24 7 30 19 7 15-4 31-19 35-18 5-42-4-56-21-6-8-4-19 3-24Zm40 5c-12 1-25 8-30 9-2 1 2 6 5 9 11 8 24 13 34 10 8-2 12-10 9-16-3-7-10-12-18-12Z" fill="#e8988c" fill-rule="evenodd" stroke="#7e5050" stroke-width="4" stroke-linejoin="round"/>
+  <ellipse cx="119" cy="96" rx="12" ry="15" transform="rotate(-25 119 96)" fill="#abd9c7" stroke="#345f54" stroke-width="4"/>
+</svg>

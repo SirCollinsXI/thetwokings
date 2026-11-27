@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Babyschlafsack</title>
+  <rect width="240" height="170" rx="16" fill="#f5f8f4"/>
+  <ellipse cx="119" cy="148" rx="76" ry="8" fill="#e0e9e2"/>
+  <path d="M81 27l21-10c1 13 8 20 18 20s17-7 18-20l21 10c-5 17 0 36 9 43l14 49c4 15-4 26-18 28-24 5-67 5-90 0-14-2-21-13-17-28l15-49c8-8 13-26 9-43Z" fill="#85b9ac" stroke="#375f57" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M88 31l11-5c4 11 11 16 21 16s17-5 21-16l11 4m-77 54l-12 38c-4 14 3 20 15 22m83 0c11-2 19-8 15-20l-12-40" fill="none" stroke="#cce3d7" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4"/>
+  <path d="M121 44v95" fill="none" stroke="#3a615a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M115 54h12M115 64h12M115 74h12M115 84h12M115 94h12M115 104h12M115 114h12M115 124h12M115 134h12" fill="none" stroke="#e4eee5" stroke-width="2.3" stroke-linecap="round"/>
+  <rect x="116" y="43" width="10" height="16" rx="3" fill="#f3deae" stroke="#3a615a" stroke-width="2.7"/>
+  <path d="M99 88c-2 8 2 15 10 18-6 5-15 4-19-2-4-6-2-13 3-17 2-1 5-2 6 1Z" fill="#ffedbe" stroke="#6f6147" stroke-width="2.4"/>
+  <path d="M147 94l2 6 6 1-5 4 1 6-5-3-5 3 1-6-5-4 7-1Z" fill="#ffedbe" stroke="#6f6147" stroke-width="2.1" stroke-linejoin="round"/>
+</svg>

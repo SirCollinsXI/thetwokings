@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Babydecke</title>
+  <rect width="240" height="170" rx="16" fill="#faf7ef"/>
+  <ellipse cx="125" cy="148" rx="95" ry="8" fill="#e9e4da"/>
+  <g stroke="#687d78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M167 99l28 42m17-47-38 47" fill="none"/>
+    <path d="M205 95l13-35h11" fill="none"/>
+    <path d="M153 66c2-22 14-36 32-38 13-1 23 11 25 34l-57 4Z" fill="#d6e3db"/>
+    <path d="M146 72h72l-11 22c-4 7-10 11-18 11h-26c-9 0-15-6-17-14Z" fill="#d6e3db"/>
+    <circle cx="173" cy="142" r="8" fill="#f4f6ef"/>
+    <circle cx="197" cy="142" r="8" fill="#f4f6ef"/>
+  </g>
+  <path d="M34 40h97c12 0 19 9 19 19v57c0 13-10 22-22 22H43c-13 0-21-9-21-21V57c0-10 5-17 12-17Z" fill="#b9dbcb" stroke="#3c7065" stroke-width="4"/>
+  <path d="M39 48h88c10 0 14 6 14 15v47c0 8-5 15-13 15H43c-8 0-13-5-13-13V62c0-8 4-14 9-14Z" fill="none" stroke="#609789" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <path d="M114 138H44c-10 0-18-4-21-11 34-2 60-12 78-24 9-6 19-5 26 2 4 4 7 11 5 17-2 7-9 13-18 16Z" fill="#e8f2e7" stroke="#3c7065" stroke-width="3.5"/>
+  <path d="M81 58l3 9 10 1-7 6 2 10-8-6-8 5 2-9-7-7 10-1Z" fill="#fff4cc" stroke="#846b42" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M49 81l2 6 7 1-5 4 1 6-5-3-6 3 1-6-4-4 7-1Z" fill="#fff4cc" stroke="#846b42" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="108" cy="82" r="4" fill="#649285"/>
+</svg>

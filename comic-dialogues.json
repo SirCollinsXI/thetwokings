@@ -1,9 +1,64 @@
 {
   "schema_version": 1,
   "source_language": "de",
-  "last_reviewed": "2026-11-01",
-  "editorial_note": "Dialogues for page 01 transcribed from the source comic artwork. Translations are editorial drafts; other pages must be transcribed before publication.",
+  "last_reviewed": "2026-11-27",
+  "editorial_note": "Dialogue transcribed from the 16 illustrated pages of chapter 1. English and Simplified Chinese translations are editorial drafts.",
   "pages": {
+    "11": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Störtebeker zieht das Floß an den Strand. Während Sam es vertäut, steckt Piet unter einem Palmwedel fest. Sam hält den Wedel hoch. Piet sitzt auf seinem Knie, und zwischen den Palmen führt ein Weg zur Hütte.",
+        "en": "Störtebeker pulls the raft ashore. As Sam ties it up, Piet gets stuck under a palm frond. Sam holds the frond aloft. Piet perches on his knee as they look up the path to the hut.",
+        "zh": "斯特尔特贝克把木筏拉上沙滩。Sam 系好木筏时，Piet 被一片棕榈叶压住了。Sam 举起叶子，Piet 站在他的膝头。他们望向棕榈林间通往小屋的小路。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Endstation Sandstrand!",
+            "en": "Last stop, Sandy Beach!",
+            "zh": "终点站，沙滩！"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Das Floß sitzt fest.",
+            "en": "The raft’s all tied up.",
+            "zh": "这下木筏动不了了。"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Ich auch!",
+            "en": "So am I!",
+            "zh": "我也动不了了！"
+          }
+        }
+      ]
+    },
     "12": {
       "review_status": "source_transcribed",
       "summary": {
@@ -290,6 +345,311 @@
             "de": "Vorwärts zum Abendessen!",
             "en": "Onward to dinner!",
             "zh": "向晚餐进发！"
+          }
+        }
+      ]
+    },
+    "14": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam grillt Bananen am Lagerfeuer. Piet trinkt aus einer Kokosnusshälfte, und die drei Freunde genießen den Sonnenuntergang am Meer.",
+        "en": "Sam grills bananas over the campfire. Piet drinks from half a coconut, and the three friends watch the sun set over the sea.",
+        "zh": "Sam 在篝火上烤香蕉，Piet 捧着半个椰子喝了起来。三个朋友一边吃晚饭，一边看海上日落。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Jetzt aber Essen.",
+            "en": "Now let’s eat.",
+            "zh": "这下该吃饭啦。"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Endlich der wichtige Teil!",
+            "en": "Finally, the important part!",
+            "zh": "终于到最重要的环节了！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Gegrillte Bananen. Hoffentlich schmecken sie besser, als sie aussehen.",
+            "en": "Grilled bananas. I hope they taste better than they look.",
+            "zh": "烤香蕉。希望吃起来比看起来好。"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Sie riechen jedenfalls heldenhaft.",
+            "en": "They sure smell heroic.",
+            "zh": "反正闻起来挺有英雄气概的。"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Siehst du? Perfekter Vogelnapf.",
+            "en": "See? The perfect bowl for a bird.",
+            "zh": "看吧？正好给小鸟当碗。"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Luxus auf Piratenart.",
+            "en": "Pirate-style luxury.",
+            "zh": "这就是海盗的奢侈享受。"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Ohne Mampf kein Kampf!",
+            "en": "No food, no fight!",
+            "zh": "不吃饱哪有力气冒险！"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Das war heute dein bester Plan.",
+            "en": "That was your best plan today.",
+            "zh": "这是你今天出的最棒的主意。"
+          }
+        },
+        {
+          "id": 9,
+          "panel": 6,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Morgen ist wieder Abenteuer.",
+            "en": "More adventures tomorrow.",
+            "zh": "明天接着冒险。"
+          }
+        },
+        {
+          "id": 10,
+          "panel": 6,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Heute nur Abendessen.",
+            "en": "Tonight, just dinner.",
+            "zh": "今晚只管吃饭。"
+          }
+        }
+      ]
+    },
+    "15": {
+      "review_status": "source_transcribed",
+      "summary": {
+        "de": "Sam und Piet richten ihre Betten aus Palmenwedeln her. Sie wollen am nächsten Tag die Hütte erkunden. Zu dritt schlafen sie am Strand ein.",
+        "en": "Sam and Piet make beds from palm fronds. They’ll explore the hut tomorrow. All three friends fall asleep on the beach.",
+        "zh": "Sam 和 Piet 用棕榈叶铺好床，约好明天再去看看小木屋。三个朋友在沙滩上睡着了。"
+      },
+      "dialogues": [
+        {
+          "id": 1,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Noch ein paar Palmenwedel, dann haben wir Betten.",
+            "en": "A few more palm fronds and we’ll have beds.",
+            "zh": "再铺几片棕榈叶，我们就有床啦。"
+          }
+        },
+        {
+          "id": 2,
+          "panel": 1,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Meine Decke versucht mich zu fressen.",
+            "en": "My blanket’s trying to eat me.",
+            "zh": "我的被子要吃我！"
+          }
+        },
+        {
+          "id": 3,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Für heute reicht das völlig.",
+            "en": "This will do just fine for tonight.",
+            "zh": "今晚这样就挺好了。"
+          }
+        },
+        {
+          "id": 4,
+          "panel": 2,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Für mich ist das ein ganzes Haus.",
+            "en": "To me, it’s a whole house.",
+            "zh": "对我来说，这就是一整栋房子。"
+          }
+        },
+        {
+          "id": 5,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Morgen schauen wir uns die Hütte an.",
+            "en": "We’ll take a look at the hut tomorrow.",
+            "zh": "明天我们去看看那间小木屋。"
+          }
+        },
+        {
+          "id": 6,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Morgen. Heute bin ich fertig.",
+            "en": "Tomorrow. I’m worn out today.",
+            "zh": "明天吧。我今天累坏了。"
+          }
+        },
+        {
+          "id": 7,
+          "panel": 3,
+          "type": "speech",
+          "speaker": {
+            "de": "Störtebeker",
+            "en": "Störtebeker",
+            "zh": "斯特尔特贝克"
+          },
+          "text": {
+            "de": "Ich auch.",
+            "en": "Me too.",
+            "zh": "我也是。"
+          }
+        },
+        {
+          "id": 8,
+          "panel": 4,
+          "type": "speech",
+          "speaker": {
+            "de": "Piet",
+            "en": "Piet",
+            "zh": "Piet"
+          },
+          "text": {
+            "de": "Gute Nacht, Sam.",
+            "en": "Good night, Sam.",
+            "zh": "晚安，Sam。"
+          }
+        },
+        {
+          "id": 9,
+          "panel": 5,
+          "type": "speech",
+          "speaker": {
+            "de": "Sam",
+            "en": "Sam",
+            "zh": "Sam"
+          },
+          "text": {
+            "de": "Gute Nacht, Piet.",
+            "en": "Good night, Piet.",
+            "zh": "晚安，Piet。"
           }
         }
       ]

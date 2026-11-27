@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Ärmelloses Trägertop mit zwei schmalen Schulterträgern</title>
+  <rect width="240" height="170" rx="15" fill="#fbf2f5"/>
+  <ellipse cx="120" cy="150" rx="58" ry="8" fill="#f0dfe6"/>
+  <g stroke="#713c60" stroke-width="3" stroke-linejoin="round">
+    <path d="M86 66 83 35q-1-16 9-17t13 15l6 23-9 3-6-24q-1-7-4-6t0 8l3 26z" fill="#cc85a6"/>
+    <path d="m154 66 3-31q1-16-9-17t-13 15l-6 23 9 3 6-24q1-7 4-6t0 8l-3 26z" fill="#cc85a6"/>
+    <path d="M90 57q14-8 30 7 16-15 30-7l7 20q-12 15-8 36l10 26q-39 9-78 0l10-26q4-21-8-36z" fill="#c66f96"/>
+    <path d="M88 64q16-4 32 8 16-12 32-8m-68 69q35 8 72 0" fill="none" stroke="#ecb0ca" stroke-width="2.5"/>
+  </g>
+  <path d="M98 83q8 5 22 4 14 1 22-4m-42 41q20 5 40 0" fill="none" stroke="#9e557d" stroke-width="2" stroke-linecap="round"/>
+</svg>
