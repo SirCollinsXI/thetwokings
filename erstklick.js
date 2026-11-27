@@ -2,12 +2,17 @@
   'use strict';
 
   const languages = ['de', 'en', 'zh'];
-  const preferred = new URLSearchParams(location.search).get('lang') || navigator.language || 'de';
+  const params = new URLSearchParams(location.search);
+  const secondRound = params.get('runde') === '2';
+  const preferred = params.get('lang') || navigator.language || 'de';
   const short = preferred.toLowerCase().split('-')[0];
   const language = languages.includes(short) ? short : 'de';
   const words = {
     title: ['Eine Aufgabe für die Startseite', 'A task for the homepage', '一个首页小任务'],
     task: ['Du möchtest deutsche Wörter anhand von Bildern üben. Öffne auf der Startseite das passende Angebot.', 'You want to practise German words using pictures. Open the part of the homepage where you can do that.', '你想通过图片练习德语单词。请从首页进入可以这样练习的地方。'],
+    gamesTask: ['Du hast ein paar Minuten Zeit und möchtest direkt hier etwas spielen. Öffne ein Spiel, das du ausprobieren kannst.', 'You have a few minutes and feel like playing something right here. Open a game you can try.', '你有几分钟空闲，想直接在这里玩一会儿。请找一个现在就能玩的游戏并打开它。'],
+    comicTask: ['Du möchtest eine gezeichnete Geschichte lesen und darin blättern. Öffne sie auf der Startseite.', 'You’d like to read an illustrated story and turn its pages. Find and open one from the homepage.', '你想找个有图的故事，一页页往下读。请从首页找到并打开它。'],
+    pcTask: ['Du möchtest herausfinden, welches Teil deines PCs du zuerst aufrüsten solltest. Öffne das Angebot, das dir dabei hilft.', 'You want to work out which part of your PC to upgrade first. Open the part of the site that can help you decide.', '你想弄清楚自己的电脑应该先升级哪个部件。请从首页找到能帮你做决定的地方。'],
     how: ['Du kannst jederzeit aufhören. Dein Ergebnis siehst zuerst nur du. Du entscheidest, ob du es teilst.', 'You can stop at any time. Only you see your result unless you choose to share it.', '你可以随时结束。结果只有你自己能看到，你可以自行决定是否分享。'],
     start: ['Startseite öffnen', 'Open the homepage', '打开首页'],
     loading: ['Startseite wird geladen …', 'Loading the homepage…', '首页加载中…'],
@@ -33,11 +38,32 @@
     link: ['Link', 'Link', '链接'],
     noClick: ['Kein Klick', 'No click', '尚未点击'],
     wilson: ['Wilsons Trainingsecke', 'Wilson’s Learning Corner', 'Wilson 的德语学习角'],
+    bow: ['Wüstenbogen', 'Desert Archery', '沙漠射箭'],
+    pirate: ['Piratenjagd', 'Pirate Hunt', '海盗冒险'],
+    classicBow: ['Klassisches Bogenspiel', 'Classic archery', '经典射箭游戏'],
+    classicDino: ['Klassisches Dino-Spiel', 'Classic dinosaur game', '经典恐龙游戏'],
+    reader: ['Sam & Piet · Leseseiten', 'Sam & Piet · reader', 'Sam 与 Piet · 阅读页'],
+    workshop: ['PC-Werkstatt', 'PC Workshop', '电脑工作室'],
+    gameHub: ['Spieleklassiker', 'Classic games', '经典游戏'],
+    catalogue: ['Sams Comics · Übersicht', 'Sam’s comics · catalogue', 'Sam 的漫画目录'],
+    endedIn: ['In der Übersicht beendet', 'Stopped in the catalogue', '在目录页结束'],
+    goal: ['Ziel erreicht', 'Goal reached', '已到达目标'],
+    yes: ['Ja', 'Yes', '是'],
+    no: ['Nein', 'No', '否'],
+    undetermined: ['Offen', 'Undetermined', '未判定'],
+    version: ['Vorschauversion', 'Preview version', '预览版本'],
     other: ['Andere Seite', 'Another page', '其他页面'],
     stopped: ['Test beendet, bevor sich ein Angebot geöffnet hat.', 'Stopped before a destination opened.', '在打开目标页面之前结束了测试。'],
     unavailable: ['Seite konnte nicht bestätigt werden.', 'The page could not be verified.', '无法确认页面是否已打开。'],
   };
-  const t = key => words[key][languages.indexOf(language)];
+  const tasks = { A: 'gamesTask', B: 'comicTask', C: 'task', D: 'pcTask' };
+  const taskIds = Object.keys(tasks);
+  const requested = params.get('aufgabe');
+  let taskId = 'C';
+  if (secondRound) {
+    taskId = Object.hasOwn(tasks, requested) ? requested : taskIds[Math.floor(Math.random() * taskIds.length)];
+  }
+  const t = key => words[key === 'task' ? tasks[taskId] : key][languages.indexOf(language)];
   const byId = id => document.getElementById(id);
   document.documentElement.lang = language === 'zh' ? 'zh-Hans' : language;
   document.title = t('title') + ' · TheTwoKings';
@@ -49,6 +75,34 @@
   homepage.searchParams.set('lang', language);
   const route = url => url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/').replace(/\/$/, '');
   const trainer = route(new URL('wilson.html', location.href));
+  // Confirm an opened page using both its canonical path and an element unique to that page.
+  const destinationPages = [
+    ['wuestenbogen', 'A', '#gameCanvas', 'bow'],
+    ['piratenjagd', 'A', '#pirate-idea-link', 'pirate'],
+    ['bogen', 'A', '#gameCanvas', 'classicBow'],
+    ['trex', 'A', '#netType', 'classicDino'],
+    ['comic', 'B', '#page-frame #comic-page', 'reader'],
+    ['wilson', 'C', '#path-picker', 'wilson'],
+    ['werkstatt', 'D', '#upgrade-form', 'workshop'],
+    ['klassischer-game-hub', 'A', '#card-bogen', 'gameHub', true],
+    ['comics', 'B', '#sam-piet-volume', 'catalogue', true],
+  ];
+  const destinations = new Map(destinationPages.map(([slug, task, marker, label, catalogue]) =>
+    [route(new URL(slug + '.html', location.href)), { task, marker, label, catalogue }]));
+  if (secondRound) {
+    for (const link of document.querySelectorAll('nav a[hreflang]')) {
+      const url = new URL(link.href);
+      url.searchParams.set('runde', '2');
+      url.searchParams.set('aufgabe', taskId);
+      link.href = url.href;
+    }
+    if (requested !== taskId) {
+      const url = new URL(location.href);
+      url.searchParams.set('aufgabe', taskId);
+      history.replaceState(null, '', url.href);
+    }
+  }
+  const build = location.hostname.match(/^([0-9a-f]+)\.wuesten-bogen-app\.pages\.dev$/)?.[1];
   let run = null;
 
   function screen(id) {
@@ -88,16 +142,18 @@
     }
   }
 
-  function finish(outcome) {
+  function finish(outcome, goal = 'undetermined') {
     if (!run) return;
     const { frame, first, count } = run;
     run = null;
     frame.remove();
     byId('report').value = [
-      'TheTwoKings · T1 · ' + language.toUpperCase(),
+      'TheTwoKings · ' + (secondRound ? 'T2 · ' + taskId : 'T1') + ' · ' + language.toUpperCase(),
       t('first') + ' · ' + (first || t('noClick')),
       t('opened') + ' · ' + outcome,
+      ...(secondRound ? [t('goal') + ' · ' + t(goal)] : []),
       t('actions') + ' · ' + count,
+      ...(secondRound && build ? [t('version') + ' · ' + build] : []),
     ].join('\n');
     byId('copy-status').textContent = '';
     screen('results');
@@ -113,6 +169,8 @@
       const path = route(new URL(doc.URL));
       if (path === route(homepage) && doc.getElementById('projekte')) {
         doc.addEventListener('click', record, true);
+        run.catalogue = null;
+        run.destination = null;
         run.ready = true;
         byId('loading').hidden = true;
         frame.removeAttribute('aria-busy');
@@ -120,9 +178,22 @@
         return;
       }
       if (!run.ready) return finish(t('unavailable'));
-      if (path === trainer) return finish(t(doc.getElementById('path-picker') ? 'wilson' : 'unavailable'));
+      if (secondRound) {
+        const destination = destinations.get(path);
+        if (destination) {
+          if (!doc.querySelector(destination.marker)) return finish(t('unavailable'));
+          if (destination.catalogue && destination.task === taskId) {
+            run.catalogue = destination.label;
+            return;
+          }
+          return finish(t(destination.label), destination.task === taskId ? 'yes' : 'no');
+        }
+      } else if (path === trainer) {
+        return finish(t(doc.getElementById('path-picker') ? 'wilson' : 'unavailable'));
+      }
       const target = run.destination;
-      finish(target?.path === path ? t('other') + ' · ' + target.label : t('unavailable'));
+      if (target?.path === path) return finish(t('other') + ' · ' + target.label, 'no');
+      finish(t('unavailable'));
     } catch {
       finish(t('unavailable'));
     }
@@ -141,7 +212,10 @@
     screen('study');
     byId('study').append(frame);
   });
-  byId('stop').addEventListener('click', () => finish(t(run?.ready ? 'stopped' : 'beforeLoad')));
+  byId('stop').addEventListener('click', () => {
+    if (run?.catalogue) return finish(t('endedIn') + ' · ' + t(run.catalogue));
+    finish(t(run?.ready ? 'stopped' : 'beforeLoad'));
+  });
   byId('retry').addEventListener('click', () => {
     byId('report').value = '';
     screen('intro');

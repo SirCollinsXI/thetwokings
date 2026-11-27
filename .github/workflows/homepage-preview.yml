@@ -5,6 +5,7 @@ on:
       - 'index.html'
       - 'homepage-*'
       - 'i18n-home.js'
+      - 'erstklick.*'
       - 'spiele-*'
       - 'game-assets/thumbs/**'
       - 'scripts/test-homepage-preview.cjs'
@@ -44,7 +45,7 @@ jobs:
           done
           echo "Cloudflare has not reported a deployment for $HEAD_SHA"
           exit 1
-      - name: Open both homepages in Chromium
+      - name: Test both homepages and the first-click study in Chromium
         env:
           PREVIEW_URL: ${{ steps.pages.outputs.url }}
         run: |
