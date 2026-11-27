@@ -25816,5 +25816,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Im Laden stehen hier Milch und Joghurt griffbereit auf mehreren gekühlten Ebenen."
     }
+  },
+  {
+    "id": "v703",
+    "de": "der Mauszeiger",
+    "plural": "die Mauszeiger",
+    "en": "mouse pointer",
+    "zh": "鼠标指针",
+    "pinyin": "shǔbiāo zhǐzhēn",
+    "path": "wilson/original-digital/v703-mauszeiger.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "digital-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈmaʊ̯sˌt͡saɪ̯ɡɐ/",
+      "context": {
+        "de": "Das markierte Symbol bewegt sich auf dem Bildschirm, wenn du die Maus bewegst.",
+        "en": "The highlighted symbol moves on the screen when you move the mouse.",
+        "zh": "移动鼠标时，屏幕上标出的符号也会移动。"
+      },
+      "reason": "Das markierte Symbol bewegt sich auf dem Bildschirm, wenn du die Maus bewegst."
+    }
+  },
+  {
+    "id": "v996",
+    "de": "das Scrollrad",
+    "plural": "die Scrollräder",
+    "en": "scroll wheel",
+    "zh": "滚轮",
+    "pinyin": "gǔnlún",
+    "path": "wilson/original-digital/v996-scrollrad.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "digital-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈskʁɔlˌʁaːt/",
+      "context": {
+        "de": "Drehe das markierte Rädchen zwischen den Maustasten, um die Seite zu bewegen.",
+        "en": "Turn the highlighted wheel between the mouse buttons to move the page.",
+        "zh": "转动鼠标按键之间标出的小轮，就能滚动页面。"
+      },
+      "reason": "Drehe das markierte Rädchen zwischen den Maustasten, um die Seite zu bewegen."
+    }
+  },
+  {
+    "id": "v352",
+    "de": "der Fortschrittsbalken",
+    "plural": "die Fortschrittsbalken",
+    "en": "progress bar",
+    "zh": "进度条",
+    "pinyin": "jìndùtiáo",
+    "path": "wilson/original-digital/v352-fortschrittsbalken.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "digital-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈfɔʁtʃʁɪt͡sˌbalkn̩/",
+      "context": {
+        "de": "Die farbige Füllung zeigt, wie viel von einer Aufgabe bereits erledigt ist.",
+        "en": "The coloured fill shows how much of a task has been completed.",
+        "zh": "有颜色的填充部分表示任务已经完成了多少。"
+      },
+      "reason": "Die farbige Füllung zeigt, wie viel von einer Aufgabe bereits erledigt ist."
+    }
+  },
+  {
+    "id": "v1034",
+    "de": "die SIM-Karte",
+    "plural": "die SIM-Karten",
+    "en": "SIM card",
+    "zh": "手机卡",
+    "pinyin": "shǒujīkǎ",
+    "path": "wilson/original-digital/v1034-simkarte.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "digital-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈzɪmˌkaʁtə/",
+      "context": {
+        "de": "Diese kleine Karte mit abgeschrägter Ecke und goldenen Kontakten verbindet ein Handy mit dem Mobilfunknetz.",
+        "en": "This small card with a cut corner and gold contacts connects a phone to the mobile network.",
+        "zh": "这张带缺角和金色触点的小卡可以让手机接入移动网络。"
+      },
+      "reason": "Diese kleine Karte mit abgeschrägter Ecke und goldenen Kontakten verbindet ein Handy mit dem Mobilfunknetz."
+    }
+  },
+  {
+    "id": "v1207",
+    "de": "die USB-Schnittstelle",
+    "plural": "die USB-Schnittstellen",
+    "en": "USB port",
+    "zh": "USB接口",
+    "pinyin": "USB jiēkǒu",
+    "path": "wilson/original-digital/v1207-usbschnittstelle.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "digital-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/uːʔɛsˈbeːˌʃnɪtʃtɛlə/",
+      "context": {
+        "de": "Gesucht ist der markierte Anschluss am Computer. Die Form zeigt, wo der Stecker hineinpasst.",
+        "en": "Name the highlighted socket on the computer. Its shape shows where the plug fits.",
+        "zh": "请写出电脑上标出的接口名称。它的形状显示插头从哪里插入。"
+      },
+      "reason": "Gesucht ist der markierte Anschluss am Computer. Die Form zeigt, wo der Stecker hineinpasst."
+    }
   }
 ];

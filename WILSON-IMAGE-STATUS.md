@@ -7,8 +7,8 @@
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Aktueller Entwurf | 769 aktive Karten. 8 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
-| Nächste einzelne Aufgabe | Block 8 in der Vorschau prüfen und anschließend Block 9 integrieren. |
+| Aktueller Entwurf | 774 aktive Karten. 9 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Nächste einzelne Aufgabe | Block 9 in der Vorschau prüfen und anschließend Block 10 integrieren. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
 ## Ziel und Wortliste
@@ -113,6 +113,16 @@ Vorschau `664f3e7` am 27.11.2026 geprüft. Alle fünf Trainerlinks zeigen das ri
 | `v408` | der Geldschein · die Geldscheine | banknote | 纸币 |
 | `v1278` | das Warentransportband · die Warentransportbänder | checkout conveyor belt | 收银传送带 |
 | `v646` | das Kühlregal · die Kühlregale | refrigerated display cabinet | 冷藏货柜 |
+
+## Block 9 · Computer & Handy
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v703` | der Mauszeiger · die Mauszeiger | mouse pointer | 鼠标指针 |
+| `v996` | das Scrollrad · die Scrollräder | scroll wheel | 滚轮 |
+| `v352` | der Fortschrittsbalken · die Fortschrittsbalken | progress bar | 进度条 |
+| `v1034` | die SIM-Karte · die SIM-Karten | SIM card | 手机卡 |
+| `v1207` | die USB-Schnittstelle · die USB-Schnittstellen | USB port | USB接口 |
 
 **Wiedereinstieg am 27.11.2026.** Der Screenshot zu Paket 06 zeigt nach 3:19 Minuten die Meldung zur maximalen Gesprächslänge. PR #18 enthielt bereits alle 50 Wort-IDs und zehn Zeichnungen. Die Integration der fünf Babykarten war lokal vollständig auffindbar. Es mussten keine Karten neu erstellt werden. Als Erstes wurden die bestehenden Tests und der reproduzierbare Offline-Build geprüft.
 
