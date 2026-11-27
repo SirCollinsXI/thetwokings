@@ -1,0 +1,45 @@
+.saga {
+  width: min(calc(100% - 32px), 840px);
+  margin: 0 auto;
+  padding: clamp(32px, 7vw, 74px) 0 80px;
+}
+.saga h1, .saga h2, .saga h3, .saga figure { margin: 0; }
+.saga h1 { font-size: clamp(2.2rem, 8vw, 4.2rem); line-height: 1.04; letter-spacing: -.04em; }
+.saga p { color: var(--muted); line-height: 1.55; }
+.saga .saga-kicker { margin: 0 0 9px; color: var(--lime); }
+.saga .saga-subtitle { margin: 6px 0 14px; font-size: clamp(1.3rem, 4vw, 2rem); color: var(--ink); }
+.saga-controls {
+  display: grid;
+  grid-template-columns: 48px minmax(0,1fr) 48px;
+  gap: 8px;
+  background: var(--bg);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.saga-controls button, .saga-controls select {
+  min-width: 0;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  margin: 0;
+  padding: 0 9px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+}
+.saga-controls button { color: var(--lime); font-size: 1.2rem; cursor: pointer; }
+.saga-controls button:disabled { opacity: .45; cursor: default; }
+.saga figure { scroll-margin-top: 66px; }
+#saga-viewport { scroll-margin-top: 66px; overflow-x: auto; overscroll-behavior-x: contain; background: var(--panel); }
+#saga-zoom { width: 100%; display: block; padding: 0; margin: 0; background: transparent; border: 0; border-radius: 0; cursor: zoom-in; }
+#saga-zoom[aria-pressed="true"] { width: clamp(100%, 1024px, 320%); cursor: zoom-out; }
+#saga-zoom img { display: block; width: 100%; height: auto; }
+.saga :is(a,button,select):focus-visible { outline: 2px solid var(--lime); outline-offset: -3px; }
+.saga figcaption { margin-top: 8px; font-weight: 650; }
+.saga-help { margin: 4px 0 24px; font-size: .9rem; }
+.saga-contents { display: block; font-size: 1rem; margin-top: 32px; border-top: 1px solid var(--line); padding-top: 24px; }
+.saga-contents > div { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px 32px; margin-top: 20px; }
+.saga-contents ol { padding-left: 1.8em; margin: 6px 0 0; color: var(--muted); }
+.saga-contents a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }

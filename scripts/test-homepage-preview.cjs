@@ -38,6 +38,7 @@ async function testStudy(browser) {
     ['A', 'de', ['#navigation a[href="#spiele"]', '#wuestenbogen-play'], 'Ziel erreicht · Ja'],
     ['A', 'zh', ['#piratenjagd-play'], '是否达成目标 · 是'],
     ['A', 'en', ['.earlier-games', '#card-bogen'], 'Goal reached · Yes'],
+    ['B', 'en', ['#comics .archive-entry', 'a[href*="monster-saga"].button'], 'Goal reached · Yes'],
     ['B', 'zh', ['#comics .project-link'], '是否达成目标 · 是'],
     ['C', 'en', ['#projekte a[data-link-language="home-only"]'], 'Goal reached · Yes'],
     ['D', 'de', ['#werkstatt [data-copy="pcOpen"]'], 'Ziel erreicht · Ja'],

@@ -25,12 +25,12 @@ const copy = {
   areaWorkshopHint: ['PC-Werkstatt und KingLab', 'PC Workshop and KingLab', '电脑工作室和 KingLab'],
   prototype: ['Prototyp', 'Prototype', '原型'],
   comicText: [
-    'Lies das erste Kapitel von Sam & Piet oder blättere durch Sams frühe Geschichten und Zeichnungen.',
-    'Read the first chapter of Sam & Piet or browse Sam’s early stories and drawings.',
-    '阅读《Sam 与 Piet》的第一章，也可以翻看 Sam 早期创作的故事和画稿。',
+    'Lies Sam & Piet, entdecke die Monster-Saga oder blättere durch Sams frühe Entwürfe.',
+    'Read Sam & Piet, discover the Monster Saga or browse Sam’s early drafts.',
+    '阅读《Sam 与 Piet》，探索《怪物传奇》，也可以翻看 Sam 早期的漫画草稿。',
   ],
   read: ['Sam & Piet lesen', 'Read Sam & Piet', '阅读《Sam 与 Piet》'],
-  comicArchive: ['Sams erste Comic-Ideen entdecken', 'Discover Sam’s early comic ideas', '看看 Sam 最早的漫画创意'],
+  comicArchive: ['Alle Comics entdecken', 'Explore all comics', '浏览全部漫画'],
   wilsonText: [
     'Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.',
     'Practise German words, articles and plurals through pictures.',
