@@ -1,11 +1,11 @@
 'use strict';
 
 const copy = {
+  ...homepageGamesCopy,
   title: ['TheTwoKings | Startseiten-Vorschau', 'TheTwoKings | Homepage preview', 'TheTwoKings｜首页预览'],
   skip: ['Zum Inhalt', 'Skip to content', '跳转到正文'],
   nav: ['Hauptnavigation', 'Main navigation', '主导航'],
   language: ['Sprache', 'Language', '语言'],
-  game: ['Das Wehr & Samis Dino-Insel', 'Das Wehr & Sami’s Dino Island', '水坝与 Sami 的恐龙岛'],
   comics: ['Sams Comics', 'Sam’s comics', 'Sam 的漫画'],
   wilson: ['Wilsons Trainingsecke', 'Wilson’s Learning Corner', 'Wilson 的德语学习角'],
   preview: ['Startseiten-Vorschau', 'Homepage preview', '首页预览'],
@@ -25,16 +25,6 @@ const copy = {
   areaLearnHint: ['Deutsch mit Bildkarten üben ↗', 'Practise German with picture cards ↗', '看图学德语 ↗'],
   areaWorkshopHint: ['PC-Werkstatt und KingLab', 'PC Workshop and KingLab', '电脑工作室和 KingLab'],
   prototype: ['Prototyp', 'Prototype', '原型'],
-  gameText: [
-    'Fahre mit der Wehrfähre zur Dino-Insel, baue mit Holz und erkunde auf der Vulkaninsel den Weg zur Eisenhöhle.',
-    'Take the ferry to Dino Island, build with timber and explore the route to the iron cave on Volcano Island.',
-    '乘水坝渡船前往恐龙岛，用木材搭建，并在火山岛探索通往铁矿洞的道路。',
-  ],
-  gameNext: [
-    'Vor der Webfreigabe: Browserexport erstellen, Ladezeit, Steuerung, Ton und Speichern testen und die Rechte an den Spielinhalten klären.',
-    'Before the web release: export the web build, test loading, controls, audio and saves, and clear the rights to the game assets.',
-    '网页版发布前：导出网页版本，测试加载时间、操作、声音和存档，并确认游戏素材的使用权。',
-  ],
   comicText: [
     'Lies die veröffentlichte Leseprobe von Sam & Piet.',
     'Read the published preview of Sam & Piet.',
@@ -52,13 +42,7 @@ const copy = {
     '看图练习德语单词、冠词和复数形式。',
   ],
   learn: ['Bildtrainer öffnen', 'Open picture trainer', '打开看图练习'],
-  games: ['Sams Spielecke', 'Sam’s Games Corner', 'Sam 的游戏角'],
-  browserGames: ['Diese Spiele kannst du direkt im Browser öffnen.', 'Open these games directly in your browser.', '这些游戏可以直接在浏览器中打开。'],
-  gameVersion: ['Windows-Prototyp · V30', 'Windows prototype · V30', 'Windows 原型 · V30'],
   workshop: ['Werkstatt & Experimente', 'Workshop & experiments', '工作室与实验'],
-  archery: ['Wüstenbogen', 'Desert Archery', '沙漠射箭'],
-  pirates: ['Piratenjagd (Testszene)', 'Pirate Hunt (demo)', '海盗冒险（试玩）'],
-  classics: ['Klassische Spiele', 'Classic games', '经典游戏'],
   pc: ['PC-Werkstatt', 'PC Workshop', '电脑工作室'],
   pcNow: [
     'Importiere dein Hardwareprofil lokal und prüfe, welcher Upgrade-Schritt sich für dich lohnt.',

@@ -8,6 +8,8 @@
   <link rel="icon" href="crown.svg">
   <link rel="stylesheet" href="homepage-preview.css">
   <link rel="stylesheet" href="wilson-entry.css">
+  <link rel="stylesheet" href="spiele-start.css">
+  <script src="spiele-texte.js" defer></script>
   <script src="homepage-preview.js" defer></script>
   <script src="spuren-store.js" defer></script>
   <script src="homepage-spuren.js" defer></script>
@@ -43,24 +45,34 @@
           <li><a href="#werkstatt"><strong data-copy="areaWorkshop">Werkstatt</strong><span data-copy="areaWorkshopHint">PC-Werkstatt und KingLab</span></a></li>
         </ul>
       </nav>
-      <section id="spiele" class="game-hub" tabindex="-1" aria-labelledby="games-title">
-        <h2 id="games-title" data-copy="games">Sams Spielecke</h2>
-        <a class="trace-entry" href="#spuren" data-trace-context="spiele" data-copy="traceOpen">Spur hinterlassen</a>
-        <p data-copy="browserGames">Diese Spiele kannst du direkt im Browser öffnen.</p>
-        <ul class="more-links" role="list">
-          <li><a href="wuestenbogen.html" data-link-language="project" data-copy="archery">Wüstenbogen</a></li>
-          <li><a href="piratenjagd.html" data-link-language="project" data-copy="pirates">Piratenjagd (Testszene)</a></li>
-          <li><a href="klassischer-game-hub.html" data-link-language="project" data-copy="classics">Klassische Spiele</a></li>
+      <section id="spiele" class="game-hub home-games" tabindex="-1" aria-labelledby="games-title">
+        <h2 id="games-title" data-copy="gamesHome">Sams Spielecke</h2>
+        <p class="games-availability" data-copy="playNow">Jetzt im Browser spielen</p>
+        <ul class="playable-games" role="list">
+          <li><a href="wuestenbogen.html" data-link-language="project" aria-labelledby="wuestenbogen-play" aria-describedby="wuestenbogen-hint">
+            <img src="game-assets/thumbs/wuestenbogen.webp" width="624" height="264" loading="lazy" alt="">
+            <span class="game-choice">
+              <strong id="wuestenbogen-play" data-copy="bowPlay">Wüstenbogen spielen</strong>
+              <span id="wuestenbogen-hint" data-copy="bowHint">Ziele mit Maus, Finger oder Pfeiltasten. Lande in jeder der drei Runden drei Treffer.</span>
+            </span>
+          </a></li>
+          <li><a href="piratenjagd.html" data-link-language="project" aria-labelledby="piratenjagd-play" aria-describedby="piratenjagd-hint">
+            <img src="game-assets/thumbs/piratenjagd.webp" width="624" height="264" loading="lazy" alt="">
+            <span class="game-choice">
+              <strong id="piratenjagd-play" data-copy="piratePlay">Piratenjagd spielen</strong>
+              <span id="piratenjagd-hint" data-copy="pirateHint">Fange den Dino dreimal auf dem Piratendeck. Tippe auf ein Netz oder drücke 1 bis 5. Spielbare Testszene.</span>
+            </span>
+          </a></li>
         </ul>
-        <article id="wehr" class="project game" tabindex="-1" aria-labelledby="wehr-title">
-          <div class="terrain" aria-hidden="true"><span></span></div>
-          <div class="card">
-            <p class="status" data-copy="gameVersion">Windows-Prototyp · V30</p>
-            <h3 id="wehr-title" data-copy="game">Das Wehr &amp; Samis Dino-Insel</h3>
-            <p data-copy="gameText">Fahre mit der Wehrfähre zur Dino-Insel, baue mit Holz und erkunde auf der Vulkaninsel den Weg zur Eisenhöhle.</p>
-            <p class="next" data-copy="gameNext">Vor der Webfreigabe: Browserexport erstellen, Ladezeit, Steuerung, Ton und Speichern testen und die Rechte an den Spielinhalten klären.</p>
-          </div>
+        <a class="earlier-games" href="klassischer-game-hub.html" data-link-language="project" data-copy="earlierGames">Klassiker öffnen · frühere Fassungen beider Spiele</a>
+        <article id="wehr" class="upcoming-game" tabindex="-1" aria-labelledby="wehr-title">
+          <p class="development-status" data-copy="wehrState">In Entwicklung · Windows-Prototyp</p>
+          <h3 id="wehr-title" data-copy="wehrTitle">Das Wehr &amp; Samis Dino-Insel</h3>
+          <p data-copy="wehrAbout">An der Waldgabel findest du den Weg zur Fähre. An der Werkbank auf der Vulkaninsel kannst du die Spitzhacke ausbauen.</p>
+          <p data-copy="wehrWeb">Eine Browserfreigabe setzt das fertige Spiel, einen getesteten Godot-Webexport und geklärte Rechte an den Spielinhalten voraus.</p>
+          <p class="build-date" data-copy="wehrBuild">Stand für die Homepage · V39 · 27. November 2026</p>
         </article>
+        <a class="trace-entry" href="#spuren" data-trace-context="spiele" data-copy="traceOpen">Spur hinterlassen</a>
       </section>
       <div class="pair">
         <section id="comics" class="project" tabindex="-1" aria-labelledby="comics-title">

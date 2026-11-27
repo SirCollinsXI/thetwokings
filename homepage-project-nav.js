@@ -4,7 +4,7 @@
   const entry = new URLSearchParams(location.search);
   const script = document.currentScript;
   const section = script.dataset.section;
-  const rootEntry = section === 'lernen' && entry.get('from') === 'homepage';
+  const rootEntry = ['lernen', 'spiele'].includes(section) && entry.get('from') === 'homepage';
   if (!rootEntry && entry.get('from') !== 'homepage-preview') return;
   const home = new URL(rootEntry ? 'index.html' : 'homepage-preview.html', script.src);
   const root = new URL('.', script.src);

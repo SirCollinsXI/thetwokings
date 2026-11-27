@@ -8,7 +8,8 @@
     ['Deutsch mit Bildkarten', 'German with picture cards', '看图学德语'],
     ['Schau dir ein Bild an und übe das deutsche Wort mit Artikel und Plural.', 'Look at a picture and practise the German word with its article and plural.', '看图练习德语单词、冠词和复数形式。']
   );
-  const wilsonLinks = document.querySelectorAll('[data-wilson-entry]');
+  entries.push(...Object.values(homepageGamesCopy));
+  const projectLinks = document.querySelectorAll('[data-wilson-entry], [data-game-entry]');
   const dict = new Map(entries.map(([de,en,zh]) => [de, {de,en,zh}]));
   const originalText = new WeakMap();
   const lastText = new WeakMap();
@@ -77,10 +78,10 @@
         }
       }
       document.documentElement.lang=language==='zh'?'zh-CN':language;
-      for (const link of wilsonLinks) {
+      for (const link of projectLinks) {
         const target = new URL(link.href);
         target.searchParams.set('from', 'homepage');
-        target.searchParams.set('homeLang', language);
+        target.searchParams.set(link.hasAttribute('data-wilson-entry') ? 'homeLang' : 'lang', language);
         link.href = target.href;
       }
       document.title=translate('TheTwoKings — Geschichten. Spiele. Technik.',language);
