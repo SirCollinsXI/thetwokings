@@ -26096,5 +26096,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Am markierten Gerät hängt ein Schlauch mit Griff, über den Kraftstoff in den Tank fließt."
     }
+  },
+  {
+    "id": "v3",
+    "de": "die Abdeckfolie",
+    "plural": "die Abdeckfolien",
+    "en": "protective sheeting",
+    "zh": "防护薄膜",
+    "pinyin": "fánghù bómó",
+    "path": "wilson/original-paket-07/v3-abdeckfolie.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈapdɛkˌfoːli̯ə/",
+      "context": {
+        "de": "Die durchsichtige Bahn schützt Möbel beim Streichen.",
+        "en": "The clear sheet protects furniture while you paint.",
+        "zh": "刷墙时，用这张透明薄膜盖住家具。"
+      },
+      "reason": "Die durchsichtige Bahn schützt Möbel beim Streichen."
+    }
+  },
+  {
+    "id": "v21",
+    "de": "der Akkubohrer",
+    "plural": "die Akkubohrer",
+    "en": "cordless drill",
+    "zh": "充电式电钻",
+    "pinyin": "chōngdiànshì diànzuàn",
+    "path": "wilson/original-paket-07/v21-akkubohrer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈakuˌboːʁɐ/",
+      "context": {
+        "de": "Unter dem Griff sitzt ein abnehmbarer Akku. Vorn ist ein Bohrer eingespannt.",
+        "en": "A removable battery sits under the handle, and a drill bit fits into the chuck.",
+        "zh": "手柄下有可拆卸电池，前端夹着钻头。"
+      },
+      "reason": "Unter dem Griff sitzt ein abnehmbarer Akku. Vorn ist ein Bohrer eingespannt."
+    }
+  },
+  {
+    "id": "v506",
+    "de": "der Holzboden",
+    "plural": "die Holzböden",
+    "en": "wooden floor",
+    "zh": "木地板",
+    "pinyin": "mùdìbǎn",
+    "path": "wilson/original-paket-07/v506-holzboden.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhɔlt͡sˌboːdn̩/",
+      "context": {
+        "de": "Die Dielen mit sichtbarer Maserung bilden die markierte Fläche unter den Füßen.",
+        "en": "The highlighted surface underfoot is made of planks with visible wood grain.",
+        "zh": "脚下标出的平面由带木纹的长木板铺成。"
+      },
+      "reason": "Die Dielen mit sichtbarer Maserung bilden die markierte Fläche unter den Füßen."
+    }
+  },
+  {
+    "id": "v1058",
+    "de": "die Spachtelmasse",
+    "plural": "die Spachtelmassen",
+    "en": "filler",
+    "zh": "腻子",
+    "pinyin": "nìzi",
+    "path": "wilson/original-paket-07/v1058-spachtelmasse.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃpaxtl̩ˌmasə/",
+      "context": {
+        "de": "Mit der Kelle drückst du diese Masse in ein Loch in der Wand.",
+        "en": "Use the putty knife to press this paste into a hole in the wall.",
+        "zh": "用刮刀把这种膏状材料填进墙洞里。"
+      },
+      "reason": "Mit der Kelle drückst du diese Masse in ein Loch in der Wand."
+    }
+  },
+  {
+    "id": "v1130",
+    "de": "der Tapeziertisch",
+    "plural": "die Tapeziertische",
+    "en": "wallpaper pasting table",
+    "zh": "壁纸施工桌",
+    "pinyin": "bìzhǐ shīgōngzhuō",
+    "path": "wilson/original-paket-07/v1130-tapeziertisch.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/taˈpeːɐ̯t͡siːɐ̯ˌtɪʃ/",
+      "context": {
+        "de": "Auf dem langen Klapptisch liegt eine Tapetenbahn zum Einkleistern.",
+        "en": "A strip of wallpaper lies on the long folding table ready for paste.",
+        "zh": "这张狭长的折叠桌上铺着一条准备刷胶的墙纸。"
+      },
+      "reason": "Auf dem langen Klapptisch liegt eine Tapetenbahn zum Einkleistern."
+    }
   }
 ];

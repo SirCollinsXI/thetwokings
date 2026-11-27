@@ -1,6 +1,27 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 06 live mit 779 Bildkarten
+## Hier fortsetzen · Paket 07 mit 784 Bildkarten im Entwurf
+
+| Stand | Nachweis |
+| --- | --- |
+| Hauptdomain | 779 aktive Bildkarten im Browser bestätigt. [Live-Galerie](https://thetwokings.de/wilson-image-review) |
+| Paket 07 | 5 zusätzliche Wörter mit eigenem SVG. 1 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Nächste Prüfung | Weitere Fünferblöcke ergänzen und einzeln prüfen. |
+| Noch offen | Hörbare Ausgabe auf iOS und Android. |
+
+## Paket 07 · Wortformen und Übersetzungen
+
+| Thema | ID | Singular | Plural | Englisch | 简体中文 |
+| --- | --- | --- | --- | --- | --- |
+| Heimwerken | v3 | die Abdeckfolie | die Abdeckfolien | protective sheeting | 防护薄膜 |
+| Heimwerken | v21 | der Akkubohrer | die Akkubohrer | cordless drill | 充电式电钻 |
+| Heimwerken | v506 | der Holzboden | die Holzböden | wooden floor | 木地板 |
+| Heimwerken | v1058 | die Spachtelmasse | die Spachtelmassen | filler | 腻子 |
+| Heimwerken | v1130 | der Tapeziertisch | die Tapeziertische | wallpaper pasting table | 壁纸施工桌 |
+
+## Paket 06 und frühere Stände
+
+### Paket 06 live mit 779 Bildkarten
 
 | Stand | Nachweis |
 | --- | --- |
