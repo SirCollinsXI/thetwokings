@@ -31,7 +31,7 @@ const site = 'https://thetwokings.de';
     await page.goto(site+'/wilson?lang=de');
     const title=page.locator('h1[data-t="cornerTitle"]');await title.waitFor();
     assert((await title.innerText()).includes('Wilson'));
-    assert.equal(await page.locator('.language-labels b').first().evaluate(el=>getComputedStyle(el).color),'rgb(246, 216, 136)');
+    assert.equal(await page.locator('.language-labels b').first().evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(246, 216, 136)');
     await page.goto(site+'/wilson-input?lang=de&word=v74');
     const picture=page.locator('.picture').first();await picture.waitFor();
     assert.equal(await picture.evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(233, 240, 235)');
@@ -43,7 +43,7 @@ const site = 'https://thetwokings.de';
     assert((await page.locator('#status').textContent()).trim().length>0);
     await typed.fill('Testwort'); await typed.press('Enter');
     await page.locator('#solution').waitFor();
-    assert.equal(await page.locator('#correct-answer').evaluate(el=>getComputedStyle(el).color),'rgb(246, 216, 136)');
+    assert.equal(await page.locator('#correct-answer').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(246, 216, 136)');
     console.log('Live /wilson and /wilson-input: neutral picture, hidden solution, retry text, highlighted answer.');
   } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1});
