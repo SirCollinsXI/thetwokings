@@ -1,0 +1,33 @@
+.game-trials { scroll-margin-top: 5rem; }
+.game-trials > h2 { margin: 0 0 1.35rem; }
+.game-trials-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(1rem,3vw,2rem); }
+.game-trial { min-width: 0; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.game-trial h3 { font-size: clamp(1.3rem,3vw,2.2rem); margin: 0; padding: 1.1rem 1.2rem; }
+.trial-stage { position: relative; overflow: hidden; aspect-ratio: 624 / 264; background: #28252b; }
+.trial-stage > img:first-child { width: 100%; height: 100%; display: block; }
+.trial-body { padding: 1rem 1.2rem 1.25rem; display: flex; flex-direction: column; flex: 1; }
+.trial-body > p { line-height: 1.5; margin: 0 0 .65rem; }
+.trial-controls { display: grid; gap: .35rem; }
+.trial-controls[hidden], .trial-stage [hidden] { display: none; }
+#bogen-probe .trial-controls { grid-template-columns: auto minmax(45px,1fr) auto; align-items: center; }
+.trial-controls label { font-size: .87rem; }
+.trial-controls input { width: 100%; height: 44px; margin: 0; accent-color: var(--lime); }
+.trial-controls button { min-height: 44px; padding: .45rem .75rem; color: var(--ink); background: #303032; border: 1px solid #858589; border-radius: .5rem; font: inherit; font-weight: 600; cursor: pointer; }
+.trial-controls button:hover { border-color: var(--lime); }
+.trial-body :focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; }
+.trial-nets { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: .3rem; }
+.trial-feedback { grid-column: 1/-1; min-height: 1.55em; margin: .35rem 0 .45rem; font-size: .92rem; color: var(--ink); }
+.trial-launch { margin-top: auto; width: fit-content; display: inline-flex; align-items: center; min-height: 44px; font-weight: 750; text-decoration: underline; text-underline-offset: .22em; color: var(--lime); }
+.trial-sight,.trial-impact { position: absolute; top: 59%; left: 77.5%; transform: translate(-50%,-50%); border-radius: 50%; }
+.trial-sight { width: 22px; height: 22px; border: 2px solid white; box-shadow: 0 0 0 1px #15100e; }
+.trial-sight::before,.trial-sight::after { content: ''; position: absolute; left: 50%; top: 50%; background: white; transform: translate(-50%,-50%); box-shadow: 0 0 1px black; }
+.trial-sight::before { width: 28px; height: 1px; }
+.trial-sight::after { width: 1px; height: 28px; }
+.trial-impact { width: 10px; height: 10px; background: #171214; border: 2px solid #fff; }
+.trial-lanes { position: absolute; display: grid; grid-template-columns: repeat(5,1fr); inset: 0; }
+.trial-lanes span { text-align: center; border-right: 1px dashed #fff9; color: white; font-weight: bold; padding-top: .35rem; text-shadow: 0 1px 3px #101014,0 0 4px #101014; }
+.trial-rex { position: absolute; bottom: 8%; width: 25%; height: auto; left: 30%; transform: translateX(-50%); transition: left .36s ease-out; }
+.trial-rex.facing-left { transform: translateX(-50%) scaleX(-1); }
+.trial-net { position: absolute; bottom: 6%; width: 19%; height: 45%; transform: translateX(-50%); border: 3px solid #2c1e13; border-radius: 55% 55% 18% 18%; background: repeating-linear-gradient(45deg,transparent 0 7px,#edc490 8px 9px),repeating-linear-gradient(-45deg,transparent 0 7px,#edc490 8px 9px); }
+@media (max-width: 720px) { .game-trials-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .trial-rex { transition: none; } }
