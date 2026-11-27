@@ -15,13 +15,16 @@
   <link rel="stylesheet" href="spiele-probe.css">
   <link rel="stylesheet" href="spiele-start-preview.css">
   <script src="spiele-texte.js?v=gezeitenpost-1" defer></script>
-  <script src="homepage-preview.js?v=atelier-1" defer></script>
+  <script src="homepage-preview.js?v=ideen-1" defer></script>
   <script src="spiele-probe.js" defer></script>
   <script src="spuren-store.js" defer></script>
   <script src="homepage-spuren.js" defer></script>
   <link rel="stylesheet" href="public-wall.css">
   <script src="public-wall.js" defer></script>
   <script src="grusskarte.js" defer></script>
+  <link rel="stylesheet" href="feedback-ideen.css">
+  <script src="feedback-freigaben.js" defer></script>
+  <script src="feedback-ideen.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#inhalt" data-copy="skip">Zum Inhalt</a>
@@ -207,12 +210,13 @@
         </div>
       </section>
     </main>
-    <aside class="rail" aria-labelledby="trace-title">
+    <aside class="rail" aria-label="Mitmachen und Spuren" data-label="community">
       <section class="rail-panel">
-        <h2 id="trace-title" data-copy="traces">Spuren</h2>
+        <h2 id="trace-title" data-copy="traces">Meine privaten Spuren</h2>
         <p class="status" data-copy="prototype">Prototyp</p>
-        <p data-copy="traceIntro">Zeig, dass du da warst, sag was geholfen hat oder bring eine Idee weiter.</p>
-        <p class="next" data-copy="traceLocal">Deine Spuren bleiben in diesem Browser.</p>
+        <p data-copy="traceIntro">Hier kannst du für dich festhalten, was dir gefällt oder was du verbessern würdest.</p>
+        <p class="next" data-copy="traceLocal">Wer dieses Browserprofil benutzt, kann deine Spuren sehen. Andere Besucher und das Team erhalten sie nicht.</p>
+        <a class="feedback-jump" href="#mitgestalten" data-feedback-word="jump">Idee ans Team schicken</a>
         <details id="spuren">
           <summary data-copy="traceOpen">Spur hinterlassen</summary>
           <div id="trace-controls" class="trace-controls">
@@ -234,12 +238,52 @@
                 <span data-copy="traceContinuing">Du baust an einer Spur weiter.</span>
                 <button type="button" id="trace-cancel" data-copy="traceCancel">Auswahl lösen</button>
               </p>
-              <button type="submit" data-copy="traceSave">Idee speichern</button>
+              <button type="submit" data-copy="traceSave">Privat speichern</button>
             </form>
+            <a class="feedback-jump" href="#mitgestalten" data-feedback-word="fresh">Neuen Vorschlag ans Team schreiben</a>
             <p id="trace-status" class="next" role="status"></p>
             <ul id="trace-list" role="list" aria-labelledby="trace-title"></ul>
           </div>
         </details>
+      </section>
+      <section class="rail-panel feedback-panel" id="mitgestalten" aria-labelledby="feedback-title" tabindex="-1">
+        <h2 id="feedback-title" data-feedback-word="title">Mitgestalten</h2>
+        <p data-feedback-word="intro">Was können wir hier verbessern? Schreib dem Team eine Idee.</p>
+        <details id="feedback-editor" hidden>
+          <summary data-feedback-word="editor">E-Mail vorbereiten</summary>
+          <form id="feedback-form" autocomplete="off">
+            <p><span data-feedback-word="recipient">An</span> <strong id="feedback-recipient">kontakt@thetwokings.de</strong></p>
+            <label for="feedback-category" data-feedback-word="category">Bereich</label>
+            <select id="feedback-category">
+              <option value="startseite" data-feedback-word="startseite">Startseite</option>
+              <option value="spiele" data-feedback-word="spiele">Spiele</option>
+              <option value="comics" data-feedback-word="comics">Comics</option>
+              <option value="lernen" data-feedback-word="lernen">Lernen</option>
+              <option value="werkstatt" data-feedback-word="werkstatt">PC-Werkstatt</option>
+            </select>
+            <label for="feedback-note" data-feedback-word="note">Dein Vorschlag (bis zu 600 Zeichen)</label>
+            <textarea id="feedback-note" rows="4" maxlength="600" required></textarea>
+            <label class="feedback-permission"><input id="feedback-permission" type="checkbox"> <span data-feedback-word="permission">Das Team darf meinen Vorschlag nach Prüfung hier ohne meinen Namen veröffentlichen.</span></label>
+            <p id="feedback-explain" class="next" data-feedback-word="explain">Erst wenn du die E-Mail abschickst, erhält das Team deinen Vorschlag und deine Absenderadresse. Ohne den Haken bleibt dein Vorschlag beim Team.</p>
+            <div class="feedback-actions">
+              <button type="submit" id="feedback-compose" data-feedback-word="compose">Im E-Mail-Programm öffnen</button>
+              <button type="button" id="feedback-copy" data-feedback-word="copy">Für Webmail kopieren</button>
+            </div>
+            <p class="next" id="feedback-status" role="status"></p>
+            <div id="feedback-manual-box" hidden>
+              <label for="feedback-manual" data-feedback-word="manual">E-Mail-Text zum Kopieren</label>
+              <textarea id="feedback-manual" rows="5" readonly></textarea>
+            </div>
+          </form>
+        </details>
+        <noscript><p>Kontakt · Contact · 联系邮箱: kontakt@thetwokings.de</p></noscript>
+        <a class="feedback-privacy" id="feedback-privacy" href="datenschutz.html#entwicklungsideen" data-feedback-word="privacy">Datenschutz für Entwicklungsideen</a>
+        <section id="ideenwand" aria-labelledby="feedback-wall-title" tabindex="-1">
+          <h3 id="feedback-wall-title" data-feedback-word="wall">Öffentliche Ideenwand</h3>
+          <p id="feedback-empty" data-feedback-word="empty">Bisher wurde hier noch keine Gastidee veröffentlicht.</p>
+          <ul id="feedback-published" role="list" hidden></ul>
+          <p class="feedback-team"><strong data-feedback-word="team">Vom Team</strong> · <a href="#comics" data-feedback-word="change">Sams Piratenszene füllt jetzt seine Comic-Kachel.</a></p>
+        </section>
       </section>
       <section class="rail-panel public-wall" id="grusswand" aria-labelledby="wall-title">
         <h2 id="wall-title" data-wall-word="title">Ein Gruß an die Welt</h2>

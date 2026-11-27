@@ -1,0 +1,44 @@
+.feedback-jump, .feedback-privacy {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.feedback-jump { font-weight: 700; }
+.feedback-privacy { font-size: .92rem; }
+#feedback-editor summary {
+  display: list-item;
+  min-height: 44px;
+  padding-block: .55rem;
+  text-decoration: underline;
+  text-underline-offset: .2rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+#feedback-form, #feedback-manual-box { display: grid; gap: .55rem; min-width: 0; }
+#feedback-form { padding-block: .3rem .65rem; }
+#feedback-form :is(select, textarea, button) {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  padding: .45rem .6rem;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid #696970;
+  border-radius: .2rem;
+}
+#feedback-form :is(select, textarea) { width: 100%; }
+#feedback-form textarea { resize: vertical; }
+#feedback-form button { cursor: pointer; }
+#feedback-form button:hover { border-color: var(--accent); }
+#feedback-compose { font-weight: 700; }
+.feedback-actions { display: flex; flex-wrap: wrap; gap: .4rem; }
+.feedback-permission { display: flex; align-items: flex-start; gap: .5rem; min-height: 44px; }
+.feedback-permission input { flex: none; width: 1.15rem; height: 1.15rem; margin: .16rem 0 0; }
+#feedback-form p { margin: 0; overflow-wrap: anywhere; }
+#feedback-status:empty { display: none; }
+#ideenwand { padding-block-start: .6rem; }
+#ideenwand p { margin-top: .45rem; }
+#feedback-published { margin: .55rem 0; padding-inline-start: 1.25rem; overflow-wrap: anywhere; }
+#feedback-published li + li { margin-top: .75rem; }
+#feedback-published .next { display: block; }
+.feedback-team { padding-inline-start: .65rem; border-inline-start: 2px solid #8b8169; }
