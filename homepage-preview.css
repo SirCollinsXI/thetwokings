@@ -17,7 +17,7 @@ a { color: inherit; }
 a:hover { color: var(--accent); }
 button { font: inherit; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
-h1, h2, h3, p { margin: 0; }
+h1, h2, h3, h4, p { margin: 0; }
 .shell { width: min(1280px, calc(100% - 3rem)); margin-inline: auto; }
 .skip { position: absolute; left: .75rem; top: .75rem; z-index: 2; padding: .6rem 1rem; background: var(--page); transform: translateY(-180%); }
 .skip:focus { transform: none; }
@@ -29,7 +29,7 @@ h1, h2, h3, p { margin: 0; }
 .bar nav a:hover { color: var(--text); }
 .languages { display: flex; gap: .3rem; margin-inline-start: auto; }
 .languages button { min-height: 2.7rem; border: 1px solid transparent; border-radius: .4rem; padding-inline: .55rem; background: transparent; color: var(--muted); cursor: pointer; }
-.languages button[aria-pressed="true"] { color: var(--text); border-color: var(--line); background: var(--panel); }
+.languages button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); background: var(--panel); }
 
 .layout { display: grid; gap: clamp(1.5rem, 4vw, 4rem); padding-block: clamp(2rem, 5vw, 4.4rem); }
 main, .project, .rail { min-width: 0; }
@@ -42,7 +42,7 @@ html[lang="zh-CN"] h1 { letter-spacing: 0; }
 .action:hover { background: #ffe0a8; color: #162627; }
 
 h2 { font-size: 1.35rem; letter-spacing: -.015em; margin-block-end: .8rem; }
-h3 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
+h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .project { border: 1px solid var(--line); border-radius: .8rem; overflow: hidden; background: var(--panel); }
 .card { display: grid; gap: .52rem; align-content: start; padding: clamp(1rem, 3vw, 1.5rem); }
 .game { display: grid; margin-block-end: 1rem; }
@@ -64,9 +64,11 @@ h3 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .project-link { width: fit-content; padding-block: .3rem; font-weight: 750; color: var(--accent); text-underline-offset: .16em; }
 
 .more { margin-block-start: 2rem; }
-.more h3 { font-size: 1rem; margin-block: 1rem .55rem; }
+.game-hub > h3 { margin-block-end: .35rem; }
+.game-hub > p { color: var(--muted); }
 .more-links { display: flex; flex-wrap: wrap; gap: .55rem; list-style: none; margin: 0; padding: 0; }
-.more a { display: block; border: 1px solid var(--line); border-radius: .35rem; padding: .52rem .7rem; }
+.game-hub .more-links { margin-block: .65rem 1rem; }
+.more-links a { display: block; border: 1px solid var(--line); border-radius: .35rem; padding: .52rem .7rem; }
 .rail { display: grid; gap: 1rem; align-content: start; }
 .rail-panel { border-block-start: 1px solid var(--line); padding-block: 1rem; }
 .rail-panel p + p { margin-block-start: .55rem; }

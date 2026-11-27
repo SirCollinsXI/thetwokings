@@ -14,9 +14,10 @@
   <header class="bar shell">
     <a class="brand" href="index.html"><img src="crown.svg" alt="" width="32" height="32">TheTwoKings</a>
     <nav id="navigation" aria-label="Hauptnavigation" data-label="nav">
-      <a href="#wehr" data-copy="game">Das Wehr</a>
+      <a href="#spiele" data-copy="games">Sams Spielecke</a>
       <a href="comic.html" data-copy="comics">Sams Comics</a>
       <a href="wilson.html" data-copy="wilson">Wilsons Trainingsecke</a>
+      <a href="#werkstatt" data-copy="pc">PC-Werkstatt</a>
     </nav>
     <div class="languages" role="group" aria-label="Sprache" data-label="language">
       <button type="button" data-lang="de" lang="de" aria-label="Deutsch (DE)" aria-pressed="true">DE</button>
@@ -34,15 +35,24 @@
       </section>
       <section class="projects" id="projekte" tabindex="-1" aria-labelledby="projects-title">
         <h2 id="projects-title" data-copy="projects">Projekte</h2>
-        <article id="wehr" class="project game" tabindex="-1" aria-labelledby="wehr-title">
-          <div class="terrain" aria-hidden="true"><span></span></div>
-          <div class="card">
-            <p class="status" data-copy="prototype">Prototyp</p>
-            <h3 id="wehr-title" data-copy="game">Das Wehr</h3>
-            <p data-copy="gameText">3D-Abenteuer für Windows mit Wehrfähre, Holzbau und Werkbank.</p>
-            <p class="next" data-copy="gameNext">Vor der Webfreigabe: Export erstellen, Ladezeit und Steuerung testen und die Nutzungsrechte für die Spielinhalte klären.</p>
-          </div>
-        </article>
+        <section id="spiele" class="game-hub" tabindex="-1" aria-labelledby="games-title">
+          <h3 id="games-title" data-copy="games">Sams Spielecke</h3>
+          <p data-copy="browserGames">Diese Spiele kannst du direkt im Browser öffnen.</p>
+          <ul class="more-links" role="list">
+            <li><a href="wuestenbogen.html" data-copy="archery">Wüstenbogen</a></li>
+            <li><a href="piratenjagd.html" data-copy="pirates">Piratenjagd (Testszene)</a></li>
+            <li><a href="klassischer-game-hub.html" data-copy="classics">Klassische Spiele</a></li>
+          </ul>
+          <article id="wehr" class="project game" tabindex="-1" aria-labelledby="wehr-title">
+            <div class="terrain" aria-hidden="true"><span></span></div>
+            <div class="card">
+              <p class="status" data-copy="gameVersion">Windows-Prototyp · V30</p>
+              <h4 id="wehr-title" data-copy="game">Das Wehr &amp; Samis Dino-Insel</h4>
+              <p data-copy="gameText">Fahre mit der Wehrfähre zur Dino-Insel, baue mit Holz und erkunde auf der Vulkaninsel den Weg zur Eisenhöhle.</p>
+              <p class="next" data-copy="gameNext">Vor der Webfreigabe: Browserexport erstellen, Ladezeit, Steuerung, Ton und Speichern testen und die Rechte an den Spielinhalten klären.</p>
+            </div>
+          </article>
+        </section>
         <div class="pair">
           <article class="project">
             <div class="cover"><img src="comic/page-01.webp" alt="" loading="lazy"></div>
@@ -63,15 +73,8 @@
           </article>
         </div>
       </section>
-      <section class="more" aria-labelledby="more-title">
-        <h2 id="more-title" data-copy="more">Mehr entdecken</h2>
-        <h3 data-copy="games">Spiele</h3>
-        <ul class="more-links" role="list">
-          <li><a href="wuestenbogen.html" data-copy="archery">Wüstenbogen</a></li>
-          <li><a href="piratenjagd.html" data-copy="pirates">Piratenjagd</a></li>
-          <li><a href="klassischer-game-hub.html" data-copy="classics">Klassische Spiele</a></li>
-        </ul>
-        <h3 data-copy="workshop">Werkstatt &amp; Experimente</h3>
+      <section id="werkstatt" class="more" tabindex="-1" aria-labelledby="workshop-title">
+        <h2 id="workshop-title" data-copy="workshop">Werkstatt &amp; Experimente</h2>
         <ul class="more-links" role="list">
           <li><a href="werkstatt.html" data-copy="pc">PC-Werkstatt</a></li>
           <li><a href="kinglab/caffeine-clash.html">KingLab</a></li>
