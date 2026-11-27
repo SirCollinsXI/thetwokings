@@ -33,13 +33,17 @@ h1, h2, h3, h4, p { margin: 0; }
 
 .layout { display: grid; gap: clamp(1.5rem, 4vw, 4rem); padding-block: clamp(2rem, 5vw, 4.4rem); }
 main, .project, .rail { min-width: 0; }
-.intro { padding-block-end: clamp(2rem, 4vw, 3.5rem); }
+.intro { padding-block-end: 1.25rem; }
 .label { color: var(--accent); font-weight: 750; }
 h1 { font-family: Georgia, ui-serif, serif; font-size: clamp(2.9rem, 6vw, 6.5rem); line-height: 1.04; letter-spacing: -.055em; margin-block: .55rem .9rem; }
 html[lang="zh-CN"] h1 { letter-spacing: 0; }
 .intro > p:not(.label) { color: var(--muted); max-width: 54ch; font-size: clamp(1rem, 2vw, 1.2rem); }
-.action { display: inline-block; margin-top: 1.35rem; padding: .7rem 1.15rem; background: var(--accent); color: #162627; font-weight: 750; border-radius: .4rem; text-decoration: none; }
-.action:hover { background: #ffe0a8; color: #162627; }
+.area-nav { margin-block-end: clamp(2rem, 4vw, 3.5rem); }
+.area-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; list-style: none; margin: 0; padding: 0; }
+.area-grid a { display: grid; align-content: start; gap: .25rem; height: 100%; padding: .75rem .9rem; border: 1px solid var(--line); border-radius: .6rem; background: var(--panel); text-decoration: none; color: var(--text); }
+.area-grid a:hover { border-color: var(--accent); }
+.area-grid strong { text-decoration: underline; text-underline-offset: .18em; }
+.area-grid span { color: var(--muted); font-size: .9rem; }
 
 h2 { font-size: 1.35rem; letter-spacing: -.015em; margin-block-end: .8rem; }
 h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
@@ -47,6 +51,7 @@ h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .card { display: grid; gap: .52rem; align-content: start; padding: clamp(1rem, 3vw, 1.5rem); }
 .game { display: grid; margin-block-end: 1rem; }
 .game .card { align-content: center; }
+.card h2 { margin-block-end: 0; font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .terrain { min-height: 10rem; overflow: hidden; background: radial-gradient(ellipse at 50% 8%, #fbd08b 0 7%, transparent 7.5%), linear-gradient(160deg, #bd875d, #635e50 38%, #395859 65%, #8cc3ac); position: relative; }
 .terrain::before, .terrain::after, .terrain span { position: absolute; content: ""; inset: 12% -15% -30%; display: block; }
 .terrain::before { background: #1d4c47; clip-path: polygon(0 36%, 18% 19%, 30% 29%, 42% 8%, 55% 41%, 70% 24%, 81% 35%, 100% 6%, 100% 100%, 0 100%); }
@@ -64,8 +69,7 @@ h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .project-link { width: fit-content; padding-block: .3rem; font-weight: 750; color: var(--accent); text-underline-offset: .16em; }
 
 .more { margin-block-start: 2rem; }
-.more > .more-links { margin-block-start: 1rem; }
-.game-hub > h3 { margin-block-end: .35rem; }
+.game-hub > h2 { margin-block-end: .35rem; }
 .game-hub > p { color: var(--muted); }
 .more-links { display: flex; flex-wrap: wrap; gap: .55rem; list-style: none; margin: 0; padding: 0; }
 .game-hub .more-links { margin-block: .65rem 1rem; }
@@ -81,6 +85,7 @@ h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 }
 @media (min-width: 68rem) {
   .layout { grid-template-columns: minmax(0, 1fr) minmax(17rem, 21%); }
+  .area-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .rail { align-self: start; position: sticky; top: 1rem; padding-inline-start: 1.2rem; border-inline-start: 1px solid var(--line); }
 }
 @media (max-width: 42rem) {
