@@ -106,7 +106,7 @@ function apply(){
    if(href!==updated)a.setAttribute('href',updated);
   }
   const oldTitle=document.title;
-  const titleMap={comics:{en:'Sam’s Comics | TheTwoKings',zh:'Sam 的漫画 | TheTwoKings'},comic:{en:'Sam & Piet — Comic Preview | TheTwoKings',zh:'Sam与Piet — 漫画试读 | TheTwoKings'},
+  const titleMap={monster:{en:'The Great Monster Saga | TheTwoKings',zh:'怪物传奇 | TheTwoKings'},comics:{en:'Sam’s Comics | TheTwoKings',zh:'Sam 的漫画 | TheTwoKings'},comic:{en:'Sam & Piet — Comic Preview | TheTwoKings',zh:'Sam与Piet — 漫画试读 | TheTwoKings'},
     pirate:{en:'T. rex — On Deck! | TheTwoKings',zh:'霸王龙海盗狩猎 | TheTwoKings'},
     bow:{en:'Desert Bow | TheTwoKings',zh:'沙漠射箭 | TheTwoKings'},
     trex:{en:'T. rex Pirate Hunt | TheTwoKings',zh:'霸王龙海盗狩猎 | TheTwoKings'},
