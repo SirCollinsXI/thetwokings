@@ -7,7 +7,8 @@
 | Hauptdomain | Vor Paket 08 zeigte die [Galerie](https://thetwokings.de/wilson-image-review) 829 aktive Karten. |
 | Paket 08 | 50 zusätzliche eigene SVGs in 10 Fünfergruppen. Galerie, Eingabetrainer und Offline-Datei verwenden dieselben Wort- und Bilddaten. |
 | Projektprüfungen | Website, Eingaben und Lernfortschritt, Wortschatz und 222 historische Bild-Hashes, mehrsprachige Rückmeldungen und reproduzierbarer Offline-Build geprüft. |
-| Nächste Prüfung | Galerie und Eingabetrainer im Browser testen und danach die Hauptdomain abgleichen. |
+| Browserprüfung | Die 50 neuen Übungslinks, Eingaben und Rückmeldungen auf Englisch und Mandarin sowie die dekodierbaren Offline-Motive wurden in Edge geprüft. Für die Eingabe wurde der Fallback für Web Locks verwendet. |
+| Veröffentlichung | [PR #21](https://github.com/SirCollinsXI/thetwokings/pull/21) übernimmt Wilsons Einstieg und Lernfarben aus `main`. Die Bestätigung auf der Hauptdomain folgt nach dem Merge. |
 | Zwischenziel | Vom Projektstand fehlen 45 Karten bis 924 und 621 bis 1.500. |
 
 ## Paket 08 · Wortformen und Übersetzungen
