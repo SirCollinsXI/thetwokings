@@ -4,6 +4,16 @@ const lines=[["← Zur Comic-Welt","← Back to comics","← 返回漫画世界"
 const extra=[["T. REX IST ERSCHÖPFT!","T. REX IS EXHAUSTED!","霸王龙已经筋疲力尽！"],["Session-Speicher nicht verfügbar. Einstellungen gelten nur bis zum Neuladen der Seite.","Session storage unavailable. Settings last only until reload.","会话存储不可用，设置仅在刷新前有效。"],["Audio nicht verfügbar","Audio unavailable","音频不可用"],["Supabase nicht verfügbar. Lokaler Fallback wird verwendet.","Online service unavailable. Using local fallback.","在线服务不可用，改用本地模式。"],["Avatar zu groß.","Avatar too large.","头像文件过大。"],["Noch keine Online-Einträge vorhanden.","No online entries yet.","暂无在线排行榜记录。"],["Der Avatar ist ungültig oder größer als 100 KB.","Avatar is invalid or exceeds 100 KB.","头像无效或超过100KB。"],["Die Kampagne wurde nicht vollständig abgeschlossen.","Campaign not fully completed.","尚未完成全部关卡。"],["Der Avatar ist ungültig oder zu groß.","Avatar invalid or too large.","头像无效或过大。"],["Der Score liegt außerhalb des zulässigen Bereichs.","Score is outside the permitted range.","成绩超出允许范围。"],["Bitte bestätige zuerst die freiwillige Veröffentlichung.","Please agree to public posting first.","请先同意自愿公开发布。"]];
 const dict=new Map(lines.map(([de,en,zh])=>[de,{en,zh}]));
 for(const [de,en,zh] of extra)dict.set(de,{en,zh});
+const pirateTraces = [
+  ['Deine Spur zur Piratenjagd', 'Your trace on Pirate Hunt', '给《海盗冒险》留个印记'],
+  ['Deine Spur bleibt in diesem Browser.', 'Your trace stays in this browser.', '你的印记只保存在当前浏览器中。'],
+  ['Steuerung war knifflig', 'The controls were tricky', '操作有点难'],
+  ['Idee ergänzen', 'Add an idea', '补充想法'],
+  ['Was würdest du am Spiel ändern?', 'What would you change about the game?', '你想改进游戏的哪个地方？'],
+  ['Idee speichern', 'Save idea', '保存点子'],
+  ['Spiele-Spuren ansehen', 'View game traces', '查看游戏印记'],
+];
+for (const [de, en, zh] of pirateTraces) dict.set(de, { en, zh });
 let lang='de';
 const allowed=['de','en','zh'],original=new WeakMap(),last=new WeakMap(),attributes=new WeakMap();
 const locale=(v)=>v==='zh'?'zh-CN':v;
