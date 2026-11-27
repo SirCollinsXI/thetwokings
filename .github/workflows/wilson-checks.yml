@@ -63,13 +63,13 @@ jobs:
           CHROME="$(command -v google-chrome || command -v chromium)"
           for lang in de en zh; do
             case "$lang" in
-              de) label='Wilsons Deutsch-Lernecke' ;;
-              en) label='Wilson’s German Learning Corner' ;;
-              zh) label='Wilson 的德语学习角' ;;
+              de) label='Wilsons Deutsch-Lernecke'; home_label='Wilsons Lernecke' ;;
+              en) label='Wilson’s German Learning Corner'; home_label='Wilson’s Learning Corner' ;;
+              zh) label='Wilson 的德语学习角'; home_label='Wilson 的学习角' ;;
             esac
             DOM="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom "http://127.0.0.1:8765/index.html?lang=$lang" 2>/dev/null)"
-            grep -Fq "$label" <<< "$DOM" || { echo "Missing homepage navigation: $lang"; exit 1; }
-            grep -Fq "id=\"wilson-card-name\">$label</h3>" <<< "$DOM" || { echo "Missing localized Wilson tile: $lang"; exit 1; }
+            grep -Fq "$home_label" <<< "$DOM" || { echo "Missing homepage navigation: $lang"; exit 1; }
+            grep -Fq "id=\"wilson-card-name\">$home_label</h3>" <<< "$DOM" || { echo "Missing localized Wilson tile: $lang"; exit 1; }
             PAGE_LANG="$lang" node -e '
               const html = require("node:fs").readFileSync(0, "utf8");
               const origin = "http://127.0.0.1:8765";

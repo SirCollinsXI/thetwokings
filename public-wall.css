@@ -1,0 +1,36 @@
+.public-wall [hidden] { display: none; }
+.public-wall p { margin: .55rem 0; }
+.public-wall .wall-marks {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .45rem;
+  padding: 0;
+  margin: .65rem 0;
+}
+.public-wall .wall-marks li { text-align: center; min-width: 0; }
+.public-wall .wall-marks button {
+  font: inherit;
+  color: inherit;
+  width: 100%;
+  min-height: 3.5rem;
+  display: grid;
+  place-content: center;
+  gap: .15rem;
+  background: var(--panel, #202125);
+  border: 1px solid var(--line, #55575d);
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.wall-marks button span:first-child { font-size: 1.35rem; line-height: 1; }
+.wall-marks button span:last-child { font-size: .82rem; overflow-wrap: anywhere; }
+.wall-marks button:not(:disabled):hover, .wall-marks button:focus-visible { border-color: var(--accent, #c8fa72); }
+.wall-marks button:disabled { cursor: wait; }
+.wall-marks output { display: block; font-variant-numeric: tabular-nums; }
+.public-wall .wall-links { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
+.wall-links button, .wall-links a { font: inherit; font-size: .88rem; }
+.wall-links button {
+  color: inherit; background: transparent; border: 0; padding: .55rem 0; cursor: pointer;
+  text-decoration: underline; text-underline-offset: .16em;
+}
+.public-wall .wall-status { color: var(--muted, #cbccd0); }

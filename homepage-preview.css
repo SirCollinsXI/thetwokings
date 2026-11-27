@@ -59,14 +59,22 @@ main, .project, .rail { min-width: 0; }
 .card p:not(.status), .rail p:not(.status), .next { color: var(--muted); }
 .next { font-size: .91rem; }
 .pair { display: grid; gap: 1rem; }
-#lernen, #comics { display: grid; }
+.featured-projects { display: grid; gap: clamp(.8rem, 1.4vw, 1.25rem); }
+.featured-projects > .project { display: flex; flex-direction: column; min-width: 0; }
+.featured-projects .card { flex: 1; align-content: start; gap: .65rem; }
+.featured-projects h2 { text-wrap: pretty; }
+.featured-projects p { max-width: 41ch; }
+.feature-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1rem; }
+.feature-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.feature-links .archive-entry { font-weight: 700; }
+.featured-projects .trace-entry { margin-top: .15rem; }
 #lernen { border-inline-start: 3px solid var(--accent); }
-#lernen .wilson-example { min-height: 9rem; background: #252528; color: var(--text); }
+#lernen .wilson-example { min-height: 8rem; background: #252528; color: var(--text); }
 #lernen .wilson-example img { width: clamp(4.5rem, 8vw, 7rem); border-radius: .2rem; background: #d5d4cc; }
 #lernen.project .wilson-example-words > span { color: var(--text); }
 #lernen .wilson-example-words b { background: #efc86c; color: #211c13; }
-.cover { min-width: 0; }
-.cover img { display: block; width: 100%; height: 100%; max-height: 15rem; object-fit: cover; object-position: 50% 24%; }
+.cover { min-width: 0; background: #101d31; }
+.cover img { display: block; width: 100%; height: clamp(8rem, 10vw, 9rem); object-fit: contain; }
 .status { display: inline-block; width: fit-content; padding: .1rem .45rem; border: 1px solid #67676e; border-radius: .2rem; color: var(--text); background: transparent; font-size: .8rem; font-weight: 700; }
 .project-link { display: inline-flex; align-items: center; min-height: 44px; width: fit-content; font-weight: 700; }
 #lernen .project-link { padding-inline: .85rem; color: var(--page); background: var(--accent); text-decoration: none; border-radius: .2rem; }
@@ -108,7 +116,10 @@ main, .project, .rail { min-width: 0; }
 
 @media (min-width: 38rem) {
   .intro { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
-  #lernen, #comics { grid-template-columns: minmax(12.5rem, .75fr) minmax(0, 1.5fr); }
+  .featured-projects { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
+  #lernen .wilson-example { min-height: clamp(8rem, 10vw, 9rem); }
+  #comics h2 { font-size: clamp(1.48rem, 2.03vw, 1.98rem); }
+  #lernen .wilson-example-words b { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
   .pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (min-width: 52rem) {
@@ -123,12 +134,15 @@ main, .project, .rail { min-width: 0; }
   .shell { width: calc(100% - 2rem); }
   .bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .15rem .35rem; padding-block: .45rem; }
   .bar .brand { grid-column: 1; grid-row: 1; }
-  .bar nav { grid-column: 1 / -1; grid-row: 2; flex-wrap: nowrap; gap: 0 .6rem; }
+  .bar nav { grid-column: 1 / -1; grid-row: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 0 .6rem; }
   .bar nav a { font-size: .88rem; line-height: 1.25; min-width: 0; }
-  .bar nav a[data-link-language="home-only"] { flex: 1 1 0; }
   .languages { grid-column: 2; grid-row: 1; }
   .intro-art { display: none; }
   h1:lang(zh-CN) { font-size: clamp(2.25rem, 10.4vw, 2.8rem); word-break: keep-all; overflow-wrap: anywhere; text-wrap: wrap; }
-  #lernen .wilson-example { min-height: 6rem; }
+  #lernen .wilson-example { min-height: 5rem; padding-block: .5rem; }
+  #lernen .wilson-example img { width: 3.9rem; }
+  .featured-projects .card { padding: .8rem 1rem; gap: .3rem; }
+  .area-grid a { min-height: 44px; align-content: center; padding: .45rem .7rem; }
+  .area-grid span { display: none; }
   .cover img { height: 10rem; }
 }

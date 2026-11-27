@@ -78,9 +78,9 @@ async function testStudy(browser) {
 }
 
 const wilsonLabels = {
-  de: /Wilsons Deutsch-Lernecke/,
-  en: /Wilson’s German Learning Corner/,
-  zh: /Wilson.*德语/,
+  de: /Wilsons Lernecke/,
+  en: /Wilson’s Learning Corner/,
+  zh: /Wilson 的学习角/,
 };
 
 async function checkWilson(page, lang, redesigned) {
@@ -105,6 +105,42 @@ async function checkWilson(page, lang, redesigned) {
     assert(await page.locator('#lernen').evaluate(el =>
       Boolean(el.compareDocumentPosition(document.getElementById('spiele')) & Node.DOCUMENT_POSITION_FOLLOWING)));
   }
+}
+
+async function testPublicWall(page) {
+  const response = await page.request.get(new URL('/api/spuren', preview).href);
+  assert.match(response.headers()['content-type'], /application\/json/);
+  const state = await response.json();
+  assert([200, 503].includes(response.status()));
+  const wall = page.locator('#grusswand');
+  await wall.locator('[data-wall-refresh]').waitFor();
+  const active = response.status() === 200;
+  assert.equal(await wall.locator('.wall-board').isVisible(), active);
+  if (active) {
+    assert.match(state.day, /^\d{4}-\d{2}-\d{2}$/);
+    for (const key of ['wave', 'star', 'crown']) assert(Number.isSafeInteger(state.counts[key]));
+  } else {
+    assert.equal(state.error, 'unavailable');
+    assert.equal(await wall.locator('[data-mark]:visible').count(), 0);
+  }
+  console.log('Cloudflare public wall HTTP', response.status(), active ? 'connected' : 'unavailable');
+}
+
+async function testWorkshop(page, lang) {
+  const url = new URL('/werkstatt', preview);
+  url.searchParams.set('lang', lang);
+  const response = await page.goto(url.href, { waitUntil: 'domcontentloaded' });
+  assert.equal(response.status(), 200);
+  await page.locator('#symptom').selectOption('fps');
+  await page.locator('#use').selectOption('gaming');
+  await page.locator('#upgrade-form [type="submit"]').click();
+  const title = page.locator('#upgrade-title');
+  await title.waitFor();
+  assert((await title.innerText()).trim().length > 0);
+  assert.equal(await page.locator('#system-file').inputValue(), '');
+  await page.locator('#symptom').selectOption('none');
+  await page.locator('#upgrade-form [type="submit"]').click();
+  assert.equal(await title.evaluate(el => el === document.activeElement), true);
 }
 
 async function testTraces(page) {
@@ -202,12 +238,14 @@ async function run() {
         if (redesigned) {
           await testTrials(page, lang);
           if (lang === 'de') {
+            await testPublicWall(page);
             await testTraces(page);
             await testCounter(page);
           }
         }
         assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), url.href);
         console.log('HTTP 200; localized Wilson and games entries, prototype and layout verified:', url.href);
+        if (redesigned) await testWorkshop(page, lang);
         await page.close();
       }
     }

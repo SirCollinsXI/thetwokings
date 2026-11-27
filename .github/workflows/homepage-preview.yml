@@ -8,6 +8,14 @@ on:
       - 'erstklick.*'
       - 'spiele-*'
       - 'spuren-store.js'
+      - 'public-wall.*'
+      - '_routes.json'
+      - 'functions/api/spuren.js'
+      - 'migrations/0002_public_trace_day.sql'
+      - 'scripts/test-public-wall.cjs'
+      - 'werkstatt.*'
+      - 'hardware-i18n.js'
+      - 'datenschutz.html'
       - 'wilson-entry.css'
       - 'game-assets/thumbs/**'
       - 'scripts/test-homepage-preview.cjs'
@@ -62,3 +70,16 @@ jobs:
           path: ${{ runner.temp }}/homepage-screenshots/*.png
           retention-days: 7
           if-no-files-found: ignore
+
+  shared-wall:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test shared greetings with two browsers and an isolated D1 database
+        run: |
+          npm install --no-save --no-audit --no-fund --prefix "$RUNNER_TEMP/wall-test" miniflare@3 playwright-core@1.56.1
+          NODE_PATH="$RUNNER_TEMP/wall-test/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-public-wall.cjs

@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "include": ["/homepage-preview"],
+  "include": ["/homepage-preview", "/api/spuren"],
   "exclude": []
 }
