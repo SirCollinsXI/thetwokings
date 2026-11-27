@@ -192,7 +192,12 @@ for(const [id,confusable] of [
  ['v1101','das Starthilfekabel, Starthilfekabel'],
  ['v1079','das Stromkabel, Stromkabel'],
  ['v531','der Schlüssel, Schlüssel'],
- ['v1102','der Sicherungskasten, Sicherungskästen']
+ ['v1102','der Sicherungskasten, Sicherungskästen'],
+ ['v74','das Gleis, Gleise'],
+ ['v164','die Fahrbahn, Fahrbahnen'],
+ ['v314','der Geldautomat, Geldautomaten'],
+ ['v473','der Kofferraum, Kofferräume'],
+ ['v633','die Kreuzung, Kreuzungen']
 ]){
  delete stored[STORE];
  const w=shared.inputWords.find(entry=>entry.id===id);
@@ -205,10 +210,11 @@ for(const [id,confusable] of [
  assert.equal(drill.get('solution').hidden,false);
  assert.equal(drill.get('correct-answer').textContent,answer(w));
  assert.equal(drill.get('chinese').textContent,w.zh+' · '+w.pinyin);
+ assert.equal(drill.get('declension').hidden,id!=='v314',id+' unexpected N-declension hint');
  drill.submit('');
  assert.notEqual(drill.get('word-image').src,w.imagePath);
 }
-console.log('Paket 2: five targeted images, confusable answers, Mandarin and advance verified.');
+console.log('Pakete 2–3: ten targeted images, confusable answers, Mandarin, declension hint and advance verified.');
 
 // Two open views used to overwrite each other's attempts. Also cover browsers
 // without Web Locks: each write must at least start from the latest saved state.

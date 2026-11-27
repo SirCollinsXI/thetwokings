@@ -1,11 +1,11 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **714 aktive Karten**. Paket 2 ergänzt fünf Wörter. Bis zum Ziel fehlen auf diesem Stand **786 Karten**. Die Hauptdomain liefert **714 aktive Karten** aus. Die Galerie zeigt alle fünf Karten aus Paket 2. Der Papierkorb (`v810`) öffnet im Eingabetrainer mit geladenem Bild.
+Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **719 aktive Karten**. Paket 3 ergänzt fünf Mobilitätsbegriffe. Bis zum Ziel fehlen **781 Karten**. Auf der Hauptdomain wurden zuletzt **714 aktive Karten** bestätigt.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
 | 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build, Live-Galerie und Kartenaufruf | Hörbare Geräteausgabe |
-| 3 · Unterwegs | — | +0 von 5 | Abnahme ausstehend | Kimi-Auftrag vorbereitet. Der Modellaufruf scheiterte an der DNS-Auflösung im Arbeitskontext. |
+| 3 · Unterwegs | [Änderungen](https://github.com/SirCollinsXI/thetwokings/compare/main...codex/wilson-mobility-03) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Live-Abgleich nach Deploy und hörbare Geräteausgabe |
 
 ## Bestand
 
@@ -16,11 +16,12 @@ Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbei
 | Gerettete eigene SVG-Zeichnungen | 66 | Ja |
 | Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 1 | 25 | Ja |
 | Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 2 | 5 | Ja |
+| Eigene SVG-Zeichnungen · Unterwegs, Paket 3 | 5 | Ja |
 | Gesperrte Zuordnungen | 47 | Nein |
 | Alternative oder doppelte Motive | 10 | Nein |
 | Ungeprüfte Kandidaten im gespeicherten Manifest | 0 | Nein |
 
-Die 714 Karten umfassen **638 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
+Die 719 Karten umfassen **643 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
 
 ## Küche und Haushalt, Paket 1
 
@@ -33,6 +34,20 @@ Die 714 Karten umfassen **638 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl
 ## Küche und Haushalt, Paket 2
 
 Die fünf vorhandenen IDs `v531` (Inbusschlüssel), `v810` (Papierkorb), `v1079` (Starthilfekabel), `v1101` (Stromkabel) und `v1102` (Stromzähler) sind mit eigenen SVGs im Trainer und in der Galerie aktiviert. Die zwei ersetzten Sperrentscheidungen bleiben in `reviewHistory`. Der Filter **Neu · Küche & Haushalt** zeigt die fünf Karten aus Paket 2. [Prüfung und Arbeitsstand](WILSON-HOUSEHOLD-02.md)
+
+## Unterwegs, Paket 3
+
+Die Galerie zeigt unter **Neu · Unterwegs** fünf eigene SVGs für bestehende Lexikon-IDs. Alle fünf Motive wurden bei 120 × 85 und 220 × 156 Pixeln geprüft. Dreisprachige Bildhinweise grenzen ähnliche Begriffe ab.
+
+| ID | Karte | Englisch | Mandarin |
+| --- | --- | --- | --- |
+| `v74` | der Bahnsteig, die Bahnsteige | railway platform | 站台 |
+| `v164` | der Bürgersteig, die Bürgersteige | pavement | 人行道 |
+| `v314` | der Fahrkartenautomat, die Fahrkartenautomaten | ticket machine | 自动售票机 |
+| `v473` | das Handschuhfach, die Handschuhfächer | glove compartment | 手套箱 |
+| `v633` | der Kreisverkehr, die Kreisverkehre | roundabout | 环形交叉路口 |
+
+Beim Fahrkartenautomaten zeigt der Trainer den Hinweis zur N-Deklination. Der Plural *Kreisverkehre* bezieht sich auf die Straßenbauform. *环岛* ist eine weitere gebräuchliche Bezeichnung für diesen Begriff. [Duden · Fahrkartenautomat](https://www.duden.de/deklination/substantive/Fahrkartenautomat) · [Cambridge · Kreisverkehr](https://dictionary.cambridge.org/de/worterbuch/deutsch-englisch/kreisverkehr) · [Cambridge · roundabout](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/roundabout)
 
 ## Was gerettet und zusammengeführt wurde
 
@@ -67,13 +82,13 @@ node scripts/build-wilson-offline.cjs
 python scripts/render-wilson-review.py /tmp/wilson-review
 ```
 
-Inhaltstests prüfen alle 714 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
+Inhaltstests prüfen alle 719 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
 
 `scripts/wilson-browser-preview.html` stellt echte Seiten in 390 und 1280 CSS-Pixeln für die Browserprüfung dar. Das ersetzt keine Tests auf echten iPhone-/Android-Geräten; hörbare Ausgabe und gerätespezifische Tastaturen müssen dort noch geprüft werden.
 
 ## Nächste Arbeit
 
-1. Weitere 786 eindeutige Karten beschaffen oder eigenständig erstellen und einzeln prüfen. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
+1. Weitere 781 eindeutige Karten beschaffen oder eigenständig erstellen und einzeln prüfen. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
 2. Die 47 gesperrten Zuordnungen ersetzen oder mit belastbarem Kontext korrigieren; alternative Motive niemals als weitere Wörter zählen.
 3. Deutsche Wortformen/IPA und Mandarin unabhängig prüfen lassen; bisherige Sichtung transparent als redaktionellen Erststand behandeln.
 4. Den jeweils aktuellen `main` erneut lesen, diese Datei und das Manifest verwenden und kleinere getestete Ausbaustände tatsächlich sichern. Keine ungesicherten lokalen Arbeitsschritte als veröffentlicht ausgeben.
