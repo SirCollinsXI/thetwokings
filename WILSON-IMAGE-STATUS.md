@@ -1,14 +1,15 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 07 mit 829 Bildkarten im Projektstand
+## Hier fortsetzen · Paket 07 live mit 829 Bildkarten
 
 | Stand | Nachweis |
 | --- | --- |
-| Hauptdomain | 779 aktive Bildkarten im Browser bestätigt. [Live-Galerie](https://thetwokings.de/wilson-image-review) |
-| Paket 07 | 50 zusätzliche Wörter mit eigenem SVG. 10 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
-| Projektprüfung | 50 Motive einzeln gesichtet. Alle 829 Karten bestehen den Eingabetest. Der Offline-Build ist bytegleich reproduzierbar. |
-| Veröffentlichung | Der Test nach dem Merge prüft den sichtbaren Zähler und eine neue Karte auf der Hauptdomain. |
-| Noch offen | Hörbare Ausgabe auf iOS und Android. |
+| Hauptdomain | Am 27.11.2026 zeigte die [Galerie](https://thetwokings.de/wilson-image-review) 829 aktive Karten. Der [Schnürsenkel](https://thetwokings.de/wilson-input?word=v965) öffnete das richtige SVG. Der veröffentlichte Bildinhalt stimmt byteweise mit dem Projekt überein. [Browserprotokoll](https://github.com/SirCollinsXI/thetwokings/actions/runs/46006740212/job/140531680684) |
+| Paket 07 | [PR #20](https://github.com/SirCollinsXI/thetwokings/pull/20) ergänzt zehn Fünfergruppen mit insgesamt 50 eigenen Zeichnungen. Alle Motive wurden einzeln gesichtet. |
+| Browserprüfung | Bei 390 und 1.280 Pixeln zeigte jeder der zehn Filter die vorgesehenen fünf Karten. Alle 50 Übungslinks öffneten das richtige Bild. Im lokalen Browserpfad ohne Web Locks bestanden die 50 Eingaben und drei Varianten einschließlich der englischen und chinesischen Rückmeldungen. |
+| Offline | Der reproduzierte Build enthält 829 eingebettete Bilder. Alle 50 neuen Offline-Bilder ließen sich im Browser dekodieren. Die [Projektprüfungen](https://github.com/SirCollinsXI/thetwokings/actions/runs/46006740212) sind bestanden. |
+| Nächste Runde | Für Paket 08 bislang unbebilderte IDs auswählen. Bis zum Zwischenziel von 924 fehlen 95 Karten, bis 1.500 fehlen 671. |
+| Offene Gerätetests | Hörbare Ausgabe auf iOS und Android. Der lokale Eingabetest mit nativen Web Locks steht für dieses Paket aus. |
 
 ## Paket 07 · Wortformen und Übersetzungen
 
