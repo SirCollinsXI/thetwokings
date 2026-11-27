@@ -1,25 +1,25 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 05 Autoteile
+## Hier fortsetzen · Paket 05 live, als Nächstes Paket 06
 
 | Stand | Nachweis |
 | --- | --- |
-| Zuletzt auf der Hauptdomain geprüft | 724 Karten aus Paket 04 am 27.11.2026. [Galerie](https://thetwokings.de/wilson-image-review) |
-| Arbeitsstand | 729 Karten auf `codex/wilson-paket-05`. Die fünf neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. Etappenziel 924, Gesamtziel 1.500. |
-| Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 eingebetteten Bildern. |
-| Nächste einzelne Aufgabe | In der Paketvorschau „Neu · Autoteile“ wählen. Alle fünf Bilder und Kartenlinks prüfen. Bei einer Karte falsche Eingabe, zweiten Versuch und Lösung aufrufen. Befund im Entwurfs-PR vermerken. |
-| Danach | Nach bestandenem Browsercheck regulär veröffentlichen und die Zahl auf der Hauptdomain separat ablesen. Die hörbare Geräteausgabe auf iOS und Android ist noch offen. |
+| Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
+| Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
+| Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
+| Nächste einzelne Aufgabe | Für Paket 06 bis zu fünf konkrete unbebilderte Begriffe zu Babyausstattung oder Kleidung mit dem bestehenden Lexikon und dem Bildbestand abgleichen. |
+| Offen | Hörbare Ausgabe auf iOS und Android. |
 
 **Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
 
-Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Stand enthält **729 aktive Karten**. Paket 05 ergänzt fünf Autoteile aus dem bestehenden Lexikon. Bis zum Gesamtziel fehlen **771 Karten**. Die Ausbauetappe umfasst **200 zusätzliche Karten ab 724 bis 924**. Davon sind mit Paket 05 **5 von 200** umgesetzt. Paket 04 ist mit **724 Karten auf main und live**. Paket 05 ist als lokaler Commit gesichert. Der interaktive Browsercheck für das neue Paket und die Veröffentlichung sind offen.
+Ziel sind **1.500 einzeln geprüfte Bildkarten**. Von der Etappe mit 200 zusätzlichen Karten ab 724 sind fünf veröffentlicht. Bis 924 fehlen **195 Karten**, bis zum Gesamtziel **771**.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
 | 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build, Live-Galerie und Kartenaufruf | Hörbare Geräteausgabe |
 | 03 · Unterwegs | [PR #12](https://github.com/SirCollinsXI/thetwokings/pull/12) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA, Offline-Build und Live-Abgleich | Hörbare Geräteausgabe |
 | 04 · Bus & Bahn | [`9cc0302`](https://github.com/SirCollinsXI/thetwokings/commit/9cc0302c81f75acf8061654793bf12e75a43991b) | +5 → 724 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | 724 Karten auf main und live bestätigt. Hörbare Geräteausgabe offen. |
-| 05 · Autoteile | Lokaler Commit | +5 → 729 | Wortformen, SVG, automatisierte Galerie- und Eingabetests, Offline-Build | Interaktiver Browsercheck, Veröffentlichung und hörbare Geräteausgabe |
+| 05 · Autoteile | [PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) | +5 → 729 | Wortformen, SVG, Galerie, Eingabe, Offline-Build, Browserprüfung und Live-Abgleich | Hörbare Geräteausgabe |
 
 ## Bestand
 
