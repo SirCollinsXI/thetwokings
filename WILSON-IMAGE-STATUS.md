@@ -1,11 +1,19 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **719 aktive Karten**. Paket 3 ergänzt fünf Mobilitätsbegriffe. Bis zum Ziel fehlen **781 Karten**. Auf der Hauptdomain wurden zuletzt **714 aktive Karten** bestätigt.
+Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **719 aktive Karten**. Paket 3 ergänzt fünf Mobilitätsbegriffe. Bis zum Ziel fehlen **781 Karten**. Der Arbeitschat meldete am 27.11.2026 **719 Karten live** nach dem Galerietest. Bei der nächsten Paketabnahme die Hauptdomain erneut abgleichen.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
 | 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build, Live-Galerie und Kartenaufruf | Hörbare Geräteausgabe |
-| 3 · Unterwegs | [Änderungen](https://github.com/SirCollinsXI/thetwokings/compare/main...codex/wilson-mobility-03) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Live-Abgleich nach Deploy und hörbare Geräteausgabe |
+| 3 · Unterwegs | [PR #12](https://github.com/SirCollinsXI/thetwokings/pull/12) · `4834eb4` | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Hörbare Geräteausgabe auf iPhone/Android |
+
+## Kurzstart für einen frischen Wilson-Chat
+
+- Lies zuerst die ersten 20 Zeilen dieser Datei auf dem aktuellen `main` und prüfe den letzten Commit. Lies für die Aufgabe anschließend gezielt das Manifest und nur die betroffenen IDs.
+- Bearbeite pro Chat ein konkretes, kleines Paket. Für Routinearbeiten genügt eine normale Denkintensität. Führe die Arbeit zunächst in einer Spur aus. Halte vollständige Diffs, SVGs, Screenshots und lange Testausgaben in Dateien statt im Chat.
+- Sichere den getesteten Stand als Commit oder PR, bevor du eine neue Runde beginnst. Die Übergabe umfasst Paket, Commit, aktive Zahl, separat geprüfte Live-Zahl, Tests und nächsten Schritt.
+
+Startprompt: **Wilsons Corner · Paket 04**. Lies den Kurzstart und den bestätigten Stand auf `main`. Paket 3 ist gemergt. Erhalte Bild-IDs, Lernstände, Rechte und alle drei Modi. Beginne das nächste kleine Paket. Melde vor jedem weiteren Paket nur Commit, Kartenstand, Prüfergebnis und offene Punkte.
 
 ## Bestand
 
