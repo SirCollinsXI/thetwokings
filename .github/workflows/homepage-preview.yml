@@ -86,6 +86,10 @@ jobs:
           done
           echo "Cloudflare has not reported a deployment for $HEAD_SHA"
           exit 1
+      - name: Inspect public inbound mail routing for the feedback address
+        if: github.head_ref == 'codex/spuren-entwicklungsideen'
+        run: |
+          node -e "require('node:dns').promises.resolveMx('thetwokings.de').then(rows => console.log('Published MX records', JSON.stringify(rows))).catch(e => console.log('MX lookup', e.code))"
       - name: Compare the public homepage, test the release preview and run the first-click study
         env:
           PREVIEW_URL: ${{ steps.pages.outputs.url }}
