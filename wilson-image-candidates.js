@@ -25536,5 +25536,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Das farbig markierte Teil sitzt außen neben dem vorderen Seitenfenster. Darin sieht man den Verkehr hinter dem Auto."
     }
+  },
+  {
+    "id": "v477",
+    "de": "der Hausbriefkasten",
+    "plural": "die Hausbriefkästen",
+    "en": "home mailbox",
+    "zh": "住宅信箱",
+    "pinyin": "zhùzhái xìnxiāng",
+    "path": "wilson/original-house-exterior/v477-hausbriefkasten.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "haus-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhaʊ̯sbʁiːfˌkastn̩/",
+      "context": {
+        "de": "In den Schlitz des markierten Kastens am Hauseingang wirft der Zusteller die Post ein.",
+        "en": "The postal worker puts mail through the slot in the highlighted box at the entrance.",
+        "zh": "邮递员把信件投入家门口标出的箱子上的投递口。"
+      },
+      "reason": "In den Schlitz des markierten Kastens am Hauseingang wirft der Zusteller die Post ein."
+    }
+  },
+  {
+    "id": "v479",
+    "de": "die Hausnummer",
+    "plural": "die Hausnummern",
+    "en": "house number",
+    "zh": "门牌号",
+    "pinyin": "ménpáihào",
+    "path": "wilson/original-house-exterior/v479-hausnummer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "haus-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhaʊ̯sˌnʊmɐ/",
+      "context": {
+        "de": "Die markierte Zahl neben der Tür gehört zur Straßenadresse.",
+        "en": "The highlighted number next to the door is part of the street address.",
+        "zh": "门旁标出的数字是街道地址的一部分。"
+      },
+      "reason": "Die markierte Zahl neben der Tür gehört zur Straßenadresse."
+    }
+  },
+  {
+    "id": "v480",
+    "de": "der Hausschlüssel",
+    "plural": "die Hausschlüssel",
+    "en": "house key",
+    "zh": "家门钥匙",
+    "pinyin": "jiāmén yàoshi",
+    "path": "wilson/original-house-exterior/v480-hausschluessel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "haus-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhaʊ̯sˌʃlʏsl̩/",
+      "context": {
+        "de": "Mit dem großen Gegenstand im Vordergrund schließt man die Haustür auf.",
+        "en": "Use the large object in the foreground to unlock the front door.",
+        "zh": "用前面这个放大的物件可以打开家门。"
+      },
+      "reason": "Mit dem großen Gegenstand im Vordergrund schließt man die Haustür auf."
+    }
+  },
+  {
+    "id": "v75",
+    "de": "der Balkon",
+    "plural": "die Balkone",
+    "en": "balcony",
+    "zh": "阳台",
+    "pinyin": "yángtái",
+    "path": "wilson/original-house-exterior/v75-balkon.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "haus-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/balˈkɔŋ/",
+      "context": {
+        "de": "Die markierte Plattform mit Geländer ragt außen aus dem oberen Stockwerk heraus.",
+        "en": "The highlighted platform with its railing projects from the upper floor.",
+        "zh": "标出的带栏杆的平台从楼上向外伸出。"
+      },
+      "reason": "Die markierte Plattform mit Geländer ragt außen aus dem oberen Stockwerk heraus."
+    }
+  },
+  {
+    "id": "v186",
+    "de": "die Dachgaube",
+    "plural": "die Dachgauben",
+    "en": "dormer",
+    "zh": "老虎窗",
+    "pinyin": "lǎohǔchuāng",
+    "path": "wilson/original-house-exterior/v186-dachgaube.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "haus-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈdaxˌɡaʊ̯bə/",
+      "context": {
+        "de": "Gesucht ist der ganze markierte Aufbau mit Fenster, der aus der schrägen Dachfläche herausragt.",
+        "en": "Name the entire highlighted window structure projecting from the sloping roof.",
+        "zh": "请写出从斜屋顶凸出来的整个带窗结构的名称。"
+      },
+      "reason": "Gesucht ist der ganze markierte Aufbau mit Fenster, der aus der schrägen Dachfläche herausragt."
+    }
   }
 ];
