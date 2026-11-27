@@ -38,6 +38,7 @@
     link: ['Link', 'Link', '链接'],
     noClick: ['Kein Klick', 'No click', '尚未点击'],
     wilson: ['Wilsons Trainingsecke', 'Wilson’s Learning Corner', 'Wilson 的德语学习角'],
+    tide: ['Die Gezeitenpost', 'The Tide Post', '潮汐邮局'],
     bow: ['Wüstenbogen', 'Desert Archery', '沙漠射箭'],
     pirate: ['Piratenjagd', 'Pirate Hunt', '海盗冒险'],
     bowTrial: ['Wüstenbogen · Spielprobe', 'Desert Archery · mini-game', '沙漠射箭 · 试玩'],
@@ -81,6 +82,7 @@
   const trainer = route(new URL('wilson.html', location.href));
   // Confirm an opened page using both its canonical path and an element unique to that page.
   const destinationPages = [
+    ['inselpfad', 'A', '#board', 'tide'],
     ['wuestenbogen', 'A', '#gameCanvas', 'bow'],
     ['piratenjagd', 'A', '#pirate-idea-link', 'pirate'],
     ['bogen', 'A', '#gameCanvas', 'classicBow'],

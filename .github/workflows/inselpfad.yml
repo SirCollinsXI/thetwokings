@@ -1,0 +1,46 @@
+name: Inselpfad · Spiel und Veröffentlichung
+
+on:
+  pull_request:
+    branches: [main]
+    paths: &inselpfad_paths
+      - 'index.html'
+      - 'spiele-texte.js'
+      - 'game-assets/thumbs/inselpfad.jpg'
+      - 'inselpfad.html'
+      - 'inselpfad.css'
+      - 'inselpfad.js'
+      - 'inselpfad-kern.js'
+      - 'inselpfad-szene.js'
+      - 'scripts/test-inselpfad.cjs'
+      - 'scripts/test-inselpfad-browser.cjs'
+      - '.github/workflows/inselpfad.yml'
+  push:
+    branches: [main]
+    paths: *inselpfad_paths
+
+permissions:
+  contents: read
+
+concurrency:
+  group: inselpfad-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Spielregeln prüfen
+        run: node scripts/test-inselpfad.cjs
+      - name: Browserprüfung vorbereiten
+        run: npm install --no-save --no-audit --no-fund --ignore-scripts --prefix "$RUNNER_TEMP/inselpfad-test" playwright-core@1.56.1
+      - name: Spieleinstieg, Sprache und vollständige Spielrunde prüfen
+        env:
+          NODE_PATH: ${{ runner.temp }}/inselpfad-test/node_modules
+          INSELPFAD_PRODUCTION: ${{ github.event_name == 'push' && '1' || '0' }}
+        run: CHROME="$(command -v google-chrome)" node scripts/test-inselpfad-browser.cjs

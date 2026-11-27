@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d42">
+  <title>Die Gezeitenpost · TheTwoKings</title>
+  <link rel="stylesheet" href="./inselpfad.css">
+  <script defer src="./inselpfad-kern.js"></script>
+  <script defer src="./inselpfad-szene.js"></script>
+  <script defer src="./inselpfad.js"></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="home-link" href="/?lang=de#spiele" id="home"><span aria-hidden="true">←</span> <span data-copy="home">Zur Spielecke</span></a>
+      <nav class="language-picker" aria-label="Sprache" data-label="language">
+        <button type="button" data-lang="de" lang="de" aria-label="Deutsch" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button type="button" data-lang="zh" lang="zh-Hans" aria-label="简体中文" aria-pressed="false">简中</button>
+      </nav>
+    </header>
+    <section class="briefing" aria-labelledby="title">
+      <p class="eyebrow" data-copy="series">Dino-Kurier</p>
+      <h1 id="title" data-copy="title">Die Gezeitenpost</h1>
+      <p data-copy="brief">Ein Brief für den Leuchtturm. Nimm den trockenen Höhenweg oder nutze die Ebbe für eine Abkürzung über die Riffe.</p>
+    </section>
+    <div class="play-layout">
+      <section class="board-shell" aria-label="Inselkarte" data-label="map">
+        <div class="chart-tools">
+          <dl class="readouts">
+            <div><dt data-copy="tide">Wasserstand jetzt</dt><dd id="tide">Ebbe</dd></div>
+            <div><dt data-copy="next">Nach dem Zug</dt><dd id="next">Flut</dd></div>
+            <div><dt data-copy="turns">Züge</dt><dd id="turn">0</dd></div>
+          </dl>
+          <button type="button" id="wait" data-copy="wait">Gezeiten abwarten</button>
+        </div>
+        <div id="board" class="board" role="group" aria-label="Inselkarte" data-label="map" aria-describedby="how"></div>
+        <p id="signal" class="signal" role="status" aria-atomic="true"></p>
+        <p id="how" class="map-hint" data-copy="how">Tippe auf ein Nachbarfeld oder nutze die Pfeiltasten. Riffe sind nur bei Ebbe begehbar.</p>
+      </section>
+      <section class="console" aria-label="Dein Postauftrag" data-label="order">
+        <div class="mission">
+          <p class="eyebrow" data-copy="order">Dein Postauftrag</p>
+          <h2 id="objective">Zum Posthaus</h2>
+          <p id="route">Das Posthaus liegt zwei Felder über dem Steg.</p>
+        </div>
+        <div class="controls">
+          <div class="moves" id="direction-pad" role="group" aria-label="Laufen" data-label="walk">
+            <button type="button" data-dir="up" aria-label="Nach oben"><span aria-hidden="true">↑</span></button>
+            <button type="button" data-dir="left" aria-label="Nach links"><span aria-hidden="true">←</span></button>
+            <button type="button" data-dir="down" aria-label="Nach unten"><span aria-hidden="true">↓</span></button>
+            <button type="button" data-dir="right" aria-label="Nach rechts"><span aria-hidden="true">→</span></button>
+          </div>
+          <button type="button" id="reset" data-copy="reset">Neu starten</button>
+        </div>
+      </section>
+    </div>
+    <noscript>Zum Spielen bitte JavaScript aktivieren. · Enable JavaScript to play. · 请启用 JavaScript 以开始游戏。</noscript>
+  </main>
+</body>
+</html>
