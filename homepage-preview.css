@@ -218,9 +218,9 @@ main, .project, .rail { min-width: 0; }
 }
 .comic-scene img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 .comic-read-label {
-  position: absolute;
-  inset-inline-start: clamp(.65rem, 1.55vw, 1.4rem);
-  inset-block-end: .65rem;
+  position: relative;
+  margin-inline-start: clamp(.65rem, 1.55vw, 1.4rem);
+  margin-block-start: -.85rem;
   display: inline-flex;
   align-items: center;
   gap: .65rem;
