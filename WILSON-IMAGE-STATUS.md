@@ -7,8 +7,8 @@
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Aktueller Entwurf | 734 aktive Karten im Entwurf. Block 1 ist in Galerie, Eingabetrainer und Offline-Datei eingebunden. Automatisierte Prüfungen für Wortbestand, Eingabe, CTA und Website-Verweise bestanden. Der Offline-Build ist bytegleich reproduzierbar. |
-| Nächste einzelne Aufgabe | Die fünf Babykarten in der Cloudflare-Vorschau prüfen. Anschließend die fünf Motive aus `wilson/original-clothing/` als Block 2 integrieren. |
+| Aktueller Entwurf | 739 aktive Karten. 2 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Nächste einzelne Aufgabe | Block 2 in der Vorschau prüfen und anschließend Block 3 integrieren. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
 ## Ziel und Wortliste
@@ -32,6 +32,8 @@ Alle 50 Wörter haben verschiedene Lexikon-IDs. Bei der Auswahl fehlten sie in d
 
 ## Block 1 · Babyausstattung
 
+Vorschau `664f3e7` am 27.11.2026 geprüft. Alle fünf Trainerlinks zeigen das richtige SVG. Die Eingaben für Artikel, Singular und Plural lösen die jeweilige chinesische Lösung aus.
+
 **Auswahl Paket 06.** Mit Lexikon, aktiven Eingabekarten und allen Einträgen des Bildmanifests abgeglichen. Die Zeichnungen wurden bei 120 × 85 und 220 × 156 Pixeln gesichtet. Die fünf Karten sind im Entwurf aktiv. Der Eingabehinweis zum Babyfäustling nennt die Babygröße und fragt nach dem Einzelstück.
 
 | ID | Wort und Plural | Englisch · 简体中文 laut Lexikon | Erkennungsmerkmal für den Bildhinweis |
@@ -41,6 +43,16 @@ Alle 50 Wörter haben verschiedene Lexikon-IDs. Bei der Auswahl fehlten sie in d
 | `v63` | der Babyschlafsack · die Babyschlafsäcke | baby sleeping bag · 婴儿睡袋 | Zwei Armöffnungen, ein Reißverschluss vorn und ein unten geschlossener Sack. |
 | `v962` | der Schnuller · die Schnuller | pacifier · 安抚奶嘴 | Sauger, Schild und Greifring sind zusammen zu sehen. |
 | `v1093` | die Stoffwindel · die Stoffwindeln | cloth nappy · 布尿布 | Druckknöpfe und eingenähte Saugeinlage zeigen die Stoffwindel. Das Waschsymbol erklärt ihre Wiederverwendbarkeit. |
+
+## Block 2 · Kleidung
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v833` | das Polohemd · die Polohemden | polo shirt | 翻领短袖衫 |
+| `v896` | der Rollkragenpullover · die Rollkragenpullover | turtleneck jumper | 高领毛衣 |
+| `v957` | der Schneeanzug · die Schneeanzüge | snowsuit | 防雪连体服 |
+| `v1100` | die Strickjacke · die Strickjacken | cardigan | 开衫 |
+| `v1172` | das Trägertop · die Trägertops | strappy top | 吊带上衣 |
 
 **Wiedereinstieg am 27.11.2026.** Der Screenshot zu Paket 06 zeigt nach 3:19 Minuten die Meldung zur maximalen Gesprächslänge. PR #18 enthielt bereits alle 50 Wort-IDs und zehn Zeichnungen. Die Integration der fünf Babykarten war lokal vollständig auffindbar. Es mussten keine Karten neu erstellt werden. Als Erstes wurden die bestehenden Tests und der reproduzierbare Offline-Build geprüft.
 

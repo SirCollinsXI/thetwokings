@@ -24836,5 +24836,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Die geöffnete Form zeigt Druckknöpfe und Saugeinlage. Das Waschsymbol weist auf die wiederverwendbare Stoffausführung hin."
     }
+  },
+  {
+    "id": "v833",
+    "de": "das Polohemd",
+    "plural": "die Polohemden",
+    "en": "polo shirt",
+    "zh": "翻领短袖衫",
+    "pinyin": "fānlǐng duǎnxiùshān",
+    "path": "wilson/original-clothing/v833-polohemd.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kleidung-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈpoːloˌhɛmt/",
+      "context": {
+        "de": "Achte auf den Umlegekragen und die kurze Knopfleiste am Ausschnitt.",
+        "en": "Look for the folded collar and the short button placket.",
+        "zh": "注意翻领和领口下方的一小排纽扣。"
+      },
+      "reason": "Achte auf den Umlegekragen und die kurze Knopfleiste am Ausschnitt."
+    }
+  },
+  {
+    "id": "v896",
+    "de": "der Rollkragenpullover",
+    "plural": "die Rollkragenpullover",
+    "en": "turtleneck jumper",
+    "zh": "高领毛衣",
+    "pinyin": "gāolǐng máoyī",
+    "path": "wilson/original-clothing/v896-rollkragenpullover.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kleidung-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁɔlˌkʁaːɡn̩pʊloːvɐ/",
+      "context": {
+        "de": "Der dicke, umgeschlagene Kragen liegt hoch am Hals.",
+        "en": "The thick folded collar sits high around the neck.",
+        "zh": "厚厚的翻折领子包住了脖子。"
+      },
+      "reason": "Der dicke, umgeschlagene Kragen liegt hoch am Hals."
+    }
+  },
+  {
+    "id": "v957",
+    "de": "der Schneeanzug",
+    "plural": "die Schneeanzüge",
+    "en": "snowsuit",
+    "zh": "防雪连体服",
+    "pinyin": "fángxuě liántǐfú",
+    "path": "wilson/original-clothing/v957-schneeanzug.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kleidung-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃneːʔanˌt͡suːk/",
+      "context": {
+        "de": "Der gefütterte Einteiler mit Kapuze und langen Hosenbeinen ist für den Winter draußen.",
+        "en": "The lined, hooded one-piece with long legs is for winter outdoors.",
+        "zh": "这件带帽的厚连体衣有长裤腿，适合冬天在户外穿。"
+      },
+      "reason": "Der gefütterte Einteiler mit Kapuze und langen Hosenbeinen ist für den Winter draußen."
+    }
+  },
+  {
+    "id": "v1100",
+    "de": "die Strickjacke",
+    "plural": "die Strickjacken",
+    "en": "cardigan",
+    "zh": "开衫",
+    "pinyin": "kāishān",
+    "path": "wilson/original-clothing/v1100-strickjacke.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kleidung-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃtʁɪkˌjakə/",
+      "context": {
+        "de": "Das gestrickte Oberteil lässt sich vorne über die ganze Länge aufknöpfen.",
+        "en": "The knitted top buttons all the way down the front.",
+        "zh": "这件针织上衣的前面从上到下都可以解开。"
+      },
+      "reason": "Das gestrickte Oberteil lässt sich vorne über die ganze Länge aufknöpfen."
+    }
+  },
+  {
+    "id": "v1172",
+    "de": "das Trägertop",
+    "plural": "die Trägertops",
+    "en": "strappy top",
+    "zh": "吊带上衣",
+    "pinyin": "diàodài shàngyī",
+    "path": "wilson/original-clothing/v1172-traegertop.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "kleidung-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtʁɛːɡɐˌtɔp/",
+      "context": {
+        "de": "Das kurze Oberteil hängt an schmalen Schulterträgern.",
+        "en": "The short top hangs from narrow shoulder straps.",
+        "zh": "这件短上衣靠细细的肩带挂在肩上。"
+      },
+      "reason": "Das kurze Oberteil hängt an schmalen Schulterträgern."
+    }
   }
 ];
