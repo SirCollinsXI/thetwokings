@@ -26096,5 +26096,1413 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Am markierten Gerät hängt ein Schlauch mit Griff, über den Kraftstoff in den Tank fließt."
     }
+  },
+  {
+    "id": "v3",
+    "de": "die Abdeckfolie",
+    "plural": "die Abdeckfolien",
+    "en": "protective sheeting",
+    "zh": "防护薄膜",
+    "pinyin": "fánghù bómó",
+    "path": "wilson/original-paket-07/v3-abdeckfolie.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈapdɛkˌfoːli̯ə/",
+      "context": {
+        "de": "Die durchsichtige Bahn schützt Möbel beim Streichen.",
+        "en": "The clear sheet protects furniture while you paint.",
+        "zh": "刷墙时，用这张透明薄膜盖住家具。"
+      },
+      "reason": "Die durchsichtige Bahn schützt Möbel beim Streichen."
+    }
+  },
+  {
+    "id": "v21",
+    "de": "der Akkubohrer",
+    "plural": "die Akkubohrer",
+    "en": "cordless drill",
+    "zh": "充电式电钻",
+    "pinyin": "chōngdiànshì diànzuàn",
+    "path": "wilson/original-paket-07/v21-akkubohrer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈakuˌboːʁɐ/",
+      "context": {
+        "de": "Unter dem Griff sitzt ein abnehmbarer Akku. Vorn ist ein Bohrer eingespannt.",
+        "en": "A removable battery sits under the handle, and a drill bit fits into the chuck.",
+        "zh": "手柄下有可拆卸电池，前端夹着钻头。"
+      },
+      "reason": "Unter dem Griff sitzt ein abnehmbarer Akku. Vorn ist ein Bohrer eingespannt."
+    }
+  },
+  {
+    "id": "v506",
+    "de": "der Holzboden",
+    "plural": "die Holzböden",
+    "en": "wooden floor",
+    "zh": "木地板",
+    "pinyin": "mùdìbǎn",
+    "path": "wilson/original-paket-07/v506-holzboden.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhɔlt͡sˌboːdn̩/",
+      "context": {
+        "de": "Die Dielen mit sichtbarer Maserung bilden die markierte Fläche unter den Füßen.",
+        "en": "The highlighted surface underfoot is made of planks with visible wood grain.",
+        "zh": "脚下标出的平面由带木纹的长木板铺成。"
+      },
+      "reason": "Die Dielen mit sichtbarer Maserung bilden die markierte Fläche unter den Füßen."
+    }
+  },
+  {
+    "id": "v1058",
+    "de": "die Spachtelmasse",
+    "plural": "die Spachtelmassen",
+    "en": "filler",
+    "zh": "腻子",
+    "pinyin": "nìzi",
+    "path": "wilson/original-paket-07/v1058-spachtelmasse.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃpaxtl̩ˌmasə/",
+      "context": {
+        "de": "Mit der Kelle drückst du diese Masse in ein Loch in der Wand.",
+        "en": "Use the putty knife to press this paste into a hole in the wall.",
+        "zh": "用刮刀把这种膏状材料填进墙洞里。"
+      },
+      "reason": "Mit der Kelle drückst du diese Masse in ein Loch in der Wand."
+    }
+  },
+  {
+    "id": "v1130",
+    "de": "der Tapeziertisch",
+    "plural": "die Tapeziertische",
+    "en": "wallpaper pasting table",
+    "zh": "壁纸施工桌",
+    "pinyin": "bìzhǐ shīgōngzhuō",
+    "path": "wilson/original-paket-07/v1130-tapeziertisch.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "heimwerken-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/tapeˈt͡siːɐ̯ˌtɪʃ/",
+      "context": {
+        "de": "Auf dem langen Klapptisch liegt eine Tapetenbahn zum Einkleistern.",
+        "en": "A strip of wallpaper lies on the long folding table ready for paste.",
+        "zh": "这张狭长的折叠桌上铺着一条准备刷胶的墙纸。"
+      },
+      "reason": "Auf dem langen Klapptisch liegt eine Tapetenbahn zum Einkleistern."
+    }
+  },
+  {
+    "id": "v205",
+    "de": "der Dessertlöffel",
+    "plural": "die Dessertlöffel",
+    "en": "dessert spoon",
+    "zh": "甜点勺",
+    "pinyin": "tiándiǎn sháo",
+    "path": "wilson/original-paket-07/v205-dessertloeffel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "besteck-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/dɛˈsɛːɐ̯ˌlœfl̩/",
+      "context": {
+        "de": "Der markierte kleine Löffel liegt zu einem Nachtisch bereit.",
+        "en": "The highlighted smaller spoon is set out for dessert.",
+        "zh": "箭头指着配甜点用的小勺。"
+      },
+      "reason": "Der markierte kleine Löffel liegt zu einem Nachtisch bereit."
+    }
+  },
+  {
+    "id": "v639",
+    "de": "das Küchenmesser",
+    "plural": "die Küchenmesser",
+    "en": "kitchen knife",
+    "zh": "菜刀",
+    "pinyin": "càidāo",
+    "path": "wilson/original-paket-07/v639-kuechenmesser.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "besteck-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʏçn̩ˌmɛsɐ/",
+      "context": {
+        "de": "Das große Messer mit breiter Klinge schneidet auf dem Küchenbrett.",
+        "en": "The broad-bladed knife is used to cut food on the kitchen board.",
+        "zh": "这把宽刃刀用来在厨房的砧板上切食材。"
+      },
+      "reason": "Das große Messer mit breiter Klinge schneidet auf dem Küchenbrett."
+    }
+  },
+  {
+    "id": "v1076",
+    "de": "das Stäbchen",
+    "plural": "die Stäbchen",
+    "en": "chopstick",
+    "zh": "筷子",
+    "pinyin": "kuàizi",
+    "path": "wilson/original-paket-07/v1076-staebchen.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "besteck-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃtɛːpçən/",
+      "context": {
+        "de": "Der Pfeil zeigt auf eines der beiden langen Esswerkzeuge. Nenne ein einzelnes Stück.",
+        "en": "The arrow points to one of the two long eating utensils. Name one of them.",
+        "zh": "箭头指向两根细长餐具中的一根，请写单数。"
+      },
+      "reason": "Der Pfeil zeigt auf eines der beiden langen Esswerkzeuge. Nenne ein einzelnes Stück."
+    }
+  },
+  {
+    "id": "v1110",
+    "de": "der Suppenlöffel",
+    "plural": "die Suppenlöffel",
+    "en": "soup spoon",
+    "zh": "汤匙",
+    "pinyin": "tāngchí",
+    "path": "wilson/original-paket-07/v1110-suppenloeffel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "besteck-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈzʊpn̩ˌlœfl̩/",
+      "context": {
+        "de": "Mit dem tiefen Löffel am Suppenteller isst du eine Brühe.",
+        "en": "The deep spoon beside the bowl is used to eat broth.",
+        "zh": "汤盘旁边的这把深勺用来喝汤。"
+      },
+      "reason": "Mit dem tiefen Löffel am Suppenteller isst du eine Brühe."
+    }
+  },
+  {
+    "id": "v1305",
+    "de": "das Weinglas",
+    "plural": "die Weingläser",
+    "en": "wine glass",
+    "zh": "葡萄酒杯",
+    "pinyin": "pútaojiǔbēi",
+    "path": "wilson/original-paket-07/v1305-weinglas.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "besteck-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvaɪ̯nˌɡlaːs/",
+      "context": {
+        "de": "Das Glas mit Kelch und langem Stiel dient zum Weintrinken.",
+        "en": "The glass with a bowl and long stem is used for wine.",
+        "zh": "这种有杯肚和长柄的杯子用来喝葡萄酒。"
+      },
+      "reason": "Das Glas mit Kelch und langem Stiel dient zum Weintrinken."
+    }
+  },
+  {
+    "id": "v174",
+    "de": "der Chicorée",
+    "plural": "—",
+    "en": "chicory",
+    "zh": "菊苣",
+    "pinyin": "jújù",
+    "path": "wilson/original-paket-07/v174-chicoree.svg",
+    "articleVariants": [
+      "der",
+      "die"
+    ],
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "gemuese-obst-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ʃikoˈʁeː/",
+      "context": {
+        "de": "Der längliche, feste Salatkopf hat helle Blätter mit gelbgrünen Spitzen.",
+        "en": "The firm, elongated head of Belgian endive has pale leaves with yellow-green tips.",
+        "zh": "这种细长紧实的菊苣菜头叶片浅白，叶尖黄绿。"
+      },
+      "reason": "Der längliche, feste Salatkopf hat helle Blätter mit gelbgrünen Spitzen."
+    }
+  },
+  {
+    "id": "v936",
+    "de": "die Schalotte",
+    "plural": "die Schalotten",
+    "en": "shallot",
+    "zh": "红葱头",
+    "pinyin": "hóngcōngtóu",
+    "path": "wilson/original-paket-07/v936-schalotte.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "gemuese-obst-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ʃaˈlɔtə/",
+      "context": {
+        "de": "Die kleinen länglichen Zwiebeln verjüngen sich nach oben und haben kupferrötliche Schalen.",
+        "en": "The small elongated onions taper at the top and have copper-red skins.",
+        "zh": "这种小洋葱细长，上端尖，外皮呈铜红色。"
+      },
+      "reason": "Die kleinen länglichen Zwiebeln verjüngen sich nach oben und haben kupferrötliche Schalen."
+    }
+  },
+  {
+    "id": "v772",
+    "de": "die Nektarine",
+    "plural": "die Nektarinen",
+    "en": "nectarine",
+    "zh": "油桃",
+    "pinyin": "yóutáo",
+    "path": "wilson/original-paket-07/v772-nektarine.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "gemuese-obst-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/nɛktaˈʁiːnə/",
+      "context": {
+        "de": "Diese Steinfrucht hat eine glatte, glänzende gelbrote Schale.",
+        "en": "This stone fruit has smooth, glossy yellow-red skin.",
+        "zh": "这种核果的黄红色果皮光滑发亮。"
+      },
+      "reason": "Diese Steinfrucht hat eine glatte, glänzende gelbrote Schale."
+    }
+  },
+  {
+    "id": "v799",
+    "de": "die Okraschote",
+    "plural": "die Okraschoten",
+    "en": "okra pod",
+    "zh": "秋葵荚",
+    "pinyin": "qiūkuíjiá",
+    "path": "wilson/original-paket-07/v799-okraschote.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "gemuese-obst-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈɔkʁaˌʃoːtə/",
+      "context": {
+        "de": "Die grüne Schote hat Längsrippen. Die aufgeschnittenen Scheiben sind sternförmig.",
+        "en": "The green pod has lengthwise ridges. Its slices are star-shaped.",
+        "zh": "这种绿色荚果有纵棱，切片呈星形。"
+      },
+      "reason": "Die grüne Schote hat Längsrippen. Die aufgeschnittenen Scheiben sind sternförmig."
+    }
+  },
+  {
+    "id": "v1325",
+    "de": "der Wirsing",
+    "plural": "—",
+    "en": "savoy cabbage",
+    "zh": "皱叶甘蓝",
+    "pinyin": "zhòuyè gānlán",
+    "path": "wilson/original-paket-07/v1325-wirsing.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "gemuese-obst-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvɪʁzɪŋ/",
+      "context": {
+        "de": "Der grüne Kohlkopf hat stark gekräuselte, blasige Blätter.",
+        "en": "This green cabbage has deeply crinkled, blistered leaves.",
+        "zh": "这种绿甘蓝的叶片皱褶多，表面凹凸不平。"
+      },
+      "reason": "Der grüne Kohlkopf hat stark gekräuselte, blasige Blätter."
+    }
+  },
+  {
+    "id": "v277",
+    "de": "der Eintopf",
+    "plural": "die Eintöpfe",
+    "en": "stew",
+    "zh": "炖菜",
+    "pinyin": "dùncài",
+    "path": "wilson/original-paket-07/v277-eintopf.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈaɪ̯nˌtɔpf/",
+      "context": {
+        "de": "Gemüse, Kartoffeln und Bohnen werden zusammen in einem Topf gegart.",
+        "en": "Vegetables, potatoes and beans are cooked together in one pot.",
+        "zh": "蔬菜、土豆和豆子放在同一个锅里一起炖。"
+      },
+      "reason": "Gemüse, Kartoffeln und Bohnen werden zusammen in einem Topf gegart."
+    }
+  },
+  {
+    "id": "v572",
+    "de": "der Ketchup",
+    "plural": "die Ketchups",
+    "en": "ketchup",
+    "zh": "番茄酱",
+    "pinyin": "fānqiéjiàng",
+    "path": "wilson/original-paket-07/v572-ketchup.svg",
+    "articleVariants": [
+      "der",
+      "das"
+    ],
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɛt͡ʃap/",
+      "context": {
+        "de": "Die dicke rote Soße in der Quetschflasche wird aus Tomaten gemacht.",
+        "en": "The thick red sauce in the squeeze bottle is made from tomatoes.",
+        "zh": "挤压瓶里的红色浓酱是用番茄做的。"
+      },
+      "reason": "Die dicke rote Soße in der Quetschflasche wird aus Tomaten gemacht."
+    }
+  },
+  {
+    "id": "v1015",
+    "de": "der Senf",
+    "plural": "die Senfe",
+    "en": "mustard",
+    "zh": "芥末酱",
+    "pinyin": "jièmojiàng",
+    "path": "wilson/original-paket-07/v1015-senf.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/zɛnf/",
+      "context": {
+        "de": "Die gelbe Würzpaste wird aus den kleinen Körnern neben dem Glas gemacht.",
+        "en": "The yellow condiment is made from the small seeds shown beside the jar.",
+        "zh": "玻璃罐里的黄色调味酱是用旁边的小籽做成的。"
+      },
+      "reason": "Die gelbe Würzpaste wird aus den kleinen Körnern neben dem Glas gemacht."
+    }
+  },
+  {
+    "id": "v1048",
+    "de": "die Sojasoße",
+    "plural": "die Sojasoßen",
+    "en": "soy sauce",
+    "zh": "酱油",
+    "pinyin": "jiàngyóu",
+    "path": "wilson/original-paket-07/v1048-sojasosse.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈzoːjaˌzoːsə/",
+      "context": {
+        "de": "Die dünnflüssige, dunkelbraune Würzsoße wird aus Sojabohnen gemacht.",
+        "en": "This thin dark-brown seasoning sauce is made from soybeans.",
+        "zh": "这种稀薄的深棕色调味汁由大豆制成。"
+      },
+      "reason": "Die dünnflüssige, dunkelbraune Würzsoße wird aus Sojabohnen gemacht."
+    }
+  },
+  {
+    "id": "v1258",
+    "de": "das Vollkornbrot",
+    "plural": "die Vollkornbrote",
+    "en": "wholemeal bread",
+    "zh": "全麦面包",
+    "pinyin": "quánmài miànbāo",
+    "path": "wilson/original-paket-07/v1258-vollkornbrot.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈfɔlˌkɔʁnˌbʁoːt/",
+      "context": {
+        "de": "Für dieses dunkle Brot werden ganze Getreidekörner samt Schale vermahlen.",
+        "en": "This dark bread is made with whole grain, including the bran.",
+        "zh": "这种深色面包用含麸皮的全谷物面粉烤成。"
+      },
+      "reason": "Für dieses dunkle Brot werden ganze Getreidekörner samt Schale vermahlen."
+    }
+  },
+  {
+    "id": "v126",
+    "de": "der Blinkerhebel",
+    "plural": "die Blinkerhebel",
+    "en": "indicator stalk",
+    "zh": "转向灯拨杆",
+    "pinyin": "zhuǎnxiàngdēng bōgǎn",
+    "path": "wilson/original-paket-07/v126-blinkerhebel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-bedienung-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈblɪŋkɐˌheːbl̩/",
+      "context": {
+        "de": "Mit dem Hebel neben dem Lenkrad kündigst du ein Abbiegen nach links oder rechts an.",
+        "en": "The stalk next to the steering wheel signals a turn to the left or right.",
+        "zh": "方向盘旁的这根拨杆用来打左转或右转灯。"
+      },
+      "reason": "Mit dem Hebel neben dem Lenkrad kündigst du ein Abbiegen nach links oder rechts an."
+    }
+  },
+  {
+    "id": "v143",
+    "de": "das Bremspedal",
+    "plural": "die Bremspedale",
+    "en": "brake pedal",
+    "zh": "刹车踏板",
+    "pinyin": "shāchē tàbǎn",
+    "path": "wilson/original-paket-07/v143-bremspedal.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-bedienung-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈbʁɛmspeˌdaːl/",
+      "context": {
+        "de": "Mit dem markierten Fußhebel in der Mitte bremst das Auto.",
+        "en": "Press the highlighted middle pedal to slow or stop the car.",
+        "zh": "踩下中间标出的踏板可以减速或停车。"
+      },
+      "reason": "Mit dem markierten Fußhebel in der Mitte bremst das Auto."
+    }
+  },
+  {
+    "id": "v390",
+    "de": "das Gaspedal",
+    "plural": "die Gaspedale",
+    "en": "accelerator pedal",
+    "zh": "油门踏板",
+    "pinyin": "yóumén tàbǎn",
+    "path": "wilson/original-paket-07/v390-gaspedal.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-bedienung-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡaːspeˌdaːl/",
+      "context": {
+        "de": "Der schmale Fußhebel ganz rechts beschleunigt das Auto.",
+        "en": "The narrow pedal on the far right makes the car accelerate.",
+        "zh": "踩下最右边的窄踏板可以加速。"
+      },
+      "reason": "Der schmale Fußhebel ganz rechts beschleunigt das Auto."
+    }
+  },
+  {
+    "id": "v650",
+    "de": "das Kupplungspedal",
+    "plural": "die Kupplungspedale",
+    "en": "clutch pedal",
+    "zh": "离合器踏板",
+    "pinyin": "líhéqì tàbǎn",
+    "path": "wilson/original-paket-07/v650-kupplungspedal.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-bedienung-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʊplʊŋspeˌdaːl/",
+      "context": {
+        "de": "Im Schaltwagen trittst du beim Gangwechsel den markierten Fußhebel ganz links.",
+        "en": "In a manual car, press the highlighted pedal on the far left when changing gear.",
+        "zh": "手动挡汽车换挡时，要踩下最左边标出的踏板。"
+      },
+      "reason": "Im Schaltwagen trittst du beim Gangwechsel den markierten Fußhebel ganz links."
+    }
+  },
+  {
+    "id": "v938",
+    "de": "der Schalthebel",
+    "plural": "die Schalthebel",
+    "en": "gear lever",
+    "zh": "变速杆",
+    "pinyin": "biànsùgǎn",
+    "path": "wilson/original-paket-07/v938-schalthebel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-bedienung-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃaltˌheːbl̩/",
+      "context": {
+        "de": "Der Hebel mit dem Schaltschema oben dient zum Wechseln der Gänge.",
+        "en": "The lever with the gear pattern on top is used to change gears.",
+        "zh": "顶部有挡位示意图的这根操纵杆用来换挡。"
+      },
+      "reason": "Der Hebel mit dem Schaltschema oben dient zum Wechseln der Gänge."
+    }
+  },
+  {
+    "id": "v127",
+    "de": "das Blinklicht",
+    "plural": "die Blinklichter",
+    "en": "indicator light",
+    "zh": "转向灯",
+    "pinyin": "zhuǎnxiàngdēng",
+    "path": "wilson/original-paket-07/v127-blinklicht.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-licht-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈblɪŋkˌlɪçt/",
+      "context": {
+        "de": "Das gelbe Licht blinkt beim Abbiegen. Der Pfeil zeigt auf die leuchtende Lampe.",
+        "en": "This amber light flashes during a turn. The arrow points to the lit lamp.",
+        "zh": "转弯时这盏黄色灯会闪烁，箭头指着亮起的灯。"
+      },
+      "reason": "Das gelbe Licht blinkt beim Abbiegen. Der Pfeil zeigt auf die leuchtende Lampe."
+    }
+  },
+  {
+    "id": "v769",
+    "de": "der Nebelscheinwerfer",
+    "plural": "die Nebelscheinwerfer",
+    "en": "fog light",
+    "zh": "雾灯",
+    "pinyin": "wùdēng",
+    "path": "wilson/original-paket-07/v769-nebelscheinwerfer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-licht-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈneːbl̩ˌʃaɪ̯nˌvɛʁfɐ/",
+      "context": {
+        "de": "Diese tiefe Leuchte sitzt vorn im Stoßfänger und wird bei Nebel verwendet.",
+        "en": "This low lamp sits in the front bumper and is used in fog.",
+        "zh": "这盏装在前保险杠下方的灯在雾天使用。"
+      },
+      "reason": "Diese tiefe Leuchte sitzt vorn im Stoßfänger und wird bei Nebel verwendet."
+    }
+  },
+  {
+    "id": "v909",
+    "de": "der Rückfahrscheinwerfer",
+    "plural": "die Rückfahrscheinwerfer",
+    "en": "reversing light",
+    "zh": "倒车灯",
+    "pinyin": "dàochēdēng",
+    "path": "wilson/original-paket-07/v909-rueckfahrscheinwerfer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-licht-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁʏkfaːɐ̯ˌʃaɪ̯nˌvɛʁfɐ/",
+      "context": {
+        "de": "Das weiße Licht hinten leuchtet beim Rückwärtsfahren.",
+        "en": "This white rear light comes on when the car is in reverse.",
+        "zh": "倒车时，车尾这盏白灯会亮起。"
+      },
+      "reason": "Das weiße Licht hinten leuchtet beim Rückwärtsfahren."
+    }
+  },
+  {
+    "id": "v911",
+    "de": "die Rückleuchte",
+    "plural": "die Rückleuchten",
+    "en": "tail light",
+    "zh": "尾灯",
+    "pinyin": "wěidēng",
+    "path": "wilson/original-paket-07/v911-rueckleuchte.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-licht-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁʏkˌlɔɪ̯çtə/",
+      "context": {
+        "de": "Der Pfeil zeigt auf eine der roten Leuchten hinten am Auto.",
+        "en": "The arrow points to one of the red lights at the back of the car.",
+        "zh": "箭头指向车尾的一盏红灯。"
+      },
+      "reason": "Der Pfeil zeigt auf eine der roten Leuchten hinten am Auto."
+    }
+  },
+  {
+    "id": "v942",
+    "de": "der Scheinwerfer",
+    "plural": "die Scheinwerfer",
+    "en": "headlight",
+    "zh": "前照灯",
+    "pinyin": "qiánzhàodēng",
+    "path": "wilson/original-paket-07/v942-scheinwerfer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-licht-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃaɪ̯nˌvɛʁfɐ/",
+      "context": {
+        "de": "Die helle Hauptleuchte vorn macht die Straße im Dunkeln sichtbar.",
+        "en": "The main front lamp lights the road in the dark.",
+        "zh": "前方的这盏主灯在黑暗中照亮道路。"
+      },
+      "reason": "Die helle Hauptleuchte vorn macht die Straße im Dunkeln sichtbar."
+    }
+  },
+  {
+    "id": "v184",
+    "de": "der Dachboden",
+    "plural": "die Dachböden",
+    "en": "attic",
+    "zh": "阁楼",
+    "pinyin": "gélóu",
+    "path": "wilson/original-paket-07/v184-dachboden.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "raeume-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈdaxˌboːdn̩/",
+      "context": {
+        "de": "Der markierte Stauraum liegt direkt unter dem schrägen Dach.",
+        "en": "The highlighted storage space is directly beneath the pitched roof.",
+        "zh": "标出的储物空间就在斜屋顶下面。"
+      },
+      "reason": "Der markierte Stauraum liegt direkt unter dem schrägen Dach."
+    }
+  },
+  {
+    "id": "v349",
+    "de": "der Flur",
+    "plural": "die Flure",
+    "en": "hallway",
+    "zh": "走廊",
+    "pinyin": "zǒuláng",
+    "path": "wilson/original-paket-07/v349-flur.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "raeume-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/fluːɐ̯/",
+      "context": {
+        "de": "Der schmale Gang verbindet mehrere Zimmer.",
+        "en": "The narrow passage connects several rooms.",
+        "zh": "这条狭长的通道连接几个房间。"
+      },
+      "reason": "Der schmale Gang verbindet mehrere Zimmer."
+    }
+  },
+  {
+    "id": "v570",
+    "de": "der Keller",
+    "plural": "die Keller",
+    "en": "cellar",
+    "zh": "地下室",
+    "pinyin": "dìxiàshì",
+    "path": "wilson/original-paket-07/v570-keller.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "raeume-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɛlɐ/",
+      "context": {
+        "de": "Der markierte Raum liegt unter der Erde und unter dem Erdgeschoss.",
+        "en": "The highlighted room is underground, below the ground floor.",
+        "zh": "标出的房间位于地面以下，在地上一层的下方。"
+      },
+      "reason": "Der markierte Raum liegt unter der Erde und unter dem Erdgeschoss."
+    }
+  },
+  {
+    "id": "v1150",
+    "de": "die Terrasse",
+    "plural": "die Terrassen",
+    "en": "terrace",
+    "zh": "露台",
+    "pinyin": "lùtái",
+    "path": "wilson/original-paket-07/v1150-terrasse.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "raeume-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/tɛˈʁasə/",
+      "context": {
+        "de": "Die gepflasterte Sitzfläche liegt im Freien und ebenerdig am Haus.",
+        "en": "The paved seating area is outdoors at ground level next to the house.",
+        "zh": "这片铺砖的户外休息区在房屋旁，与地面齐平。"
+      },
+      "reason": "Die gepflasterte Sitzfläche liegt im Freien und ebenerdig am Haus."
+    }
+  },
+  {
+    "id": "v1174",
+    "de": "das Treppenhaus",
+    "plural": "die Treppenhäuser",
+    "en": "stairwell",
+    "zh": "楼梯间",
+    "pinyin": "lóutījiān",
+    "path": "wilson/original-paket-07/v1174-treppenhaus.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "raeume-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtʁɛpn̩ˌhaʊ̯s/",
+      "context": {
+        "de": "Gesucht ist der gesamte Bereich im Gebäude, in dem die Treppen die Stockwerke verbinden.",
+        "en": "Name the entire space where the stairs connect the floors of the building.",
+        "zh": "请写出楼梯连接各个楼层的整个区域。"
+      },
+      "reason": "Gesucht ist der gesamte Bereich im Gebäude, in dem die Treppen die Stockwerke verbinden."
+    }
+  },
+  {
+    "id": "v214",
+    "de": "das Display",
+    "plural": "die Displays",
+    "en": "display screen",
+    "zh": "显示屏",
+    "pinyin": "xiǎnshìpíng",
+    "path": "wilson/original-paket-07/v214-display.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "druck-und-scan-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/dɪsˈpleː/",
+      "context": {
+        "de": "Gesucht ist nur die leuchtende Anzeigefläche des Geräts.",
+        "en": "Name the illuminated part of the device that displays the information.",
+        "zh": "请写出设备上显示信息的那块发光区域。"
+      },
+      "reason": "Gesucht ist nur die leuchtende Anzeigefläche des Geräts."
+    }
+  },
+  {
+    "id": "v659",
+    "de": "der Laserdrucker",
+    "plural": "die Laserdrucker",
+    "en": "laser printer",
+    "zh": "激光打印机",
+    "pinyin": "jīguāng dǎyìnjī",
+    "path": "wilson/original-paket-07/v659-laserdrucker.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "druck-und-scan-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈleːzɐˌdʁʊkɐ/",
+      "context": {
+        "de": "Dieses Gerät druckt mit Tonerpulver und belichtet die Bildtrommel per Laser.",
+        "en": "This printer uses toner powder and a laser to expose the imaging drum.",
+        "zh": "这种打印机用激光在感光鼓上成像，并使用碳粉打印。"
+      },
+      "reason": "Dieses Gerät druckt mit Tonerpulver und belichtet die Bildtrommel per Laser."
+    }
+  },
+  {
+    "id": "v932",
+    "de": "der Scanner",
+    "plural": "die Scanner",
+    "en": "scanner",
+    "zh": "扫描仪",
+    "pinyin": "sǎomiáoyí",
+    "path": "wilson/original-paket-07/v932-scanner.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "druck-und-scan-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈskɛnɐ/",
+      "context": {
+        "de": "Das Dokument liegt auf einer Glasfläche. Ein Lichtstreifen tastet es ab.",
+        "en": "The document lies on a glass bed, where a strip of light reads it.",
+        "zh": "文件放在玻璃板上，由一道光扫过。"
+      },
+      "reason": "Das Dokument liegt auf einer Glasfläche. Ein Lichtstreifen tastet es ab."
+    }
+  },
+  {
+    "id": "v1154",
+    "de": "die Tintenpatrone",
+    "plural": "die Tintenpatronen",
+    "en": "ink cartridge",
+    "zh": "墨盒",
+    "pinyin": "mòhé",
+    "path": "wilson/original-paket-07/v1154-tintenpatrone.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "druck-und-scan-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtɪntn̩paˌtʁoːnə/",
+      "context": {
+        "de": "Dieses kleine Wechselteil enthält flüssige Tinte für einen Drucker.",
+        "en": "This small replaceable part contains liquid printer ink.",
+        "zh": "这个可更换的小部件装着打印机用的液体墨水。"
+      },
+      "reason": "Dieses kleine Wechselteil enthält flüssige Tinte für einen Drucker."
+    }
+  },
+  {
+    "id": "v1165",
+    "de": "die Tonerkartusche",
+    "plural": "die Tonerkartuschen",
+    "en": "toner cartridge",
+    "zh": "碳粉盒",
+    "pinyin": "tànfěnhé",
+    "path": "wilson/original-paket-07/v1165-tonerkartusche.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "druck-und-scan-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtoːnɐkaʁˌtʊʃə/",
+      "context": {
+        "de": "Das längliche Wechselteil für den Laserdrucker enthält feines Farbpulver.",
+        "en": "This long replaceable part for a laser printer contains fine toner powder.",
+        "zh": "这个长条形的可更换部件装有激光打印机用的细碳粉。"
+      },
+      "reason": "Das längliche Wechselteil für den Laserdrucker enthält feines Farbpulver."
+    }
+  },
+  {
+    "id": "v167",
+    "de": "der Busbahnhof",
+    "plural": "die Busbahnhöfe",
+    "en": "bus station",
+    "zh": "公共汽车总站",
+    "pinyin": "gōnggòng qìchē zǒngzhàn",
+    "path": "wilson/original-paket-07/v167-busbahnhof.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "unterwegs-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈbʊsbaːnˌhoːf/",
+      "context": {
+        "de": "An diesem größeren Ort fahren Busse an mehreren nummerierten Bussteigen ab.",
+        "en": "Buses depart from several numbered bays at this larger station.",
+        "zh": "在这个较大的站点，公交车从多个编号站台发车。"
+      },
+      "reason": "An diesem größeren Ort fahren Busse an mehreren nummerierten Bussteigen ab."
+    }
+  },
+  {
+    "id": "v679",
+    "de": "der Linienbus",
+    "plural": "die Linienbusse",
+    "en": "scheduled bus",
+    "zh": "班线公共汽车",
+    "pinyin": "bānxiàn gōnggòng qìchē",
+    "path": "wilson/original-paket-07/v679-linienbus.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "unterwegs-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈliːni̯ənˌbʊs/",
+      "context": {
+        "de": "Dieser öffentliche Bus fährt regelmäßig auf derselben Strecke. Vorn steht seine Nummer.",
+        "en": "This public bus regularly follows the same route. Its route number is shown at the front.",
+        "zh": "这辆公交车按固定线路运行，车前显示线路号码。"
+      },
+      "reason": "Dieser öffentliche Bus fährt regelmäßig auf derselben Strecke. Vorn steht seine Nummer."
+    }
+  },
+  {
+    "id": "v786",
+    "de": "der Notausgang",
+    "plural": "die Notausgänge",
+    "en": "emergency exit",
+    "zh": "紧急出口",
+    "pinyin": "jǐnjí chūkǒu",
+    "path": "wilson/original-paket-07/v786-notausgang.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "unterwegs-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈnoːtʔaʊ̯sˌɡaŋ/",
+      "context": {
+        "de": "Das grüne Schild mit laufender Person weist auf diese Tür für den Notfall.",
+        "en": "The green sign with a running figure points to this door for emergencies.",
+        "zh": "带奔跑人形的绿牌指向紧急情况下使用的门。"
+      },
+      "reason": "Das grüne Schild mit laufender Person weist auf diese Tür für den Notfall."
+    }
+  },
+  {
+    "id": "v882",
+    "de": "die Reisetasche",
+    "plural": "die Reisetaschen",
+    "en": "travel bag",
+    "zh": "旅行包",
+    "pinyin": "lǚxíngbāo",
+    "path": "wilson/original-paket-07/v882-reisetasche.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "unterwegs-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁaɪ̯zəˌtaʃə/",
+      "context": {
+        "de": "In dieser weichen Tasche mit Tragegriffen transportierst du Kleidung auf Reisen.",
+        "en": "This soft bag with carry handles holds your clothes when you travel.",
+        "zh": "这种有提手的软包用来装旅行时携带的衣服。"
+      },
+      "reason": "In dieser weichen Tasche mit Tragegriffen transportierst du Kleidung auf Reisen."
+    }
+  },
+  {
+    "id": "v1279",
+    "de": "das Wartehäuschen",
+    "plural": "die Wartehäuschen",
+    "en": "bus shelter",
+    "zh": "候车亭",
+    "pinyin": "hòuchētíng",
+    "path": "wilson/original-paket-07/v1279-wartehaeuschen.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "unterwegs-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvaʁtəˌhɔɪ̯sçən/",
+      "context": {
+        "de": "Das offene Häuschen mit Dach und Sitzbank schützt wartende Fahrgäste vor Regen.",
+        "en": "The open shelter with a roof and bench keeps waiting passengers out of the rain.",
+        "zh": "这个有屋顶和座椅的开放式小亭给等车的乘客挡雨。"
+      },
+      "reason": "Das offene Häuschen mit Dach und Sitzbank schützt wartende Fahrgäste vor Regen."
+    }
+  },
+  {
+    "id": "v445",
+    "de": "die Gürtelschlaufe",
+    "plural": "die Gürtelschlaufen",
+    "en": "belt loop",
+    "zh": "裤带环",
+    "pinyin": "kùdàihuán",
+    "path": "wilson/original-paket-07/v445-guertelschlaufe.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "persoenliches-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡʏʁtl̩ˌʃlaʊ̯fə/",
+      "context": {
+        "de": "Durch den markierten schmalen Stoffstreifen am Hosenbund führt man einen Gürtel.",
+        "en": "The highlighted strip at the waistband holds a belt in place.",
+        "zh": "皮带从裤腰上标出的窄布环里穿过去。"
+      },
+      "reason": "Durch den markierten schmalen Stoffstreifen am Hosenbund führt man einen Gürtel."
+    }
+  },
+  {
+    "id": "v589",
+    "de": "der Klettverschluss",
+    "plural": "die Klettverschlüsse",
+    "en": "hook-and-loop fastener",
+    "zh": "魔术贴",
+    "pinyin": "móshùtiē",
+    "path": "wilson/original-paket-07/v589-klettverschluss.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "persoenliches-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈklɛtfɛɐ̯ˌʃlʊs/",
+      "context": {
+        "de": "Die zwei markierten Bänder haften, wenn du die Häkchen auf die flauschige Seite drückst.",
+        "en": "The two highlighted strips fasten when the hooks are pressed against the fuzzy side.",
+        "zh": "把小钩一面压到毛绒一面，两条带子就会粘在一起。"
+      },
+      "reason": "Die zwei markierten Bänder haften, wenn du die Häkchen auf die flauschige Seite drückst."
+    }
+  },
+  {
+    "id": "v648",
+    "de": "der Kulturbeutel",
+    "plural": "die Kulturbeutel",
+    "en": "toiletry bag",
+    "zh": "洗漱包",
+    "pinyin": "xǐshùbāo",
+    "path": "wilson/original-paket-07/v648-kulturbeutel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "persoenliches-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/kʊlˈtuːɐ̯ˌbɔɪ̯tl̩/",
+      "context": {
+        "de": "In diese kleine Tasche packst du Zahnbürste und andere Waschutensilien für die Reise.",
+        "en": "This small travel pouch holds a toothbrush and other toiletries.",
+        "zh": "旅行时用这个小包收纳牙刷和其他洗漱用品。"
+      },
+      "reason": "In diese kleine Tasche packst du Zahnbürste und andere Waschutensilien für die Reise."
+    }
+  },
+  {
+    "id": "v798",
+    "de": "der Ohrstöpsel",
+    "plural": "die Ohrstöpsel",
+    "en": "earplug",
+    "zh": "耳塞",
+    "pinyin": "ěrsāi",
+    "path": "wilson/original-paket-07/v798-ohrstoepsel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "persoenliches-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈoːɐ̯ˌʃtœpsl̩/",
+      "context": {
+        "de": "Die kleinen weichen Stopfen dämpfen Geräusche im Ohr. Nenne ein einzelnes Stück.",
+        "en": "The small soft plugs reduce noise in the ear. Name one of them.",
+        "zh": "柔软的小塞子放进耳朵可以减弱噪音，请写单数。"
+      },
+      "reason": "Die kleinen weichen Stopfen dämpfen Geräusche im Ohr. Nenne ein einzelnes Stück."
+    }
+  },
+  {
+    "id": "v965",
+    "de": "der Schnürsenkel",
+    "plural": "die Schnürsenkel",
+    "en": "shoelace",
+    "zh": "鞋带",
+    "pinyin": "xiédài",
+    "path": "wilson/original-paket-07/v965-schnuersenkel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "persoenliches-07",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃnyːɐ̯ˌzɛŋkl̩/",
+      "context": {
+        "de": "Mit der markierten Schnur fädelst und bindest du den Schuh zu.",
+        "en": "Thread the highlighted cord through the holes and tie the shoe.",
+        "zh": "用标出的细绳穿过鞋孔，把鞋系紧。"
+      },
+      "reason": "Mit der markierten Schnur fädelst und bindest du den Schuh zu."
+    }
   }
 ];

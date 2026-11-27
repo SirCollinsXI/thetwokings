@@ -86,3 +86,15 @@ jobs:
             ${{ runner.temp }}/wilson-desktop.png
             ${{ runner.temp }}/wilson-chinese-entry.png
           if-no-files-found: ignore
+
+  published:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check the gallery count and a trainer card on the public domain
+        run: node scripts/check-wilson-published.cjs

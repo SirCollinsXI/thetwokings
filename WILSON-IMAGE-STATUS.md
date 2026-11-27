@@ -1,6 +1,75 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 06 live mit 779 Bildkarten
+## Hier fortsetzen · Paket 07 mit 829 Bildkarten im Projektstand
+
+| Stand | Nachweis |
+| --- | --- |
+| Hauptdomain | 779 aktive Bildkarten im Browser bestätigt. [Live-Galerie](https://thetwokings.de/wilson-image-review) |
+| Paket 07 | 50 zusätzliche Wörter mit eigenem SVG. 10 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Projektprüfung | 50 Motive einzeln gesichtet. Alle 829 Karten bestehen den Eingabetest. Der Offline-Build ist bytegleich reproduzierbar. |
+| Veröffentlichung | Der Test nach dem Merge prüft den sichtbaren Zähler und eine neue Karte auf der Hauptdomain. |
+| Noch offen | Hörbare Ausgabe auf iOS und Android. |
+
+## Paket 07 · Wortformen und Übersetzungen
+
+| Thema | ID | Singular | Plural | Englisch | 简体中文 |
+| --- | --- | --- | --- | --- | --- |
+| Heimwerken | v3 | die Abdeckfolie | die Abdeckfolien | protective sheeting | 防护薄膜 |
+| Heimwerken | v21 | der Akkubohrer | die Akkubohrer | cordless drill | 充电式电钻 |
+| Heimwerken | v506 | der Holzboden | die Holzböden | wooden floor | 木地板 |
+| Heimwerken | v1058 | die Spachtelmasse | die Spachtelmassen | filler | 腻子 |
+| Heimwerken | v1130 | der Tapeziertisch | die Tapeziertische | wallpaper pasting table | 壁纸施工桌 |
+| Küchenutensilien | v205 | der Dessertlöffel | die Dessertlöffel | dessert spoon | 甜点勺 |
+| Küchenutensilien | v639 | das Küchenmesser | die Küchenmesser | kitchen knife | 菜刀 |
+| Küchenutensilien | v1076 | das Stäbchen | die Stäbchen | chopstick | 筷子 |
+| Küchenutensilien | v1110 | der Suppenlöffel | die Suppenlöffel | soup spoon | 汤匙 |
+| Küchenutensilien | v1305 | das Weinglas | die Weingläser | wine glass | 葡萄酒杯 |
+| Obst & Gemüse | v174 | der Chicorée | Einzahlübung | chicory | 菊苣 |
+| Obst & Gemüse | v936 | die Schalotte | die Schalotten | shallot | 红葱头 |
+| Obst & Gemüse | v772 | die Nektarine | die Nektarinen | nectarine | 油桃 |
+| Obst & Gemüse | v799 | die Okraschote | die Okraschoten | okra pod | 秋葵荚 |
+| Obst & Gemüse | v1325 | der Wirsing | Einzahlübung | savoy cabbage | 皱叶甘蓝 |
+| Lebensmittel | v277 | der Eintopf | die Eintöpfe | stew | 炖菜 |
+| Lebensmittel | v572 | der Ketchup | die Ketchups | ketchup | 番茄酱 |
+| Lebensmittel | v1015 | der Senf | die Senfe | mustard | 芥末酱 |
+| Lebensmittel | v1048 | die Sojasoße | die Sojasoßen | soy sauce | 酱油 |
+| Lebensmittel | v1258 | das Vollkornbrot | die Vollkornbrote | wholemeal bread | 全麦面包 |
+| Bedienung im Auto | v126 | der Blinkerhebel | die Blinkerhebel | indicator stalk | 转向灯拨杆 |
+| Bedienung im Auto | v143 | das Bremspedal | die Bremspedale | brake pedal | 刹车踏板 |
+| Bedienung im Auto | v390 | das Gaspedal | die Gaspedale | accelerator pedal | 油门踏板 |
+| Bedienung im Auto | v650 | das Kupplungspedal | die Kupplungspedale | clutch pedal | 离合器踏板 |
+| Bedienung im Auto | v938 | der Schalthebel | die Schalthebel | gear lever | 变速杆 |
+| Lichter am Auto | v127 | das Blinklicht | die Blinklichter | indicator light | 转向灯 |
+| Lichter am Auto | v769 | der Nebelscheinwerfer | die Nebelscheinwerfer | fog light | 雾灯 |
+| Lichter am Auto | v909 | der Rückfahrscheinwerfer | die Rückfahrscheinwerfer | reversing light | 倒车灯 |
+| Lichter am Auto | v911 | die Rückleuchte | die Rückleuchten | tail light | 尾灯 |
+| Lichter am Auto | v942 | der Scheinwerfer | die Scheinwerfer | headlight | 前照灯 |
+| Räume am Haus | v184 | der Dachboden | die Dachböden | attic | 阁楼 |
+| Räume am Haus | v349 | der Flur | die Flure | hallway | 走廊 |
+| Räume am Haus | v570 | der Keller | die Keller | cellar | 地下室 |
+| Räume am Haus | v1150 | die Terrasse | die Terrassen | terrace | 露台 |
+| Räume am Haus | v1174 | das Treppenhaus | die Treppenhäuser | stairwell | 楼梯间 |
+| Drucken & Scannen | v214 | das Display | die Displays | display screen | 显示屏 |
+| Drucken & Scannen | v659 | der Laserdrucker | die Laserdrucker | laser printer | 激光打印机 |
+| Drucken & Scannen | v932 | der Scanner | die Scanner | scanner | 扫描仪 |
+| Drucken & Scannen | v1154 | die Tintenpatrone | die Tintenpatronen | ink cartridge | 墨盒 |
+| Drucken & Scannen | v1165 | die Tonerkartusche | die Tonerkartuschen | toner cartridge | 碳粉盒 |
+| Unterwegs | v167 | der Busbahnhof | die Busbahnhöfe | bus station | 公共汽车总站 |
+| Unterwegs | v679 | der Linienbus | die Linienbusse | scheduled bus | 班线公共汽车 |
+| Unterwegs | v786 | der Notausgang | die Notausgänge | emergency exit | 紧急出口 |
+| Unterwegs | v882 | die Reisetasche | die Reisetaschen | travel bag | 旅行包 |
+| Unterwegs | v1279 | das Wartehäuschen | die Wartehäuschen | bus shelter | 候车亭 |
+| Persönliche Dinge | v445 | die Gürtelschlaufe | die Gürtelschlaufen | belt loop | 裤带环 |
+| Persönliche Dinge | v589 | der Klettverschluss | die Klettverschlüsse | hook-and-loop fastener | 魔术贴 |
+| Persönliche Dinge | v648 | der Kulturbeutel | die Kulturbeutel | toiletry bag | 洗漱包 |
+| Persönliche Dinge | v798 | der Ohrstöpsel | die Ohrstöpsel | earplug | 耳塞 |
+| Persönliche Dinge | v965 | der Schnürsenkel | die Schnürsenkel | shoelace | 鞋带 |
+
+Chicorée akzeptiert beide Artikel. Bei Ketchup akzeptiert der Trainer „der“ und „das“. Bei Ketchup und Senf stehen die Plurale insbesondere für unterschiedliche Sorten. [Ketchup](https://www.duden.de/rechtschreibung/Ketchup) · [Senf](https://www.duden.de/rechtschreibung/Senf) · [Chicorée](https://www.duden.de/rechtschreibung/Chicoree).
+
+## Paket 06 und frühere Stände
+
+### Paket 06 live mit 779 Bildkarten
 
 | Stand | Nachweis |
 | --- | --- |
