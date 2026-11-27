@@ -1,10 +1,10 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **714 aktive Karten**. Paket 2 ergänzt fünf Wörter. Bis zum Ziel fehlen auf diesem Stand **786 Karten**. Vor der Freigabe von Paket 2 wurden auf der Hauptdomain **709 aktive Karten** und der Eingabeablauf für Handrührgerät bestätigt.
+Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **714 aktive Karten**. Paket 2 ergänzt fünf Wörter. Bis zum Ziel fehlen auf diesem Stand **786 Karten**. Die Hauptdomain liefert **714 aktive Karten** aus. Die Galerie zeigt alle fünf Karten aus Paket 2. Der Papierkorb (`v810`) öffnet im Eingabetrainer mit geladenem Bild.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
-| 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build | Hörbare Geräteausgabe |
+| 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build, Live-Galerie und Kartenaufruf | Hörbare Geräteausgabe |
 | 3 · Unterwegs | — | +0 von 5 | Abnahme ausstehend | Kimi-Auftrag vorbereitet. Der Modellaufruf scheiterte an der DNS-Auflösung im Arbeitskontext. |
 
 ## Bestand
@@ -32,7 +32,7 @@ Die 714 Karten umfassen **638 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl
 
 ## Küche und Haushalt, Paket 2
 
-Die fünf vorhandenen IDs `v531` (Inbusschlüssel), `v810` (Papierkorb), `v1079` (Starthilfekabel), `v1101` (Stromkabel) und `v1102` (Stromzähler) sind mit eigenen SVGs im Trainer und in der Galerie aktiviert. Die zwei ersetzten Sperrentscheidungen bleiben in `reviewHistory`. Die Galerie bietet den Filter **Neu · Küche & Haushalt 2**. [Prüfung und Arbeitsstand](WILSON-HOUSEHOLD-02.md)
+Die fünf vorhandenen IDs `v531` (Inbusschlüssel), `v810` (Papierkorb), `v1079` (Starthilfekabel), `v1101` (Stromkabel) und `v1102` (Stromzähler) sind mit eigenen SVGs im Trainer und in der Galerie aktiviert. Die zwei ersetzten Sperrentscheidungen bleiben in `reviewHistory`. Der Filter **Neu · Küche & Haushalt** zeigt die fünf Karten aus Paket 2. [Prüfung und Arbeitsstand](WILSON-HOUSEHOLD-02.md)
 
 ## Was gerettet und zusammengeführt wurde
 
