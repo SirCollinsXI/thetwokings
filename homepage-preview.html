@@ -19,28 +19,28 @@
       <a href="wilson.html" data-copy="wilson">Wilsons Trainingsecke</a>
     </nav>
     <div class="languages" role="group" aria-label="Sprache" data-label="language">
-      <button type="button" data-lang="de" lang="de" aria-pressed="true">DE</button>
-      <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="de" lang="de" aria-label="Deutsch (DE)" aria-pressed="true">DE</button>
+      <button type="button" data-lang="en" lang="en" aria-label="English (EN)" aria-pressed="false">EN</button>
       <button type="button" data-lang="zh" lang="zh-CN" aria-pressed="false">简体中文</button>
     </div>
   </header>
   <div class="shell layout">
-    <main id="inhalt">
+    <main id="inhalt" tabindex="-1">
       <section class="intro" aria-labelledby="home-title">
         <p class="label" data-copy="preview">Startseiten-Vorschau</p>
         <h1 id="home-title" data-copy="headline">Spielen, lesen, lernen.</h1>
         <p data-copy="intro">Hier entstehen Welten zum Ausprobieren, Comics zum Weiterblättern und Werkzeuge zum Lernen.</p>
         <a class="action" href="#projekte" data-copy="explore">Projekte entdecken</a>
       </section>
-      <section class="projects" id="projekte" aria-labelledby="projects-title">
+      <section class="projects" id="projekte" tabindex="-1" aria-labelledby="projects-title">
         <h2 id="projects-title" data-copy="projects">Projekte</h2>
-        <article id="wehr" class="project game">
+        <article id="wehr" class="project game" tabindex="-1" aria-labelledby="wehr-title">
           <div class="terrain" aria-hidden="true"><span></span></div>
           <div class="card">
             <p class="status" data-copy="prototype">Prototyp</p>
-            <h3 data-copy="game">Das Wehr</h3>
-            <p data-copy="gameText">Ein 3D-Abenteuer in Entwicklung.</p>
-            <p class="next" data-copy="gameNext">Als Nächstes: Webexport starten, Ladezeit und Steuerung testen.</p>
+            <h3 id="wehr-title" data-copy="game">Das Wehr</h3>
+            <p data-copy="gameText">3D-Abenteuer für Windows mit Wehrfähre, Holzbau und Werkbank.</p>
+            <p class="next" data-copy="gameNext">Vor der Webfreigabe: Export erstellen, Ladezeit und Steuerung testen und die Nutzungsrechte für die Spielinhalte klären.</p>
           </div>
         </article>
         <div class="pair">
@@ -54,7 +54,7 @@
             </div>
           </article>
           <article class="project">
-            <div class="flashcard" aria-hidden="true"><span>Bild</span><span>图</span></div>
+            <div class="flashcard" aria-hidden="true"><span lang="de">Bild</span><span data-copy="picture">图</span></div>
             <div class="card">
               <h3 data-copy="wilson">Wilsons Trainingsecke</h3>
               <p data-copy="wilsonText">Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.</p>
@@ -65,13 +65,17 @@
       </section>
       <section class="more" aria-labelledby="more-title">
         <h2 id="more-title" data-copy="more">Mehr entdecken</h2>
-        <div>
-          <a href="wuestenbogen.html" data-copy="archery">Wüstenbogen</a>
-          <a href="piratenjagd.html" data-copy="pirates">Piratenjagd</a>
-          <a href="klassischer-game-hub.html" data-copy="classics">Klassische Spiele</a>
-          <a href="werkstatt.html" data-copy="pc">PC-Werkstatt</a>
-          <a href="kinglab/caffeine-clash.html">KingLab</a>
-        </div>
+        <h3 data-copy="games">Spiele</h3>
+        <ul class="more-links" role="list">
+          <li><a href="wuestenbogen.html" data-copy="archery">Wüstenbogen</a></li>
+          <li><a href="piratenjagd.html" data-copy="pirates">Piratenjagd</a></li>
+          <li><a href="klassischer-game-hub.html" data-copy="classics">Klassische Spiele</a></li>
+        </ul>
+        <h3 data-copy="workshop">Werkstatt &amp; Experimente</h3>
+        <ul class="more-links" role="list">
+          <li><a href="werkstatt.html" data-copy="pc">PC-Werkstatt</a></li>
+          <li><a href="kinglab/caffeine-clash.html">KingLab</a></li>
+        </ul>
       </section>
     </main>
     <aside class="rail" aria-labelledby="comments-title">

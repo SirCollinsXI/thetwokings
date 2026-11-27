@@ -18,11 +18,15 @@ const copy = {
   explore: ['Projekte entdecken', 'Explore projects', '探索项目'],
   projects: ['Projekte', 'Projects', '项目'],
   prototype: ['Prototyp', 'Prototype', '原型'],
-  gameText: ['Ein 3D-Abenteuer in Entwicklung.', 'A 3D adventure in development.', '一款正在开发的 3D 冒险游戏。'],
+  gameText: [
+    '3D-Abenteuer für Windows mit Wehrfähre, Holzbau und Werkbank.',
+    'A 3D adventure for Windows with a ferry, timber construction and a workbench.',
+    'Windows 端 3D 冒险游戏，包含水坝渡船、木结构建造和工作台。',
+  ],
   gameNext: [
-    'Als Nächstes: Webexport starten, Ladezeit und Steuerung testen.',
-    'Next: build for the web and test loading times and controls.',
-    '下一步：导出网页版本，测试加载时间和操作。',
+    'Vor der Webfreigabe: Export erstellen, Ladezeit und Steuerung testen und die Nutzungsrechte für die Spielinhalte klären.',
+    'Before the web release: build the web version, test loading and controls, and clear the rights to the game assets.',
+    '网页版发布前：导出网页版本，测试加载时间和操作，并确认游戏素材的使用权。',
   ],
   comicText: [
     'Lies die veröffentlichte Leseprobe von Sam & Piet.',
@@ -41,7 +45,10 @@ const copy = {
     '看图练习德语单词、冠词和复数形式。',
   ],
   learn: ['Training öffnen', 'Start practising', '开始练习'],
+  picture: ['图', 'Image', '图片'],
   more: ['Mehr entdecken', 'Explore more', '发现更多'],
+  games: ['Spiele', 'Games', '游戏'],
+  workshop: ['Werkstatt & Experimente', 'Workshop & experiments', '工作室与实验'],
   archery: ['Wüstenbogen', 'Desert Archery', '沙漠射箭'],
   pirates: ['Piratenjagd', 'Pirate Hunt', '海盗冒险'],
   classics: ['Klassische Spiele', 'Classic games', '经典游戏'],
@@ -99,6 +106,11 @@ for (const button of buttons) {
   button.addEventListener('click', () => {
     const language = button.dataset.lang;
     showLanguage(language);
+    const url = new URL(window.location.href);
+    if (url.searchParams.has('lang')) {
+      url.searchParams.set('lang', language);
+      history.replaceState(history.state, '', url);
+    }
     try {
       sessionStorage.setItem(storageKey, language);
     } catch {

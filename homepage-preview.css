@@ -64,7 +64,8 @@ h3 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .project-link { width: fit-content; padding-block: .3rem; font-weight: 750; color: var(--accent); text-underline-offset: .16em; }
 
 .more { margin-block-start: 2rem; }
-.more > div { display: flex; flex-wrap: wrap; gap: .55rem; }
+.more h3 { font-size: 1rem; margin-block: 1rem .55rem; }
+.more-links { display: flex; flex-wrap: wrap; gap: .55rem; list-style: none; margin: 0; padding: 0; }
 .more a { display: block; border: 1px solid var(--line); border-radius: .35rem; padding: .52rem .7rem; }
 .rail { display: grid; gap: 1rem; align-content: start; }
 .rail-panel { border-block-start: 1px solid var(--line); padding-block: 1rem; }
