@@ -90,11 +90,13 @@
       for (const link of projectLinks) {
         const target = new URL(link.href);
         target.searchParams.set('lang', language);
-        target.searchParams.set('from', 'homepage');
+        target.searchParams.set('from', 'klassische-startseite');
         if (link.hasAttribute('data-wilson-entry')) target.searchParams.set('homeLang', language);
         link.href = target.href;
       }
-      document.title=translate('TheTwoKings — Geschichten. Spiele. Technik.',language);
+      const currentHome = document.querySelector('[data-current-home]');
+      if (currentHome) currentHome.href = 'index.html?lang=' + language;
+      document.title = { de: 'TheTwoKings — Klassische Startseite', en: 'TheTwoKings — Classic homepage', zh: 'TheTwoKings｜经典首页' }[language];
       const desc=document.querySelector('meta[name="description"]');
       if(desc) desc.content=descriptions[language];
       document.querySelectorAll('[data-set-language]').forEach(button=>{

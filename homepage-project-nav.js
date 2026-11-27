@@ -4,16 +4,22 @@
   const entry = new URLSearchParams(location.search);
   const script = document.currentScript;
   const section = script.dataset.section;
-  const rootEntry = entry.get('from') === 'homepage';
-  if (!rootEntry && entry.get('from') !== 'homepage-preview') return;
-  const home = new URL(rootEntry ? 'index.html' : 'homepage-preview.html', script.src);
-  const homeSection = rootEntry && section === 'werkstatt' ? 'pc' : section;
+  const entryPage = entry.get('from');
+  const homeFiles = new Map([
+    ['homepage', 'index.html'],
+    ['homepage-preview', 'homepage-preview.html'],
+    ['klassische-startseite', 'klassische-startseite.html'],
+  ]);
+  if (!homeFiles.has(entryPage)) return;
+  const home = new URL(homeFiles.get(entryPage), script.src);
+  const classicSection = section === 'werkstatt' ? 'pc' : section;
+  const homeSection = entryPage === 'klassische-startseite' ? classicSection : section;
   const root = new URL('.', script.src);
   const homePaths = new Set([root.pathname, new URL('index.html', root).pathname, new URL('/', root).pathname]);
   const returnLinks = [...document.querySelectorAll('a[href]')].filter(link => {
     const url = new URL(link.href);
     const isHome = url.origin === root.origin && homePaths.has(url.pathname);
-    return isHome && (!url.hash || (url.hash === '#' + section || url.hash === '#' + homeSection));
+    return isHome && (!url.hash || (url.hash === '#' + section || url.hash === '#' + classicSection));
   });
   const menuLink = document.querySelector('[data-preview-return]');
   const workshopLinks = document.querySelectorAll('a[href^="werkstatt.html"], a[href^="preisradar.html"]');
@@ -38,7 +44,7 @@
     }
     for (const link of workshopLinks) {
       const target = new URL(link.href);
-      target.searchParams.set('from', rootEntry ? 'homepage' : 'homepage-preview');
+      target.searchParams.set('from', entryPage);
       target.searchParams.set('lang', language);
       link.href = target.href;
     }

@@ -3,8 +3,13 @@ const { chromium } = require('playwright-core');
 const { mkdir } = require('node:fs/promises');
 const { join } = require('node:path');
 
-const preview = new URL(process.env.PREVIEW_URL);
-assert.match(preview.origin, /^https:\/\/[0-9a-f]+\.wuesten-bogen-app\.pages\.dev$/);
+const { readFile } = require('node:fs/promises');
+const { setTimeout: delay } = require('node:timers/promises');
+const mode = process.argv[2] || 'preview';
+assert.ok(['preview', 'before', 'published'].includes(mode), 'Unknown test mode');
+const preview = new URL(mode === 'preview' ? process.env.PREVIEW_URL : 'https://thetwokings.de/');
+if (mode === 'preview') assert.match(preview.origin, /^https:\/\/[0-9a-f]+\.wuesten-bogen-app\.pages\.dev$/);
+const release = 'homepage-2026-11';
 const games = [
   ['de', 'Wüstenbogen spielen', 'Piratenjagd spielen'],
   ['en', 'Play Desert Archery', 'Play Pirate Hunt'],
@@ -83,7 +88,7 @@ const wilsonLabels = {
   zh: /Wilson 的学习角/,
 };
 
-async function checkWilson(page, lang, redesigned) {
+async function checkWilson(page, lang, redesigned, source) {
   const selectors = redesigned
     ? ['#navigation', '#projekte', '#lernen', 'footer'].map(area => area + ' a[data-link-language="home-only"]')
     : ['header nav a[data-wilson-entry]', '#lernen[data-wilson-entry]', 'footer a[data-wilson-entry]'];
@@ -94,6 +99,7 @@ async function checkWilson(page, lang, redesigned) {
     assert.equal(target.origin, preview.origin);
     assert.match(target.pathname, /^\/wilson(?:\.html)?$/, selector);
     assert.equal(target.searchParams.get('lang'), lang, selector);
+    if (source && redesigned) assert.equal(target.searchParams.get('from'), source, selector);
     if (redesigned) assert.equal(target.searchParams.get('homeLang'), lang, selector);
     if (selector.startsWith('#lernen ')) {
       assert.match(await page.locator('#lernen h2').innerText(), wilsonLabels[lang]);
@@ -203,10 +209,119 @@ async function screenshotHomepage(page, lang) {
   await page.screenshot({ path: join(dir, 'homepage-' + lang + '-' + page.viewportSize().width + '.png'), animations: 'disabled' });
 }
 
+async function checkReleasePage(page, lang, source) {
+  assert.equal(await page.locator('meta[name="ttk-release"]').getAttribute('content'), release);
+  const robots = await page.locator('meta[name="robots"]').getAttribute('content');
+  assert.equal(robots.split(/[,\s]+/).includes('noindex'), source === 'homepage-preview');
+  assert.equal(await page.locator('html').getAttribute('lang'), lang === 'zh' ? 'zh-CN' : lang);
+  const names = {
+    de: ['Sams Comic-Werkstatt', 'Phils PC-Werkstatt', 'Prototyp'],
+    en: ['Sam’s Comic Workshop', 'Phil’s PC Workshop', 'Prototype'],
+    zh: ['Sam 的漫画工坊', 'Phil 的电脑工坊', '原型'],
+  };
+  for (const [selector, label] of [['#comics-title', 0], ['#pc-title', 1], ['#werkstatt [data-copy="prototype"]', 2]]) {
+    assert.equal((await page.locator(selector).first().innerText()).trim(), names[lang][label]);
+  }
+  for (const [selector, path] of [['#comics .archive-entry', '/comics'], ['#werkstatt [data-copy="pcOpen"]', '/werkstatt']]) {
+    const link = new URL(await page.locator(selector).getAttribute('href'), page.url());
+    assert.equal(link.origin, preview.origin);
+    assert.equal(link.pathname.replace(/\.html$/, ''), path);
+    assert.equal(link.searchParams.get('from'), source);
+    assert.equal(link.searchParams.get('lang'), lang);
+  }
+  for (const [selector, hash] of [['[data-wall-word="privacy"]', lang === 'de' ? '#spuren' : '#spuren-' + lang],
+    ['footer [data-copy="privacy"]', ''], ['footer [data-copy="imprint"]', '']]) {
+    const link = new URL(await page.locator(selector).getAttribute('href'), page.url());
+    const path = selector.includes('imprint') ? 'impressum' : 'datenschutz';
+    assert.equal(link.origin, preview.origin);
+    assert.equal(link.pathname.replace(/\.html$/, ''), '/' + path);
+    assert.equal(link.hash, hash);
+    if (hash) {
+      const info = await page.request.get(link.href);
+      assert.equal(info.status(), 200);
+      assert((await info.text()).includes('id="' + hash.slice(1) + '"'), link.href);
+    }
+  }
+  for (const selector of ['.intro-art', '#lernen img', '#comics img']) {
+    const image = page.locator(selector).first();
+    assert(await image.evaluate(async img => { await img.decode(); return img.naturalWidth > 0; }), selector);
+  }
+  const [main, sidebar] = await Promise.all([page.locator('main').boundingBox(), page.locator('aside.rail').boundingBox()]);
+  assert(page.viewportSize().width >= 1088 ? sidebar.x >= main.x + main.width - 1 : sidebar.y >= main.y + main.height - 1,
+    'Guestbook must sit beside desktop content and below mobile content');
+  const focus = page.locator('#lernen .project-link');
+  await page.keyboard.press('Tab');
+  await focus.focus();
+  assert(await focus.evaluate(el => el === document.activeElement && getComputedStyle(el).outlineStyle !== 'none'),
+    'Wilson card needs a visible keyboard focus');
+  const panel = page.locator('#stats-panel');
+  if (!await panel.getAttribute('data-start') || !await panel.getAttribute('data-day') || await panel.getAttribute('data-views') === null) {
+    assert(await panel.isHidden(), 'Hide the counter when measurements are missing');
+  }
+}
+
+async function checkFormerBookmarks(browser) {
+  const page = await browser.newPage();
+  try {
+    for (const [hash, section] of [['arbeiten', '#projekte'], ['pc', '#werkstatt'], ['wilson-card-name', '#lernen']]) {
+      await page.goto(new URL('/?lang=zh#' + hash, preview).href);
+      assert(await page.locator(section + ' #' + hash).isVisible(), 'Legacy bookmark #' + hash);
+    }
+    for (const hash of ['budget', 'compare', 'parts']) {
+      await page.goto(new URL('/?lang=zh#' + hash, preview).href, { waitUntil: 'commit' });
+      await page.waitForURL(url => /^\/klassische-startseite(?:\.html)?$/.test(url.pathname)
+        && url.hash === '#' + hash && url.searchParams.get('lang') === 'zh');
+      await page.locator('#' + hash).waitFor();
+    }
+  } finally {
+    await page.close();
+  }
+}
+
+// The custom domain may still serve the previous deployment just after the merge.
+async function awaitRelease(browser) {
+  const expected = await readFile(join(__dirname, '../homepage-preview.js'), 'utf8');
+  const page = await browser.newPage();
+  try {
+    for (let attempt = 1; attempt <= 18; attempt++) {
+      try {
+        const response = await page.goto(preview.href, { waitUntil: 'domcontentloaded', timeout: 10000 });
+        const marker = await page.locator('meta[name="ttk-release"]').getAttribute('content', { timeout: 1500 });
+        const script = await page.request.get(new URL('/homepage-preview.js', preview).href, { timeout: 10000 });
+        assert.equal(response.status(), 200);
+        assert.equal(marker, release);
+        assert.equal(script.status(), 200);
+        assert.ok((await script.text()).replaceAll('\r\n', '\n') === expected.replaceAll('\r\n', '\n'),
+          'Homepage script on the public domain differs from the checkout');
+        return;
+      } catch (error) {
+        if (attempt === 18) throw error;
+        console.log('Waiting for the release on', preview.href, '(' + attempt + '/18)');
+        await delay(10000);
+      }
+    }
+  } finally {
+    await page.close();
+  }
+}
+
 async function run() {
   const browser = await chromium.launch({ executablePath: process.env.CHROME });
   try {
-    for (const [path, source] of [['/', 'homepage'], ['/homepage-preview', 'homepage-preview']]) {
+    if (mode === 'before') {
+      const page = await browser.newPage();
+      const response = await page.goto(new URL('/?lang=de', preview).href, { waitUntil: 'domcontentloaded' });
+      assert.equal(response.status(), 200);
+      assert.equal(new URL(page.url()).origin, preview.origin);
+      const redesigned = await page.locator('meta[name="ttk-release"]').count() > 0;
+      await checkWilson(page, 'de', redesigned);
+      console.log('Public homepage before merge:', page.url(), redesigned ? 'redesigned homepage' : 'classic homepage', await page.title());
+      return;
+    }
+    if (mode === 'published') await awaitRelease(browser);
+    const routes = [['/', 'homepage']];
+    if (mode === 'preview') routes.push(['/homepage-preview', 'homepage-preview'], ['/klassische-startseite', 'klassische-startseite']);
+    for (const [path, source] of routes) {
       for (const [lang, bow, pirate] of games) {
         const page = await browser.newPage({ viewport: { width: lang === 'en' ? 1440 : 390, height: 844 } });
         const url = new URL(path, preview);
@@ -214,9 +329,10 @@ async function run() {
         const response = await page.goto(url.href, { waitUntil: 'domcontentloaded' });
         assert.equal(response.status(), 200, url.href);
         assert.equal(new URL(page.url()).origin, preview.origin);
-        const redesigned = source === 'homepage-preview';
-        await checkWilson(page, lang, redesigned);
-        if (redesigned) await screenshotHomepage(page, lang);
+        const redesigned = source !== 'klassische-startseite';
+        await checkWilson(page, lang, redesigned, source);
+        if (redesigned) await checkReleasePage(page, lang, source);
+        if (source === 'homepage') await screenshotHomepage(page, lang);
         const section = page.locator('#spiele');
         for (const [label, file] of [[bow, 'wuestenbogen'], [pirate, 'piratenjagd']]) {
           const link = section.locator('.playable-games').getByRole('link', { name: label, exact: true });
@@ -236,22 +352,28 @@ async function run() {
         }
         assert.match(await section.locator('#wehr').innerText(), /Windows/);
         assert.equal(await section.locator('#wehr a').count(), 0);
-        if (redesigned) {
+        if (source === 'homepage') {
           await testTrials(page, lang);
           if (lang === 'de') {
             await testPublicWall(page);
-            await testTraces(page);
-            await testCounter(page);
+            if (mode === 'preview') {
+              await testTraces(page);
+              await testCounter(page);
+            }
           }
         }
         assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), url.href);
         console.log('HTTP 200; localized Wilson and games entries, prototype and layout verified:', url.href);
-        if (redesigned) await testWorkshop(page, lang);
+        if (mode === 'preview' && source === 'homepage') await testWorkshop(page, lang);
         await page.close();
       }
     }
-    await testStudy(browser);
-    await require('./test-share-card.cjs')(browser, preview);
+    await checkFormerBookmarks(browser);
+    await require('./test-share-card.cjs')(browser, preview, '/');
+    if (mode === 'preview') {
+      await testStudy(browser);
+      await require('./test-share-card.cjs')(browser, preview, '/homepage-preview');
+    }
   } finally {
     await browser.close();
   }

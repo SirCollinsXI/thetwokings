@@ -77,7 +77,8 @@ const supported=['de','en','zh'];
 const entryParams = new URLSearchParams(location.search);
 const param = entryParams.get('lang');
 const entryPage = entryParams.get('from');
-const previewReturn = ['homepage-preview', 'homepage'].includes(entryPage)
+const returnPages = new Map([['homepage', 'index.html'], ['homepage-preview', 'homepage-preview.html'], ['klassische-startseite', 'klassische-startseite.html']]);
+const previewReturn = returnPages.has(entryPage)
   ? document.querySelector('[data-preview-return]') : null;
 const browser=(navigator.language||'de').toLowerCase();let lang=supported.includes(param)?param:(()=>{try{let v=sessionStorage.getItem('ttk-language');if(supported.includes(v))return v;}catch(_){}return browser.startsWith('zh')?'zh':browser.startsWith('en')?'en':'de'})(); 
 const t=s=>{if(lang==='de'||!s)return s;const v=dict.get(s.trim())?.[lang];if(!v)return s;return s.replace(s.trim(),v)};
@@ -86,7 +87,7 @@ function apply(el=document.body){if(!el)return;const walker=document.createTreeW
 for(const a of document.querySelectorAll('[aria-label],[placeholder]')){let o=attrs.get(a);if(!o){o={};attrs.set(a,o)}for(const k of ['aria-label','placeholder'])if(a.hasAttribute(k)){if(!(k in o))o[k]=a.getAttribute(k);let v=t(o[k]);if(a.getAttribute(k)!==v)a.setAttribute(k,v)}}
 document.documentElement.lang=lang==='zh'?'zh-CN':lang;
 if (previewReturn) {
-  const home = entryPage === 'homepage' ? 'index.html' : 'homepage-preview.html';
+  const home = returnPages.get(entryPage);
   previewReturn.href = home + '?lang=' + lang + '#spiele';
   previewReturn.textContent = { de: '← Zur Spieleübersicht', en: '← Back to games', zh: '← 返回游戏区' }[lang];
   previewReturn.hidden = false;

@@ -2,7 +2,7 @@
 
 const copy = {
   ...homepageGamesCopy,
-  title: ['TheTwoKings | Startseiten-Vorschau', 'TheTwoKings | Homepage preview', 'TheTwoKings｜首页预览'],
+  title: ['TheTwoKings | Spielen, lesen, lernen.', 'TheTwoKings | Play, read, learn.', 'TheTwoKings｜玩游戏，读漫画，学德语。'],
   skip: ['Zum Inhalt', 'Skip to content', '跳转到正文'],
   nav: ['Hauptnavigation', 'Main navigation', '主导航'],
   language: ['Sprache', 'Language', '语言'],
@@ -51,6 +51,7 @@ const copy = {
     '价格雷达展示德国和美国市场的历史价格。',
   ],
   pcOpen: ['PC-Check starten', 'Start the PC check', '开始电脑检查'],
+  pcPlanner: ['Komponenten und Angebote vergleichen', 'Compare PC parts and offers', '比较电脑配件和报价'],
   pcRadar: ['Historische Preise', 'Historical prices', '历史价格'],
   labText: ['Vergleiche den Koffeingehalt von Getränken.', 'Compare how much caffeine different drinks contain.', '对比不同饮料的咖啡因含量。'],
   labOpen: ['Koffeinvergleich öffnen', 'Open caffeine comparison', '查看咖啡因对比'],
@@ -73,13 +74,30 @@ const copy = {
   statsTimeZone: ['Ortszeit Berlin', 'Berlin time', '柏林时间'],
   statsViews: ['Startseitenaufrufe', 'Homepage views', '首页浏览次数'],
   statsSince: ['Messbeginn', 'Counting since', '统计开始日期'],
-  existing: ['Aktuelle Website', 'Current website', '当前网站'],
+  existing: ['Klassische Startseite', 'Classic homepage', '经典首页'],
   imprint: ['Impressum', 'Legal notice', '网站法律声明'],
   privacy: ['Datenschutz', 'Privacy', '隐私政策'],
 };
 
 const languages = ['de', 'en', 'zh'];
 const storageKey = 'ttk-language';
+const isPreview = /\/homepage-preview(?:\.html)?\/?$/.test(location.pathname);
+const originPage = isPreview ? 'homepage-preview' : 'homepage';
+
+// Preserve bookmarks to tools on the original homepage, including their language.
+const classicFragments = new Set([
+  '#purpose', '#purpose-note', '#budget', '#total', '#remaining', '#parts',
+  '#export', '#compare', '#comparison', '#about', '#info', '#close-info',
+]);
+function openClassicBookmark() {
+  if (isPreview || !classicFragments.has(location.hash)) return;
+  const target = new URL('klassische-startseite.html', location.href);
+  target.search = location.search;
+  target.hash = location.hash;
+  location.replace(target.href);
+}
+openClassicBookmark();
+window.addEventListener('hashchange', openClassicBookmark);
 const textNodes = document.querySelectorAll('[data-copy]');
 const labelledNodes = document.querySelectorAll('[data-label]');
 const buttons = document.querySelectorAll('[data-lang]');
@@ -111,6 +129,7 @@ function showLanguage(language) {
   const index = languages.indexOf(language);
   document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
   document.title = copy.title[index];
+  document.querySelector('meta[name="description"]').content = copy.intro[index];
   for (const node of textNodes) node.textContent = copy[node.dataset.copy][index];
   for (const node of labelledNodes) node.setAttribute('aria-label', copy[node.dataset.label][index]);
   for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.lang === language));
@@ -120,7 +139,7 @@ function showLanguage(language) {
     const mode = link.dataset.linkLanguage;
     target.searchParams.set('lang', language);
     if (mode === 'home-only') target.searchParams.set('homeLang', language);
-    if (mode) target.searchParams.set('from', 'homepage-preview');
+    if (mode) target.searchParams.set('from', originPage);
     link.href = target.href;
   }
 }

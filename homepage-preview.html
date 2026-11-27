@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>TheTwoKings | Startseiten-Vorschau</title>
+  <meta name="ttk-release" content="homepage-2026-11">
+  <meta name="description" content="Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.">
+  <link rel="canonical" href="https://thetwokings.de/">
+  <title>TheTwoKings | Spielen, lesen, lernen.</title>
   <link rel="icon" href="crown.svg">
   <link rel="stylesheet" href="homepage-preview.css">
   <link rel="stylesheet" href="wilson-entry.css">
@@ -47,7 +50,7 @@
         <img class="intro-art" src="assets/homepage-koenige.webp" width="800" height="440" alt="" decoding="async">
       </section>
       <nav id="projekte" class="area-nav" tabindex="-1" aria-label="Bereiche entdecken" data-label="areaNav">
-        <ul class="area-grid" role="list">
+        <ul id="arbeiten" class="area-grid" role="list">
           <li><a href="wilson.html" data-link-language="home-only"><strong data-copy="wilson">Wilsons Lernecke</strong><span data-copy="areaLearnHint">Deutsch mit Bildkarten üben ↗</span></a></li>
           <li><a href="#comics"><strong data-copy="comics">Sams Comic-Werkstatt</strong><span data-copy="areaComicsHint">Geschichten und frühe Entwürfe</span></a></li>
           <li><a href="#spiele"><strong data-copy="areaGames">Spiele</strong><span data-copy="areaGamesHint">Browserspiele und Das Wehr</span></a></li>
@@ -59,7 +62,7 @@
           <div class="wilson-example"><img src="wilson/cup.svg" alt="" width="112" height="112">
               <div class="wilson-example-words"><b lang="de">die Tasse</b><span lang="en">cup</span><span lang="zh-Hans">杯子</span></div></div>
           <div class="card">
-            <h2 id="learn-title" data-copy="wilson">Wilsons Lernecke</h2>
+            <h2 id="learn-title"><span id="wilson-card-name" data-copy="wilson">Wilsons Lernecke</span></h2>
             <p data-copy="wilsonText">Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.</p>
             <a class="project-link" href="wilson.html" data-link-language="home-only" data-copy="learn">Bildtrainer öffnen</a>
             <a class="trace-entry" href="#spuren" data-trace-context="lernen" data-copy="traceOpen">Spur hinterlassen</a>
@@ -159,7 +162,7 @@
         <h2 id="workshop-title" data-copy="workshop">Werkstatt &amp; Experimente</h2>
         <a class="trace-entry" href="#spuren" data-trace-context="werkstatt" data-copy="traceOpen">Spur hinterlassen</a>
         <div class="pair">
-          <article class="project" aria-labelledby="pc-title">
+          <article id="pc" class="project" aria-labelledby="pc-title">
             <div class="card">
               <p class="status" data-copy="prototype">Prototyp</p>
               <h3 id="pc-title" data-copy="pc">Phils PC-Werkstatt</h3>
@@ -168,6 +171,7 @@
 
               <ul class="more-links" role="list">
                 <li><a href="werkstatt.html" data-link-language="project" data-copy="pcOpen">PC-Check starten</a></li>
+                <li><a href="klassische-startseite.html#pc" data-link-language data-copy="pcPlanner">Komponenten und Angebote vergleichen</a></li>
                 <li><a href="preisradar.html" data-link-language="project" data-copy="pcRadar">Historische Preise</a></li>
               </ul>
             </div>
@@ -271,7 +275,7 @@
     <a href="wilson.html" data-link-language="home-only" data-copy="wilson">Wilsons Lernecke</a>
     <a href="comics.html" data-link-language="project" data-copy="comics">Sams Comic-Werkstatt</a>
     <a href="werkstatt.html" data-link-language="project" data-copy="pc">Phils PC-Werkstatt</a>
-    <a href="index.html" data-link-language data-copy="existing">Aktuelle Website</a>
+    <a href="klassische-startseite.html" data-link-language data-copy="existing">Klassische Startseite</a>
     <a href="impressum.html" data-copy="imprint">Impressum</a>
     <a href="datenschutz.html" data-copy="privacy">Datenschutz</a>
   </footer>

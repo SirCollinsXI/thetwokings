@@ -1,10 +1,10 @@
 const assert = require('node:assert/strict');
 
-module.exports = async function testShareCard(browser, preview) {
+module.exports = async function testShareCard(browser, preview, path = '/homepage-preview') {
   const senderContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
   const readerContext = await browser.newContext();
   try {
-    const url = new URL('/homepage-preview', preview);
+    const url = new URL(path, preview);
     url.searchParams.set('lang', 'zh');
     url.searchParams.set('test-extra', 'omit-from-link');
     let writes = 0;
@@ -29,7 +29,7 @@ module.exports = async function testShareCard(browser, preview) {
     await sender.locator('#card-view').waitFor();
     const result = new URL(await sender.locator('#card-link').inputValue());
     assert.equal(result.origin, preview.origin);
-    assert.equal(result.pathname, '/homepage-preview');
+    assert.equal(result.pathname, path);
     assert.equal(result.search, '?lang=zh', 'Share URLs omit extraneous query parameters');
     assert.match(result.hash, /^#gruss-\d{4}-\d{2}-\d{2}-star$/);
     assert.equal(await sender.locator('#card-icon').textContent(), '★');

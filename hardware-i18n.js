@@ -160,7 +160,7 @@ function apply(){
    {de:'Interaktive PC-Preishistorie mit transparenten Quellen.',en:'Interactive PC hardware price history with sourced observations.',zh:'电脑硬件历史价格交互式图表，包含数据来源。'}[language]:
    {de:'Phils PC-Werkstatt für Upgrades und Preisvergleiche.',en:'Plan PC upgrades and compare prices in Phil’s PC Workshop.',zh:'在 Phil 的电脑工坊规划升级、比较价格。'}[language];
   document.querySelectorAll('[data-set-language]').forEach(b=>{const on=b.dataset.setLanguage===language;b.classList.toggle('selected',on);b.setAttribute('aria-pressed',String(on));});
-  for(const a of document.querySelectorAll('a[href^="index.html"],a[href^="werkstatt.html"],a[href^="preisradar.html"]')){
+  for(const a of document.querySelectorAll('a[href^="index.html"],a[href^="klassische-startseite.html"],a[href^="werkstatt.html"],a[href^="preisradar.html"]')){
    const raw=a.getAttribute('href').replace(/\?lang=(de|en|zh)(?=#|$)/,'');
    const target=new URL(raw,location.href);
    target.searchParams.set('lang',language);
