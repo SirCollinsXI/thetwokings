@@ -142,11 +142,19 @@
           </div>
         </details>
       </section>
-      <section class="rail-panel" aria-labelledby="stats-title">
-        <h2 id="stats-title" data-copy="stats">Seitenaufrufe</h2>
-        <p class="status" data-copy="prototype">Prototyp</p>
-        <p data-copy="statsEmpty">Für diese Vorschau sind keine Aufrufzahlen veröffentlicht.</p>
-        <p class="next" data-copy="statsNext">Geplant: erfasste Startseitenaufrufe mit Datum des Messbeginns.</p>
+      <section id="stats-panel" class="rail-panel" aria-labelledby="stats-title">
+        <h2 id="stats-title" data-copy="stats">Aufrufe der Vorschau</h2>
+        <p id="stats-empty" data-copy="statsEmpty">Für diese Vorschau sind gerade keine Messwerte verfügbar.</p>
+        <div id="stats-live" hidden>
+          <p><time id="stats-day"></time> · <span data-copy="statsTimeZone">Ortszeit Berlin</span></p>
+          <dl class="daily-stats">
+            <div><dt data-copy="statsViews">Startseitenaufrufe</dt><dd id="stats-views"></dd></div>
+            <div><dt data-copy="statsCrowns">Kronenpunkte</dt><dd id="stats-crowns"></dd></div>
+          </dl>
+          <p class="next"><span data-copy="statsSince">Messbeginn</span> · <time id="stats-start"></time></p>
+        </div>
+        <p class="next" data-copy="statsRule">Jeder Tag startet mit 10.000 Kronenpunkten. Jeder erfasste Startseitenaufruf bringt einen Punkt.</p>
+        <p id="stats-example" class="next" data-copy="statsExample">Beispiel für 1 Aufruf · 10.001 Kronenpunkte</p>
       </section>
     </aside>
   </div>

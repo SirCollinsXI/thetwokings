@@ -95,12 +95,21 @@ const copy = {
   traceContinuing: ['Du baust an einer Spur weiter.', 'You’re building on a trace.', '你正在续写一条印记。'],
   traceCancel: ['Auswahl lösen', 'Clear selection', '取消续写'],
   traceSave: ['Idee speichern', 'Save idea', '保存点子'],
-  stats: ['Seitenaufrufe', 'Page views', '页面浏览量'],
-  statsEmpty: ['Für diese Vorschau sind keine Aufrufzahlen veröffentlicht.', 'View counts are unavailable in this preview.', '此预览尚未公开浏览量。'],
-  statsNext: [
-    'Geplant: erfasste Startseitenaufrufe mit Datum des Messbeginns.',
-    'Planned: recorded homepage views, with a measurement start date.',
-    '计划公布首页浏览次数及统计起始日期。',
+  stats: ['Aufrufe der Vorschau', 'Preview traffic', '预览页访问统计'],
+  statsEmpty: ['Für diese Vorschau sind gerade keine Messwerte verfügbar.', 'Counts are currently unavailable for this preview.', '此预览页暂无统计数据。'],
+  statsTimeZone: ['Ortszeit Berlin', 'Berlin time', '柏林时间'],
+  statsViews: ['Startseitenaufrufe', 'Homepage views', '首页浏览次数'],
+  statsCrowns: ['Kronenpunkte', 'Crown points', '皇冠积分'],
+  statsSince: ['Messbeginn', 'Counting since', '统计开始日期'],
+  statsRule: [
+    'Jeder Tag startet mit 10.000 Kronenpunkten. Jeder erfasste Startseitenaufruf bringt einen Punkt.',
+    'Each day starts with 10,000 crown points. Each recorded homepage view adds one point.',
+    '每天的皇冠积分从 10,000 分起算。首页每被浏览一次，就增加一分。',
+  ],
+  statsExample: [
+    'Beispiel für 1 Aufruf · 10.001 Kronenpunkte',
+    'Example for 1 view · 10,001 crown points',
+    '以浏览 1 次为例，皇冠积分为 10,001 分。',
   ],
   existing: ['Aktuelle Website', 'Current website', '当前网站'],
   imprint: ['Impressum', 'Legal notice', '网站法律声明'],
@@ -114,6 +123,24 @@ const labelledNodes = document.querySelectorAll('[data-label]');
 const buttons = document.querySelectorAll('[data-lang]');
 const languageLinks = document.querySelectorAll('[data-link-language]');
 
+function showDailyStats(locale) {
+  const { views, start, day } = document.getElementById('stats-panel').dataset;
+  if (!views || !start || !day) return;
+
+  const number = new Intl.NumberFormat(locale);
+  const date = new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeZone: 'UTC' });
+  for (const [id, value] of [['stats-day', day], ['stats-start', start]]) {
+    const time = document.getElementById(id);
+    time.dateTime = value;
+    time.textContent = date.format(new Date(value + 'T00:00:00Z'));
+  }
+  document.getElementById('stats-views').textContent = number.format(Number(views));
+  document.getElementById('stats-crowns').textContent = number.format(10_000 + Number(views));
+  document.getElementById('stats-empty').hidden = true;
+  document.getElementById('stats-example').hidden = true;
+  document.getElementById('stats-live').hidden = false;
+}
+
 function showLanguage(language) {
   const index = languages.indexOf(language);
   document.documentElement.lang = language === 'zh' ? 'zh-CN' : language;
@@ -121,6 +148,7 @@ function showLanguage(language) {
   for (const node of textNodes) node.textContent = copy[node.dataset.copy][index];
   for (const node of labelledNodes) node.setAttribute('aria-label', copy[node.dataset.label][index]);
   for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.lang === language));
+  showDailyStats(document.documentElement.lang);
   for (const link of languageLinks) {
     const target = new URL(link.href);
     target.searchParams.set('lang', language);

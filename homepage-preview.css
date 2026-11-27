@@ -77,6 +77,11 @@ h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .rail { display: grid; gap: 1rem; align-content: start; }
 .rail-panel { border-block-start: 1px solid var(--line); padding-block: 1rem; }
 .rail-panel p + p { margin-block-start: .55rem; }
+.daily-stats { display: grid; gap: .3rem; margin: .65rem 0; }
+.daily-stats > div { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .2rem .6rem; }
+.daily-stats dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; }
+.daily-stats > div:first-child dd { color: var(--accent); font-size: 1.5rem; }
+#stats-live + p { margin-block-start: .55rem; }
 .foot { display: flex; flex-wrap: wrap; gap: .7rem 1.2rem; border-top: 1px solid var(--line); padding-block: 1rem 1.7rem; color: var(--muted); }
 
 @media (min-width: 38rem) {
