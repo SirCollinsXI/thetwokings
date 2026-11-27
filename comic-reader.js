@@ -1,6 +1,7 @@
 'use strict';
 const pages=[['01','Sam auf der Planke',1],['02','Die Bauchwelt',2],['03','Planke und oranges Tuch',3],['04','Flucht durch das Maul',4],['05','Sam auf dem Meer',5],['06A','Floß und Signal',6],['06B','Piet entdeckt das Signal',7],['07','Wiedersehen auf dem Meer',8],['08','Piet holt Hilfe',9],['09A','Klaus Störtebeker hilft',10],['09B','Die geheimnisvolle Insel',11],['11','Ankunft am Sandstrand','11-ankunft'],['12','Die geheimnisvolle Karte',12],['13','Proviant und Feuerholz',13],['14','Bananen und Kokosmilch',14],['15','Die Nacht auf der Insel — Kapitelabschluss',15]];
 const select=document.getElementById('page-select'),img=document.getElementById('comic-page'),frame=document.getElementById('page-frame');
+const viewport=document.getElementById('page-viewport'),zoomButton=document.getElementById('page-zoom');
 pages.forEach(([label],i)=>select.add(new Option('Storyseite '+label,i)));
 function pageFromHash(){
  const requested=Number(location.hash.slice(1));
@@ -10,7 +11,13 @@ let current=pageFromHash();
 function pageImage(file){
  return 'comic/page-'+String(file).padStart(2,'0')+'.webp';
 }
+function setZoom(zoomed){
+ frame.classList.toggle('zoom',zoomed);
+ zoomButton.setAttribute('aria-pressed',String(zoomed));
+ if(!zoomed)viewport.scrollLeft=0;
+}
 function show(i,scroll=true){
+ setZoom(false);
  current=Math.max(0,Math.min(pages.length-1,i));
  const [label,description,file]=pages[current];
  const caption='Storyseite '+label+': '+description;
@@ -32,6 +39,22 @@ function show(i,scroll=true){
   preload.src=pageImage(following[2]);
  }
 }
-document.getElementById('prev').onclick=()=>show(current-1);document.getElementById('next').onclick=()=>show(current+1);select.onchange=()=>show(Number(select.value));img.onclick=()=>frame.classList.toggle('zoom');img.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();img.click()}};window.addEventListener('keydown',e=>{if(['SELECT','INPUT','BUTTON'].includes(document.activeElement.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();show(current+1)}if(e.key==='ArrowLeft'){e.preventDefault();show(current-1)}});
+document.getElementById('prev').onclick=()=>show(current-1);
+document.getElementById('next').onclick=()=>show(current+1);
+select.onchange=()=>show(Number(select.value));
+zoomButton.onclick=()=>setZoom(!frame.classList.contains('zoom'));
+window.addEventListener('keydown',event=>{
+ const direction=event.key==='ArrowRight'?1:event.key==='ArrowLeft'?-1:0;
+ if(!direction||event.defaultPrevented)return;
+ const active=document.activeElement;
+ if(active===zoomButton && frame.classList.contains('zoom') && viewport.scrollWidth>viewport.clientWidth){
+  event.preventDefault();
+  viewport.scrollLeft+=direction*viewport.clientWidth/2;
+  return;
+ }
+ if(active!==zoomButton && ['SELECT','INPUT','BUTTON'].includes(active.tagName))return;
+ event.preventDefault();
+ show(current+direction);
+});
 window.addEventListener('hashchange',()=>show(pageFromHash()));
 show(current,false);

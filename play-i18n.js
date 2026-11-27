@@ -16,7 +16,8 @@ const comicCopy=[
  ["Die Sprechblasen sind auf Deutsch. Für alle 16 Seiten kannst du die Dialoge auch auf Englisch und vereinfachtem Chinesisch lesen.","The speech bubbles are in German. You can also read the dialogue for all 16 pages in English and Simplified Chinese.","漫画气泡里是德语原文。全部 16 页漫画的对话都配有英语和简体中文译文。"],
  ["Leseprobe öffnen →","Read the preview →","开始试读 →"],
  ["Dialogsprache","Dialogue language","对话语言"],
- ["Tippe auf das Bild, um es zu vergrößern. Zum Blättern nutze die Pfeiltasten oder die Schaltflächen.","Tap the image to zoom. Use the arrow keys or buttons to turn pages.","点击图片放大，使用方向键或翻页按钮切换页面。"]
+ ["Bild vergrößern","Enlarge image","放大图片"],
+ ["Tippe auf das Bild, um es zu vergrößern. Wische zur Seite, um die Details zu sehen. Tippe erneut für die ganze Seite.","Tap the image to zoom in. Swipe sideways to see the details. Tap again to see the full page.","点按图片可放大，左右滑动可查看细节。再次点按可查看整页。"]
 ];
 const dict=new Map(lines.map(([de,en,zh])=>[de,{en,zh}]));
 for(const [de,en,zh] of [...extra,...comicCopy])dict.set(de,{en,zh});
