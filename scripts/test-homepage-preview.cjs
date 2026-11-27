@@ -207,9 +207,56 @@ async function testTrials(page, lang) {
 
 async function screenshotHomepage(page, lang) {
   const dir = process.env.HOMEPAGE_SCREENSHOTS;
-  if (!dir || lang === 'de') return;
+  if (!dir) return;
   await mkdir(dir, { recursive: true });
-  await page.screenshot({ path: join(dir, 'homepage-' + lang + '-' + page.viewportSize().width + '.png'), animations: 'disabled' });
+  const suffix = lang + '-' + page.viewportSize().width + '.png';
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+  await page.screenshot({ path: join(dir, 'homepage-' + suffix), animations: 'disabled' });
+  for (const [name, selector] of [['intro', '.intro'], ['comics', '#comics']]) {
+    await page.locator(selector).screenshot({ path: join(dir, name + '-' + suffix), animations: 'disabled' });
+  }
+}
+
+async function checkHomepageArt(page, lang, source) {
+  const original = page.viewportSize();
+  const widths = new Set([original.width, 390, 1440]);
+  if (source === 'homepage' && lang === 'de') widths.add(320);
+  const hero = page.locator('img.intro-art');
+  const comic = page.locator('#comics .comic-scene img[alt]');
+  const scene = page.locator('#comics .comic-scene');
+  const description = await comic.getAttribute('alt');
+  const language = {
+    de: /Planke|Pirat|Schiff|Meer|Seeungeheuer|Welle|Seil|Junge|Deck|Mütze|Kapitän|springt/i,
+    en: /plank|pirate|ship|sea|wave|rope|boy|deck|captain|jump/i,
+    zh: /\p{Script=Han}/u,
+  };
+  assert.ok(description && description.trim().length >= 6, 'Sam’s artwork needs a descriptive alternative');
+  assert.match(description, language[lang], 'Comic description in ' + lang);
+  for (const width of widths) {
+    await page.setViewportSize({ width, height: original.height });
+    for (const [image, expected] of [
+      [hero, /^\/assets\/zwei-kronen-(640|1200)\.webp$/],
+      [comic, /^\/assets\/sam-piet-planke-(540|900)\.webp$/],
+    ]) {
+      await image.scrollIntoViewIfNeeded();
+      assert.ok(await image.isVisible(), 'Artwork must be visible at ' + width + 'px');
+      const path = await image.evaluate(async element => {
+        await element.decode();
+        if (!element.naturalWidth || !element.naturalHeight) throw new Error('Artwork did not decode');
+        return new URL(element.currentSrc).pathname;
+      });
+      assert.match(path, expected);
+    }
+    const [picture, frame] = await Promise.all([comic.boundingBox(), scene.boundingBox()]);
+    assert.ok(frame.width > 0 && frame.height > 0);
+    assert.equal(await comic.evaluate(el => getComputedStyle(el).objectFit), 'cover');
+    assert.ok(picture.x <= frame.x + 3 && picture.y <= frame.y + 3
+      && picture.x + picture.width >= frame.x + frame.width - 3
+      && picture.y + picture.height >= frame.y + frame.height - 3, 'Comic image should fill its frame at ' + width + 'px');
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Horizontal overflow at ' + width);
+  }
+  await page.setViewportSize(original);
+  console.log('Verified visible crowns and full-frame comic with localized description at ' + [...widths].join('/') + 'px (' + lang + ')');
 }
 
 async function checkReleasePage(page, lang, source) {
@@ -225,7 +272,7 @@ async function checkReleasePage(page, lang, source) {
   for (const [selector, label] of [['#comics-title', 0], ['#pc-title', 1], ['#werkstatt [data-copy="prototype"]', 2]]) {
     assert.equal((await page.locator(selector).first().innerText()).trim(), names[lang][label]);
   }
-  for (const [selector, path] of [['#comics .archive-entry', '/comics'], ['#werkstatt [data-copy="pcOpen"]', '/werkstatt']]) {
+  for (const [selector, path] of [['#comics .archive-entry', '/comics'], ['#comics .project-link', '/comic'], ['#werkstatt [data-copy="pcOpen"]', '/werkstatt']]) {
     const link = new URL(await page.locator(selector).getAttribute('href'), page.url());
     assert.equal(link.origin, preview.origin);
     assert.equal(link.pathname.replace(/\.html$/, ''), path);
@@ -245,10 +292,11 @@ async function checkReleasePage(page, lang, source) {
       assert((await info.text()).includes('id="' + hash.slice(1) + '"'), link.href);
     }
   }
-  for (const selector of ['.intro-art', '#lernen img', '#comics img']) {
-    const image = page.locator(selector).first();
-    assert(await image.evaluate(async img => { await img.decode(); return img.naturalWidth > 0; }), selector);
-  }
+  await checkHomepageArt(page, lang, source);
+  assert.ok(await page.locator('#lernen img').first().evaluate(async img => {
+    await img.decode();
+    return img.naturalWidth > 0;
+  }));
   const [main, sidebar] = await Promise.all([page.locator('main').boundingBox(), page.locator('aside.rail').boundingBox()]);
   assert(page.viewportSize().width >= 1088 ? sidebar.x >= main.x + main.width - 1 : sidebar.y >= main.y + main.height - 1,
     'Guestbook must sit beside desktop content and below mobile content');
