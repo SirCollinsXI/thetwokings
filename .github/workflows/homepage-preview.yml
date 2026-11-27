@@ -32,8 +32,8 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           for attempt in {1..45}; do
-            result=$(gh api "repos/$GITHUB_REPOSITORY/commits/$HEAD_SHA/check-runs?check_name=Cloudflare%20Pages" \
-              --jq '[.check_runs[] | select(.app.slug == "cloudflare-workers-and-pages")] | max_by(.id)')
+            checks=$(gh api "repos/$GITHUB_REPOSITORY/commits/$HEAD_SHA/check-runs?check_name=Cloudflare%20Pages")
+            result=$(jq -c '[.check_runs[] | select(.app.slug == "cloudflare-workers-and-pages")] | max_by(.id) // {}' <<< "$checks")
             state=$(jq -r '.conclusion // "pending"' <<< "$result")
             if [[ "$state" == success ]]; then
               url=$(jq -er '.output.summary | match("https://[0-9a-f]+\\.wuesten-bogen-app\\.pages\\.dev").string' <<< "$result")
