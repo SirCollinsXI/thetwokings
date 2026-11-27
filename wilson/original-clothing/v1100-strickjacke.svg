@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Gestrickte Strickjacke mit V-Ausschnitt und durchgehender Knopfleiste</title>
+  <rect width="240" height="170" rx="15" fill="#f2f7ef"/>
+  <ellipse cx="120" cy="150" rx="62" ry="8" fill="#dfeadf"/>
+  <g stroke="#35594e" stroke-width="3" stroke-linejoin="round">
+    <path d="m101 24-24 11-15 18-18 74 23 8 17-50-3 58h78l-3-58 17 50 23-8-18-74-15-18-24-11z" fill="#74a68c"/>
+    <path d="M101 24q19 7 38 0l-19 35z" fill="#f2f7ef"/>
+    <path d="m94 27 7-3 19 35 19-35 7 3-20 40v76h-12V67z" fill="#a7c9a2"/>
+    <path d="m47 116 24 8-4 11-23-8zm146 0-24 8 4 11 23-8zM81 133h33v10H81zm45 0h33v10h-33z" fill="#92bba1"/>
+    <path d="M88 105h18v16H88zm46 0h18v16h-18z" fill="#82b198" stroke-width="2"/>
+  </g>
+  <g fill="#35594e"><circle cx="120" cy="77" r="2.7"/><circle cx="120" cy="90" r="2.7"/><circle cx="120" cy="103" r="2.7"/><circle cx="120" cy="116" r="2.7"/><circle cx="120" cy="129" r="2.7"/></g>
+  <path d="m87 51 4 4-4 4 4 4-4 4 4 4-4 4 4 4-4 4 4 4m8-30 4 4-4 4 4 4-4 4 4 4-4 4 4 4m46-34 4 4-4 4 4 4-4 4 4 4-4 4 4 4-4 4 4 4m-16-30 4 4-4 4 4 4-4 4 4 4-4 4 4 4" fill="none" stroke="#d3e3c9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

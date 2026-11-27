@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Langärmliger Pullover mit umgeschlagenem Rollkragen</title>
+  <rect width="240" height="170" rx="15" fill="#faf6ef"/>
+  <ellipse cx="119" cy="151" rx="66" ry="8" fill="#eee2d5"/>
+  <g stroke="#6f4537" stroke-width="3" stroke-linejoin="round">
+    <path d="m101 35-22 7-15 12-20 76 25 8 13-44-2 50h80l-2-50 13 44 25-8-20-76-15-12-22-7z" fill="#c97559"/>
+    <path d="M99 20q0-8 10-8h22q10 0 10 8v23q-21 8-42 0z" fill="#f2aa82"/>
+    <path d="M99 31q21 8 42 0" fill="none"/>
+    <path d="m47 119 24 8-2 11-25-8zm146 0-24 8 2 11 25-8zM80 132h80v12H80z" fill="#e89472"/>
+  </g>
+  <path d="m106 20 1 13m9-11v12m9-12v12m9-14-1 13m-43 102v5m8-5v5m8-5v5m8-5v5m8-5v5m8-5v5m8-5v5m8-5v5m8-5v5" fill="none" stroke="#a66047" stroke-width="2" stroke-linecap="round"/>
+  <path d="M82 92 85 69m73 23-3-23M98 61q22 8 44 0" fill="none" stroke="#824b3b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M91 80h59m-59 7h59" fill="none" stroke="#d98d73" stroke-width="2" stroke-dasharray="3 4"/>
+</svg>

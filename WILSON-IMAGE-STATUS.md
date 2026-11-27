@@ -1,6 +1,6 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 06 Babyausstattung
+## Hier fortsetzen · 50 neue Bildkarten ab 729
 
 | Stand | Nachweis |
 | --- | --- |
@@ -9,6 +9,27 @@
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
 | Nächste einzelne Aufgabe | Die fünf ausgewählten Illustrationen aus `wilson/original-baby/` über ihre bestehenden IDs in das Bildmanifest einbinden. Für jedes Bild den dreisprachigen Hinweis und die Wortformen prüfen. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
+
+## Ziel und Wortliste
+
+Die Etappe umfasst 50 zusätzliche aktive Karten von 729 auf 779. Der erste Block enthält die fünf Babykarten aus Paket 06. Das übergeordnete Etappenziel bleibt 924. Nach je fünf einzeln geprüften Karten einen Zwischenstand mit IDs und Testergebnis sichern. Im selben Chat und Entwurf weiterarbeiten, solange das sinnvoll ist. Als veröffentlicht zählen Karten erst nach dem Abgleich auf der Hauptdomain.
+
+Alle 50 Wörter haben verschiedene Lexikon-IDs. Bei der Auswahl fehlten sie in den 729 aktiven Eingabekarten und im vollständigen Bildmanifest auf `main`. In den ersten beiden Blöcken stehen bereits Zeichnungen zur Verfügung. Die Reihenfolge innerhalb der weiteren Blöcke kann sich bei der Bildprüfung ändern.
+
+| Block | Thema | Lexikon-Einträge |
+| --- | --- | --- |
+| 1 | Babyausstattung | die Babydecke (`v60`), der Babyfäustling (`v61`), der Babyschlafsack (`v63`), der Schnuller (`v962`), die Stoffwindel (`v1093`) |
+| 2 | Kleidung | das Polohemd (`v833`), der Rollkragenpullover (`v896`), der Schneeanzug (`v957`), die Strickjacke (`v1100`), das Trägertop (`v1172`) |
+| 3 | Obst und Gemüse | die Heidelbeere (`v485`), die Himbeere (`v497`), die Honigmelone (`v507`), die rote Zwiebel (`v903`), der Rotkohl (`v904`) |
+| 4 | Lebensmittel | das Baguette (`v73`), das Fladenbrot (`v342`), der Taco (`v1120`), das Sushi (`v1112`), der Eisbergsalat (`v280`) |
+| 5 | Fahrrad | die Speiche (`v1063`), die Luftpumpe (`v686`), der Bremshebel (`v141`), das Vorderrad (`v1262`), das Hinterrad (`v499`) |
+| 6 | Auto | die Motorhaube (`v747`), das Nummernschild (`v791`), die Windschutzscheibe (`v1322`), die Kopfstütze (`v623`), der Seitenspiegel (`v1011`) |
+| 7 | Rund ums Haus | der Hausbriefkasten (`v477`), die Hausnummer (`v479`), der Hausschlüssel (`v480`), der Balkon (`v75`), die Dachgaube (`v186`) |
+| 8 | Im Supermarkt | der Kassenzettel (`v564`), die Münze (`v753`), der Geldschein (`v408`), das Warentransportband (`v1278`), das Kühlregal (`v646`) |
+| 9 | Computer und Handy | der Mauszeiger (`v703`), das Scrollrad (`v996`), der Fortschrittsbalken (`v352`), die SIM-Karte (`v1034`), die USB-Schnittstelle (`v1207`) |
+| 10 | Im Straßenverkehr | der Tunnel (`v1179`), die Fußgängerampel (`v383`), die Einbahnstraße (`v256`), die Kreuzung (`v634`), die Zapfsäule (`v1336`) |
+
+## Block 1 · Babyausstattung
 
 **Auswahl Paket 06.** Mit Lexikon, aktiven Eingabekarten und allen Einträgen des Bildmanifests abgeglichen. Die Zeichnungen wurden bei 120 × 85 und 220 × 156 Pixeln gesichtet. Die fünf Entwürfe sind noch nicht im aktiven Kartenbestand enthalten.
 
