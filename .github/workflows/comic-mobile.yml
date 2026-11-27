@@ -28,10 +28,15 @@ jobs:
           export NODE_PATH="$RUNNER_TEMP/comic-test/node_modules"
           export COMIC_SCREENSHOTS="$RUNNER_TEMP/comic-screenshots"
           export CHROME="$(command -v google-chrome)"
-          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/comic-server.log" 2>&1 &
-          server_pid=$!
-          trap 'kill "$server_pid"' EXIT
-          curl --retry 8 --retry-connrefused --retry-delay 1 --fail --silent --output /dev/null http://127.0.0.1:8765/comic.html
+          export COMIC_TEST_URL="https://thetwokings.de/comic"
+          curl --fail --silent --show-error --location --retry 3 https://thetwokings.de/ --output "$RUNNER_TEMP/home.html"
+          curl --fail --silent --show-error --location --retry 3 https://thetwokings.de/comics --output "$RUNNER_TEMP/comics.html"
+          grep -Fq 'Zu Sams Comics' "$RUNNER_TEMP/home.html"
+          grep -Fq '16 illustrierte Seiten.' "$RUNNER_TEMP/comics.html"
+          grep -Fq 'Leseprobe öffnen' "$RUNNER_TEMP/comics.html"
+          curl --fail --silent --show-error --location --retry 3 https://thetwokings.de/comic/page-11-ankunft.webp --output "$RUNNER_TEMP/strand.webp"
+          echo '8640e3b63bc2159334ffff9f754e0c85cae6c907663ff97ad000193d0eb3e7fb  strand.webp' | (cd "$RUNNER_TEMP" && sha256sum -c -)
+          echo "Live homepage, collection and beach illustration verified on thetwokings.de"
           node scripts/test-comic-mobile.cjs
       - name: Save the mobile screenshots
         if: always()
