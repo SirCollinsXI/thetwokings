@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Erstklicktest · TheTwoKings</title>
+  <link rel="icon" href="crown.svg">
+  <link rel="stylesheet" href="erstklick.css">
+  <script src="erstklick.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="intro" class="panel" aria-labelledby="intro-title">
+      <nav aria-label="Sprache / Language / 语言">
+        <a href="?lang=de" lang="de" hreflang="de">Deutsch</a>
+        <a href="?lang=en" lang="en" hreflang="en">English</a>
+        <a href="?lang=zh" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+      </nav>
+      <h1 id="intro-title" data-text="title">Eine Aufgabe für die Startseite</h1>
+      <p class="task" data-text="task">Du möchtest deutsche Wörter anhand von Bildern üben. Öffne auf der Startseite das passende Angebot.</p>
+      <p data-text="how">Du kannst jederzeit aufhören. Dein Ergebnis siehst zuerst nur du. Du entscheidest, ob du es teilst.</p>
+      <button type="button" id="start" data-text="start" disabled>Startseite öffnen</button>
+      <noscript>Für diesen Test muss JavaScript aktiviert sein. / Please enable JavaScript. / 请启用 JavaScript。</noscript>
+    </section>
+
+    <section id="study" aria-label="Aufgabe" data-label="study" hidden>
+      <div class="taskbar">
+        <p data-text="task">Du möchtest deutsche Wörter anhand von Bildern üben. Öffne auf der Startseite das passende Angebot.</p>
+        <button type="button" class="secondary" id="stop" data-text="stop">Aufhören</button>
+      </div>
+      <p id="loading" role="status" data-text="loading">Startseite wird geladen …</p>
+    </section>
+
+    <section id="results" class="panel" aria-labelledby="results-title" hidden>
+      <h1 id="results-title" tabindex="-1" data-text="result">Dein Ergebnis</h1>
+      <label for="report" data-text="reportLabel">Protokoll zum freiwilligen Teilen</label>
+      <textarea id="report" readonly rows="5" dir="auto"></textarea>
+      <div class="actions">
+        <button type="button" id="copy" data-text="copy">Ergebnis kopieren</button>
+        <button type="button" id="retry" class="secondary" data-text="retry">Neu beginnen</button>
+      </div>
+      <p id="copy-status" role="status"></p>
+    </section>
+  </main>
+</body>
+</html>
