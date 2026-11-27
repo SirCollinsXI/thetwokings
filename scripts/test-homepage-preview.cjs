@@ -3,13 +3,15 @@ const { chromium } = require('playwright-core');
 const { mkdir } = require('node:fs/promises');
 const { join } = require('node:path');
 
-const { readFile } = require('node:fs/promises');
+const { readFileSync } = require('node:fs');
 const { setTimeout: delay } = require('node:timers/promises');
 const mode = process.argv[2] || 'preview';
 assert.ok(['preview', 'before', 'published'].includes(mode), 'Unknown test mode');
 const preview = new URL(mode === 'preview' ? process.env.PREVIEW_URL : 'https://thetwokings.de/');
 if (mode === 'preview') assert.match(preview.origin, /^https:\/\/[0-9a-f]+\.wuesten-bogen-app\.pages\.dev$/);
-const release = 'homepage-2026-11';
+const rootHTML = readFileSync(join(__dirname, '../index.html'), 'utf8');
+const release = rootHTML.match(/<meta name="ttk-release" content="([^"]+)"/)?.[1];
+assert.ok(release, 'Missing release marker in index.html');
 const games = [
   ['de', 'Wüstenbogen spielen', 'Piratenjagd spielen'],
   ['en', 'Play Desert Archery', 'Play Pirate Hunt'],
@@ -279,28 +281,81 @@ async function checkFormerBookmarks(browser) {
   }
 }
 
-// The custom domain may still serve the previous deployment just after the merge.
+function mainMarkup(html) {
+  const main = html.match(/<main\b[^>]*>[\s\S]*?<\/main>/i)?.[0];
+  assert.ok(main, 'Missing main element');
+  return main.replaceAll('\r\n', '\n');
+}
+
+function scriptSources(html) {
+  return [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/gi)].map(match => match[1])
+    .filter(src => ['homepage-preview.js', 'spiele-texte.js'].includes(new URL(src, preview).pathname.slice(1)));
+}
+
+// Pages can briefly serve different homepage versions for each cached language URL.
 async function awaitRelease(browser) {
-  const expected = await readFile(join(__dirname, '../homepage-preview.js'), 'utf8');
+  const main = mainMarkup(rootHTML);
+  const sources = scriptSources(rootHTML);
+  assert.deepEqual(sources.map(src => new URL(src, preview).pathname).sort(), ['/homepage-preview.js', '/spiele-texte.js']);
+  const scripts = sources.map(src => {
+    const url = new URL(src, preview);
+    return { url, content: readFileSync(join(__dirname, '..', url.pathname.slice(1)), 'utf8').replaceAll('\r\n', '\n') };
+  });
   const page = await browser.newPage();
+  async function delivered(url) {
+    const response = await page.request.get(url.href, { timeout: 10000 });
+    assert.equal(response.status(), 200, url.href);
+    assert.equal(response.url(), url.href);
+    return (await response.text()).replaceAll('\r\n', '\n');
+  }
   try {
     for (let attempt = 1; attempt <= 18; attempt++) {
       try {
-        const response = await page.goto(preview.href, { waitUntil: 'domcontentloaded', timeout: 10000 });
-        const marker = await page.locator('meta[name="ttk-release"]').getAttribute('content', { timeout: 1500 });
-        const script = await page.request.get(new URL('/homepage-preview.js', preview).href, { timeout: 10000 });
-        assert.equal(response.status(), 200);
-        assert.equal(marker, release);
-        assert.equal(script.status(), 200);
-        assert.ok((await script.text()).replaceAll('\r\n', '\n') === expected.replaceAll('\r\n', '\n'),
-          'Homepage script on the public domain differs from the checkout');
+        for (const query of ['', '?lang=de', '?lang=en', '?lang=zh']) {
+          const url = new URL('/' + query, preview);
+          const html = await delivered(url);
+          assert.ok(mainMarkup(html) === main, 'Waiting for current homepage markup on ' + url.href);
+          assert.deepEqual(scriptSources(html), sources, 'Waiting for current translation script URLs on ' + url.href);
+        }
+        for (const { url, content } of scripts) {
+          assert.ok(await delivered(url) === content, 'Waiting for the committed script contents on ' + url.href);
+        }
         return;
       } catch (error) {
         if (attempt === 18) throw error;
-        console.log('Waiting for the release on', preview.href, '(' + attempt + '/18)');
+        console.log('Release attempt ' + attempt + '/18:', error.message);
         await delay(10000);
       }
     }
+  } finally {
+    await page.close();
+  }
+}
+
+async function testMissingGameTranslation(browser) {
+  const page = await browser.newPage();
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  let intercepted = false;
+  try {
+    await page.route(url => url.pathname === '/spiele-texte.js', async route => {
+      const response = await route.fetch();
+      const body = await response.text();
+      intercepted = true;
+      await route.fulfill({ response, body: body + '\ndelete homepageGamesCopy.tideName;\n' });
+    });
+    await page.goto(new URL('/?lang=zh', preview).href, { waitUntil: 'domcontentloaded' });
+    assert.ok(intercepted, 'The test must exercise the incomplete game dictionary');
+    for (const [lang, bow] of [games[2], games[1], games[0]]) {
+      await page.locator('button[data-lang="' + lang + '"]').click();
+      await checkWilson(page, lang, true, 'homepage');
+      assert.equal(new URL(page.url()).searchParams.get('lang'), lang);
+      assert.equal(await page.locator('#wuestenbogen-play').innerText(), bow);
+      const game = new URL(await page.locator('[data-game="inselpfad"]').getAttribute('href'), page.url());
+      assert.equal(game.searchParams.get('lang'), lang);
+      assert.ok((await page.locator('#tide-name').innerText()).trim());
+    }
+    assert.deepEqual(errors, [], 'A missing game translation must leave the rest of the homepage interactive');
   } finally {
     await page.close();
   }
@@ -374,6 +429,7 @@ async function run() {
     await checkFormerBookmarks(browser);
     await require('./test-share-card.cjs')(browser, preview, '/');
     if (mode === 'preview') {
+      await testMissingGameTranslation(browser);
       await testStudy(browser);
       await require('./test-share-card.cjs')(browser, preview, '/homepage-preview');
     }
