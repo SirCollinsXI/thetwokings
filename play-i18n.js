@@ -21,7 +21,7 @@ const comicCopy=[
  ["Tippe auf das Bild, um es zu vergrößern. Wische zur Seite, um die Details zu sehen. Tippe erneut für die ganze Seite.","Tap the image to zoom in. Swipe sideways to see the details. Tap again to see the full page.","点按图片可放大，左右滑动可查看细节。再次点按可查看整页。"]
 ];
 const dict=new Map(lines.map(([de,en,zh])=>[de,{en,zh}]));
-for(const [de,en,zh] of [...extra,...comicCopy])dict.set(de,{en,zh});
+for(const [de,en,zh] of [...extra,...comicCopy,...(window.samWorkshopCopy||[])])dict.set(de,{en,zh});
 let lang='de';
 const allowed=['de','en','zh'],original=new WeakMap(),last=new WeakMap(),attributes=new WeakMap();
 const locale=(v)=>v==='zh'?'zh-CN':v;
