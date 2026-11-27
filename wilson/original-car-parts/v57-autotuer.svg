@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Autotür</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <ellipse cx="120" cy="138" rx="105" ry="7" fill="#dce7e6"/>
+  <path d="M15 110v-16q0-10 11-12l32-8 26-25q7-7 20-7h57q17 0 26 12l15 20 18 8q5 2 5 9v19q0 8-10 8H21q-6 0-6-8z" fill="#adc3c9" stroke="#4d6873" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M71 74l19-18h40v18zm67 0V55h25q11 0 17 8l8 11z" fill="#e1eff3" stroke="#6d8992" stroke-width="2.5"/>
+  <path d="M57 96h106l-7 21H65z" fill="#738e9a"/>
+  <path d="M138 76v42m52-41-8 22M16 93h14m181-7h14" fill="none" stroke="#67828d" stroke-width="3"/>
+  <circle cx="51" cy="116" r="17" fill="#536874" stroke="#364d59" stroke-width="3"/>
+  <circle cx="190" cy="116" r="17" fill="#536874" stroke="#364d59" stroke-width="3"/>
+  <circle cx="51" cy="116" r="8" fill="#b4c7cc"/>
+  <circle cx="190" cy="116" r="8" fill="#b4c7cc"/>
+  <path d="M69 81l21-26 37 8 13 27v38q0 5-7 6l-60-12q-7-1-7-8z" fill="#edb44c" stroke="#865624" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M77 83l16-20 30 6 9 20z" fill="#d5ebec" stroke="#865624" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="m74 91 58 9m-57 18 53 10" stroke="#c68631" stroke-width="2"/>
+  <path d="m111 98 15 2" stroke="#704925" stroke-width="4" stroke-linecap="round"/>
+  <path d="m55 49 23 18m-8 0 8 0-2-8" fill="none" stroke="#a46122" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
