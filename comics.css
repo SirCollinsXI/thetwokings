@@ -77,3 +77,7 @@
 .sketch-links { display:flex; flex-wrap:wrap; gap:6px 14px; }
 .sketch-links a { display:inline-flex; align-items:center; min-height:44px; color:var(--lime); text-underline-offset:3px; }
 .archive-plate { scroll-margin-top:75px; }
+
+.monster-volume { margin-top: clamp(18px, 4vw, 32px); }
+.saga-cover { display: grid; place-items: center; background: #151818; }
+.comic-volume .saga-cover img { width: auto; height: auto; max-width: 100%; max-height: 340px; aspect-ratio: auto; object-fit: contain; }

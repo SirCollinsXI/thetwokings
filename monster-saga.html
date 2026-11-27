@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Die große Monster-Saga | TheTwoKings</title>
+  <meta name="description" content="Das Herz der Abenteuer. Das ganze Monster-Kompendium mit Monstern, Helden, Rätseln und zwölf Storykapiteln auf 32 illustrierten Seiten.">
+  <link rel="icon" href="crown.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="play-i18n.css">
+  <link rel="stylesheet" href="monster-saga.css">
+</head>
+<body data-play-i18n="monster">
+  <a class="skip" href="#inhalt">Zum Inhalt</a>
+  <header>
+    <a class="brand" href="index.html"><img src="crown.svg" width="34" height="34" alt="">THE TWO KINGS</a>
+    <nav aria-label="Hauptnavigation"><a href="comics.html">← Zu Sams Comics</a><a href="/wilson">Wilsons Deutsch-Lernecke</a></nav>
+  </header>
+  <main id="inhalt" class="saga">
+    <p class="saga-kicker">Monster-Kompendium · 32 Seiten</p>
+    <h1>Die große Monster-Saga</h1>
+    <p class="saga-subtitle">Das Herz der Abenteuer</p>
+    <p>Die Bildseiten dieses Kompendiums sind auf Deutsch.</p>
+    <div id="saga-reader" hidden>
+      <div class="saga-controls" role="group" aria-label="Seitenwahl">
+        <button id="saga-prev" type="button" aria-label="Zurückblättern">←</button>
+        <select id="saga-select" aria-label="Seite auswählen"></select>
+        <button id="saga-next" type="button" aria-label="Weiterblättern">→</button>
+      </div>
+      <figure>
+        <div id="saga-viewport">
+          <button type="button" id="saga-zoom" aria-label="Bild vergrößern" aria-pressed="false" aria-describedby="saga-caption">
+            <img id="comic-page" width="1024" height="1536" alt="">
+          </button>
+        </div>
+        <figcaption id="saga-caption" aria-live="polite"><span id="saga-number"></span> · <span id="saga-title"></span></figcaption>
+      </figure>
+      <p class="saga-help">Tippe auf das Bild, um es zu vergrößern. Wische zur Seite, um die Details zu sehen. Tippe erneut für die ganze Seite.</p>
+    </div>
+    <noscript><p>Öffne eine Bildseite aus dem Inhaltsverzeichnis.</p></noscript>
+    <nav class="saga-contents" aria-labelledby="saga-contents-title">
+      <h2 id="saga-contents-title">Inhaltsverzeichnis</h2>
+      <div>
+        <section><h3>Zum Anfang des Buchs</h3><ol start="1">
+          <li><a href="comic/monster-saga/01.webp">Titelbild</a></li>
+          <li><a href="comic/monster-saga/02.webp">Titel und Impressum</a></li>
+          <li><a href="comic/monster-saga/03.webp">Bevor du das Archiv öffnest …</a></li>
+          <li><a href="comic/monster-saga/04.webp">Wegweiser durch das Professor-Archiv</a></li>
+          <li><a href="comic/monster-saga/05.webp">Inhaltsverzeichnis</a></li>
+        </ol></section>
+        <section><h3>Monster und Helden</h3><ol start="6">
+          <li><a href="comic/monster-saga/06.webp">Monster-Stammbaum</a></li>
+          <li><a href="comic/monster-saga/07.webp">Das Auge aus der Schatzkammer</a></li>
+          <li><a href="comic/monster-saga/08.webp">Der Mondhai erhebt sich</a></li>
+          <li><a href="comic/monster-saga/09.webp">Der Verschlinger der Geschichten</a></li>
+          <li><a href="comic/monster-saga/10.webp">Der Skorpion-Schatten</a></li>
+          <li><a href="comic/monster-saga/11.webp">Lumius</a></li>
+          <li><a href="comic/monster-saga/12.webp">Die letzte Allianz der Freunde</a></li>
+          <li><a href="comic/monster-saga/13.webp">Charakter-Lexikon</a></li>
+          <li><a href="comic/monster-saga/14.webp">Titan-Steve</a></li>
+          <li><a href="comic/monster-saga/15.webp">Der Professor</a></li>
+        </ol></section>
+        <section><h3>Rätsel und Pläne</h3><ol start="16">
+          <li><a href="comic/monster-saga/16.webp">Das verschwundene Herzfragment</a></li>
+          <li><a href="comic/monster-saga/17.webp">Plan Nummer 47</a></li>
+        </ol></section>
+        <section><h3>Die große Reise</h3><ol start="18">
+          <li><a href="comic/monster-saga/18.webp">Das Monster der Tiefe</a></li>
+          <li><a href="comic/monster-saga/19.webp">Der Drachenkrieg</a></li>
+          <li><a href="comic/monster-saga/20.webp">Die Lavawelt</a></li>
+          <li><a href="comic/monster-saga/21.webp">Der Held in den Tentakeln</a></li>
+          <li><a href="comic/monster-saga/22.webp">Die Freunde kommen</a></li>
+          <li><a href="comic/monster-saga/23.webp">Der Fall der Lavaform</a></li>
+          <li><a href="comic/monster-saga/24.webp">Die Titanenprüfung</a></li>
+          <li><a href="comic/monster-saga/25.webp">Der Mondhai erhebt sich</a></li>
+          <li><a href="comic/monster-saga/26.webp">Der Verschlinger der Geschichten</a></li>
+          <li><a href="comic/monster-saga/27.webp">Die Schlacht der Erinnerungen</a></li>
+          <li><a href="comic/monster-saga/28.webp">Im Herzen der Dunkelheit</a></li>
+          <li><a href="comic/monster-saga/29.webp">Das Herz kehrt zurück</a></li>
+        </ol></section>
+        <section><h3>Epilog und Extras</h3><ol start="30">
+          <li><a href="comic/monster-saga/30.webp">Das Fest der verbundenen Welten</a></li>
+          <li><a href="comic/monster-saga/31.webp">Die Lösung des verschwundenen Herzfragments</a></li>
+          <li><a href="comic/monster-saga/32.webp">Rückseite</a></li>
+        </ol></section>
+      </div>
+    </nav>
+  </main>
+  <div id="language-tools" role="group" aria-label="Website language">
+    <button type="button" data-set-language="de" lang="de" aria-pressed="true">DE</button>
+    <button type="button" data-set-language="en" lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-set-language="zh" lang="zh-CN" aria-pressed="false">简体中文</button>
+  </div>
+  <script src="monster-saga-texte.js"></script>
+  <script src="monster-saga.js"></script>
+  <script src="play-i18n.js"></script>
+</body>
+</html>

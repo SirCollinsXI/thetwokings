@@ -11,6 +11,8 @@ on:
       - 'style.css'
       - 'scripts/test-comic-mobile.cjs'
       - 'scripts/test-comic-workshop.cjs'
+      - 'monster-saga*'
+      - 'scripts/test-monster-saga.cjs'
       - '.github/workflows/comic-mobile.yml'
 permissions:
   contents: read
@@ -30,14 +32,15 @@ jobs:
           export COMIC_SCREENSHOTS="$RUNNER_TEMP/comic-screenshots"
           export CHROME="$(command -v google-chrome)"
           export COMIC_TEST_URL="https://thetwokings.de/comic"
-          for _ in {1..15}; do
-            if curl --fail --silent --show-error --location 'https://thetwokings.de/comics' -o "$RUNNER_TEMP/ttk-comics.html" && grep -Fq 'id="werkstatt-title"' "$RUNNER_TEMP/ttk-comics.html"; then break; fi
+          for _ in {1..18}; do
+            if curl --fail --silent --show-error --location 'https://thetwokings.de/monster-saga' -o "$RUNNER_TEMP/monster.html" && grep -Fq 'id="saga-reader"' "$RUNNER_TEMP/monster.html"; then break; fi
             sleep 4
           done
-          grep -Fq 'id="werkstatt-title"' "$RUNNER_TEMP/ttk-comics.html"
+          grep -Fq 'id="saga-reader"' "$RUNNER_TEMP/monster.html"
           node scripts/test-live-entrypoints.cjs
           node scripts/test-comic-mobile.cjs
           node scripts/test-comic-workshop.cjs
+          node scripts/test-monster-saga.cjs
       - name: Save the mobile screenshots
         if: always()
         uses: actions/upload-artifact@v4
