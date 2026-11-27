@@ -5,12 +5,14 @@ const copy = {
   en: ['For the team only.', 'After review, my suggestion may be published without my name.'],
   zh: ['仅供团队阅读。', '经审核后，可以不署我的名字公开这条建议。'],
 };
-const privateNote = 'Privater Merkzettel, nur in Browser A';
-const draftText = 'Mehr Kontrast & größere Bilder #2 · 图片';
+const privateMarker = 'ttkPrivateNoteQ7';
+const draftMarker = 'ttkUnsentIdeaV4';
+const privateNote = 'Privater Merkzettel ' + privateMarker;
+const draftText = 'Mehr Kontrast & größere Bilder #2 · 图片 ' + draftMarker;
 
 // Exercise the published UI in clean browser profiles. Intercept the mail link
 // before the browser can open an external app. No message is sent.
-async function makeProfile(browser, fixture) {
+async function makeProfile(browser, origin, fixture) {
   const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
   await context.addInitScript(() => {
     window.draftLinks = [];
@@ -34,8 +36,18 @@ async function makeProfile(browser, fixture) {
   const writes = [];
   await context.route('**/*', route => {
     const request = route.request();
+    const url = new URL(request.url());
+    const contents = [url.href, JSON.stringify(request.headers()), request.postData() || ''].join('\n');
+    if (contents.includes(privateMarker) || contents.includes(draftMarker)) {
+      writes.push('Private text in ' + request.method() + ' ' + url.origin + url.pathname);
+      return route.abort();
+    }
     if (['HEAD', 'GET'].includes(request.method())) return route.fallback();
-    writes.push(request.url());
+    // The custom domain adds Cloudflare's performance beacon. Inspect it above,
+    // then block it in this test just like every other outgoing write.
+    const timingBeacon = request.method() === 'POST' && url.origin === origin.origin
+      && url.pathname === '/cdn-cgi/rum';
+    if (!timingBeacon) writes.push(request.method() + ' ' + url.origin + url.pathname);
     return route.abort();
   });
   return { context, page: await context.newPage(), writes };
@@ -63,7 +75,7 @@ async function readDraft(page, permission, expected, category) {
 }
 
 module.exports = async function testEntwicklungsideen(browser, origin) {
-  const writer = await makeProfile(browser);
+  const writer = await makeProfile(browser, origin);
   try {
     const page = writer.page;
     for (const [lang, expected] of Object.entries(copy)) {
@@ -122,8 +134,8 @@ module.exports = async function testEntwicklungsideen(browser, origin) {
   const fixture = [{ day: '2026-11-25', category: 'comics', text: {
     de: 'Mehr Platz für <b>Comics</b>', en: 'More space for <b>comics</b>', zh: '给<b>漫画</b>更多空间',
   } }];
-  const first = await makeProfile(browser, fixture);
-  const second = await makeProfile(browser, fixture);
+  const first = await makeProfile(browser, origin, fixture);
+  const second = await makeProfile(browser, origin, fixture);
   try {
     for (const [profile, lang] of [[first, 'de'], [second, 'zh']]) {
       const response = await profile.page.goto(new URL('/?lang=' + lang + '#ideenwand', origin).href);

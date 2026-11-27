@@ -359,9 +359,12 @@ async function awaitRelease(browser) {
   try {
     for (let attempt = 1; attempt <= 18; attempt++) {
       try {
-        for (const query of ['', '?lang=de', '?lang=en', '?lang=zh']) {
+        const languageQueries = games.map(([lang]) => '?lang=' + lang);
+        for (const query of ['', ...languageQueries, ...languageQueries.map(value => value + '&section=werkstatt')]) {
           const url = new URL('/' + query, preview);
           const html = await delivered(url);
+          assert.ok(html.includes('id="feedback-note"') && html.includes('src="feedback-ideen.js"'),
+            'Waiting for the feedback form on ' + url.href);
           assert.ok(mainMarkup(html) === main, 'Waiting for current homepage markup on ' + url.href);
           assert.deepEqual(scriptSources(html), sources, 'Waiting for current translation script URLs on ' + url.href);
         }
