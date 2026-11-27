@@ -9,13 +9,13 @@
   <link rel="canonical" href="https://thetwokings.de/">
   <title>TheTwoKings | Spielen, lesen, lernen.</title>
   <link rel="icon" href="crown.svg">
-  <link rel="stylesheet" href="homepage-preview.css">
+  <link rel="stylesheet" href="homepage-preview.css?v=atelier-1">
   <link rel="stylesheet" href="wilson-entry.css">
   <link rel="stylesheet" href="spiele-start.css">
   <link rel="stylesheet" href="spiele-probe.css">
   <link rel="stylesheet" href="spiele-start-preview.css">
   <script src="spiele-texte.js?v=gezeitenpost-1" defer></script>
-  <script src="homepage-preview.js?v=gezeitenpost-1" defer></script>
+  <script src="homepage-preview.js?v=atelier-1" defer></script>
   <script src="spiele-probe.js" defer></script>
   <script src="spuren-store.js" defer></script>
   <script src="homepage-spuren.js" defer></script>
@@ -47,7 +47,12 @@
         <p data-copy="intro">Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.</p>
         <a class="wall-invite" href="#grusswand" data-copy="wallInvite">Gruß hinterlassen</a>
         </div>
-        <img class="intro-art" src="assets/homepage-koenige.webp" width="800" height="440" alt="" decoding="async">
+        <div class="intro-media">
+          <img class="intro-art" src="assets/zwei-kronen-640.webp"
+            srcset="assets/zwei-kronen-640.webp 640w, assets/zwei-kronen-1200.webp 1200w"
+            sizes="(max-width: 607px) 50vw, (max-width: 1087px) 54vw, (max-width: 1650px) 40vw, 670px"
+            width="640" height="360" alt="" fetchpriority="high" decoding="async">
+        </div>
       </section>
       <nav id="projekte" class="area-nav" tabindex="-1" aria-label="Bereiche entdecken" data-label="areaNav">
         <ul id="arbeiten" class="area-grid" role="list">
@@ -69,15 +74,23 @@
           </div>
         </section>
         <section id="comics" class="project" tabindex="-1" aria-labelledby="comics-title">
-          <div class="cover"><img src="comic/werkstatt/piet-30-augen/cover.webp" width="360" height="254" alt=""></div>
+          <a class="comic-reading project-link" href="comic.html" data-link-language="project" aria-labelledby="comic-read">
+            <span class="comic-scene">
+              <img src="assets/sam-piet-planke-540.webp"
+                srcset="assets/sam-piet-planke-540.webp 540w, assets/sam-piet-planke-900.webp 900w"
+                sizes="(max-width: 607px) calc(100vw - 2rem), (max-width: 1087px) 54vw, (max-width: 1650px) 40vw, 640px"
+                width="540" height="763" loading="lazy" decoding="async" data-alt="comicScene"
+                alt="Sam balanciert auf der Planke eines Piratenschiffs. Im nächsten Bild stürzt er vor dem offenen Maul einer Riesenschildkröte ins Meer.">
+            </span>
+            <span class="comic-read-label" id="comic-read" data-copy="read">Sam &amp; Piet lesen</span>
+          </a>
           <div class="card">
             <h2 id="comics-title" data-copy="comics">Sams Comic-Werkstatt</h2>
             <p data-copy="comicText">Sam zeichnet und erfindet Geschichten. Entdecke Sam &amp; Piet, die Monster-Saga und seine ersten Versuche mit KI.</p>
             <div class="feature-links">
               <a class="archive-entry" href="comics.html" data-link-language="project" data-copy="comicArchive">Alle Comics entdecken</a>
-              <a class="project-link" href="comic.html" data-link-language="project" data-copy="read">Sam &amp; Piet lesen</a>
+              <a class="trace-entry" href="#spuren" data-trace-context="comics" data-copy="traceOpen">Spur hinterlassen</a>
             </div>
-            <a class="trace-entry" href="#spuren" data-trace-context="comics" data-copy="traceOpen">Spur hinterlassen</a>
           </div>
         </section>
       </div>

@@ -4,7 +4,8 @@ on:
     paths:
       - 'index.html'
       - 'klassische-startseite.html'
-      - 'assets/homepage-koenige.webp'
+      - 'assets/zwei-kronen-*.webp'
+      - 'assets/sam-piet-planke-*.webp'
       - 'scripts/test-share-card.cjs'
       - 'homepage-*'
       - 'i18n-home.js'
@@ -29,7 +30,8 @@ on:
     paths:
       - 'index.html'
       - 'klassische-startseite.html'
-      - 'assets/homepage-koenige.webp'
+      - 'assets/zwei-kronen-*.webp'
+      - 'assets/sam-piet-planke-*.webp'
       - 'scripts/test-share-card.cjs'
       - 'homepage-*'
       - 'i18n-home.js'
@@ -93,7 +95,7 @@ jobs:
           export NODE_PATH="$RUNNER_TEMP/homepage-test/node_modules" CHROME="$(command -v google-chrome)"
           node scripts/test-homepage-preview.cjs before
           node scripts/test-homepage-preview.cjs
-      - name: Save desktop and Chinese mobile previews
+      - name: Save homepage, hero and comic screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -129,6 +131,16 @@ jobs:
         with:
           node-version: '22'
       - name: Verify the published homepage on the custom domain in Chromium
+        env:
+          HOMEPAGE_SCREENSHOTS: ${{ runner.temp }}/homepage-screenshots
         run: |
           npm install --no-save --no-audit --no-fund --ignore-scripts --prefix "$RUNNER_TEMP/homepage-test" playwright-core@1.56.1
           NODE_PATH="$RUNNER_TEMP/homepage-test/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-homepage-preview.cjs published
+      - name: Save published homepage, hero and comic screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: homepage-published
+          path: ${{ runner.temp }}/homepage-screenshots/*.png
+          retention-days: 7
+          if-no-files-found: ignore

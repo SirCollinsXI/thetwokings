@@ -25,6 +25,11 @@ const copy = {
   areaLearnHint: ['Deutsch mit Bildkarten üben ↗', 'Practise German with picture cards ↗', '看图学德语 ↗'],
   areaWorkshopHint: ['Hilfe beim Aufrüsten', 'Help with PC upgrades', '电脑升级指南'],
   prototype: ['Prototyp', 'Prototype', '原型'],
+  comicScene: [
+    'Sam balanciert auf der Planke eines Piratenschiffs. Im nächsten Bild stürzt er vor dem offenen Maul einer Riesenschildkröte ins Meer.',
+    'Sam balances on a pirate ship’s plank. In the next panel he falls towards the open mouth of a giant sea turtle.',
+    '萨姆站在海盗船伸出的木板上。下一格里，他跌向海中一只张着大嘴的巨龟。'
+  ],
   comicText: [
     'Sam zeichnet und erfindet Geschichten. Entdecke Sam & Piet, die Monster-Saga und seine ersten Versuche mit KI.',
     'Sam draws and invents stories. Explore Sam & Piet, the Monster Saga and his early experiments with AI.',
@@ -99,6 +104,7 @@ function openClassicBookmark() {
 openClassicBookmark();
 window.addEventListener('hashchange', openClassicBookmark);
 const textNodes = document.querySelectorAll('[data-copy]');
+const imageDescriptions = document.querySelectorAll('img[data-alt]');
 const labelledNodes = document.querySelectorAll('[data-label]');
 const buttons = document.querySelectorAll('[data-lang]');
 const languageLinks = document.querySelectorAll('[data-link-language]');
@@ -133,6 +139,10 @@ function showLanguage(language) {
   for (const node of textNodes) {
     const translation = copy[node.dataset.copy]?.[index];
     if (translation !== undefined) node.textContent = translation;
+  }
+  for (const image of imageDescriptions) {
+    const description = copy[image.dataset.alt]?.[index];
+    if (description !== undefined) image.alt = description;
   }
   for (const node of labelledNodes) {
     const label = copy[node.dataset.label]?.[index];
