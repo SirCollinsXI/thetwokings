@@ -24691,5 +24691,150 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Der grüne Wischerarm läuft über die Scheibe. Tropfen und eine freie Wischspur machen die Funktion erkennbar. Auch 雨刮器 ist im Festlandchinesischen geläufig."
     }
+  },
+  {
+    "id": "v60",
+    "de": "die Babydecke",
+    "plural": "die Babydecken",
+    "en": "baby blanket",
+    "zh": "婴儿毯",
+    "pinyin": "yīng'ér tǎn",
+    "path": "wilson/original-baby/v60-babydecke.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/4b5420e20e1c88cf1811b94c1aa30dec15ce8090/wilson/original-baby/v60-babydecke.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "babyausstattung-01",
+      "method": "Projektzeichnung in zwei Größen gesichtet. Wortformen und Übersetzungen mit dem Lexikon redaktionell abgeglichen, Komposita nach ihren Bestandteilen transkribiert.",
+      "ipa": "/ˈbeːbiˌdɛkə/",
+      "context": {
+        "de": "Gesucht ist das weiche Stoffstück mit Sternen, mit dem man ein kleines Kind zudecken kann.",
+        "en": "Name the soft, star-patterned piece of fabric used to cover a baby.",
+        "zh": "图中带星星图案的柔软织物可以盖在宝宝身上。它叫什么？"
+      },
+      "reason": "Umgeschlagene Ecke und Saum machen die Decke erkennbar. Der Kinderwagen gibt den Größenbezug."
+    }
+  },
+  {
+    "id": "v61",
+    "de": "der Babyfäustling",
+    "plural": "die Babyfäustlinge",
+    "en": "baby mitten",
+    "zh": "婴儿连指手套",
+    "pinyin": "yīng'ér liánzhǐ shǒutào",
+    "path": "wilson/original-baby/v61-babyfaeustling.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/4b5420e20e1c88cf1811b94c1aa30dec15ce8090/wilson/original-baby/v61-babyfaeustling.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "babyausstattung-01",
+      "method": "Projektzeichnung in zwei Größen gesichtet. Wortformen und Übersetzungen mit dem Lexikon redaktionell abgeglichen, Komposita nach ihren Bestandteilen transkribiert.",
+      "ipa": "/ˈbeːbiˌfɔɪ̯stlɪŋ/",
+      "context": {
+        "de": "Jedes dieser kleinen Kleidungsstücke hält eine Babyhand warm. Nur der Daumen hat ein eigenes Fach. Nenne ein einzelnes Stück.",
+        "en": "Each of these tiny items keeps one baby hand warm. Only the thumb has its own section. Name one item.",
+        "zh": "这两只小手套给婴儿的小手保暖，只有拇指单独分开。请写出其中一只的名称。"
+      },
+      "reason": "Das Paar zeigt zwei Bündchen und je einen separaten Daumen. Der Hinweis nennt die Babygröße und fragt nach dem Einzelstück."
+    }
+  },
+  {
+    "id": "v63",
+    "de": "der Babyschlafsack",
+    "plural": "die Babyschlafsäcke",
+    "en": "baby sleeping bag",
+    "zh": "婴儿睡袋",
+    "pinyin": "yīng'ér shuìdài",
+    "path": "wilson/original-baby/v63-babyschlafsack.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/4b5420e20e1c88cf1811b94c1aa30dec15ce8090/wilson/original-baby/v63-babyschlafsack.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "babyausstattung-01",
+      "method": "Projektzeichnung in zwei Größen gesichtet. Wortformen und Übersetzungen mit dem Lexikon redaktionell abgeglichen, Komposita nach ihren Bestandteilen transkribiert.",
+      "ipa": "/ˈbeːbiˌʃlaːfzak/",
+      "context": {
+        "de": "Darin schläft ein Baby. Die Arme kommen durch zwei Öffnungen, die Beine bleiben zusammen im geschlossenen unteren Teil.",
+        "en": "A baby sleeps in this. The arms go through two openings and both legs fit inside the closed lower part.",
+        "zh": "宝宝睡觉时穿在里面，双臂从两个开口伸出，双腿一起放在封闭的下半部分。"
+      },
+      "reason": "Zwei Armöffnungen, mittiger Reißverschluss und geschlossener Fußsack unterscheiden das Motiv von einer Weste."
+    }
+  },
+  {
+    "id": "v962",
+    "de": "der Schnuller",
+    "plural": "die Schnuller",
+    "en": "pacifier",
+    "zh": "安抚奶嘴",
+    "pinyin": "ānfǔ nǎizuǐ",
+    "path": "wilson/original-baby/v962-schnuller.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/4b5420e20e1c88cf1811b94c1aa30dec15ce8090/wilson/original-baby/v962-schnuller.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "babyausstattung-01",
+      "method": "Projektzeichnung in zwei Größen gesichtet. Wortformen und Übersetzungen mit dem Lexikon redaktionell abgeglichen, Komposita nach ihren Bestandteilen transkribiert.",
+      "ipa": "/ˈʃnʊlɐ/",
+      "context": {
+        "de": "Ein Baby saugt zur Beruhigung an diesem Gegenstand. Man hält ihn am Ring.",
+        "en": "A baby sucks on this object for comfort. You can hold it by the ring.",
+        "zh": "宝宝可以吮吸这个东西来安定情绪。大人可以拿住它的拉环。"
+      },
+      "reason": "Sauger, Mundschild und Greifring bilden die Silhouette eines Schnullers."
+    }
+  },
+  {
+    "id": "v1093",
+    "de": "die Stoffwindel",
+    "plural": "die Stoffwindeln",
+    "en": "cloth nappy",
+    "zh": "布尿布",
+    "pinyin": "bù niàobù",
+    "path": "wilson/original-baby/v1093-stoffwindel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/4b5420e20e1c88cf1811b94c1aa30dec15ce8090/wilson/original-baby/v1093-stoffwindel.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "babyausstattung-01",
+      "method": "Projektzeichnung in zwei Größen gesichtet. Wortformen und Übersetzungen mit dem Lexikon redaktionell abgeglichen, Komposita nach ihren Bestandteilen transkribiert.",
+      "ipa": "/ˈʃtɔfˌvɪndl̩/",
+      "context": {
+        "de": "Diese saugfähige Babywäsche wird mit Druckknöpfen geschlossen und nach Gebrauch gewaschen.",
+        "en": "This absorbent item for a baby fastens with snaps and is washed after use.",
+        "zh": "这种给宝宝穿的吸水用品用按扣扣好，用完后可以清洗。"
+      },
+      "reason": "Die geöffnete Form zeigt Druckknöpfe und Saugeinlage. Das Waschsymbol weist auf die wiederverwendbare Stoffausführung hin."
+    }
   }
 ];

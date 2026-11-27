@@ -7,7 +7,8 @@
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Nächste einzelne Aufgabe | Die fünf ausgewählten Illustrationen aus `wilson/original-baby/` über ihre bestehenden IDs in das Bildmanifest einbinden. Für jedes Bild den dreisprachigen Hinweis und die Wortformen prüfen. |
+| Aktueller Entwurf | 734 aktive Karten im Entwurf. Block 1 ist in Galerie, Eingabetrainer und Offline-Datei eingebunden. Automatisierte Prüfungen für Wortbestand, Eingabe, CTA und Website-Verweise bestanden. Der Offline-Build ist bytegleich reproduzierbar. |
+| Nächste einzelne Aufgabe | Die fünf Babykarten in der Cloudflare-Vorschau prüfen. Anschließend die fünf Motive aus `wilson/original-clothing/` als Block 2 integrieren. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
 ## Ziel und Wortliste
@@ -31,7 +32,7 @@ Alle 50 Wörter haben verschiedene Lexikon-IDs. Bei der Auswahl fehlten sie in d
 
 ## Block 1 · Babyausstattung
 
-**Auswahl Paket 06.** Mit Lexikon, aktiven Eingabekarten und allen Einträgen des Bildmanifests abgeglichen. Die Zeichnungen wurden bei 120 × 85 und 220 × 156 Pixeln gesichtet. Die fünf Entwürfe sind noch nicht im aktiven Kartenbestand enthalten.
+**Auswahl Paket 06.** Mit Lexikon, aktiven Eingabekarten und allen Einträgen des Bildmanifests abgeglichen. Die Zeichnungen wurden bei 120 × 85 und 220 × 156 Pixeln gesichtet. Die fünf Karten sind im Entwurf aktiv. Der Eingabehinweis zum Babyfäustling nennt die Babygröße und fragt nach dem Einzelstück.
 
 | ID | Wort und Plural | Englisch · 简体中文 laut Lexikon | Erkennungsmerkmal für den Bildhinweis |
 | --- | --- | --- | --- |
@@ -41,7 +42,9 @@ Alle 50 Wörter haben verschiedene Lexikon-IDs. Bei der Auswahl fehlten sie in d
 | `v962` | der Schnuller · die Schnuller | pacifier · 安抚奶嘴 | Sauger, Schild und Greifring sind zusammen zu sehen. |
 | `v1093` | die Stoffwindel · die Stoffwindeln | cloth nappy · 布尿布 | Druckknöpfe und eingenähte Saugeinlage zeigen die Stoffwindel. Das Waschsymbol erklärt ihre Wiederverwendbarkeit. |
 
-**Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
+**Wiedereinstieg am 27.11.2026.** Der Screenshot zu Paket 06 zeigt nach 3:19 Minuten die Meldung zur maximalen Gesprächslänge. PR #18 enthielt bereits alle 50 Wort-IDs und zehn Zeichnungen. Die Integration der fünf Babykarten war lokal vollständig auffindbar. Es mussten keine Karten neu erstellt werden. Als Erstes wurden die bestehenden Tests und der reproduzierbare Offline-Build geprüft.
+
+**Früherer Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
 
 Ziel sind **1.500 einzeln geprüfte Bildkarten**. Von der Etappe mit 200 zusätzlichen Karten ab 724 sind fünf veröffentlicht. Bis 924 fehlen **195 Karten**, bis zum Gesamtziel **771**.
 
@@ -171,3 +174,4 @@ Inhaltstests prüfen alle 729 Karten und 222 historische Bild-Hashes, eindeutige
 2. Die 47 gesperrten Zuordnungen ersetzen oder mit belastbarem Kontext korrigieren; alternative Motive niemals als weitere Wörter zählen.
 3. Deutsche Wortformen/IPA und Mandarin unabhängig prüfen lassen; bisherige Sichtung transparent als redaktionellen Erststand behandeln.
 4. Den jeweils aktuellen `main` erneut lesen, diese Datei und das Manifest verwenden und kleinere getestete Ausbaustände tatsächlich sichern. Keine ungesicherten lokalen Arbeitsschritte als veröffentlicht ausgeben.
+
