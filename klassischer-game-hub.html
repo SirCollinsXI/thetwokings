@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="play-i18n.css"></head>
 <body data-play-i18n="hub"><div id="language-tools" role="group" aria-label="Website language"><button type="button" data-set-language="de" lang="de" aria-pressed="true">DE</button><button type="button" data-set-language="en" lang="en" aria-pressed="false">EN</button><button type="button" data-set-language="zh" lang="zh-CN" aria-pressed="false">简体中文</button></div>
 <main class="hub">
-<header><h1>The Two Kings</h1><p class="subtitle">Wähle ein Abenteuer aus. Dein Fortschritt wird für den aktuellen Browser-Tab gespeichert.</p></header>
+<header><a hidden data-preview-return style="color:var(--cream)"></a><h1>The Two Kings</h1><p class="subtitle">Wähle ein Abenteuer aus. Dein Fortschritt wird für den aktuellen Browser-Tab gespeichert.</p></header>
 <section aria-label="Session-Fortschritt" class="progress-wrap"><div class="progress-head"><span>Session-Fortschritt</span><span id="progressText">0 / 2 abgeschlossen</span></div><div class="progress"><span id="progressFill"></span></div><p aria-live="polite" class="campaign" id="campaignMessage" role="status"></p></section>
 <nav aria-label="Spieleauswahl" class="grid">
 <a class="game" data-game="bogen" href="bogen.html" id="card-bogen"><span class="badge" id="badge-bogen">Noch nicht gespielt</span><div aria-hidden="true" class="icon">🏹</div><h2>Wüsten-Bogen</h2><p>Präzisionsschießen im Wüstensand mit Wind und Böen.</p><div class="game-meta"><span>Status: <strong id="status-bogen">Noch nicht gespielt</strong></span><span id="time-bogen">Session-Bestzeit: –</span><span id="last-bogen"></span></div></a>
@@ -34,4 +34,4 @@ $('resetSession').addEventListener('click',()=>{sessionStorage.removeItem(KEY);r
 addEventListener('pageshow',render);addEventListener('storage',render);render();
 })();
 </script>
-<script src="play-i18n.js"></script></body></html>
+<script src="play-i18n.js"></script><script src="homepage-project-nav.js" data-section="spiele"></script></body></html>

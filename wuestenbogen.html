@@ -17,7 +17,7 @@
 <div class="panel" id="windBox"><div id="windText"></div><div id="windBar"><div id="windFill"></div></div></div>
 <div class="panel" id="powerWrap"><div id="powerBar"></div></div>
 <div class="panel" id="hintBox">Links ziehen & loslassen · Pfeiltasten & Leertaste</div><button id="exitBtn" class="secondary">Zum Start</button>
-<section id="startOverlay" aria-label="Spielstart"><div class="card"><div class="brand"><span class="brandMark">↗</span><span class="brandName"></span></div><h1 id="gameTitle"></h1><p id="intro"></p><div class="facts"><span id="rounds"></span><span>3 Treffer pro Runde</span></div><p class="tip">Zum Zielen in der linken Spielhälfte nach links unten ziehen, dann loslassen. Alternativ: Pfeiltasten und Leertaste. <span class="portrait">Auf dem Handy am besten quer spielen.</span></p><button id="startBtn">Challenge starten ↗</button><p class="note">Keine Anmeldung. Keine öffentliche Bestenliste.</p></div></section>
+<section id="startOverlay" aria-label="Spielstart"><div class="card"><div class="brand"><span class="brandMark">↗</span><span class="brandName"></span></div><h1 id="gameTitle"></h1><p id="intro"></p><div class="facts"><span id="rounds"></span><span>3 Treffer pro Runde</span></div><p class="tip">Zum Zielen in der linken Spielhälfte nach links unten ziehen, dann loslassen. Alternativ: Pfeiltasten und Leertaste. <span class="portrait">Auf dem Handy am besten quer spielen.</span></p><button id="startBtn">Challenge starten ↗</button><p class="note">Keine Anmeldung. Keine öffentliche Bestenliste.</p><a hidden data-preview-return style="color:var(--accent)"></a></div></section>
 <section id="avatarModal" aria-label="Spielergebnis" aria-live="polite"><div class="card"><div class="brand brandName"></div><h2>Volltreffer.</h2><p>Alle Runden geschafft. Deine Zeit:</p><div id="finalTimeLabel" class="result"></div><div class="row"><button id="restartBtn">Noch einmal spielen ↗</button><button id="homeFinishBtn" class="secondary">Zum Start</button></div><p class="note">Das Ergebnis wird nicht gespeichert oder übertragen.</p></div></section>
 <script>
 'use strict';
@@ -89,4 +89,4 @@ document.querySelectorAll('#wb-language [data-lang]').forEach(b=>b.onclick=()=>s
 let busy=false;const observer=new MutationObserver(changes=>{if(busy)return;busy=true;try{for(const c of changes){if(c.type==='characterData')visit(c.target);else for(const a of c.addedNodes){if(a.nodeType===3)visit(a);else if(a.nodeType===1&&!a.closest('#wb-language')){const w=document.createTreeWalker(a,NodeFilter.SHOW_TEXT);let n;while((n=w.nextNode()))visit(n);}}}}finally{busy=false}});
 set(lang);observer.observe(document.body,{characterData:true,childList:true,subtree:true});
 })();
-</script></body></html>
+</script><script src="homepage-project-nav.js" data-section="spiele"></script></body></html>

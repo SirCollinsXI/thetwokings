@@ -151,7 +151,9 @@ function showLanguage(language) {
   showDailyStats(document.documentElement.lang);
   for (const link of languageLinks) {
     const target = new URL(link.href);
-    target.searchParams.set('lang', language);
+    const mode = link.dataset.linkLanguage;
+    target.searchParams.set(mode === 'home-only' ? 'homeLang' : 'lang', language);
+    if (mode) target.searchParams.set('from', 'homepage-preview');
     link.href = target.href;
   }
 }
