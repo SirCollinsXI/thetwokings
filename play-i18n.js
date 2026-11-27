@@ -12,7 +12,7 @@ const comicCopy=[
  ["Band 1 · Kapitel 1","Volume 1 · Chapter 1","第一卷 · 第一章"],
  ["Eine Piratenplanke, eine Riesenschildkröte und zwei Freunde mitten auf dem Meer.","A pirate’s plank, a giant turtle and two friends out at sea.","海盗船上的木板、巨型海龟，还有在大海上冒险的两位朋友。"],
  ["15 illustrierte Seiten. Eine Übergangsseite ist in Arbeit.","15 illustrated pages. One transition page is in progress.","现有 15 页漫画，另有一页过渡内容正在制作。"],
- ["Die Sprechblasen sind auf Deutsch. Im Reader stehen englische und chinesische Übersetzungen für ausgewählte Seiten bereit.","The speech bubbles are in German. English and Simplified Chinese dialogue translations are available for selected pages.","对话气泡为德语原文。部分页面的对话提供英语和简体中文译文。"],
+ ["Die Sprechblasen sind auf Deutsch. Für alle 15 Bildseiten kannst du die Dialoge auch auf Englisch und vereinfachtem Chinesisch lesen.","The speech bubbles are in German. You can also read the dialogue for all 15 illustrated pages in English and Simplified Chinese.","漫画气泡里是德语原文。全部 15 页漫画的对话都配有英语和简体中文译文。"],
  ["Leseprobe öffnen →","Read the preview →","开始试读 →"],
  ["Dialogsprache","Dialogue language","对话语言"],
  ["Tippe auf das Bild, um es zu vergrößern. Zum Blättern nutze die Pfeiltasten oder die Schaltflächen.","Tap the image to zoom. Use the arrow keys or buttons to turn pages.","点击图片放大，使用方向键或翻页按钮切换页面。"]
