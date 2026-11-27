@@ -41,7 +41,49 @@
   <p>Arabica gegen Robusta, Kaffee gegen Energydrinks. Mit Deutschland-Benchmark, Schätzstatus und interaktivem Koffein-Rechner.</p>
 </a></div></section>
 <section class="comic-section section" id="comics"><div><p class="eyebrow">01 / SAM & PIET</p><h2>Die erste Seite.<br>Das große Abenteuer.</h2><p>Eine Planke. Ein offenes Maul. Und plötzlich ist Sam mitten in einer Welt, die niemand für möglich gehalten hätte. Entdecke den Auftakt unseres Abenteuercomics.</p><p class="status">Kapitel 1 · 16 illustrierte Seiten</p><a class="button lime" href="comics.html">Zu Sams Comics ↗</a></div><a class="comic-preview" href="comic.html"><img src="comic/page-02.webp" alt="Einblick in Sam & Piet: Sam in der geheimnisvollen Bauchwelt" loading="lazy"></a></section>
-<section class="game-section section" id="spiele"><div class="game-callout"><p class="eyebrow">02 / WENIGER SCROLLEN. MEHR SPIELEN.</p><h2>Bereit für<br>einen Volltreffer?</h2><p>Unser Wüstenbogen wartet auf dich. Zielen, loslassen und die nächste Herausforderung meistern — direkt im Browser.</p><a class="button lime" href="wuestenbogen.html">Wüstenbogen spielen <span>↗</span></a><small>Maus, Touch oder Pfeiltasten + Leertaste · Querformat empfohlen</small></div><div class="big-target" aria-hidden="true"><span>↗</span></div></section>
+<link rel="stylesheet" href="spiele-probe.css">
+<section class="section game-trials" id="spiele" aria-labelledby="game-trials-title">
+  <h2 id="game-trials-title" data-trial-copy="heading">Sams Spielecke</h2>
+  <div class="game-trials-grid">
+    <article class="game-trial" id="bogen-probe" aria-labelledby="bogen-probe-title">
+      <h3 id="bogen-probe-title" data-trial-copy="bowTitle">Wüstenbogen</h3>
+      <div class="trial-stage bow-stage" aria-hidden="true">
+        <img src="game-assets/thumbs/wuestenbogen.webp" alt="" width="624" height="264" loading="lazy">
+        <span class="trial-sight"></span><span class="trial-impact" hidden></span>
+      </div>
+      <div class="trial-body">
+        <p data-trial-copy="bowHint">Der Wind drückt den Pfeil nach rechts. Halte links von der Mitte vor.</p>
+        <div class="trial-controls" hidden>
+          <label for="trial-aim" data-trial-copy="aim">Zielen</label>
+          <input id="trial-aim" type="range" min="-2" max="2" step="1" value="0">
+          <button type="button" id="trial-shoot" data-trial-copy="shoot">Probeschuss</button>
+          <p class="trial-feedback" id="bow-result" role="status"></p>
+        </div>
+        <a class="trial-launch" href="wuestenbogen.html" data-trial-copy="bowLaunch">Wüstenbogen spielen ↗</a>
+      </div>
+    </article>
+    <article class="game-trial" id="dino-probe" aria-labelledby="dino-probe-title">
+      <h3 id="dino-probe-title" data-trial-copy="dinoTitle">T. rex an Deck</h3>
+      <div class="trial-stage dino-stage" aria-hidden="true">
+        <img src="game-assets/thumbs/probe-deck.webp" alt="" width="624" height="264" loading="lazy">
+        <div class="trial-lanes"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        <img class="trial-rex" src="game-assets/thumbs/probe-dino.webp" alt="" width="174" height="110" loading="lazy">
+        <span class="trial-net" hidden></span>
+      </div>
+      <div class="trial-body">
+        <p id="trial-track">Der Dino steht auf Feld 2 und läuft nach rechts. Wähle das Netz für seinen nächsten Schritt.</p>
+        <div class="trial-controls" hidden>
+          <div class="trial-nets" role="group" aria-labelledby="trial-track">
+            <button type="button" data-trial-net="1"><span aria-hidden="true">1</span><span class="trial-net-label">Netz 1</span></button><button type="button" data-trial-net="2"><span aria-hidden="true">2</span><span class="trial-net-label">Netz 2</span></button><button type="button" data-trial-net="3"><span aria-hidden="true">3</span><span class="trial-net-label">Netz 3</span></button><button type="button" data-trial-net="4"><span aria-hidden="true">4</span><span class="trial-net-label">Netz 4</span></button><button type="button" data-trial-net="5"><span aria-hidden="true">5</span><span class="trial-net-label">Netz 5</span></button>
+          </div>
+          <p class="trial-feedback" id="dino-result" role="status"></p>
+        </div>
+        <a class="trial-launch" href="piratenjagd.html" data-trial-copy="dinoLaunch">Piratenjagd spielen ↗</a>
+      </div>
+    </article>
+  </div>
+</section>
+<script defer src="spiele-probe.js"></script>
 <section class="section pc-section" id="pc"><div class="workshop-banner"><div><p class="eyebrow">DIE NEUE PC-WERKSTATT</p><h3>Dein System. Deine nächste Entscheidung.</h3><p>Hardwarebericht importieren, Upgrade-Priorität prüfen, Speichertrends verstehen und eigene Preisverläufe auswerten.</p></div><a class="button lime" href="werkstatt.html">Werkstatt öffnen ↗</a></div><div class="section-heading"><div><p class="eyebrow">03 / DIE PC-WERKSTATT</p><h2>Dein nächster PC beginnt hier.</h2></div><p>Plane deinen Aufbau und vergleiche Angebote.<br>Mit deinen Komponenten. Mit deinen Preisen.</p></div><div class="pc-layout"><aside><span class="number">[ BUILD / 001 ]</span><h3>Was soll dein<br>Rechner können?</h3><label for="purpose">Einsatzzweck</label><select id="purpose"><option value="gaming">Gaming</option><option value="creative">Kreativarbeit</option><option value="office">Alltag & Office</option></select><p id="purpose-note">Lege zuerst Spiele, Auflösung und gewünschte Bildrate fest. Gleiche danach die Anforderungen mit deiner Auswahl ab.</p><label for="budget">Dein Budget in €</label><input id="budget" type="number" min="0" step="50" value="1200"><div class="total"><span>GEPLANTE KOSTEN</span><strong id="total">0,00 €</strong><small id="remaining" aria-live="polite"></small></div></aside><div class="parts"><p class="tool-note">Eigene Eingaben · keine Livepreise · keine automatische Kompatibilitätsprüfung</p><div class="table-wrap"><table><thead><tr><th>Komponente</th><th>Modell / Notiz</th><th>Preis (€)</th></tr></thead><tbody id="parts"></tbody></table></div><div class="parts-bottom"><p>Vor dem Kauf prüfen: CPU-Sockel, Mainboard, RAM-Generation, Gehäusemaße, Kühlung und Netzteilanschlüsse.</p><button id="export" class="button outline">Build exportieren ↓</button></div></div></div><div class="price-comparison"><div><p class="eyebrow">PREIS-CHECK</p><h3>Welches Angebot lohnt sich?</h3><p>Vergleiche zwei Angebote für dasselbe Modell inklusive Versand.</p></div><form id="compare"><label>Angebot A (€)<input name="a" type="number" min="0" step="0.01" required placeholder="Artikelpreis"></label><label>Versand A (€)<input name="sa" type="number" min="0" step="0.01" value="0" required></label><label>Angebot B (€)<input name="b" type="number" min="0" step="0.01" required placeholder="Artikelpreis"></label><label>Versand B (€)<input name="sb" type="number" min="0" step="0.01" value="0" required></label><button class="button lime">Vergleichen ↗</button><output id="comparison" aria-live="polite">Trage deine gefundenen Händlerpreise ein.</output></form></div></section>
 <section class="closing"><p class="eyebrow">THE TWO KINGS</p><h2>Die nächste Idee?<br><em>Ist schon in Arbeit.</em></h2><a href="#arbeiten">Zurück in unsere Welt ↗</a></section></main><footer><a class="brand" href="#">♛ THE TWO KINGS</a><span>COMICS. GAMES. HARDWARE.</span><a href="/wilson" data-wilson-entry>Wilsons Deutsch-Lernecke</a><a href="klassischer-game-hub.html">Klassische Spiele</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><button id="about">Über diese Website ↗</button></footer><dialog id="info"><button id="close-info" aria-label="Schließen">×</button><p class="eyebrow">THE TWO KINGS</p><h2>Eine Werkstatt für Ideen.</h2><p>Die Website verbindet die freigegebene Sam-&-Piet-Leseprobe, Wüstenbogen, die neue Piratenjagd-Testszene und Werkzeuge zur PC-Planung.</p><p>Der Komponentenrechner und der Preisvergleich rechnen ausschließlich mit deinen Eingaben. Sie rufen keine Händlerdaten ab. Eingaben bleiben während der Nutzung im Browser und werden nicht an einen Server gesendet.</p><p>Die Galerie kann um weitere Werke ergänzt werden. Betreiberangaben und Datenschutzhinweise findest du im Seitenfuß.</p></dialog><script src="app.js"></script><script src="i18n-home.js"></script></body></html>
 
