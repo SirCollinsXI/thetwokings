@@ -88,7 +88,7 @@ const wilsonLabels = {
   zh: /Wilson 的学习角/,
 };
 
-async function checkWilson(page, lang, redesigned, source) {
+async function checkWilson(page, lang, redesigned, source, label = wilsonLabels[lang]) {
   const selectors = redesigned
     ? ['#navigation', '#projekte', '#lernen', 'footer'].map(area => area + ' a[data-link-language="home-only"]')
     : ['header nav a[data-wilson-entry]', '#lernen[data-wilson-entry]', 'footer a[data-wilson-entry]'];
@@ -102,9 +102,9 @@ async function checkWilson(page, lang, redesigned, source) {
     if (source && redesigned) assert.equal(target.searchParams.get('from'), source, selector);
     if (redesigned) assert.equal(target.searchParams.get('homeLang'), lang, selector);
     if (selector.startsWith('#lernen ')) {
-      assert.match(await page.locator('#lernen h2').innerText(), wilsonLabels[lang]);
+      assert.match(await page.locator('#lernen h2').innerText(), label);
     } else {
-      assert.match(await entry.innerText(), wilsonLabels[lang], selector);
+      assert.match(await entry.innerText(), label, selector);
     }
   }
   if (redesigned) {
@@ -314,7 +314,9 @@ async function run() {
       assert.equal(response.status(), 200);
       assert.equal(new URL(page.url()).origin, preview.origin);
       const redesigned = await page.locator('meta[name="ttk-release"]').count() > 0;
-      await checkWilson(page, 'de', redesigned);
+      // A pre-merge baseline may still have the former published German project name.
+      const label = redesigned ? wilsonLabels.de : /Wilsons (?:Deutsch-Lernecke|Lernecke)/;
+      await checkWilson(page, 'de', redesigned, undefined, label);
       console.log('Public homepage before merge:', page.url(), redesigned ? 'redesigned homepage' : 'classic homepage', await page.title());
       return;
     }
