@@ -25116,5 +25116,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Der feste Kopf besteht aus violetten Blättern. Im Anschnitt verzweigen sich die hellen Blattrippen."
     }
+  },
+  {
+    "id": "v73",
+    "de": "das Baguette",
+    "plural": "die Baguettes",
+    "en": "baguette",
+    "zh": "法式长棍面包",
+    "pinyin": "fǎshì chánggùn miànbāo",
+    "path": "wilson/original-food/v73-baguette.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/baˈɡɛt/",
+      "context": {
+        "de": "Das lange, schmale Brot hat mehrere schräge Einschnitte in der Kruste.",
+        "en": "The long, narrow loaf has several diagonal slashes in its crust.",
+        "zh": "这条又细又长的面包表皮上有几道斜切口。"
+      },
+      "reason": "Das lange, schmale Brot hat mehrere schräge Einschnitte in der Kruste."
+    }
+  },
+  {
+    "id": "v342",
+    "de": "das Fladenbrot",
+    "plural": "die Fladenbrote",
+    "en": "flatbread",
+    "zh": "扁面包",
+    "pinyin": "biǎn miànbāo",
+    "path": "wilson/original-food/v342-fladenbrot.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈflaːdn̩ˌbʁoːt/",
+      "context": {
+        "de": "Das breite, flache Brot ist rund. Auf der Kruste sind kleine Vertiefungen und Saatkörner.",
+        "en": "The broad, flat bread is round with little dimples and seeds on the crust.",
+        "zh": "这个宽扁的圆面包表面有小凹坑和籽粒。"
+      },
+      "reason": "Das breite, flache Brot ist rund. Auf der Kruste sind kleine Vertiefungen und Saatkörner."
+    }
+  },
+  {
+    "id": "v1120",
+    "de": "der Taco",
+    "plural": "die Tacos",
+    "en": "taco",
+    "zh": "墨西哥玉米卷",
+    "pinyin": "Mòxīgē yùmǐjuǎn",
+    "path": "wilson/original-food/v1120-taco.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtako/",
+      "context": {
+        "de": "Die zusammengeklappte Tortilla ist oben offen. Man sieht Gemüse und die übrige Füllung.",
+        "en": "The folded tortilla is open at the top, showing vegetables and the rest of the filling.",
+        "zh": "对折的饼皮上方敞开，可以看到蔬菜和其他馅料。"
+      },
+      "reason": "Die zusammengeklappte Tortilla ist oben offen. Man sieht Gemüse und die übrige Füllung."
+    }
+  },
+  {
+    "id": "v1112",
+    "de": "das Sushi",
+    "plural": "—",
+    "en": "sushi",
+    "zh": "寿司",
+    "pinyin": "shòusī",
+    "path": "wilson/original-food/v1112-sushi.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈzuːʃi/",
+      "context": {
+        "de": "Auf dem Teller liegen japanische Reishäppchen. Manche sind mit Algen umwickelt.",
+        "en": "The plate holds small Japanese rice bites. Some are wrapped in seaweed.",
+        "zh": "盘子里是日式米饭小食，有几块外面裹着海苔。"
+      },
+      "reason": "Auf dem Teller liegen japanische Reishäppchen. Manche sind mit Algen umwickelt."
+    }
+  },
+  {
+    "id": "v280",
+    "de": "der Eisbergsalat",
+    "plural": "die Eisbergsalate",
+    "en": "iceberg lettuce",
+    "zh": "球生菜",
+    "pinyin": "qiú shēngcài",
+    "path": "wilson/original-food/v280-eisbergsalat.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "lebensmittel-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈaɪ̯sbɛʁkzaˌlaːt/",
+      "context": {
+        "de": "Die hellgrünen, knackigen Blätter bilden einen dicht geschlossenen Kopf.",
+        "en": "The crisp pale-green leaves form a tightly closed head.",
+        "zh": "浅绿色的脆叶紧紧包成一个菜球。"
+      },
+      "reason": "Die hellgrünen, knackigen Blätter bilden einen dicht geschlossenen Kopf."
+    }
   }
 ];
