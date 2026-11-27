@@ -474,6 +474,7 @@ async function run() {
         await page.close();
       }
     }
+    await require('./test-entwicklungsideen.cjs')(browser, preview);
     await checkFormerBookmarks(browser);
     await require('./test-share-card.cjs')(browser, preview, '/');
     if (mode === 'preview') {
