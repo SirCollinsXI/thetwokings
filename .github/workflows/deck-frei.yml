@@ -1,0 +1,43 @@
+name: Deck frei mission
+on:
+  pull_request:
+    paths:
+      - 'deck-frei*'
+      - 'capture-physics.js'
+      - 'game-assets/deck-frei/**'
+      - 'scripts/test-deck-frei*.cjs'
+      - '.github/workflows/deck-frei.yml'
+permissions:
+  contents: read
+jobs:
+  play:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check capture and gate logic
+        run: |
+          node scripts/test-capture.cjs
+          node --test scripts/test-deck-frei.cjs
+      - name: Play the mission in mobile Chromium
+        run: |
+          npm install --no-save --no-audit --no-fund --ignore-scripts --prefix "$RUNNER_TEMP/deck-test" playwright-core@1.56.1
+          export NODE_PATH="$RUNNER_TEMP/deck-test/node_modules"
+          export DECK_SCREENSHOTS="$RUNNER_TEMP/deck-screenshots"
+          export CHROME="$(command -v google-chrome)"
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/deck-http.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          curl --retry 8 --retry-connrefused --retry-delay 1 --fail --silent --output /dev/null http://127.0.0.1:8765/deck-frei.html
+          node scripts/test-deck-frei-browser.cjs
+      - name: Save game views
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deck-frei-mobile
+          path: ${{ runner.temp }}/deck-screenshots/*.png
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Deck frei! · Piratenjagd | TheTwoKings</title>
+  <link rel="icon" href="crown.svg">
+  <link rel="stylesheet" href="deck-frei.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="piratenjagd.html" id="back" data-copy="back">← Zur Piratenjagd</a>
+    <nav aria-label="Sprache" id="languages">
+      <button type="button" data-language="de" lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-language="en" lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-language="zh" lang="zh-Hans" aria-pressed="false">简中</button>
+    </nav>
+  </header>
+  <main>
+    <h1 data-copy="title">Deck frei!</h1>
+    <p class="lead" data-copy="goal">Öffne ein Gatter und lotse den T. rex ins passende Netz.</p>
+    <section class="board" aria-labelledby="board-name">
+      <h2 id="board-name" class="visually-hidden" data-copy="board">Piratendeck</h2>
+      <div id="deck-view" aria-hidden="true"></div>
+      <div class="stage-actions"><button type="button" id="go" disabled data-copy="loading">Deck wird geladen …</button><button type="button" id="pause" hidden data-copy="pause">Pause</button></div>
+    </section>
+    <p id="message" role="status" aria-live="polite" aria-atomic="true">Deck wird geladen …</p>
+    <div class="controls">
+      <fieldset><legend data-copy="gate">Gatter öffnen</legend>
+        <div class="pair">
+          <button type="button" data-gate="left" disabled aria-pressed="false"><span aria-hidden="true">↖</span> <span data-copy="left">Links</span></button>
+          <button type="button" data-gate="right" disabled aria-pressed="false"><span data-copy="right">Rechts</span> <span aria-hidden="true">↗</span></button>
+        </div>
+      </fieldset>
+      <fieldset><legend data-copy="net">Netz auslösen</legend>
+        <div class="pair">
+          <button type="button" data-net="left" disabled><span aria-hidden="true">①</span> <span data-copy="left">Links</span></button>
+          <button type="button" data-net="right" disabled><span data-copy="right">Rechts</span> <span aria-hidden="true">②</span></button>
+        </div>
+      </fieldset>
+    </div>
+    <p class="keys" data-copy="keys">Tastatur: ← → für das Gatter, 1 oder 2 für das Netz, P für Pause.</p>
+    <noscript>Zum Spielen bitte JavaScript aktivieren.</noscript>
+  </main>
+  <script src="vendor/phaser-4.2.1.min.js" defer></script>
+  <script src="capture-physics.js" defer></script>
+  <script src="deck-frei-model.js" defer></script>
+  <script src="deck-frei-scene.js" defer></script>
+  <script src="deck-frei.js" defer></script>
+</body>
+</html>
