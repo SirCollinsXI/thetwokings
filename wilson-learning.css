@@ -1,0 +1,58 @@
+/* Shared visual roles for the overview, flashcards and picture-input exercise. */
+.wilson-learning-home, .wilson-learning-input {
+  --lesson-paper: #f5f6f2;
+  --lesson-panel: #ffffff;
+  --lesson-ink: #193933;
+  --lesson-secondary: #455d58;
+  --lesson-action: #175e52;
+  --lesson-focus: #125aa4;
+  --lesson-target: #f6d888;
+  --lesson-picture: #e9f0eb;
+  background: var(--lesson-paper);
+  color: var(--lesson-ink);
+}
+.wilson-learning-home {
+  --ink: var(--lesson-ink);
+  --green: var(--lesson-action);
+  --muted: var(--lesson-secondary);
+  --yellow: var(--lesson-target);
+}
+.wilson-learning-home h1 {max-width:17ch;overflow-wrap:break-word;}
+.wilson-learning-home .hero-picture, .wilson-learning-input .picture {
+  background: var(--lesson-picture);
+}
+.wilson-learning-home .language-labels b,
+.wilson-learning-home .wilson-target-word,
+.wilson-learning-input #correct-answer {
+  padding: .12em .32em;
+  border-radius: .2em;
+  color: var(--lesson-ink);
+  background: var(--lesson-target);
+  font-weight: 750;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.wilson-learning-input {
+  --forest: var(--lesson-action);
+  --paper: var(--lesson-paper);
+  --cream: var(--lesson-panel);
+  --ink: var(--lesson-ink);
+  --muted: var(--lesson-secondary);
+}
+.wilson-learning-input h1 span {color:var(--lesson-action);}
+.wilson-learning-input .status:not(:empty) {
+  display: inline-block;
+  border-inline-start: .28rem solid currentColor;
+  padding: .55rem .8rem;
+  border-radius: .25rem;
+}
+.wilson-learning-input .status.ok {background:#dcf3e6;color:#15553c;}
+.wilson-learning-input .status.warn {background:#fff0d5;color:#744014;}
+.wilson-learning-input .status.ok:not(:empty)::before {content:"✓ ";}
+.wilson-learning-input .status.warn:not(:empty)::before {content:"! ";}
+.wilson-learning-home :is(a, button, select, input, textarea, summary):focus-visible,
+.wilson-learning-input :is(a, button, select, input, textarea, summary):focus-visible {
+  outline: 3px solid var(--lesson-focus);
+  outline-offset: 3px;
+}
+.wilson-learning-input header :focus-visible {outline-color:#f6d888;}

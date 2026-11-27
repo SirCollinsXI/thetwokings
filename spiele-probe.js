@@ -63,7 +63,7 @@
       url.searchParams.set('lang', language);
       link.href = url.pathname + url.search;
     });
-    nets.forEach(button => button.setAttribute('aria-label', t.net(button.dataset.trialNet)));
+    nets.forEach(button => { button.querySelector('.trial-net-label').textContent = t.net(button.dataset.trialNet); });
     if (shot !== null) section.querySelector('#bow-result').textContent = t.shot[shot];
     showAim();
     describeTurn();

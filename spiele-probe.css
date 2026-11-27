@@ -31,3 +31,5 @@
 .trial-net { position: absolute; bottom: 6%; width: 19%; height: 45%; transform: translateX(-50%); border: 3px solid #2c1e13; border-radius: 55% 55% 18% 18%; background: repeating-linear-gradient(45deg,transparent 0 7px,#edc490 8px 9px),repeating-linear-gradient(-45deg,transparent 0 7px,#edc490 8px 9px); }
 @media (max-width: 720px) { .game-trials-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .trial-rex { transition: none; } }
+
+.trial-net-label { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
