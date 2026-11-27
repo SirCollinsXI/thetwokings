@@ -1,6 +1,11 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **714 aktive Karten**. Paket 2 ergänzt fünf Wörter. Bis zum Ziel fehlen auf diesem Stand **786 Karten**. Auf der Hauptdomain wurden **709 aktive Karten** und der Eingabeablauf für Handrührgerät bestätigt.
+Ziel: **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **714 aktive Karten**. Paket 2 ergänzt fünf Wörter. Bis zum Ziel fehlen auf diesem Stand **786 Karten**. Vor der Freigabe von Paket 2 wurden auf der Hauptdomain **709 aktive Karten** und der Eingabeablauf für Handrührgerät bestätigt.
+
+| Paket | Commit | Karten | Tests | Offen |
+| --- | --- | --- | --- | --- |
+| 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build | Hörbare Geräteausgabe |
+| 3 · Unterwegs | — | +0 von 5 | Abnahme ausstehend | Kimi-Auftrag vorbereitet. Der Modellaufruf scheiterte an der DNS-Auflösung im Arbeitskontext. |
 
 ## Bestand
 
