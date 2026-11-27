@@ -7,8 +7,8 @@
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Aktueller Entwurf | 739 aktive Karten. 2 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
-| Nächste einzelne Aufgabe | Block 2 in der Vorschau prüfen und anschließend Block 3 integrieren. |
+| Aktueller Entwurf | 744 aktive Karten. 3 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Nächste einzelne Aufgabe | Block 3 in der Vorschau prüfen und anschließend Block 4 integrieren. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
 ## Ziel und Wortliste
@@ -53,6 +53,16 @@ Vorschau `664f3e7` am 27.11.2026 geprüft. Alle fünf Trainerlinks zeigen das ri
 | `v957` | der Schneeanzug · die Schneeanzüge | snowsuit | 防雪连体服 |
 | `v1100` | die Strickjacke · die Strickjacken | cardigan | 开衫 |
 | `v1172` | das Trägertop · die Trägertops | strappy top | 吊带上衣 |
+
+## Block 3 · Obst & Gemüse
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v485` | die Heidelbeere · die Heidelbeeren | blueberry | 蓝莓 |
+| `v497` | die Himbeere · die Himbeeren | raspberry | 覆盆子 |
+| `v507` | die Honigmelone · die Honigmelonen | honeydew melon | 蜜瓜 |
+| `v903` | die rote Zwiebel · die roten Zwiebeln | red onion | 红洋葱 |
+| `v904` | der Rotkohl · — | red cabbage | 紫甘蓝 |
 
 **Wiedereinstieg am 27.11.2026.** Der Screenshot zu Paket 06 zeigt nach 3:19 Minuten die Meldung zur maximalen Gesprächslänge. PR #18 enthielt bereits alle 50 Wort-IDs und zehn Zeichnungen. Die Integration der fünf Babykarten war lokal vollständig auffindbar. Es mussten keine Karten neu erstellt werden. Als Erstes wurden die bestehenden Tests und der reproduzierbare Offline-Build geprüft.
 

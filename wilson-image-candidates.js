@@ -24976,5 +24976,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Das kurze Oberteil hängt an schmalen Schulterträgern."
     }
+  },
+  {
+    "id": "v485",
+    "de": "die Heidelbeere",
+    "plural": "die Heidelbeeren",
+    "en": "blueberry",
+    "zh": "蓝莓",
+    "pinyin": "lánméi",
+    "path": "wilson/original-produce/v485-heidelbeere.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "obst-gemuese-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhaɪ̯dl̩ˌbeːʁə/",
+      "context": {
+        "de": "Die kleinen dunkelblauen Früchte tragen am Ende eine sternförmige Krone.",
+        "en": "The small dark-blue berries have a star-shaped crown at the end.",
+        "zh": "这些小小的深蓝色浆果顶端有星形的果蒂。"
+      },
+      "reason": "Die kleinen dunkelblauen Früchte tragen am Ende eine sternförmige Krone."
+    }
+  },
+  {
+    "id": "v497",
+    "de": "die Himbeere",
+    "plural": "die Himbeeren",
+    "en": "raspberry",
+    "zh": "覆盆子",
+    "pinyin": "fùpénzi",
+    "path": "wilson/original-produce/v497-himbeere.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "obst-gemuese-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhɪmˌbeːʁə/",
+      "context": {
+        "de": "Die rote Frucht besteht aus vielen kleinen, gewölbten Kügelchen.",
+        "en": "The red berry is made up of many small rounded drupelets.",
+        "zh": "这种红色浆果由许多圆圆的小果粒组成。"
+      },
+      "reason": "Die rote Frucht besteht aus vielen kleinen, gewölbten Kügelchen."
+    }
+  },
+  {
+    "id": "v507",
+    "de": "die Honigmelone",
+    "plural": "die Honigmelonen",
+    "en": "honeydew melon",
+    "zh": "蜜瓜",
+    "pinyin": "mìguā",
+    "path": "wilson/original-produce/v507-honigmelone.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "obst-gemuese-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhoːnɪçmeˌloːnə/",
+      "context": {
+        "de": "Die Melone hat eine glatte blassgelbe Schale und sehr helles Fruchtfleisch.",
+        "en": "The melon has a smooth pale-yellow rind and very light flesh.",
+        "zh": "这种瓜的外皮光滑，呈淡黄色，果肉颜色很浅。"
+      },
+      "reason": "Die Melone hat eine glatte blassgelbe Schale und sehr helles Fruchtfleisch."
+    }
+  },
+  {
+    "id": "v903",
+    "de": "die rote Zwiebel",
+    "plural": "die roten Zwiebeln",
+    "en": "red onion",
+    "zh": "红洋葱",
+    "pinyin": "hóng yángcōng",
+    "path": "wilson/original-produce/v903-rotezwiebel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "obst-gemuese-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˌʁoːtə ˈt͡sviːbl̩/",
+      "context": {
+        "de": "Die Schale ist violettrot. Im Querschnitt siehst du mehrere violette Ringe.",
+        "en": "The skin is purple-red and the cut half shows several purple rings.",
+        "zh": "外皮是紫红色的，切面上能看到一圈圈紫色纹路。"
+      },
+      "reason": "Die Schale ist violettrot. Im Querschnitt siehst du mehrere violette Ringe."
+    }
+  },
+  {
+    "id": "v904",
+    "de": "der Rotkohl",
+    "plural": "—",
+    "en": "red cabbage",
+    "zh": "紫甘蓝",
+    "pinyin": "zǐgānlán",
+    "path": "wilson/original-produce/v904-rotkohl.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "obst-gemuese-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʁoːtˌkoːl/",
+      "context": {
+        "de": "Der feste Kopf besteht aus violetten Blättern. Im Anschnitt verzweigen sich die hellen Blattrippen.",
+        "en": "The firm head consists of purple leaves with pale branching ribs in the cut half.",
+        "zh": "紧实的菜球由紫色叶片组成，切面上能看到浅色的分叉叶脉。"
+      },
+      "reason": "Der feste Kopf besteht aus violetten Blättern. Im Anschnitt verzweigen sich die hellen Blattrippen."
+    }
   }
 ];
