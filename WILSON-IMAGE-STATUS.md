@@ -7,8 +7,8 @@
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Aktueller Entwurf | 749 aktive Karten. 4 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
-| Nächste einzelne Aufgabe | Block 4 in der Vorschau prüfen und anschließend Block 5 integrieren. |
+| Aktueller Entwurf | 754 aktive Karten. 5 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Nächste einzelne Aufgabe | Block 5 in der Vorschau prüfen und anschließend Block 6 integrieren. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
 ## Ziel und Wortliste
@@ -73,6 +73,16 @@ Vorschau `664f3e7` am 27.11.2026 geprüft. Alle fünf Trainerlinks zeigen das ri
 | `v1120` | der Taco · die Tacos | taco | 墨西哥玉米卷 |
 | `v1112` | das Sushi · — | sushi | 寿司 |
 | `v280` | der Eisbergsalat · die Eisbergsalate | iceberg lettuce | 球生菜 |
+
+## Block 5 · Fahrrad
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v1063` | die Speiche · die Speichen | spoke | 辐条 |
+| `v686` | die Luftpumpe · die Luftpumpen | air pump | 打气筒 |
+| `v141` | der Bremshebel · die Bremshebel | brake lever | 刹车手柄 |
+| `v1262` | das Vorderrad · die Vorderräder | front wheel | 前轮 |
+| `v499` | das Hinterrad · die Hinterräder | rear wheel | 后轮 |
 
 **Wiedereinstieg am 27.11.2026.** Der Screenshot zu Paket 06 zeigt nach 3:19 Minuten die Meldung zur maximalen Gesprächslänge. PR #18 enthielt bereits alle 50 Wort-IDs und zehn Zeichnungen. Die Integration der fünf Babykarten war lokal vollständig auffindbar. Es mussten keine Karten neu erstellt werden. Als Erstes wurden die bestehenden Tests und der reproduzierbare Offline-Build geprüft.
 

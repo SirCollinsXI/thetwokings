@@ -25256,5 +25256,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Die hellgrünen, knackigen Blätter bilden einen dicht geschlossenen Kopf."
     }
+  },
+  {
+    "id": "v1063",
+    "de": "die Speiche",
+    "plural": "die Speichen",
+    "en": "spoke",
+    "zh": "辐条",
+    "pinyin": "fútiáo",
+    "path": "wilson/original-bicycle/v1063-speiche.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "fahrrad-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈʃpaɪ̯çə/",
+      "context": {
+        "de": "Gesucht ist der farbige dünne Stab zwischen Nabe und Felge.",
+        "en": "Name the highlighted thin rod joining the hub to the rim.",
+        "zh": "请写出连接轮毂和轮圈的那根彩色细杆的名称。"
+      },
+      "reason": "Gesucht ist der farbige dünne Stab zwischen Nabe und Felge."
+    }
+  },
+  {
+    "id": "v686",
+    "de": "die Luftpumpe",
+    "plural": "die Luftpumpen",
+    "en": "air pump",
+    "zh": "打气筒",
+    "pinyin": "dǎqìtǒng",
+    "path": "wilson/original-bicycle/v686-luftpumpe.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "fahrrad-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈlʊftˌpʊmpə/",
+      "context": {
+        "de": "Mit dem Griff oben drückst du Luft durch den Schlauch in den Reifen.",
+        "en": "The top handle pushes air through the hose into a tyre.",
+        "zh": "按压顶部的手柄，就能通过软管给轮胎打气。"
+      },
+      "reason": "Mit dem Griff oben drückst du Luft durch den Schlauch in den Reifen."
+    }
+  },
+  {
+    "id": "v141",
+    "de": "der Bremshebel",
+    "plural": "die Bremshebel",
+    "en": "brake lever",
+    "zh": "刹车手柄",
+    "pinyin": "shāchē shǒubǐng",
+    "path": "wilson/original-bicycle/v141-bremshebel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "fahrrad-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈbʁɛmsˌheːbl̩/",
+      "context": {
+        "de": "Den farbigen Griff am Lenker ziehst du mit den Fingern, um langsamer zu werden.",
+        "en": "Pull the highlighted lever on the handlebar with your fingers to slow down.",
+        "zh": "用手指拉动车把上标出的部件，就能减速。"
+      },
+      "reason": "Den farbigen Griff am Lenker ziehst du mit den Fingern, um langsamer zu werden."
+    }
+  },
+  {
+    "id": "v1262",
+    "de": "das Vorderrad",
+    "plural": "die Vorderräder",
+    "en": "front wheel",
+    "zh": "前轮",
+    "pinyin": "qiánlún",
+    "path": "wilson/original-bicycle/v1262-vorderrad.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "fahrrad-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈfɔʁdɐˌʁaːt/",
+      "context": {
+        "de": "Gesucht ist das farbig markierte Rad unter dem Lenker.",
+        "en": "Name the highlighted wheel under the handlebar.",
+        "zh": "请写出车把下方标出的车轮的名称。"
+      },
+      "reason": "Gesucht ist das farbig markierte Rad unter dem Lenker."
+    }
+  },
+  {
+    "id": "v499",
+    "de": "das Hinterrad",
+    "plural": "die Hinterräder",
+    "en": "rear wheel",
+    "zh": "后轮",
+    "pinyin": "hòulún",
+    "path": "wilson/original-bicycle/v499-hinterrad.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "fahrrad-01",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈhɪntɐˌʁaːt/",
+      "context": {
+        "de": "Gesucht ist das farbig markierte Rad hinter den Pedalen.",
+        "en": "Name the highlighted wheel behind the pedals.",
+        "zh": "请写出踏板后方标出的车轮的名称。"
+      },
+      "reason": "Gesucht ist das farbig markierte Rad hinter den Pedalen."
+    }
   }
 ];
