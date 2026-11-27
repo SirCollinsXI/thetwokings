@@ -24263,5 +24263,148 @@ const WILSON_IMAGE_CANDIDATES=[
         "zh": "请写出图中以千瓦时计量用电量的仪表的德语名称。"
       }
     }
+  },
+  {
+    "id": "v74",
+    "de": "der Bahnsteig",
+    "plural": "die Bahnsteige",
+    "en": "railway platform",
+    "zh": "站台",
+    "pinyin": "zhàntái",
+    "path": "wilson/original-mobility/v74.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-mobility/v74.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-01",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈbaːnˌʃtaɪ̯k/",
+      "context": {
+        "de": "Gesucht ist die markierte Fläche direkt am Gleis, auf der Reisende warten und einsteigen.",
+        "en": "Name the highlighted area beside the tracks where passengers wait and board.",
+        "zh": "请写出乘客在轨道旁等车和上车的这块区域的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v164",
+    "de": "der Bürgersteig",
+    "plural": "die Bürgersteige",
+    "en": "pavement",
+    "zh": "人行道",
+    "pinyin": "rénxíngdào",
+    "path": "wilson/original-mobility/v164.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-mobility/v164.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-01",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈbʏʁɡɐˌʃtaɪ̯k/",
+      "context": {
+        "de": "Gesucht ist der erhöhte Weg für Fußgänger neben der Fahrbahn.",
+        "en": "Name the raised path for pedestrians alongside the road.",
+        "zh": "请写出图中车行道旁略高、供行人通行的这条路的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v314",
+    "de": "der Fahrkartenautomat",
+    "plural": "die Fahrkartenautomaten",
+    "en": "ticket machine",
+    "zh": "自动售票机",
+    "pinyin": "zìdòng shòupiàojī",
+    "path": "wilson/original-mobility/v314.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-mobility/v314.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-01",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈfaːɐ̯kaʁtn̩ʔaʊ̯toˌmaːt/",
+      "context": {
+        "de": "Gesucht ist das Gerät, an dem Reisende ihre Fahrscheine kaufen.",
+        "en": "Name the machine where passengers buy their train tickets.",
+        "zh": "请写出乘客自助购买车票的这台机器的德语名称。"
+      },
+      "corrections": {
+        "nDeclension": true
+      }
+    }
+  },
+  {
+    "id": "v473",
+    "de": "das Handschuhfach",
+    "plural": "die Handschuhfächer",
+    "en": "glove compartment",
+    "zh": "手套箱",
+    "pinyin": "shǒutàoxiāng",
+    "path": "wilson/original-mobility/v473.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-mobility/v473.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-01",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈhantʃuːˌfax/",
+      "context": {
+        "de": "Gesucht ist das geöffnete Ablagefach vor dem Beifahrersitz.",
+        "en": "Name the open storage compartment in front of the front passenger seat.",
+        "zh": "请写出副驾驶座前方打开的这个储物格的德语名称。"
+      }
+    }
+  },
+  {
+    "id": "v633",
+    "de": "der Kreisverkehr",
+    "plural": "die Kreisverkehre",
+    "en": "roundabout",
+    "zh": "环形交叉路口",
+    "pinyin": "huánxíng jiāochā lùkǒu",
+    "path": "wilson/original-mobility/v633.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-mobility/v633.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-01",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈkʁaɪ̯sfɛɐ̯ˌkeːɐ̯/",
+      "context": {
+        "de": "Gesucht ist die Kreuzungsform, bei der Fahrzeuge um eine runde Mittelinsel fahren.",
+        "en": "Name the type of junction where vehicles drive around a circular central island.",
+        "zh": "请写出车辆绕着圆形中心岛行驶的这种路口的德语名称。"
+      }
+    }
   }
 ];
