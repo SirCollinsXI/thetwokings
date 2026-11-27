@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root=path.resolve(__dirname,'..');
 const bundle=['wilson-lexicon.js','wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const {v,c,lex}=vm.runInNewContext(bundle+';({v:WILSON_VOCABULARY,c:WILSON_IMAGE_CANDIDATES,lex:LEXICON})');
-assert.equal(v.inputWords.length,724);
+assert.equal(v.inputWords.length,729);
 assert.equal(c.filter(w=>w.active&&w.provider!=='project').length,596);
 assert.equal(c.filter(w=>w.review?.decision==='blocked').length,47);
 assert.equal(c.filter(w=>w.status==='approved-alternative').length,10);
@@ -68,7 +68,7 @@ for(const id of ['v1355','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-
 assert.equal(v.inputWords.find(w=>w.id==='wx-chinese-cabbage').de,'der Pak Choi');
 assert.equal(v.inputWords.find(w=>w.id==='v724').numberMode,'plural');
 assert.equal(v.inputWords.find(w=>w.id==='v363').plural,'die Frühstücksflocken');
-assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,106);
+assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,111);
 const household=v.inputWords.filter(w=>w.imageCredit?.review.batch==='kueche-haushalt-01');
 assert.equal(household.length,25);
 for (const w of household) {
@@ -126,4 +126,17 @@ for(const w of transit){
  assert.equal(main.picture,true,w.id+' missing from main trainer');
  assert.equal(main.childSuitable,true,w.id+' missing from Kinderwelt');
 }
-console.log('Vocabulary verified: 724 active cards, including five new transit cards; all 222 legacy IDs and image hashes preserved.');
+const carParts = v.inputWords.filter(word => word.imageCredit?.review.batch === 'mobilitaet-03');
+assert.deepEqual(Array.from(carParts, word => word.id).sort(), ['v142', 'v39', 'v57', 'v673', 'v941']);
+for (const word of carParts) {
+ const original = lex.find(entry => entry.id === word.id);
+ for (const field of ['de', 'plural', 'en', 'zh', 'pinyin']) assert.equal(word[field], original[field], word.id);
+ assert.equal(word.numberMode, 'both');
+ assert.equal(word.nDeclension, false);
+ assert.match(word.imagePath, /^wilson\/original-car-parts\/v\d+-[a-z]+\.svg$/);
+ for (const language of ['de', 'en', 'zh']) assert.ok(word.context[language], word.id);
+ const trainerWord = v.mainWords.find(entry => entry.id === word.id);
+ assert.equal(trainerWord.imagePath, word.imagePath);
+ assert.equal(trainerWord.childSuitable, true);
+}
+console.log('Vocabulary verified: 729 active cards, including five new car parts; all 222 legacy IDs and image hashes preserved.');

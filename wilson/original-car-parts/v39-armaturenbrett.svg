@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Armaturenbrett</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <path d="M29 32q91-15 182 0l11 57H18z" fill="#d9edf1" stroke="#9bb0ba" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M105 89l13-34h5l15 34m-16-23v8m0 8v7" fill="none" stroke="#adc9ce" stroke-width="4"/>
+  <path d="M15 95q35-22 54-15 13-17 34-13l23 10q58 0 99 14v32q-39 13-85 9l-6 20h-28l-8-20q-44 0-83-9z" fill="#629a81" stroke="#23483d" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M21 100q55-22 90-14m44-2q39 2 63 11" fill="none" stroke="#a9d0bd" stroke-width="4" stroke-linecap="round"/>
+  <path d="M44 109q0-21 18-21h22q17 0 17 21z" fill="#e7f3e9" stroke="#2e5647" stroke-width="3"/>
+  <path d="M55 104a8 8 0 0 1 16 0m7 0a8 8 0 0 1 16 0m-31 0 4-5m19 5 3-5" fill="none" stroke="#3c7760" stroke-width="2" stroke-linecap="round"/>
+  <rect x="111" y="91" width="40" height="24" rx="4" fill="#294e49"/>
+  <path d="M118 109l7-9 10 4 9-7" fill="none" stroke="#c8edda" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="168" y="98" width="37" height="14" rx="3" fill="#355f53"/>
+  <path d="M174 103h25m-25 4h25" stroke="#b5d2c4" stroke-width="1.5"/>
+  <circle cx="63" cy="126" r="25" fill="none" stroke="#78929c" stroke-width="8"/>
+  <path d="M38 125h50m-25 0v26" fill="none" stroke="#78929c" stroke-width="6"/>
+  <path d="M70 50v18m-6-6 6 6 6-6m121-12v18m-6-6 6 6 6-6" fill="none" stroke="#317156" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

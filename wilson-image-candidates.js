@@ -24546,5 +24546,150 @@ const WILSON_IMAGE_CANDIDATES=[
         "zh": "站着乘车时可以抓住它保持平衡。"
       }
     }
+  },
+  {
+    "id": "v39",
+    "de": "das Armaturenbrett",
+    "plural": "die Armaturenbretter",
+    "en": "dashboard",
+    "zh": "仪表板",
+    "pinyin": "yíbiǎobǎn",
+    "path": "wilson/original-car-parts/v39-armaturenbrett.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-car-parts/v39-armaturenbrett.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-03",
+      "method": "Eigenes Motiv; Artikel, Wortformen, Lautschrift, Englisch und Mandarin redaktionell abgeglichen.",
+      "ipa": "/aʁmaˈtuːʁənˌbʁɛt/",
+      "context": {
+        "de": "Gesucht ist die grün markierte Fläche im Auto, auf der die Anzeigen und Bedienelemente sitzen.",
+        "en": "Name the green panel in the car that holds the gauges and controls.",
+        "zh": "汽车里用绿色标出的整个面板上装有仪表和控制装置。请说出它的名称。"
+      },
+      "reason": "Zwei Pfeile markieren die gesamte grüne Fläche mit Anzeigen und Bedienelementen. Das blassgraue Lenkrad liefert den Einbaukontext."
+    }
+  },
+  {
+    "id": "v57",
+    "de": "die Autotür",
+    "plural": "die Autotüren",
+    "en": "car door",
+    "zh": "车门",
+    "pinyin": "chēmén",
+    "path": "wilson/original-car-parts/v57-autotuer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-car-parts/v57-autotuer.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-03",
+      "method": "Eigenes Motiv; Artikel, Wortformen, Lautschrift, Englisch und Mandarin redaktionell abgeglichen.",
+      "ipa": "/ˈaʊ̯toˌtyːɐ̯/",
+      "context": {
+        "de": "Den gelb markierten Teil des Autos öffnet man zum Ein- und Aussteigen.",
+        "en": "You open the yellow part of the car to get in or out.",
+        "zh": "上下车时，要打开汽车上用黄色标出的这个部件。"
+      },
+      "reason": "Die geöffnete Seitentür hebt sich durch Farbe, räumlichen Winkel und Pfeil vom graublauen Fahrzeug ab."
+    }
+  },
+  {
+    "id": "v142",
+    "de": "die Bremsleuchte",
+    "plural": "die Bremsleuchten",
+    "en": "brake light",
+    "zh": "刹车灯",
+    "pinyin": "shāchēdēng",
+    "path": "wilson/original-car-parts/v142-bremsleuchte.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-car-parts/v142-bremsleuchte.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-03",
+      "method": "Eigenes Motiv; Artikel, Wortformen, Lautschrift, Englisch und Mandarin redaktionell abgeglichen.",
+      "ipa": "/ˈbʁɛmsˌlɔɪ̯çtə/",
+      "context": {
+        "de": "Die markierte rote Leuchte hinten am Auto geht beim Bremsen an.",
+        "en": "The marked red light at the rear of the car comes on when the driver brakes.",
+        "zh": "司机刹车时，车尾标出的红灯就会亮起。"
+      },
+      "reason": "Der Pfeil zeigt auf die hoch positionierte mittlere Bremsleuchte. Die seitlichen Leuchten zeigen das gleichzeitige Bremslichtsignal. Die Lautschrift ist aus den Wortbestandteilen abgeleitet."
+    }
+  },
+  {
+    "id": "v673",
+    "de": "das Lenkrad",
+    "plural": "die Lenkräder",
+    "en": "steering wheel",
+    "zh": "方向盘",
+    "pinyin": "fāngxiàngpán",
+    "path": "wilson/original-car-parts/v673-lenkrad.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-car-parts/v673-lenkrad.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-03",
+      "method": "Eigenes Motiv; Artikel, Wortformen, Lautschrift, Englisch und Mandarin redaktionell abgeglichen.",
+      "ipa": "/ˈlɛŋkˌʁaːt/",
+      "context": {
+        "de": "Den grünen Ring dreht man beim Fahren, um die Richtung des Autos zu ändern.",
+        "en": "You turn this green wheel to change the direction of the car.",
+        "zh": "开车时转动这个绿色的圆盘，就能改变汽车行驶的方向。"
+      },
+      "reason": "Der grüne Dreispeichenkranz und die Drehpfeile heben das Lenkrad vor dem blassgrauen Armaturenbrett hervor."
+    }
+  },
+  {
+    "id": "v941",
+    "de": "der Scheibenwischer",
+    "plural": "die Scheibenwischer",
+    "en": "windscreen wiper",
+    "zh": "雨刷器",
+    "pinyin": "yǔshuāqì",
+    "path": "wilson/original-car-parts/v941-scheibenwischer.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-car-parts/v941-scheibenwischer.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-03",
+      "method": "Eigenes Motiv; Artikel, Wortformen, Lautschrift, Englisch und Mandarin redaktionell abgeglichen.",
+      "ipa": "/ˈʃaɪ̯bn̩ˌvɪʃɐ/",
+      "context": {
+        "de": "Der grün markierte Arm streicht den Regen von der Frontscheibe.",
+        "en": "The green arm wipes rain off the front window of the car.",
+        "zh": "绿色标出的部件会把汽车前挡风玻璃上的雨水刮掉。"
+      },
+      "reason": "Der grüne Wischerarm läuft über die Scheibe. Tropfen und eine freie Wischspur machen die Funktion erkennbar. Auch 雨刮器 ist im Festlandchinesischen geläufig."
+    }
   }
 ];

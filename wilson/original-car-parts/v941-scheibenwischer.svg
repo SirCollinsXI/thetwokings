@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Scheibenwischer</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <path d="M47 34h146q11 0 15 10l17 62q3 16-10 19H25q-13-3-10-19l17-62q4-10 15-10z" fill="#9dc5d2" stroke="#3d6576" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M47 42h146q6 0 8 6l15 58q2 11-4 12H28q-6-1-4-12l15-58q2-6 8-6z" fill="#cae5ea"/>
+  <path d="M43 105q25-57 92-63 13 0 20 3-44 9-67 63z" fill="#eaf6f4"/>
+  <path d="M34 105q24-53 75-62" fill="none" stroke="#72a7b2" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <path d="m159 55-4 7m25-11-5 8m15 15-5 8m-25-4-4 7m42 6-4 8m-28-3-4 8m-17-44-4 7m-6 16-4 7" fill="none" stroke="#588ea3" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M17 118q102-10 206 0l4 18H13z" fill="#acc3cc" stroke="#577786" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m74 121 17-44m-28 29 57-59" fill="none" stroke="#173f37" stroke-width="9" stroke-linecap="round"/>
+  <path d="m74 121 17-44m-28 29 57-59" fill="none" stroke="#64b090" stroke-width="4" stroke-linecap="round"/>
+  <path d="m159 120 11-11m-45-1 64-6" fill="none" stroke="#7997a3" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="74" cy="121" r="5" fill="#244e45"/>
+  <circle cx="159" cy="120" r="4" fill="#7997a3"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Lenkrad</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <path d="M22 101V41q98-24 196 0v60" fill="#deedf0" stroke="#b0c6cc" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M17 107q41-28 80-23h46q41-5 80 23v28H17z" fill="#b3c6cd" stroke="#809aa5" stroke-width="3"/>
+  <path d="M120 129v29" stroke="#81959e" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="120" cy="84" r="59" fill="none" stroke="#284b40" stroke-width="18"/>
+  <circle cx="120" cy="84" r="59" fill="none" stroke="#5eaa88" stroke-width="11"/>
+  <path d="M67 83l41 4m65-4-41 4m-12 13v35" fill="none" stroke="#284b40" stroke-width="15" stroke-linecap="round"/>
+  <path d="M67 83l41 4m65-4-41 4m-12 13v35" fill="none" stroke="#5eaa88" stroke-width="9" stroke-linecap="round"/>
+  <path d="M105 77h30q5 0 5 5v9q0 16-20 19-20-3-20-19v-9q0-5 5-5z" fill="#3f7d67" stroke="#284b40" stroke-width="3"/>
+  <path d="M76 54a54 54 0 0 1 87 0" fill="none" stroke="#a8d7bd" stroke-width="3" stroke-linecap="round"/>
+  <path d="M46 75q-6 15 1 28m-7-4 7 4 2-8m145-20q6 15-1 28m7-4-7 4-2-8" fill="none" stroke="#3f7d67" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

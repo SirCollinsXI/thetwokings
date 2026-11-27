@@ -1,12 +1,25 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **724 aktive Karten**. Paket 04 ergänzt fünf Begriffe zu Bus und Bahn. Bis zum Ziel fehlen **776 Karten**. `main` steht seit [PR #12](https://github.com/SirCollinsXI/thetwokings/pull/12) bei **719 aktiven Karten**. Die [Live-Galerie](https://thetwokings.de/wilson-image-review) zeigte beim direkten Aufruf am 27.11.2026 ebenfalls **719 aktive Karten**.
+## Hier fortsetzen · Paket 05 Autoteile
+
+| Stand | Nachweis |
+| --- | --- |
+| Zuletzt auf der Hauptdomain geprüft | 724 Karten aus Paket 04 am 27.11.2026. [Galerie](https://thetwokings.de/wilson-image-review) |
+| Arbeitsstand | 729 Karten auf `codex/wilson-paket-05`. Die fünf neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. Etappenziel 924, Gesamtziel 1.500. |
+| Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 eingebetteten Bildern. |
+| Nächste einzelne Aufgabe | In der Paketvorschau „Neu · Autoteile“ wählen. Alle fünf Bilder und Kartenlinks prüfen. Bei einer Karte falsche Eingabe, zweiten Versuch und Lösung aufrufen. Befund im Entwurfs-PR vermerken. |
+| Danach | Nach bestandenem Browsercheck regulär veröffentlichen und die Zahl auf der Hauptdomain separat ablesen. Die hörbare Geräteausgabe auf iOS und Android ist noch offen. |
+
+**Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
+
+Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Stand enthält **729 aktive Karten**. Paket 05 ergänzt fünf Autoteile aus dem bestehenden Lexikon. Bis zum Gesamtziel fehlen **771 Karten**. Die Ausbauetappe umfasst **200 zusätzliche Karten ab 724 bis 924**. Davon sind mit Paket 05 **5 von 200** umgesetzt. Paket 04 ist mit **724 Karten auf main und live**. Paket 05 ist als lokaler Commit gesichert. Der interaktive Browsercheck für das neue Paket und die Veröffentlichung sind offen.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
 | 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build, Live-Galerie und Kartenaufruf | Hörbare Geräteausgabe |
 | 03 · Unterwegs | [PR #12](https://github.com/SirCollinsXI/thetwokings/pull/12) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA, Offline-Build und Live-Abgleich | Hörbare Geräteausgabe |
-| 04 · Bus & Bahn | [`9cc0302`](https://github.com/SirCollinsXI/thetwokings/commit/9cc0302c81f75acf8061654793bf12e75a43991b) | +5 → 724 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Live-Abgleich nach Veröffentlichung und hörbare Geräteausgabe |
+| 04 · Bus & Bahn | [`9cc0302`](https://github.com/SirCollinsXI/thetwokings/commit/9cc0302c81f75acf8061654793bf12e75a43991b) | +5 → 724 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | 724 Karten auf main und live bestätigt. Hörbare Geräteausgabe offen. |
+| 05 · Autoteile | Lokaler Commit | +5 → 729 | Wortformen, SVG, automatisierte Galerie- und Eingabetests, Offline-Build | Interaktiver Browsercheck, Veröffentlichung und hörbare Geräteausgabe |
 
 ## Bestand
 
@@ -19,11 +32,12 @@ Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser A
 | Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 2 | 5 | Ja |
 | Eigene SVG-Zeichnungen · Unterwegs, Paket 3 | 5 | Ja |
 | Eigene SVG-Zeichnungen · Bus & Bahn, Paket 04 | 5 | Ja |
+| Eigene SVG-Zeichnungen · Autoteile, Paket 05 | 5 | Ja |
 | Gesperrte Zuordnungen | 47 | Nein |
 | Alternative oder doppelte Motive | 10 | Nein |
 | Ungeprüfte Kandidaten im gespeicherten Manifest | 0 | Nein |
 
-Die 724 Karten umfassen **648 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
+Die 729 Karten umfassen **653 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
 
 ## Küche und Haushalt, Paket 1
 
@@ -69,6 +83,20 @@ Die Wortformen für Bushaltestelle, Fahrkarte und Fahrplan wurden im Duden abgeg
 
 Der Vergleich mit Paket 03 bestätigt alle 719 bestehenden Eingabekarten samt Bild-Hashes. Die automatisierten Prüfungen decken eindeutige IDs, Lemmata und Bild-Hashes ab. Der Offline-Build ist bytegleich reproduzierbar und enthält 724 Bilder.
 
+## Autoteile, Paket 05
+
+Der Galeriefilter **Neu · Autoteile** bündelt fünf Originalzeichnungen für bestehende Lexikon-IDs. Die Motive und DE/EN/ZH-Kontexthinweise unterscheiden die gesuchten Bauteile vom Auto und angrenzenden Bauteilen. Alle fünf Karten verwenden Artikel, Singular und Plural ohne N-Deklination. Wortformen und Übersetzungen wurden redaktionell geprüft.
+
+| ID | Karte | Englisch | Mandarin |
+| --- | --- | --- | --- |
+| `v39` | das Armaturenbrett, die Armaturenbretter | dashboard | 仪表板 |
+| `v57` | die Autotür, die Autotüren | car door | 车门 |
+| `v142` | die Bremsleuchte, die Bremsleuchten | brake light | 刹车灯 |
+| `v673` | das Lenkrad, die Lenkräder | steering wheel | 方向盘 |
+| `v941` | der Scheibenwischer, die Scheibenwischer | windscreen wiper | 雨刷器 |
+
+Die Lautschrift für Bremsleuchte wurde aus den Wortbestandteilen abgeleitet. [PONS · Auto](https://de.pons.com/audio-daten/Bildwoerterbuch/516409_BWB%20DaF%20D-Englisch%20Kapitel.pdf) · [Duden · Armaturenbrett](https://www.duden.de/rechtschreibung/Armaturenbrett) · [Duden · Scheibenwischer](https://www.duden.de/rechtschreibung/Scheibenwischer) · [Verbformen · Bremsleuchte](https://www.verbformen.de/deklination/substantive/Bremsleuchte.htm) · [Tesla · Chinesisches Handbuch](https://www.tesla.cn/ownersmanual/modely/zh_cn/index.html)
+
 ## Was gerettet und zusammengeführt wurde
 
 GitHub-Basis der vorherigen Wiederherstellung: `1634346e04916ad68d2dcd92400fe420dcad8f9d`. Die ältere Übergabe mit 22 Karten war überholt. Drei noch vorhandene, unveröffentlichte Arbeitsstände wurden in einem frischen Checkout dieser Basis zusammengeführt. Das ist kein Beleg, dass ihre lokale Arbeit schon veröffentlicht war.
@@ -102,13 +130,13 @@ node scripts/build-wilson-offline.cjs
 python scripts/render-wilson-review.py /tmp/wilson-review
 ```
 
-Inhaltstests prüfen alle 724 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
+Inhaltstests prüfen alle 729 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
 
 `scripts/wilson-browser-preview.html` stellt echte Seiten in 390 und 1280 CSS-Pixeln für die Browserprüfung dar. Das ersetzt keine Tests auf echten iPhone-/Android-Geräten; hörbare Ausgabe und gerätespezifische Tastaturen müssen dort noch geprüft werden.
 
 ## Nächste Arbeit
 
-1. Weitere 776 eindeutige Karten beschaffen oder eigenständig erstellen und einzeln prüfen. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
+1. Die nächste Etappe in Fünferpaketen sichern. Bis 924 fehlen 195 weitere eindeutige Karten, bis 1500 insgesamt 771. Nächste Themen zur Prüfung sind Babyausstattung und Kleidung. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
 2. Die 47 gesperrten Zuordnungen ersetzen oder mit belastbarem Kontext korrigieren; alternative Motive niemals als weitere Wörter zählen.
 3. Deutsche Wortformen/IPA und Mandarin unabhängig prüfen lassen; bisherige Sichtung transparent als redaktionellen Erststand behandeln.
 4. Den jeweils aktuellen `main` erneut lesen, diese Datei und das Manifest verwenden und kleinere getestete Ausbaustände tatsächlich sichern. Keine ungesicherten lokalen Arbeitsschritte als veröffentlicht ausgeben.
