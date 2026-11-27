@@ -1,14 +1,14 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · 50 neue Bildkarten ab 729
+## Hier fortsetzen · Paket 06 live mit 779 Bildkarten
 
 | Stand | Nachweis |
 | --- | --- |
-| Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
-| Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
-| Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
+| Zuletzt auf der Hauptdomain geprüft | 779 aktive Karten am 27.11.2026. Babyausstattung, Kleidung und Straßenverkehr zeigen je fünf Treffer. Die Zapfsäule öffnet das passende SVG im Eingabetrainer. [Live-Galerie](https://thetwokings.de/wilson-image-review) · [Zapfsäule](https://thetwokings.de/wilson-input?word=v1336) |
+| Arbeitsstand | [Paket 06 · PR #18](https://github.com/SirCollinsXI/thetwokings/pull/18) wurde als [`6280b0c`](https://github.com/SirCollinsXI/thetwokings/commit/6280b0ca328569001bce11f5b33c15314138cac2) in `main` übernommen. |
+| Bestanden | Alle 50 Motive einzeln gesichtet und im Eingabetrainer der Cloudflare-Vorschau geprüft. Artikel, Wortformen, Englisch, vereinfachtes Chinesisch, GitHub-Prüfungen und bytegleicher Offline-Build mit 779 Bildern bestätigt. |
 | Paket 06 | 779 aktive Karten. 10 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
-| Nächste einzelne Aufgabe | Vorschau und Hauptdomain anhand des aktuellen PR-Status abgleichen. Nach Veröffentlichung die nächste Fünfergruppe auswählen. |
+| Nächste einzelne Aufgabe | Die nächste Fünfergruppe aus bisher unbebilderten Lexikon-IDs auswählen. Bis 924 fehlen 145 Karten, bis 1.500 fehlen 721. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
 ## Ziel und Wortliste
@@ -140,7 +140,7 @@ Rotkohl und Sushi werden im Trainer wie im bestehenden Lexikon in der Einzahl ge
 
 **Früherer Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
 
-Ziel sind **1.500 einzeln geprüfte Bildkarten**. Von der Etappe mit 200 zusätzlichen Karten ab 724 sind fünf veröffentlicht. Bis 924 fehlen **195 Karten**, bis zum Gesamtziel **771**.
+Ziel sind **1.500 einzeln geprüfte Bildkarten**. Von der Etappe mit 200 zusätzlichen Karten ab 724 sind **55 veröffentlicht**. Bis 924 fehlen **145 Karten**, bis zum Gesamtziel **721**.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
