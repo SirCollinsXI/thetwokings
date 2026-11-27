@@ -1,0 +1,52 @@
+name: Homepage on Cloudflare Pages
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'homepage-*'
+      - 'i18n-home.js'
+      - 'spiele-*'
+      - 'game-assets/thumbs/**'
+      - 'scripts/test-homepage-preview.cjs'
+      - '.github/workflows/homepage-preview.yml'
+permissions:
+  contents: read
+  checks: read
+jobs:
+  preview:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Find the Cloudflare deployment for this PR commit
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          for attempt in {1..45}; do
+            result=$(gh api "repos/$GITHUB_REPOSITORY/commits/$HEAD_SHA/check-runs?check_name=Cloudflare%20Pages" \
+              --jq '[.check_runs[] | select(.app.slug == "cloudflare-workers-and-pages")] | max_by(.id)')
+            state=$(jq -r '.conclusion // "pending"' <<< "$result")
+            if [[ "$state" == success ]]; then
+              url=$(jq -er '.output.summary | match("https://[0-9a-f]+\\.wuesten-bogen-app\\.pages\\.dev").string' <<< "$result")
+              echo "url=$url" >> "$GITHUB_OUTPUT"
+              exit 0
+            elif [[ "$state" != pending ]]; then
+              echo "Cloudflare deployment ended with $state"
+              exit 1
+            fi
+            sleep 5
+          done
+          echo "Cloudflare has not reported a deployment for $HEAD_SHA"
+          exit 1
+      - name: Open both homepages in Chromium
+        env:
+          PREVIEW_URL: ${{ steps.pages.outputs.url }}
+        run: |
+          npm install --no-save --no-audit --no-fund --ignore-scripts --prefix "$RUNNER_TEMP/homepage-test" playwright-core@1.56.1
+          NODE_PATH="$RUNNER_TEMP/homepage-test/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-homepage-preview.cjs
