@@ -25396,5 +25396,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Gesucht ist das farbig markierte Rad hinter den Pedalen."
     }
+  },
+  {
+    "id": "v747",
+    "de": "die Motorhaube",
+    "plural": "die Motorhauben",
+    "en": "bonnet",
+    "zh": "发动机盖",
+    "pinyin": "fādòngjīgài",
+    "path": "wilson/original-auto/v747-motorhaube.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/moˈtoːɐ̯ˌhaʊ̯bə/",
+      "context": {
+        "de": "Die farbige Klappe vorne am Auto deckt den Motorraum ab.",
+        "en": "The highlighted panel at the front of the car covers the engine compartment.",
+        "zh": "汽车前部标出的盖板盖住了发动机舱。"
+      },
+      "reason": "Die farbige Klappe vorne am Auto deckt den Motorraum ab."
+    }
+  },
+  {
+    "id": "v791",
+    "de": "das Nummernschild",
+    "plural": "die Nummernschilder",
+    "en": "number plate",
+    "zh": "车牌",
+    "pinyin": "chēpái",
+    "path": "wilson/original-auto/v791-nummernschild.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈnʊmɐnˌʃɪlt/",
+      "context": {
+        "de": "Gesucht ist das markierte Schild mit der amtlichen Buchstaben- und Zahlenkombination.",
+        "en": "Name the highlighted plate bearing the official letters and numbers.",
+        "zh": "请写出标有登记字母和数字的那块牌子的名称。"
+      },
+      "reason": "Gesucht ist das markierte Schild mit der amtlichen Buchstaben- und Zahlenkombination."
+    }
+  },
+  {
+    "id": "v1322",
+    "de": "die Windschutzscheibe",
+    "plural": "die Windschutzscheiben",
+    "en": "windscreen",
+    "zh": "挡风玻璃",
+    "pinyin": "dǎngfēng bōli",
+    "path": "wilson/original-auto/v1322-windschutzscheibe.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvɪntʃʊt͡sˌʃaɪ̯bə/",
+      "context": {
+        "de": "Durch die markierte Glasscheibe schaut der Fahrer nach vorn auf die Straße.",
+        "en": "The driver looks ahead at the road through the highlighted glass panel.",
+        "zh": "驾驶员透过标出的玻璃看前方的道路。"
+      },
+      "reason": "Durch die markierte Glasscheibe schaut der Fahrer nach vorn auf die Straße."
+    }
+  },
+  {
+    "id": "v623",
+    "de": "die Kopfstütze",
+    "plural": "die Kopfstützen",
+    "en": "headrest",
+    "zh": "头枕",
+    "pinyin": "tóuzhěn",
+    "path": "wilson/original-auto/v623-kopfstuetze.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkɔpfˌʃtʏt͡sə/",
+      "context": {
+        "de": "Das markierte Polster sitzt ganz oben am Autositz, direkt hinter dem Kopf.",
+        "en": "The highlighted cushion is at the top of the car seat, right behind the head.",
+        "zh": "标出的软垫位于汽车座椅顶部，正好托住后脑勺。"
+      },
+      "reason": "Das markierte Polster sitzt ganz oben am Autositz, direkt hinter dem Kopf."
+    }
+  },
+  {
+    "id": "v1011",
+    "de": "der Seitenspiegel",
+    "plural": "die Seitenspiegel",
+    "en": "side mirror",
+    "zh": "侧后视镜",
+    "pinyin": "cè hòushìjìng",
+    "path": "wilson/original-auto/v1011-seitenspiegel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "auto-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈzaɪ̯tn̩ˌʃpiːɡl̩/",
+      "context": {
+        "de": "Das farbig markierte Teil sitzt außen neben dem vorderen Seitenfenster. Darin sieht man den Verkehr hinter dem Auto.",
+        "en": "The highlighted part is outside beside the front side window. It shows traffic behind the car.",
+        "zh": "标出的部件装在前侧窗外面，可以用它观察车后的交通情况。"
+      },
+      "reason": "Das farbig markierte Teil sitzt außen neben dem vorderen Seitenfenster. Darin sieht man den Verkehr hinter dem Auto."
+    }
   }
 ];

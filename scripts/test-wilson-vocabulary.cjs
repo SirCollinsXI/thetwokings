@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root=path.resolve(__dirname,'..');
 const bundle=['wilson-lexicon.js','wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const {v,c,lex}=vm.runInNewContext(bundle+';({v:WILSON_VOCABULARY,c:WILSON_IMAGE_CANDIDATES,lex:LEXICON})');
-assert.equal(v.inputWords.length,754);
+assert.equal(v.inputWords.length,759);
 assert.equal(c.filter(w=>w.active&&w.provider!=='project').length,596);
 assert.equal(c.filter(w=>w.review?.decision==='blocked').length,47);
 assert.equal(c.filter(w=>w.status==='approved-alternative').length,10);
@@ -68,7 +68,7 @@ for(const id of ['v1355','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-
 assert.equal(v.inputWords.find(w=>w.id==='wx-chinese-cabbage').de,'der Pak Choi');
 assert.equal(v.inputWords.find(w=>w.id==='v724').numberMode,'plural');
 assert.equal(v.inputWords.find(w=>w.id==='v363').plural,'die Frühstücksflocken');
-assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,136);
+assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,141);
 const household=v.inputWords.filter(w=>w.imageCredit?.review.batch==='kueche-haushalt-01');
 assert.equal(household.length,25);
 for (const w of household) {
@@ -132,7 +132,8 @@ const pictureBatches = [
  { batch: 'kleidung-01', directory: 'original-clothing', ids: ['v1100', 'v1172', 'v833', 'v896', 'v957'] },
  { batch: 'obst-gemuese-01', directory: 'original-produce', ids: ['v485', 'v497', 'v507', 'v903', 'v904'] },
  { batch: 'lebensmittel-01', directory: 'original-food', ids: ['v1112', 'v1120', 'v280', 'v342', 'v73'] },
- { batch: 'fahrrad-01', directory: 'original-bicycle', ids: ['v1063', 'v1262', 'v141', 'v499', 'v686'] }
+ { batch: 'fahrrad-01', directory: 'original-bicycle', ids: ['v1063', 'v1262', 'v141', 'v499', 'v686'] },
+ { batch: 'auto-06', directory: 'original-auto', ids: ['v1011', 'v1322', 'v623', 'v747', 'v791'] }
 ];
 for (const { batch, directory, ids } of pictureBatches) {
  const words = v.inputWords.filter(word => word.imageCredit?.review.batch === batch);
@@ -150,4 +151,4 @@ for (const { batch, directory, ids } of pictureBatches) {
   assert.equal(trainerWord.childSuitable, true);
  }
 }
-console.log('Vocabulary verified: 754 active cards; all 222 legacy IDs and image hashes preserved.');
+console.log('Vocabulary verified: 759 active cards; all 222 legacy IDs and image hashes preserved.');
