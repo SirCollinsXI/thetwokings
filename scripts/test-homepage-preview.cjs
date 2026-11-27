@@ -1,5 +1,7 @@
 const assert = require('node:assert/strict');
 const { chromium } = require('playwright-core');
+const { mkdir } = require('node:fs/promises');
+const { join } = require('node:path');
 
 const preview = new URL(process.env.PREVIEW_URL);
 assert.match(preview.origin, /^https:\/\/[0-9a-f]+\.wuesten-bogen-app\.pages\.dev$/);
@@ -32,6 +34,7 @@ async function reportLines(page) {
 async function testStudy(browser) {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
   const paths = [
+    ['A', 'en', ['#dino-probe summary', '[data-trial-net="3"]'], 'Goal reached · Yes'],
     ['A', 'de', ['#navigation a[href="#spiele"]', '#wuestenbogen-play'], 'Ziel erreicht · Ja'],
     ['A', 'zh', ['#piratenjagd-play'], '是否达成目标 · 是'],
     ['A', 'en', ['.earlier-games', '#card-bogen'], 'Goal reached · Yes'],
@@ -68,9 +71,98 @@ async function testStudy(browser) {
   await page.frameLocator('#site').locator('#projekte a[data-link-language="home-only"]').click();
   const legacy = await reportLines(page);
   assert.equal(legacy[0], 'TheTwoKings · T1 · DE');
-  assert.ok(legacy.includes('Geöffnet · Wilsons Trainingsecke'), legacy.join('\n'));
+  assert.ok(legacy.some(line => /^Geöffnet · Wilson/.test(line)), legacy.join('\n'));
   await page.close();
   console.log('Verified all four first-click tasks, both current games, a classic, wrong goal, stop, language change and legacy study.');
+}
+
+const wilsonLabels = {
+  de: /Wilsons Deutsch-Lernecke/,
+  en: /Wilson’s German Learning Corner/,
+  zh: /Wilson.*德语/,
+};
+
+async function checkWilson(page, lang, redesigned) {
+  const selectors = redesigned
+    ? ['#navigation', '#projekte', '#lernen', 'footer'].map(area => area + ' a[data-link-language="home-only"]')
+    : ['header nav a[data-wilson-entry]', '#lernen[data-wilson-entry]', 'footer a[data-wilson-entry]'];
+  for (const selector of selectors) {
+    const entry = page.locator(selector);
+    await entry.waitFor();
+    const target = new URL(await entry.getAttribute('href'), page.url());
+    assert.equal(target.origin, preview.origin);
+    assert.match(target.pathname, /^\/wilson(?:\.html)?$/, selector);
+    assert.equal(target.searchParams.get('lang'), lang, selector);
+    if (redesigned) assert.equal(target.searchParams.get('homeLang'), lang, selector);
+    if (selector.startsWith('#lernen ')) {
+      assert.match(await page.locator('#lernen h2').innerText(), wilsonLabels[lang]);
+    } else {
+      assert.match(await entry.innerText(), wilsonLabels[lang], selector);
+    }
+  }
+  if (redesigned) {
+    assert(await page.locator('#lernen').evaluate(el =>
+      Boolean(el.compareDocumentPosition(document.getElementById('spiele')) & Node.DOCUMENT_POSITION_FOLLOWING)));
+  }
+}
+
+async function testTraces(page) {
+  await page.locator('[data-trace-context="lernen"]').click();
+  assert.equal(await page.locator('#trace-context').inputValue(), 'lernen');
+  const localNote = 'Homepage preview browser test';
+  await page.locator('#trace-note').fill(localNote);
+  await page.locator('#trace-form [type="submit"]').click();
+  await page.locator('#trace-list').getByText(localNote, { exact: true }).waitFor();
+  await page.locator('[data-trace-context="spiele"]').click();
+  assert.equal(await page.locator('#trace-context').inputValue(), 'spiele');
+  assert.equal(await page.locator('#trace-list').getByText(localNote, { exact: true }).count(), 0);
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  await page.locator('[data-trace-context="lernen"]').click();
+  await page.locator('#trace-list').getByText(localNote, { exact: true }).waitFor();
+}
+
+async function testCounter(page) {
+  const panel = page.locator('#stats-panel');
+  const delivered = await panel.evaluate(el => ({ ...el.dataset }));
+  if (delivered.views === undefined || !delivered.start || !delivered.day) {
+    assert(await panel.isHidden(), 'Missing measurements must keep the whole counter hidden');
+  }
+  // Exercise client rendering without writing any analytics data on the server.
+  await panel.evaluate(el => {
+    delete el.dataset.views; delete el.dataset.start; delete el.dataset.day;
+  });
+  await page.locator('button[data-lang="en"]').click();
+  assert(await panel.isHidden());
+  await panel.evaluate(el => Object.assign(el.dataset, { views: '0', start: '2026-11-25', day: '2026-11-27' }));
+  await page.locator('button[data-lang="zh"]').click();
+  assert(await panel.isVisible(), 'A measured zero is a real reading');
+  assert.equal(await page.locator('#stats-views').innerText(), '0');
+  assert.equal(await page.locator('#stats-start').getAttribute('datetime'), '2026-11-25');
+  assert.equal(await page.locator('#stats-day').getAttribute('datetime'), '2026-11-27');
+  await panel.evaluate(el => { el.dataset.views = 'unavailable'; });
+  await page.locator('button[data-lang="de"]').click();
+  assert(await panel.isHidden(), 'A stale number must disappear when measurements are invalid');
+}
+
+async function testTrials(page, lang) {
+  await page.locator('#bogen-probe summary').click();
+  const aim = page.locator('#trial-aim');
+  await aim.focus();
+  await aim.press('ArrowLeft');
+  await page.locator('#trial-shoot').click();
+  const bow = { de: 'Volltreffer', en: 'Bullseye', zh: '正中靶心' };
+  assert((await page.locator('#bow-result').innerText()).includes(bow[lang]));
+  await page.locator('#dino-probe summary').click();
+  await page.locator('[data-trial-net="3"]').click();
+  const dino = { de: 'Gefangen auf Feld 3', en: 'Caught in lane 3', zh: '第 3 格' };
+  assert((await page.locator('#dino-result').innerText()).includes(dino[lang]));
+}
+
+async function screenshotHomepage(page, lang) {
+  const dir = process.env.HOMEPAGE_SCREENSHOTS;
+  if (!dir || lang === 'de') return;
+  await mkdir(dir, { recursive: true });
+  await page.screenshot({ path: join(dir, 'homepage-' + lang + '-' + page.viewportSize().width + '.png'), animations: 'disabled' });
 }
 
 async function run() {
@@ -81,13 +173,15 @@ async function run() {
         const page = await browser.newPage({ viewport: { width: lang === 'en' ? 1440 : 390, height: 844 } });
         const url = new URL(path, preview);
         url.searchParams.set('lang', lang);
-        url.hash = 'spiele';
         const response = await page.goto(url.href, { waitUntil: 'domcontentloaded' });
         assert.equal(response.status(), 200, url.href);
         assert.equal(new URL(page.url()).origin, preview.origin);
+        const redesigned = source === 'homepage-preview';
+        await checkWilson(page, lang, redesigned);
+        if (redesigned) await screenshotHomepage(page, lang);
         const section = page.locator('#spiele');
         for (const [label, file] of [[bow, 'wuestenbogen'], [pirate, 'piratenjagd']]) {
-          const link = section.getByRole('link', { name: label, exact: true });
+          const link = section.locator('.playable-games').getByRole('link', { name: label, exact: true });
           await link.waitFor();
           const target = new URL(await link.getAttribute('href'), page.url());
           assert.equal(target.origin, preview.origin);
@@ -104,7 +198,15 @@ async function run() {
         }
         assert.match(await section.locator('#wehr').innerText(), /Windows/);
         assert.equal(await section.locator('#wehr a').count(), 0);
-        console.log('HTTP 200, both localized game cards and prototype verified:', url.href);
+        if (redesigned) {
+          await testTrials(page, lang);
+          if (lang === 'de') {
+            await testTraces(page);
+            await testCounter(page);
+          }
+        }
+        assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), url.href);
+        console.log('HTTP 200; localized Wilson and games entries, prototype and layout verified:', url.href);
         await page.close();
       }
     }

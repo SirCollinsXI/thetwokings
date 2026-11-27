@@ -10,6 +10,7 @@ on:
       - 'play-i18n.*'
       - 'style.css'
       - 'scripts/test-comic-mobile.cjs'
+      - 'scripts/test-comic-workshop.cjs'
       - '.github/workflows/comic-mobile.yml'
 permissions:
   contents: read
@@ -33,6 +34,7 @@ jobs:
           trap 'kill "$server_pid"' EXIT
           curl --retry 8 --retry-connrefused --retry-delay 1 --fail --silent --output /dev/null http://127.0.0.1:8765/comic.html
           node scripts/test-comic-mobile.cjs
+          node scripts/test-comic-workshop.cjs
       - name: Save the mobile screenshots
         if: always()
         uses: actions/upload-artifact@v4

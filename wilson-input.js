@@ -84,7 +84,10 @@
     $('due').textContent=dueCount();
     $('accuracy').textContent=progress.tested ? Math.round(progress.firstCorrect/progress.tested*100)+'%' : '—';
   }
+  const requestedUI=new URLSearchParams(window.location.search).get('lang');
+  if(Object.hasOwn(COPY,requestedUI))lang=requestedUI;
   function renderLang(){
+    $('back').href='/wilson?lang='+lang;
     document.documentElement.lang=lang==='zh'?'zh-Hans':lang;
     $('lang').value=lang;
     $('back').textContent=t('back');

@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root=path.resolve(__dirname,'..');
 const bundle=['wilson-lexicon.js','wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const {v,c,lex}=vm.runInNewContext(bundle+';({v:WILSON_VOCABULARY,c:WILSON_IMAGE_CANDIDATES,lex:LEXICON})');
-assert.equal(v.inputWords.length,779);
+assert.equal(v.inputWords.length,879);
 assert.equal(c.filter(w=>w.active&&w.provider!=='project').length,596);
 assert.equal(c.filter(w=>w.review?.decision==='blocked').length,47);
 assert.equal(c.filter(w=>w.status==='approved-alternative').length,10);
@@ -68,7 +68,7 @@ for(const id of ['v1355','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-
 assert.equal(v.inputWords.find(w=>w.id==='wx-chinese-cabbage').de,'der Pak Choi');
 assert.equal(v.inputWords.find(w=>w.id==='v724').numberMode,'plural');
 assert.equal(v.inputWords.find(w=>w.id==='v363').plural,'die Frühstücksflocken');
-assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,161);
+assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,261);
 const household=v.inputWords.filter(w=>w.imageCredit?.review.batch==='kueche-haushalt-01');
 assert.equal(household.length,25);
 for (const w of household) {
@@ -137,7 +137,27 @@ const pictureBatches = [
  { batch: 'haus-06', directory: 'original-house-exterior', ids: ['v186', 'v477', 'v479', 'v480', 'v75'] },
  { batch: 'supermarkt-06', directory: 'original-supermarket', ids: ['v1278', 'v408', 'v564', 'v646', 'v753'] },
  { batch: 'digital-06', directory: 'original-digital', ids: ['v1034', 'v1207', 'v352', 'v703', 'v996'] },
- { batch: 'verkehr-06', directory: 'original-road', ids: ['v1179', 'v1336', 'v256', 'v383', 'v634'] }
+ { batch: 'verkehr-06', directory: 'original-road', ids: ['v1179', 'v1336', 'v256', 'v383', 'v634'] },
+ { batch: 'heimwerken-07', directory: 'original-paket-07', ids: ['v1058', 'v1130', 'v21', 'v3', 'v506'] },
+ { batch: 'besteck-07', directory: 'original-paket-07', ids: ['v1076', 'v1110', 'v1305', 'v205', 'v639'] },
+ { batch: 'gemuese-obst-07', directory: 'original-paket-07', ids: ['v1325', 'v174', 'v772', 'v799', 'v936'] },
+ { batch: 'lebensmittel-07', directory: 'original-paket-07', ids: ['v1015', 'v1048', 'v1258', 'v277', 'v572'] },
+ { batch: 'auto-bedienung-07', directory: 'original-paket-07', ids: ['v126', 'v143', 'v390', 'v650', 'v938'] },
+ { batch: 'auto-licht-07', directory: 'original-paket-07', ids: ['v127', 'v769', 'v909', 'v911', 'v942'] },
+ { batch: 'raeume-07', directory: 'original-paket-07', ids: ['v1150', 'v1174', 'v184', 'v349', 'v570'] },
+ { batch: 'druck-und-scan-07', directory: 'original-paket-07', ids: ['v1154', 'v1165', 'v214', 'v659', 'v932'] },
+ { batch: 'unterwegs-07', directory: 'original-paket-07', ids: ['v1279', 'v167', 'v679', 'v786', 'v882'] },
+ { batch: 'persoenliches-07', directory: 'original-paket-07', ids: ['v445', 'v589', 'v648', 'v798', 'v965'] },
+ { batch: 'banking-08', directory: 'original-paket-08', ids: ['v1300', 'v245', 'v632', 'v825', 'v874'] },
+ { batch: 'computer-zubehoer-08', directory: 'original-paket-08', ids: ['v1039', 'v1136', 'v16', 'v171', 'v244'] },
+ { batch: 'zuhause-08', directory: 'original-paket-08', ids: ['v1067', 'v1184', 'v1273', 'v637', 'v93'] },
+ { batch: 'waesche-08', directory: 'original-paket-08', ids: ['v1147', 'v119', 'v1298', 'v1303', 'v345'] },
+ { batch: 'verkehr-08', directory: 'original-paket-08', ids: ['v1080', 'v414', 'v56', 'v83', 'v975'] },
+ { batch: 'erste-hilfe-08', directory: 'original-paket-08', ids: ['v1215', 'v1216', 'v139', 'v333', 'v749'] },
+ { batch: 'schuhe-08', directory: 'original-paket-08', ids: ['v1046', 'v1086', 'v1173', 'v1272', 'v569'] },
+ { batch: 'markt-08', directory: 'original-paket-08', ids: ['v178', 'v351', 'v511', 'v512', 'v629'] },
+ { batch: 'post-08', directory: 'original-paket-08', ids: ['v252', 'v274', 'v808', 'v840', 'v841'] },
+ { batch: 'wohngebaeude-08', directory: 'original-paket-08', ids: ['v1021', 'v266', 'v503', 'v708', 'v937'] }
 ];
 for (const { batch, directory, ids } of pictureBatches) {
  const words = v.inputWords.filter(word => word.imageCredit?.review.batch === batch);
@@ -155,4 +175,4 @@ for (const { batch, directory, ids } of pictureBatches) {
   assert.equal(trainerWord.childSuitable, true);
  }
 }
-console.log('Vocabulary verified: 779 active cards; all 222 legacy IDs and image hashes preserved.');
+console.log('Vocabulary verified: 879 active cards; all 222 legacy IDs and image hashes preserved.');

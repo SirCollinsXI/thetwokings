@@ -27,3 +27,8 @@
   color: #233f3a;
   font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
+
+#lernen {scroll-margin-top: 5rem;}
+#lernen .wilson-example-words > span {color:#233f3a;}
+.hero-note a {color:var(--lime);text-decoration:underline;text-underline-offset:.2em;}
+.hero-note {flex-wrap:wrap;}

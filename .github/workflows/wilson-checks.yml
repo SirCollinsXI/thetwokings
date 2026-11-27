@@ -63,17 +63,33 @@ jobs:
           CHROME="$(command -v google-chrome || command -v chromium)"
           for lang in de en zh; do
             case "$lang" in
-              de) label='Wilson’s Trainingsecke' ;;
-              en) label='Wilson’s Learning Corner' ;;
+              de) label='Wilsons Deutsch-Lernecke' ;;
+              en) label='Wilson’s German Learning Corner' ;;
               zh) label='Wilson 的德语学习角' ;;
             esac
             DOM="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom "http://127.0.0.1:8765/index.html?lang=$lang" 2>/dev/null)"
             grep -Fq "$label" <<< "$DOM" || { echo "Missing homepage navigation: $lang"; exit 1; }
+            grep -Fq "id=\"wilson-card-name\">$label</h3>" <<< "$DOM" || { echo "Missing localized Wilson tile: $lang"; exit 1; }
+            PAGE_LANG="$lang" node -e '
+              const html = require("node:fs").readFileSync(0, "utf8");
+              const origin = "http://127.0.0.1:8765";
+              const links = (html.match(/<a\b[^>]*>/gi) || []).filter(tag => /\bdata-wilson-entry(?=[\s=>])/.test(tag));
+              const valid = links.every(tag => {
+                const href = tag.match(/\shref="([^"]*)"/i)?.[1];
+                if (!href) return false;
+                const url = new URL(href.replaceAll("&amp;", "&"), origin);
+                return url.origin === origin && /^\/wilson(?:\.html)?$/.test(url.pathname) && url.searchParams.get("lang") === process.env.PAGE_LANG;
+              });
+              if (links.length < 3 || !valid) throw new Error("Missing localized Wilson navigation, card or footer link: " + process.env.PAGE_LANG);
+            ' <<< "$DOM"
+            LESSON="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=3000 --dump-dom "http://127.0.0.1:8765/wilson.html?lang=$lang" 2>/dev/null)"
+            grep -Fq "data-t=\"cornerTitle\">$label</h1>" <<< "$LESSON" || { echo "Wilson entry did not retain $lang"; exit 1; }
+            grep -Fq "href=\"wilson-input.html?lang=$lang\"" <<< "$LESSON" || { echo "Trainer language link missing: $lang"; exit 1; }
           done
           WILSON="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom 'http://127.0.0.1:8765/wilson.html' 2>/dev/null)"
           grep -Fq '章鱼哥的德语单复数挑战' <<< "$WILSON" || { echo 'Chinese Challenge title not displayed'; exit 1; }
           grep -Fq '看图输入：冠词＋单数、复数' <<< "$WILSON" || { echo 'Chinese challenge explanation missing'; exit 1; }
-          grep -Fq 'href="wilson-input.html"' <<< "$WILSON" || { echo 'Challenge link missing'; exit 1; }
+          grep -Fq 'href="wilson-input.html?lang=zh"' <<< "$WILSON" || { echo 'Challenge link missing'; exit 1; }
           "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=2500 --screenshot="$RUNNER_TEMP/wilson-chinese-entry.png" 'http://127.0.0.1:8765/wilson.html' >/dev/null 2>&1
           test -s "$RUNNER_TEMP/wilson-chinese-entry.png"
       - name: Archive responsive screenshots
@@ -86,3 +102,15 @@ jobs:
             ${{ runner.temp }}/wilson-desktop.png
             ${{ runner.temp }}/wilson-chinese-entry.png
           if-no-files-found: ignore
+
+  published:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check the gallery count and a trainer card on the public domain
+        run: node scripts/check-wilson-published.cjs

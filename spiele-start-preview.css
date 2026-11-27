@@ -1,0 +1,93 @@
+.home-games {
+  --ink: #f4f3ec;
+  --lime: #c8fa72;
+}
+.game-section-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .15rem .8rem;
+  margin-block: .45rem .8rem;
+}
+.game-section-intro .games-availability { margin: 0; }
+.prototype-jump {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+.home-games .playable-games { align-items: start; }
+.home-game-card {
+  position: relative;
+  min-width: 0;
+  background: var(--panel, #1c1c20);
+  border: 1px solid #54545b;
+  border-radius: .45rem;
+}
+.home-game-card > a {
+  height: auto;
+  border: 0;
+  border-radius: .4rem;
+  background: transparent;
+}
+.home-game-card > a img { border-radius: .4rem .4rem 0 0; }
+.home-game-card > a:hover strong {
+  color: var(--lime);
+}
+.home-games .trial-inline { display: block; }
+.home-games .trial-inline[hidden] { display: none; }
+.trial-inline > summary {
+  padding: .7rem 1rem;
+  min-height: 44px;
+  border-top: 1px solid #4b4b51;
+  color: var(--ink);
+  font-weight: 650;
+  cursor: pointer;
+}
+.trial-inline > summary::marker { color: var(--lime); }
+.trial-inline > summary:hover { text-decoration: underline; }
+.home-games :is(.prototype-jump, .earlier-games, .home-game-card > a, .trial-inline > summary):focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 2px;
+}
+.trial-inline .trial-stage {
+  position: absolute;
+  inset: 0 0 auto;
+  aspect-ratio: 624 / 264;
+  border-radius: .4rem .4rem 0 0;
+  pointer-events: none;
+}
+.trial-inline .trial-stage img { border-radius: 0; }
+.trial-inline .trial-rex { width: 25%; height: auto; }
+.trial-inline .trial-body { padding: 0 1rem .75rem; }
+.trial-inline .trial-feedback { margin-bottom: 0; }
+.home-games .earlier-games { margin-block: .55rem; }
+.home-games .upcoming-game {
+  border: 1px dashed #707077;
+  border-radius: .45rem;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  background: var(--panel, #1c1c20);
+}
+.home-games .upcoming-game h3 {
+  font-size: clamp(1.35rem, 2.5vw, 2.1rem);
+  line-height: 1.14;
+  margin-block: .5rem .65rem;
+}
+.home-games .upcoming-game .development-status {
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+}
+.planned-platform {
+  border-top: 1px solid #4b4b51;
+  margin-block-start: .85rem;
+  padding-block-start: .75rem;
+}
+.planned-platform p { color: var(--muted, #b8b8bf); }
+@media (prefers-reduced-motion: reduce) {
+  .trial-inline .trial-rex { transition: none; }
+}

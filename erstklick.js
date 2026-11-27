@@ -40,6 +40,9 @@
     wilson: ['Wilsons Trainingsecke', 'Wilson’s Learning Corner', 'Wilson 的德语学习角'],
     bow: ['Wüstenbogen', 'Desert Archery', '沙漠射箭'],
     pirate: ['Piratenjagd', 'Pirate Hunt', '海盗冒险'],
+    bowTrial: ['Wüstenbogen · Spielprobe', 'Desert Archery · mini-game', '沙漠射箭 · 试玩'],
+    pirateTrial: ['Piratenjagd · Spielprobe', 'Pirate Hunt · mini-game', '海盗冒险 · 试玩'],
+    archiveReader: ['Sams Comic-Entwurf', 'Sam’s comic draft', 'Sam 的漫画草稿'],
     classicBow: ['Klassisches Bogenspiel', 'Classic archery', '经典射箭游戏'],
     classicDino: ['Klassisches Dino-Spiel', 'Classic dinosaur game', '经典恐龙游戏'],
     reader: ['Sam & Piet · Leseseiten', 'Sam & Piet · reader', 'Sam 与 Piet · 阅读页'],
@@ -169,6 +172,16 @@
       const path = route(new URL(doc.URL));
       if (path === route(homepage) && doc.getElementById('projekte')) {
         doc.addEventListener('click', record, true);
+        if (secondRound && taskId === 'A') {
+          doc.addEventListener('click', event => {
+            const action = event.target.closest?.('#trial-shoot, [data-trial-net]');
+            if (!action) return;
+            const bow = action.id === 'trial-shoot';
+            if (doc.getElementById(bow ? 'bow-result' : 'dino-result')?.textContent.trim()) {
+              finish(t(bow ? 'bowTrial' : 'pirateTrial'), 'yes');
+            }
+          });
+        }
         run.catalogue = null;
         run.destination = null;
         run.ready = true;
@@ -179,6 +192,9 @@
       }
       if (!run.ready) return finish(t('unavailable'));
       if (secondRound) {
+        if (/\/comic-entwurf-[a-z0-9-]+$/.test(path) && doc.querySelector('main.archive-reader .archive-plate img')) {
+          return finish(t('archiveReader'), taskId === 'B' ? 'yes' : 'no');
+        }
         const destination = destinations.get(path);
         if (destination) {
           if (!doc.querySelector(destination.marker)) return finish(t('unavailable'));

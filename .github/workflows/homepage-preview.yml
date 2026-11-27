@@ -7,6 +7,8 @@ on:
       - 'i18n-home.js'
       - 'erstklick.*'
       - 'spiele-*'
+      - 'spuren-store.js'
+      - 'wilson-entry.css'
       - 'game-assets/thumbs/**'
       - 'scripts/test-homepage-preview.cjs'
       - '.github/workflows/homepage-preview.yml'
@@ -48,6 +50,15 @@ jobs:
       - name: Test both homepages and the first-click study in Chromium
         env:
           PREVIEW_URL: ${{ steps.pages.outputs.url }}
+          HOMEPAGE_SCREENSHOTS: ${{ runner.temp }}/homepage-screenshots
         run: |
           npm install --no-save --no-audit --no-fund --ignore-scripts --prefix "$RUNNER_TEMP/homepage-test" playwright-core@1.56.1
           NODE_PATH="$RUNNER_TEMP/homepage-test/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-homepage-preview.cjs
+      - name: Save desktop and Chinese mobile previews
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: homepage-preview
+          path: ${{ runner.temp }}/homepage-screenshots/*.png
+          retention-days: 7
+          if-no-files-found: ignore

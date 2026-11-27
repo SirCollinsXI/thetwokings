@@ -1,6 +1,146 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 06 live mit 779 Bildkarten
+## Hier fortsetzen · Paket 08 mit 879 Bildkarten im Projektstand
+
+| Stand | Nachweis |
+| --- | --- |
+| Hauptdomain | Vor Paket 08 zeigte die [Galerie](https://thetwokings.de/wilson-image-review) 829 aktive Karten. |
+| Paket 08 | 50 zusätzliche eigene SVGs in 10 Fünfergruppen. Galerie, Eingabetrainer und Offline-Datei verwenden dieselben Wort- und Bilddaten. |
+| Projektprüfungen | Website, Eingaben und Lernfortschritt, Wortschatz und 222 historische Bild-Hashes, mehrsprachige Rückmeldungen und reproduzierbarer Offline-Build geprüft. |
+| Browserprüfung | Die 50 neuen Übungslinks, Eingaben und Rückmeldungen auf Englisch und Mandarin sowie die dekodierbaren Offline-Motive wurden in Edge geprüft. Für die Eingabe wurde der Fallback für Web Locks verwendet. |
+| Veröffentlichung | [PR #21](https://github.com/SirCollinsXI/thetwokings/pull/21) übernimmt Wilsons Einstieg und Lernfarben aus `main`. Die Bestätigung auf der Hauptdomain folgt nach dem Merge. |
+| Zwischenziel | Vom Projektstand fehlen 45 Karten bis 924 und 621 bis 1.500. |
+
+## Paket 08 · Wortformen und Übersetzungen
+
+| Thema | ID | Singular | Plural | Englisch | 简体中文 |
+| --- | --- | --- | --- | --- | --- |
+| Bank & Bezahlen | v245 | die EC-Karte | die EC-Karten | debit card | 借记卡 |
+| Bank & Bezahlen | v632 | die Kreditkarte | die Kreditkarten | credit card | 信用卡 |
+| Bank & Bezahlen | v825 | die PIN-Nummer | die PIN-Nummern | PIN code | 个人识别码 |
+| Bank & Bezahlen | v874 | die Rechnung | die Rechnungen | invoice | 账单 |
+| Bank & Bezahlen | v1300 | die Wechselstube | die Wechselstuben | currency exchange office | 货币兑换处 |
+| Computerzubehör | v16 | der Adapter | die Adapter | adapter | 转换接头 |
+| Computerzubehör | v171 | das CD-Laufwerk | die CD-Laufwerke | CD drive | CD 光驱 |
+| Computerzubehör | v244 | das DVD-Laufwerk | die DVD-Laufwerke | DVD drive | DVD光驱 |
+| Computerzubehör | v1039 | das Smartphone | die Smartphones | smartphone | 智能手机 |
+| Computerzubehör | v1136 | das Tastenfeld | die Tastenfelder | keypad | 按键区 |
+| Zuhause | v93 | der Beistellschrank | die Beistellschränke | side cabinet | 边柜 |
+| Zuhause | v637 | der Küchenhocker | die Küchenhocker | kitchen stool | 厨房凳子 |
+| Zuhause | v1067 | die Sprechanlage | die Sprechanlagen | intercom | 对讲系统 |
+| Zuhause | v1184 | die Türschwelle | die Türschwellen | doorstep; threshold | 门槛 |
+| Zuhause | v1273 | die Wanduhr | die Wanduhren | wall clock | 挂钟 |
+| Haushalt & Reinigung | v119 | das Bleichmittel | die Bleichmittel | bleach | 漂白剂 |
+| Haushalt & Reinigung | v345 | der Fleckenentferner | die Fleckenentferner | stain remover | 去渍剂 |
+| Haushalt & Reinigung | v1147 | der Teppichboden | die Teppichböden | fitted carpet | 满铺地毯 |
+| Haushalt & Reinigung | v1298 | der WC-Reiniger | die WC-Reiniger | toilet cleaner | 洁厕剂 |
+| Haushalt & Reinigung | v1303 | der Weichspüler | die Weichspüler | fabric softener | 衣物柔顺剂 |
+| Straßenverkehr | v56 | die Autobahn | die Autobahnen | motorway | 高速公路 |
+| Straßenverkehr | v83 | die Baustelle | die Baustellen | building site | 施工现场 |
+| Straßenverkehr | v414 | die Geschwindigkeitsbegrenzung | die Geschwindigkeitsbegrenzungen | speed limit | 限速 |
+| Straßenverkehr | v975 | der Schulbus | die Schulbusse | school bus | 校车 |
+| Straßenverkehr | v1080 | der Stau | die Staus | traffic jam | 交通堵塞 |
+| Hausapotheke | v139 | die Brausetablette | die Brausetabletten | effervescent tablet | 泡腾片 |
+| Hausapotheke | v333 | das Feuchttuch | die Feuchttücher | wet wipe | 湿巾 |
+| Hausapotheke | v749 | die Mullbinde | die Mullbinden | gauze bandage | 纱布绷带 |
+| Hausapotheke | v1215 | die Verbandschere | die Verbandscheren | bandage scissors | 绷带剪 |
+| Hausapotheke | v1216 | das Verbandszeug | Einzahlübung | dressing materials | 包扎用品 |
+| Schuhe & Details | v569 | der Keilabsatz | die Keilabsätze | wedge heel | 坡跟 |
+| Schuhe & Details | v1046 | die Sohle | die Sohlen | sole (shoe) | 鞋底 |
+| Schuhe & Details | v1086 | die Stiefelette | die Stiefeletten | ankle boot | 短靴 |
+| Schuhe & Details | v1173 | die Trekkingsandale | die Trekkingsandalen | hiking sandal | 徒步凉鞋 |
+| Schuhe & Details | v1272 | der Wanderstiefel | die Wanderstiefel | hiking boot | 登山靴 |
+| Vom Markt | v178 | die Clementine | die Clementinen | clementine | 克莱门氏小柑橘 |
+| Vom Markt | v351 | die Forelle | die Forellen | trout | 鳟鱼 |
+| Vom Markt | v512 | der Hummer | die Hummer | lobster | 龙虾 |
+| Vom Markt | v629 | der Kräutertee | die Kräutertees | herbal tea | 花草茶 |
+| Vom Markt | v511 | das Hühnerei | die Hühnereier | hen's egg | 鸡蛋 |
+| Post & Versand | v252 | der Eilbrief | die Eilbriefe | express letter | 快递信件 |
+| Post & Versand | v274 | das Einschreiben | die Einschreiben | registered letter | 挂号信 |
+| Post & Versand | v808 | das Päckchen | die Päckchen | small parcel | 小包裹 |
+| Post & Versand | v840 | das Postfach | die Postfächer | post office box | 邮政信箱 |
+| Post & Versand | v841 | die Postleitzahl | die Postleitzahlen | postcode | 邮政编码 |
+| Rund ums Gebäude | v266 | das Einfamilienhaus | die Einfamilienhäuser | single-family house | 单户住宅 |
+| Rund ums Gebäude | v708 | das Mehrfamilienhaus | die Mehrfamilienhäuser | apartment building | 多户住宅 |
+| Rund ums Gebäude | v503 | der Hof | die Höfe | courtyard | 院子 |
+| Rund ums Gebäude | v937 | der Schalter | die Schalter | light switch | 电灯开关 |
+| Rund ums Gebäude | v1021 | die Sicherung | die Sicherungen | fuse | 保险丝 |
+
+Verbandszeug wird nur im Singular geübt. Schalter bezeichnet auf dieser Karte den Lichtschalter und Sicherung eine Schmelzsicherung. Die chinesische Bezeichnung für Einfamilienhaus beschreibt die einzelne Wohneinheit. [Verbandszeug](https://www.duden.de/rechtschreibung/Verbandszeug) · [Kräutertee](https://www.duden.de/rechtschreibung/Kraeutertee) · [Einschreiben](https://www.duden.de/deklination/substantive/Einschreiben) · [Eilbrief](https://www.duden.de/rechtschreibung/Eilbrief).
+
+## Paket 07 und frühere Stände
+
+### Paket 07 live mit 829 Bildkarten
+
+| Stand | Nachweis |
+| --- | --- |
+| Hauptdomain | Am 27.11.2026 zeigte die [Galerie](https://thetwokings.de/wilson-image-review) 829 aktive Karten. Der [Schnürsenkel](https://thetwokings.de/wilson-input?word=v965) öffnete das richtige SVG. Der veröffentlichte Bildinhalt stimmt byteweise mit dem Projekt überein. [Browserprotokoll](https://github.com/SirCollinsXI/thetwokings/actions/runs/46006740212/job/140531680684) |
+| Paket 07 | [PR #20](https://github.com/SirCollinsXI/thetwokings/pull/20) ergänzt zehn Fünfergruppen mit insgesamt 50 eigenen Zeichnungen. Alle Motive wurden einzeln gesichtet. |
+| Browserprüfung | Bei 390 und 1.280 Pixeln zeigte jeder der zehn Filter die vorgesehenen fünf Karten. Alle 50 Übungslinks öffneten das richtige Bild. Im lokalen Browserpfad ohne Web Locks bestanden die 50 Eingaben und drei Varianten einschließlich der englischen und chinesischen Rückmeldungen. |
+| Offline | Der reproduzierte Build enthält 829 eingebettete Bilder. Alle 50 neuen Offline-Bilder ließen sich im Browser dekodieren. Die [Projektprüfungen](https://github.com/SirCollinsXI/thetwokings/actions/runs/46006740212) sind bestanden. |
+| Nächste Runde | Für Paket 08 bislang unbebilderte IDs auswählen. Bis zum Zwischenziel von 924 fehlen 95 Karten, bis 1.500 fehlen 671. |
+| Offene Gerätetests | Hörbare Ausgabe auf iOS und Android. Der lokale Eingabetest mit nativen Web Locks steht für dieses Paket aus. |
+
+## Paket 07 · Wortformen und Übersetzungen
+
+| Thema | ID | Singular | Plural | Englisch | 简体中文 |
+| --- | --- | --- | --- | --- | --- |
+| Heimwerken | v3 | die Abdeckfolie | die Abdeckfolien | protective sheeting | 防护薄膜 |
+| Heimwerken | v21 | der Akkubohrer | die Akkubohrer | cordless drill | 充电式电钻 |
+| Heimwerken | v506 | der Holzboden | die Holzböden | wooden floor | 木地板 |
+| Heimwerken | v1058 | die Spachtelmasse | die Spachtelmassen | filler | 腻子 |
+| Heimwerken | v1130 | der Tapeziertisch | die Tapeziertische | wallpaper pasting table | 壁纸施工桌 |
+| Küchenutensilien | v205 | der Dessertlöffel | die Dessertlöffel | dessert spoon | 甜点勺 |
+| Küchenutensilien | v639 | das Küchenmesser | die Küchenmesser | kitchen knife | 菜刀 |
+| Küchenutensilien | v1076 | das Stäbchen | die Stäbchen | chopstick | 筷子 |
+| Küchenutensilien | v1110 | der Suppenlöffel | die Suppenlöffel | soup spoon | 汤匙 |
+| Küchenutensilien | v1305 | das Weinglas | die Weingläser | wine glass | 葡萄酒杯 |
+| Obst & Gemüse | v174 | der Chicorée | Einzahlübung | chicory | 菊苣 |
+| Obst & Gemüse | v936 | die Schalotte | die Schalotten | shallot | 红葱头 |
+| Obst & Gemüse | v772 | die Nektarine | die Nektarinen | nectarine | 油桃 |
+| Obst & Gemüse | v799 | die Okraschote | die Okraschoten | okra pod | 秋葵荚 |
+| Obst & Gemüse | v1325 | der Wirsing | Einzahlübung | savoy cabbage | 皱叶甘蓝 |
+| Lebensmittel | v277 | der Eintopf | die Eintöpfe | stew | 炖菜 |
+| Lebensmittel | v572 | der Ketchup | die Ketchups | ketchup | 番茄酱 |
+| Lebensmittel | v1015 | der Senf | die Senfe | mustard | 芥末酱 |
+| Lebensmittel | v1048 | die Sojasoße | die Sojasoßen | soy sauce | 酱油 |
+| Lebensmittel | v1258 | das Vollkornbrot | die Vollkornbrote | wholemeal bread | 全麦面包 |
+| Bedienung im Auto | v126 | der Blinkerhebel | die Blinkerhebel | indicator stalk | 转向灯拨杆 |
+| Bedienung im Auto | v143 | das Bremspedal | die Bremspedale | brake pedal | 刹车踏板 |
+| Bedienung im Auto | v390 | das Gaspedal | die Gaspedale | accelerator pedal | 油门踏板 |
+| Bedienung im Auto | v650 | das Kupplungspedal | die Kupplungspedale | clutch pedal | 离合器踏板 |
+| Bedienung im Auto | v938 | der Schalthebel | die Schalthebel | gear lever | 变速杆 |
+| Lichter am Auto | v127 | das Blinklicht | die Blinklichter | indicator light | 转向灯 |
+| Lichter am Auto | v769 | der Nebelscheinwerfer | die Nebelscheinwerfer | fog light | 雾灯 |
+| Lichter am Auto | v909 | der Rückfahrscheinwerfer | die Rückfahrscheinwerfer | reversing light | 倒车灯 |
+| Lichter am Auto | v911 | die Rückleuchte | die Rückleuchten | tail light | 尾灯 |
+| Lichter am Auto | v942 | der Scheinwerfer | die Scheinwerfer | headlight | 前照灯 |
+| Räume am Haus | v184 | der Dachboden | die Dachböden | attic | 阁楼 |
+| Räume am Haus | v349 | der Flur | die Flure | hallway | 走廊 |
+| Räume am Haus | v570 | der Keller | die Keller | cellar | 地下室 |
+| Räume am Haus | v1150 | die Terrasse | die Terrassen | terrace | 露台 |
+| Räume am Haus | v1174 | das Treppenhaus | die Treppenhäuser | stairwell | 楼梯间 |
+| Drucken & Scannen | v214 | das Display | die Displays | display screen | 显示屏 |
+| Drucken & Scannen | v659 | der Laserdrucker | die Laserdrucker | laser printer | 激光打印机 |
+| Drucken & Scannen | v932 | der Scanner | die Scanner | scanner | 扫描仪 |
+| Drucken & Scannen | v1154 | die Tintenpatrone | die Tintenpatronen | ink cartridge | 墨盒 |
+| Drucken & Scannen | v1165 | die Tonerkartusche | die Tonerkartuschen | toner cartridge | 碳粉盒 |
+| Unterwegs | v167 | der Busbahnhof | die Busbahnhöfe | bus station | 公共汽车总站 |
+| Unterwegs | v679 | der Linienbus | die Linienbusse | scheduled bus | 班线公共汽车 |
+| Unterwegs | v786 | der Notausgang | die Notausgänge | emergency exit | 紧急出口 |
+| Unterwegs | v882 | die Reisetasche | die Reisetaschen | travel bag | 旅行包 |
+| Unterwegs | v1279 | das Wartehäuschen | die Wartehäuschen | bus shelter | 候车亭 |
+| Persönliche Dinge | v445 | die Gürtelschlaufe | die Gürtelschlaufen | belt loop | 裤带环 |
+| Persönliche Dinge | v589 | der Klettverschluss | die Klettverschlüsse | hook-and-loop fastener | 魔术贴 |
+| Persönliche Dinge | v648 | der Kulturbeutel | die Kulturbeutel | toiletry bag | 洗漱包 |
+| Persönliche Dinge | v798 | der Ohrstöpsel | die Ohrstöpsel | earplug | 耳塞 |
+| Persönliche Dinge | v965 | der Schnürsenkel | die Schnürsenkel | shoelace | 鞋带 |
+
+Chicorée akzeptiert beide Artikel. Bei Ketchup akzeptiert der Trainer „der“ und „das“. Bei Ketchup und Senf stehen die Plurale insbesondere für unterschiedliche Sorten. [Ketchup](https://www.duden.de/rechtschreibung/Ketchup) · [Senf](https://www.duden.de/rechtschreibung/Senf) · [Chicorée](https://www.duden.de/rechtschreibung/Chicoree).
+
+## Paket 06 und frühere Stände
+
+### Paket 06 live mit 779 Bildkarten
 
 | Stand | Nachweis |
 | --- | --- |

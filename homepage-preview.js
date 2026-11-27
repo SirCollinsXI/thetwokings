@@ -7,8 +7,7 @@ const copy = {
   nav: ['Hauptnavigation', 'Main navigation', '主导航'],
   language: ['Sprache', 'Language', '语言'],
   comics: ['Sams Comics', 'Sam’s comics', 'Sam 的漫画'],
-  wilson: ['Wilsons Trainingsecke', 'Wilson’s Learning Corner', 'Wilson 的德语学习角'],
-  preview: ['Startseiten-Vorschau', 'Homepage preview', '首页预览'],
+  wilson: ['Wilsons Deutsch-Lernecke', 'Wilson’s German Learning Corner', 'Wilson 的德语学习角'],
   headline: ['Spielen, lesen, lernen.', 'Play, read, learn.', '玩游戏，读漫画，学德语。'],
   intro: [
     'Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.',
@@ -26,16 +25,12 @@ const copy = {
   areaWorkshopHint: ['PC-Werkstatt und KingLab', 'PC Workshop and KingLab', '电脑工作室和 KingLab'],
   prototype: ['Prototyp', 'Prototype', '原型'],
   comicText: [
-    'Lies die veröffentlichte Leseprobe von Sam & Piet.',
-    'Read the published preview of Sam & Piet.',
-    '阅读已发布的《Sam 与 Piet》试读内容。',
+    'Lies das erste Kapitel von Sam & Piet oder blättere durch Sams frühe Geschichten und Zeichnungen.',
+    'Read the first chapter of Sam & Piet or browse Sam’s early stories and drawings.',
+    '阅读《Sam 与 Piet》的第一章，也可以翻看 Sam 早期创作的故事和画稿。',
   ],
-  comicNext: [
-    'Als Nächstes: weitere Werke sichten und zur Veröffentlichung freigeben.',
-    'Next: review more comics and clear them for publication.',
-    '下一步：审阅更多漫画，确认是否可以公开发布。',
-  ],
-  read: ['Leseprobe öffnen', 'Read the preview', '开始试读'],
+  read: ['Sam & Piet lesen', 'Read Sam & Piet', '阅读《Sam 与 Piet》'],
+  comicArchive: ['Sams erste Comic-Ideen entdecken', 'Discover Sam’s early comic ideas', '看看 Sam 最早的漫画创意'],
   wilsonText: [
     'Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.',
     'Practise German words, articles and plurals through pictures.',
@@ -79,21 +74,9 @@ const copy = {
   traceCancel: ['Auswahl lösen', 'Clear selection', '取消续写'],
   traceSave: ['Idee speichern', 'Save idea', '保存点子'],
   stats: ['Aufrufe der Vorschau', 'Preview traffic', '预览页访问统计'],
-  statsEmpty: ['Für diese Vorschau sind gerade keine Messwerte verfügbar.', 'Counts are currently unavailable for this preview.', '此预览页暂无统计数据。'],
   statsTimeZone: ['Ortszeit Berlin', 'Berlin time', '柏林时间'],
   statsViews: ['Startseitenaufrufe', 'Homepage views', '首页浏览次数'],
-  statsCrowns: ['Kronenpunkte', 'Crown points', '皇冠积分'],
   statsSince: ['Messbeginn', 'Counting since', '统计开始日期'],
-  statsRule: [
-    'Jeder Tag startet mit 10.000 Kronenpunkten. Jeder erfasste Startseitenaufruf bringt einen Punkt.',
-    'Each day starts with 10,000 crown points. Each recorded homepage view adds one point.',
-    '每天的皇冠积分从 10,000 分起算。首页每被浏览一次，就增加一分。',
-  ],
-  statsExample: [
-    'Beispiel für 1 Aufruf · 10.001 Kronenpunkte',
-    'Example for 1 view · 10,001 crown points',
-    '以浏览 1 次为例，皇冠积分为 10,001 分。',
-  ],
   existing: ['Aktuelle Website', 'Current website', '当前网站'],
   imprint: ['Impressum', 'Legal notice', '网站法律声明'],
   privacy: ['Datenschutz', 'Privacy', '隐私政策'],
@@ -107,21 +90,25 @@ const buttons = document.querySelectorAll('[data-lang]');
 const languageLinks = document.querySelectorAll('[data-link-language]');
 
 function showDailyStats(locale) {
-  const { views, start, day } = document.getElementById('stats-panel').dataset;
-  if (!views || !start || !day) return;
+  const panel = document.getElementById('stats-panel');
+  const { views, start, day } = panel.dataset;
+  panel.hidden = true;
+  if (!/^\d+$/.test(views) || !Number.isSafeInteger(Number(views))) return;
+  const validDay = value => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+    const date = new Date(value + 'T00:00:00Z');
+    return Number.isFinite(date.valueOf()) && date.toISOString().slice(0, 10) === value;
+  };
+  if (!validDay(start) || !validDay(day) || start > day) return;
 
-  const number = new Intl.NumberFormat(locale);
-  const date = new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeZone: 'UTC' });
+  const format = new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeZone: 'UTC' });
   for (const [id, value] of [['stats-day', day], ['stats-start', start]]) {
     const time = document.getElementById(id);
     time.dateTime = value;
-    time.textContent = date.format(new Date(value + 'T00:00:00Z'));
+    time.textContent = format.format(new Date(value + 'T00:00:00Z'));
   }
-  document.getElementById('stats-views').textContent = number.format(Number(views));
-  document.getElementById('stats-crowns').textContent = number.format(10_000 + Number(views));
-  document.getElementById('stats-empty').hidden = true;
-  document.getElementById('stats-example').hidden = true;
-  document.getElementById('stats-live').hidden = false;
+  document.getElementById('stats-views').textContent = new Intl.NumberFormat(locale).format(Number(views));
+  panel.hidden = false;
 }
 
 function showLanguage(language) {
@@ -135,7 +122,8 @@ function showLanguage(language) {
   for (const link of languageLinks) {
     const target = new URL(link.href);
     const mode = link.dataset.linkLanguage;
-    target.searchParams.set(mode === 'home-only' ? 'homeLang' : 'lang', language);
+    target.searchParams.set('lang', language);
+    if (mode === 'home-only') target.searchParams.set('homeLang', language);
     if (mode) target.searchParams.set('from', 'homepage-preview');
     link.href = target.href;
   }

@@ -9,8 +9,11 @@
   <link rel="stylesheet" href="homepage-preview.css">
   <link rel="stylesheet" href="wilson-entry.css">
   <link rel="stylesheet" href="spiele-start.css">
+  <link rel="stylesheet" href="spiele-probe.css">
+  <link rel="stylesheet" href="spiele-start-preview.css">
   <script src="spiele-texte.js" defer></script>
   <script src="homepage-preview.js" defer></script>
+  <script src="spiele-probe.js" defer></script>
   <script src="spuren-store.js" defer></script>
   <script src="homepage-spuren.js" defer></script>
 </head>
@@ -21,7 +24,7 @@
     <nav id="navigation" aria-label="Hauptnavigation" data-label="nav">
       <a href="#spiele" data-copy="areaGames">Spiele</a>
       <a href="#comics" data-copy="areaComics">Comics</a>
-      <a href="#lernen" data-copy="wilson">Wilsons Trainingsecke</a>
+      <a href="wilson.html" data-link-language="home-only" data-copy="wilson">Wilsons Deutsch-Lernecke</a>
       <a href="#werkstatt" data-copy="areaWorkshop">Werkstatt</a>
     </nav>
     <div class="languages" role="group" aria-label="Sprache" data-label="language">
@@ -33,69 +36,117 @@
   <div class="shell layout">
     <main id="inhalt" tabindex="-1">
       <section class="intro" aria-labelledby="home-title">
-        <p class="label" data-copy="preview">Startseiten-Vorschau</p>
+        <div class="intro-copy">
         <h1 id="home-title" data-copy="headline">Spielen, lesen, lernen.</h1>
         <p data-copy="intro">Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.</p>
+        </div>
+        <img class="intro-art" src="assets/homepage-koenige.webp" width="800" height="440" alt="" decoding="async">
       </section>
       <nav id="projekte" class="area-nav" tabindex="-1" aria-label="Bereiche entdecken" data-label="areaNav">
         <ul class="area-grid" role="list">
           <li><a href="#spiele"><strong data-copy="areaGames">Spiele</strong><span data-copy="areaGamesHint">Browserspiele und Das Wehr</span></a></li>
           <li><a href="#comics"><strong data-copy="areaComics">Comics</strong><span data-copy="areaComicsHint">Sam &amp; Piet lesen</span></a></li>
-          <li><a href="wilson.html" data-link-language="home-only"><strong data-copy="wilson">Wilsons Trainingsecke</strong><span data-copy="areaLearnHint">Deutsch mit Bildkarten üben ↗</span></a></li>
+          <li><a href="wilson.html" data-link-language="home-only"><strong data-copy="wilson">Wilsons Deutsch-Lernecke</strong><span data-copy="areaLearnHint">Deutsch mit Bildkarten üben ↗</span></a></li>
           <li><a href="#werkstatt"><strong data-copy="areaWorkshop">Werkstatt</strong><span data-copy="areaWorkshopHint">PC-Werkstatt und KingLab</span></a></li>
         </ul>
       </nav>
+      <section id="lernen" class="project" tabindex="-1" aria-labelledby="learn-title">
+        <div class="wilson-example"><img src="wilson/cup.svg" alt="" width="112" height="112">
+            <div class="wilson-example-words"><b lang="de">die Tasse</b><span lang="en">cup</span><span lang="zh-Hans">杯子</span></div></div>
+        <div class="card">
+          <h2 id="learn-title" data-copy="wilson">Wilsons Deutsch-Lernecke</h2>
+          <p data-copy="wilsonText">Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.</p>
+          <a class="project-link" href="wilson.html" data-link-language="home-only" data-copy="learn">Bildtrainer öffnen</a>
+          <a class="trace-entry" href="#spuren" data-trace-context="lernen" data-copy="traceOpen">Spur hinterlassen</a>
+        </div>
+      </section>
       <section id="spiele" class="game-hub home-games" tabindex="-1" aria-labelledby="games-title">
         <h2 id="games-title" data-copy="gamesHome">Sams Spielecke</h2>
-        <p class="games-availability" data-copy="playNow">Jetzt im Browser spielen</p>
-        <ul class="playable-games" role="list">
-          <li><a href="wuestenbogen.html" data-link-language="project" aria-labelledby="wuestenbogen-play" aria-describedby="wuestenbogen-hint">
-            <img src="game-assets/thumbs/wuestenbogen.webp" width="624" height="264" loading="lazy" alt="">
-            <span class="game-choice">
-              <strong id="wuestenbogen-play" data-copy="bowPlay">Wüstenbogen spielen</strong>
-              <span id="wuestenbogen-hint" data-copy="bowHint">Ziele mit Maus, Finger oder Pfeiltasten. Lande in jeder der drei Runden drei Treffer.</span>
-            </span>
-          </a></li>
-          <li><a href="piratenjagd.html" data-link-language="project" aria-labelledby="piratenjagd-play" aria-describedby="piratenjagd-hint">
-            <img src="game-assets/thumbs/piratenjagd.webp" width="624" height="264" loading="lazy" alt="">
-            <span class="game-choice">
-              <strong id="piratenjagd-play" data-copy="piratePlay">Piratenjagd spielen</strong>
-              <span id="piratenjagd-hint" data-copy="pirateHint">Fange den Dino dreimal auf dem Piratendeck. Tippe auf ein Netz oder drücke 1 bis 5. Spielbare Testszene.</span>
-            </span>
-          </a></li>
+        <div class="game-section-intro">
+          <p class="games-availability" data-copy="playNow">Jetzt im Browser spielen</p>
+          <a class="prototype-jump" href="#wehr" data-copy="wehrJump">Zum Inselprojekt „Das Wehr“ ↓</a>
+        </div>
+        <ul class="playable-games game-trials" role="list">
+          <li class="home-game-card">
+            <a href="wuestenbogen.html" data-link-language="project" aria-labelledby="wuestenbogen-play" aria-describedby="wuestenbogen-hint">
+              <img src="game-assets/thumbs/wuestenbogen.webp" width="624" height="264" loading="lazy" alt="">
+              <span class="game-choice">
+                <strong id="wuestenbogen-play" data-copy="bowPlay">Wüstenbogen spielen</strong>
+                <span id="wuestenbogen-hint" data-copy="bowHint">Ziele mit Maus, Finger oder Pfeiltasten. Lande in jeder der drei Runden drei Treffer.</span>
+              </span>
+            </a>
+            <details class="trial-inline trial-controls" name="spieleproben" id="bogen-probe" hidden>
+              <summary data-copy="tryBow">Hier einen Probeschuss machen</summary>
+              <div class="trial-stage bow-stage" aria-hidden="true">
+                <img src="game-assets/thumbs/wuestenbogen.webp" alt="" width="624" height="264" loading="lazy">
+                <span class="trial-sight"></span><span class="trial-impact" hidden></span>
+              </div>
+              <div class="trial-body">
+                <p data-trial-copy="bowHint">Der Wind drückt den Pfeil nach rechts. Halte links von der Mitte vor.</p>
+                <div class="trial-controls" hidden>
+                  <label for="trial-aim" data-trial-copy="aim">Zielen</label>
+                  <input id="trial-aim" type="range" min="-2" max="2" step="1" value="0">
+                  <button type="button" id="trial-shoot" data-trial-copy="shoot">Probeschuss</button>
+                  <p class="trial-feedback" id="bow-result" role="status"></p>
+                </div>
+              </div>
+            </details>
+          </li>
+          <li class="home-game-card">
+            <a href="piratenjagd.html" data-link-language="project" aria-labelledby="piratenjagd-play" aria-describedby="piratenjagd-hint">
+              <img src="game-assets/thumbs/piratenjagd.webp" width="624" height="264" loading="lazy" alt="">
+              <span class="game-choice">
+                <strong id="piratenjagd-play" data-copy="piratePlay">Piratenjagd spielen</strong>
+                <span id="piratenjagd-hint" data-copy="pirateHint">Fange den Dino dreimal auf dem Piratendeck. Tippe auf ein Netz oder drücke 1 bis 5. Spielbare Testszene.</span>
+              </span>
+            </a>
+            <details class="trial-inline trial-controls" name="spieleproben" id="dino-probe" hidden>
+              <summary data-copy="tryDino">Hier ein Fangnetz setzen</summary>
+              <div class="trial-stage dino-stage" aria-hidden="true">
+                <img src="game-assets/thumbs/probe-deck.webp" alt="" width="624" height="264" loading="lazy">
+                <div class="trial-lanes"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+                <img class="trial-rex" src="game-assets/thumbs/probe-dino.webp" alt="" width="174" height="110" loading="lazy">
+                <span class="trial-net" hidden></span>
+              </div>
+              <div class="trial-body">
+                <p id="trial-track">Der Dino steht auf Feld 2 und läuft nach rechts. Wähle das Netz für seinen nächsten Schritt.</p>
+                <div class="trial-controls" hidden>
+                  <div class="trial-nets" role="group" aria-labelledby="trial-track">
+                    <button type="button" data-trial-net="1"><span aria-hidden="true">1</span><span class="trial-net-label">Netz 1</span></button>
+                    <button type="button" data-trial-net="2"><span aria-hidden="true">2</span><span class="trial-net-label">Netz 2</span></button>
+                    <button type="button" data-trial-net="3"><span aria-hidden="true">3</span><span class="trial-net-label">Netz 3</span></button>
+                    <button type="button" data-trial-net="4"><span aria-hidden="true">4</span><span class="trial-net-label">Netz 4</span></button>
+                    <button type="button" data-trial-net="5"><span aria-hidden="true">5</span><span class="trial-net-label">Netz 5</span></button>
+                  </div>
+                  <p class="trial-feedback" id="dino-result" role="status"></p>
+                </div>
+              </div>
+            </details>
+          </li>
         </ul>
         <a class="earlier-games" href="klassischer-game-hub.html" data-link-language="project" data-copy="earlierGames">Klassiker öffnen · frühere Fassungen beider Spiele</a>
         <article id="wehr" class="upcoming-game" tabindex="-1" aria-labelledby="wehr-title">
           <p class="development-status" data-copy="wehrState">In Entwicklung · Windows-Prototyp</p>
           <h3 id="wehr-title" data-copy="wehrTitle">Das Wehr &amp; Samis Dino-Insel</h3>
-          <p data-copy="wehrAbout">An der Waldgabel findest du den Weg zur Fähre. An der Werkbank auf der Vulkaninsel kannst du die Spitzhacke ausbauen.</p>
-          <p data-copy="wehrWeb">Eine Browserfreigabe setzt das fertige Spiel, einen getesteten Godot-Webexport und geklärte Rechte an den Spielinhalten voraus.</p>
-          <p class="build-date" data-copy="wehrBuild">Stand für die Homepage · V39 · 27. November 2026</p>
+          <p data-copy="wehrAbout">Vom Wehr führt der Waldsteg zur Dino-Insel. Dort legt die Tierarche an. Beim Händler kannst du deinen gefangenen Rex gegen die ersten beiden Schafe für deine Weide tauschen.</p>
+          <div class="planned-platform" id="wehr-web">
+            <strong data-copy="wehrPlatform">Geplante Browserfassung</strong>
+            <p data-copy="wehrWeb">Eine Browserfreigabe setzt das fertige Spiel, einen getesteten Godot-Webexport und geklärte Rechte an den Spielinhalten voraus.</p>
+          </div>
+          <p class="build-date" data-copy="wehrBuild">Stand für die Homepage · V41 · 27. November 2026</p>
         </article>
         <a class="trace-entry" href="#spuren" data-trace-context="spiele" data-copy="traceOpen">Spur hinterlassen</a>
       </section>
-      <div class="pair">
-        <section id="comics" class="project" tabindex="-1" aria-labelledby="comics-title">
-          <div class="cover"><img src="comic/page-01.webp" alt="" loading="lazy"></div>
-          <div class="card">
-            <h2 id="comics-title" data-copy="comics">Sams Comics</h2>
-            <a class="trace-entry" href="#spuren" data-trace-context="comics" data-copy="traceOpen">Spur hinterlassen</a>
-            <p data-copy="comicText">Lies die veröffentlichte Leseprobe von Sam &amp; Piet.</p>
-            <p class="next" data-copy="comicNext">Als Nächstes: weitere Werke sichten und zur Veröffentlichung freigeben.</p>
-            <a class="project-link" href="comic.html" data-link-language="project" data-copy="read">Leseprobe öffnen</a>
-          </div>
-        </section>
-        <section id="lernen" class="project" tabindex="-1" aria-labelledby="learn-title">
-          <div class="wilson-example"><img src="wilson/cup.svg" alt="" width="112" height="112" loading="lazy">
-              <div class="wilson-example-words"><b lang="de">die Tasse</b><span lang="en">cup</span><span lang="zh-Hans">杯子</span></div></div>
-          <div class="card">
-            <h2 id="learn-title" data-copy="wilson">Wilsons Trainingsecke</h2>
-            <p data-copy="wilsonText">Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.</p>
-            <a class="project-link" href="wilson.html" data-link-language="home-only" data-copy="learn">Bildtrainer öffnen</a>
-            <a class="trace-entry" href="#spuren" data-trace-context="lernen" data-copy="traceOpen">Spur hinterlassen</a>
-          </div>
-        </section>
-      </div>
+      <section id="comics" class="project" tabindex="-1" aria-labelledby="comics-title">
+        <div class="cover"><img src="comic/page-01.webp" alt="" loading="lazy"></div>
+        <div class="card">
+          <h2 id="comics-title" data-copy="comics">Sams Comics</h2>
+          <a class="trace-entry" href="#spuren" data-trace-context="comics" data-copy="traceOpen">Spur hinterlassen</a>
+          <p data-copy="comicText">Lies das erste Kapitel von Sam &amp; Piet oder blättere durch Sams frühe Geschichten und Zeichnungen.</p>
+          <a class="project-link" href="comic.html" data-link-language="project" data-copy="read">Sam &amp; Piet lesen</a>
+          <a class="archive-entry" href="comics.html#werkstatt" data-link-language="project" data-copy="comicArchive">Sams erste Comic-Ideen entdecken</a>
+        </div>
+      </section>
       <section id="werkstatt" class="more" tabindex="-1" aria-labelledby="workshop-title">
         <h2 id="workshop-title" data-copy="workshop">Werkstatt &amp; Experimente</h2>
         <a class="trace-entry" href="#spuren" data-trace-context="werkstatt" data-copy="traceOpen">Spur hinterlassen</a>
@@ -157,23 +208,20 @@
           </div>
         </details>
       </section>
-      <section id="stats-panel" class="rail-panel" aria-labelledby="stats-title">
+      <section id="stats-panel" class="rail-panel" aria-labelledby="stats-title" hidden>
         <h2 id="stats-title" data-copy="stats">Aufrufe der Vorschau</h2>
-        <p id="stats-empty" data-copy="statsEmpty">Für diese Vorschau sind gerade keine Messwerte verfügbar.</p>
-        <div id="stats-live" hidden>
+        <div id="stats-live">
           <p><time id="stats-day"></time> · <span data-copy="statsTimeZone">Ortszeit Berlin</span></p>
           <dl class="daily-stats">
             <div><dt data-copy="statsViews">Startseitenaufrufe</dt><dd id="stats-views"></dd></div>
-            <div><dt data-copy="statsCrowns">Kronenpunkte</dt><dd id="stats-crowns"></dd></div>
           </dl>
           <p class="next"><span data-copy="statsSince">Messbeginn</span> · <time id="stats-start"></time></p>
         </div>
-        <p class="next" data-copy="statsRule">Jeder Tag startet mit 10.000 Kronenpunkten. Jeder erfasste Startseitenaufruf bringt einen Punkt.</p>
-        <p id="stats-example" class="next" data-copy="statsExample">Beispiel für 1 Aufruf · 10.001 Kronenpunkte</p>
       </section>
     </aside>
   </div>
   <footer class="shell foot">
+    <a href="wilson.html" data-link-language="home-only" data-copy="wilson">Wilsons Deutsch-Lernecke</a>
     <a href="index.html" data-link-language data-copy="existing">Aktuelle Website</a>
     <a href="impressum.html" data-copy="imprint">Impressum</a>
     <a href="datenschutz.html" data-copy="privacy">Datenschutz</a>
