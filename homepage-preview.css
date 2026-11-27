@@ -49,6 +49,7 @@ main, .project, .rail { min-width: 0; }
 .area-grid a { display: grid; align-content: start; height: 100%; gap: .25rem; padding: .8rem; color: var(--text); background: var(--panel); text-decoration: none; }
 .area-grid a:hover, .area-grid a:focus-visible { background: #27272b; position: relative; z-index: 1; }
 .area-grid strong { font-size: 1.04rem; line-height: 1.2; letter-spacing: -.025em; }
+.area-grid strong:lang(zh-CN) { word-break: keep-all; overflow-wrap: anywhere; }
 .area-grid a:is(:hover, :focus-visible) strong { color: var(--accent); text-decoration: underline; }
 .area-grid span { color: var(--muted); font-size: .88rem; line-height: 1.4; }
 
@@ -128,6 +129,6 @@ main, .project, .rail { min-width: 0; }
   .languages { grid-column: 2; grid-row: 1; }
   .intro-art { display: none; }
   h1:lang(zh-CN) { font-size: clamp(2.25rem, 10.4vw, 2.8rem); word-break: keep-all; overflow-wrap: anywhere; text-wrap: wrap; }
-  #lernen .wilson-example { min-height: 7rem; }
+  #lernen .wilson-example { min-height: 6rem; }
   .cover img { height: 10rem; }
 }
