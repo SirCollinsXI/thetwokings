@@ -12,7 +12,7 @@ assert.ok(!anchor.includes('data-t='),'Old scripts would overwrite new translati
 assert.match(anchor,/id="challenge-title"/);
 assert.match(anchor,/id="challenge-subtitle"/);
 assert.match(html,/href="wilson\.css\?v=20261126r1"/,'Stylesheet version not refreshed');
-assert.match(html,/src="wilson\.js\?v=20261126r1"/,'Main JS version not refreshed');
+assert.match(html,/src="wilson\.js\?v=20261127corner"/,'Main JS version not refreshed');
 assert.match(html,/src="wilson-paths\.js\?v=20261126r1"/,'Paths JS version not refreshed');
 const snippets=Array.from(html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g),x=>x[1]).filter(Boolean);
 const script=snippets.at(-1);
