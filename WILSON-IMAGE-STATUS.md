@@ -7,8 +7,8 @@
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Aktueller Entwurf | 774 aktive Karten. 9 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
-| Nächste einzelne Aufgabe | Block 9 in der Vorschau prüfen und anschließend Block 10 integrieren. |
+| Paket 06 | 779 aktive Karten. 10 von zehn Fünferblöcken sind in Galerie, Eingabetrainer und Offline-Datei eingebunden. |
+| Nächste einzelne Aufgabe | Vorschau und Hauptdomain anhand des aktuellen PR-Status abgleichen. Nach Veröffentlichung die nächste Fünfergruppe auswählen. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
 
 ## Ziel und Wortliste
@@ -74,6 +74,8 @@ Vorschau `664f3e7` am 27.11.2026 geprüft. Alle fünf Trainerlinks zeigen das ri
 | `v1112` | das Sushi · — | sushi | 寿司 |
 | `v280` | der Eisbergsalat · die Eisbergsalate | iceberg lettuce | 球生菜 |
 
+Rotkohl und Sushi werden im Trainer wie im bestehenden Lexikon in der Einzahl geübt.
+
 ## Block 5 · Fahrrad
 
 | ID | Karte | Englisch | 简体中文 |
@@ -124,6 +126,16 @@ Vorschau `664f3e7` am 27.11.2026 geprüft. Alle fünf Trainerlinks zeigen das ri
 | `v1034` | die SIM-Karte · die SIM-Karten | SIM card | 手机卡 |
 | `v1207` | die USB-Schnittstelle · die USB-Schnittstellen | USB port | USB接口 |
 
+## Block 10 · Straßenverkehr
+
+| ID | Karte | Englisch | 简体中文 |
+| --- | --- | --- | --- |
+| `v1179` | der Tunnel · die Tunnel | tunnel | 隧道 |
+| `v383` | die Fußgängerampel · die Fußgängerampeln | pedestrian traffic light | 行人信号灯 |
+| `v256` | die Einbahnstraße · die Einbahnstraßen | one-way street | 单行道 |
+| `v634` | die Kreuzung · die Kreuzungen | intersection | 交叉路口 |
+| `v1336` | die Zapfsäule · die Zapfsäulen | petrol pump | 加油机 |
+
 **Wiedereinstieg am 27.11.2026.** Der Screenshot zu Paket 06 zeigt nach 3:19 Minuten die Meldung zur maximalen Gesprächslänge. PR #18 enthielt bereits alle 50 Wort-IDs und zehn Zeichnungen. Die Integration der fünf Babykarten war lokal vollständig auffindbar. Es mussten keine Karten neu erstellt werden. Als Erstes wurden die bestehenden Tests und der reproduzierbare Offline-Build geprüft.
 
 **Früherer Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
@@ -138,6 +150,8 @@ Ziel sind **1.500 einzeln geprüfte Bildkarten**. Von der Etappe mit 200 zusätz
 | 05 · Autoteile | [PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) | +5 → 729 | Wortformen, SVG, Galerie, Eingabe, Offline-Build, Browserprüfung und Live-Abgleich | Hörbare Geräteausgabe |
 
 ## Bestand
+
+Die folgenden Zahlen dokumentieren Paket 05 als Ausgangsstand. Paket 06 ergänzt 50 Nomen und erhöht den Gesamtbestand auf 779. Bis 924 fehlen 145 Karten, bis 1.500 fehlen 721.
 
 | Gruppe | Anzahl | Im Trainer |
 | --- | ---: | --- |

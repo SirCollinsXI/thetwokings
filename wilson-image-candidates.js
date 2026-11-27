@@ -25956,5 +25956,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Gesucht ist der markierte Anschluss am Computer. Die Form zeigt, wo der Stecker hineinpasst."
     }
+  },
+  {
+    "id": "v1179",
+    "de": "der Tunnel",
+    "plural": "die Tunnel",
+    "en": "tunnel",
+    "zh": "隧道",
+    "pinyin": "suìdào",
+    "path": "wilson/original-road/v1179-tunnel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈtʊnl̩/",
+      "context": {
+        "de": "Die Straße führt durch eine überdeckte Öffnung im Berg.",
+        "en": "The road passes through a covered opening in the mountain.",
+        "zh": "道路从山体里有顶的通道穿过去。"
+      },
+      "reason": "Die Straße führt durch eine überdeckte Öffnung im Berg."
+    }
+  },
+  {
+    "id": "v383",
+    "de": "die Fußgängerampel",
+    "plural": "die Fußgängerampeln",
+    "en": "pedestrian traffic light",
+    "zh": "行人信号灯",
+    "pinyin": "xíngrén xìnhàodēng",
+    "path": "wilson/original-road/v383-fussgaengerampel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈfuːsɡɛŋɐˌampl̩/",
+      "context": {
+        "de": "Die kleinen roten und grünen Menschen zeigen, wann man zu Fuß über die Straße gehen darf.",
+        "en": "The small red and green figures show when people may cross the street on foot.",
+        "zh": "红色和绿色的小人表示行人什么时候可以过马路。"
+      },
+      "reason": "Die kleinen roten und grünen Menschen zeigen, wann man zu Fuß über die Straße gehen darf."
+    }
+  },
+  {
+    "id": "v256",
+    "de": "die Einbahnstraße",
+    "plural": "die Einbahnstraßen",
+    "en": "one-way street",
+    "zh": "单行道",
+    "pinyin": "dānxíngdào",
+    "path": "wilson/original-road/v256-einbahnstrasse.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈaɪ̯nbaːnˌʃtʁaːsə/",
+      "context": {
+        "de": "Auf dieser Straße dürfen Fahrzeuge nur in die Richtung des weißen Pfeils fahren.",
+        "en": "Vehicles may travel along this street only in the direction of the white arrow.",
+        "zh": "车辆只能沿白色箭头指示的方向行驶。"
+      },
+      "reason": "Auf dieser Straße dürfen Fahrzeuge nur in die Richtung des weißen Pfeils fahren."
+    }
+  },
+  {
+    "id": "v634",
+    "de": "die Kreuzung",
+    "plural": "die Kreuzungen",
+    "en": "intersection",
+    "zh": "交叉路口",
+    "pinyin": "jiāochā lùkǒu",
+    "path": "wilson/original-road/v634-kreuzung.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkʁɔɪ̯t͡sʊŋ/",
+      "context": {
+        "de": "Gesucht ist die markierte Stelle, an der sich zwei Straßen treffen.",
+        "en": "Name the highlighted place where two roads meet.",
+        "zh": "请写出标出的两条道路交会处的名称。"
+      },
+      "reason": "Gesucht ist die markierte Stelle, an der sich zwei Straßen treffen."
+    }
+  },
+  {
+    "id": "v1336",
+    "de": "die Zapfsäule",
+    "plural": "die Zapfsäulen",
+    "en": "petrol pump",
+    "zh": "加油机",
+    "pinyin": "jiāoyóujī",
+    "path": "wilson/original-road/v1336-zapfsaeule.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "verkehr-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈt͡sapfˌzɔʏ̯lə/",
+      "context": {
+        "de": "Am markierten Gerät hängt ein Schlauch mit Griff, über den Kraftstoff in den Tank fließt.",
+        "en": "The highlighted machine has a hose and a nozzle that deliver fuel into a tank.",
+        "zh": "标出的设备上挂着带手柄的油管，可以用它把燃料加进油箱。"
+      },
+      "reason": "Am markierten Gerät hängt ein Schlauch mit Griff, über den Kraftstoff in den Tank fließt."
+    }
   }
 ];
