@@ -1,14 +1,24 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-## Hier fortsetzen · Paket 05 live, als Nächstes Paket 06
+## Hier fortsetzen · Paket 06 Babyausstattung
 
 | Stand | Nachweis |
 | --- | --- |
 | Zuletzt auf der Hauptdomain geprüft | 729 aktive Karten am 27.11.2026. „Neu · Autoteile“ zeigte fünf Treffer. Der Link vom Lenkrad öffnete die passende Zeichnung und den Eingabetrainer. [Galerie](https://thetwokings.de/wilson-image-review) · [Lenkrad](https://thetwokings.de/wilson-input?word=v673) |
 | Arbeitsstand | [Paket 05 · PR #17](https://github.com/SirCollinsXI/thetwokings/pull/17) wurde als `b582a1c` in `main` übernommen. Die neuen IDs sind `v39`, `v57`, `v142`, `v673`, `v941`. |
 | Bestanden | Wortbestand, Eingabe, CTA, Website-Verweise und bytegleicher Offline-Build mit 729 Bildern. In der Vorschau alle fünf Kartenlinks und am Lenkrad den zweiten Versuch sowie die dreisprachige Lösung geprüft. |
-| Nächste einzelne Aufgabe | Für Paket 06 bis zu fünf konkrete unbebilderte Begriffe zu Babyausstattung oder Kleidung mit dem bestehenden Lexikon und dem Bildbestand abgleichen. |
+| Nächste einzelne Aufgabe | Die fünf ausgewählten Illustrationen aus `wilson/original-baby/` über ihre bestehenden IDs in das Bildmanifest einbinden. Für jedes Bild den dreisprachigen Hinweis und die Wortformen prüfen. |
 | Offen | Hörbare Ausgabe auf iOS und Android. |
+
+**Auswahl Paket 06.** Mit Lexikon, aktiven Eingabekarten und allen Einträgen des Bildmanifests abgeglichen. Die Zeichnungen wurden bei 120 × 85 und 220 × 156 Pixeln gesichtet. Die fünf Entwürfe sind noch nicht im aktiven Kartenbestand enthalten.
+
+| ID | Wort und Plural | Englisch · 简体中文 laut Lexikon | Erkennungsmerkmal für den Bildhinweis |
+| --- | --- | --- | --- |
+| `v60` | die Babydecke · die Babydecken | baby blanket · 婴儿毯 | Die umgeschlagene Ecke und der Saum zeigen die Decke. Der Kinderwagen erklärt die Größe. |
+| `v61` | der Babyfäustling · die Babyfäustlinge | baby mitten · 婴儿连指手套 | Bündchen und eigener Daumen, die übrigen Finger liegen zusammen. Das Paar braucht einen Hinweis auf Babygröße. |
+| `v63` | der Babyschlafsack · die Babyschlafsäcke | baby sleeping bag · 婴儿睡袋 | Zwei Armöffnungen, ein Reißverschluss vorn und ein unten geschlossener Sack. |
+| `v962` | der Schnuller · die Schnuller | pacifier · 安抚奶嘴 | Sauger, Schild und Greifring sind zusammen zu sehen. |
+| `v1093` | die Stoffwindel · die Stoffwindeln | cloth nappy · 布尿布 | Druckknöpfe und eingenähte Saugeinlage zeigen die Stoffwindel. Das Waschsymbol erklärt ihre Wiederverwendbarkeit. |
 
 **Vorfall am 27.11.2026.** Der Screenshot zeigt nach 4:26 Minuten die Meldung zur maximalen Gesprächslänge. Zuletzt war der Browsercheck angekündigt. Testergebnis und Veröffentlichung waren beim Wiedereinstieg offen. Die fünf Karten wurden aus dem Arbeitsordner wiedergefunden und lokal in `852dc84` gesichert. Der technische Auslöser ist ungeklärt. Beim nächsten Paket den Branch mit den Karten und dem nächsten Prüfschritt vor dem Browsercheck sichern. Beim Wiederanlauf festhalten, ob sich der erste offene Schritt direkt aus dem Branch ausführen ließ.
 
