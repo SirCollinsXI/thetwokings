@@ -33,9 +33,9 @@ async function testStudy(browser) {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
   const paths = [
     ['A', 'de', ['#navigation a[href="#spiele"]', '#wuestenbogen-play'], 'Ziel erreicht · Ja'],
-    ['A', 'zh', ['#piratenjagd-play'], '已到达目标 · 是'],
+    ['A', 'zh', ['#piratenjagd-play'], '是否达成目标 · 是'],
     ['A', 'en', ['.earlier-games', '#card-bogen'], 'Goal reached · Yes'],
-    ['B', 'zh', ['#comics .project-link'], '已到达目标 · 是'],
+    ['B', 'zh', ['#comics .project-link'], '是否达成目标 · 是'],
     ['C', 'en', ['#projekte a[data-link-language="home-only"]'], 'Goal reached · Yes'],
     ['D', 'de', ['#werkstatt [data-copy="pcOpen"]'], 'Ziel erreicht · Ja'],
     ['D', 'en', ['#piratenjagd-play'], 'Goal reached · No'],

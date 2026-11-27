@@ -47,7 +47,7 @@
     gameHub: ['Spieleklassiker', 'Classic games', '经典游戏'],
     catalogue: ['Sams Comics · Übersicht', 'Sam’s comics · catalogue', 'Sam 的漫画目录'],
     endedIn: ['In der Übersicht beendet', 'Stopped in the catalogue', '在目录页结束'],
-    goal: ['Ziel erreicht', 'Goal reached', '已到达目标'],
+    goal: ['Ziel erreicht', 'Goal reached', '是否达成目标'],
     yes: ['Ja', 'Yes', '是'],
     no: ['Nein', 'No', '否'],
     undetermined: ['Offen', 'Undetermined', '未判定'],
