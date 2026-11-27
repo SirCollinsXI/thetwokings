@@ -22,7 +22,7 @@ const copy = {
   areaWorkshop: ['Werkstatt', 'Workshop', '工坊'],
   areaGamesHint: ['Browserspiele und Das Wehr', 'Browser games and Das Wehr', '网页游戏和《水坝》'],
   areaComicsHint: ['Sam & Piet lesen', 'Read Sam & Piet', '阅读《Sam 与 Piet》'],
-  areaLearnHint: ['Deutsch mit Bildern', 'German with pictures', '看图学德语'],
+  areaLearnHint: ['Deutsch mit Bildkarten üben ↗', 'Practise German with picture cards ↗', '看图学德语 ↗'],
   areaWorkshopHint: ['PC-Werkstatt und KingLab', 'PC Workshop and KingLab', '电脑工作室和 KingLab'],
   prototype: ['Prototyp', 'Prototype', '原型'],
   gameText: [
@@ -51,8 +51,7 @@ const copy = {
     'Practise German words, articles and plurals through pictures.',
     '看图练习德语单词、冠词和复数形式。',
   ],
-  learn: ['Training öffnen', 'Start practising', '开始练习'],
-  picture: ['图', 'Image', '图片'],
+  learn: ['Bildtrainer öffnen', 'Open picture trainer', '打开看图练习'],
   games: ['Sams Spielecke', 'Sam’s Games Corner', 'Sam 的游戏角'],
   browserGames: ['Diese Spiele kannst du direkt im Browser öffnen.', 'Open these games directly in your browser.', '这些游戏可以直接在浏览器中打开。'],
   gameVersion: ['Windows-Prototyp · V30', 'Windows prototype · V30', 'Windows 原型 · V30'],

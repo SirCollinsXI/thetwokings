@@ -7,6 +7,7 @@
   <title>TheTwoKings | Startseiten-Vorschau</title>
   <link rel="icon" href="crown.svg">
   <link rel="stylesheet" href="homepage-preview.css">
+  <link rel="stylesheet" href="wilson-entry.css">
   <script src="homepage-preview.js" defer></script>
   <script src="spuren-store.js" defer></script>
   <script src="homepage-spuren.js" defer></script>
@@ -18,7 +19,7 @@
     <nav id="navigation" aria-label="Hauptnavigation" data-label="nav">
       <a href="#spiele" data-copy="areaGames">Spiele</a>
       <a href="#comics" data-copy="areaComics">Comics</a>
-      <a href="#lernen" data-copy="areaLearn">Lernen</a>
+      <a href="#lernen" data-copy="wilson">Wilsons Trainingsecke</a>
       <a href="#werkstatt" data-copy="areaWorkshop">Werkstatt</a>
     </nav>
     <div class="languages" role="group" aria-label="Sprache" data-label="language">
@@ -38,7 +39,7 @@
         <ul class="area-grid" role="list">
           <li><a href="#spiele"><strong data-copy="areaGames">Spiele</strong><span data-copy="areaGamesHint">Browserspiele und Das Wehr</span></a></li>
           <li><a href="#comics"><strong data-copy="areaComics">Comics</strong><span data-copy="areaComicsHint">Sam &amp; Piet lesen</span></a></li>
-          <li><a href="#lernen"><strong data-copy="areaLearn">Lernen</strong><span data-copy="areaLearnHint">Deutsch mit Bildern</span></a></li>
+          <li><a href="wilson.html" data-link-language="home-only"><strong data-copy="wilson">Wilsons Trainingsecke</strong><span data-copy="areaLearnHint">Deutsch mit Bildkarten üben ↗</span></a></li>
           <li><a href="#werkstatt"><strong data-copy="areaWorkshop">Werkstatt</strong><span data-copy="areaWorkshopHint">PC-Werkstatt und KingLab</span></a></li>
         </ul>
       </nav>
@@ -73,12 +74,13 @@
           </div>
         </section>
         <section id="lernen" class="project" tabindex="-1" aria-labelledby="learn-title">
-          <div class="flashcard" aria-hidden="true"><span lang="de">Bild</span><span data-copy="picture">图</span></div>
+          <div class="wilson-example"><img src="wilson/cup.svg" alt="" width="112" height="112" loading="lazy">
+              <div class="wilson-example-words"><b lang="de">die Tasse</b><span lang="en">cup</span><span lang="zh-Hans">杯子</span></div></div>
           <div class="card">
             <h2 id="learn-title" data-copy="wilson">Wilsons Trainingsecke</h2>
-            <a class="trace-entry" href="#spuren" data-trace-context="lernen" data-copy="traceOpen">Spur hinterlassen</a>
             <p data-copy="wilsonText">Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.</p>
-            <a class="project-link" href="wilson.html" data-link-language="home-only" data-copy="learn">Training öffnen</a>
+            <a class="project-link" href="wilson.html" data-link-language="home-only" data-copy="learn">Bildtrainer öffnen</a>
+            <a class="trace-entry" href="#spuren" data-trace-context="lernen" data-copy="traceOpen">Spur hinterlassen</a>
           </div>
         </section>
       </div>

@@ -15,3 +15,12 @@
 .wilson-challenge-subtitle{font-size:13px;font-weight:500;opacity:.9;overflow-wrap:anywhere}
 
 .image-credit{font-size:11px;line-height:1.5;font-weight:400;color:#536c60;overflow-wrap:anywhere}.image-credit a{text-decoration:underline}
+.language-labels b, .wilson-target-word {
+  padding: .12em .3em;
+  border-radius: .2em;
+  background: var(--yellow);
+  color: var(--ink);
+  font-weight: 700;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}

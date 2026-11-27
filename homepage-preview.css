@@ -58,11 +58,8 @@ h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
 .terrain::after { background: #95c6b5; clip-path: polygon(60% 42%, 65% 42%, 58% 57%, 46% 70%, 44% 80%, 51% 88%, 69% 100%, 42% 100%, 31% 86%, 35% 72%, 52% 57%); }
 .terrain span { background: #153b37; clip-path: polygon(0 56%, 11% 43%, 29% 46%, 44% 60%, 48% 54%, 52% 65%, 73% 62%, 83% 52%, 100% 51%, 100% 100%, 0 100%); }
 .pair { display: grid; gap: 1rem; }
-.cover, .flashcard { height: 9rem; overflow: hidden; }
+.cover, #lernen .wilson-example { height: 9rem; overflow: hidden; }
 .cover img { display: block; inline-size: 100%; block-size: 100%; object-fit: cover; object-position: 50% 22%; }
-.flashcard { display: flex; justify-content: center; align-items: center; background: #d1dacf; }
-.flashcard span { font-family: Georgia, ui-serif, serif; font-size: 1.6rem; font-weight: 700; padding: .75rem 1rem; border: 1px solid #5f7256; border-radius: .35rem; color: #153231; background: #f6edd5; transform: rotate(-10deg); }
-.flashcard span + span { margin-inline-start: -.25rem; transform: rotate(8deg); background: #aacfc2; }
 .card p:not(.status), .rail p:not(.status) { color: var(--muted); }
 .status { width: fit-content; padding: .18rem .5rem; border-radius: .25rem; background: #4e3f2c; color: #ffe0ad; font-weight: 700; font-size: .82rem; }
 .next { font-size: .91rem; }
