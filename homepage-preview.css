@@ -94,3 +94,20 @@ h3, h4 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.17; }
   .bar nav { flex-basis: 100%; }
   .languages { margin-inline-start: 0; }
 }
+
+.trace-entry { display: inline-block; width: fit-content; margin-block: .15rem .3rem; color: var(--accent); text-underline-offset: .18em; }
+#spuren { margin-block-start: .8rem; }
+#spuren summary { min-height: 2.75rem; padding-block: .55rem; color: var(--accent); cursor: pointer; font-weight: 700; }
+.trace-controls, #trace-form, #trace-list { display: grid; min-width: 0; gap: .55rem; }
+.trace-controls { margin-block-start: .4rem; }
+.trace-controls button, .trace-controls select, .trace-controls textarea { width: 100%; min-height: 2.75rem; border: 1px solid var(--line); border-radius: .35rem; padding: .35rem .5rem; background: var(--panel); color: var(--text); font: inherit; }
+.trace-controls button { width: auto; cursor: pointer; }
+.trace-controls button:hover { border-color: var(--accent); }
+.trace-controls textarea { resize: vertical; }
+.trace-actions { display: flex; flex-wrap: wrap; gap: .4rem; }
+#trace-list { list-style: none; margin: 0; padding: 0; }
+#trace-list li { overflow-wrap: anywhere; border-block-start: 1px solid var(--line); padding-block: .5rem; }
+#trace-list p { margin-block: .2rem .4rem; white-space: pre-wrap; }
+#trace-list button { margin-inline-end: .35rem; }
+.rail:has(#spuren[open]) { position: static; }
+.trace-reply { margin-inline-start: .65rem; padding-inline-start: .5rem; border-inline-start: 2px solid var(--line); }
