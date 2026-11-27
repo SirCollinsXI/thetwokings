@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="ttk-release" content="homepage-2026-11">
+  <meta name="description" content="Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.">
+  <link rel="canonical" href="https://thetwokings.de/">
+  <title>TheTwoKings | Spielen, lesen, lernen.</title>
+  <link rel="icon" href="crown.svg">
+  <link rel="stylesheet" href="homepage-preview.css">
+  <link rel="stylesheet" href="wilson-entry.css">
+  <link rel="stylesheet" href="spiele-start.css">
+  <link rel="stylesheet" href="spiele-probe.css">
+  <link rel="stylesheet" href="spiele-start-preview.css">
+  <script src="spiele-texte.js" defer></script>
+  <script src="homepage-preview.js" defer></script>
+  <script src="spiele-probe.js" defer></script>
+  <script src="spuren-store.js" defer></script>
+  <script src="homepage-spuren.js" defer></script>
+  <link rel="stylesheet" href="public-wall.css">
+  <script src="public-wall.js" defer></script>
+  <script src="grusskarte.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#inhalt" data-copy="skip">Zum Inhalt</a>
+  <header class="bar shell">
+    <a class="brand" href="#inhalt"><img src="crown.svg" alt="" width="32" height="32">TheTwoKings</a>
+    <nav id="navigation" aria-label="Hauptnavigation" data-label="nav">
+      <a href="wilson.html" data-link-language="home-only" data-copy="wilson">Wilsons Lernecke</a>
+      <a href="#comics" data-copy="comics">Sams Comic-Werkstatt</a>
+      <a href="#spiele" data-copy="areaGames">Spiele</a>
+      <a href="#werkstatt" data-copy="pc">Phils PC-Werkstatt</a>
+    </nav>
+    <div class="languages" role="group" aria-label="Sprache" data-label="language">
+      <button type="button" data-lang="de" lang="de" aria-label="Deutsch (DE)" aria-pressed="true">DE</button>
+      <button type="button" data-lang="en" lang="en" aria-label="English (EN)" aria-pressed="false">EN</button>
+      <button type="button" data-lang="zh" lang="zh-CN" aria-pressed="false">简体中文</button>
+    </div>
+  </header>
+  <div class="shell layout">
+    <main id="inhalt" tabindex="-1">
+      <section class="intro" aria-labelledby="home-title">
+        <div class="intro-copy">
+        <h1 id="home-title" data-copy="headline">Spielen, lesen, lernen.</h1>
+        <p data-copy="intro">Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.</p>
+        <a class="wall-invite" href="#grusswand" data-copy="wallInvite">Gruß hinterlassen</a>
+        </div>
+        <img class="intro-art" src="assets/homepage-koenige.webp" width="800" height="440" alt="" decoding="async">
+      </section>
+      <nav id="projekte" class="area-nav" tabindex="-1" aria-label="Bereiche entdecken" data-label="areaNav">
+        <ul id="arbeiten" class="area-grid" role="list">
+          <li><a href="wilson.html" data-link-language="home-only"><strong data-copy="wilson">Wilsons Lernecke</strong><span data-copy="areaLearnHint">Deutsch mit Bildkarten üben ↗</span></a></li>
+          <li><a href="#comics"><strong data-copy="comics">Sams Comic-Werkstatt</strong><span data-copy="areaComicsHint">Geschichten und frühe Entwürfe</span></a></li>
+          <li><a href="#spiele"><strong data-copy="areaGames">Spiele</strong><span data-copy="areaGamesHint">Browserspiele und Das Wehr</span></a></li>
+          <li><a href="#werkstatt"><strong data-copy="pc">Phils PC-Werkstatt</strong><span data-copy="areaWorkshopHint">Hilfe beim Aufrüsten</span></a></li>
+        </ul>
+      </nav>
+      <div class="featured-projects">
+        <section id="lernen" class="project" tabindex="-1" aria-labelledby="learn-title">
+          <div class="wilson-example"><img src="wilson/cup.svg" alt="" width="112" height="112">
+              <div class="wilson-example-words"><b lang="de">die Tasse</b><span lang="en">cup</span><span lang="zh-Hans">杯子</span></div></div>
+          <div class="card">
+            <h2 id="learn-title"><span id="wilson-card-name" data-copy="wilson">Wilsons Lernecke</span></h2>
+            <p data-copy="wilsonText">Mit Bildern deutsche Wörter, Artikel und Pluralformen üben.</p>
+            <a class="project-link" href="wilson.html" data-link-language="home-only" data-copy="learn">Bildtrainer öffnen</a>
+            <a class="trace-entry" href="#spuren" data-trace-context="lernen" data-copy="traceOpen">Spur hinterlassen</a>
+          </div>
+        </section>
+        <section id="comics" class="project" tabindex="-1" aria-labelledby="comics-title">
+          <div class="cover"><img src="comic/werkstatt/piet-30-augen/cover.webp" width="360" height="254" alt=""></div>
+          <div class="card">
+            <h2 id="comics-title" data-copy="comics">Sams Comic-Werkstatt</h2>
+            <p data-copy="comicText">Sam zeichnet und erfindet Geschichten. Entdecke Sam &amp; Piet, die Monster-Saga und seine ersten Versuche mit KI.</p>
+            <div class="feature-links">
+              <a class="archive-entry" href="comics.html" data-link-language="project" data-copy="comicArchive">Alle Comics entdecken</a>
+              <a class="project-link" href="comic.html" data-link-language="project" data-copy="read">Sam &amp; Piet lesen</a>
+            </div>
+            <a class="trace-entry" href="#spuren" data-trace-context="comics" data-copy="traceOpen">Spur hinterlassen</a>
+          </div>
+        </section>
+      </div>
+      <section id="spiele" class="game-hub home-games" tabindex="-1" aria-labelledby="games-title">
+        <h2 id="games-title" data-copy="gamesHome">Sams Spielecke</h2>
+        <div class="game-section-intro">
+          <p class="games-availability" data-copy="playNow">Jetzt im Browser spielen</p>
+          <a class="prototype-jump" href="#wehr" data-copy="wehrJump">Zum Inselprojekt „Das Wehr“ ↓</a>
+        </div>
+        <ul class="playable-games game-trials" role="list">
+          <li class="home-game-card">
+            <a href="wuestenbogen.html" data-link-language="project" aria-labelledby="wuestenbogen-play" aria-describedby="wuestenbogen-hint">
+              <img src="game-assets/thumbs/wuestenbogen.webp" width="624" height="264" loading="lazy" alt="">
+              <span class="game-choice">
+                <strong id="wuestenbogen-play" data-copy="bowPlay">Wüstenbogen spielen</strong>
+                <span id="wuestenbogen-hint" data-copy="bowHint">Ziele mit Maus, Finger oder Pfeiltasten. Lande in jeder der drei Runden drei Treffer.</span>
+              </span>
+            </a>
+            <details class="trial-inline trial-controls" name="spieleproben" id="bogen-probe" hidden>
+              <summary data-copy="tryBow">Hier einen Probeschuss machen</summary>
+              <div class="trial-stage bow-stage" aria-hidden="true">
+                <img src="game-assets/thumbs/wuestenbogen.webp" alt="" width="624" height="264" loading="lazy">
+                <span class="trial-sight"></span><span class="trial-impact" hidden></span>
+              </div>
+              <div class="trial-body">
+                <p data-trial-copy="bowHint">Der Wind drückt den Pfeil nach rechts. Halte links von der Mitte vor.</p>
+                <div class="trial-controls" hidden>
+                  <label for="trial-aim" data-trial-copy="aim">Zielen</label>
+                  <input id="trial-aim" type="range" min="-2" max="2" step="1" value="0">
+                  <button type="button" id="trial-shoot" data-trial-copy="shoot">Probeschuss</button>
+                  <p class="trial-feedback" id="bow-result" role="status"></p>
+                </div>
+              </div>
+            </details>
+          </li>
+          <li class="home-game-card">
+            <a href="piratenjagd.html" data-link-language="project" aria-labelledby="piratenjagd-play" aria-describedby="piratenjagd-hint">
+              <img src="game-assets/thumbs/piratenjagd.webp" width="624" height="264" loading="lazy" alt="">
+              <span class="game-choice">
+                <strong id="piratenjagd-play" data-copy="piratePlay">Piratenjagd spielen</strong>
+                <span id="piratenjagd-hint" data-copy="pirateHint">Fange den Dino dreimal auf dem Piratendeck. Tippe auf ein Netz oder drücke 1 bis 5. Spielbare Testszene.</span>
+              </span>
+            </a>
+            <details class="trial-inline trial-controls" name="spieleproben" id="dino-probe" hidden>
+              <summary data-copy="tryDino">Hier ein Fangnetz setzen</summary>
+              <div class="trial-stage dino-stage" aria-hidden="true">
+                <img src="game-assets/thumbs/probe-deck.webp" alt="" width="624" height="264" loading="lazy">
+                <div class="trial-lanes"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+                <img class="trial-rex" src="game-assets/thumbs/probe-dino.webp" alt="" width="174" height="110" loading="lazy">
+                <span class="trial-net" hidden></span>
+              </div>
+              <div class="trial-body">
+                <p id="trial-track">Der Dino steht auf Feld 2 und läuft nach rechts. Wähle das Netz für seinen nächsten Schritt.</p>
+                <div class="trial-controls" hidden>
+                  <div class="trial-nets" role="group" aria-labelledby="trial-track">
+                    <button type="button" data-trial-net="1"><span aria-hidden="true">1</span><span class="trial-net-label">Netz 1</span></button>
+                    <button type="button" data-trial-net="2"><span aria-hidden="true">2</span><span class="trial-net-label">Netz 2</span></button>
+                    <button type="button" data-trial-net="3"><span aria-hidden="true">3</span><span class="trial-net-label">Netz 3</span></button>
+                    <button type="button" data-trial-net="4"><span aria-hidden="true">4</span><span class="trial-net-label">Netz 4</span></button>
+                    <button type="button" data-trial-net="5"><span aria-hidden="true">5</span><span class="trial-net-label">Netz 5</span></button>
+                  </div>
+                  <p class="trial-feedback" id="dino-result" role="status"></p>
+                </div>
+              </div>
+            </details>
+          </li>
+        </ul>
+        <a class="earlier-games" href="klassischer-game-hub.html" data-link-language="project" data-copy="earlierGames">Klassiker öffnen · frühere Fassungen beider Spiele</a>
+        <article id="wehr" class="upcoming-game" tabindex="-1" aria-labelledby="wehr-title">
+          <p class="development-status" data-copy="wehrState">In Entwicklung · Windows-Prototyp</p>
+          <h3 id="wehr-title" data-copy="wehrTitle">Das Wehr &amp; Samis Dino-Insel</h3>
+          <p data-copy="wehrAbout">Vom Wehr führt der Waldsteg zur Dino-Insel. Dort legt die Tierarche an. Beim Händler kannst du deinen gefangenen Rex gegen die ersten beiden Schafe für deine Weide tauschen.</p>
+          <div class="planned-platform" id="wehr-web">
+            <strong data-copy="wehrPlatform">Geplante Browserfassung</strong>
+            <p data-copy="wehrWeb">Eine Browserfreigabe setzt das fertige Spiel, einen getesteten Godot-Webexport und geklärte Rechte an den Spielinhalten voraus.</p>
+          </div>
+          <p class="build-date" data-copy="wehrBuild">Stand für die Homepage · V41 · 27. November 2026</p>
+        </article>
+        <a class="trace-entry" href="#spuren" data-trace-context="spiele" data-copy="traceOpen">Spur hinterlassen</a>
+      </section>
+      <section id="werkstatt" class="more" tabindex="-1" aria-labelledby="workshop-title">
+        <h2 id="workshop-title" data-copy="workshop">Werkstatt &amp; Experimente</h2>
+        <a class="trace-entry" href="#spuren" data-trace-context="werkstatt" data-copy="traceOpen">Spur hinterlassen</a>
+        <div class="pair">
+          <article id="pc" class="project" aria-labelledby="pc-title">
+            <div class="card">
+              <p class="status" data-copy="prototype">Prototyp</p>
+              <h3 id="pc-title" data-copy="pc">Phils PC-Werkstatt</h3>
+              <p data-copy="pcNow">Beschreibe, wo dein PC stockt. Der Check zeigt dir, was du als Nächstes prüfen kannst.</p>
+              <p data-copy="pcData">Der Preisradar zeigt historische Preise aus Deutschland und den USA.</p>
+
+              <ul class="more-links" role="list">
+                <li><a href="werkstatt.html" data-link-language="project" data-copy="pcOpen">PC-Check starten</a></li>
+                <li><a href="klassische-startseite.html#pc" data-link-language data-copy="pcPlanner">Komponenten und Angebote vergleichen</a></li>
+                <li><a href="preisradar.html" data-link-language="project" data-copy="pcRadar">Historische Preise</a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="project" aria-labelledby="lab-title">
+            <div class="card">
+              <h3 id="lab-title">KingLab</h3>
+              <p data-copy="labText">Vergleiche den Koffeingehalt von Getränken.</p>
+              <a href="kinglab/caffeine-clash.html" class="project-link" data-link-language="project" data-copy="labOpen">Koffeinvergleich öffnen</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <aside class="rail" aria-labelledby="trace-title">
+      <section class="rail-panel">
+        <h2 id="trace-title" data-copy="traces">Spuren</h2>
+        <p class="status" data-copy="prototype">Prototyp</p>
+        <p data-copy="traceIntro">Zeig, dass du da warst, sag was geholfen hat oder bring eine Idee weiter.</p>
+        <p class="next" data-copy="traceLocal">Deine Spuren bleiben in diesem Browser.</p>
+        <details id="spuren">
+          <summary data-copy="traceOpen">Spur hinterlassen</summary>
+          <div id="trace-controls" class="trace-controls">
+            <label for="trace-context" data-copy="traceCategory">Bereich</label>
+            <select id="trace-context">
+              <option value="spiele" data-copy="areaGames">Spiele</option>
+              <option value="comics" data-copy="areaComics">Comics</option>
+              <option value="lernen" data-copy="areaLearn">Lernen</option>
+              <option value="werkstatt" data-copy="areaWorkshop">Werkstatt</option>
+            </select>
+            <div class="trace-actions">
+              <button type="button" data-trace-add="presence" data-copy="tracePresence">Ich war hier</button>
+              <button type="button" data-trace-add="helpful" data-copy="traceHelpful">Hat mir geholfen</button>
+            </div>
+            <form id="trace-form">
+              <label for="trace-note" data-copy="traceIdea">Deine Idee</label>
+              <textarea id="trace-note" rows="3" maxlength="180" required></textarea>
+              <p id="trace-parent" class="next" hidden>
+                <span data-copy="traceContinuing">Du baust an einer Spur weiter.</span>
+                <button type="button" id="trace-cancel" data-copy="traceCancel">Auswahl lösen</button>
+              </p>
+              <button type="submit" data-copy="traceSave">Idee speichern</button>
+            </form>
+            <p id="trace-status" class="next" role="status"></p>
+            <ul id="trace-list" role="list" aria-labelledby="trace-title"></ul>
+          </div>
+        </details>
+      </section>
+      <section class="rail-panel public-wall" id="grusswand" aria-labelledby="wall-title">
+        <h2 id="wall-title" data-wall-word="title">Ein Gruß an die Welt</h2>
+        <p data-wall-word="intro">Hinterlasse ein Zeichen für alle, die heute vorbeischauen. Alle sehen den gemeinsamen Tagesstand.</p>
+        <div class="wall-board" hidden>
+          <p><span data-wall-word="day">Tag in Berlin</span> · <time></time></p>
+          <ul class="wall-marks" role="list">
+            <li><button type="button" data-mark="wave"><span aria-hidden="true">👋</span><span data-wall-word="wave">Winken</span></button><output data-count="wave" aria-label="Winkzeichen"></output></li>
+            <li><button type="button" data-mark="star"><span aria-hidden="true">★</span><span data-wall-word="star">Stern</span></button><output data-count="star" aria-label="Sterne"></output></li>
+            <li><button type="button" data-mark="crown"><span aria-hidden="true">♛</span><span data-wall-word="crown">Krone</span></button><output data-count="crown" aria-label="Kronen"></output></li>
+          </ul>
+        </div>
+        <p class="wall-status" role="status" data-wall-word="loading">Der Tagesstand wird geladen.</p>
+        <div class="wall-links">
+          <button type="button" data-wall-refresh data-wall-word="refresh" hidden>Stand neu laden</button>
+          <a href="datenschutz.html#spuren" data-wall-word="privacy">Datenschutz zur Grußwand</a>
+        </div>
+        <details id="grusskarte" class="share-card">
+          <summary data-card-word="title">Grußkarte per Link teilen</summary>
+          <p data-card-word="intro">Alle mit dem Link können deine Karte öffnen. Das Bildzeichen und das Datum stehen im Link. Die Karte erscheint nur über diesen Link.</p>
+          <label for="card-mark" data-card-word="choose">Dein Bildzeichen</label>
+          <select id="card-mark">
+            <option value="wave" data-card-word="wave">Winken</option>
+            <option value="star" data-card-word="star">Stern</option>
+            <option value="crown" data-card-word="crown">Krone</option>
+          </select>
+          <button type="button" id="card-create" data-card-word="create">Grußlink erstellen</button>
+          <figure id="card-view" hidden tabindex="-1">
+            <span id="card-icon" aria-hidden="true"></span>
+            <figcaption><strong data-card-word="greeting">Ein Gruß für dich</strong><span id="card-description"></span></figcaption>
+          </figure>
+          <div id="card-link-box" hidden>
+            <label for="card-link" data-card-word="link">Link zur Karte</label>
+            <input id="card-link" type="text" readonly dir="ltr" spellcheck="false">
+            <button type="button" id="card-copy" data-card-word="copy">Link kopieren</button>
+          </div>
+          <p class="wall-status" id="card-status" role="status"></p>
+        </details>
+        <noscript>JavaScript ist für die Tageswand erforderlich. / The wall requires JavaScript. / 留印记需要启用 JavaScript。</noscript>
+      </section>
+      <section id="stats-panel" class="rail-panel" aria-labelledby="stats-title" hidden>
+        <h2 id="stats-title" data-copy="stats">Aufrufe der Vorschau</h2>
+        <div id="stats-live">
+          <p><time id="stats-day"></time> · <span data-copy="statsTimeZone">Ortszeit Berlin</span></p>
+          <dl class="daily-stats">
+            <div><dt data-copy="statsViews">Startseitenaufrufe</dt><dd id="stats-views"></dd></div>
+          </dl>
+          <p class="next"><span data-copy="statsSince">Messbeginn</span> · <time id="stats-start"></time></p>
+        </div>
+      </section>
+    </aside>
+  </div>
+  <footer class="shell foot">
+    <a href="wilson.html" data-link-language="home-only" data-copy="wilson">Wilsons Lernecke</a>
+    <a href="comics.html" data-link-language="project" data-copy="comics">Sams Comic-Werkstatt</a>
+    <a href="werkstatt.html" data-link-language="project" data-copy="pc">Phils PC-Werkstatt</a>
+    <a href="klassische-startseite.html" data-link-language data-copy="existing">Klassische Startseite</a>
+    <a href="impressum.html" data-copy="imprint">Impressum</a>
+    <a href="datenschutz.html" data-copy="privacy">Datenschutz</a>
+  </footer>
+</body>
+</html>

@@ -17,7 +17,7 @@
 <div class="panel" id="windBox"><div id="windText"></div><div id="windBar"><div id="windFill"></div></div></div>
 <div class="panel" id="powerWrap"><div id="powerBar"></div></div>
 <div class="panel" id="hintBox">Links ziehen & loslassen · Pfeiltasten & Leertaste</div><button id="exitBtn" class="secondary">Zum Start</button>
-<section id="startOverlay" aria-label="Spielstart"><div class="card"><div class="brand"><span class="brandMark">↗</span><span class="brandName"></span></div><h1 id="gameTitle"></h1><p id="intro"></p><div class="facts"><span id="rounds"></span><span>3 Treffer pro Runde</span></div><p class="tip">Zum Zielen in der linken Spielhälfte nach links unten ziehen, dann loslassen. Alternativ: Pfeiltasten und Leertaste. <span class="portrait">Auf dem Handy am besten quer spielen.</span></p><button id="startBtn">Challenge starten ↗</button><p class="note">Keine Anmeldung. Keine öffentliche Bestenliste.</p></div></section>
+<section id="startOverlay" aria-label="Spielstart"><div class="card"><div class="brand"><span class="brandMark">↗</span><span class="brandName"></span></div><h1 id="gameTitle"></h1><p id="intro"></p><div class="facts"><span id="rounds"></span><span>3 Treffer pro Runde</span></div><p class="tip">Zum Zielen in der linken Spielhälfte nach links unten ziehen, dann loslassen. Alternativ: Pfeiltasten und Leertaste. <span class="portrait">Auf dem Handy am besten quer spielen.</span></p><button id="startBtn">Challenge starten ↗</button><p class="note">Keine Anmeldung. Keine öffentliche Bestenliste.</p><a hidden data-preview-return style="color:var(--accent)"></a></div></section>
 <section id="avatarModal" aria-label="Spielergebnis" aria-live="polite"><div class="card"><div class="brand brandName"></div><h2>Volltreffer.</h2><p>Alle Runden geschafft. Deine Zeit:</p><div id="finalTimeLabel" class="result"></div><div class="row"><button id="restartBtn">Noch einmal spielen ↗</button><button id="homeFinishBtn" class="secondary">Zum Start</button></div><p class="note">Das Ergebnis wird nicht gespeichert oder übertragen.</p></div></section>
 <script>
 'use strict';
@@ -73,13 +73,25 @@ addEventListener('resize',()=>{resize();render()});resize();render();updateHud()
 (()=>{'use strict';
 const table=[["Treffer","Hits","命中"],["Pfeile","Arrows","箭矢"],["Zeit","Time","时间"],["Links ziehen & loslassen · Pfeiltasten & Leertaste","Drag left & release · arrow keys and space","向左拖动后松开 · 方向键和空格键"],["Zum Start","Back to start","返回开始"],["3 Treffer pro Runde","3 hits per round","每局命中3次"],["Zum Zielen in der linken Spielhälfte nach links unten ziehen, dann loslassen. Alternativ: Pfeiltasten und Leertaste.","Aim by dragging down-left from the left half, then release. Alternatively use arrow keys and space.","在屏幕左半边向左下拖动瞄准后松开，或使用方向键与空格键。"],["Auf dem Handy am besten quer spielen.","Landscape mode is best on phones.","手机建议横屏游玩。"],["Challenge starten ↗","Start challenge ↗","开始挑战 ↗"],["Keine Anmeldung. Keine öffentliche Bestenliste.","No login. No public leaderboard.","无需登录，没有公开排行榜。"],["Volltreffer.","Bullseye!","正中靶心！"],["Alle Runden geschafft. Deine Zeit:","All rounds complete. Your time:","全部关卡完成，用时："],["Noch einmal spielen ↗","Play again ↗","再玩一次 ↗"],["Das Ergebnis wird nicht gespeichert oder übertragen.","Your result is neither saved nor transmitted.","成绩不会保存或上传。"],["Bogenschießspiel. Mit Pfeiltasten zielen und Stärke ändern, mit Leertaste schießen, Escape zurück zum Start.","Archery game. Aim with arrow keys, shoot with space, return with Escape.","射箭游戏。使用方向键瞄准，空格键射箭，Escape返回开始。"],["Spielstart","Start game","开始游戏"],["Spielergebnis","Game result","游戏结果"],["Wüsten-Bogen","Desert Bow","沙漠射箭"],["Wind: Still","Wind: Calm","风：无风"],["Wind: Rückenwind","Wind: Tailwind","风：顺风"],["Wind: Gegenwind","Wind: Headwind","风：逆风"]];const dict=new Map(table.map(([de,en,zh])=>[de,{de,en,zh}]));
 const original=new WeakMap(),last=new WeakMap(),attrs=new WeakMap();
-const supported=['de','en','zh'];const param=new URLSearchParams(location.search).get('lang');
+const supported=['de','en','zh'];
+const entryParams = new URLSearchParams(location.search);
+const param = entryParams.get('lang');
+const entryPage = entryParams.get('from');
+const returnPages = new Map([['homepage', 'index.html'], ['homepage-preview', 'homepage-preview.html'], ['klassische-startseite', 'klassische-startseite.html']]);
+const previewReturn = returnPages.has(entryPage)
+  ? document.querySelector('[data-preview-return]') : null;
 const browser=(navigator.language||'de').toLowerCase();let lang=supported.includes(param)?param:(()=>{try{let v=sessionStorage.getItem('ttk-language');if(supported.includes(v))return v;}catch(_){}return browser.startsWith('zh')?'zh':browser.startsWith('en')?'en':'de'})(); 
 const t=s=>{if(lang==='de'||!s)return s;const v=dict.get(s.trim())?.[lang];if(!v)return s;return s.replace(s.trim(),v)};
 function visit(n){if(!n.parentElement||n.parentElement.closest('script,style,#wb-language'))return;const now=n.nodeValue;let src=original.get(n);if(src===undefined||(last.has(n)&&last.get(n)!==now)){src=now;original.set(n,src);}const out=t(src);if(out!==now)n.nodeValue=out;last.set(n,out);}
 function apply(el=document.body){if(!el)return;const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n;while((n=walker.nextNode()))visit(n);
 for(const a of document.querySelectorAll('[aria-label],[placeholder]')){let o=attrs.get(a);if(!o){o={};attrs.set(a,o)}for(const k of ['aria-label','placeholder'])if(a.hasAttribute(k)){if(!(k in o))o[k]=a.getAttribute(k);let v=t(o[k]);if(a.getAttribute(k)!==v)a.setAttribute(k,v)}}
 document.documentElement.lang=lang==='zh'?'zh-CN':lang;
+if (previewReturn) {
+  const home = returnPages.get(entryPage);
+  previewReturn.href = home + '?lang=' + lang + '#spiele';
+  previewReturn.textContent = { de: '← Zur Spieleübersicht', en: '← Back to games', zh: '← 返回游戏区' }[lang];
+  previewReturn.hidden = false;
+}
 document.title=lang==='zh'?'沙漠射箭 | TheTwoKings':lang==='en'?'Desert Bow | TheTwoKings':'Wüsten-Bogen | The Two Kings';
 document.querySelectorAll('#wb-language [data-lang]').forEach(b=>{b.classList.toggle('selected',b.dataset.lang===lang);b.setAttribute('aria-pressed',String(b.dataset.lang===lang));});
 }

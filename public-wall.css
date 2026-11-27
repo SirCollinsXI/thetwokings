@@ -1,0 +1,52 @@
+.public-wall [hidden] { display: none; }
+.public-wall p { margin: .55rem 0; }
+.public-wall .wall-marks {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .45rem;
+  padding: 0;
+  margin: .65rem 0;
+}
+.public-wall .wall-marks li { text-align: center; min-width: 0; }
+.public-wall .wall-marks button {
+  font: inherit;
+  color: inherit;
+  width: 100%;
+  min-height: 3.5rem;
+  display: grid;
+  place-content: center;
+  gap: .15rem;
+  background: var(--panel, #202125);
+  border: 1px solid var(--line, #55575d);
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.wall-marks button span:first-child { font-size: 1.35rem; line-height: 1; }
+.wall-marks button span:last-child { font-size: .82rem; overflow-wrap: anywhere; }
+.wall-marks button:not(:disabled):hover, .wall-marks button:focus-visible { border-color: var(--accent, #c8fa72); }
+.wall-marks button:disabled { cursor: wait; }
+.wall-marks output { display: block; font-variant-numeric: tabular-nums; }
+.public-wall .wall-links { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
+.wall-links button, .wall-links a { font: inherit; font-size: .88rem; }
+.wall-links button {
+  color: inherit; background: transparent; border: 0; padding: .55rem 0; cursor: pointer;
+  text-decoration: underline; text-underline-offset: .16em;
+}
+.public-wall .wall-status { color: var(--muted, #cbccd0); }
+
+.share-card { margin-top: 1rem; padding-top: .7rem; border-top: 1px solid var(--line, #55575d); }
+.share-card summary { cursor: pointer; font-weight: 650; }
+.share-card label { display: block; margin-top: .6rem; }
+.share-card input, .share-card select, .share-card button { font: inherit; min-height: 44px; max-width: 100%; }
+.share-card button { cursor: pointer; }
+.share-card input { width: 100%; margin: .2rem 0; }
+.share-card #card-view {
+  display: grid; grid-template-columns: auto minmax(0,1fr); align-items: center; gap: .7rem;
+  margin: 1rem 0; padding: .9rem; border-inline-start: 3px solid var(--accent, #c8fa72);
+  background: var(--panel, #202125);
+}
+.share-card #card-view[hidden] { display: none; }
+.share-card #card-icon { font-size: 2.1rem; line-height: 1; color: var(--accent, #c8fa72); }
+.share-card figcaption { display: grid; gap: .15rem; }
+.share-card #card-description { font-size: .86rem; }

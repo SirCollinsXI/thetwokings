@@ -1,0 +1,26 @@
+:root {
+  color-scheme: dark;
+  font: 100%/1.5 system-ui, sans-serif;
+  background: #102627;
+  color: #fff7e8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+.panel { width: min(38rem, 100%); margin: clamp(1rem, 8vh, 5rem) auto; padding: 1.25rem; }
+nav, .actions { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; }
+nav a { color: #c2d0ca; padding-block: .5rem; }
+nav [aria-current] { color: #ffe0ad; font-weight: 700; }
+h1 { font: 600 clamp(1.9rem, 5vw, 2.8rem)/1.15 Georgia, serif; }
+.task { font-size: 1.2rem; }
+button, textarea { font: inherit; }
+button { min-height: 44px; padding: .5rem .9rem; border: 1px solid transparent; border-radius: .4rem; background: #f4c982; color: #182d2c; font-weight: 650; cursor: pointer; }
+button.secondary { background: #173132; color: #fff7e8; border-color: #7f9c98; }
+:focus-visible { outline: 3px solid #ffd995; outline-offset: 3px; }
+#study { display: flex; flex-direction: column; height: 100vh; height: 100dvh; }
+.taskbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .35rem .75rem; padding: .45rem .85rem; border-bottom: 1px solid #7f9c98; }
+.taskbar p { margin: 0; flex: 1 1 14rem; font-size: .9rem; }
+#loading { margin: 1rem; }
+#site[aria-busy="true"] { visibility: hidden; }
+#site { display: block; width: 100%; flex: 1 1 0%; min-height: 0; border: 0; background: #102627; }
+#report { display: block; width: 100%; margin: .5rem 0 1rem; padding: .75rem; border: 1px solid #7f9c98; border-radius: .4rem; color: inherit; background: #173132; resize: vertical; }

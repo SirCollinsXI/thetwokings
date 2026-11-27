@@ -22,6 +22,16 @@ const comicCopy=[
 ];
 const dict=new Map(lines.map(([de,en,zh])=>[de,{en,zh}]));
 for(const [de,en,zh] of [...extra,...comicCopy,...(window.samWorkshopCopy||[])])dict.set(de,{en,zh});
+const pirateTraces = [
+  ['Deine Spur zur Piratenjagd', 'Your trace on Pirate Hunt', '给《海盗冒险》留个印记'],
+  ['Deine Spur bleibt in diesem Browser.', 'Your trace stays in this browser.', '你的印记只保存在当前浏览器中。'],
+  ['Steuerung war knifflig', 'The controls were tricky', '操作有点难'],
+  ['Idee ergänzen', 'Add an idea', '补充想法'],
+  ['Was würdest du am Spiel ändern?', 'What would you change about the game?', '你想改进游戏的哪个地方？'],
+  ['Idee speichern', 'Save idea', '保存点子'],
+  ['Spiele-Spuren ansehen', 'View game traces', '查看游戏印记'],
+];
+for (const [de, en, zh] of pirateTraces) dict.set(de, { en, zh });
 let lang='de';
 const allowed=['de','en','zh'],original=new WeakMap(),last=new WeakMap(),attributes=new WeakMap();
 const locale=(v)=>v==='zh'?'zh-CN':v;

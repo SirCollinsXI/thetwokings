@@ -63,14 +63,30 @@ jobs:
           CHROME="$(command -v google-chrome || command -v chromium)"
           for lang in de en zh; do
             case "$lang" in
-              de) label='Wilsons Deutsch-Lernecke' ;;
-              en) label='Wilson’s German Learning Corner' ;;
-              zh) label='Wilson 的德语学习角' ;;
+              de) label='Wilsons Deutsch-Lernecke'; home_label='Wilsons Lernecke' ;;
+              en) label='Wilson’s German Learning Corner'; home_label='Wilson’s Learning Corner' ;;
+              zh) label='Wilson 的德语学习角'; home_label='Wilson 的学习角' ;;
             esac
             DOM="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=4000 --dump-dom "http://127.0.0.1:8765/index.html?lang=$lang" 2>/dev/null)"
-            grep -Fq "$label" <<< "$DOM" || { echo "Missing homepage navigation: $lang"; exit 1; }
-            grep -Fq "id=\"wilson-card-name\">$label</h3>" <<< "$DOM" || { echo "Missing localized Wilson tile: $lang"; exit 1; }
-            grep -Fq "href=\"/wilson?lang=$lang\"" <<< "$DOM" || { echo "Missing Wilson entry route: $lang"; exit 1; }
+            grep -Fq "$home_label" <<< "$DOM" || { echo "Missing homepage navigation: $lang"; exit 1; }
+            HOMEPAGE_LABEL="$home_label" PAGE_LANG="$lang" node -e '
+              const html = require("node:fs").readFileSync(0, "utf8");
+              const origin = "http://127.0.0.1:8765";
+              const lesson = html.match(/<section\b[^>]*\bid="lernen"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+              if (!lesson || !lesson.match(/<h2\b[^>]*>[\s\S]*?<\/h2>/)?.[0].includes(process.env.HOMEPAGE_LABEL)) {
+                throw new Error("Missing localized Wilson tile title: " + process.env.PAGE_LANG);
+              }
+              const area = id => html.match(new RegExp(`<nav\\b[^>]*\\bid="${id}"[^>]*>([\\s\\S]*?)</nav>`))?.[1];
+              for (const block of [area("navigation"), area("projekte"), lesson, html.match(/<footer\b[^>]*>([\s\S]*?)<\/footer>/)?.[1]]) {
+                const tag = block?.match(/<a\b[^>]*\bdata-link-language="home-only"[^>]*>/)?.[0];
+                const href = tag?.match(/\shref="([^"]+)"/)?.[1];
+                if (!href) throw new Error("Wilson link missing in navigation, projects, learning tile or footer");
+                const url = new URL(href.replaceAll("&amp;", "&"), origin);
+                if (url.origin !== origin || !/^\/wilson(?:\.html)?$/.test(url.pathname)
+                    || ["lang", "homeLang"].some(key => url.searchParams.get(key) !== process.env.PAGE_LANG)
+                    || url.searchParams.get("from") !== "homepage") throw new Error("Invalid Wilson link: " + url);
+              }
+            ' <<< "$DOM"
             LESSON="$("$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=3000 --dump-dom "http://127.0.0.1:8765/wilson.html?lang=$lang" 2>/dev/null)"
             grep -Fq "data-t=\"cornerTitle\">$label</h1>" <<< "$LESSON" || { echo "Wilson entry did not retain $lang"; exit 1; }
             grep -Fq "href=\"wilson-input.html?lang=$lang\"" <<< "$LESSON" || { echo "Trainer language link missing: $lang"; exit 1; }
