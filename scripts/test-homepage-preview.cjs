@@ -41,6 +41,7 @@ async function testStudy(browser) {
   const paths = [
     ['A', 'en', ['#dino-probe summary', '[data-trial-net="3"]'], 'Goal reached · Yes'],
     ['A', 'de', ['#navigation a[href="#spiele"]', '#wuestenbogen-play'], 'Ziel erreicht · Ja'],
+    ['A', 'zh', ['a[data-game="inselpfad"]'], '是否达成目标 · 是'],
     ['A', 'zh', ['#piratenjagd-play'], '是否达成目标 · 是'],
     ['A', 'en', ['.earlier-games', '#card-bogen'], 'Goal reached · Yes'],
     ['B', 'en', ['#comics .archive-entry', 'a[href*="monster-saga"].button'], 'Goal reached · Yes'],

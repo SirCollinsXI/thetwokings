@@ -91,3 +91,29 @@
 @media (prefers-reduced-motion: reduce) {
   .trial-inline .trial-rex { transition: none; }
 }
+
+.tide-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(8rem, 24%, 14rem);
+  align-items: center;
+  gap: clamp(.8rem, 3vw, 2rem);
+  margin: 0 0 1rem;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid #526e70;
+  border-inline-start: .3rem solid #edcf88;
+  border-radius: .45rem;
+  background: linear-gradient(115deg, #1c272c, #153237);
+  color: #f7f1e0;
+  text-decoration: none;
+}
+.tide-map { display: block; width: 100%; height: auto; border-radius: .3rem; }
+@media (max-width: 35rem) {
+  .tide-feature { grid-template-columns: minmax(0, 1fr); }
+  .tide-map { max-width: 12rem; justify-self: start; }
+}
+.tide-feature-copy { display: grid; gap: .5rem; max-width: 62ch; }
+#tide-name { font-size: clamp(1.3rem, 2.4vw, 2rem); line-height: 1.15; }
+#tide-rule { color: #d3ddda; line-height: 1.45; }
+#tide-start { color: #ffdd90; font-weight: 700; text-decoration: underline; text-underline-offset: .18em; }
+.tide-feature:hover { border-color: #edcf88; }
+.tide-feature:focus-visible { outline: 3px solid #edcf88; outline-offset: 3px; }

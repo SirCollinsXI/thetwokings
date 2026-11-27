@@ -1,6 +1,9 @@
 const homepageGamesCopy = {
   gamesHome: ["Sams Spielecke","Sam’s Games Corner","Sam 的游戏角"],
   playNow: ["Jetzt im Browser spielen","Play in your browser","现在就能在浏览器里玩"],
+  tideName: ["Dino-Kurier · Die Gezeitenpost", "Dino Courier · The Tide Post", "恐龙邮差 · 潮汐邮局"],
+  tideRule: ["Bring den Brief zum Leuchtturm. Nimm den langen Weg über Land oder warte auf Ebbe und kürze übers Riff ab.", "Deliver the letter to the lighthouse. Take the long route over land or wait for low tide and cross the reef.", "把信送到灯塔。你可以绕陆路，也可以等到退潮，抄近路穿过礁石。"],
+  tideStart: ["Mission spielen →", "Play the mission →", "开始送信 →"],
   bowPlay: ["Wüstenbogen spielen","Play Desert Archery","玩沙漠射箭"],
   bowHint: ["Ziele mit Maus, Finger oder Pfeiltasten. Lande in jeder der drei Runden drei Treffer.","Aim with the mouse, touch or arrow keys. Land three hits in each of three rounds.","用鼠标、触屏或方向键瞄准。共三轮，每轮命中三次。"],
   piratePlay: ["Piratenjagd spielen","Play Pirate Hunt","玩海盗冒险"],
