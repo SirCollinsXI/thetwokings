@@ -25676,5 +25676,145 @@ const WILSON_IMAGE_CANDIDATES=[
       },
       "reason": "Gesucht ist der ganze markierte Aufbau mit Fenster, der aus der schrägen Dachfläche herausragt."
     }
+  },
+  {
+    "id": "v564",
+    "de": "der Kassenzettel",
+    "plural": "die Kassenzettel",
+    "en": "receipt",
+    "zh": "购物小票",
+    "pinyin": "gòuwù xiǎopiào",
+    "path": "wilson/original-supermarket/v564-kassenzettel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "supermarkt-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkasn̩ˌt͡sɛtl̩/",
+      "context": {
+        "de": "Auf dem schmalen Papier stehen die bezahlten Artikel, der Gesamtbetrag und ein Strichcode.",
+        "en": "The narrow slip lists the purchased items, the total and a barcode.",
+        "zh": "这张窄纸上列着买过的商品、总金额和条形码。"
+      },
+      "reason": "Auf dem schmalen Papier stehen die bezahlten Artikel, der Gesamtbetrag und ein Strichcode."
+    }
+  },
+  {
+    "id": "v753",
+    "de": "die Münze",
+    "plural": "die Münzen",
+    "en": "coin",
+    "zh": "硬币",
+    "pinyin": "yìngbì",
+    "path": "wilson/original-supermarket/v753-muenze.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "supermarkt-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈmʏnt͡sə/",
+      "context": {
+        "de": "Das runde Geldstück ist aus Metall.",
+        "en": "The round piece of money is made of metal.",
+        "zh": "这种圆形的货币用金属制成。"
+      },
+      "reason": "Das runde Geldstück ist aus Metall."
+    }
+  },
+  {
+    "id": "v408",
+    "de": "der Geldschein",
+    "plural": "die Geldscheine",
+    "en": "banknote",
+    "zh": "纸币",
+    "pinyin": "zhǐbì",
+    "path": "wilson/original-supermarket/v408-geldschein.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "supermarkt-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈɡɛltˌʃaɪ̯n/",
+      "context": {
+        "de": "Dieses Geld wird als rechteckiges Blatt mit aufgedrucktem Wert ausgegeben.",
+        "en": "This money is issued as a rectangular sheet with its value printed on it.",
+        "zh": "这种钱是长方形的纸，上面印着面额。"
+      },
+      "reason": "Dieses Geld wird als rechteckiges Blatt mit aufgedrucktem Wert ausgegeben."
+    }
+  },
+  {
+    "id": "v1278",
+    "de": "das Warentransportband",
+    "plural": "die Warentransportbänder",
+    "en": "checkout conveyor belt",
+    "zh": "收银传送带",
+    "pinyin": "shōuyín chuánsòngdài",
+    "path": "wilson/original-supermarket/v1278-warentransportband.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "supermarkt-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈvaːʁən tʁansˌpɔʁtˌbant/",
+      "context": {
+        "de": "Die farbige bewegliche Fläche bringt die Einkäufe an der Kasse nach vorn.",
+        "en": "The highlighted moving surface carries the shopping forward at the checkout.",
+        "zh": "在收银台，标出的移动带面会把商品送到前面。"
+      },
+      "reason": "Die farbige bewegliche Fläche bringt die Einkäufe an der Kasse nach vorn."
+    }
+  },
+  {
+    "id": "v646",
+    "de": "das Kühlregal",
+    "plural": "die Kühlregale",
+    "en": "refrigerated display cabinet",
+    "zh": "冷藏货柜",
+    "pinyin": "lěngcáng huòguì",
+    "path": "wilson/original-supermarket/v646-kuehlregal.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten.",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "supermarkt-06",
+      "method": "Eigenes Motiv mit dreisprachigem Bildhinweis; Wortformen und Übersetzungen redaktionell abgeglichen.",
+      "ipa": "/ˈkyːlʁeˌɡaːl/",
+      "context": {
+        "de": "Im Laden stehen hier Milch und Joghurt griffbereit auf mehreren gekühlten Ebenen.",
+        "en": "Milk and yoghurt are within reach on several chilled shelves in the shop.",
+        "zh": "商店里的牛奶和酸奶摆在几层冷藏搁板上，伸手就能拿到。"
+      },
+      "reason": "Im Laden stehen hier Milch und Joghurt griffbereit auf mehreren gekühlten Ebenen."
+    }
   }
 ];
