@@ -1,11 +1,12 @@
 # Wilson – gesicherter Arbeitsstand, 27.11.2026
 
-Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **719 aktive Karten**. Paket 3 ergänzt fünf Mobilitätsbegriffe. Bis zum Ziel fehlen **781 Karten**. Auf der Hauptdomain wurden zuletzt **714 aktive Karten** bestätigt.
+Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser Arbeitsstand enthält **724 aktive Karten**. Paket 04 ergänzt fünf Begriffe zu Bus und Bahn. Bis zum Ziel fehlen **776 Karten**. `main` steht seit [PR #12](https://github.com/SirCollinsXI/thetwokings/pull/12) bei **719 aktiven Karten**. Die [Live-Galerie](https://thetwokings.de/wilson-image-review) zeigte beim direkten Aufruf am 27.11.2026 ebenfalls **719 aktive Karten**.
 
 | Paket | Commit | Karten | Tests | Offen |
 | --- | --- | --- | --- | --- |
 | 2 · Küche und Haushalt | `3c0ecc04a4aa33bafa225591bb82d75fbd546b99` | +5 → 714 | Website, Eingabe, Vokabular, CTA, 222 historische Bild-Hashes, bytegleicher Offline-Build, Live-Galerie und Kartenaufruf | Hörbare Geräteausgabe |
-| 3 · Unterwegs | [Änderungen](https://github.com/SirCollinsXI/thetwokings/compare/main...codex/wilson-mobility-03) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Live-Abgleich nach Deploy und hörbare Geräteausgabe |
+| 03 · Unterwegs | [PR #12](https://github.com/SirCollinsXI/thetwokings/pull/12) | +5 → 719 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA, Offline-Build und Live-Abgleich | Hörbare Geräteausgabe |
+| 04 · Bus & Bahn | [`9cc0302`](https://github.com/SirCollinsXI/thetwokings/commit/9cc0302c81f75acf8061654793bf12e75a43991b) | +5 → 724 | Wortformen, SVG, Galerie, Eingabe, Lernstand, CTA und Offline-Build | Live-Abgleich nach Veröffentlichung und hörbare Geräteausgabe |
 
 ## Bestand
 
@@ -17,11 +18,12 @@ Ziel sind **1500 tatsächlich nutzbare, einzeln geprüfte Bildkarten**. Dieser A
 | Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 1 | 25 | Ja |
 | Eigene SVG-Zeichnungen · Küche und Haushalt, Paket 2 | 5 | Ja |
 | Eigene SVG-Zeichnungen · Unterwegs, Paket 3 | 5 | Ja |
+| Eigene SVG-Zeichnungen · Bus & Bahn, Paket 04 | 5 | Ja |
 | Gesperrte Zuordnungen | 47 | Nein |
 | Alternative oder doppelte Motive | 10 | Nein |
 | Ungeprüfte Kandidaten im gespeicherten Manifest | 0 | Nein |
 
-Die 719 Karten umfassen **643 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
+Die 724 Karten umfassen **648 Nomen**, **25 Tätigkeiten/Infinitive**, **34 Zahl-/Bruchaufgaben**, **12 Eigenschafts-/Lage-/Ordnungsaufgaben** und **5 Wendungen**. Zahlenaufgaben sind ausdrücklich Zahlenaufgaben, keine zusätzlichen Gegenstandsillustrationen. Unbebilderte Wörter im Hauptbestand zählen nicht als fertige Karten. Alternative Motive innerhalb einer bereits vorhandenen Wortzuordnung zählen ebenfalls nicht zusätzlich.
 
 ## Küche und Haushalt, Paket 1
 
@@ -48,6 +50,24 @@ Die Galerie zeigt unter **Neu · Unterwegs** fünf eigene SVGs für bestehende L
 | `v633` | der Kreisverkehr, die Kreisverkehre | roundabout | 环形交叉路口 |
 
 Beim Fahrkartenautomaten zeigt der Trainer den Hinweis zur N-Deklination. Der Plural *Kreisverkehre* bezieht sich auf die Straßenbauform. *环岛* ist eine weitere gebräuchliche Bezeichnung für diesen Begriff. [Duden · Fahrkartenautomat](https://www.duden.de/deklination/substantive/Fahrkartenautomat) · [Cambridge · Kreisverkehr](https://dictionary.cambridge.org/de/worterbuch/deutsch-englisch/kreisverkehr) · [Cambridge · roundabout](https://dictionary.cambridge.org/dictionary/english-chinese-simplified/roundabout)
+
+## Bus & Bahn, Paket 04
+
+Der Galeriefilter **Neu · Bus & Bahn** zeigt fünf vorhandene Lexikon-IDs mit eigenen SVGs unter `wilson/original-transit/`. TheTwoKings hat die fünf Motive als KI-gestützte Projektzeichnungen erstellt und bei 120 × 85 sowie 220 × 156 Pixeln einzeln geprüft. Die Hinweise in Deutsch, Englisch und Mandarin beschreiben den jeweiligen Gegenstand im Verkehrskontext. GPT hat Sprache und Bild für dieses Paket geprüft. Kimi pausierte.
+
+| ID | Karte | Englisch | Mandarin |
+| --- | --- | --- | --- |
+| `v168` | die Bushaltestelle, die Bushaltestellen | bus stop | 公交车站 |
+| `v313` | die Fahrkarte, die Fahrkarten | travel ticket | 车票 |
+| `v315` | der Fahrplan, die Fahrpläne | timetable | 时刻表 |
+| `v461` | der Halteknopf, die Halteknöpfe | stop request button | 下车铃按钮 |
+| `v462` | die Halteschlaufe, die Halteschlaufen | grab strap | 扶手吊环 |
+
+Bei `v461` bezeichnet **下车铃按钮** den Knopf im Bus, mit dem Fahrgäste den Ausstiegswunsch melden. Die freigegebene Karte übernimmt diese Form mit Pinyin **xiàchēlíng ànniǔ**. [Verkehrsgesellschaft Suqian · Haltewunsch](https://www.sqjtcy.com/a/gsxw/2023-03-24/5852.html) · [Verkehrsverbund Rhein-Neckar · Tipps zum Busfahren](https://www.vrn.de/service/downloads/mobilitaetstraining/dokumente/tipps_zum_busfahren.pdf) · [Stadt Qianjiang · Halteschlaufen](https://www.hbqj.gov.cn/xwzx/jrqj/qjyw/202605/t20260529_5946601.html)
+
+Die Wortformen für Bushaltestelle, Fahrkarte und Fahrplan wurden im Duden abgeglichen. Für Halteknopf und Halteschlaufe stützen PONS und dict.cc die Formen. Keines der fünf Nomen erfordert die N-Deklination. Die Lautschrift für Halteknopf wurde aus den Wortbestandteilen abgeleitet. [Duden · Bushaltestelle](https://www.duden.de/rechtschreibung/Bushaltestelle) · [Duden · Fahrkarte](https://www.duden.de/rechtschreibung/Fahrkarte) · [Duden · Fahrplan](https://www.duden.de/deklination/substantive/Fahrplan) · [PONS · Halteknopf](https://en.pons.com/translate/german-french/Halteknopf) · [dict.cc · Halteschlaufe](https://www.dict.cc/german-english/Halteschlaufe.html)
+
+Der Vergleich mit Paket 03 bestätigt alle 719 bestehenden Eingabekarten samt Bild-Hashes. Die automatisierten Prüfungen decken eindeutige IDs, Lemmata und Bild-Hashes ab. Der Offline-Build ist bytegleich reproduzierbar und enthält 724 Bilder.
 
 ## Was gerettet und zusammengeführt wurde
 
@@ -82,13 +102,13 @@ node scripts/build-wilson-offline.cjs
 python scripts/render-wilson-review.py /tmp/wilson-review
 ```
 
-Inhaltstests prüfen alle 719 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
+Inhaltstests prüfen alle 724 Karten und 222 historische Bild-Hashes, eindeutige IDs/Lemmata/Bild-Hashes, vollständige DE/EN/ZH/IPA, Quellen, Sperrungen, Aufgaben, Antwortvarianten, Retry, Audio-Ansteuerung/Fallback, Speichern/Neustart, Export/Import-Validierung, IME und Wiederholungen. Der Offline-Download wird aus denselben Daten mit allen aktiven SVGs eingebettet erzeugt; Quellen-/Navigationslinks sowie einige Gerätestimmen benötigen Internet.
 
 `scripts/wilson-browser-preview.html` stellt echte Seiten in 390 und 1280 CSS-Pixeln für die Browserprüfung dar. Das ersetzt keine Tests auf echten iPhone-/Android-Geräten; hörbare Ausgabe und gerätespezifische Tastaturen müssen dort noch geprüft werden.
 
 ## Nächste Arbeit
 
-1. Weitere 781 eindeutige Karten beschaffen oder eigenständig erstellen und einzeln prüfen. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
+1. Weitere 776 eindeutige Karten beschaffen oder eigenständig erstellen und einzeln prüfen. Zuerst konkrete unbebilderte Gegenstände aus dem vorhandenen Lexikon, danach passende Szenen für Tätigkeiten und abstrakte Begriffe.
 2. Die 47 gesperrten Zuordnungen ersetzen oder mit belastbarem Kontext korrigieren; alternative Motive niemals als weitere Wörter zählen.
 3. Deutsche Wortformen/IPA und Mandarin unabhängig prüfen lassen; bisherige Sichtung transparent als redaktionellen Erststand behandeln.
 4. Den jeweils aktuellen `main` erneut lesen, diese Datei und das Manifest verwenden und kleinere getestete Ausbaustände tatsächlich sichern. Keine ungesicherten lokalen Arbeitsschritte als veröffentlicht ausgeben.

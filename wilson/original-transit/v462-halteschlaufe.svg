@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" role="img" aria-labelledby="title">
+  <title id="title">Halteschlaufe im Bus</title>
+  <rect width="240" height="170" rx="15" fill="#f4f8f7"/>
+  <path d="M19 18h202v131H19z" fill="#e3eeec"/>
+  <path d="M24 52h192v64H24z" fill="#d4e7e9"/>
+  <path d="M24 117h192M25 52h190M67 52v64m104-64v64" fill="none" stroke="#a7bec2" stroke-width="3"/>
+  <path d="M25 92q23-11 43-4t57 3q30-12 46-7t44 5" fill="none" stroke="#bcd4d3" stroke-width="5"/>
+  <path d="M44 129h26q8 0 8 9v11H35v-11q0-9 9-9zm141 0h24q8 0 8 9v11h-41v-11q0-9 9-9z" fill="#8eacb4"/>
+  <path d="M22 31h195" fill="none" stroke="#546e7a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M24 28h191" fill="none" stroke="#acc3c6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M49 31v22m149-22v22" fill="none" stroke="#859fa5" stroke-width="5"/>
+  <path d="m47 54-12 19q-4 6 3 7h22q7-1 3-7L51 54q-2-3-4 0zm149 0-12 19q-4 6 3 7h22q7-1 3-7l-12-19q-2-3-4 0z" fill="none" stroke="#90aab0" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="111" y="23" width="18" height="51" rx="7" fill="#516978" stroke="#2b4a58" stroke-width="2.5"/>
+  <path d="M115 26v36" fill="none" stroke="#8eabb1" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M108 74q5-8 12-8t12 8l28 44q7 13-9 15H89q-16-2-9-15zM116 84l-23 36h54l-23-36q-4-6-8 0z" fill="#60a697" fill-rule="evenodd" stroke="#326358" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m85 119 27-43q3-5 7-5m-27 57h56" fill="none" stroke="#acd6c1" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

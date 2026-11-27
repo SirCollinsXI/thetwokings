@@ -24406,5 +24406,145 @@ const WILSON_IMAGE_CANDIDATES=[
         "zh": "请写出车辆绕着圆形中心岛行驶的这种路口的德语名称。"
       }
     }
+  },
+  {
+    "id": "v168",
+    "de": "die Bushaltestelle",
+    "plural": "die Bushaltestellen",
+    "en": "bus stop",
+    "zh": "公交车站",
+    "pinyin": "gōngjiāo chēzhàn",
+    "path": "wilson/original-transit/v168-bushaltestelle.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-transit/v168-bushaltestelle.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈbʊshaltəˌʃtɛlə/",
+      "context": {
+        "de": "Hier steigt man in den Bus ein oder aus.",
+        "en": "Passengers get on or off the bus here.",
+        "zh": "乘客在这里上下公交车。"
+      }
+    }
+  },
+  {
+    "id": "v313",
+    "de": "die Fahrkarte",
+    "plural": "die Fahrkarten",
+    "en": "travel ticket",
+    "zh": "车票",
+    "pinyin": "chēpiào",
+    "path": "wilson/original-transit/v313-fahrkarte.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-transit/v313-fahrkarte.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈfaːɐ̯ˌkaʁtə/",
+      "context": {
+        "de": "Damit darf man mit Bus oder Bahn fahren.",
+        "en": "This lets you travel by bus or train.",
+        "zh": "凭它可以乘坐公交车或火车。"
+      }
+    }
+  },
+  {
+    "id": "v315",
+    "de": "der Fahrplan",
+    "plural": "die Fahrpläne",
+    "en": "timetable",
+    "zh": "时刻表",
+    "pinyin": "shíkèbiǎo",
+    "path": "wilson/original-transit/v315-fahrplan.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-transit/v315-fahrplan.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈfaːɐ̯ˌplaːn/",
+      "context": {
+        "de": "Die Tabelle zeigt, wann Busse oder Züge abfahren.",
+        "en": "The table shows when buses or trains leave.",
+        "zh": "表格上列出了公交车或火车的发车时间。"
+      }
+    }
+  },
+  {
+    "id": "v461",
+    "de": "der Halteknopf",
+    "plural": "die Halteknöpfe",
+    "en": "stop request button",
+    "zh": "下车铃按钮",
+    "pinyin": "xiàchēlíng ànniǔ",
+    "path": "wilson/original-transit/v461-halteknopf.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-transit/v461-halteknopf.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈhaltəˌknɔp͡f/",
+      "context": {
+        "de": "Darauf drückt man im Bus, wenn man an der nächsten Haltestelle aussteigen möchte.",
+        "en": "Press it on the bus to request the next stop.",
+        "zh": "想在下一站下车时，在车内按一下它。"
+      }
+    }
+  },
+  {
+    "id": "v462",
+    "de": "die Halteschlaufe",
+    "plural": "die Halteschlaufen",
+    "en": "grab strap",
+    "zh": "扶手吊环",
+    "pinyin": "fúshǒu diàohuán",
+    "path": "wilson/original-transit/v462-halteschlaufe.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige SVG-Zeichnung ohne externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-transit/v462-halteschlaufe.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-27",
+      "batch": "mobilitaet-02",
+      "method": "Eigenes Motiv mit DE/EN/ZH-Kontexthinweis; Wortformen, IPA, Englisch und Mandarin redaktionell geprüft.",
+      "ipa": "/ˈhaltəˌʃlaʊ̯fə/",
+      "context": {
+        "de": "Daran hält man sich im Bus oder in der Bahn im Stehen fest.",
+        "en": "Standing passengers hold on to it on the bus or train.",
+        "zh": "站着乘车时可以抓住它保持平衡。"
+      }
+    }
   }
 ];
