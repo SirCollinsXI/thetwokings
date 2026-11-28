@@ -60,7 +60,16 @@ jobs:
               });
               console.log('Game launcher capabilities', screen);
               await page.locator('#play').tap();
-              await page.waitForFunction(() => document.querySelector('#launch')?.hidden || document.querySelector('#play')?.textContent === 'Erneut laden', {timeout: 150000});
+              try {
+                await page.waitForFunction(() => document.querySelector('#launch')?.hidden || document.querySelector('#play')?.textContent === 'Erneut laden', null, {timeout: 150000});
+              } catch (error) {
+                console.error('Launcher state at timeout', await page.evaluate(() => ({
+                  status: document.querySelector('#status')?.textContent,
+                  progress: document.querySelector('#progress')?.value,
+                  canvas: [document.querySelector('canvas')?.width, document.querySelector('canvas')?.height]
+                })).catch(() => 'unavailable'));
+                throw error;
+              }
               assert.equal(await page.locator('#launch').evaluate(n => n.hidden), true, await page.locator('#status').textContent());
               const screenshot = await page.screenshot({path: process.env.RUNNER_TEMP + '/iphone-webkit.png', timeout: 25000});
               assert.ok(screenshot.length > 12000, 'Godot menu should be visible');
