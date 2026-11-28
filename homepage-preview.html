@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <meta name="ttk-release" content="homepage-2026-11">
+  <meta name="ttk-release" content="homepage-wehr-v53">
   <meta name="description" content="Spiele im Browser, lies Sams Comics, lerne Deutsch mit Bildern oder plane dein nächstes PC-Upgrade.">
   <link rel="canonical" href="https://thetwokings.de/">
   <title>TheTwoKings | Spielen, lesen, lernen.</title>
   <link rel="icon" href="crown.svg">
   <link rel="stylesheet" href="homepage-preview.css?v=atelier-1">
   <link rel="stylesheet" href="wilson-entry.css">
-  <link rel="stylesheet" href="spiele-start.css">
+  <link rel="stylesheet" href="spiele-start.css?v=wehr53">
   <link rel="stylesheet" href="spiele-probe.css">
   <link rel="stylesheet" href="spiele-start-preview.css">
-  <script src="spiele-texte.js?v=gezeitenpost-1" defer></script>
+  <script src="spiele-texte.js?v=wehr53" defer></script>
   <script src="homepage-preview.js?v=ideen-1" defer></script>
   <script src="spiele-probe.js" defer></script>
   <script src="spuren-store.js" defer></script>
@@ -104,7 +104,7 @@
         <h2 id="games-title" data-copy="gamesHome">Sams Spielecke</h2>
         <div class="game-section-intro">
           <p class="games-availability" data-copy="playNow">Jetzt im Browser spielen</p>
-          <a class="prototype-jump" href="#wehr" data-copy="wehrJump">Zum Inselprojekt „Das Wehr“ ↓</a>
+          <a class="prototype-jump" href="#wehr" data-copy="wehrJump">Zu Samis Dino-Insel ↓</a>
         </div>
         <a class="tide-feature" data-game="inselpfad" data-link-language="project" href="inselpfad.html" aria-labelledby="tide-name tide-start" aria-describedby="tide-rule">
           <span class="tide-feature-copy">
@@ -173,15 +173,17 @@
           </li>
         </ul>
         <a class="earlier-games" href="klassischer-game-hub.html" data-link-language="project" data-copy="earlierGames">Klassiker öffnen · frühere Fassungen beider Spiele</a>
-        <article id="wehr" class="upcoming-game" tabindex="-1" aria-labelledby="wehr-title">
-          <p class="development-status" data-copy="wehrState">In Entwicklung · Windows-Prototyp</p>
-          <h3 id="wehr-title" data-copy="wehrTitle">Das Wehr &amp; Samis Dino-Insel</h3>
-          <p data-copy="wehrAbout">Vom Wehr führt der Waldsteg zur Dino-Insel. Dort legt die Tierarche an. Beim Händler kannst du deinen gefangenen Rex gegen die ersten beiden Schafe für deine Weide tauschen.</p>
-          <div class="planned-platform" id="wehr-web">
-            <strong data-copy="wehrPlatform">Geplante Browserfassung</strong>
-            <p data-copy="wehrWeb">Eine Browserfreigabe setzt das fertige Spiel, einen getesteten Godot-Webexport und geklärte Rechte an den Spielinhalten voraus.</p>
+        <article id="wehr" class="wehr-game" tabindex="-1" aria-labelledby="wehr-title">
+          <div class="wehr-info">
+            <h3 id="wehr-title" data-copy="wehrTitle">Das Wehr &amp; Samis Dino-Insel</h3>
+            <p data-copy="wehrAbout">Öffne das Wehr, finde den Waldsteg und fahre zu den Dinos. Auf der Insel kannst du bauen und Tiere auf deine Weide holen.</p>
+            <a class="wehr-play" href="/das-wehr/" data-link-language="project" data-copy="wehrPlay">Jetzt spielen</a>
+            <small data-copy="wehrBuild">V53 · Handy und PC</small>
           </div>
-          <p class="build-date" data-copy="wehrBuild">Stand für die Homepage · V41 · 27. November 2026</p>
+          <figure class="wehr-film">
+            <video controls playsinline preload="none" width="1280" height="720" poster="/game-assets/wehr/trailer.webp" aria-labelledby="wehr-trailer wehr-title" src="/game-assets/wehr/trailer.mp4"></video>
+            <figcaption id="wehr-trailer" data-copy="wehrTrailer">Trailer ansehen</figcaption>
+          </figure>
         </article>
         <a class="trace-entry" href="#spuren" data-trace-context="spiele" data-copy="traceOpen">Spur hinterlassen</a>
       </section>
@@ -400,3 +402,4 @@
   </footer>
 </body>
 </html>
+

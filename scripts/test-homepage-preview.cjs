@@ -462,8 +462,14 @@ async function run() {
             return element.naturalWidth > 0 && element.naturalHeight > 0;
           }));
         }
-        assert.match(await section.locator('#wehr').innerText(), /Windows/);
-        assert.equal(await section.locator('#wehr a').count(), 0);
+        const island = section.locator('#wehr');
+        const playIsland = island.getByRole('link', { name: { de: 'Jetzt spielen', en: 'Play now', zh: '开始游戏' }[lang], exact: true });
+        const islandURL = new URL(await playIsland.getAttribute('href'), page.url());
+        assert.equal(islandURL.origin, preview.origin);
+        assert.equal(islandURL.pathname, '/das-wehr/');
+        assert.equal(islandURL.searchParams.get('lang'), lang);
+        assert.match(await island.innerText(), /V53/);
+        assert.equal(await island.locator('video').getAttribute('preload'), 'none');
         if (source === 'homepage') {
           await testTrials(page, lang);
           if (lang === 'de') {
@@ -494,3 +500,4 @@ async function run() {
   }
 }
 run().catch(error => { console.error(error); process.exitCode = 1; });
+

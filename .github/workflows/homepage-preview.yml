@@ -32,6 +32,9 @@ on:
       - 'wilson-entry.css'
       - 'game-assets/thumbs/**'
       - 'scripts/test-homepage-preview.cjs'
+      - 'scripts/test-wehr-mobile.cjs'
+      - 'das-wehr/**'
+      - 'game-assets/wehr/**'
       - '.github/workflows/homepage-preview.yml'
   push:
     branches: [main]
@@ -66,6 +69,9 @@ on:
       - 'wilson-entry.css'
       - 'game-assets/thumbs/**'
       - 'scripts/test-homepage-preview.cjs'
+      - 'scripts/test-wehr-mobile.cjs'
+      - 'das-wehr/**'
+      - 'game-assets/wehr/**'
       - '.github/workflows/homepage-preview.yml'
 permissions:
   contents: read
@@ -74,7 +80,7 @@ jobs:
   preview:
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 14
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -111,6 +117,7 @@ jobs:
           export NODE_PATH="$RUNNER_TEMP/homepage-test/node_modules" CHROME="$(command -v google-chrome)"
           node scripts/test-homepage-preview.cjs before
           node scripts/test-homepage-preview.cjs
+          node scripts/test-wehr-mobile.cjs
       - name: Save homepage, hero and comic screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -138,7 +145,7 @@ jobs:
   published:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     concurrency:
       group: published-homepage
       cancel-in-progress: true
@@ -153,6 +160,7 @@ jobs:
         run: |
           npm install --no-save --no-audit --no-fund --ignore-scripts --prefix "$RUNNER_TEMP/homepage-test" playwright-core@1.56.1
           NODE_PATH="$RUNNER_TEMP/homepage-test/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-homepage-preview.cjs published
+          NODE_PATH="$RUNNER_TEMP/homepage-test/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wehr-mobile.cjs
       - name: Save published homepage, hero and comic screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -161,3 +169,4 @@ jobs:
           path: ${{ runner.temp }}/homepage-screenshots/*.png
           retention-days: 7
           if-no-files-found: ignore
+

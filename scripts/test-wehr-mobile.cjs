@@ -1,0 +1,162 @@
+'use strict';
+
+const assert = require('node:assert/strict');
+const fs = require('node:fs/promises');
+const path = require('node:path');
+const { setTimeout: delay } = require('node:timers/promises');
+
+// The native menu is drawn into WebGL. Read the checkpoint written by the
+// normal campaign start/pause actions for evidence that touch reached the game.
+async function readSlot() {
+  const request = req => new Promise((resolve, reject) => {
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+  for (const entry of await indexedDB.databases()) {
+    if (entry.name !== '/userfs') continue;
+    const db = await request(indexedDB.open(entry.name));
+    try {
+      for (const name of db.objectStoreNames) {
+        const store = () => db.transaction(name).objectStore(name);
+        const key = (await request(store().getAllKeys())).find(k => String(k).endsWith('/dino-expedition.save'));
+        if (key) return Array.from(new Uint8Array((await request(store().get(key))).contents));
+      }
+    } finally { db.close(); }
+  }
+  return null;
+}
+
+function checkpoint(data) {
+  if (!data) return null;
+  const bytes = Buffer.from(data);
+  // Godot Variant dictionaries store UTF-8 keys before four-byte-aligned values.
+  function valueOffset(name, type) {
+    const key = bytes.indexOf(name, 32);
+    assert.ok(key >= 0, 'checkpoint field ' + name);
+    const tag = (key + name.length + 3) & ~3;
+    assert.equal(bytes[tag], type, 'checkpoint field type ' + name);
+    return tag + 4;
+  }
+  const pos = valueOffset('resume', 9);
+  const yaw = valueOffset('yaw', 3);
+  return { x: bytes.readFloatLE(pos), z: bytes.readFloatLE(pos + 8), yaw: (bytes.readUInt32LE(yaw - 4) & 65536) ? bytes.readDoubleLE(yaw) : bytes.readFloatLE(yaw) };
+}
+
+async function waitForSlot(page, passes) {
+  const deadline = Date.now() + 25000;
+  let value = null;
+  do {
+    value = checkpoint(await page.evaluate(readSlot));
+    if (value && passes(value)) return value;
+    await delay(400);
+  } while (Date.now() < deadline);
+  throw new Error('Touch action did not persist the expected campaign checkpoint: ' + JSON.stringify(value));
+}
+
+async function run(browser, origin) {
+  const context = await browser.newContext({
+    viewport: {width: 844, height: 390}, screen: {width: 844, height: 390},
+    isMobile: true, hasTouch: true, deviceScaleFactor: 1,
+    locale: 'de-DE', userAgent: 'Mozilla/5.0 (Linux; Android 15; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36'
+  });
+  const artifacts = process.env.HOMEPAGE_SCREENSHOTS;
+  if (artifacts) await fs.mkdir(artifacts, {recursive: true});
+  let page;
+  const gameUrl = new URL('/das-wehr/?lang=de', origin).href;
+
+  async function boot() {
+    page = await context.newPage();
+    page.on('pageerror', error => console.error('Dino-Insel:', error.message));
+    const response = await page.goto(gameUrl, {waitUntil: 'domcontentloaded'});
+    assert.equal(response.status(), 200);
+    assert.equal(await page.locator('html').getAttribute('lang'), 'de');
+    await page.locator('#play').tap();
+    await page.waitForSelector('#launch[hidden]', {state: 'attached', timeout: 120000});
+    return page;
+  }
+  async function screenshot(name) {
+    return page.locator('#canvas').screenshot(artifacts ? {path: path.join(artifacts, name + '.png')} : {});
+  }
+
+  // Locate the solid panels of the native menu in the actual screenshot. Their
+  // height varies with font metrics, while the fixed design colour is shared
+  // by Start and Load. Headers, settings and background have different colours.
+  async function menuRows() {
+    const until = Date.now() + 22000;
+    do {
+      const pixels = (await screenshot('dino-handymenue')).toString('base64');
+      const rows = await page.evaluate(async png => {
+        const bytes = Uint8Array.from(atob(png), character => character.charCodeAt(0));
+        const img = await createImageBitmap(new Blob([bytes], {type: 'image/png'}));
+        const ctx = new OffscreenCanvas(img.width, img.height).getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        const {data} = ctx.getImageData(Math.round(img.width * .31), 0, 1, img.height);
+        const centers = [];
+        let first = -1;
+        for (let y = 0; y < img.height; y++) {
+          const i = y * 4;
+          const matches = Math.abs(data[i] - 32) < 7 && Math.abs(data[i+1] - 66) < 7 && Math.abs(data[i+2] - 76) < 7;
+          if (matches && first < 0) first = y;
+          if (!matches && first >= 0) {
+            if (y-first > 26 && y-first < 66) centers.push(Math.round((y+first)/2));
+            first = -1;
+          }
+        }
+        return centers;
+      }, pixels);
+      if (rows.length >= 2) return rows;
+      await delay(500);
+    } while (Date.now() < until);
+    throw Error('The native Godot menu did not render.');
+  }
+
+  try {
+    await boot();
+    const rows = await menuRows();
+    assert.equal(await page.evaluate(readSlot), null);
+    await page.touchscreen.tap(422, rows[0]);
+    const before = await waitForSlot(page, () => true);
+    const cdp = await context.newCDPSession(page);
+    const finger = (id,x,y) => ({id,x,y,radiusX:5,radiusY:5,force:.8});
+    const dispatch = (type, points) => cdp.send('Input.dispatchTouchEvent', {type,touchPoints:points});
+    await dispatch('touchStart', [finger(1,72,318)]);
+    await dispatch('touchMove', [finger(1,72,266)]);
+    await dispatch('touchStart', [finger(1,72,266), finger(2,495,152)]);
+    for (let i=1; i<=8; i++) {
+      await dispatch('touchMove', [finger(1,72,266), finger(2,495+i*10,152+i)]);
+      await delay(110);
+    }
+    await dispatch('touchEnd', []);
+    await screenshot('dino-handy-spiel');
+    await page.touchscreen.tap(808,35);
+    const moved = await waitForSlot(page, slot => Math.hypot(slot.x-before.x, slot.z-before.z) > .12 && Math.abs(slot.yaw-before.yaw) > .02);
+    await page.close();
+    await boot();
+    const loadRows = await menuRows();
+    assert.ok(loadRows.length >= 3, 'saved campaign must offer Load');
+    const reopened = await waitForSlot(page, () => true);
+    assert.deepEqual(reopened, moved, 'saved position and look persist across tabs');
+    await page.touchscreen.tap(422, loadRows[1]);
+    await delay(700);
+    const afterLoad = await context.newCDPSession(page);
+    await afterLoad.send('Input.dispatchTouchEvent', {type:'touchStart', touchPoints:[finger(3,520,150)]});
+    await afterLoad.send('Input.dispatchTouchEvent', {type:'touchMove', touchPoints:[finger(3,602,150)]});
+    await afterLoad.send('Input.dispatchTouchEvent', {type:'touchEnd', touchPoints:[]});
+    await delay(300);
+    await page.touchscreen.tap(808, 35);
+    const after = await waitForSlot(page, slot => Math.abs(slot.yaw-moved.yaw) > .02);
+    assert.ok(Math.hypot(after.x-moved.x, after.z-moved.z) < .1, 'restored character looks around from the saved location');
+    console.log('Dino-Insel: mobile Godot menu rendered, campaign started by touch, simultaneous walk/look and persisted checkpoint verified.');
+  } catch (error) {
+    if (artifacts && page && !page.isClosed()) await page.screenshot({path: path.join(artifacts,'dino-handy-fehler.png')}).catch(() => {});
+    throw error;
+  } finally { await context.close(); }
+}
+
+module.exports = run;
+if (require.main === module) (async () => {
+  const { chromium } = require('playwright-core');
+  const browser = await chromium.launch({executablePath: process.env.CHROME, args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+  try { await run(browser, process.env.PREVIEW_URL || 'https://thetwokings.de'); }
+  finally { await browser.close(); }
+})().catch(error => { console.error(error); process.exitCode = 1; });
