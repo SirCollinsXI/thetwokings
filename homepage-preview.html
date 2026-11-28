@@ -20,7 +20,10 @@
   <script src="spuren-store.js" defer></script>
   <script src="homepage-spuren.js" defer></script>
   <link rel="stylesheet" href="public-wall.css">
-  <script src="public-wall.js" defer></script>
+  <script src="public-wall.js?v=gastgruesse-1" defer></script>
+  <link rel="stylesheet" href="guest-wall.css">
+  <script src="guest-freigaben.js" defer></script>
+  <script src="guest-wall.js" defer></script>
   <script src="grusskarte.js" defer></script>
   <link rel="stylesheet" href="feedback-ideen.css">
   <script src="feedback-freigaben.js" defer></script>
@@ -286,8 +289,59 @@
         </section>
       </section>
       <section class="rail-panel public-wall" id="grusswand" aria-labelledby="wall-title">
-        <h2 id="wall-title" data-wall-word="title">Ein Gruß an die Welt</h2>
-        <p data-wall-word="intro">Hinterlasse ein Zeichen für alle, die heute vorbeischauen. Alle sehen den gemeinsamen Tagesstand.</p>
+        <h2 id="wall-title" data-wall-word="title">Öffentliche Grußwand</h2>
+        <div id="gastgruesse" tabindex="-1">
+          <p data-guest-word="intro">Freigegebene Grüße sind für alle sichtbar. Name, Herkunft und Mensch oder KI geben die Absender selbst an.</p>
+          <ul id="guest-list" role="list" hidden></ul>
+          <button id="guest-more" type="button" data-guest-word="more" hidden>Weitere Grüße zeigen</button>
+          <button id="guest-refresh" type="button" data-guest-word="refreshGuests" hidden>Freigegebene Grüße aktualisieren</button>
+          <p class="next" id="guest-read-status" role="status" hidden></p>
+          <p class="next" id="guest-empty" data-guest-word="empty">Noch keine veröffentlichten Grüße.</p>
+          <details id="guest-editor" hidden>
+            <summary data-guest-word="create">Öffentlichen Gruß vorschlagen</summary>
+            <form id="guest-form" autocomplete="off">
+              <label for="guest-mark" data-guest-word="symbol">Bildzeichen</label>
+              <select id="guest-mark">
+                <option value="wave" data-guest-word="wave">👋 Winken</option>
+                <option value="star" data-guest-word="star">★ Stern</option>
+                <option value="crown" data-guest-word="crown">♛ Krone</option>
+              </select>
+              <label for="guest-nick" data-guest-word="nickname">Name oder Nickname (freiwillig)</label>
+              <input id="guest-nick" type="text" maxlength="40" dir="auto" autocomplete="off">
+              <label for="guest-region" data-guest-word="region">Land oder Region (freiwillig)</label>
+              <select id="guest-region"><option value="" data-guest-word="none">Keine Angabe</option></select>
+              <label for="guest-kind" data-guest-word="kind">Wer grüßt? (freiwillig)</label>
+              <select id="guest-kind">
+                <option value="" data-guest-word="none">Keine Angabe</option>
+                <option value="human" data-guest-word="human">Mensch</option>
+                <option value="ai" data-guest-word="ai">KI</option>
+              </select>
+              <label class="guest-permission"><input id="guest-consent" type="checkbox" required>
+                <span data-guest-word="consent">Das Team darf mein Bildzeichen und meine gewählten Angaben nach Prüfung mit dem Veröffentlichungsdatum öffentlich zeigen.</span>
+              </label>
+              <button type="submit" id="guest-submit" data-guest-word="submit" hidden>Gruß zur Prüfung einreichen</button>
+              <p class="next" id="guest-direct-hint" data-guest-word="directHint" hidden>Nach dem Einreichen prüft das Team deinen Gruß. Erst danach kann er hier erscheinen.</p>
+              <p class="next"><span data-guest-word="sendHint">Schicke den Entwurf an</span> <strong>kontakt@thetwokings.de</strong>.
+                <span data-guest-word="addressHint">Deine E-Mail-Adresse sieht das Team. Sie erscheint nicht auf der Wand.</span></p>
+              <div class="guest-actions">
+                <button type="button" id="guest-compose" data-guest-word="compose">E-Mail-Entwurf öffnen</button>
+                <button type="button" id="guest-copy" data-guest-word="copy">Für Webmail kopieren</button>
+              </div>
+              <div id="guest-manual-box" hidden>
+                <label for="guest-manual" data-guest-word="manual">Entwurf zum Kopieren</label>
+                <textarea id="guest-manual" rows="5" readonly></textarea>
+              </div>
+              <p class="next" id="guest-status" role="status"></p>
+            </form>
+          </details>
+          <noscript><p>Kontakt · Contact · 联系邮箱: kontakt@thetwokings.de</p></noscript>
+          <div class="guest-links">
+            <a id="guest-privacy" href="datenschutz.html#gastgruesse" data-guest-word="privacy">Datenschutz für öffentliche Grüße</a>
+            <a id="guest-report" href="mailto:kontakt@thetwokings.de" data-guest-word="report">Gruß melden oder entfernen lassen</a>
+          </div>
+        </div>
+        <h3 class="guest-count-title" data-wall-word="tally">Zeichen des Tages</h3>
+        <p data-wall-word="intro">Winken, Sterne und Kronen zählen hier für den heutigen Tag in Berlin.</p>
         <div class="wall-board" hidden>
           <p><span data-wall-word="day">Tag in Berlin</span> · <time></time></p>
           <ul class="wall-marks" role="list">
@@ -298,7 +352,7 @@
         </div>
         <p class="wall-status" role="status" data-wall-word="loading">Der Tagesstand wird geladen.</p>
         <div class="wall-links">
-          <button type="button" data-wall-refresh data-wall-word="refresh" hidden>Stand neu laden</button>
+          <button type="button" data-wall-refresh data-wall-word="refresh" hidden>Heutige Zahlen abrufen</button>
           <a href="datenschutz.html#spuren" data-wall-word="privacy">Datenschutz zur Grußwand</a>
         </div>
         <details id="grusskarte" class="share-card">

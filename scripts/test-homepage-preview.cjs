@@ -337,14 +337,15 @@ function mainMarkup(html) {
 
 function scriptSources(html) {
   return [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/gi)].map(match => match[1])
-    .filter(src => ['homepage-preview.js', 'spiele-texte.js'].includes(new URL(src, preview).pathname.slice(1)));
+    .filter(src => ['homepage-preview.js', 'spiele-texte.js', 'guest-freigaben.js', 'guest-wall.js', 'public-wall.js'].includes(new URL(src, preview).pathname.slice(1)));
 }
 
 // Pages can briefly serve different homepage versions for each cached language URL.
 async function awaitRelease(browser) {
   const main = mainMarkup(rootHTML);
   const sources = scriptSources(rootHTML);
-  assert.deepEqual(sources.map(src => new URL(src, preview).pathname).sort(), ['/homepage-preview.js', '/spiele-texte.js']);
+  assert.deepEqual(sources.map(src => new URL(src, preview).pathname).sort(),
+    ['/guest-freigaben.js', '/guest-wall.js', '/homepage-preview.js', '/public-wall.js', '/spiele-texte.js']);
   const scripts = sources.map(src => {
     const url = new URL(src, preview);
     return { url, content: readFileSync(join(__dirname, '..', url.pathname.slice(1)), 'utf8').replaceAll('\r\n', '\n') };
@@ -365,6 +366,8 @@ async function awaitRelease(browser) {
           const html = await delivered(url);
           assert.ok(html.includes('id="feedback-note"') && html.includes('src="feedback-ideen.js"'),
             'Waiting for the feedback form on ' + url.href);
+          assert.ok(html.includes('id="guest-form"') && html.includes('id="gastgruesse"'),
+            'Waiting for the moderated guest form and public list on ' + url.href);
           assert.ok(mainMarkup(html) === main, 'Waiting for current homepage markup on ' + url.href);
           assert.deepEqual(scriptSources(html), sources, 'Waiting for current translation script URLs on ' + url.href);
         }
@@ -478,6 +481,7 @@ async function run() {
       }
     }
     await require('./test-entwicklungsideen.cjs')(browser, preview);
+    await require('./test-gastgruesse.cjs')(browser, preview);
     await checkFormerBookmarks(browser);
     await require('./test-share-card.cjs')(browser, preview, '/');
     if (mode === 'preview') {

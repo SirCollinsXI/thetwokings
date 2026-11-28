@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "include": ["/homepage-preview", "/api/spuren"],
+  "include": ["/homepage-preview", "/api/spuren", "/api/gastgruesse"],
   "exclude": []
 }

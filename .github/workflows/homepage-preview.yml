@@ -15,10 +15,15 @@ on:
       - 'feedback-ideen.*'
       - 'feedback-freigaben.js'
       - 'scripts/test-entwicklungsideen.cjs'
+      - 'guest-wall.*'
+      - 'guest-freigaben.js'
+      - 'scripts/test-gastgruesse.cjs'
       - 'public-wall.*'
       - 'grusskarte.js'
       - '_routes.json'
       - 'functions/api/spuren.js'
+      - 'functions/api/gastgruesse.js'
+      - 'scripts/test-gastgruesse-api.cjs'
       - 'migrations/0002_public_trace_day.sql'
       - 'scripts/test-public-wall.cjs'
       - 'werkstatt.*'
@@ -44,10 +49,15 @@ on:
       - 'feedback-ideen.*'
       - 'feedback-freigaben.js'
       - 'scripts/test-entwicklungsideen.cjs'
+      - 'guest-wall.*'
+      - 'guest-freigaben.js'
+      - 'scripts/test-gastgruesse.cjs'
       - 'public-wall.*'
       - 'grusskarte.js'
       - '_routes.json'
       - 'functions/api/spuren.js'
+      - 'functions/api/gastgruesse.js'
+      - 'scripts/test-gastgruesse-api.cjs'
       - 'migrations/0002_public_trace_day.sql'
       - 'scripts/test-public-wall.cjs'
       - 'werkstatt.*'
@@ -123,6 +133,7 @@ jobs:
         run: |
           npm install --no-save --no-audit --no-fund --prefix "$RUNNER_TEMP/wall-test" miniflare@3 playwright-core@1.56.1
           NODE_PATH="$RUNNER_TEMP/wall-test/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-public-wall.cjs
+          NODE_PATH="$RUNNER_TEMP/wall-test/node_modules" node scripts/test-gastgruesse-api.cjs
 
   published:
     if: github.event_name == 'push'
