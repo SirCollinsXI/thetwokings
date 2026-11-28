@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 150" width="212" height="150" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">Reifen ohne Felge</title>
+  <desc id="desc">Ein einzelner schwarzer Autoreifen steht schräg. Die offene Mitte enthält weder Felge noch Speichen; auf der Lauffläche ist das Profil sichtbar.</desc>
+  <defs><clipPath id="tread"><path d="M84 18 122 12c31-3 52 24 52 61s-22 63-50 64l-40-4Z"/></clipPath></defs>
+  <rect width="212" height="150" fill="#eaf2e9"/>
+  <ellipse cx="113" cy="136" rx="66" ry="7" fill="#cad7ce"/>
+  <path d="M84 18 122 12c31-3 52 24 52 61s-22 63-50 64l-40-4Z" fill="#3e4b51" stroke="#243b49" stroke-width="3"/>
+  <path clip-path="url(#tread)" d="m112 17 12 13 21-2m-22-4 12 15 24-1m-28-2 9 16 25 2m-30-4 7 17 28 2m-32-3 5 17 28 5m-32-6 1 16 28 7m-29-8-3 16 25 9m-26-10-5 15 19 10m-23-10-7 12 13 7" fill="none" stroke="#7b8a8e" stroke-width="3"/>
+  <path d="M123 19q28 28 22 64t-30 50" fill="none" stroke="#26363d" stroke-width="3"/>
+  <path d="M134 18q29 29 24 64t-29 50" fill="none" stroke="#26363d" stroke-width="2"/>
+  <ellipse cx="86" cy="76" rx="20" ry="35" fill="#eaf2e9"/>
+  <path fill-rule="evenodd" d="M129 76a43 59 0 1 1-86 0 43 59 0 1 1 86 0Zm-23 0a20 35 0 1 0-40 0 20 35 0 1 0 40 0Z" fill="#556168" stroke="#243b49" stroke-width="3"/>
+  <path d="M94 43q-20 0-27 26t9 40c-8-19-4-42 18-66Z" fill="#25383f"/>
+  <ellipse cx="86" cy="76" rx="34" ry="49" fill="none" stroke="#718087" stroke-width="2.3"/>
+  <ellipse cx="86" cy="76" rx="22" ry="37" fill="none" stroke="#283c44" stroke-width="4"/>
+  <path d="M59 53q6-20 16-24" fill="none" stroke="#9eaaab" stroke-width="3"/>
+</svg>

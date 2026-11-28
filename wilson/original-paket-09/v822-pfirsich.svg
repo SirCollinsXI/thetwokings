@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 150" width="212" height="150" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">Pfirsich mit gefurchtem Stein</title>
+  <desc id="desc">Ein rundlicher rotgelber Pfirsich mit feinem Flaum und eine aufgeschnittene Hälfte mit gelbem Fruchtfleisch. Der große braune Stein hat tiefe, unregelmäßige Furchen.</desc>
+  <defs>
+    <clipPath id="peach-whole"><path d="M68 44c-13-10-34-3-42 15-11 26 0 55 25 66 10 5 20 8 27 5 20-7 35-27 34-49-1-24-23-45-44-37Z"/></clipPath>
+  </defs>
+  <rect width="212" height="150" fill="#fbf0df"/>
+  <ellipse cx="107" cy="132" rx="84" ry="7" fill="#213240" fill-opacity="0.09"/>
+  <path d="M68 44c-13-10-34-3-42 15-11 26 0 55 25 66 10 5 20 8 27 5 20-7 35-27 34-49-1-24-23-45-44-37Z" fill="#efba6e" stroke="#a65b47" stroke-width="3"/>
+  <path clip-path="url(#peach-whole)" d="M37 39c26-2 12 22 15 40 3 20 8 38 31 50-12 11-51 1-62-25-11-28-9-57 16-65Zm63 20c15 10 19 28 11 50-6 13-17 19-24 22 10-20 8-40 13-72Z" fill="#df7b73"/>
+  <path d="M67 47c9 18 9 45 4 69" fill="none" stroke="#cf8d55" stroke-width="2.5"/>
+  <path d="M41 57c-6 7-10 18-10 26" fill="none" stroke="#ffd8b8" stroke-width="4"/>
+  <path d="m26 60-3-1m0 11-3-1m2 14-3 1m6 12-3 1m10 11-3 2m9 7-2 3m14 2-1 3m37-79 1-3m11 9 2-2m5 13 3-1m0 14 3 1" fill="none" stroke="#dba28b" stroke-width="1.4"/>
+  <path d="m68 44 3-10" fill="none" stroke="#745139" stroke-width="3.5"/>
+  <path d="M71 35c6-17 27-20 45-17-9 13-24 23-45 17Z" fill="#6d9654" stroke="#4b7549" stroke-width="2"/>
+  <path d="m74 33 31-11" fill="none" stroke="#4b7549" stroke-width="1.5"/>
+  <path d="M143 47c-23-7-44 11-48 36-5 29 13 46 39 49 28 3 52-17 54-44 2-23-21-46-45-41Z" fill="#db8072" stroke="#a65b47" stroke-width="3"/>
+  <path d="M143 53c-20-6-37 10-41 31-4 24 12 39 33 42 25 2 44-15 46-38 1-19-18-39-38-35Z" fill="#ffda83" stroke="#fff0bd" stroke-width="3"/>
+  <path d="M144 64c-10-5-24 2-29 18-5 18 2 33 17 36 17 4 33-12 34-29 1-13-9-24-22-25Z" fill="#d98362"/>
+  <path d="M143 69c-7-5-15 1-17 6-8 4-7 11-7 15-4 6 0 11 1 14 1 7 8 9 12 9 5 4 12 0 15-4 8-4 10-10 11-15 4-7 0-14-4-18-2-5-6-8-11-7Z" fill="#a3613b" stroke="#78432e" stroke-width="2.5"/>
+  <path d="m135 75-5 6 4 7-7 7 5 7-1 6m12-34-3 8 6 6-6 8 4 7-5 6m11-29 3 6-4 5 3 6m-27-14-3 7 2 4" fill="none" stroke="#6e3b2b" stroke-width="2.4"/>
+  <path d="m137 77-2 5 3 6m-6 9 4 7m10-11-2 4 3 5m1-25 4 7" fill="none" stroke="#d19959" stroke-width="1.8"/>
+  <path d="m116 81-5-3m13-11-3-5m31 4 3-5m11 20 5-1m-14 25 4 5m-37 8-1 5" fill="none" stroke="#e5a364" stroke-width="1.5"/>
+</svg>

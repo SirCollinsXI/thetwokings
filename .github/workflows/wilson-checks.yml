@@ -137,6 +137,12 @@ jobs:
           NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
           NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-backup.cjs
           NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-profile.cjs
+      - name: Verify Paket 09 gallery, answers and embedded offline images
+        env:
+          WILSON_ORIGIN: ${{ steps.pages.outputs.url || 'http://127.0.0.1:8765' }}
+          WILSON_SCREENSHOTS: ${{ runner.temp }}/wilson-paket09
+        run: |
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-paket09-browser.cjs
       - name: Archive responsive screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -146,6 +152,7 @@ jobs:
             ${{ runner.temp }}/wilson-mobile.png
             ${{ runner.temp }}/wilson-desktop.png
             ${{ runner.temp }}/wilson-chinese-entry.png
+            ${{ runner.temp }}/wilson-paket09/*.png
           if-no-files-found: ignore
 
   published:

@@ -363,23 +363,62 @@ const WILSON_IMAGE_CANDIDATES=[
   {
     "id": "v33",
     "de": "die Aprikose",
-    "en": "apricot",
     "plural": "die Aprikosen",
+    "en": "apricot",
     "zh": "杏",
-    "sourcePath": "EN/apricot.svg",
-    "path": "wilson/mulberry/v33.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
-    "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/apricot.svg",
+    "pinyin": "xìng",
+    "path": "wilson/original-paket-09/v33-aprikose.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v33-aprikose.svg",
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Aprikose ohne Schnitt oder weiteres Merkmal schwer von Pfirsich zu unterscheiden.",
-      "recheckedOn": "2026-11-26"
-    }
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "frische-lebensmittel-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/apʁiˈkoːzə/",
+      "context": {
+        "de": "Eine orangefarbene Steinfrucht; die Hälfte zeigt einen glatten, flachen Stein.",
+        "en": "An orange stone fruit; the cut half reveals a smooth, flattened stone.",
+        "zh": "橙色的核果；切开的一半露出光滑、扁平的果核。"
+      },
+      "answerVariants": [
+        {
+          "de": "die Marille",
+          "plural": "die Marillen"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Aprikose",
+        "https://dict.leo.org/chinesisch-deutsch/Aprikose"
+      ],
+      "reason": "Ganze orangefarbene Frucht und Anschnitt mit glattem, flachem Stein; vom Pfirsich durch Farbe, Form und Steinstruktur abgegrenzt. Die österreichische Form Marille wird als bildpassende Antwort akzeptiert."
+    },
+    "reviewHistory": [
+      {
+        "id": "v33",
+        "de": "die Aprikose",
+        "en": "apricot",
+        "plural": "die Aprikosen",
+        "zh": "杏",
+        "sourcePath": "EN/apricot.svg",
+        "path": "wilson/mulberry/v33.svg",
+        "status": "needs-replacement-or-context",
+        "active": false,
+        "license": "CC-BY-SA-4.0",
+        "creator": "Steve Lee",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/apricot.svg",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Aprikose ohne Schnitt oder weiteres Merkmal schwer von Pfirsich zu unterscheiden.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
   },
   {
     "id": "v38",
@@ -1558,23 +1597,56 @@ const WILSON_IMAGE_CANDIDATES=[
   {
     "id": "v152",
     "de": "die Brombeere",
-    "en": "blackberry",
     "plural": "die Brombeeren",
+    "en": "blackberry",
     "zh": "黑莓",
-    "sourcePath": "EN/blackberry.svg",
-    "path": "wilson/mulberry/v152.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
-    "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/blackberry.svg",
+    "pinyin": "hēiméi",
+    "path": "wilson/original-paket-09/v152-brombeere.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v152-brombeere.svg",
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Beerenmotiv wirkt wie eine Traube; Brombeere nicht eindeutig.",
-      "recheckedOn": "2026-11-26"
-    }
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "frische-lebensmittel-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈbʁɔmˌbeːʁə/",
+      "context": {
+        "de": "Eine reife, schwarzviolette Beere aus dicht verbundenen kleinen Teilfrüchten.",
+        "en": "A ripe, dark purple-black berry made up of tightly joined small fruit segments.",
+        "zh": "成熟的紫黑色浆果，由许多紧密相连的小果粒组成。"
+      },
+      "languageSources": [
+        "https://www.duden.de/deklination/substantive/Brombeere",
+        "https://dict.leo.org/chinesisch-deutsch/Brombeere"
+      ],
+      "reason": "Eine kompakte Sammelfrucht mit direkt verbundenen Teilfrüchten; keine einzeln am Stiel hängenden Trauben und keine längliche Maulbeerform."
+    },
+    "reviewHistory": [
+      {
+        "id": "v152",
+        "de": "die Brombeere",
+        "en": "blackberry",
+        "plural": "die Brombeeren",
+        "zh": "黑莓",
+        "sourcePath": "EN/blackberry.svg",
+        "path": "wilson/mulberry/v152.svg",
+        "status": "needs-replacement-or-context",
+        "active": false,
+        "license": "CC-BY-SA-4.0",
+        "creator": "Steve Lee",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/blackberry.svg",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Beerenmotiv wirkt wie eine Traube; Brombeere nicht eindeutig.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
   },
   {
     "id": "v154",
@@ -8056,23 +8128,56 @@ const WILSON_IMAGE_CANDIDATES=[
   {
     "id": "v822",
     "de": "der Pfirsich",
-    "en": "peach",
     "plural": "die Pfirsiche",
+    "en": "peach",
     "zh": "桃子",
-    "sourcePath": "EN/peach.svg",
-    "path": "wilson/mulberry/v822.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
-    "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/peach.svg",
+    "pinyin": "táozi",
+    "path": "wilson/original-paket-09/v822-pfirsich.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v822-pfirsich.svg",
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Pfirsich ohne Schnitt oder weiteres Merkmal schwer von Aprikose zu unterscheiden.",
-      "recheckedOn": "2026-11-26"
-    }
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "frische-lebensmittel-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈpfɪʁzɪç/",
+      "context": {
+        "de": "Eine rotgelbe Frucht mit feinem Flaum; die Hälfte zeigt einen stark gefurchten Stein.",
+        "en": "A red-and-yellow fruit with fine fuzz; the cut half shows a deeply grooved stone.",
+        "zh": "表面有细绒毛的红黄色水果；切开的一半露出沟纹很深的果核。"
+      },
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Pfirsich",
+        "https://de.langenscheidt.com/deutsch-chinesisch/pfirsich"
+      ],
+      "reason": "Rotgelbe ganze Frucht mit angedeutetem Flaum und Anschnitt mit großem, stark gefurchtem Stein; dadurch gegenüber der Aprikose und einer glatten Nektarine abgegrenzt."
+    },
+    "reviewHistory": [
+      {
+        "id": "v822",
+        "de": "der Pfirsich",
+        "en": "peach",
+        "plural": "die Pfirsiche",
+        "zh": "桃子",
+        "sourcePath": "EN/peach.svg",
+        "path": "wilson/mulberry/v822.svg",
+        "status": "needs-replacement-or-context",
+        "active": false,
+        "license": "CC-BY-SA-4.0",
+        "creator": "Steve Lee",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/peach.svg",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Pfirsich ohne Schnitt oder weiteres Merkmal schwer von Aprikose zu unterscheiden.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
   },
   {
     "id": "v823",
@@ -10506,23 +10611,57 @@ const WILSON_IMAGE_CANDIDATES=[
   {
     "id": "v1066",
     "de": "der Spinat",
-    "en": "spinach",
     "plural": "—",
+    "en": "spinach",
     "zh": "菠菜",
-    "sourcePath": "EN/spinach.svg",
-    "path": "wilson/mulberry/v1066.svg",
-    "status": "needs-replacement-or-context",
-    "active": false,
-    "license": "CC-BY-SA-4.0",
-    "creator": "Steve Lee",
-    "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spinach.svg",
+    "pinyin": "bōcài",
+    "path": "wilson/original-paket-09/v1066-spinat.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v1066-spinat.svg",
     "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
-      "reason": "Zwei generische Blätter; Spinatart nicht erkennbar.",
-      "recheckedOn": "2026-11-26"
-    }
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "frische-lebensmittel-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ʃpiˈnaːt/",
+      "context": {
+        "de": "Frisches Blattgemüse mit dunkelgrünen, glattrandigen Blättern an langen, dünnen Stielen.",
+        "en": "Fresh leafy vegetables with dark green, smooth-edged leaves on long, thin stems.",
+        "zh": "新鲜的绿叶蔬菜，深绿色叶片边缘光滑，叶柄细长。"
+      },
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Spinat",
+        "https://de.pons.com/übersetzung/chinesisch-deutsch/菠菜",
+        "https://www.rhs.org.uk/vegetables/spinach/grow-your-own"
+      ],
+      "reason": "Zusammenhängender Büschel mit mehreren dunkelgrünen, ovalen bis pfeilförmigen Blättern und dünnen Stielen am rötlichen Wurzelansatz; weder Salatkopf noch breite weiße Pak-Choi-Stiele. Als Lebensmittel eine Einzahlübung; der seltene Sortenplural Spinate ist hier nicht die gesuchte Antwort."
+    },
+    "reviewHistory": [
+      {
+        "id": "v1066",
+        "de": "der Spinat",
+        "en": "spinach",
+        "plural": "—",
+        "zh": "菠菜",
+        "sourcePath": "EN/spinach.svg",
+        "path": "wilson/mulberry/v1066.svg",
+        "status": "needs-replacement-or-context",
+        "active": false,
+        "license": "CC-BY-SA-4.0",
+        "creator": "Steve Lee",
+        "source": "https://github.com/mulberrysymbols/mulberry-symbols/blob/fa94a93ca1b5357c0b6e0d9f8a81c426a1dfefdf/EN/spinach.svg",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "method": "Rendered SVG inspected individually in labeled contact sheet; DE/EN/ZH and number forms assessed editorially.",
+        "reason": "Zwei generische Blätter; Spinatart nicht erkennbar.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
   },
   {
     "id": "v1069",
@@ -21176,23 +21315,50 @@ const WILSON_IMAGE_CANDIDATES=[
     "plural": "die Fahrradschlösser",
     "en": "bicycle lock",
     "zh": "自行车锁",
-    "path": "wilson/original-next/v319.svg",
-    "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+    "pinyin": "zìxíngchē suǒ",
+    "path": "wilson/original-paket-09/v319-fahrradschloss.svg",
+    "status": "approved",
+    "active": true,
     "childSuitable": true,
-    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
-    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
-    "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "reason": "Generic padlock lacks enough bicycle-specific context; replace or add a bicycle scene.",
-      "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
-      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
-      "recheckedOn": "2026-11-26"
-    },
-    "active": false,
     "provider": "project",
-    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v319.svg",
-    "status": "needs-replacement-or-context"
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v319-fahrradschloss.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+      "context": {
+        "de": "Das markierte Teil sichert das Fahrrad am Ständer gegen Diebstahl.",
+        "en": "The highlighted part secures the bicycle to the stand against theft.",
+        "zh": "标出的部件把自行车固定在停车架上，防止被盗。"
+      },
+      "answerVariants": [
+        {
+          "de": "das Bügelschloss",
+          "plural": "die Bügelschlösser"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Fahrradschloss"
+      ],
+      "reason": "Das markierte Teil sichert das Fahrrad am Ständer gegen Diebstahl."
+    },
+    "reviewHistory": [
+      {
+        "path": "wilson/original-next/v319.svg",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v319.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "reason": "Generic padlock lacks enough bicycle-specific context; replace or add a bicycle scene.",
+        "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+        "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
   },
   {
     "id": "v322",
@@ -28903,6 +29069,196 @@ const WILSON_IMAGE_CANDIDATES=[
         "zh": "电流过大时，这个零件里的细金属丝会熔断，切断电路。"
       },
       "reason": "Der dünne Draht im gezeigten Bauteil schmilzt bei zu viel Strom und unterbricht den Stromkreis."
+    }
+  },
+  {
+    "id": "v467",
+    "de": "die Handbremse",
+    "plural": "die Handbremsen",
+    "en": "handbrake",
+    "zh": "手刹",
+    "pinyin": "shǒushā",
+    "path": "wilson/original-paket-09/v467-handbremse.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v467-handbremse.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈhantˌbʁɛmzə/",
+      "context": {
+        "de": "Der angezogene Hebel zwischen den Vordersitzen verhindert, dass das geparkte Auto wegrollt.",
+        "en": "The raised lever between the front seats prevents the parked car from rolling away.",
+        "zh": "拉起前排座椅之间的这个拉杆，可以防止停放的汽车溜动。"
+      },
+      "answerVariants": [
+        {
+          "de": "die Feststellbremse",
+          "plural": "die Feststellbremsen"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Handbremse"
+      ],
+      "reason": "Der angezogene Hebel zwischen den Vordersitzen verhindert, dass das geparkte Auto wegrollt."
+    }
+  },
+  {
+    "id": "v516",
+    "de": "die Hupe",
+    "plural": "die Hupen",
+    "en": "horn",
+    "zh": "喇叭",
+    "pinyin": "lǎba",
+    "path": "wilson/original-paket-09/v516-hupe.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v516-hupe.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈhuːpə/",
+      "context": {
+        "de": "Beim Drücken auf die Lenkradmitte ertönt ein Warnsignal. Wie heißt die Vorrichtung dafür?",
+        "en": "Pressing the middle of the steering wheel produces a warning sound. Name the device.",
+        "zh": "按下方向盘中央会发出警示声。这个发声装置叫什么？"
+      },
+      "answerVariants": [
+        {
+          "de": "die Autohupe",
+          "plural": "die Autohupen"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Hupe"
+      ],
+      "reason": "Beim Drücken auf die Lenkradmitte ertönt ein Warnsignal. Wie heißt die Vorrichtung dafür?"
+    }
+  },
+  {
+    "id": "v876",
+    "de": "der Reifen",
+    "plural": "die Reifen",
+    "en": "tyre",
+    "zh": "轮胎",
+    "pinyin": "lúntāi",
+    "path": "wilson/original-paket-09/v876-reifen.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v876-reifen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈʁaɪ̯fn̩/",
+      "context": {
+        "de": "Der schwarze Gummiring hat ein deutliches Profil. Das Metallteil im Inneren fehlt.",
+        "en": "The black rubber ring has a visible tread. The metal part in its centre is missing.",
+        "zh": "这个黑色橡胶圈上有明显的花纹，里面没有金属部件。"
+      },
+      "answerVariants": [
+        {
+          "de": "der Autoreifen",
+          "plural": "die Autoreifen"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Reifen"
+      ],
+      "reason": "Der schwarze Gummiring hat ein deutliches Profil. Das Metallteil im Inneren fehlt."
+    }
+  },
+  {
+    "id": "v913",
+    "de": "der Rückspiegel",
+    "plural": "die Rückspiegel",
+    "en": "rear-view mirror",
+    "zh": "后视镜",
+    "pinyin": "hòushìjìng",
+    "path": "wilson/original-paket-09/v913-rueckspiegel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v913-rueckspiegel.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈʁʏkˌʃpiːɡl̩/",
+      "context": {
+        "de": "Die markierte Fläche oben an der Windschutzscheibe zeigt den Verkehr hinter dem Auto.",
+        "en": "The highlighted surface at the top of the windscreen shows the traffic behind the car.",
+        "zh": "挡风玻璃上部标出的镜面能显示汽车后方的交通情况。"
+      },
+      "answerVariants": [
+        {
+          "de": "der Innenspiegel",
+          "plural": "die Innenspiegel"
+        },
+        {
+          "de": "der Innenrückspiegel",
+          "plural": "die Innenrückspiegel"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Rueckspiegel"
+      ],
+      "reason": "Die markierte Fläche oben an der Windschutzscheibe zeigt den Verkehr hinter dem Auto."
+    }
+  },
+  {
+    "id": "v653",
+    "de": "der Lachs",
+    "plural": "die Lachse",
+    "en": "salmon",
+    "zh": "鲑鱼",
+    "pinyin": "guīyú",
+    "path": "wilson/original-paket-09/v653-lachs.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v653-lachs.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "frische-lebensmittel-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/laks/",
+      "context": {
+        "de": "Ein silbriger Fisch mit wenigen dunklen Punkten; darunter ein orangefarbenes Filet mit hellen Fettlinien.",
+        "en": "A silvery fish with a few dark spots; below it, an orange fillet with pale fat lines.",
+        "zh": "一条带有少量深色斑点的银色鱼；下方是带浅色脂肪纹的橙色鱼肉。"
+      },
+      "languageSources": [
+        "https://www.duden.de/deklination/substantive/Lachs",
+        "https://dict.leo.org/chinesisch-deutsch/Lachs",
+        "https://atlanticsalmontrust.org/salmon-sea-trout-recognition/"
+      ],
+      "reason": "Gesamter silbriger Atlantiklachs mit schlanker Schwanzwurzel, leicht gegabelter Schwanzflosse und wenigen dunklen Punkten oberhalb der Seitenlinie; das orange Filet ergänzt die Alltagsperspektive als Lebensmittel. Die Hauptlösung bleibt der Oberbegriff Lachs, nicht Lachsfilet."
     }
   }
 ];

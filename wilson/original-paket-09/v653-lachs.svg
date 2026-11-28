@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212" height="150" viewBox="0 0 212 150" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f8e94"/>
+      <stop offset=".44" stop-color="#c4d4d5"/>
+      <stop offset=".77" stop-color="#e9eddf"/>
+      <stop offset="1" stop-color="#f6f2dc"/>
+    </linearGradient>
+    <linearGradient id="flesh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f59673"/>
+      <stop offset="1" stop-color="#e47558"/>
+    </linearGradient>
+    <clipPath id="fillet"><path d="M39 117Q59 91 106 93L153 112Q147 127 116 132L46 128Z"/></clipPath>
+  </defs>
+  <rect width="212" height="150" fill="#edf4f4"/>
+  <ellipse cx="101" cy="134" rx="67" ry="5" fill="#d9e5e0"/>
+  <!-- A silver Atlantic salmon, with a narrow tail wrist and forked tail. -->
+  <g stroke="#49646b" stroke-width="2.1">
+    <path d="M76 39L87 20L110 39" fill="#819e9f"/>
+    <path d="M146 41Q151 28 159 42" fill="#92aaaa"/>
+    <path d="M100 67L115 80L118 65M144 62L154 72L158 59" fill="#92aaaa"/>
+    <path d="M20 53Q33 39 60 37Q110 27 151 45L173 49L198 33L191 52L200 71L173 58L153 62Q101 81 54 68Q32 65 20 57Z" fill="url(#silver)"/>
+    <path d="M47 43Q57 53 49 66" fill="none" stroke-width="1.6"/>
+    <path d="M53 60L71 74L70 61" fill="#93acac" stroke-width="1.5"/>
+    <path d="M61 54Q108 50 172 54" fill="none" stroke="#91a6a5" stroke-width="1.1"/>
+    <path d="M21 57L34 57" fill="none" stroke-width="1.4"/>
+    <path d="M179 52L192 40M180 55L194 65" fill="none" stroke-width=".9"/>
+  </g>
+  <circle cx="36" cy="48" r="3.1" fill="#edf1d9" stroke="#435d65" stroke-width="1"/>
+  <circle cx="36" cy="48" r="1.8" fill="#243d45"/>
+  <g fill="#58727a">
+    <path d="M61 43l2-1 1 2-2 1ZM74 40l2 1-1 2-2-1ZM85 46l2-1 1 2-2 1ZM96 39l2 1-1 2-2-1ZM111 44l2-1 1 2-2 1ZM124 43l2 1-1 2-2-1ZM138 48l2-1 1 2-2 1Z"/>
+  </g>
+  <!-- A separate fillet supports the everyday food meaning without replacing the animal. -->
+  <path d="M39 117L46 128L116 132Q147 127 153 112L152 121Q141 136 113 139L44 134Z" fill="#71898a" stroke="#516b70" stroke-width="1.8"/>
+  <path d="M39 117Q59 91 106 93L153 112Q147 127 116 132L46 128Z" fill="url(#flesh)" stroke="#b85d45" stroke-width="2"/>
+  <g clip-path="url(#fillet)" fill="none" stroke="#fbe0bb" stroke-width="2.8">
+    <path d="M57 93Q56 113 76 132M72 87Q70 109 92 137M88 85Q84 109 110 139M104 89Q99 111 126 135M121 94Q116 112 143 131"/>
+  </g>
+  <path d="M44 121Q73 126 114 128" fill="none" stroke="#f8bb94" stroke-width="1.8"/>
+</svg>

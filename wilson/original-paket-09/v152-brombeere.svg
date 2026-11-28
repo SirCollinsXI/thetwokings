@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 150" width="212" height="150" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">Eine reife Brombeere</title>
+  <desc id="desc">Eine einzelne kompakte schwarzviolette Brombeere besteht aus vielen dicht anliegenden kleinen Teilfrüchtchen. Am oberen Ende sitzen kleine grüne Kelchblätter.</desc>
+  <rect width="212" height="150" fill="#fbf0df"/>
+  <ellipse cx="107" cy="130" rx="52" ry="6" fill="#213240" fill-opacity="0.09"/>
+  <path d="M105 36c1-8 5-13 10-16" fill="none" stroke="#547447" stroke-width="4"/>
+  <path d="m106 39-20-9 6 15-19 2 17 10 17-4 15 5 15-11-17-2 7-15-20 9Z" fill="#759455" stroke="#496944" stroke-width="2"/>
+  <path d="M107 38c-17-3-31 9-36 23-7 18-4 39 8 52 8 10 19 16 29 16 14-1 28-15 34-28 8-17 6-36-4-49-7-9-18-15-31-14Z" fill="#332a3b" stroke="#302737" stroke-width="3"/>
+  <g stroke="#2b2634" stroke-width="1.5">
+    <ellipse cx="95" cy="48" rx="10" ry="9" fill="#494058"/>
+    <ellipse cx="111" cy="46" rx="10" ry="9" fill="#393246"/>
+    <ellipse cx="126" cy="51" rx="10" ry="10" fill="#41374f"/>
+    <ellipse cx="82" cy="62" rx="10" ry="11" fill="#4b405a"/>
+    <ellipse cx="99" cy="63" rx="11" ry="11" fill="#4d435c"/>
+    <ellipse cx="117" cy="63" rx="11" ry="11" fill="#42394f"/>
+    <ellipse cx="134" cy="65" rx="10" ry="11" fill="#342e40"/>
+    <ellipse cx="77" cy="79" rx="10" ry="11" fill="#494055"/>
+    <ellipse cx="93" cy="80" rx="11" ry="11" fill="#51465f"/>
+    <ellipse cx="111" cy="80" rx="11" ry="11" fill="#483e55"/>
+    <ellipse cx="128" cy="82" rx="11" ry="11" fill="#3b3349"/>
+    <ellipse cx="141" cy="82" rx="8" ry="11" fill="#302b3b"/>
+    <ellipse cx="81" cy="97" rx="10" ry="11" fill="#453b50"/>
+    <ellipse cx="99" cy="98" rx="11" ry="11" fill="#473c53"/>
+    <ellipse cx="117" cy="98" rx="11" ry="11" fill="#3a3145"/>
+    <ellipse cx="134" cy="98" rx="10" ry="11" fill="#302a3c"/>
+    <ellipse cx="91" cy="113" rx="10" ry="10" fill="#3b3247"/>
+    <ellipse cx="108" cy="114" rx="11" ry="11" fill="#3d3247"/>
+    <ellipse cx="124" cy="113" rx="10" ry="10" fill="#302938"/>
+    <ellipse cx="107" cy="125" rx="9" ry="6" fill="#332a3b"/>
+  </g>
+  <g fill="none" stroke="#8c8198" stroke-width="2.1">
+    <path d="M91 45q3-3 6-1m10-2 4-1m-32 18 3-2m12 3 5-2m14 1 4-1m-43 17 3-1m12 2 5-2m14 2 5-1m-35 19 4-2m12 2 5-1"/>
+  </g>
+  <g fill="none" stroke="#665a72" stroke-width="1.7">
+    <path d="m123 49 3 1m6 13 3 1m-9 17 4 1m-14 14 4 1m-32 14 4-1m13 1 4-1"/>
+  </g>
+</svg>
