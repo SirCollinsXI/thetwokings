@@ -19,13 +19,13 @@
 <h1 id="heading">看图，<span>写德语。</span></h1>
 <p class="subtitle" id="subtitle">没有每日上限。输入德语单复数，按 Enter 检查；再按 Enter 进入下一张图片。</p>
 <section class="stats" aria-label="Progress"><div class="stat"><small id="attempts-label">完成的练习次数</small><strong id="attempts">0</strong></div><div class="stat"><small id="tested-label">已测试词数</small><strong id="tested">0</strong></div><div class="stat"><small id="due-label">待复习</small><strong id="due">0</strong></div><div class="stat"><small id="first-label">首次正确率</small><strong id="accuracy">—</strong></div></section>
-<div class="work" id="exercise" data-phase="recall">
+<div class="work" id="exercise" data-phase="loading">
 <div class="panel picture"><img id="word-image" src="wilson/cup.svg" alt=""><small id="picture-note">观察图片，然后输入德语</small><div id="image-credit" class="image-credit"></div></div>
 <div class="panel answer">
 <p class="eyebrow" id="round-note">自由练习</p><h2 id="question">写出单数（含冠词）和复数</h2>
-<form id="entry" autocomplete="off"><label class="hint" id="format" for="typed">先写冠词和单数，再输入逗号和复数。复数前的 die 可省略。</label><input id="typed" name="typed" maxlength="130" autocomplete="off" spellcheck="false" autocapitalize="off" aria-describedby="format status" required>
+<form id="entry" autocomplete="off"><label class="hint" id="format" for="typed">先写冠词和单数，再输入逗号和复数。复数前的 die 可省略。</label><input id="typed" disabled maxlength="130" autocomplete="off" spellcheck="false" autocapitalize="off" aria-describedby="format status" required>
 <div class="char-row" aria-label="German special characters"><button type="button" data-char="ä">ä</button><button type="button" data-char="ö">ö</button><button type="button" data-char="ü">ü</button><button type="button" data-char="ß">ß</button></div>
-<div class="action-row"><button type="submit" id="submit" class="primary">检查 ↵</button><button type="button" class="secondary" id="listen" hidden>🔊 再听一遍</button></div></form>
+<div class="action-row"><button type="submit" id="submit" class="primary" disabled>检查 ↵</button><button type="button" class="secondary" id="listen" hidden>🔊 再听一遍</button></div></form>
 <div class="status" id="status" role="status" aria-live="polite"></div>
 <div class="solution" id="solution" hidden><b id="correct-answer"></b><p class="ipa" id="ipa"></p><dl><dt>English</dt><dd id="english"></dd><dt>中文</dt><dd id="chinese"></dd></dl><p id="accepted" class="hint" hidden></p><div id="declension" class="n-tag" hidden></div><small id="repeat-note"></small></div>
 </div></div>
@@ -35,5 +35,5 @@
 <script src="wilson-lexicon.js?v=20261127p08b10"></script>
 <script src="wilson-image-candidates.js?v=20261127p08b10"></script>
 <script src="wilson-vocabulary.js?v=20261126r1"></script>
-<script src="wilson-input.js?v=20261128-signals"></script>
+<script src="wilson-input.js?v=20261128-ready"></script>
 </body></html>

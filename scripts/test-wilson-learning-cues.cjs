@@ -13,10 +13,12 @@ const href = (page, lang) => new URL(page + (remote ? '' : '.html') + '?lang=' +
 async function waitForRelease() {
   const content = await Promise.all(['wilson.html', 'wilson-input.html', 'wilson-learning.css', 'wilson-input.js', 'wilson-paths.js']
     .map(async f => [f, (await fs.readFile(path.join(__dirname, '..', f), 'utf8')).replaceAll('\r\n', '\n')]));
+  const trainer = content.find(([file]) => file === 'wilson-input.html')[1];
+  const inputScript = trainer.match(/src="(wilson-input\.js\?v=[^"]+)"/)[1];
   for (let attempt = 0; attempt < 25; attempt++) {
     try {
       for (const [file, expected] of content) {
-        const route = file.endsWith('.html') ? file.slice(0, -5) : file + '?v=20261128-signals';
+        const route = file.endsWith('.html') ? file.slice(0, -5) : file === 'wilson-input.js' ? inputScript : file + '?v=20261128-signals';
         const res = await fetch(new URL(route, root), { signal: AbortSignal.timeout(6000) });
         assert.equal(res.status, 200);
         const body = (await res.text()).replaceAll('\r\n', '\n');
@@ -24,7 +26,8 @@ async function waitForRelease() {
         // release-specific markup there and the complete trainer JS and CSS.
         if (file.endsWith('.html')) {
           assert(body.includes('wilson-learning.css?v=20261128-signals'));
-          assert(body.includes(file === 'wilson.html' ? 'id="preview-prompt"' : 'id="exercise"'));
+          if (file === 'wilson.html') assert(body.includes('id="preview-prompt"'));
+          else assert(body.includes(inputScript) && body.includes('data-phase="loading"'));
         } else {
           assert(body === expected, file + ' has not reached the domain yet');
         }
@@ -58,6 +61,19 @@ async function runCase(browser, lang, width) {
   const page = await ctx.newPage();
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
+  const resources = [];
+  page.on('response', response => {
+    const req = response.request();
+    if (req.resourceType() === 'script' || req.isNavigationRequest())
+      resources.push([new URL(req.url()).pathname, response.status(), response.headers()['content-type']]);
+  });
+  page.on('requestfailed', req => resources.push([new URL(req.url()).pathname, req.failure()?.errorText]));
+  await page.addInitScript(() => {
+    window.wilsonTestEvents = { enter: 0, submit: 0, invalid: 0 };
+    document.addEventListener('keydown', e => { if (e.target.id === 'typed' && e.key === 'Enter') window.wilsonTestEvents.enter++; }, true);
+    document.addEventListener('submit', e => { if (e.target.id === 'entry') window.wilsonTestEvents.submit++; }, true);
+    document.addEventListener('invalid', e => { if (e.target.id === 'typed') window.wilsonTestEvents.invalid++; }, true);
+  });
   // All practice records belong to this fresh, disposable browser profile.
   await ctx.route('**/*', route => ['GET', 'HEAD'].includes(route.request().method()) ? route.continue() : route.abort());
   try {
@@ -87,7 +103,19 @@ async function runCase(browser, lang, width) {
     assert.equal(await example.isVisible(), false);
     const challenge = page.locator('.wilson-challenge-link');
     assert.equal(new URL(await challenge.getAttribute('href'), page.url()).searchParams.get('lang'), lang);
-    await challenge.click();
+    if (lang === 'de' && width === 390) {
+      // Delay only the trainer engine. The parsed form must stay inert until its handlers and first word are ready.
+      let permit;
+      const gate = new Promise(resolve => { permit = resolve; });
+      await page.route('**/wilson-input.js*', async route => { await gate; await route.continue(); }, { times: 1 });
+      const clicked = challenge.click({ noWaitAfter: true });
+      try {
+        await page.locator('#exercise[data-phase="loading"]').waitFor();
+        assert.equal(await page.locator('#typed').isDisabled(), true);
+        assert.equal(await page.locator('#submit').isDisabled(), true);
+        assert.equal(await page.locator('#typed').getAttribute('name'), null);
+      } finally { permit(); await clicked; }
+    } else await challenge.click();
     const exercise = page.locator('#exercise');
     const phase = expected => page.waitForFunction(val => document.querySelector('#exercise')?.dataset.phase === val, expected);
     await phase('recall');
@@ -147,6 +175,23 @@ async function runCase(browser, lang, width) {
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     assert.deepEqual(errors, []);
     console.log('Wilson: recall, retry, review, success and saved progress verified', lang, width, root.origin);
+  } catch (error) {
+    const state = await page.evaluate(() => {
+      const el = id => document.getElementById(id);
+      const field = el('typed'), url = new URL(location.href);
+      return {
+        path: url.pathname, parameters: [...url.searchParams.keys()], ready: document.readyState,
+        phase: el('exercise')?.dataset.phase, language: document.documentElement.lang,
+        question: el('question')?.textContent, round: el('round-note')?.textContent,
+        words: typeof WILSON_VOCABULARY === 'undefined' ? null : WILSON_VOCABULARY.inputWords?.length,
+        inputDisabled: field?.disabled, inputReadOnly: field?.readOnly, inputInvalid: field?.getAttribute('aria-invalid'),
+        submitted: window.wilsonTestEvents, webLocks: typeof navigator.locks?.request,
+        feedback: el('status')?.textContent, warning: el('warning')?.textContent,
+        trainer: [...document.scripts].map(s => s.src).find(src => src.includes('wilson-input.js'))
+      };
+    }).catch(e => ({ diagnosticError: e.message }));
+    console.error('Wilson browser failure', JSON.stringify({ lang, width, state, resources, errors }));
+    throw error;
   } finally { await ctx.close(); }
 }
 (async () => {
