@@ -80,3 +80,37 @@
 @media (max-width: 40rem) {
   .playable-games { grid-template-columns: minmax(0, 1fr); }
 }
+.wehr-game {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  margin-block: 1.25rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  background: #162b2c;
+  color: #fff8e7;
+  border: 1px solid #506a69;
+  border-radius: .5rem;
+}
+.wehr-info, .wehr-film { min-width: 0; }
+.wehr-game h3 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.15; }
+.wehr-info p { line-height: 1.5; margin: .7rem 0 1rem; }
+.wehr-game .wehr-play {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding-inline: 1.2rem;
+  background: #f3cd80;
+  color: #172625;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: .3rem;
+}
+.wehr-play:hover { text-decoration: underline; }
+.wehr-play:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.wehr-info small { display: block; margin-top: .6rem; color: #c3d3cf; }
+.wehr-film { margin: 0; }
+.wehr-film video { display: block; width: 100%; height: auto; border-radius: .35rem; background: #0d191a; }
+.wehr-film figcaption { margin-top: .3rem; font-size: .85rem; color: #dae3dd; }
+@media (max-width: 42rem) { .wehr-game { grid-template-columns: minmax(0, 1fr); } }
+

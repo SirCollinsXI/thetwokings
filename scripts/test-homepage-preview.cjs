@@ -462,9 +462,36 @@ async function run() {
             return element.naturalWidth > 0 && element.naturalHeight > 0;
           }));
         }
-        assert.match(await section.locator('#wehr').innerText(), /Windows/);
-        assert.equal(await section.locator('#wehr a').count(), 0);
+        const island = section.locator('#wehr');
+        const playIsland = island.getByRole('link', { name: { de: 'Jetzt spielen', en: 'Play now', zh: '开始游戏' }[lang], exact: true });
+        const islandURL = new URL(await playIsland.getAttribute('href'), page.url());
+        assert.equal(islandURL.origin, preview.origin);
+        assert.equal(islandURL.pathname, '/das-wehr/');
+        assert.equal(islandURL.searchParams.get('lang'), lang);
+        assert.match(await island.innerText(), /V53/);
+        assert.equal(await island.locator('video').getAttribute('preload'), 'none');
         if (source === 'homepage') {
+          if (lang === 'de') {
+            const dimensions = await island.locator('video').evaluate(async video => {
+              video.muted = true;
+              let timeout;
+              try {
+                const playing = async () => {
+                  await video.play();
+                  await new Promise(resolve => video.requestVideoFrameCallback(resolve));
+                  return [video.videoWidth, video.videoHeight];
+                };
+                return await Promise.race([
+                  playing(),
+                  new Promise((_, reject) => { timeout = setTimeout(() => reject(Error('The homepage trailer did not play')), 20000); })
+                ]);
+              } finally {
+                clearTimeout(timeout);
+                video.pause();
+              }
+            });
+            assert.deepEqual(dimensions, [1280, 720], 'the trailer plays its 720p film on the homepage');
+          }
           await testTrials(page, lang);
           if (lang === 'de') {
             await testPublicWall(page);
@@ -494,3 +521,4 @@ async function run() {
   }
 }
 run().catch(error => { console.error(error); process.exitCode = 1; });
+
