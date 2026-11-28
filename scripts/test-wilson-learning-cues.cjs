@@ -11,7 +11,7 @@ const remote = root.protocol === 'https:';
 const href = (page, lang) => new URL(page + (remote ? '' : '.html') + '?lang=' + lang, root).href;
 
 async function waitForRelease() {
-  const content = await Promise.all(['wilson.html', 'wilson-input.html', 'wilson-learning.css', 'wilson-input.js']
+  const content = await Promise.all(['wilson.html', 'wilson-input.html', 'wilson-learning.css', 'wilson-input.js', 'wilson-paths.js']
     .map(async f => [f, (await fs.readFile(path.join(__dirname, '..', f), 'utf8')).replaceAll('\r\n', '\n')]));
   for (let attempt = 0; attempt < 25; attempt++) {
     try {
@@ -61,7 +61,17 @@ async function runCase(browser, lang, width) {
   // All practice records belong to this fresh, disposable browser profile.
   await ctx.route('**/*', route => ['GET', 'HEAD'].includes(route.request().method()) ? route.continue() : route.abort());
   try {
-    await page.goto(href('/wilson', lang));
+    if (lang === 'zh' && width === 390) {
+      await page.goto(href('/wilson', lang));
+      await page.locator('button[data-path="simple"]').click();
+    }
+    await page.goto(href('/wilson', lang) + '#preview-card');
+    // Assigning the same fragment would only scroll the currently open page.
+    // Reload this one returning profile as it would open the link from outside.
+    if (lang === 'zh' && width === 390) {
+      await page.reload();
+      assert.equal(await page.evaluate(() => JSON.parse(localStorage.getItem('ttk-wilson-path-v1'))), 'simple');
+    }
     const preview = page.locator('.picture-preview');
     const prompt = preview.locator('summary');
     await prompt.waitFor();
