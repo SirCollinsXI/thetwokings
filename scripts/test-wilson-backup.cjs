@@ -69,11 +69,12 @@ async function run(browser, lang, width) {
       await target.locator('#cancel').click();
       assert.deepEqual(await read(), initial);
       await choose(backup);
+      await target.locator('#apply').waitFor();
       await target.locator('#apply').focus();
       await target.locator('#apply').press('Enter');
-      await target.locator('#swap').waitFor();
-      assert.deepEqual(await read(), fixture);
-
+      await target.waitForFunction(() => document.querySelector('#backup-status').textContent.length > 0);
+      assert.deepEqual(await read(), fixture, await target.locator('#backup-status').innerText());
+      assert.equal(await target.locator('#swap').isVisible(), true);
       const trainer = await fresh.newPage();
       await trainer.goto(href('/wilson-input', lang));
       await trainer.waitForFunction(() => document.querySelector('#attempts').textContent === '6');
