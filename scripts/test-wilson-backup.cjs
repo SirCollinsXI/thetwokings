@@ -50,7 +50,10 @@ async function run(browser, lang, width) {
       await target.goto(href('/wilson', lang));
       const link = target.locator('[data-wilson-backup]');
       assert.equal(new URL(await link.getAttribute('href'), target.url()).searchParams.get('lang'), lang);
-      await link.click();
+      await Promise.all([target.waitForURL(href('/wilson-backup', lang), { waitUntil: 'load' }), link.click()]);
+      await target.locator('#backup-file').waitFor();
+      await target.waitForFunction(() => typeof WilsonStorage === 'object');
+      assert.equal(await target.locator('h1').innerText(), labels[lang]);
       const choose = blob => target.locator('#backup-file').setInputFiles({ name: 'test.json', mimeType: 'application/json', buffer: Buffer.from(blob) });
       const read = () => target.evaluate(() => WilsonStorage.snapshot());
       const initial = await read();
