@@ -67,6 +67,7 @@ async function run(browser, origin) {
 
   async function boot() {
     page = await context.newPage();
+    await page.bringToFront();
     session = await context.newCDPSession(page);
     page.on('pageerror', error => console.error('Dino-Insel:', error.message));
     const messages = new Set();
@@ -85,7 +86,15 @@ async function run(browser, origin) {
     console.log('Dino-Insel: engine started', await page.evaluate(() => {
       const canvas = document.getElementById('canvas');
       const rect = canvas.getBoundingClientRect();
-      return {view: [innerWidth, innerHeight], canvas: [canvas.width, canvas.height], css: [rect.x, rect.y, rect.width, rect.height]};
+      window.dinoTestTouches = [];
+      for (const type of ['touchstart','touchmove','touchend','touchcancel']) {
+        document.addEventListener(type, event => {
+          const point = event.changedTouches[0];
+          window.dinoTestTouches.push([type,event.target.id,event.touches.length,Math.round(point.clientX),Math.round(point.clientY)]);
+          if (window.dinoTestTouches.length > 24) window.dinoTestTouches.shift();
+        }, {capture:true,passive:true});
+      }
+      return {view: [innerWidth, innerHeight], canvas: [canvas.width, canvas.height], css: [rect.x, rect.y, rect.width, rect.height], focused:document.hasFocus(), active:document.activeElement.id, visibility:document.visibilityState};
     }));
     return page;
   }
@@ -94,6 +103,38 @@ async function run(browser, origin) {
     const bytes = Buffer.from(data, 'base64');
     if (artifacts) await fs.writeFile(path.join(artifacts, name + '.png'), bytes);
     return bytes;
+  }
+
+  // The first save precedes both the physics tick that closes the menu and
+  // the render tick that lays out the joystick. Read its coloured thumb from
+  // a composited frame before touching it. SwiftShader can take seconds/frame.
+  async function waitForThumb(y, name) {
+    const until = Date.now() + 60000;
+    let colors;
+    do {
+      const png = (await screenshot(name)).toString('base64');
+      colors = await page.evaluate(async ({png,y}) => {
+        const bytes = Uint8Array.from(atob(png), c => c.charCodeAt(0));
+        const bitmap = await createImageBitmap(new Blob([bytes], {type:'image/png'}));
+        const ctx = new OffscreenCanvas(bitmap.width, bitmap.height).getContext('2d');
+        ctx.drawImage(bitmap, 0, 0);
+        bitmap.close();
+        return [65,72,79].map(x => Array.from(ctx.getImageData(x, y, 1, 1).data).slice(0,3));
+      }, {png,y});
+      // The translucent #a7d5cc thumb sits over the dark pad.
+      if (colors.every(([r,g,b]) => r >= 135 && r <= 184 && g >= 175 && g <= 220 && b >= 165 && b <= 218 && g-r >= 27 && g > b)) {
+        console.log('Dino-Insel: visible stick thumb', {y, colors});
+        return;
+      }
+      await delay(300);
+    } while (Date.now() < until);
+    throw Error('Touch stick missing at y=' + y + ': ' + JSON.stringify(colors));
+  }
+  async function frames(count) {
+    await page.evaluate(n => new Promise(resolve => {
+      function tick() { if (--n <= 0) resolve(); else requestAnimationFrame(tick); }
+      requestAnimationFrame(tick);
+    }), count);
   }
 
   // Locate the solid panels of the native menu in the actual screenshot. Their
@@ -140,19 +181,20 @@ async function run(browser, origin) {
     await page.touchscreen.tap(422, rows[0]);
     const before = await waitForSlot(page, () => true);
     console.log('Dino-Insel: campaign start saved', before);
-    const cdp = await context.newCDPSession(page);
+    await waitForThumb(318, 'dino-handy-spiel');
     const finger = (id,x,y) => ({id,x,y,radiusX:5,radiusY:5,force:.8});
-    const dispatch = (type, points) => cdp.send('Input.dispatchTouchEvent', {type,touchPoints:points});
-    await dispatch('touchStart', [finger(1,72,318)]);
-    await dispatch('touchMove', [finger(1,72,266)]);
-    await dispatch('touchStart', [finger(1,72,266), finger(2,495,152)]);
-    for (let i=1; i<=8; i++) {
-      await dispatch('touchMove', [finger(1,72,266), finger(2,495+i*10,152+i)]);
-      await delay(110);
+    const dispatch = (type, points) => session.send('Input.dispatchTouchEvent', {type,touchPoints:points});
+    await dispatch('touchStart', [finger(0,72,318), finger(1,495,152)]);
+    await frames(2);
+    for (let i=1; i<=4; i++) {
+      await dispatch('touchMove', [finger(0,72,318-i*13), finger(1,495+i*22,152+i*2)]);
+      await frames(2);
     }
+    await waitForThumb(285, 'dino-handy-laufen');
     await dispatch('touchEnd', []);
-    await screenshot('dino-handy-spiel');
+    await frames(2);
     await page.touchscreen.tap(808,35);
+    await menuRows();
     const moved = await waitForSlot(page, slot => Math.hypot(slot.x-before.x, slot.z-before.z) > .12 && Math.abs(slot.yaw-before.yaw) > .02);
     console.log('Dino-Insel: multi-touch motion saved', moved);
     await page.close();
@@ -162,17 +204,20 @@ async function run(browser, origin) {
     const reopened = await waitForSlot(page, () => true);
     assert.deepEqual(reopened, moved, 'saved position and look persist across tabs');
     await page.touchscreen.tap(422, loadRows[1]);
-    await delay(700);
-    const afterLoad = await context.newCDPSession(page);
-    await afterLoad.send('Input.dispatchTouchEvent', {type:'touchStart', touchPoints:[finger(3,520,150)]});
-    await afterLoad.send('Input.dispatchTouchEvent', {type:'touchMove', touchPoints:[finger(3,602,150)]});
-    await afterLoad.send('Input.dispatchTouchEvent', {type:'touchEnd', touchPoints:[]});
-    await delay(300);
+    await waitForThumb(318, 'dino-handy-geladen');
+    await dispatch('touchStart',[finger(0,520,150)]);
+    await frames(2);
+    await dispatch('touchMove',[finger(0,602,150)]);
+    await frames(2);
+    await dispatch('touchEnd',[]);
+    await frames(2);
     await page.touchscreen.tap(808, 35);
+    await menuRows();
     const after = await waitForSlot(page, slot => Math.abs(slot.yaw-moved.yaw) > .02);
     assert.ok(Math.hypot(after.x-moved.x, after.z-moved.z) < .1, 'restored character looks around from the saved location');
     console.log('Dino-Insel: mobile Godot menu rendered, campaign started by touch, simultaneous walk/look and persisted checkpoint verified.');
   } catch (error) {
+    if (page && !page.isClosed()) console.error('Dino-Insel input diagnostics', await page.evaluate(() => ({focused:document.hasFocus(), active:document.activeElement?.id, visibility:document.visibilityState, touches:window.dinoTestTouches})).catch(() => null));
     if (artifacts && session && page && !page.isClosed()) await screenshot('dino-handy-fehler').catch(() => {});
     throw error;
   } finally { await context.close(); }

@@ -471,6 +471,27 @@ async function run() {
         assert.match(await island.innerText(), /V53/);
         assert.equal(await island.locator('video').getAttribute('preload'), 'none');
         if (source === 'homepage') {
+          if (lang === 'de') {
+            const dimensions = await island.locator('video').evaluate(async video => {
+              video.muted = true;
+              let timeout;
+              try {
+                const playing = async () => {
+                  await video.play();
+                  await new Promise(resolve => video.requestVideoFrameCallback(resolve));
+                  return [video.videoWidth, video.videoHeight];
+                };
+                return await Promise.race([
+                  playing(),
+                  new Promise((_, reject) => { timeout = setTimeout(() => reject(Error('The homepage trailer did not play')), 20000); })
+                ]);
+              } finally {
+                clearTimeout(timeout);
+                video.pause();
+              }
+            });
+            assert.deepEqual(dimensions, [1280, 720], 'the trailer plays its 720p film on the homepage');
+          }
           await testTrials(page, lang);
           if (lang === 'de') {
             await testPublicWall(page);
