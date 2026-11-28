@@ -36,6 +36,7 @@ async function startProfile(browser, origin, approvals, viewport, nativeCards = 
   const context = await browser.newContext({ viewport, serviceWorkers: 'block' });
   const unexpected = [];
   let healthy = false;
+  let guestOnline = nativeCards !== null;
   let reads = 0;
   const submissions = [];
   await context.addInitScript(() => {
@@ -61,7 +62,7 @@ async function startProfile(browser, origin, approvals, viewport, nativeCards = 
     const url = new URL(request.url());
     if (url.origin === origin.origin && url.pathname === '/api/gastgruesse') {
       if (request.method() === 'GET') {
-        return route.fulfill({ status: nativeCards ? 200 : 503, json: nativeCards ? { cards: nativeCards } : { error: 'unavailable' } });
+        return route.fulfill({ status: guestOnline ? 200 : 503, json: guestOnline ? { cards: nativeCards } : { error: 'unavailable' } });
       }
       if (request.method() === 'POST' && nativeCards) {
         submissions.push(request.postDataJSON());
@@ -92,13 +93,22 @@ async function startProfile(browser, origin, approvals, viewport, nativeCards = 
     return route.continue();
   });
   return { context, page: await context.newPage(), unexpected, submissions,
-    enableTally: () => { healthy = true; }, reads: () => reads };
+    enableTally: () => { healthy = true; }, reads: () => reads, setGuestOnline: active => { guestOnline = active; } };
 }
 
 async function typeGuests(profile, origin, lang) {
   const { page } = profile;
   const link = new URL('/?lang=' + lang + '#grusswand', origin);
-  assert.equal((await page.goto(link.href)).status(), 200);
+  const response = await page.goto(link.href);
+  assert.ok(response && response.status() === 200, 'Expected a full HTTP 200 document for ' + link.href);
+  if (lang === 'de') {
+    const saved = await page.evaluate(marker =>
+      previewSpuren.add({ kind: 'idea', category: 'comics', note: marker }), privateMarker);
+    assert.equal(saved, 'saved');
+    const reloaded = await page.reload();
+    assert.ok(reloaded && reloaded.status() === 200, 'Reload with the stored note must return the real page');
+    assert.ok(await page.evaluate(marker => previewSpuren.read().some(item => item.note === marker), privateMarker));
+  }
   const editor = page.locator('#guest-editor');
   const summary = editor.locator('summary').first();
   if (!await editor.evaluate(el => el.open)) {
@@ -190,10 +200,17 @@ async function checkDirectSubmission(browser, origin) {
     await page.waitForFunction(() => /审|待/.test(document.querySelector('#guest-status').textContent));
     assert.equal((await list.innerText()).includes(draftNick), false, 'A pending response cannot add a public card');
     assert.ok((await list.innerText()).includes(approvedNick));
+    native.setGuestOnline(false);
+    await page.locator('#guest-refresh').click();
+    await page.locator('#guest-read-status').waitFor();
+    assert.ok((await list.innerText()).includes(approvedNick), 'A temporary outage must preserve the last read list');
+    assert.equal(await page.locator('#guest-refresh').isVisible(), true);
+    native.setGuestOnline(true);
     // Simulate a later editorial approval in the private browser fixture.
     nativeCards.unshift({ day: '2026-11-28', nick: draftNick, region: 'DE', kind: 'human', mark: 'crown' });
     await page.locator('#guest-refresh').click();
     await list.getByText(draftNick, { exact: false }).first().waitFor();
+    await page.locator('#guest-read-status').waitFor({ state: 'hidden' });
     assert.equal(native.submissions.length, 1, 'Refreshing approved entries must never resubmit the greeting');
     assert.equal(await page.evaluate(() => window.testGuestGeo), 0);
     assert.deepEqual(native.unexpected, []);
@@ -224,8 +241,6 @@ module.exports = async function testGuestWall(browser, origin) {
   await checkDirectSubmission(browser, origin);
   const empty = await startProfile(browser, origin, [], { width: 390, height: 844 });
   try {
-    await empty.page.goto(new URL('/?lang=de', origin).href);
-    await empty.page.evaluate(marker => previewSpuren.add({ kind: 'idea', category: 'comics', note: marker }), privateMarker);
     for (const lang of Object.keys(countries)) {
       await typeGuests(empty, origin, lang);
       await empty.page.locator('#guest-empty').waitFor();
