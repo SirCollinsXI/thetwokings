@@ -8,8 +8,8 @@ zh:{choose:'今天想怎样学习？',simple:'轻松学习',simpleNote:'看图�
 const tr=k=>k==='nature'?{de:'Tiere & Natur',en:'Animals & nature',zh:'动物与自然'}[state.ui]:COPY[state.ui][k];
 const KEYS={path:'ttk-wilson-path-v1',child:'ttk-wilson-child-v1'};
 let path='',kidRound=null,kidSettings={target:'de',stage:'visual',topic:'food'},child={version:1,rounds:0};
-try{const c=JSON.parse(localStorage.getItem(KEYS.child));if(c?.version===1&&Number.isSafeInteger(c.rounds)&&c.rounds>=0)child=c}catch{}
-const persist=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{notice(t('nostorage'))}};
+try{const c=JSON.parse(cornerStorage.getItem(KEYS.child));if(c?.version===1&&Number.isSafeInteger(c.rounds)&&c.rounds>=0)child=c}catch{}
+const persist=(k,v)=>{try{cornerStorage.setItem(k,JSON.stringify(v))}catch{notice(t('nostorage'))}};
 const illustrated=()=>WORDS.filter(w=>w.picture && (path!=='kids'||w.childSuitable));
 const pic=w=>image(w)+(w.imageCredit?.provider==='project'?'<small class="image-credit">TheTwoKings · Original SVG · AI-assisted</small>':w.imageCredit?'<small class="image-credit">Mulberry Symbols © Steve Lee · CC BY-SA 4.0 · SVG unchanged</small>':'');
 const oldBrowse=browse;
@@ -29,7 +29,7 @@ function kidIntro(){const root=$('#kids-space');root.innerHTML=`<h2>${tr('discov
 function kidQuestion(){const r=kidRound,w=r.words[r.i];r.matched=false;const root=$('#kids-space');root.innerHTML=`<p class="eyebrow">${tr('seen')} · ${r.i+1} / 3</p><h2>${tr(kidSettings.stage==='visual'?'match':'find')}</h2><div class="kid-prompt">${kidSettings.stage==='visual'?pic(w):''}<button class="audio" id="kid-hear">🔊 ${tr('hear')}</button>${kidSettings.stage==='audio'?`<small>${escapeText(w[kidSettings.target])}</small>`:''}</div><div class="kid-choices">${shuffle(r.words).map((x,i)=>`<button class="kid-card" data-kid-answer="${x.id}" aria-label="${escapeText(x[kidSettings.target])}">${pic(x)}</button>`).join('')}</div><p id="kid-status" role="status" aria-live="polite"></p><button class="primary" id="kid-next" hidden>${tr('next')}</button><button class="secondary" id="kid-stop">${tr('stop')}</button>`;$('#kid-hear').onclick=()=>kidSpeak(w);$('#kid-stop').onclick=()=>requestLeave(kidsHome);document.querySelectorAll('[data-kid-answer]').forEach(b=>b.onclick=()=>{if(r.matched)return;if(b.dataset.kidAnswer!==w.id){$('#kid-status').textContent=tr('try');return}r.matched=true;$('#kid-status').textContent='✓ '+tr('good')+' '+w[kidSettings.target];b.classList.add('matched');document.querySelectorAll('[data-kid-answer]').forEach(x=>x.disabled=true);$('#kid-next').hidden=false;kidSpeak(w)});$('#kid-next').onclick=()=>{r.i++;if(r.i<3)kidQuestion();else kidDone()};focusTitle(root)}
 function kidDone(){child.rounds++;persist(KEYS.child,child);kidRound=null;$('#ui').disabled=false;const root=$('#kids-space');root.innerHTML=`<span class="path-icon" aria-hidden="true">🌻</span><h2>${tr('finish')}</h2><p>${tr('pause')}</p><div class="real-world">${tr('real')}</div><button class="secondary" id="kid-again">${tr('again')}</button>`;$('#kid-again').onclick=kidsHome;focusTitle(root)}
 const oldUI=$('#ui').onchange;$('#ui').onchange=e=>{oldUI(e);visibility()};$('#home').onclick=e=>{e.preventDefault();requestLeave(()=>select(''))};
-let initial='';try{initial=JSON.parse(localStorage.getItem(KEYS.path))||''}catch{}const requested=new URLSearchParams(location.search).get('path');
+let initial='';try{initial=JSON.parse(cornerStorage.getItem(KEYS.path))||''}catch{}const requested=new URLSearchParams(location.search).get('path');
 // Opening the example should preserve a returning learner's preferred mode.
 if(location.hash === '#preview-card' && !requested) select('', false);
 else select(['simple','pro','kids'].includes(requested)?requested:['simple','pro','kids'].includes(initial)?initial:'');

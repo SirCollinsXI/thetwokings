@@ -104,6 +104,7 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/wilson-browser" --no-audit --no-fund playwright-core@1.56.1
           NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-backup.cjs
       - name: Find the Cloudflare deployment for this PR commit
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         id: pages
@@ -133,6 +134,7 @@ jobs:
           WILSON_ORIGIN: ${{ steps.pages.outputs.url }}
         run: |
           NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-backup.cjs
       - name: Archive responsive screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -162,3 +164,4 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/wilson-browser" --no-audit --no-fund playwright-core@1.56.1
           NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-backup.cjs

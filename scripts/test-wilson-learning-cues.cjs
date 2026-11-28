@@ -14,11 +14,13 @@ async function waitForRelease() {
   const content = await Promise.all(['wilson.html', 'wilson-input.html', 'wilson-learning.css', 'wilson-input.js', 'wilson-paths.js']
     .map(async f => [f, (await fs.readFile(path.join(__dirname, '..', f), 'utf8')).replaceAll('\r\n', '\n')]));
   const trainer = content.find(([file]) => file === 'wilson-input.html')[1];
+  const corner = content.find(([file]) => file === 'wilson.html')[1];
+  const pathScript = corner.match(/src="(wilson-paths\.js\?v=[^"]+)"/)[1];
   const inputScript = trainer.match(/src="(wilson-input\.js\?v=[^"]+)"/)[1];
   for (let attempt = 0; attempt < 25; attempt++) {
     try {
       for (const [file, expected] of content) {
-        const route = file.endsWith('.html') ? file.slice(0, -5) : file === 'wilson-input.js' ? inputScript : file + '?v=20261128-signals';
+        const route = file.endsWith('.html') ? file.slice(0, -5) : file === 'wilson-input.js' ? inputScript : file === 'wilson-paths.js' ? pathScript : file + '?v=20261128-signals';
         const res = await fetch(new URL(route, root), { signal: AbortSignal.timeout(6000) });
         assert.equal(res.status, 200);
         const body = (await res.text()).replaceAll('\r\n', '\n');
