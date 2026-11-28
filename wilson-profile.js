@@ -7,7 +7,9 @@
     && value.length > 0 && value.length <= 32 && !/[\p{Cc}\p{Bidi_Control}]/u.test(value);
 
   function read() {
-    const value = JSON.parse(localStorage.getItem(key));
+    const raw = localStorage.getItem(key);
+    let value;
+    try { value = JSON.parse(raw); } catch { return null; }
     if (value?.version === 1 && typeof value.id === 'string' && validNickname(value.nickname)
         && Object.hasOwn(avatars, value.avatar)) return value;
     return null;

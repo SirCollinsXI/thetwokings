@@ -37,7 +37,7 @@ async function run(browser, lang, width) {
     const progress = () => page.evaluate(() => WilsonStorage.snapshot());
     assert.equal(await stored(), null, 'Viewing the overview does not create a profile');
     const original = await progress();
-    for (const [stat, count] of Object.entries({ cards: '1', attempts: '6', first: '67%', due: '1', days: '1', kids: '7' })) {
+    for (const [stat, count] of Object.entries({ cards: '1', attempts: '6', first: new Intl.NumberFormat(lang, { style: 'percent' }).format(4 / 6), due: '1', days: '1', kids: '7' })) {
       assert.equal(await page.locator('#stat-' + stat).innerText(), count, 'Wrong summary for ' + stat);
     }
     const edit = page.locator('#profile-edit');

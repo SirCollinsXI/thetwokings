@@ -161,6 +161,6 @@
   window.addEventListener('pageshow', refresh);
   window.addEventListener('storage', event => {
     if (event.key === profile.key || event.key === null) { readProfile(); paintProfile(); }
-    if (event.key !== profile.key) paintStats();
+    if (event.key === null || (event.key.startsWith('ttk-wilson-') && event.key !== profile.key)) paintStats();
   });
 })();
