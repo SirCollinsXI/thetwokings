@@ -62,30 +62,49 @@ async function run(browser, origin) {
   const artifacts = process.env.HOMEPAGE_SCREENSHOTS;
   if (artifacts) await fs.mkdir(artifacts, {recursive: true});
   let page;
+  let session;
   const gameUrl = new URL('/das-wehr/?lang=de', origin).href;
 
   async function boot() {
     page = await context.newPage();
+    session = await context.newCDPSession(page);
     page.on('pageerror', error => console.error('Dino-Insel:', error.message));
+    const messages = new Set();
+    page.on('console', message => {
+      const line = message.text().slice(0, 350);
+      if ((['warning','error'].includes(message.type()) || /Godot Engine|OpenGL|WebGL/.test(line)) && !messages.has(line) && messages.size < 30) {
+        messages.add(line);
+        console.log('Dino-Insel browser:', line);
+      }
+    });
     const response = await page.goto(gameUrl, {waitUntil: 'domcontentloaded'});
     assert.equal(response.status(), 200);
     assert.equal(await page.locator('html').getAttribute('lang'), 'de');
     await page.locator('#play').tap();
     await page.waitForSelector('#launch[hidden]', {state: 'attached', timeout: 120000});
+    console.log('Dino-Insel: engine started', await page.evaluate(() => {
+      const canvas = document.getElementById('canvas');
+      const rect = canvas.getBoundingClientRect();
+      return {view: [innerWidth, innerHeight], canvas: [canvas.width, canvas.height], css: [rect.x, rect.y, rect.width, rect.height]};
+    }));
     return page;
   }
   async function screenshot(name) {
-    return page.locator('#canvas').screenshot(artifacts ? {path: path.join(artifacts, name + '.png')} : {});
+    const {data} = await session.send('Page.captureScreenshot', {format: 'png', fromSurface: true, captureBeyondViewport: false});
+    const bytes = Buffer.from(data, 'base64');
+    if (artifacts) await fs.writeFile(path.join(artifacts, name + '.png'), bytes);
+    return bytes;
   }
 
   // Locate the solid panels of the native menu in the actual screenshot. Their
   // height varies with font metrics, while the fixed design colour is shared
   // by Start and Load. Headers, settings and background have different colours.
   async function menuRows() {
-    const until = Date.now() + 22000;
+    const until = Date.now() + 60000;
+    let sample;
     do {
       const pixels = (await screenshot('dino-handymenue')).toString('base64');
-      const rows = await page.evaluate(async png => {
+      sample = await page.evaluate(async png => {
         const bytes = Uint8Array.from(atob(png), character => character.charCodeAt(0));
         const img = await createImageBitmap(new Blob([bytes], {type: 'image/png'}));
         const ctx = new OffscreenCanvas(img.width, img.height).getContext('2d');
@@ -102,12 +121,16 @@ async function run(browser, origin) {
             first = -1;
           }
         }
-        return centers;
+        const colors = [.25,.35,.4,.5,.65,.8].map(f => Array.from(data.slice(Math.floor(img.height*f)*4,Math.floor(img.height*f)*4+3)).join(','));
+        return {centers, width: img.width, height: img.height, colors};
       }, pixels);
-      if (rows.length >= 2) return rows;
+      if (sample.centers.length >= 2) {
+        console.log('Dino-Insel: native menu rows', sample.centers);
+        return sample.centers;
+      }
       await delay(500);
     } while (Date.now() < until);
-    throw Error('The native Godot menu did not render.');
+    throw Error('Native menu panels not found: ' + JSON.stringify(sample));
   }
 
   try {
@@ -116,6 +139,7 @@ async function run(browser, origin) {
     assert.equal(await page.evaluate(readSlot), null);
     await page.touchscreen.tap(422, rows[0]);
     const before = await waitForSlot(page, () => true);
+    console.log('Dino-Insel: campaign start saved', before);
     const cdp = await context.newCDPSession(page);
     const finger = (id,x,y) => ({id,x,y,radiusX:5,radiusY:5,force:.8});
     const dispatch = (type, points) => cdp.send('Input.dispatchTouchEvent', {type,touchPoints:points});
@@ -130,6 +154,7 @@ async function run(browser, origin) {
     await screenshot('dino-handy-spiel');
     await page.touchscreen.tap(808,35);
     const moved = await waitForSlot(page, slot => Math.hypot(slot.x-before.x, slot.z-before.z) > .12 && Math.abs(slot.yaw-before.yaw) > .02);
+    console.log('Dino-Insel: multi-touch motion saved', moved);
     await page.close();
     await boot();
     const loadRows = await menuRows();
@@ -148,7 +173,7 @@ async function run(browser, origin) {
     assert.ok(Math.hypot(after.x-moved.x, after.z-moved.z) < .1, 'restored character looks around from the saved location');
     console.log('Dino-Insel: mobile Godot menu rendered, campaign started by touch, simultaneous walk/look and persisted checkpoint verified.');
   } catch (error) {
-    if (artifacts && page && !page.isClosed()) await page.screenshot({path: path.join(artifacts,'dino-handy-fehler.png')}).catch(() => {});
+    if (artifacts && session && page && !page.isClosed()) await screenshot('dino-handy-fehler').catch(() => {});
     throw error;
   } finally { await context.close(); }
 }
