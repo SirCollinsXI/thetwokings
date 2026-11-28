@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import vm from 'node:vm';
 import path from 'node:path';
+import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('../',import.meta.url));
 for(const file of fs.readdirSync(root)){
@@ -18,4 +19,5 @@ for(const file of fs.readdirSync(root)){
 const data=JSON.parse(fs.readFileSync(path.join(root,'preisdaten.json'),'utf8'));
 if(data.panels.flatMap(p=>p.series.flatMap(s=>s.points)).length!==251)throw Error('Price observation count changed');
 if(/supabase|submit-score|fetch\(/i.test(fs.readFileSync(path.join(root,'piratenjagd.js'),'utf8')))throw Error('Unexpected network code in new game');
+execFileSync(process.execPath,[path.join(root,'scripts','list-wilson-missing.cjs')],{cwd:root,stdio:'inherit',env:process.env});
 console.log('Scripts, JSON, local links and 251 price observations verified.');
