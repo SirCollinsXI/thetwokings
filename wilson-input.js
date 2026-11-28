@@ -4,6 +4,8 @@
 (() => {
   const $ = id => document.getElementById(id);
   const STORAGE = 'ttk-wilson-picture-input-v1';
+  const store = globalThis.WilsonStorage || localStorage;
+  const storageKey = globalThis.WilsonStorage?.key(STORAGE) || STORAGE;
   const DAY = 86400000;
   const words = WILSON_VOCABULARY.inputWords;
   const COPY = {
@@ -68,13 +70,13 @@
     return x;
   }
   function readLatestProgress(){
-    try { const clean=parseProgress(JSON.parse(localStorage.getItem(STORAGE))); if(clean)progress=clean; } catch(e){}
+    try { const clean=parseProgress(JSON.parse(store.getItem(STORAGE))); if(clean)progress=clean; } catch(e){}
   }
   readLatestProgress();
-  try { const locale=localStorage.getItem(STORAGE+'-lang'); if(Object.hasOwn(COPY,locale))lang=locale; } catch(e){}
+  try { const locale=store.getItem(STORAGE+'-lang'); if(Object.hasOwn(COPY,locale))lang=locale; } catch(e){}
   function warn(message){$('warning').textContent=message;}
   function save(){
-    try { localStorage.setItem(STORAGE,JSON.stringify(progress)); }
+    try { store.setItem(STORAGE,JSON.stringify(progress)); }
     catch(e){ warn(t('savefail')); }
   }
   function dueCount(){return words.filter(w=>progress.items[w.id] && progress.items[w.id].due<=Date.now()).length;}
@@ -290,11 +292,11 @@
     const locks=window.navigator?.locks;
     if(!locks?.request){submit(value);return;}
     submitting=true;
-    return locks.request(STORAGE,()=>{if(!composing)submit(value);})
+    return locks.request(storageKey,()=>{if(!composing)submit(value);})
       .catch(()=>warn(t('savefail'))).finally(()=>{submitting=false;});
   });
   window.addEventListener?.('storage',e=>{
-    if(e.key===STORAGE){readLatestProgress();stats();}
+    if(e.key===storageKey){readLatestProgress();stats();}
   });
   $('listen').addEventListener('click',speak);
   document.querySelectorAll('[data-char]').forEach(btn=>btn.addEventListener('click',()=>{
@@ -304,7 +306,7 @@
   }));
   $('lang').addEventListener('change',e=>{
     lang=Object.hasOwn(COPY,e.target.value)?e.target.value:'zh';
-    try{localStorage.setItem(STORAGE+'-lang',lang);}catch(err){}
+    try{store.setItem(STORAGE+'-lang',lang);}catch(err){}
     renderLang();
   });
   $('export').addEventListener('click',()=>{
