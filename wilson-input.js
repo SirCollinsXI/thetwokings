@@ -172,6 +172,7 @@
     $('submit').textContent=stage===2?t('next'):t('check');
     $('typed').placeholder=w.task?'…':w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
     $('typed').removeAttribute('disabled');
+    $('submit').removeAttribute('disabled');
     $('typed').readOnly=stage===2;
     $('listen').hidden=stage!==2;
     $('solution').hidden=stage!==2;
@@ -211,7 +212,13 @@
     if('speechSynthesis' in window) window.speechSynthesis.cancel();
     readLatestProgress();
     current=findNext();
-    if(!current){$('question').textContent=t('empty');$('typed').disabled=true;return;}
+    if(!current){
+      $('question').textContent=t('empty');
+      $('exercise').dataset.phase='empty';
+      $('typed').disabled=true;
+      $('submit').disabled=true;
+      return;
+    }
     renderQuestion(true);
   }
   function speak(){
