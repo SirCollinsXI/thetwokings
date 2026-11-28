@@ -21,6 +21,43 @@ const addMark = `
               WHEN ?2 = 'star' THEN star ELSE crown END) = ?4
 `;
 
+// Keep these idempotent statements in sync with migrations/0002_public_trace_day.sql.
+// Pages Functions can receive a newly bound database before migrations run.
+const initializeDay = [
+  `CREATE TABLE IF NOT EXISTS public_trace_day (
+  id INTEGER PRIMARY KEY CHECK (id = 1),
+  day TEXT NOT NULL,
+  wave INTEGER NOT NULL CHECK (wave >= 0),
+  star INTEGER NOT NULL CHECK (star >= 0),
+  crown INTEGER NOT NULL CHECK (crown >= 0),
+  window_minute INTEGER NOT NULL,
+  window_count INTEGER NOT NULL CHECK (window_count BETWEEN 0 AND 60)
+)`,
+  'INSERT OR IGNORE INTO public_trace_day VALUES (1, \'\', 0, 0, 0, 0, 0)'
+];
+
+async function readOrCount(db, write) {
+  const read = db.prepare(selectDay);
+  if (!write) return { row: await read.first(), changes: 0 };
+  const [updated, current] = await db.batch([write, read]);
+  return { row: current.results[0], changes: updated.meta.changes };
+}
+
+async function wallRow(db, write) {
+  try {
+    const result = await readOrCount(db, write);
+    if (result.row) return result;
+  } catch (error) {
+    const missingTable = [error?.message, error?.cause?.message].some(message =>
+      typeof message === 'string' && /\bno such table:\s*(?:main\.)?public_trace_day\b/i.test(message));
+    if (!missingTable) throw error;
+  }
+  // Two simultaneous first requests may initialize the same table and sentinel row.
+  // The batch never replaces an existing count. Retry the original operation once.
+  await db.batch(initializeDay.map(sql => db.prepare(sql)));
+  return readOrCount(db, write);
+}
+
 function json(status, body, extraHeaders = {}) {
   return Response.json(body, { status, headers: {
     'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', ...extraHeaders
@@ -78,16 +115,15 @@ export async function serveWall(request, db, now = Date.now()) {
   const day = dayInBerlin.format(now);
   const minute = Math.floor(now / 60_000);
   try {
-    const read = db.prepare(selectDay);
-    if (method === 'GET') return json(200, snapshot(await read.first(), day));
-    const input = await submission(request);
-    if (!input) return json(400, { error: 'submission' });
-    if (input.day !== day) return json(409, snapshot(await read.first(), day));
-    const write = db.prepare(addMark).bind(day, input.mark, minute, input.seen, minuteLimit);
-    const [changed, current] = await db.batch([write, read]);
-    const row = current.results[0];
+    const input = method === 'POST' ? await submission(request) : null;
+    if (method === 'POST' && !input) return json(400, { error: 'submission' });
+    const write = input?.day === day
+      ? db.prepare(addMark).bind(day, input.mark, minute, input.seen, minuteLimit)
+      : null;
+    const { row, changes } = await wallRow(db, write);
     const board = snapshot(row, day);
-    if (changed.meta.changes === 1) return json(200, board);
+    if (method === 'GET' || changes === 1) return json(200, board);
+    if (input.day !== day) return json(409, board);
     if (row.window_minute === minute && row.window_count >= minuteLimit) {
       return json(429, board, { 'Retry-After': String(60 - (Math.floor(now / 1000) % 60)) });
     }
