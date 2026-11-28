@@ -20,6 +20,8 @@ assert.ok(script.includes("challenge-title"),'Independent CTA script missing');
 const elements=new Map();
 const choice={value:'zh',handlers:{},addEventListener:(event,fn)=>{choice.handlers[event]=fn}};
 elements.set('ui',choice);
+elements.set('preview-illustration',{alt:''});
+elements.set('preview-prompt',{textContent:''});
 elements.set('challenge-title',{textContent:''});
 elements.set('challenge-subtitle',{textContent:''});
 const document={getElementById:id=>elements.get(id)};
