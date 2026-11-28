@@ -1,6 +1,19 @@
-# Wilson – gesicherter Arbeitsstand, 27.11.2026
+# Wilson – gesicherter Arbeitsstand, 28.11.2026
 
-## Hier fortsetzen · Paket 08 mit 879 Bildkarten im Projektstand
+## Hier fortsetzen · Paket 09 · Gruppe 1 im Entwurf mit 884 Karten
+
+| Stand | Nachweis |
+| --- | --- |
+| Entwurf | [PR #34](https://github.com/SirCollinsXI/thetwokings/pull/34), Branch `codex/wilson-paket-09`. Aktuelles `main` einschließlich Trainerstart-Korrektur `0018ec6` übernommen. |
+| Gruppe 1 | Fahrradschloss `v319`, Handbremse `v467`, Hupe `v516`, Reifen `v876`, Rückspiegel `v913`. Fünf eigene SVGs gerendert und einzeln bei 212 × 150 und 120 × 85 Pixeln gesichtet. |
+| Gemeinsame Daten | 884 aktive Karten im Entwurf und Offline-Build. Die 879 bisherigen Datensätze bleiben unverändert; frühere Sperrentscheidung zu `v319` erhalten. |
+| Prüfungen | Lokale Daten-, Eingabe-, Wortschatz- und CTA-Prüfungen bestanden, einschließlich 222 historischer Bild-Hashes. Browser- und Vorschauprüfung mit Screenshots über den CI-Lauf in PR #34. |
+| Hauptdomain | Letzter belegter Live-Stand: 879 aus [PR #21](https://github.com/SirCollinsXI/thetwokings/pull/21). Direkter Abruf am 28.11. hier nicht verfügbar (HTTP 403); Paket 09 nicht veröffentlicht. |
+| Fortsetzung | [Kartenliste und Prüfstand](WILSON-PACKAGE-09.md). Gruppe 2 aus 434 noch unbebilderten Nomen auswählen. Noch 40 Karten bis 924, 616 bis 1.500 im Entwurf. |
+
+## Paket 08 · abgeschlossener Projektstand
+
+Der nachfolgende Abschnitt ist der historische Arbeitsstand vor der Veröffentlichung; die bestätigte Veröffentlichung mit 879 Karten steht in PR #21.
 
 | Stand | Nachweis |
 | --- | --- |

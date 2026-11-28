@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 150" width="212" height="150" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">Rückspiegel im Auto</title>
+  <desc id="desc">Der Innenspiegel hängt oben an der Windschutzscheibe. In ihm ist ein Auto auf der Straße hinter dem eigenen Fahrzeug sichtbar.</desc>
+  <defs><clipPath id="mirror"><rect x="61" y="34" width="92" height="40" rx="7"/></clipPath></defs>
+  <rect width="212" height="150" fill="#dbe7df"/>
+  <path d="M29 17h154l25 113H4Z" fill="#e8f0e7" stroke="#a0b4ab" stroke-width="8"/>
+  <path d="m87 128 14-47h13l15 47" fill="#c7d4ce"/>
+  <path d="m106 119 1-10m1-8 1-8" stroke="#eaf2e9" stroke-width="2"/>
+  <path d="M0 127q106-28 212 0v23H0Z" fill="#a4b8b1" stroke="#6a8581" stroke-width="3"/>
+  <path d="M30 150a29 29 0 0 1 58 0" fill="none" stroke="#637c7e" stroke-width="8"/>
+  <path d="M107 16v17" stroke="#415b63" stroke-width="6"/>
+  <rect x="55" y="28" width="104" height="52" rx="10" fill="#edbd55" stroke="#243b49" stroke-width="3"/>
+  <g clip-path="url(#mirror)">
+    <rect x="61" y="34" width="92" height="40" fill="#b8d6df"/>
+    <path d="M61 52h92v22H61" fill="#9fbea5"/>
+    <path d="m79 74 20-24h16l24 24" fill="#607a83"/>
+    <path d="M108 52v4m0 13v6" stroke="#eef1e3" stroke-width="2.2"/>
+    <path d="m96 64 3-7h15l4 7v7H96Z" fill="#be6657" stroke="#344f59" stroke-width="1.7"/>
+    <path d="m101 59-1 4h13l-2-4" fill="#d6e6e7"/>
+    <path d="M98 67h3m12 0h3" stroke="#f8dc88" stroke-width="2"/>
+    <path d="M67 39h19" stroke="#f4f8ed" stroke-width="2"/>
+  </g>
+  <rect x="61" y="34" width="92" height="40" rx="7" fill="none" stroke="#657d82" stroke-width="1.4"/>
+  <path d="m180 96-26-20m0 0 12 1m-12-1 5 11" fill="none" stroke="#bf4b50" stroke-width="3.6"/>
+</svg>

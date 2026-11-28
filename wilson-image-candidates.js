@@ -21176,23 +21176,50 @@ const WILSON_IMAGE_CANDIDATES=[
     "plural": "die Fahrradschlösser",
     "en": "bicycle lock",
     "zh": "自行车锁",
-    "path": "wilson/original-next/v319.svg",
-    "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+    "pinyin": "zìxíngchē suǒ",
+    "path": "wilson/original-paket-09/v319-fahrradschloss.svg",
+    "status": "approved",
+    "active": true,
     "childSuitable": true,
-    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
-    "provenance": "Independently authored AI-assisted SVG; no external image source used.",
-    "review": {
-      "decision": "blocked",
-      "date": "2026-11-17",
-      "reason": "Generic padlock lacks enough bicycle-specific context; replace or add a bicycle scene.",
-      "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
-      "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
-      "recheckedOn": "2026-11-26"
-    },
-    "active": false,
     "provider": "project",
-    "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v319.svg",
-    "status": "needs-replacement-or-context"
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v319-fahrradschloss.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+      "context": {
+        "de": "Das markierte Teil sichert das Fahrrad am Ständer gegen Diebstahl.",
+        "en": "The highlighted part secures the bicycle to the stand against theft.",
+        "zh": "标出的部件把自行车固定在停车架上，防止被盗。"
+      },
+      "answerVariants": [
+        {
+          "de": "das Bügelschloss",
+          "plural": "die Bügelschlösser"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Fahrradschloss"
+      ],
+      "reason": "Das markierte Teil sichert das Fahrrad am Ständer gegen Diebstahl."
+    },
+    "reviewHistory": [
+      {
+        "path": "wilson/original-next/v319.svg",
+        "source": "https://github.com/SirCollinsXI/thetwokings/blob/main/wilson/original-next/v319.svg",
+        "status": "needs-replacement-or-context",
+        "decision": "blocked",
+        "date": "2026-11-17",
+        "reason": "Generic padlock lacks enough bicycle-specific context; replace or add a bicycle scene.",
+        "ipa": "/ˈfaːɐ̯ʁaːtˌʃlɔs/",
+        "method": "Each SVG was rendered by Inkscape and individually inspected in a labeled contact sheet; article, plural and EN/ZH compared. Editorial AI-assisted first review.",
+        "recheckedOn": "2026-11-26"
+      }
+    ]
   },
   {
     "id": "v322",
@@ -28903,6 +28930,162 @@ const WILSON_IMAGE_CANDIDATES=[
         "zh": "电流过大时，这个零件里的细金属丝会熔断，切断电路。"
       },
       "reason": "Der dünne Draht im gezeigten Bauteil schmilzt bei zu viel Strom und unterbricht den Stromkreis."
+    }
+  },
+  {
+    "id": "v467",
+    "de": "die Handbremse",
+    "plural": "die Handbremsen",
+    "en": "handbrake",
+    "zh": "手刹",
+    "pinyin": "shǒushā",
+    "path": "wilson/original-paket-09/v467-handbremse.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v467-handbremse.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈhantˌbʁɛmzə/",
+      "context": {
+        "de": "Der angezogene Hebel zwischen den Vordersitzen verhindert, dass das geparkte Auto wegrollt.",
+        "en": "The raised lever between the front seats prevents the parked car from rolling away.",
+        "zh": "拉起前排座椅之间的这个拉杆，可以防止停放的汽车溜动。"
+      },
+      "answerVariants": [
+        {
+          "de": "die Feststellbremse",
+          "plural": "die Feststellbremsen"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Handbremse"
+      ],
+      "reason": "Der angezogene Hebel zwischen den Vordersitzen verhindert, dass das geparkte Auto wegrollt."
+    }
+  },
+  {
+    "id": "v516",
+    "de": "die Hupe",
+    "plural": "die Hupen",
+    "en": "horn",
+    "zh": "喇叭",
+    "pinyin": "lǎba",
+    "path": "wilson/original-paket-09/v516-hupe.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v516-hupe.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈhuːpə/",
+      "context": {
+        "de": "Beim Drücken auf die Lenkradmitte ertönt ein Warnsignal. Wie heißt die Vorrichtung dafür?",
+        "en": "Pressing the middle of the steering wheel produces a warning sound. Name the device.",
+        "zh": "按下方向盘中央会发出警示声。这个发声装置叫什么？"
+      },
+      "answerVariants": [
+        {
+          "de": "die Autohupe",
+          "plural": "die Autohupen"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Hupe"
+      ],
+      "reason": "Beim Drücken auf die Lenkradmitte ertönt ein Warnsignal. Wie heißt die Vorrichtung dafür?"
+    }
+  },
+  {
+    "id": "v876",
+    "de": "der Reifen",
+    "plural": "die Reifen",
+    "en": "tyre",
+    "zh": "轮胎",
+    "pinyin": "lúntāi",
+    "path": "wilson/original-paket-09/v876-reifen.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v876-reifen.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈʁaɪ̯fn̩/",
+      "context": {
+        "de": "Der schwarze Gummiring hat ein deutliches Profil. Das Metallteil im Inneren fehlt.",
+        "en": "The black rubber ring has a visible tread. The metal part in its centre is missing.",
+        "zh": "这个黑色橡胶圈上有明显的花纹，里面没有金属部件。"
+      },
+      "answerVariants": [
+        {
+          "de": "der Autoreifen",
+          "plural": "die Autoreifen"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Reifen"
+      ],
+      "reason": "Der schwarze Gummiring hat ein deutliches Profil. Das Metallteil im Inneren fehlt."
+    }
+  },
+  {
+    "id": "v913",
+    "de": "der Rückspiegel",
+    "plural": "die Rückspiegel",
+    "en": "rear-view mirror",
+    "zh": "后视镜",
+    "pinyin": "hòushìjìng",
+    "path": "wilson/original-paket-09/v913-rueckspiegel.svg",
+    "status": "approved",
+    "active": true,
+    "childSuitable": true,
+    "provider": "project",
+    "creator": "TheTwoKings · KI-gestützt erstellte SVG",
+    "provenance": "Eigenständige Projektzeichnung für Wilsons Bildkarten; keine externe Bildvorlage.",
+    "source": "https://github.com/SirCollinsXI/thetwokings/blob/codex/wilson-paket-09/wilson/original-paket-09/v913-rueckspiegel.svg",
+    "review": {
+      "decision": "approved",
+      "date": "2026-11-28",
+      "batch": "auto-fahrrad-09",
+      "method": "Mit Inkscape gerendert und jedes Motiv bei 212 × 150 und 120 × 85 Pixeln visuell gesichtet. Wortformen, Bedeutung, EN/ZH, Pinyin und breite IPA redaktionell abgeglichen. KI-gestützte Erstprüfung, keine unabhängige Muttersprachler- oder Aussprachevalidierung.",
+      "ipa": "/ˈʁʏkˌʃpiːɡl̩/",
+      "context": {
+        "de": "Die markierte Fläche oben an der Windschutzscheibe zeigt den Verkehr hinter dem Auto.",
+        "en": "The highlighted surface at the top of the windscreen shows the traffic behind the car.",
+        "zh": "挡风玻璃上部标出的镜面能显示汽车后方的交通情况。"
+      },
+      "answerVariants": [
+        {
+          "de": "der Innenspiegel",
+          "plural": "die Innenspiegel"
+        },
+        {
+          "de": "der Innenrückspiegel",
+          "plural": "die Innenrückspiegel"
+        }
+      ],
+      "languageSources": [
+        "https://www.duden.de/rechtschreibung/Rueckspiegel"
+      ],
+      "reason": "Die markierte Fläche oben an der Windschutzscheibe zeigt den Verkehr hinter dem Auto."
     }
   }
 ];

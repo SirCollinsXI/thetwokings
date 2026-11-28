@@ -226,6 +226,38 @@ for(const [id,confusable] of [
 }
 console.log('Pakete 2–4 und 6: 20 gezielte Kartenaufrufe, Verwechslungen, Mandarin, Deklination und Kartenwechsel geprüft.');
 
+// Paket 09: context-dependent objects, matching synonyms and complete noun pairs.
+for (const [id, wrong] of [
+ ['v319', 'das Vorhängeschloss, Vorhängeschlösser'],
+ ['v467', 'der Bremshebel, Bremshebel'],
+ ['v516', 'das Lenkrad, Lenkräder'],
+ ['v876', 'das Rad, Räder'],
+ ['v913', 'der Seitenspiegel, Seitenspiegel']
+]) {
+ const word = shared.inputWords.find(w => w.id === id);
+ delete stored[STORE];
+ const drill = boot({word: id});
+ assert.equal(drill.get('word-image').src, word.imagePath);
+ assert.equal(drill.get('picture-note').textContent, word.context.zh);
+ drill.submit(wrong);
+ assert.equal(drill.get('solution').hidden, true, id + ' accepted a different depicted object');
+ drill.submit(answer(word));
+ assert.equal(drill.get('correct-answer').textContent, answer(word));
+ assert.equal(drill.get('english').textContent, word.en);
+ assert.equal(drill.get('chinese').textContent, word.zh + ' · ' + word.pinyin);
+ assert.equal(drill.get('declension').hidden, true);
+ assert.equal(drill.dump().tested, 1);
+ for (const variant of word.answerVariants) {
+  delete stored[STORE];
+  const synonym = boot({word: id});
+  synonym.submit(answer({...word, ...variant}));
+  assert.equal(synonym.get('solution').hidden, false, id + ' rejected reviewed synonym');
+  assert.equal(synonym.get('correct-answer').textContent, answer(word));
+  assert.equal(synonym.dump().firstCorrect, 1);
+ }
+}
+console.log('Paket 09: five targeted cards, confusions, six synonyms and DE/EN/ZH solutions verified.');
+
 // Two open views used to overwrite each other's attempts. Also cover browsers
 // without Web Locks: each write must at least start from the latest saved state.
 delete stored[STORE];

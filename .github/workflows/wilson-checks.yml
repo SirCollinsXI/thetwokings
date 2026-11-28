@@ -30,6 +30,9 @@ permissions:
   contents: read
 jobs:
   check:
+    permissions:
+      contents: read
+      checks: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -97,6 +100,45 @@ jobs:
           grep -Fq 'href="wilson-input.html?lang=zh"' <<< "$WILSON" || { echo 'Challenge link missing'; exit 1; }
           "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=2500 --screenshot="$RUNNER_TEMP/wilson-chinese-entry.png" 'http://127.0.0.1:8765/wilson.html' >/dev/null 2>&1
           test -s "$RUNNER_TEMP/wilson-chinese-entry.png"
+      - name: Test visual learning cues in German, English and Chinese
+        run: |
+          npm install --prefix "$RUNNER_TEMP/wilson-browser" --no-audit --no-fund playwright-core@1.56.1
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
+      - name: Find the Cloudflare deployment for this PR commit
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          for attempt in {1..45}; do
+            checks=$(gh api "repos/$GITHUB_REPOSITORY/commits/$HEAD_SHA/check-runs?check_name=Cloudflare%20Pages")
+            result=$(jq -c '[.check_runs[] | select(.app.slug == "cloudflare-workers-and-pages")] | max_by(.id) // {}' <<< "$checks")
+            state=$(jq -r '.conclusion // "pending"' <<< "$result")
+            if [[ "$state" == success ]]; then
+              url=$(jq -er '.output.summary | match("https://[0-9a-f]+\\.wuesten-bogen-app\\.pages\\.dev").string' <<< "$result")
+              echo "url=$url" >> "$GITHUB_OUTPUT"
+              exit 0
+            elif [[ "$state" != pending ]]; then
+              echo "Cloudflare deployment ended with $state"
+              exit 1
+            fi
+            sleep 5
+          done
+          echo "Cloudflare has not reported a deployment for $HEAD_SHA"
+          exit 1
+      - name: Exercise the deployed trainer before merging
+        if: steps.pages.outputs.url != ''
+        env:
+          WILSON_ORIGIN: ${{ steps.pages.outputs.url }}
+        run: |
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
+      - name: Verify Paket 09 gallery, answers and embedded offline images
+        env:
+          WILSON_ORIGIN: ${{ steps.pages.outputs.url || 'http://127.0.0.1:8765' }}
+          WILSON_SCREENSHOTS: ${{ runner.temp }}/wilson-paket09
+        run: |
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-paket09-browser.cjs
       - name: Archive responsive screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -106,6 +148,7 @@ jobs:
             ${{ runner.temp }}/wilson-mobile.png
             ${{ runner.temp }}/wilson-desktop.png
             ${{ runner.temp }}/wilson-chinese-entry.png
+            ${{ runner.temp }}/wilson-paket09/*.png
           if-no-files-found: ignore
 
   published:
@@ -119,3 +162,10 @@ jobs:
           node-version: '22'
       - name: Check the gallery count and a trainer card on the public domain
         run: node scripts/check-wilson-published.cjs
+
+      - name: Verify learning cues on the public domain in isolated browser profiles
+        env:
+          WILSON_ORIGIN: https://thetwokings.de
+        run: |
+          npm install --prefix "$RUNNER_TEMP/wilson-browser" --no-audit --no-fund playwright-core@1.56.1
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs

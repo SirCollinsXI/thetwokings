@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 150" width="212" height="150" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">Hupe</title>
+  <desc id="desc">Eine Hand drückt auf das Hupensymbol in der Mitte eines Autolenkrads. Große Schallwellen zeigen das ausgelöste Warnsignal.</desc>
+  <rect width="212" height="150" fill="#eaf2e9"/>
+  <path d="M0 46q106-34 212 0v104H0Z" fill="#d3ded5"/>
+  <path d="M50 46q52-36 104 0" fill="none" stroke="#a8beb6" stroke-width="8"/>
+  <circle cx="96" cy="82" r="49" fill="#eaf2e9" stroke="#243b49" stroke-width="11"/>
+  <path d="m51 66 34 15m56-15-34 15m-11 12v35" stroke="#536d73" stroke-width="12"/>
+  <path d="M73 67q23-12 46 0l-4 27q-19 10-38 0Z" fill="#edbd55" stroke="#243b49" stroke-width="3"/>
+  <path d="M83 79h7l12-7v18l-12-7h-7Zm3 4v7h5l-2-7m18-8q5 6 0 12" fill="none" stroke="#334d53" stroke-width="2"/>
+  <path d="m132 150-9-25-23-21q-5-5-1-9 4-4 9 0l7 6-9-23q-2-6 3-8 5-2 8 4l11 27q4-6 10-2 6-3 10 3 7-2 11 6l4 13-3 29" fill="#dfb38e" stroke="#946c55" stroke-width="2.6"/>
+  <path d="m135 105 7 14m-17-12 7 15m13-14 5 10" fill="none" stroke="#b58162" stroke-width="2"/>
+  <path d="M157 57q10 10 0 20m12-29q19 20 0 39m12-48q28 30 0 57" fill="none" stroke="#b77928" stroke-width="4.2"/>
+  <path d="m81 34 9 8m12-14-1 12m19-3-9 9" stroke="#bf4b50" stroke-width="3.6"/>
+</svg>

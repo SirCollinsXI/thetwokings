@@ -12,7 +12,7 @@
       selectedWord:'指定图片练习',alternatives:'也接受：',
       tested:'已练习的不同词汇',attempts:'完成的练习次数',caseNote:'词语正确，请注意大小写：',due:'待复习',first:'首次正确率',picture:'观察图片，然后输入德语',
       askBoth:'写出单数（含冠词）和复数',askOne:'写出单数（含冠词）',askPlural:'写出复数（含冠词）',
-      both:'格式：der Apfel, Äpfel（复数也接受 die Äpfel）',singular:'只需输入单数：das Wasser',plural:'只需输入复数：die Arbeitsbedingungen',
+      both:'先写冠词和单数，再输入逗号和复数。复数前的 die 可省略。',singular:'请输入冠词和单数形式。',plural:'请输入冠词和复数形式。',
       check:'检查 ↵',next:'下一张图片 ↵',listen:'🔊 再听一遍',
       retry:'还没完全正确。再试一次！',good:'回答正确！',second:'第二次回答正确！',wrong:'请记住正确答案。',dueWord:'现在该复习了',newWord:'新单词',extra:'自由练习 · 提前复习',
       repeat:'下次复习：',n:'N-Deklination（弱变化阳性名词）：单数的宾格、与格、属格通常加 -n/-en。',
@@ -25,7 +25,7 @@
       selectedWord:'Gezielte Bildübung',alternatives:'Ebenfalls passend: ',
       tested:'Verschiedene Wörter',attempts:'Übungen insgesamt',caseNote:'Wort erkannt. Achte auf die Groß-/Kleinschreibung: ',due:'Wiederholung fällig',first:'Im ersten Versuch richtig',picture:'Bild ansehen und deutsches Wort eingeben',
       askBoth:'Singular (mit Artikel) und Plural eingeben',askOne:'Singular mit Artikel eingeben',askPlural:'Plural mit Artikel eingeben',
-      both:'Format: der Apfel, Äpfel (auch die Äpfel erlaubt)',singular:'Nur Singular: das Wasser',plural:'Nur Plural: die Arbeitsbedingungen',
+      both:'Artikel und Singular, dann ein Komma und der Plural. Vor dem Plural ist „die“ freiwillig.',singular:'Schreibe den Artikel und die Einzahl.',plural:'Schreibe den Artikel und die Mehrzahl.',
       check:'Prüfen ↵',next:'Nächstes Bild ↵',listen:'🔊 Noch einmal hören',
       retry:'Noch nicht ganz richtig. Ein zweiter Versuch!',good:'Auf Anhieb richtig!',second:'Im zweiten Versuch richtig!',wrong:'Merke dir die richtige Lösung.',dueWord:'Jetzt wiederholen',newWord:'Neuer Begriff',extra:'Freies Training · vorgezogene Wiederholung',
       repeat:'Nächste Wiederholung: ',n:'N-Deklination: Schwache maskuline Nomen erhalten in den meisten Singularfällen außer dem Nominativ -n/-en.',
@@ -38,7 +38,7 @@
       selectedWord:'Selected picture practice',alternatives:'Also accepted: ',
       tested:'Different words practised',attempts:'Exercises completed',caseNote:'Word recognised. Check capitalisation: ',due:'Due for review',first:'Correct on first try',picture:'Look at the picture and type the German word',
       askBoth:'Enter singular (with article) and plural',askOne:'Enter singular with article',askPlural:'Enter plural with article',
-      both:'Format: der Apfel, Äpfel (also accepts die Äpfel)',singular:'Singular only: das Wasser',plural:'Plural only: die Arbeitsbedingungen',
+      both:'Type the article and singular, then a comma and the plural. Before the plural, die is optional.',singular:'Type the article and the singular form.',plural:'Type the article and the plural form.',
       check:'Check ↵',next:'Next picture ↵',listen:'🔊 Listen again',
       retry:'Not quite right. Try one more time!',good:'Correct on the first try!',second:'Correct on the second try!',wrong:'Remember the correct answer.',dueWord:'Time to review',newWord:'New word',extra:'Free practice · early review',
       repeat:'Next review: ',n:'N-declension: Weak masculine nouns usually take -n/-en outside the nominative singular.',
@@ -49,7 +49,7 @@
   };
   let lang = 'zh';
   let progress = {version:1,tested:0,firstCorrect:0,items:{}};
-  let current = null, stage = 0, wasFirstWrong = false;
+  let current = null, stage = 0, feedback = '', spellingHint = false;
   // A gallery link can open one chosen card; subsequent cards use the due-first queue.
   let requestedID = new URLSearchParams(window.location?.search || '').get('word');
   const normal = s => String(s||'').normalize('NFC').trim().replace(/\s+/g,' ').toLocaleLowerCase('de-DE');
@@ -161,10 +161,10 @@
   function renderQuestion(reset){
     if(!current)return;
     const w=current.word;
-    if(reset){stage=0;wasFirstWrong=false;}
+    if(reset){stage=0;feedback='';spellingHint=false;}
     $('picture-note').textContent=w.context?.[lang] || t('picture');
     $('word-image').src=w.imagePath;
-    $('word-image').alt='Illustration';
+    $('word-image').alt={de:'Bild zur Wortaufgabe',en:'Picture for this exercise',zh:'本题图片'}[lang];
     renderImageCredit(w);
     $('round-note').textContent=t(current.kind);
     $('question').textContent=w.task ? w.task.prompt[lang] : t(w.numberMode==='both'?'askBoth':w.numberMode==='plural'?'askPlural':'askOne');
@@ -172,17 +172,27 @@
     $('submit').textContent=stage===2?t('next'):t('check');
     $('typed').placeholder=w.task?'…':w.numberMode==='both'?'der ..., ...':w.numberMode==='plural'?'die ...':'der / die / das ...';
     $('typed').removeAttribute('disabled');
+    $('submit').removeAttribute('disabled');
     $('typed').readOnly=stage===2;
     $('listen').hidden=stage!==2;
     $('solution').hidden=stage!==2;
-    if(reset){$('typed').value='';$('status').textContent='';$('status').className='status';}
+    if(reset){$('typed').value='';$('correct-answer').textContent='';}
+    renderFeedback();
     if(stage===2)fillSolution();
     // On a phone the next picture should remain visible before the keyboard opens.
     if(reset && window.matchMedia?.('(max-width:720px)').matches){
       $('typed').blur();
       $('word-image').scrollIntoView({block:'start'});
-    } else $('typed').focus({preventScroll:true});
+    } else if(reset) $('typed').focus({preventScroll:true});
     stats();
+  }
+  function renderFeedback(){
+    const phase = stage === 0 ? 'recall' : stage === 1 ? 'retry' : feedback === 'wrong' ? 'review' : 'correct';
+    $('exercise').dataset.phase = phase;
+    $('typed').setAttribute('aria-invalid', String(phase === 'retry'));
+    const message = feedback ? t(feedback) : '';
+    $('status').className = 'status ' + phase;
+    $('status').textContent = spellingHint ? message + ' ' + t('caseNote') + expected(current.word) : message;
   }
   function renderImageCredit(w){
     const credit=$('image-credit');
@@ -202,7 +212,13 @@
     if('speechSynthesis' in window) window.speechSynthesis.cancel();
     readLatestProgress();
     current=findNext();
-    if(!current){$('question').textContent=t('empty');$('typed').disabled=true;return;}
+    if(!current){
+      $('question').textContent=t('empty');
+      $('exercise').dataset.phase='empty';
+      $('typed').disabled=true;
+      $('submit').disabled=true;
+      return;
+    }
     renderQuestion(true);
   }
   function speak(){
@@ -248,8 +264,7 @@
     progress.tested++;
     if(ok&&firstTry)progress.firstCorrect++;
     save();stage=2;
-    $('status').className='status '+(ok?'ok':'warn');
-    $('status').textContent=t(ok?(firstTry?'good':'second'):'wrong');
+    feedback=ok?(firstTry?'good':'second'):'wrong';
     renderQuestion(false);
     speak();
   }
@@ -257,10 +272,10 @@
     if(!current) return;
     if(stage===2){nextWord();return;}
     const ok=matches(value,current.word);
-    if(ok){const spelling=caseMatches(value,current.word);resolve(true,stage===0);if(!spelling)$('status').textContent+=' '+t('caseNote')+expected(current.word);return;}
+    if(ok){spellingHint=!caseMatches(value,current.word);resolve(true,stage===0);return;}
     if(stage===0){
-      stage=1;wasFirstWrong=true;
-      $('status').className='status warn';$('status').textContent=t('retry');
+      stage=1;feedback='retry';
+      renderFeedback();
       $('typed').focus();$('typed').select();
     } else resolve(false,false);
   }

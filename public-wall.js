@@ -3,14 +3,15 @@
   const wall = document.getElementById('grusswand');
   if (!wall) return;
   const words = {
-    title: ['Ein Gruß an die Welt', 'Say hello to the world', '向世界打个招呼'],
-    intro: ['Hinterlasse ein Zeichen für alle, die heute vorbeischauen. Alle sehen den gemeinsamen Tagesstand.',
-      'Leave a sign for everyone stopping by today. Everyone sees the same daily tally.',
-      '给今天来访的人留个印记吧。大家都能看到当天每种印记的总数。'],
+    title: ['Öffentliche Grußwand', 'Public greeting wall', '公开问候墙'],
+    tally: ['Zeichen des Tages', 'Today’s signs', '今日印记'],
+    intro: ['Winken, Sterne und Kronen zählen hier für den heutigen Tag in Berlin.',
+      'Waves, stars and crowns are counted here for today in Berlin.', '这里按柏林日期统计今天的挥手、星星和王冠。'],
     day: ['Tag in Berlin', 'Berlin date', '柏林日期'],
     wave: ['Winken', 'Wave', '挥手'], star: ['Stern', 'Star', '星星'], crown: ['Krone', 'Crown', '王冠'],
     waveCount: ['Winkzeichen', 'Waves', '挥手次数'], starCount: ['Sterne', 'Stars', '星星数'], crownCount: ['Kronen', 'Crowns', '王冠数'],
-    refresh: ['Stand neu laden', 'Refresh tally', '刷新总数'],
+    refresh: ['Heutige Zahlen abrufen', 'Refresh today’s counts', '刷新今日计数'],
+    reconnect: ['Verbindung zur Tageszählung prüfen', 'Check the tally connection', '检查计数连接'],
     privacy: ['Datenschutz zur Grußwand', 'Wall privacy details', '印记墙隐私说明'],
     loading: ['Der Tagesstand wird geladen.', 'Loading the daily tally.', '正在获取当天的总数。'],
     sending: ['Dein Zeichen wird gesendet.', 'Sending your sign.', '正在发送你的印记。'],
@@ -19,7 +20,7 @@
       'The tally has changed. Check it before leaving another sign.', '总数已更新。请先查看，再决定是否继续留印记。'],
     busy: ['Gerade kommen viele Zeichen an. Versuch es in einer Minute wieder.',
       'Many signs are arriving. Try again in a minute.', '现在有很多人同时留印记，请稍等一分钟再试。'],
-    offline: ['Die öffentliche Grußwand ist derzeit nicht erreichbar.', 'The public wall is currently unavailable.', '公共印记墙暂时无法使用。'],
+    offline: ['Die Tageszählung ist gerade nicht erreichbar.', 'Today’s tally is currently unavailable.', '今日计数暂时无法使用。'],
     uncertain: ['Die Bestätigung fehlt. Lade den Stand neu, bevor du es noch einmal versuchst.',
       'There was no confirmation. Refresh the tally before trying again.', '尚未收到确认。请先刷新总数，再决定是否重试。'],
     ready: ['', '', '']
@@ -37,7 +38,10 @@
     const i = Math.max(0, ['de', 'en', 'zh'].indexOf(short));
     const locale = ['de', 'en', 'zh-Hans'][i];
     for (const el of wall.querySelectorAll('[data-wall-word]')) {
-      el.textContent = words[el === status ? message : el.dataset.wallWord][i];
+      let key = el.dataset.wallWord;
+      if (el === status) key = message;
+      if (el === refresh && !totals) key = 'reconnect';
+      el.textContent = words[key][i];
     }
     status.hidden = message === 'ready';
     board.hidden = !totals;
@@ -56,7 +60,7 @@
       count.value = totals ? new Intl.NumberFormat(locale).format(totals.counts[key]) : '';
     }
     if (totals) {
-      const date = wall.querySelector('time');
+      const date = board.querySelector('time');
       date.dateTime = totals.day;
       date.textContent = new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeZone: 'UTC' })
         .format(new Date(totals.day + 'T00:00:00Z'));

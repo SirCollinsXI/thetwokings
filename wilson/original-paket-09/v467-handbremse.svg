@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 150" width="212" height="150" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">Handbremse im Auto</title>
+  <desc id="desc">Zwischen den Vordersitzen ist ein mechanischer Handbremshebel angezogen. Der gelbe Griff hat vorn einen Entriegelungsknopf.</desc>
+  <rect width="212" height="150" fill="#eaf2e9"/>
+  <path d="M0 34q26-8 35 14l8 102H0m212-119q-24-3-32 20l-8 99h40" fill="#a5b8b2" stroke="#5c7775" stroke-width="3"/>
+  <path d="M46 27h117l15 117H36Z" fill="#ccd6ce" stroke="#7c9390" stroke-width="3"/>
+  <path d="M58 36h93l6 40H53Z" fill="#e1e7dd" stroke="#9cae9e" stroke-width="2"/>
+  <ellipse cx="75" cy="74" rx="16" ry="8" fill="#a0afa8" stroke="#708681" stroke-width="2"/>
+  <path d="m75 72-5-18" stroke="#63777c" stroke-width="6"/>
+  <ellipse cx="69" cy="49" rx="11" ry="9" fill="#83969a" stroke="#4d6469" stroke-width="2"/>
+  <path d="m63 49 12 0m-6-5v9" stroke="#d8e3de" stroke-width="1.5"/>
+  <path d="M81 120q14-19 30-8l28 14q6 10-7 12H85q-11-3-4-18Z" fill="#8b9e97" stroke="#526b69" stroke-width="2.5"/>
+  <path d="m104 119 28-37" stroke="#243b49" stroke-width="12"/>
+  <path d="m104 119 28-37" stroke="#a3afb0" stroke-width="6"/>
+  <path d="m127 86 23-37q3-5 8-2l7 5q4 3 1 8l-26 35Z" fill="#edbd55" stroke="#243b49" stroke-width="3"/>
+  <path d="m153 48 4-6q2-3 5-1l5 3q3 2 1 5l-4 6" fill="#e5e9e4" stroke="#243b49" stroke-width="2.5"/>
+  <path d="m143 64 8 5m-13 3 8 5m-12 2 8 5" stroke="#bd903a" stroke-width="2"/>
+  <path d="m103 37 23 16m0 0-11 0m11 0-4-11" fill="none" stroke="#bf4b50" stroke-width="3.6"/>
+  <circle cx="71" cy="105" r="11" fill="#e7e9dd" stroke="#526b69" stroke-width="2"/>
+  <path d="M68 111V99h4a4 4 0 0 1 0 8h-4m-13-9q-5 7 0 14m32-14q5 7 0 14" fill="none" stroke="#526b69" stroke-width="2"/>
+</svg>
