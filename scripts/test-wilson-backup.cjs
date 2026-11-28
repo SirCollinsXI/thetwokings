@@ -53,19 +53,21 @@ async function run(browser, lang, width) {
       await link.click();
       const choose = blob => target.locator('#backup-file').setInputFiles({ name: 'test.json', mimeType: 'application/json', buffer: Buffer.from(blob) });
       const read = () => target.evaluate(() => WilsonStorage.snapshot());
+      const initial = await read();
+      assert.deepEqual(initial, { path: '' }, 'Only the default mode setting exists on a fresh trainer');
       await choose('{ damaged');
       await target.waitForFunction(() => document.querySelector('#backup-status').textContent.length);
       assert.equal(await target.locator('#preview').isVisible(), false);
       await choose(JSON.stringify({ format: 'thetwokings-wilson', version: 1, parts: { kids: { version: 1, rounds: -1 } } }));
       await target.waitForFunction(() => document.querySelector('#backup-status').textContent.length);
       assert.equal(await target.locator('#preview').isVisible(), false);
-      assert.deepEqual(await read(), {});
+      assert.deepEqual(await read(), initial);
       await choose(backup);
       await target.locator('#preview').waitFor();
       assert.equal(await target.locator('#preview-title').evaluate(el => el === document.activeElement), true);
-      assert.deepEqual(await read(), {});
+      assert.deepEqual(await read(), initial);
       await target.locator('#cancel').click();
-      assert.deepEqual(await read(), {});
+      assert.deepEqual(await read(), initial);
       await choose(backup);
       await target.locator('#apply').focus();
       await target.locator('#apply').press('Enter');
@@ -79,6 +81,8 @@ async function run(browser, lang, width) {
       const corner = await fresh.newPage();
       await corner.goto(href('/wilson', lang));
       assert.equal(await corner.evaluate(() => WilsonStorage.getItem('ttk-wilson-path-v1')), '"kids"');
+      await corner.locator('.parent-notes summary').click();
+      assert.match(await corner.locator('.parent-notes').innerText(), /7/);
 
       const newer = { ...fixture.pictures, tested: 8, firstCorrect: 5 };
       await choose(JSON.stringify(newer));
