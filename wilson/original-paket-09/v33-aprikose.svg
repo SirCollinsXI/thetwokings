@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 150" width="212" height="150" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="title desc">
+  <title id="title">Aprikose mit glattem Stein</title>
+  <desc id="desc">Eine orangefarbene Aprikose und eine aufgeschnittene Hälfte. Im orangegelben Fruchtfleisch liegt ein glatter, abgeflachter brauner Stein.</desc>
+  <rect width="212" height="150" fill="#fbf0df"/>
+  <ellipse cx="105" cy="128" rx="79" ry="7" fill="#213240" fill-opacity="0.09"/>
+  <path d="M70 46c-12-7-29 2-35 16-10 23-3 49 17 59 10 5 23 7 35 1 19-10 25-34 17-54-6-16-21-25-34-22Z" fill="#f1a13f" stroke="#a85a2e" stroke-width="3"/>
+  <path d="M37 83c2 23 21 39 42 36 9-1 16-6 21-12-5 13-17 20-31 19-21-1-34-17-34-39Z" fill="#df842d"/>
+  <path d="M70 49c10 14 11 46 3 66" fill="none" stroke="#c9782d" stroke-width="2.3"/>
+  <path d="M47 64c-5 5-7 11-8 18" fill="none" stroke="#ffcf7c" stroke-width="5"/>
+  <path d="m69 47 2-11" fill="none" stroke="#73543b" stroke-width="3.5"/>
+  <path d="M71 38c-11-14-25-14-33-8 4 14 20 18 33 8Z" fill="#77a25b" stroke="#4c7548" stroke-width="2"/>
+  <path d="m45 33 23 5" fill="none" stroke="#4c7548" stroke-width="1.5"/>
+  <path d="M147 49c-18-4-39 11-45 33-7 25 7 44 28 47 26 3 50-16 53-41 3-20-13-39-36-39Z" fill="#e78c31" stroke="#a85a2e" stroke-width="3"/>
+  <path d="M147 54c-17-3-34 11-40 30-6 21 6 37 25 40 22 2 43-14 46-36 2-17-11-34-31-34Z" fill="#ffba5d" stroke="#ffdc92" stroke-width="3"/>
+  <path d="M146 61c-17 1-30 14-32 30" fill="none" stroke="#ffd58c" stroke-width="3"/>
+  <path d="M150 70c-13-1-26 10-28 23-2 13 6 22 16 20 15-2 29-18 27-29-1-8-7-13-15-14Z" fill="#df8a3d"/>
+  <path d="M150 73c-10 0-21 9-23 21-2 9 2 15 9 16 11 0 24-15 25-26 0-6-5-11-11-11Z" fill="#b57943" stroke="#88552f" stroke-width="2.5"/>
+  <path d="M151 78c-8 2-17 11-19 20" fill="none" stroke="#d8ac70" stroke-width="2.3"/>
+  <path d="M156 83c1 8-8 21-17 24" fill="none" stroke="#986034" stroke-width="1.5"/>
+</svg>

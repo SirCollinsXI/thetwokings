@@ -19,6 +19,7 @@
 <h1 id="heading">看图，<span>写德语。</span></h1>
 <p class="subtitle" id="subtitle">没有每日上限。输入德语单复数，按 Enter 检查；再按 Enter 进入下一张图片。</p>
 <section class="stats" aria-label="Progress"><div class="stat"><small id="attempts-label">完成的练习次数</small><strong id="attempts">0</strong></div><div class="stat"><small id="tested-label">已测试词数</small><strong id="tested">0</strong></div><div class="stat"><small id="due-label">待复习</small><strong id="due">0</strong></div><div class="stat"><small id="first-label">首次正确率</small><strong id="accuracy">—</strong></div></section>
+<p><a data-wilson-progress href="wilson-progress.html?lang=zh">我的学习进度</a></p>
 <div class="work" id="exercise" data-phase="loading">
 <div class="panel picture"><img id="word-image" src="wilson/cup.svg" alt=""><small id="picture-note">观察图片，然后输入德语</small><div id="image-credit" class="image-credit"></div></div>
 <div class="panel answer">
@@ -29,11 +30,13 @@
 <div class="status" id="status" role="status" aria-live="polite"></div>
 <div class="solution" id="solution" hidden><b id="correct-answer"></b><p class="ipa" id="ipa"></p><dl><dt>English</dt><dd id="english"></dd><dt>中文</dt><dd id="chinese"></dd></dl><p id="accepted" class="hint" hidden></p><div id="declension" class="n-tag" hidden></div><small id="repeat-note"></small></div>
 </div></div>
-<details class="tools"><summary id="tools-title">数据备份 / Data backup</summary><p id="storage-note">学习记录只保存在这台设备的浏览器中。清除浏览器数据可能导致记录丢失。</p><div class="action-row"><button type="button" class="secondary" id="export">导出学习记录</button><label><span id="import-label">导入：</span> <input type="file" id="import" accept="application/json"></label></div><div id="warning" class="notice" role="status"></div></details>
+<details class="tools"><summary id="tools-title">数据备份 / Data backup</summary><p><a data-wilson-backup href="wilson-backup.html?lang=zh">备份学习进度</a></p><p id="storage-note">学习记录只保存在这台设备的浏览器中。清除浏览器数据可能导致记录丢失。</p><div class="action-row"><button type="button" class="secondary" id="export">导出学习记录</button><label><span id="import-label">导入：</span> <input type="file" id="import" accept="application/json"></label></div><div id="warning" class="notice" role="status"></div></details>
 <p><a href="wilson-image-review.html">Bildbestand im Aufbau · 图片素材建设进度 ↗</a></p><p class="foot" id="footnote">图片卡建设中。复习间隔采用受遗忘曲线启发的分级安排，而不是经过个人记忆数据拟合的精确预测。语音由设备提供。</p>
 </main>
-<script src="wilson-lexicon.js?v=20261128p09b01"></script>
-<script src="wilson-image-candidates.js?v=20261128p09b01"></script>
+<script src="wilson-lexicon.js?v=20261128p09b02"></script>
+<script src="wilson-image-candidates.js?v=20261128p09b02"></script>
 <script src="wilson-vocabulary.js?v=20261126r1"></script>
-<script src="wilson-input.js?v=20261128-ready"></script>
+<script src="wilson-storage.js?v=1"></script>
+<script src="wilson-input.js?v=20261128-backup"></script>
+<script defer src="wilson-profile.js?v=1"></script>
 </body></html>

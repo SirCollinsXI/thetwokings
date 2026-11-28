@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212" height="150" viewBox="0 0 212 150" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5e934c"/>
+      <stop offset="1" stop-color="#246545"/>
+    </linearGradient>
+  </defs>
+  <rect width="212" height="150" fill="#f2f3e4"/>
+  <ellipse cx="104" cy="134" rx="63" ry="5" fill="#dce2cc"/>
+  <!-- Long, slender green petioles join in a small reddish root crown. -->
+  <g fill="none" stroke="#6b994e" stroke-width="4.5">
+    <path d="M104 126Q84 92 60 61M107 126Q105 81 101 46M110 125Q123 79 145 48M108 125Q86 103 49 99M112 124Q141 110 157 91"/>
+  </g>
+  <!-- Individual broad, smooth-edged, arrow-shaped spinach leaves, not a lettuce head. -->
+  <g fill="url(#leaf)" stroke="#285f3c" stroke-width="2.1">
+    <path d="M67 86Q40 82 26 50Q23 37 29 25Q56 29 73 49Q83 63 78 78L68 72Z"/>
+    <path d="M97 79Q77 66 82 39Q86 18 103 12Q120 25 122 48Q123 68 110 82L104 71Z"/>
+    <path d="M125 82Q121 58 138 37Q151 23 172 22Q181 45 165 66Q155 82 139 87L141 75Z"/>
+    <path d="M74 113Q50 123 30 105Q18 95 20 80Q39 68 61 81Q77 90 83 105L70 103Z"/>
+    <path d="M133 119Q136 92 155 81Q171 72 190 80Q191 99 175 115Q155 132 139 126L146 116Z"/>
+  </g>
+  <g fill="none" stroke="#a2bd72" stroke-width="1.5">
+    <path d="M70 78Q53 56 31 29M53 55L50 36M54 58L36 54M66 71L69 55M63 67L45 68"/>
+    <path d="M105 76Q103 49 103 17M103 45L91 32M104 52L114 37M104 63L91 52"/>
+    <path d="M132 81Q145 53 168 27M150 50L149 35M147 58L165 49M139 71L158 64"/>
+    <path d="M76 106Q51 92 25 84M50 94L38 108M60 99L62 86"/>
+    <path d="M139 121Q158 100 185 84M160 101L175 102M153 109L152 93"/>
+  </g>
+  <path d="M103 124L112 123L111 135L106 139L102 134Z" fill="#b97469" stroke="#945e53" stroke-width="1.5"/>
+  <path d="M106 138L105 143M108 138L111 142" fill="none" stroke="#b59073" stroke-width="1.1"/>
+</svg>

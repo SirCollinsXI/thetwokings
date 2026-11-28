@@ -1,0 +1,12 @@
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: .7rem; margin: 0; }
+.metrics > div { padding: .7rem; border-radius: .4rem; background: #edf3ee; }
+.metrics dd { margin: 0; color: #1f5c4e; font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+#profile-form { margin: .5rem 0; }
+#profile-form label { margin-top: .55rem; display: block; }
+#profile-form input, #profile-form select { box-sizing: border-box; max-width: 100%; min-height: 44px; padding: .35rem .6rem; border: 1px solid #71877a; border-radius: .35rem; color: inherit; background: white; font: inherit; }
+#learner-name, #continue-training { overflow-wrap: anywhere; }
+#learner-avatar { font-size: 1.45rem; vertical-align: middle; }
+#profile-status:empty, #stats-status:empty { display: none; }
+.quiet { border: 1px solid #71877a; background: transparent; color: #185a47; }
+.continue-links { margin-top: .7rem; display: flex; flex-wrap: wrap; gap: .35rem 1rem; }
+.continue-links a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 650; }

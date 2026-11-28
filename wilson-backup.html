@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wilson · 学习进度备份 · TheTwoKings</title>
+<link rel="icon" href="crown.svg">
+<link rel="stylesheet" href="wilson-backup.css?v=1">
+<script defer src="wilson-storage.js?v=1"></script>
+<script defer src="wilson-backup.js?v=1"></script>
+</head>
+<body>
+<main>
+  <nav aria-label="Wilson"><a href="wilson.html" id="back">← 学习角</a> <a href="wilson-input.html" id="trainer">看图练习</a></nav>
+  <h1 data-copy="title">学习进度备份</h1>
+  <p data-copy="intro">把此浏览器中的学习进度、设置和笔记保存到一个文件。</p>
+  <section aria-labelledby="current-title">
+    <h2 id="current-title" data-copy="current">当前进度</h2>
+    <ul id="current-list"></ul>
+    <button id="download" type="button" data-copy="download" disabled>下载完整备份</button>
+  </section>
+  <section aria-labelledby="restore-title">
+    <h2 id="restore-title" data-copy="restore">恢复学习进度</h2>
+    <p data-copy="read">选择 JSON 备份文件。先查看内容，再决定是否恢复。</p>
+    <label for="backup-file" data-copy="file">备份文件</label>
+    <input id="backup-file" type="file" accept=".json,application/json">
+    <div id="preview" hidden>
+      <h3 id="preview-title" tabindex="-1" data-copy="preview">备份预览</h3>
+      <ul id="preview-list"></ul>
+      <p data-copy="applyNote">此文件包含的项目将成为当前进度。文件中没有的项目会保留。</p>
+      <button id="apply" type="button" data-copy="apply">恢复备份</button>
+      <button id="cancel" type="button" data-copy="cancel">取消</button>
+    </div>
+    <button id="swap" type="button" data-copy="previous" hidden>切换到上一个学习进度</button>
+  </section>
+  <p id="backup-status" role="status"></p>
+</main>
+</body>
+</html>

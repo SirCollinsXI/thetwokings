@@ -226,13 +226,18 @@ for(const [id,confusable] of [
 }
 console.log('Pakete 2–4 und 6: 20 gezielte Kartenaufrufe, Verwechslungen, Mandarin, Deklination und Kartenwechsel geprüft.');
 
-// Paket 09: context-dependent objects, matching synonyms and complete noun pairs.
+// Paket 09: distinguish similar objects/foods; accept reviewed synonyms and singular food answers.
 for (const [id, wrong] of [
  ['v319', 'das Vorhängeschloss, Vorhängeschlösser'],
  ['v467', 'der Bremshebel, Bremshebel'],
  ['v516', 'das Lenkrad, Lenkräder'],
  ['v876', 'das Rad, Räder'],
- ['v913', 'der Seitenspiegel, Seitenspiegel']
+ ['v913', 'der Seitenspiegel, Seitenspiegel'],
+ ['v33', 'der Pfirsich, Pfirsiche'],
+ ['v152', 'die Weintraube, Weintrauben'],
+ ['v822', 'die Aprikose, Aprikosen'],
+ ['v653', 'die Forelle, Forellen'],
+ ['v1066', 'der Pak Choi']
 ]) {
  const word = shared.inputWords.find(w => w.id === id);
  delete stored[STORE];
@@ -256,7 +261,7 @@ for (const [id, wrong] of [
   assert.equal(synonym.dump().firstCorrect, 1);
  }
 }
-console.log('Paket 09: five targeted cards, confusions, six synonyms and DE/EN/ZH solutions verified.');
+console.log('Paket 09: ten targeted cards, confusions, seven synonyms, singular Spinat and DE/EN/ZH solutions verified.');
 
 // Two open views used to overwrite each other's attempts. Also cover browsers
 // without Web Locks: each write must at least start from the latest saved state.

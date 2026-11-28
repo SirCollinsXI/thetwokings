@@ -1,15 +1,16 @@
 # Wilson – gesicherter Arbeitsstand, 28.11.2026
 
-## Hier fortsetzen · Paket 09 · Gruppe 1 im Entwurf mit 884 Karten
+## Hier fortsetzen · Paket 09 · Gruppe 2 im Entwurf mit 889 Karten
 
 | Stand | Nachweis |
 | --- | --- |
-| Entwurf | [PR #34](https://github.com/SirCollinsXI/thetwokings/pull/34), Branch `codex/wilson-paket-09`. Aktuelles `main` einschließlich Trainerstart-Korrektur `0018ec6` übernommen. |
-| Gruppe 1 | Fahrradschloss `v319`, Handbremse `v467`, Hupe `v516`, Reifen `v876`, Rückspiegel `v913`. Fünf eigene SVGs gerendert und einzeln bei 212 × 150 und 120 × 85 Pixeln gesichtet. |
-| Gemeinsame Daten | 884 aktive Karten im Entwurf und Offline-Build. Die 879 bisherigen Datensätze bleiben unverändert; frühere Sperrentscheidung zu `v319` erhalten. |
-| Prüfungen | Lokale Daten-, Eingabe-, Wortschatz- und CTA-Prüfungen bestanden, einschließlich 222 historischer Bild-Hashes. Browser- und Vorschauprüfung mit Screenshots über den CI-Lauf in PR #34. |
-| Hauptdomain | Letzter belegter Live-Stand: 879 aus [PR #21](https://github.com/SirCollinsXI/thetwokings/pull/21). Direkter Abruf am 28.11. hier nicht verfügbar (HTTP 403); Paket 09 nicht veröffentlicht. |
-| Fortsetzung | [Kartenliste und Prüfstand](WILSON-PACKAGE-09.md). Gruppe 2 aus 434 noch unbebilderten Nomen auswählen. Noch 40 Karten bis 924, 616 bis 1.500 im Entwurf. |
+| Entwurf | [PR #34](https://github.com/SirCollinsXI/thetwokings/pull/34), Branch `codex/wilson-paket-09`. Aktuelles `main` einschließlich lokalem Profil und Lernfortschritt `7e81337` übernommen. |
+| Gruppe 1 | Fahrradschloss `v319`, Handbremse `v467`, Hupe `v516`, Reifen `v876`, Rückspiegel `v913`. Fünf eigene SVGs im Entwurf aktiv. |
+| Gruppe 2 | Aprikose `v33`, Brombeere `v152`, Pfirsich `v822`, Lachs `v653`, Spinat `v1066`. Fünf eigene SVGs gerendert und einzeln bei 212 × 150 und 120 × 85 Pixeln gesichtet. [Kontaktbogen](docs/wilson/paket09-gruppe02.png). |
+| Gemeinsame Daten | **889 aktive Karten** im Entwurf und Offline-Build; **10 von 45** Paketkarten. Alle 884 zuvor aktiven Datensätze und Bild-Hashes unverändert; vier weitere alte Sperrentscheidungen erhalten. |
+| Prüfungen | Lokale Website-, Eingabe-, Wortschatz- und CTA-Prüfungen bestanden, einschließlich 222 historischer Bild-Hashes. Browser-Abschlussbedingung: aktueller [CI-Lauf in PR #34](https://github.com/SirCollinsXI/thetwokings/pull/34/checks) mit 60 Antworten in DE/EN/ZH, beiden Galerie-Filtern, Offline-Prüfung sowie Profil-/Backup-Regression. |
+| Hauptdomain | Letzter belegter Live-Stand: **879** aus [PR #21](https://github.com/SirCollinsXI/thetwokings/pull/21). Direkter Abruf am 28.11. hier nicht neu verfügbar; Paket 09 nicht veröffentlicht. |
+| Fortsetzung | [Kartenliste und Prüfstand](WILSON-PACKAGE-09.md). Weiter mit **Gruppe 3**; bestehende Vorschläge mit 429 noch unbebilderten Nomen abgleichen. Noch **35 Karten bis 924**, **611 bis 1.500** im Entwurf. |
 
 ## Paket 08 · abgeschlossener Projektstand
 

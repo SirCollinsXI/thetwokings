@@ -3,13 +3,13 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const root=path.resolve(__dirname,'..');
 const bundle=['wilson-lexicon.js','wilson-image-candidates.js','wilson-vocabulary.js'].map(f=>fs.readFileSync(path.join(root,f),'utf8')).join('\n');
 const {v,c,lex}=vm.runInNewContext(bundle+';({v:WILSON_VOCABULARY,c:WILSON_IMAGE_CANDIDATES,lex:LEXICON})');
-assert.equal(v.inputWords.length,884);
+assert.equal(v.inputWords.length,889);
 assert.equal(c.filter(w=>w.active&&w.provider!=='project').length,596);
-assert.equal(c.filter(w=>w.review?.decision==='blocked').length,46);
+assert.equal(c.filter(w=>w.review?.decision==='blocked').length,42);
 assert.equal(c.filter(w=>w.status==='approved-alternative').length,10);
 assert.equal(c.filter(w=>!w.review).length,0);
 assert.equal(new Set(c.map(w=>w.id)).size,c.length,'candidate IDs must be unique; replaced decisions belong in reviewHistory');
-assert.equal(c.filter(w=>w.reviewHistory?.length).length,13,'replacement decisions must retain their earlier review');
+assert.equal(c.filter(w=>w.reviewHistory?.length).length,17,'replacement decisions must retain their earlier review');
 assert.equal(new Set(v.inputWords.map(w=>w.id)).size,v.activeCount,'duplicate input ID');
 assert.equal(new Set(v.inputWords.map(w=>w.de)).size,v.activeCount,'alternative motifs must not add words');
 assert.equal(new Set(v.mainWords.map(w=>w.id)).size,v.mainWords.length,'duplicate main ID');
@@ -68,7 +68,7 @@ for(const id of ['v1355','v607','wx-brazil-nut','wx-ferret','wx-cornflakes','wx-
 assert.equal(v.inputWords.find(w=>w.id==='wx-chinese-cabbage').de,'der Pak Choi');
 assert.equal(v.inputWords.find(w=>w.id==='v724').numberMode,'plural');
 assert.equal(v.inputWords.find(w=>w.id==='v363').plural,'die Frühstücksflocken');
-assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,266);
+assert.equal(v.inputWords.filter(w=>w.imageCredit?.provider==='project').length,271);
 const household=v.inputWords.filter(w=>w.imageCredit?.review.batch==='kueche-haushalt-01');
 assert.equal(household.length,25);
 for (const w of household) {
@@ -149,6 +149,7 @@ const pictureBatches = [
  { batch: 'unterwegs-07', directory: 'original-paket-07', ids: ['v1279', 'v167', 'v679', 'v786', 'v882'] },
  { batch: 'persoenliches-07', directory: 'original-paket-07', ids: ['v445', 'v589', 'v648', 'v798', 'v965'] },
  { batch: 'auto-fahrrad-09', directory: 'original-paket-09', ids: ['v319', 'v467', 'v516', 'v876', 'v913'] },
+ { batch: 'frische-lebensmittel-09', directory: 'original-paket-09', ids: ['v1066', 'v152', 'v33', 'v653', 'v822'] },
  { batch: 'banking-08', directory: 'original-paket-08', ids: ['v1300', 'v245', 'v632', 'v825', 'v874'] },
  { batch: 'computer-zubehoer-08', directory: 'original-paket-08', ids: ['v1039', 'v1136', 'v16', 'v171', 'v244'] },
  { batch: 'zuhause-08', directory: 'original-paket-08', ids: ['v1067', 'v1184', 'v1273', 'v637', 'v93'] },
@@ -180,4 +181,15 @@ const bicycleLock = c.find(w => w.id === 'v319');
 assert.equal(bicycleLock.reviewHistory.at(-1).decision, 'blocked');
 assert.equal(bicycleLock.reviewHistory.at(-1).path, 'wilson/original-next/v319.svg');
 assert.notEqual(bicycleLock.path, bicycleLock.reviewHistory.at(-1).path);
-console.log('Vocabulary verified: 884 active cards; all 222 legacy IDs and image hashes preserved.');
+for (const id of ['v33', 'v152', 'v822', 'v1066']) {
+ const replacement = c.find(w => w.id === id);
+ const previous = replacement.reviewHistory.at(-1);
+ assert.equal(previous.decision, 'blocked');
+ assert.equal(previous.path, 'wilson/mulberry/' + id + '.svg');
+ assert.equal(previous.creator, 'Steve Lee');
+ assert.equal(previous.license, 'CC-BY-SA-4.0');
+ assert.ok(previous.source && previous.reason && previous.date);
+ assert.notEqual(replacement.path, previous.path);
+}
+assert.equal(v.inputWords.find(w => w.id === 'v1066').numberMode, 'singular');
+console.log('Vocabulary verified: 889 active cards; all 222 legacy IDs and image hashes preserved.');

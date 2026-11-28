@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Wilsons lokales Lernprofil und die Statistik für alle Lernmodi.">
+<title>Wilson · 我的学习进度 · TheTwoKings</title>
+<link rel="icon" href="crown.svg">
+<link rel="stylesheet" href="wilson-backup.css?v=1">
+<link rel="stylesheet" href="wilson-progress.css?v=1">
+<script defer src="wilson-storage.js?v=1"></script>
+<script defer src="wilson-lexicon.js?v=20261127p08b10"></script>
+<script defer src="wilson-image-candidates.js?v=20261127p08b10"></script>
+<script defer src="wilson-vocabulary.js?v=20261126r1"></script>
+<script defer src="wilson-profile.js?v=1"></script>
+<script defer src="wilson-progress.js?v=1"></script>
+</head>
+<body>
+<main>
+  <nav aria-label="Wilson">
+    <a id="corner-link" href="wilson.html" data-copy="back">← 学习角</a>
+    <a id="backup-link" href="wilson-backup.html" data-copy="backup">备份学习进度</a>
+  </nav>
+  <h1 data-copy="title">我的学习进度</h1>
+  <section aria-labelledby="profile-title">
+    <h2 id="profile-title" data-copy="profile">此设备上的学习档案</h2>
+    <p id="learner" hidden><span id="learner-avatar" aria-hidden="true"></span> <strong id="learner-name"></strong></p>
+    <p data-copy="local">档案和学习进度保存在当前浏览器中。</p>
+    <button id="profile-edit" type="button" data-copy="create">创建本地学习档案</button>
+    <form id="profile-form" hidden>
+      <label for="nickname" data-copy="nickname">昵称</label>
+      <input id="nickname" name="nickname" maxlength="32" required>
+      <label for="avatar" data-copy="avatar">头像</label>
+      <select id="avatar" name="avatar"></select>
+      <p id="adopt-note" data-copy="adoptNote">现有的学习进度将归入此档案。</p>
+      <button id="profile-save" type="submit" data-copy="adopt">使用此学习进度</button>
+      <button id="profile-cancel" type="button" class="quiet" data-copy="cancel">取消</button>
+      <button id="profile-remove" type="button" class="quiet" data-copy="remove" hidden>移除昵称和头像</button>
+    </form>
+    <p id="profile-status" role="status"></p>
+    <div class="continue-links">
+      <a id="continue-training" href="wilson-input.html">继续练习</a>
+      <a id="choose-training" href="wilson.html" data-copy="choose">选择学习方式</a>
+    </div>
+  </section>
+  <section aria-labelledby="picture-title">
+    <h2 id="picture-title" data-copy="picture">看图输入练习</h2>
+    <dl class="metrics">
+      <div><dt data-copy="cards">已练习的不同图片卡</dt><dd id="stat-cards">—</dd></div>
+      <div><dt data-copy="attempts">已完成的练习</dt><dd id="stat-attempts">—</dd></div>
+      <div><dt data-copy="first">首次正确率</dt><dd id="stat-first">—</dd></div>
+      <div><dt data-copy="due">待复习</dt><dd id="stat-due">—</dd></div>
+    </dl>
+  </section>
+  <section aria-labelledby="other-title">
+    <h2 id="other-title" data-copy="other">其他学习方式</h2>
+    <dl class="metrics">
+      <div><dt data-copy="days">轻松学习和进阶学习 · 学习日</dt><dd id="stat-days">—</dd></div>
+      <div><dt data-copy="kids">儿童模式 · 已完成的轮数</dt><dd id="stat-kids">—</dd></div>
+    </dl>
+    <p id="stats-status" role="status"></p>
+  </section>
+</main>
+</body>
+</html>
