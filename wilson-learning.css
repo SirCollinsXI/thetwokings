@@ -7,7 +7,11 @@
   --lesson-action: #175e52;
   --lesson-focus: #125aa4;
   --lesson-target: #f6d888;
-  --lesson-picture: #e9f0eb;
+  --lesson-picture: #e7eceb;
+  --lesson-border: #526e67;
+  --lesson-retry: #754400;
+  --lesson-review: #394a74;
+  --lesson-correct: #185439;
   background: var(--lesson-paper);
   color: var(--lesson-ink);
 }
@@ -40,19 +44,64 @@
   --muted: var(--lesson-secondary);
 }
 .wilson-learning-input h1 span {color:var(--lesson-action);}
+.wilson-learning-home .prototype-note {
+  padding: .5rem 1rem;
+  text-align: center;
+  font: 12px/1.5 Arial, sans-serif;
+  background: var(--lesson-picture);
+  color: var(--lesson-secondary);
+}
+.wilson-learning-home .hero-picture {
+  transform: none;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid #bdcbc6;
+}
+.picture-preview {
+  margin-block-start: .75rem;
+  background: var(--lesson-panel);
+  border: 1px solid var(--lesson-border);
+  border-radius: .65rem;
+}
+.picture-preview summary {
+  cursor: pointer;
+  padding: .85rem 1rem;
+  min-height: 44px;
+  font-weight: 700;
+}
+.picture-preview .language-labels { transform: none; padding: .35rem 1rem 1rem; background: transparent; }
+.wilson-learning-input #exercise {
+  --phase-line: var(--lesson-border);
+}
+.wilson-learning-input #exercise[data-phase="retry"] { --phase-line: var(--lesson-retry); }
+.wilson-learning-input #exercise[data-phase="review"] { --phase-line: var(--lesson-review); }
+.wilson-learning-input #exercise[data-phase="correct"] { --phase-line: var(--lesson-correct); }
+.wilson-learning-input .answer { border-block-start: .35rem solid var(--phase-line); }
+.wilson-learning-input #typed { border-color: var(--lesson-border); }
+.wilson-learning-input #typed[aria-invalid="true"] { border-color: var(--lesson-retry); background: #fff8eb; }
+.wilson-learning-input #typed[readonly] { background: var(--lesson-paper); }
 .wilson-learning-input .status:not(:empty) {
-  display: inline-block;
+  display: flex;
+  align-items: baseline;
+  gap: .55rem;
   border-inline-start: .28rem solid currentColor;
   padding: .55rem .8rem;
   border-radius: .25rem;
 }
-.wilson-learning-input .status.ok {background:#dcf3e6;color:#15553c;}
-.wilson-learning-input .status.warn {background:#fff0d5;color:#744014;}
-.wilson-learning-input .status.ok:not(:empty)::before {content:"✓ ";}
-.wilson-learning-input .status.warn:not(:empty)::before {content:"! ";}
+.wilson-learning-input .status.correct { background: #dcf3e6; color: var(--lesson-correct); }
+.wilson-learning-input .status.retry { background: #fff0d5; color: var(--lesson-retry); }
+.wilson-learning-input .status.review { background: #e9edf7; color: var(--lesson-review); }
+.wilson-learning-input .status.correct:not(:empty)::before { content: "✓" / ""; }
+.wilson-learning-input .status.retry:not(:empty)::before { content: "↺" / ""; }
+.wilson-learning-input .status.review:not(:empty)::before { content: "→" / ""; }
+.wilson-learning-input .solution {
+  padding: 1rem;
+  border: 1px solid #c8bfaa;
+  border-radius: .65rem;
+  background: #fffdfa;
+}
 .wilson-learning-home :is(a, button, select, input, textarea, summary):focus-visible,
 .wilson-learning-input :is(a, button, select, input, textarea, summary):focus-visible {
   outline: 3px solid var(--lesson-focus);
   outline-offset: 3px;
 }
-.wilson-learning-input header :focus-visible {outline-color:#f6d888;}
+.wilson-learning-input header :focus-visible { outline-color: #fff; }

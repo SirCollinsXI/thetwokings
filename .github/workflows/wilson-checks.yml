@@ -97,6 +97,10 @@ jobs:
           grep -Fq 'href="wilson-input.html?lang=zh"' <<< "$WILSON" || { echo 'Challenge link missing'; exit 1; }
           "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --window-size=390,844 --virtual-time-budget=2500 --screenshot="$RUNNER_TEMP/wilson-chinese-entry.png" 'http://127.0.0.1:8765/wilson.html' >/dev/null 2>&1
           test -s "$RUNNER_TEMP/wilson-chinese-entry.png"
+      - name: Test visual learning cues in German, English and Chinese
+        run: |
+          npm install --prefix "$RUNNER_TEMP/wilson-browser" --no-audit --no-fund playwright-core@1.56.1
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
       - name: Archive responsive screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -119,3 +123,10 @@ jobs:
           node-version: '22'
       - name: Check the gallery count and a trainer card on the public domain
         run: node scripts/check-wilson-published.cjs
+
+      - name: Verify learning cues on the public domain in isolated browser profiles
+        env:
+          WILSON_ORIGIN: https://thetwokings.de
+        run: |
+          npm install --prefix "$RUNNER_TEMP/wilson-browser" --no-audit --no-fund playwright-core@1.56.1
+          NODE_PATH="$RUNNER_TEMP/wilson-browser/node_modules" CHROME="$(command -v google-chrome)" node scripts/test-wilson-learning-cues.cjs
