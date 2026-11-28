@@ -1,0 +1,106 @@
+name: Dino-Insel · iPhone-Browserprüfung
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/wehr-iphone.yml'
+      - 'das-wehr/**'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/wehr-iphone.yml'
+      - 'das-wehr/**'
+permissions:
+  contents: read
+  checks: read
+jobs:
+  webkit:
+    runs-on: macos-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check public HTTPS on iPhone Edge user agent
+        run: |
+          for url in 'https://thetwokings.de/?lang=de' 'https://thetwokings.de/das-wehr/?lang=de'; do
+            curl --fail --silent --show-error --location --max-time 20 -A 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 Version/18.5 EdgiOS/138.0 Mobile/15E148 Safari/605.1.15' --write-out '%{http_code} %{url_effective}\n' --output /dev/null "$url"
+          done
+      - name: Find the Cloudflare preview
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          for attempt in {1..40}; do
+            checks=$(gh api "repos/$GITHUB_REPOSITORY/commits/$HEAD_SHA/check-runs?check_name=Cloudflare%20Pages")
+            preview=$(jq -r '[.check_runs[] | select(.app.slug == "cloudflare-workers-and-pages" and .conclusion == "success")] | max_by(.id).output.summary // "" | match("https://[0-9a-f]+\\.wuesten-bogen-app\\.pages\\.dev").string' <<< "$checks")
+            if [[ -n "$preview" ]]; then
+              echo "DINO_TEST_ORIGIN=$preview" >> "$GITHUB_ENV"
+              exit 0
+            fi
+            sleep 4
+          done
+          echo "Cloudflare preview unavailable"
+          exit 1
+      - name: Start V53 in WebKit with iPhone settings
+        run: |
+          cd "$RUNNER_TEMP"
+          npm install --no-save --no-audit --no-fund --ignore-scripts playwright@1.56.1
+          npx playwright install webkit
+          node <<'NODE'
+          const assert = require('node:assert/strict');
+          const { webkit, devices } = require('playwright');
+          (async () => {
+            const browser = await webkit.launch();
+            try {
+              const settings = devices['iPhone 15'];
+              const context = await browser.newContext({
+                ...settings, locale: 'de-DE',
+                userAgent: settings.userAgent.replace('Safari/', 'EdgiOS/138.0 Safari/')
+              });
+              const page = await context.newPage();
+              page.on('crash', () => console.error('WebKit page crashed'));
+              page.on('pageerror', error => console.error(error.message));
+              page.on('requestfailed', request => console.error('Failed request', request.url(), request.failure()));
+              page.on('console', msg => {
+                if (['error', 'warning'].includes(msg.type()) || /Godot Engine|WebGL/i.test(msg.text())) console.log(msg.type(), msg.text());
+              });
+              const origin = process.env.DINO_TEST_ORIGIN || 'https://thetwokings.de';
+              console.log('WebKit browsing', origin);
+              const home = await page.goto(origin + '/?lang=de', {waitUntil: 'domcontentloaded'});
+              assert.equal(home.status(), 200);
+              const link = page.locator('#wehr').getByRole('link', {name:'Jetzt spielen',exact:true});
+              await link.tap();
+              await page.waitForURL(/\/das-wehr\//);
+              const screen = await page.evaluate(() => {
+                const test = document.createElement('canvas');
+                const gl = test.getContext('webgl2');
+                return { webgl2: !!gl, readableStream: typeof ReadableStream, decompressionStream: typeof DecompressionStream, webAssembly: typeof WebAssembly,
+                  vw: innerWidth, vh: innerHeight, touch: navigator.maxTouchPoints, dpr: devicePixelRatio };
+              });
+              console.log('Game launcher capabilities', screen);
+              const start = Date.now();
+              await page.locator('#play').tap();
+              try {
+                await page.waitForFunction(() => document.querySelector('#launch')?.hidden || document.querySelector('#play')?.textContent === 'Erneut laden', null, {timeout: 150000});
+              } catch (error) {
+                console.error('Launcher state at timeout', await page.evaluate(() => ({
+                  status: document.querySelector('#status')?.textContent,
+                  progress: document.querySelector('#progress')?.value,
+                  canvas: [document.querySelector('canvas')?.width, document.querySelector('canvas')?.height]
+                })).catch(() => 'unavailable'));
+                throw error;
+              }
+              assert.equal(await page.locator('#launch').evaluate(n => n.hidden), true, await page.locator('#status').textContent());
+              const screenshot = await page.screenshot({path: process.env.RUNNER_TEMP + '/iphone-webkit.png', timeout: 25000});
+              assert.ok(screenshot.length > 12000, 'Godot menu should be visible');
+              console.log('Godot started and drew the menu in WebKit after', Date.now() - start, 'ms.');
+            } finally { await browser.close(); }
+          })().catch(error => { console.error(error); process.exitCode = 1; });
+          NODE
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: iphone-webkit
+          path: ${{ runner.temp }}/iphone-webkit.png
+          if-no-files-found: ignore

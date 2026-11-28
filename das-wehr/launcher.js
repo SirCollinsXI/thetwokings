@@ -75,11 +75,19 @@ window.fetchDinoAsset = function (input, options) {
     canvas.setAttribute("aria-label", labels[2]);
     play.textContent = labels[1];
     const touchDevice = matchMedia("(pointer: coarse)");
+    // iPads may identify as Macs, even with a touch-only game session.
+    const appleTouch = /iPad|iPhone|iPod/.test(navigator.userAgent)
+        || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const launchStages = {
+        de: ["Spielmotor wird geladen …", "Die Insel wird aufgebaut …"],
+        en: ["Loading the game engine…", "Preparing the island…"],
+        zh: ["正在加载游戏引擎…", "正在准备岛屿…"]
+    }[lang];
     function resize() {
         const rect = canvas.getBoundingClientRect();
         if (!rect.width || !rect.height) return;
-        const maxScale = touchDevice.matches ? 1.25 : 2;
-        const pixelBudget = touchDevice.matches ? 1400000 : 4200000;
+        const maxScale = appleTouch ? 1 : touchDevice.matches ? 1.25 : 2;
+        const pixelBudget = appleTouch ? 800000 : touchDevice.matches ? 1400000 : 4200000;
         const density = Math.min(devicePixelRatio || 1, maxScale, Math.sqrt(pixelBudget / (rect.width * rect.height)));
         const width = Math.max(1, Math.round(rect.width * density));
         const height = Math.max(1, Math.round(rect.height * density));
@@ -122,9 +130,18 @@ window.fetchDinoAsset = function (input, options) {
                 fileSizes: {"index.wasm": dinoAssets["index.wasm"].size, "index.pck": dinoAssets["index.pck"].size},
                 args: ["--", "--site-lang=" + locale],
                 onProgress(loaded, total) {
-                    if (total > 0) progress.value = loaded / total;
+                    if (total > 0 && !appleTouch) progress.value = loaded / total;
                 }
             });
+            if (appleTouch) {
+                // Keep the game archive out of memory while WebKit compiles WebAssembly.
+                status.textContent = launchStages[0];
+                progress.removeAttribute("value");
+                await engine.init("index");
+                if (failed) return;
+                progress.removeAttribute("value");
+            }
+            status.textContent = launchStages[1];
             await engine.startGame();
             if (failed) return;
             loading = false;
